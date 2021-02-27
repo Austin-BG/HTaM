@@ -1,0 +1,18 @@
+IF 
+Global("ANdragonExists","AN1616",0)
+OnCreation()
+
+THEN
+  RESPONSE #100
+SetGlobal("ANdragonExists","AN1616",1)
+CreateCreature("ANdragon",[843.810],2)
+END
+
+IF
+	Dead("ANdragon")  
+	Global("ANdragonDead","AN1616",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ANdragonDead","AN1616",1)
+		ReputationInc(-6)
+END
