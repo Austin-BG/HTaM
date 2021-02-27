@@ -1,0 +1,36 @@
+IF 
+Global("AranLove","GLOBAL",17)
+Global("ANspym1Exists","AR0022",0)
+TimeOfDay(NIGHT)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANspym1Exists","AR0022",1)
+CreateCreature("ANspym1",[220.503],10)
+END
+
+IF 
+Global("AranLove","GLOBAL",17)
+Global("ANspyStart","AR0022",0)
+InActiveArea("ANspym1")
+NumInPartyGT(1)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANspyStart","AR0022",1)
+ClearAllActions()   
+StartCutSceneMode()
+CutSceneId(Player1)  
+DisplayStringHead(Player1,@85)
+Wait(4)
+MultiPlayerSync()
+ActionOverride(Player1,JumpToPoint([562.368]))
+ActionOverride(Player1,MoveToPointNoInterrupt([298.457]))
+Wait(3)
+EndCutSceneMode()
+Wait(1)
+ActionOverride("ANspym1",StartDialogNoSet("Player1")
+END
+
+
+

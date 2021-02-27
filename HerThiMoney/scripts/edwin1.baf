@@ -1,0 +1,247 @@
+// Irenicus Dungeon
+IF
+Global("ANEdwinDungeonTalk","GLOBAL",0)
+InParty(myself) 
+!Dead("Edwin")
+See(Player1)
+CombatCounter(0)
+!See([ENEMY])
+!StateCheck(Myself,CD_STATE_NOTVALID)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("ANEdwinDungeonTalk","GLOBAL",1)
+RealSetGlobalTimer("ANEdwinDungeontimer","GLOBAL",2000)
+END
+
+IF
+InParty(Myself)
+See(Player1)
+CombatCounter(0)
+!See([ENEMY]) 
+RealGlobalTimerExpired("ANEdwinDungeontimer","GLOBAL")
+Global("ANEdwinDungeonTalk","GLOBAL",1) 
+THEN
+RESPONSE #100
+SetGlobal("ANEdwinDungeonTalk","GLOBAL",2)
+END
+
+IF
+InParty(Myself)
+See(Player1)
+Global("ANEdwinDungeonTalk","GLOBAL",2)
+THEN
+RESPONSE #100
+StartDialogNoSet(Player1)
+END
+
+
+// Underdark
+IF
+AreaCheck("AR2100")
+Global("ANedwinUnderdark","GLOBAL",0)
+InParty(myself) 
+!Dead("Edwin")
+See(Player1)
+CombatCounter(0)
+!See([ENEMY])
+!StateCheck(Myself,CD_STATE_NOTVALID)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("ANedwinUnderdark","GLOBAL",1)
+END
+
+IF
+InParty(Myself)
+See(Player1)
+AreaCheck("AR2100")
+CombatCounter(0)
+!See([ENEMY]) 
+Global("ANedwinUnderdark","GLOBAL",1) 
+THEN
+RESPONSE #100
+SetGlobal("ANedwinUnderdark","GLOBAL",2)
+END
+
+IF
+InParty(Myself)
+See(Player1)
+Global("ANedwinUnderdark","GLOBAL",2)
+THEN
+RESPONSE #100
+StartDialogNoSet(Player1)
+END
+
+
+// Planar Sphere
+IF
+AreaCheck("AR0411")
+Global("ANplanaredwin","GLOBAL",0)
+InParty(myself) 
+!Dead("Edwin")
+See(Player1)
+CombatCounter(0)
+!See([ENEMY])
+!StateCheck(Myself,CD_STATE_NOTVALID)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("ANplanaredwin","GLOBAL",1)
+RealSetGlobalTimer("ANplanaredwintimer","GLOBAL",10)
+END
+
+IF
+InParty(Myself)
+See(Player1)
+AreaCheck("AR0411")
+CombatCounter(0)
+!See([ENEMY]) 
+Global("ANplanaredwin","GLOBAL",1) 
+RealGlobalTimerExpired("ANplanaredwintimer","GLOBAL")
+THEN
+RESPONSE #100
+SetGlobal("ANplanaredwin","GLOBAL",2)
+END
+
+IF
+InParty(Myself)
+See(Player1)
+Global("ANplanaredwin","GLOBAL",2)
+THEN
+RESPONSE #100
+StartDialogNoSet(Player1)
+END
+
+// Statues
+IF
+AreaCheck("AR2000")
+Global("MakeStatue","GLOBAL",2)
+Global("AN_STATUE_EDWIN_VALUE","GLOBAL",2)
+Global("AN_EDWIN_STATUE","GLOBAL",1)
+Global("AN_Statues_Edwin_Talk","GLOBAL",0)
+Range("StatueInfo2",20)
+THEN
+	RESPONSE #100
+SetGlobal("AN_Statues_Edwin_Talk","GLOBAL",1)
+END
+
+IF
+AreaCheck("AR2000")
+Global("AN_Statues_Edwin_Talk","GLOBAL",1)
+Range("StatueInfo2",20)
+THEN
+	RESPONSE #100
+StartDialogNoSet(Player1)
+END
+
+IF
+AreaCheck("AR2000")
+Global("MakeStatue","GLOBAL",2)
+Global("AN_STATUE_EDWIN_VALUE","GLOBAL",3)
+Global("AN_EDWIN_STATUE","GLOBAL",1)
+Global("AN_Statues_Edwin_Talk","GLOBAL",0)
+Range("StatueInfo3",20)
+THEN
+	RESPONSE #100
+SetGlobal("AN_Statues_Edwin_Talk","GLOBAL",1)
+END
+
+IF
+AreaCheck("AR2000")
+Global("AN_Statues_Edwin_Talk","GLOBAL",1)
+Range("StatueInfo3",20)
+THEN
+	RESPONSE #100
+StartDialogNoSet(Player1)
+END
+
+IF
+AreaCheck("AR2000")
+Global("MakeStatue","GLOBAL",2)
+Global("AN_STATUE_EDWIN_VALUE","GLOBAL",4)
+Global("AN_EDWIN_STATUE","GLOBAL",1)
+Global("AN_Statues_Edwin_Talk","GLOBAL",0)
+Range("StatueInfo4",20)
+THEN
+	RESPONSE #100
+SetGlobal("AN_Statues_Edwin_Talk","GLOBAL",1)
+END
+
+IF
+AreaCheck("AR2000")
+Global("AN_Statues_Edwin_Talk","GLOBAL",1)
+Range("StatueInfo4",20)
+THEN
+	RESPONSE #100
+StartDialogNoSet(Player1)
+END
+
+IF
+AreaCheck("AR2000")
+Global("MakeStatue","GLOBAL",2)
+Global("AN_STATUE_EDWIN_VALUE","GLOBAL",5)
+Global("AN_EDWIN_STATUE","GLOBAL",1)
+Global("AN_Statues_Edwin_Talk","GLOBAL",0)
+Range("StatueInfo5",20)
+THEN
+	RESPONSE #100
+SetGlobal("AN_Statues_Edwin_Talk","GLOBAL",1)
+END
+
+IF
+AreaCheck("AR2000")
+Global("AN_Statues_Edwin_Talk","GLOBAL",1)
+Range("StatueInfo5",20)
+THEN
+	RESPONSE #100
+StartDialogNoSet(Player1)
+END
+
+IF
+AreaCheck("AR2000")
+Global("MakeStatue","GLOBAL",2)
+Global("AN_STATUE_EDWIN_VALUE","GLOBAL",6)
+Global("AN_EDWIN_STATUE","GLOBAL",1)
+Global("AN_Statues_Edwin_Talk","GLOBAL",0)
+Range("StatueInfo6",20)
+THEN
+	RESPONSE #100
+SetGlobal("AN_Statues_Edwin_Talk","GLOBAL",1)
+END
+
+IF
+AreaCheck("AR2000")
+Global("AN_Statues_Edwin_Talk","GLOBAL",1)
+Range("StatueInfo6",20)
+THEN
+	RESPONSE #100
+StartDialogNoSet(Player1)
+END
+
+// Kaza Book
+IF
+InParty(Myself)
+See(Player1)
+GlobalTimerExpired("AN_KazaBookEdwin","GLOBAL") 
+Global("ANkazabookRead","GLOBAL",1)
+PartyHasItem("BOOK89")
+THEN
+RESPONSE #100
+SetGlobal("AN_KazaBook_Edwin_Talk","GLOBAL",1)
+StartDialogNoSet(Player1)
+TakePartyItem("BOOK89") 
+DestroyItem("BOOK89")
+END
+
+// Reputation
+IF
+	InParty(Myself)
+	ReputationGT(Player1,17)
+	Global("ANEdwinGoodRep","LOCALS",0)
+	CombatCounter(0)
+	See(Player1)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END

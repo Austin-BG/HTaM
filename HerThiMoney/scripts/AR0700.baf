@@ -1,0 +1,92 @@
+IF 
+Global("ANLornaExists","AR0700",0)
+GlobalGT("ANpiratQuest","GLOBAL",3)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANLornaExists","AR0700",1)
+CreateCreature("ANLorna",[1670.1755],2)
+Continue()
+END
+
+IF 
+AreaCheck("AR0700")
+Global("ANBankGuardExists","AR0700",0)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANBankGuardExists","AR0700",1)
+CreateCreature("ANBANKG",[3709.3789],7)
+CreateCreature("ANBANKG1",[3600.3766],7)
+Continue()
+END
+
+IF 
+AreaCheck("AR0700")
+Global("ANBankGuardExists1","AR0700",0)
+Global("AnOwniBankTalk","GLOBAL",8)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANBankGuardExists1","AR0700",1)
+CreateCreature("ANBANKG",[3709.3789],7)
+CreateCreature("ANBANKG1",[3600.3766],7)
+Continue()
+END
+
+IF 
+Global("ANStashRenalJOB","GLOBAL",11)
+Global("ANStashEdwinFinalTalk","AR0700",0)
+
+THEN
+  RESPONSE #100
+  SetGlobal("ANStashEdwinFinalTalk","AR0700",1)
+  RealSetGlobalTimer("ANStashEdwinFinalTimer","AR0700",10)
+END
+
+IF 
+Global("ANStashEdwinFinalTalk","AR0700",1)
+RealGlobalTimerExpired("ANStashEdwinFinalTimer","AR0700")
+
+THEN
+  RESPONSE #100
+ActionOverride(Player1,StartDialog("Player1",Myself))
+END
+
+IF 
+AreaCheck("AR0700")
+Global("ANUriExists","AR0700",0)
+Global("AnKorganUriDeal","GLOBAL",1)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANUriExists","AR0700",1)
+CreateCreature("ANClerk2",[2884.3605],5)
+Continue()
+END
+
+
+IF 
+Global("AnOwniBankTalk","GLOBAL",4)
+!TimeOfDay(DAY)
+
+THEN
+  RESPONSE #100
+ActionOverride("ANBANKG",DestroySelf())
+ActionOverride("ANBANKG1",DestroySelf())
+END
+
+IF
+Global("ANbankdruidloot","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("ANbankdruidloot","GLOBAL",3)
+StartMovie("niteday")
+DayNight(DAWN_END)
+ActionOverride(Player1,Rest())
+ActionOverride(Player2,Rest())
+ActionOverride(Player3,Rest())
+ActionOverride(Player4,Rest())
+ActionOverride(Player5,Rest())
+ActionOverride(Player6,Rest())
+END

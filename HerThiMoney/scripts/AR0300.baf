@@ -1,0 +1,37 @@
+IF 
+Global("AranLove","GLOBAL",22)
+Global("ANLeenaTimer","AR0300",0)
+THEN
+  RESPONSE #100
+SetGlobal("ANLeenaTimer","AR0300",1) 
+RealSetGlobalTimer("ANAranLeenaTimer","GLOBAL",3)
+END
+
+IF 
+RealGlobalTimerExpired("ANAranLeenaTimer","GLOBAL")
+Global("ANLeenaTimer","AR0300",1) 
+THEN
+  RESPONSE #100
+SetGlobal("ANLeenaTimer","AR0300",2)   
+ActionOverride(Player1,SetDialog("PLAYER1"))
+Wait(1)
+ActionOverride(Player1,StartDialog("Player1",Myself))
+END
+
+IF 
+Global("AranLove","GLOBAL",23)
+Global("TonySpawnDocks","AR0300",0)
+
+THEN
+  RESPONSE #100
+SetGlobal("TonySpawnDocks","AR0300",1)
+SetGlobal("AranLove","GLOBAL",24)
+Wait(1)
+CreateCreatureObject("bdoffscr",Player1,0,0,0)  
+ApplySpellRES("bdoffscr","bdoffscr")  // No such index
+CreateCreatureObject("ANtony1","bdoffscr",0,0,0)  
+SmallWait(5)
+ActionOverride("ANtony",Dialog(Player1))
+END
+
+

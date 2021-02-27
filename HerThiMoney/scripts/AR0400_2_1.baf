@@ -1,0 +1,158 @@
+IF
+Global("ANshakalexists","AR0400",0)
+OR(2)
+	Global("Chapter","GLOBAL",%bg2_chapter_2%)
+	Global("Chapter","GLOBAL",%bg2_chapter_3%)
+CombatCounter(0)
+Global("ANDwarfCreditPay","GLOBAL",0)
+Global("ANDwarfCreditNoPay","GLOBAL",0)
+!InParty("Korgan")
+THEN
+RESPONSE #100
+SetGlobal("ANshakalexists","AR0400",1)
+RealSetGlobalTimer("ANshakalTimer","GLOBAL",5000)
+Continue()
+END
+
+
+
+IF
+Global("ANshakalexists","AR0400",1)
+CombatCounter(0)
+AreaType(OUTDOOR)
+AreaType(CITY)
+!InParty("Korgan")
+Global("ANDwarfCreditPay","GLOBAL",0)
+Global("ANDwarfCreditNoPay","GLOBAL",0)
+RealGlobalTimerExpired("ANshakalTimer","GLOBAL")
+THEN
+RESPONSE #100
+SetGlobal("ANshakalexists","AR0400",2)
+SetGlobal("ANshakalTalk","AR0400",1)
+StartCutSceneMode()
+CutSceneId(Player1) 
+Wait(1)
+CreateCreatureObject("bdoffscr",Player1,0,0,0)  
+ApplySpellRES("bdoffscr","bdoffscr") 
+SmallWait(1)
+CreateCreatureObject("ANshakal","bdoffscr",0,0,0)  
+CreateCreatureObject("ANcaytig","bdoffscr",0,0,0)
+CreateCreatureObject("ANorc1","bdoffscr",0,0,0)
+CreateCreatureObject("ANorc2","bdoffscr",0,0,0)
+ActionOverride("ANshakal",FaceObject([PC]))
+ActionOverride("ANcaytig",FaceObject([PC]))
+ActionOverride("ANorc1",FaceObject([PC]))
+ActionOverride("ANorc2",FaceObject([PC]))
+Wait(1)
+EndCutSceneMode()
+SmallWait(1)
+ActionOverride(Player1,SetDialog("PLAYER1"))
+ActionOverride(Player1,StartDialog("Player1",Myself))
+END
+
+IF 
+Global("ANkors","GLOBAL",1)
+Global("ANsheilaExists","AR0400",0)
+
+THEN
+  RESPONSE #100
+        SetGlobal("ANsheilaExists","AR0400",1)
+        CreateCreature("ANsheila",[3626.2282],10)
+		ActionOverride(Player1,SetDialog("PLAYER1"))
+        Continue() 
+END
+
+IF 
+GlobalGT("ANkors","GLOBAL",2)
+Global("ANlorens","GLOBAL",7)
+PartyGoldGT(699)
+Global("ANshakalexists","AR0400",2)
+
+THEN
+  RESPONSE #100
+        SetGlobal("ANshakalexists","AR0400",3)
+        CreateCreature("ANshakal",[1609.1795],0)
+		CreateCreature("ANcaytig",[1549.1708],2)
+		CreateCreature("ANorc1",[1678.1599],0)
+		CreateCreature("ANorc2",[1603.1655],3)
+		ActionOverride(Player1,SetDialog("PLAYER1"))
+END
+
+IF 
+Global("ANshakal","GLOBAL",2)
+
+THEN
+  RESPONSE #100
+        SetGlobal("ANshakal","GLOBAL",3)
+		StartCutSceneMode()
+		StorePartyLocations()
+		FadeFromColor([70.0],0)
+		ActionOverride(Player1,LeaveAreaLUA("AN0060","",[365.617],8))
+        ActionOverride(Player2,LeaveAreaLUA("AN0060","",[259.605],8))
+        ActionOverride(Player3,LeaveAreaLUA("AN0060","",[420.687],8))
+        ActionOverride(Player4,LeaveAreaLUA("AN0060","",[420.644],8))
+        ActionOverride(Player5,LeaveAreaLUA("AN0060","",[316.614],8))
+        ActionOverride(Player6,LeaveAreaLUA("AN0060","",[341.608],8))
+		Wait(1)
+		EndCutSceneMode()
+        Continue() 
+END
+
+
+IF 
+GlobalGT("ANshakal","GLOBAL",0)
+Global("ANsheilaPay","GLOBAL",1)
+Global("ANsheilaJournal","AR0400",0)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANsheilaJournal","AR0400",1)  
+AddJournalEntry(@1102,QUEST_DONE)
+END
+
+IF 
+GlobalGT("ANshakal","GLOBAL",0)
+Global("ANsheilaPay","GLOBAL",2)
+Global("ANsheilaJournal","AR0400",0)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANsheilaJournal","AR0400",1)  
+AddJournalEntry(@1103,QUEST_DONE)
+END
+
+IF 
+GlobalGT("ANshakal","GLOBAL",0)
+Global("ANsheilaPay","GLOBAL",0)
+Global("ANsheilaJournal","AR0400",0)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANsheilaJournal","AR0400",1)  
+ActionOverride("ANsheila",EscapeArea())
+AddJournalEntry(@1101,QUEST_DONE)
+END
+
+IF 
+Global("ANshakal","GLOBAL",8)
+!Exists("ANshakal")
+
+THEN
+  RESPONSE #100
+        SetGlobal("ANshakal","GLOBAL",9)
+        SetGlobalTimer("ANShahbazTimer","GLOBAL","ONE_DAY")
+END
+
+IF 
+Global("Chapter","GLOBAL",%bg2_chapter_6%)
+GlobalGT("ANkors","GLOBAL",1)
+!Global("ANkors","GLOBAL",8)
+Global("ANsheilaWhoreExists","AR0400",0)
+
+THEN
+  RESPONSE #100
+        SetGlobal("ANsheilaWhoreExists","AR0400",1)
+        CreateCreature("ANsheila",[2824.2273],0)
+		ActionOverride(Player1,SetDialog("PLAYER1"))
+        Continue() 
+END

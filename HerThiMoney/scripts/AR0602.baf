@@ -1,0 +1,9 @@
+IF
+Global("ANPlayer1DS","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ActionOverride(Player1,ChangeAIScript("Player1",OVERRIDE))
+    ActionOverride(Player1,SetDialogue("Player1"))
+    SetGlobal("ANPlayer1DS","GLOBAL",1)
+    Continue()
+END

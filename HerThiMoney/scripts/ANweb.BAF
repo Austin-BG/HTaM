@@ -1,0 +1,8 @@
+IF
+	Entered([ANYONE])
+THEN
+	RESPONSE #100
+		DisplayString(LastTrigger,14381)  // Ловушка сработала
+		ForceSpell(LastTrigger,WIZARD_WEB)  // SPWI215.SPL (Паутина)
+END
+

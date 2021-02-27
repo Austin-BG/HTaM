@@ -1,0 +1,24 @@
+IF 
+Global("AnbeggarExists","AR0500",0)
+OR(2)
+Global("Chapter","GLOBAL",%bg2_chapter_2%)
+Global("Chapter","GLOBAL",%bg2_chapter_3%)
+
+THEN
+  RESPONSE #100
+SetGlobal("AnbeggarExists","AR0500",1)
+CreateCreature("ANbeggar",[3211.1387],16)
+CreateCreature("ANurgrl",[3300.1434],16)
+Continue() 
+END
+
+IF 
+GlobalGT("Chapter","GLOBAL",%bg2_chapter_4%)
+Global("ANandyBeggar","GLOBAL",1)
+Exists("ANandy")
+
+THEN
+  RESPONSE #100
+ActionOverride("ANandy",DestroySelf())
+ActionOverride("ANurgrl",DestroySelf())
+END

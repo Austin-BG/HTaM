@@ -1,0 +1,11 @@
+IF 
+Global("ANParisExists","AR1000",0)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANParisExists","AR1000",1)
+CreateCreature("ANParis",[2394.2647],10)
+Continue() 
+END
+
+

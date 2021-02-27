@@ -1,0 +1,60 @@
+IF
+    HasItem("ANgemM",Player1)
+	OR(2)
+	Global("ANStashRenalJOB","GLOBAL",15)
+	Global("ANStashRenalJOB","GLOBAL",16)
+THEN 
+RESPONSE #100
+	ActionOverride(Player1,DestroyItem("ANgemM"))
+	ActionOverride(Player1,CreateItem("ANgemMF",0,0,0))
+END  
+IF 
+  HasItem("ANgemM",Player2)
+	OR(2)
+	Global("ANStashRenalJOB","GLOBAL",15)
+	Global("ANStashRenalJOB","GLOBAL",16)
+THEN 
+RESPONSE #100
+	ActionOverride(Player2,DestroyItem("ANgemM"))
+	ActionOverride(Player2,CreateItem("ANgemMF",0,0,0))
+END
+IF 
+  HasItem("ANgemM",Player3)
+	OR(2)
+	Global("ANStashRenalJOB","GLOBAL",15)
+	Global("ANStashRenalJOB","GLOBAL",16)
+THEN 
+RESPONSE #100
+	ActionOverride(Player3,DestroyItem("ANgemM"))
+	ActionOverride(Player3,CreateItem("ANgemMF",0,0,0))
+END
+IF 
+  HasItem("ANgemM",Player4)
+  	OR(2)
+	Global("ANStashRenalJOB","GLOBAL",15)
+	Global("ANStashRenalJOB","GLOBAL",16)
+THEN 
+RESPONSE #100
+	ActionOverride(Player4,DestroyItem("ANgemM"))
+	ActionOverride(Player4,CreateItem("ANgemMF",0,0,0))
+END
+IF 
+  HasItem("ANgemM",Player5)
+  	OR(2)
+	Global("ANStashRenalJOB","GLOBAL",15)
+	Global("ANStashRenalJOB","GLOBAL",16)
+THEN 
+RESPONSE #100
+	ActionOverride(Player5,DestroyItem("ANgemM"))
+	ActionOverride(Player5,CreateItem("ANgemMF",0,0,0))
+END
+IF 
+  HasItem("ANgemM",Player6)
+  	OR(2)
+	Global("ANStashRenalJOB","GLOBAL",15)
+	Global("ANStashRenalJOB","GLOBAL",16)
+THEN 
+RESPONSE #100
+	ActionOverride(Player6,DestroyItem("ANgemM"))
+	ActionOverride(Player6,CreateItem("ANgemMF",0,0,0))
+END

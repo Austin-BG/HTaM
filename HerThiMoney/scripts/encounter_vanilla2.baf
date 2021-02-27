@@ -1,0 +1,58 @@
+IF
+	OnCreation()
+	Global("AN_PayEncounter","GLOBAL",1)
+THEN
+	RESPONSE #100
+		MultiPlayerSync()
+		SetGlobal("AN_PayEncounter","GLOBAL",0)
+		ActionOverride(Player1,LeaveAreaLUA("AN0060","",[330.610],SSE))
+		ActionOverride(Player2,LeaveAreaLUA("AN0060","",[380.660],SSE))
+		ActionOverride(Player3,LeaveAreaLUA("AN0060","",[300.660],SSE))
+		ActionOverride(Player4,LeaveAreaLUA("AN0060","",[345.685],SSE))
+		ActionOverride(Player5,LeaveAreaLUA("AN0060","",[255.685],SSE))
+		ActionOverride(Player6,LeaveAreaLUA("AN0060","",[310.725],SSE))
+		MultiPlayerSync()
+END
+
+IF
+	OnCreation()
+	GlobalGT("AN_ALLAREA_RENCOUNTER","GLOBAL",23)
+OR(2)
+	Global("ANDwarfCreditPay","GLOBAL",1) //переменная для запуска энкаунтера
+    Global("ANDwarfCreditNoPay","GLOBAL",1)	
+THEN
+	RESPONSE #100
+		MultiPlayerSync()
+		IncrementGlobal("AN_ALLAREA_RENCOUNTER","GLOBAL",1)
+		SetGlobalTimer("AN_RENCOUNTER_TIMER","GLOBAL",TWO_HOURS)
+		ActionOverride(Player1,LeaveAreaLUA("AN0060","",[330.610],SSE))
+		ActionOverride(Player2,LeaveAreaLUA("AN0060","",[380.660],SSE))
+		ActionOverride(Player3,LeaveAreaLUA("AN0060","",[300.660],SSE))
+		ActionOverride(Player4,LeaveAreaLUA("AN0060","",[345.685],SSE))
+		ActionOverride(Player5,LeaveAreaLUA("AN0060","",[255.685],SSE))
+		ActionOverride(Player6,LeaveAreaLUA("AN0060","",[310.725],SSE))
+		MultiPlayerSync()
+END
+
+IF
+	OnCreation()
+	GlobalGT("AN_ALLAREA_RENCOUNTER","GLOBAL",4)
+OR(2)
+	Global("ANDwarfCreditPay","GLOBAL",1) //переменная для запуска энкаунтера
+    Global("ANDwarfCreditNoPay","GLOBAL",1)	
+THEN
+	RESPONSE #100
+		MultiPlayerSync()
+		IncrementGlobal("AN_ALLAREA_RENCOUNTER","GLOBAL",1)
+		SetGlobalTimer("AN_RENCOUNTER_TIMER","GLOBAL",TWO_HOURS)
+		ActionOverride(Player1,LeaveAreaLUA("AN0060","",[330.610],SSE))
+		ActionOverride(Player2,LeaveAreaLUA("AN0060","",[380.660],SSE))
+		ActionOverride(Player3,LeaveAreaLUA("AN0060","",[300.660],SSE))
+		ActionOverride(Player4,LeaveAreaLUA("AN0060","",[345.685],SSE))
+		ActionOverride(Player5,LeaveAreaLUA("AN0060","",[255.685],SSE))
+		ActionOverride(Player6,LeaveAreaLUA("AN0060","",[310.725],SSE))
+		MultiPlayerSync()
+	RESPONSE #100
+		IncrementGlobal("AN_ALLAREA_RENCOUNTER","GLOBAL",1)
+		SetGlobalTimer("AN_RENCOUNTER_TIMER","GLOBAL",TWO_HOURS)
+END

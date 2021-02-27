@@ -1,0 +1,29 @@
+IF 
+Global("ANlorioExists","AR0334",0)
+Global("ANsirene","GLOBAL",20)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANlorioExists","AR0334",1)
+CreateCreature("ANlorio",[406.540],10)
+END
+
+IF 
+Global("ANsirene","GLOBAL",21)
+
+THEN
+  RESPONSE #100
+        SetGlobal("ANsirene","GLOBAL",22)
+		StartCutSceneMode()
+		FadeFromColor([70.0],0)
+		ActionOverride(Player1,LeaveAreaLUA("AR0500","",[313.2745],10))
+        ActionOverride(Player2,LeaveAreaLUA("AR0500","",[380.2790],10))
+        ActionOverride(Player3,LeaveAreaLUA("AR0500","",[277.2806],10))
+        ActionOverride(Player4,LeaveAreaLUA("AR0500","",[353.2834],10))
+        ActionOverride(Player5,LeaveAreaLUA("AR0500","",[294.2879],10))
+        ActionOverride(Player6,LeaveAreaLUA("AR0500","",[273.2926],10))
+		Wait(1)
+		EndCutSceneMode()
+END
+
+

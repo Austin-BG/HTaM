@@ -1,0 +1,42 @@
+// Attack Adalon
+
+IF
+	Global("AN_Adalon_attack","AR2102",0)  // Adalon's Cave
+	Allegiance("udsilver",ENEMY) 
+THEN
+	RESPONSE #100
+		SetGlobal("AN_Adalon_attack","AR2102",1)
+        Continue()		
+END
+
+
+// Adalon is dead
+
+IF
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Dead("udsilver")
+	Global("ANAdalonDeadTalk","AR2102",0)
+THEN
+	RESPONSE #100
+	SetGlobal("ANAdalonDeadTalk","AR2102",1)
+    RealSetGlobalTimer("ANAdalonDeadTalkTimer","GLOBAL",3)
+END
+
+IF
+    RealGlobalTimerExpired("ANAdalonDeadTalkTimer","GLOBAL")
+	Global("ANAdalonDeadTalk","AR2102",1)
+THEN
+	RESPONSE #100
+	SetGlobal("ANAdalonDeadTalk","AR2102",2)
+	Continue()
+END
+
+IF
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!ActuallyInCombat()
+	Global("ANAdalonDeadTalk","AR2102",2)
+THEN
+	RESPONSE #100
+ActionOverride(Player1,SetDialog("PLAYER1"))	
+ActionOverride(Player1,StartDialog("Player1",Myself))
+END

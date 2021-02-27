@@ -1,0 +1,55 @@
+IF
+	PartyHasItem("c6lantho")
+	OnCreation()
+	Global("AranRomanceActive","GLOBAL",2)
+	Global("ANAranTethyr","GLOBAL",0)
+THEN
+	RESPONSE #100
+Explore()		
+RealSetGlobalTimer("ANAranTethyrTimer","GLOBAL",5)
+END
+
+IF
+Global("ANAranTethyr","GLOBAL",0)
+RealGlobalTimerExpired("ANAranTethyrTimer","GLOBAL")
+THEN
+	RESPONSE #100
+SetGlobal("ANAranTethyr","GLOBAL",1)
+ClearAllActions()
+StorePartyLocations()
+Wait(1)
+ActionOverride(Player1,SetDialog("PLAYER1"))
+ActionOverride(Player1,StartDialog("Player1",Myself))
+END
+
+IF
+Global("ANAranTethyr","GLOBAL",2)
+THEN
+	RESPONSE #100
+SetGlobal("ANAranTethyr","GLOBAL",3)
+DayNight(MIDNIGHT)
+FadeToColor([20.20],0)
+Wait(1)
+DisplayStringHead(Player1,@103)
+Wait(5)
+ActionOverride(Player1,SetDialog("PLAYER1"))
+END
+
+IF
+Global("ANAranTethyr","GLOBAL",3)
+THEN
+	RESPONSE #100
+SetGlobal("ANAranTethyr","GLOBAL",4)
+ActionOverride(Player1,LeaveAreaLUAPanic("AN1204","",[456.397],N)) 
+ActionOverride(Player1,LeaveAreaLUA("AN1204","",[456.397],N))
+END
+
+IF
+Global("ANAranTethyr","GLOBAL",21)
+THEN
+	RESPONSE #100
+SetGlobal("ANAranTethyr","GLOBAL",22)
+Wait(1)
+ActionOverride(Player1,SetDialog("PLAYER1"))
+ActionOverride(Player1,StartDialog("Player1",Myself))
+END

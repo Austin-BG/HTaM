@@ -1,0 +1,24 @@
+IF
+Global("AranNaliaTalk","GLOBAL",0)
+Global("AranRomanceActive","GLOBAL",2)
+THEN
+	RESPONSE #100
+	   SetGlobal("AranNaliaTalk","GLOBAL",1)
+	   RealSetGlobalTimer("AranNaliaTalkTimer","GLOBAL",1700)
+END
+
+IF
+Global("AranNaliaTalk","GLOBAL",1)
+Global("AranRomanceActive","GLOBAL",2)
+RealGlobalTimerExpired("AranNaliaTalkTimer","GLOBAL")
+InParty(Myself) 
+!Dead("Nalia")
+!StateCheck(Myself,CD_STATE_NOTVALID)
+See(Player1)
+CombatCounter(0)
+!See([ENEMY])
+THEN
+	RESPONSE #100
+	   SetGlobal("AranNaliaTalk","GLOBAL",2)
+       ActionOverride(Myself,Dialog(Player1))
+END

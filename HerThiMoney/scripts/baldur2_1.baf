@@ -1,0 +1,17 @@
+IF
+	GlobalTimerExpired("ANShahbazTimer","GLOBAL")
+    Global("ANshakal","GLOBAL",9)	
+	AreaType(OUTDOOR)
+	AreaType(CITY)
+	CombatCounter(0)
+THEN
+       RESPONSE #100
+		SetGlobal("ANshakal","GLOBAL",10)
+		CreateCreatureObject("bdoffscr",Player1,0,0,0)  
+		ApplySpellRES("bdoffscr","bdoffscr")  // No such index
+		SmallWait(1)
+		CreateCreatureObject("ANmess1","bdoffscr",0,0,0)  
+		ActionOverride("ANmess1",Dialog(Player1))
+END
+
+

@@ -1,0 +1,41 @@
+IF
+	Global("ANDwarfCreditPay","GLOBAL",3)
+	IfValidForPartyDialog("Korgan")
+	!ActuallyInCombat()
+THEN
+	RESPONSE #100
+ActionOverride(Player1,SetDialog("PLAYER1"))
+ActionOverride(Player1,StartDialog("Player1",Myself))
+END
+
+IF
+	AreaCheck("AN0060")
+	IfValidForPartyDialog("Korgan")
+	!ActuallyInCombat()
+	Dead("ANOwni") 
+	!Global("ANOwniPayFriend","GLOBAL",2) 
+	Global("ANKorganVeksel","AN0060",0)
+THEN
+	RESPONSE #100
+SetGlobal("ANKorganVeksel","AN0060",1)	
+ActionOverride(Player1,SetDialog("PLAYER1"))
+ActionOverride("Korgan",StartDialogNoSet(Player1))
+END
+
+IF
+GlobalTimerExpired("KorganContract","GLOBAL")
+Global("ANkors","GLOBAL",0)
+OR(2)
+!Global("TalkedToMadeen","GLOBAL",0)
+!Global("TalkedToTolgerias","GLOBAL",0)
+Global("KorMentionedContract","LOCALS",0)
+AreaType(OUTDOOR)
+!AreaCheck("AR0406")
+See(Player1)
+CombatCounter(0)
+THEN
+	RESPONSE #100
+SetGlobal("KorMentionedContract","LOCALS",1)	
+ActionOverride(Player1,SetDialog("PLAYER1"))
+ActionOverride("Korgan",StartDialogNoSet(Player1))
+END

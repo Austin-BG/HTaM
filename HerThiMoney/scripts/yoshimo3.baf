@@ -1,0 +1,24 @@
+IF
+Global("AranYoshimoTalk","GLOBAL",0)
+Global("AranRomanceActive","GLOBAL",2)
+THEN
+	RESPONSE #100
+	   SetGlobal("AranYoshimoTalk","GLOBAL",1)
+	   RealSetGlobalTimer("AranYoshimoTalkTimer","GLOBAL",600)
+END
+
+IF
+Global("AranYoshimoTalk","GLOBAL",1)
+Global("AranRomanceActive","GLOBAL",2)
+RealGlobalTimerExpired("AranYoshimoTalkTimer","GLOBAL")
+InParty(Myself) 
+!Dead("Yoshimo")
+!StateCheck(Myself,CD_STATE_NOTVALID)
+See(Player1)
+CombatCounter(0)
+!See([ENEMY])
+THEN
+	RESPONSE #100
+	   SetGlobal("AranYoshimoTalk","GLOBAL",2)
+       ActionOverride(Myself,Dialog(Player1))
+END

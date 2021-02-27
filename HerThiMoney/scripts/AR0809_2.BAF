@@ -1,0 +1,9 @@
+IF
+	Global("OwniFightBodhi","GLOBAL",1)
+	!Dead("ANOwni")  
+	Global("OwniSpawn1","AR0809",0)  // Bodhi's Lair (Abduction Plot, getting Imoen's soul)
+THEN
+	RESPONSE #100
+		SetGlobal("OwniSpawn1","AR0809",1)  // Bodhi's Lair (Abduction Plot, getting Imoen's soul)
+		CreateCreatureObject("ANOwni",Player1,0,0,0)  
+END

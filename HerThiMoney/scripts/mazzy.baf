@@ -1,0 +1,8 @@
+IF
+	AreaCheck("AR2102")
+	Global("AN_Adalon_attack","AR2102",1)  // Adalon's Cave
+	IfValidForPartyDialog(Myself)
+THEN
+	RESPONSE #100
+	ActionOverride("Mazzy",StartDialogNoSet(Player1))
+END

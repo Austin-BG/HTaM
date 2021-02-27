@@ -1,0 +1,27 @@
+IF
+Global("AranRomanceActive","GLOBAL",2)
+Global("AranHaerdaTalk1","GLOBAL",0)
+
+THEN
+RESPONSE #100
+RealSetGlobalTimer("ANAranHaerdaTalkTimer","GLOBAL",500)
+SetGlobal("AranHaerdaTalk1","GLOBAL",1)
+END
+
+IF
+RealGlobalTimerExpired("ANAranHaerdaTalkTimer","GLOBAL")
+Global("AranRomanceActive","GLOBAL",2)
+Global("AranHaerdaTalk1","GLOBAL",1)
+See(Player1)
+InParty(Myself)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+CombatCounter(0)
+
+THEN
+RESPONSE #100
+ActionOverride(Player1,SetDialog("PLAYER1"))
+SetGlobal("AranHaerdaTalk1","GLOBAL",2)
+Wait(1)
+ActionOverride(Myself,StartDialogNoSet(Player1))
+END
+

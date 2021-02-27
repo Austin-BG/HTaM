@@ -1,0 +1,13 @@
+IF
+Global("AranLove","GLOBAL",12) 
+Global("AranJaheiraTalk1","GLOBAL",0)
+See(Player1)
+InParty(Myself)
+!InParty("Anomen")
+!InParty("Rasaad")
+!StateCheck(Myself,CD_STATE_NOTVALID)
+CombatCounter(0)
+THEN
+RESPONSE #100
+ActionOverride(Myself,StartDialogNoSet(Player1))
+END

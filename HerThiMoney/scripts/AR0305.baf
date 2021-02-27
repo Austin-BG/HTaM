@@ -1,0 +1,22 @@
+IF 
+Global("ANButchExists","GLOBAL",0)
+Global("ANStashRenalJOB","GLOBAL",1)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANButchExists","GLOBAL",1)
+CreateCreature("ANButch",[1035.742],5)
+Continue()
+END
+
+IF 
+Global("ANButchExists","GLOBAL",1)
+!Global("ANStashRenalJOB","GLOBAL",1)
+!Global("ANStashRenalJOB","GLOBAL",2)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANButchExists","GLOBAL",0)
+ActionOverride("ANButch",EscapeArea())
+END
+

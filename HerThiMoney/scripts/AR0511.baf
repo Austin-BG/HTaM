@@ -1,0 +1,44 @@
+IF 
+Global("AranLove","GLOBAL",25)
+Global("LeenaExists","AR0511",0)
+THEN
+  RESPONSE #100
+SetGlobal("LeenaExists","AR0511",1)  
+CreateCreature("ANleena1",[1160.240],0)
+END
+
+IF 
+Global("ANleenaGuild","GLOBAL",1)
+THEN
+  RESPONSE #100
+        SetGlobal("ANleenaGuild","GLOBAL",2)
+		StartCutSceneMode()
+		CreateCreatureObject("bdoffscr",Player1,0,0,0)  
+		ApplySpellRES("bdoffscr","bdoffscr")  // No such index
+		SmallWait(5)
+		CreateCreatureObject("ANtony1","bdoffscr",0,0,0)  
+		Wait(1)
+		DisplayStringHead(Player1,@84)
+		Wait(3)
+		ActionOverride("ANleena1",DestroySelf())
+		ActionOverride("ANtony1",DestroySelf())
+		FadeFromColor([70.0],0)
+		ActionOverride(Player1,LeaveAreaLUA("AR0307","",[4480.2026],1))
+        ActionOverride(Player2,LeaveAreaLUA("AR0307","",[4482.2027],1))
+        ActionOverride(Player3,LeaveAreaLUA("AR0307","",[4484.2028],1))
+        ActionOverride(Player4,LeaveAreaLUA("AR0307","",[4486.2029],1))
+        ActionOverride(Player5,LeaveAreaLUA("AR0307","",[4488.2030],1))
+        ActionOverride(Player6,LeaveAreaLUA("AR0307","",[4490.2031],1))
+		Wait(1)
+		EndCutSceneMode()
+END
+
+IF 
+Dead("ANleena")
+THEN
+  RESPONSE #100
+SetGlobal("AranLove","GLOBAL",27) 
+SetGlobal("ANleenaDead","GLOBAL",1)  
+AddJournalEntry(@1049,QUEST)
+END
+

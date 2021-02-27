@@ -1,0 +1,49 @@
+IF 
+Global("ANTroll","GLOBAL",1)
+OnCreation()
+THEN
+  RESPONSE #100
+ActionOverride(Player1,SetDialog("PLAYER1"))
+Continue()
+END
+
+IF 
+Global("ANlorioExists","AR0300",0)
+!Global("ANTrollLorio","GLOBAL",0)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANlorioExists","AR0300",1)
+CreateCreature("ANlorio",[4040.3088],0)
+END
+
+IF 
+Global("ANmodExists","AR0300",0)
+Global("ANsirene","GLOBAL",13)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANmodExists","AR0300",1)
+CreateCreature("ANgirl1",[1557.1026],14)
+END
+
+IF
+Global("ANsirene","GLOBAL",14)
+
+THEN 
+RESPONSE #100
+SetGlobal("ANsirene","GLOBAL",15)
+ActionOverride("ANmod",Deactivate(Myself))
+StartCutSceneMode()
+CutSceneId(Player1)  
+DisplayStringHead(Player1,@129)
+Wait(4)
+FadeFromColor([60.0],0)
+ActionOverride("ANmod",Activate(Myself))
+Wait(1)
+EndCutSceneMode()
+ActionOverride("ANmod",StartDialogNoSet("Player1"))
+END  
+
+
+

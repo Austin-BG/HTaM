@@ -1,0 +1,11 @@
+IF 
+Global("ANSHTLEGexists","GLOBAL",0)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANSHTLEGexists","GLOBAL",1)
+CreateCreature("ANSHTLEG",[861.2836],7)
+Continue() 
+END
+
+

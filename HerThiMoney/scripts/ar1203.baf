@@ -1,0 +1,29 @@
+// Firkraag is dead
+
+IF
+	Dead("FIRKRA02")
+	Global("AN_Firkraag_DeadTalk","AR1203",0)
+THEN
+	RESPONSE #100
+	SetGlobal("AN_Firkraag_DeadTalk","AR1203",1)
+    RealSetGlobalTimer("ANFirkraagDeadTalkTimer","GLOBAL",3)
+	Continue() 
+END
+
+IF
+    RealGlobalTimerExpired("ANFirkraagDeadTalkTimer","GLOBAL")
+	Global("AN_Firkraag_DeadTalk","AR1203",1)
+THEN
+	RESPONSE #100
+	SetGlobal("AN_Firkraag_DeadTalk","AR1203",2)
+	Continue()
+END
+
+IF
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!ActuallyInCombat()
+	Global("AN_Firkraag_DeadTalk","AR1203",2)
+THEN
+	RESPONSE #100
+ActionOverride(Player1,StartDialog("Player1",Myself))
+END

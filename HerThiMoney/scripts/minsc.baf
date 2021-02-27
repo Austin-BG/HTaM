@@ -1,0 +1,60 @@
+IF
+AreaCheck("AR0602")
+Range("Door14",20)
+Global("minscdungeon","AR0602",0)
+InParty("Imoen") 
+!Dead("Imoen")
+!Dead("Minsc")
+See("Imoen")
+CombatCounter(0)
+!See([ENEMY])
+!StateCheck(Myself,CD_STATE_NOTVALID)
+!StateCheck("Imoen",CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("minscdungeon","AR0602",2)
+Interact("Imoen")
+END
+
+IF 
+Global("ANMyrain", "GLOBAL",0)
+!Global("ShadowWork","GLOBAL",0)
+InParty(Myself)
+!Dead("Minsc")
+AreaType(OUTDOOR)
+AreaType(CITY)
+THEN
+RESPONSE #20
+Weather (RAIN)
+SetGlobal ("ANMyrain", "GLOBAL", 1)
+RealSetGlobalTimer("Myrain","GLOBAL",40)
+END
+
+IF
+RealGlobalTimerExpired("Myrain","GLOBAL")
+Global ("ANMyrain", "GLOBAL",1)
+See(Player1)
+InParty(Myself)
+!Dead("Minsc")
+CombatCounter(0)
+AreaType(OUTDOOR)
+AreaType(CITY)
+THEN
+RESPONSE #100
+SetGlobal ("ANMyrain", "GLOBAL", 2)
+END
+
+IF
+Global ("ANMyrain", "GLOBAL",2)
+See(Player1)
+InParty(Myself)
+!Dead("Minsc")
+!StateCheck(Myself,CD_STATE_NOTVALID)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+AreaType(OUTDOOR)
+AreaType(CITY)
+THEN
+RESPONSE #100
+StartDialog("MINSCJ",Player1)
+Weather (RAIN)
+END

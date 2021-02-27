@@ -1,0 +1,66 @@
+IF 
+Global("ANStashRenalJOB","GLOBAL",6)
+Global("ANHurpexists","GLOBAL",0)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANHurpexists","GLOBAL",1)
+CreateCreature("ANHurp",[3494.2181],9)
+Continue() 
+END
+
+IF
+Global("ANStashRenalJOB","GLOBAL",6)
+Dead("ANHurp")
+THEN
+	RESPONSE #100
+	SetGlobal("ANStashHurpDead","GLOBAL",1)
+Continue() 
+END
+
+IF
+Global("ANStashRenalJOB","GLOBAL",7)
+Global("ANStashEdwinGross","GLOBAL",0)
+InParty("Edwin")
+!Dead("Edwin")
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("ANStashEdwinGross","GLOBAL",1)
+Continue() 
+END
+
+IF
+Global("ANStashRenalJOB","GLOBAL",4)
+InParty("Edwin") 
+!Dead("Edwin")
+THEN
+	RESPONSE #100
+SetGlobal("ANStashRenalJOB","GLOBAL",5)	
+Continue() 
+END
+
+IF
+Global("ANStashRenalJOB","GLOBAL",5)
+CombatCounter(0)
+THEN
+	RESPONSE #100
+ActionOverride(Player1,StartDialog("Player1",Myself))
+END
+
+
+IF
+Global("ANStashRenalJOB","GLOBAL",7)
+Global("ANStashEdwinGross","GLOBAL",1)
+InParty("Edwin")
+!Dead("Edwin")
+!StateCheck("Edwin",CD_STATE_NOTVALID)
+CombatCounter(0)
+THEN
+RESPONSE #100
+ActionOverride(Player1,StartDialog("Player1",Myself))
+END
+
+
+
+

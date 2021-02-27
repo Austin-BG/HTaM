@@ -1,0 +1,43 @@
+IF
+	Range([PC],15)
+	NumTimesTalkedTo(0)
+	See([PC])
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+	ActionOverride(Player1,SetDialog("PLAYER1"))
+	StartDialogNoSet([PC])
+END
+
+
+IF
+	StateCheck(Myself,STATE_PANIC)
+THEN
+	RESPONSE #100
+		RandomWalkContinuous()
+END
+
+IF
+	!See([PC])
+THEN
+	RESPONSE #100
+		RandomWalkContinuous()
+END
+
+
+IF
+    Allegiance(Myself,ENEMY)
+	OR(2)
+		!GlobalTimerNotExpired("AN_Cast","LOCALS")
+		CheckStatGT(Myself,0,AURACLEANSING)
+	CheckStatLT(Myself,1,STONESKINS)
+	HaveSpell(WIZARD_STONE_SKIN)  // SPWI408.SPL (Каменная кожа)
+	!StateCheck(Myself,STATE_SILENCED)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobalTimer("AN_Cast","LOCALS",ONE_ROUND)
+		ForceSpell(Myself,WIZARD_STONE_SKIN)  // SPWI408.SPL (Каменная кожа)
+		RemoveSpell(WIZARD_STONE_SKIN)  // SPWI408.SPL (Каменная кожа)
+		SetInterrupt(TRUE)
+END

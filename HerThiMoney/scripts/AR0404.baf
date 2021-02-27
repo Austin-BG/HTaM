@@ -1,0 +1,162 @@
+// Оба заколдованы 
+IF 
+Global("ANAranLamp","GLOBAL",6)
+Global("ANAranLampRenal","GLOBAL",2)
+Global("ANazoraExists","AR0404",0)
+Global("ANjoviExists","AR0404",0)
+Global("ANbasiliskExists","AR0404",0)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANazoraExists","AR0404",1)
+SetGlobal("ANjoviExists","AR0404",1)
+SetGlobal("ANbasiliskExists","AR0404",1)
+CreateCreature("ANjovi1",[1245.1232],0)
+CreateCreature("ANazora1",[1237.1243],0)
+CreateCreature("ANbasil",[1290.1307],10)
+END
+
+// Джови заколдован, Азоры нет
+IF 
+Global("ANAranLamp","GLOBAL",6)
+!Global("ANAranLampRenal","GLOBAL",2)
+Global("ANjoviExists","AR0404",0)
+Global("ANbasiliskExists","AR0404",0)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANjoviExists","AR0404",1)
+SetGlobal("ANbasiliskExists","AR0404",1)
+CreateCreature("ANjovi1",[1245.1232],0)
+CreateCreature("ANbasil",[1290.1307],10)
+END
+
+// Азора расколдована
+IF 
+Global("ANAranLampRenal","GLOBAL",2)
+OR(2) Global("ANAranLamp","GLOBAL",6) Global("ANAranLamp","GLOBAL",7)
+Global("ANAzoraStoneEscape","GLOBAL",0)
+!StateCheck("ANazora",STATE_STONE_DEATH)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANAzoraStoneEscape","GLOBAL",1)  
+DisplayStringHead("ANazora",@96)
+ActionOverride("ANazora",RunAwayFrom(Player1,120)) 
+Wait(3)
+AddJournalEntry(@1055,QUEST)
+ActionOverride("ANazora",DestroySelf())
+END
+
+// Джови расколдован, Азора рядом
+IF 
+OR(2) Global("ANAranLamp","GLOBAL",6) Global("ANAranLamp","GLOBAL",7)
+Global("ANjoviNoStone","GLOBAL",0)
+!StateCheck("ANjovi",STATE_STONE_DEATH)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANjoviNoStone","GLOBAL",1) 
+ActionOverride("ANjovi",StartDialogNoSet(Player1)) 
+END
+
+// Джови и Азора заколдованы, василиск мертв
+IF
+	Global("ANAranLamp","GLOBAL",6)
+    Global("ANAranLampRenal","GLOBAL",2)
+	Dead("ANbasil")
+	CombatCounter(0)
+THEN
+	RESPONSE #100
+SetGlobal("ANAranLamp","GLOBAL",7)	
+ActionOverride(Player1,SetDialog("PLAYER1"))
+SmallWait(3)	
+ActionOverride(Player1,StartDialog("Player1",Myself))
+END
+
+// Джови заколдован, Азоры нет, василиск мертв
+IF
+    Global("ANAranLamp","GLOBAL",6)
+    !Global("ANAranLampRenal","GLOBAL",2)
+	Dead("ANbasil")
+THEN
+	RESPONSE #100
+SetInterrupt(FALSE)	
+SetGlobal("ANAranLamp","GLOBAL",7)	
+ActionOverride(Player1,SetDialog("PLAYER1"))
+CreateCreatureObject("bdoffscr",Player1,0,0,0)  
+ApplySpellRES("bdoffscr","bdoffscr")  
+SmallWait(1)
+CreateCreatureObject("ANazora2","bdoffscr",0,0,0)  
+SetInterrupt(TRUE)	
+ActionOverride("ANazora",StartDialogNoSet("Player1"))
+END
+
+// Джови расколдован, Азора рядом живая
+IF 
+Global("ANAranLamp","GLOBAL",8)
+Global("ANjoviRevive","GLOBAL",1)
+Global("ANjoviNoStone","GLOBAL",0)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANjoviNoStone","GLOBAL",1) 
+SetInterrupt(FALSE)
+Wait(1)
+ActionOverride(Player1,SetSequence(SEQ_CAST))
+ActionOverride(Player1,ApplySpell("ANjovi",WIZARD_STONE_TO_FLESH))
+Wait(1)
+SetInterrupt(TRUE)	
+ActionOverride("ANjovi",StartDialogNoSet(Player1)) 
+END
+
+// Джови убивает Азору
+
+IF 
+Global("ANjoviRevive","GLOBAL",2)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANjoviRevive","GLOBAL",3)
+SetInterrupt(FALSE)
+ActionOverride("ANjovi",FaceObject("ANAzora"))
+ActionOverride("ANjovi",EquipRanged() )
+ActionOverride("ANjovi",Swing())
+Wait(2)
+ActionOverride("ANAzora",Kill(Myself))
+Wait(1)
+SetInterrupt(TRUE)	
+ActionOverride("ANjovi",StartDialogNoSet(Player1)) 
+END
+
+
+// Азора жива, Джови остался окаменевшим, василиск мертв
+// Азора мертва, Джови убит, василиск мертв
+IF
+	Global("ANAranLamp","GLOBAL",8)
+	!Global("ANAranLampRenal","GLOBAL",2)
+	Global("ANAranLampPartyTalk","AR0404",0)	
+	Dead("ANbasil")
+	CombatCounter(0)
+	OR(2)
+	Dead("ANjovi")
+	Global("ANjoviNoStone","GLOBAL",0)
+THEN
+	RESPONSE #100
+SetGlobal("ANAranLampPartyTalk","AR0404",1)	
+ActionOverride(Player1,SetDialog("PLAYER1"))
+SmallWait(3)	
+ActionOverride(Player1,StartDialog("Player1",Myself))
+END
+
+// Джови расколдован, Азора жива и уже ушла
+IF 
+Global("ANAranLamp","GLOBAL",8) 
+Global("ANjoviNoStone","GLOBAL",0)
+!StateCheck("ANjovi",STATE_STONE_DEATH)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANjoviNoStone","GLOBAL",1) 
+ActionOverride("ANjovi",StartDialogNoSet(Player1)) 
+END

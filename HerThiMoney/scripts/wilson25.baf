@@ -1,0 +1,16 @@
+IF
+Global("AranWilsonToB","GLOBAL",1)
+RealGlobalTimerExpired("ANAranLetterWilsonTimer","GLOBAL")
+InParty(Myself) 
+!Dead("Wilson")
+!StateCheck(Myself,CD_STATE_NOTVALID)
+See(Player1)
+CombatCounter(0)
+!See([ENEMY])
+THEN
+	RESPONSE #100
+	   SetGlobal("AranWilsonToB","GLOBAL",2)
+       ActionOverride(Player1,SetDialog("PLAYER1"))
+       SmallWait(3)
+       ActionOverride(Myself,Dialog(Player1))
+END

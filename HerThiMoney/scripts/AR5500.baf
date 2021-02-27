@@ -1,0 +1,27 @@
+// Tony ToB
+IF
+	Global("AranLoveToB","GLOBAL",0) 
+	Global("TonySpawnTob1","AR5500",0)
+THEN
+	RESPONSE #100
+		SetGlobal("AranLoveToB","GLOBAL",1)
+		RealSetGlobalTimer("AranLoveToBTimer","GLOBAL",30)
+
+END
+
+IF
+	RealGlobalTimerExpired("AranLoveToBTimer","GLOBAL")
+	AreaType(OUTDOOR)
+	CombatCounter(0)
+	Global("AranLoveToB","GLOBAL",1) 
+	Global("TonySpawnTob1","AR5500",0)
+THEN
+	RESPONSE #100
+		SetGlobal("TonySpawnTob1","AR5500",1)
+		ActionOverride(Player1,SetDialog("PLAYER1"))
+		CreateCreatureObject("bdoffscr",Player1,0,0,0)  
+		ApplySpellRES("bdoffscr","bdoffscr")  // No such index
+		SmallWait(1)
+		CreateCreatureObject("ANtony1","bdoffscr",0,0,0)  
+		ActionOverride("ANtony",Dialog(Player1))
+END

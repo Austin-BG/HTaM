@@ -1,0 +1,45 @@
+IF
+	GlobalTimerExpired("ANQuayleTimer","GLOBAL")
+	Global("ANQuayleTroll","GLOBAL",0) 
+	AreaType(OUTDOOR)
+	!AreaCheck("AR0700")
+	CombatCounter(0)
+	InParty("Aerie")
+	InParty("7XQUAY")
+	!StateCheck("Aerie",CD_STATE_NOTVALID)
+	!StateCheck("7XQUAY",CD_STATE_NOTVALID)
+	Global("ANbrusTalk","GLOBAL",1)
+  OR(2)
+	Global("Chapter","GLOBAL",%bg2_chapter_2%)
+	Global("Chapter","GLOBAL",%bg2_chapter_3%)
+THEN
+       RESPONSE #100
+		SetGlobal("ANQuayleTroll","GLOBAL",1)
+		SetGlobal("ANTrollEscape","GLOBAL",1)
+		SetGlobal("ANQuayleImp","GLOBAL",1)
+		ActionOverride(Player1,SetDialog("PLAYER1"))
+		CreateCreatureObject("bdoffscr",Player1,0,0,0)  
+		ApplySpellRES("bdoffscr","bdoffscr")  // No such index
+		SmallWait(1)
+		CreateCreatureObject("ANmess","bdoffscr",0,0,0)  
+		ActionOverride("ANmess",Dialog(Player1))
+END
+
+IF 
+Global("ANQuayleTroll","GLOBAL",4)
+InParty("7XQUAY")
+
+THEN
+  RESPONSE #100
+		SetGlobal("ANQuayleTroll","GLOBAL",5)
+		StartCutSceneMode()
+		FadeFromColor([70.0],0)
+		ActionOverride(Player1,LeaveAreaLUA("AR0700","",[2312.2036],8))
+        ActionOverride(Player2,LeaveAreaLUA("AR0700","",[2248.2281],8))
+        ActionOverride(Player3,LeaveAreaLUA("AR0700","",[2263.2114],8))
+        ActionOverride(Player4,LeaveAreaLUA("AR0700","",[2262.2141],8))
+        ActionOverride(Player5,LeaveAreaLUA("AR0700","",[2267.2163],8))
+        ActionOverride(Player6,LeaveAreaLUA("AR0700","",[2227.2162],8))
+		Wait(1)
+		EndCutSceneMode()
+END

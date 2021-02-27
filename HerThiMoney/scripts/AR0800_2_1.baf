@@ -1,0 +1,37 @@
+IF 
+Global("ANlorens","GLOBAL",3)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANlorens","GLOBAL",4)
+StartCutSceneMode()
+CutSceneId(Player1)  
+CreateCreature("ANlorens",[2205.1544],10)
+ActionOverride("ANParis",MoveToPointNoInterrupt([2203.1541]))
+ActionOverride(Player1,MoveToPointNoInterrupt([2200.1678]))
+ActionOverride(Player2,MoveToPointNoInterrupt([2200.1678]))
+ActionOverride(Player3,MoveToPointNoInterrupt([2200.1678]))
+ActionOverride(Player4,MoveToPointNoInterrupt([2200.1678]))
+ActionOverride(Player5,MoveToPointNoInterrupt([2200.1678]))
+ActionOverride(Player6,MoveToPointNoInterrupt([2200.1678]))
+MoveViewPoint([1974.1560],VERY_FAST)
+Wait(4)
+EndCutSceneMode()
+ActionOverride("ANlorens", StartDialogNoSet(Player1))
+END
+
+IF 
+Global("ANlorens","GLOBAL",5)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANlorens","GLOBAL",6)
+ActionOverride("ANlorens",Deactivate(Myself))
+StartCutSceneMode()
+FadeFromColor([70.0],0)
+Wait(2)
+ActionOverride("ANlorens",Activate(Myself))
+Wait(1)
+EndCutSceneMode()
+ActionOverride("ANlorens", StartDialogNoSet(Player1))
+END

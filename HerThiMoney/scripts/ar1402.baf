@@ -1,0 +1,31 @@
+// Thaxll'ssillyia is dead
+
+IF
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Dead("SHADRA01")
+	Global("AN_Thaxll_DeadTalk","AR1402",0)
+THEN
+	RESPONSE #100
+	SetGlobal("AN_Thaxll_DeadTalk","AR1402",1)
+    RealSetGlobalTimer("ANThaxllDeadTalkTimer","GLOBAL",3)
+	Continue() 
+END
+
+IF
+    RealGlobalTimerExpired("ANThaxllDeadTalkTimer","GLOBAL")
+	Global("AN_Thaxll_DeadTalk","AR1402",1)
+THEN
+	RESPONSE #100
+	SetGlobal("AN_Thaxll_DeadTalk","AR1402",2)
+	Continue()
+END
+
+IF
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!ActuallyInCombat()
+	Global("AN_Thaxll_DeadTalk","AR1402",2)
+THEN
+	RESPONSE #100
+ActionOverride(Player1,SetDialog("PLAYER1"))	
+ActionOverride(Player1,StartDialog("Player1",Myself))
+END

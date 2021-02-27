@@ -1,0 +1,14 @@
+IF 
+PartyHasItem("MISCBP")
+Global("ANAranBodhiHeart","GLOBAL",0)
+CombatCounter(0)
+Global("AranRomanceActive","GLOBAL",2)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANAranBodhiHeart","GLOBAL",1)
+ActionOverride(Player1,SetDialog("PLAYER1")) 
+SmallWait(8) 
+ActionOverride(Player1,StartDialog("Player1",Myself))
+END
+

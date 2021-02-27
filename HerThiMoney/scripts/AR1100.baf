@@ -1,0 +1,35 @@
+IF 
+AreaCheck("AR1100")
+Global("ANChikenrangerdruid","AR1100",2)
+
+THEN
+  RESPONSE #100
+StartCutSceneMode()
+CutSceneId(Player1) 
+HideGUI()
+MoveViewPoint([3000.2150],FAST)
+ActionOverride("gemch02",MoveToPoint([3000.2150]))
+Wait(4)
+ActionOverride(Player1,MoveToPoint([3014.2120]))
+Wait(2)
+EndCutSceneMode()
+UnhideGUI()
+SetGlobal("ANChikenrangerdruid","AR1100",3)
+ActionOverride("gemch02",StartDialogueNoSet(Player1))
+END
+
+IF 
+AreaCheck("AR1100")
+Global("ANChikenrangerdruid","AR1100",4)
+
+THEN
+  RESPONSE #100
+FadeFromColor([20.0],0)
+%baf_string_wait%
+SetGlobal("ANChikenrangerdruid","AR1100",5)
+Wait(1)
+ActionOverride("gemch02",StartDialogueNoSet(Player1))
+END
+
+
+

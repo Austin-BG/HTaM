@@ -1,0 +1,10 @@
+IF
+  Global("StartEndBios","AR6200",1)
+  Global("AranRomanceActive","GLOBAL",2)
+  !Global("PlayerChoseEssence","GLOBAL",1)
+  Global("AranBio","GLOBAL",0)
+THEN
+  RESPONSE #100
+   SetGlobal("AranBio","GLOBAL",1)
+   TextScreen("AranEp")
+END 

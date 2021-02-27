@@ -1,0 +1,31 @@
+IF 
+Global("ANSartoriusExists","AR0319",0)
+Global("ANTroll","GLOBAL",5)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANSartoriusExists","AR0319",1)
+CreateCreature("ANsartor",[647.313],8)
+ActionOverride(Player1,SetDialog("PLAYER1"))
+END
+
+IF 
+Global("ANTroll","GLOBAL",9)
+
+THEN
+  RESPONSE #100
+        SetGlobal("ANTroll","GLOBAL",10)
+		ActionOverride("ANsartor",DestroySelf())
+		StartCutSceneMode()
+		FadeFromColor([70.0],0)
+		ActionOverride(Player1,LeaveAreaLUA("AN0715","",[2890.2931],12))
+        ActionOverride(Player2,LeaveAreaLUA("AN0715","",[2865.2989],12))
+        ActionOverride(Player3,LeaveAreaLUA("AN0715","",[2956.2962],12))
+        ActionOverride(Player4,LeaveAreaLUA("AN0715","",[3037.3013],12))
+        ActionOverride(Player5,LeaveAreaLUA("AN0715","",[2830.3037],12))
+        ActionOverride(Player6,LeaveAreaLUA("AN0715","",[3006.3016],12))
+		Wait(1)
+		EndCutSceneMode()
+END
+
+

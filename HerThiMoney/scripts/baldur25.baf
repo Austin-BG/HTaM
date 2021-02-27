@@ -1,0 +1,63 @@
+// ToB
+IF
+	RealGlobalTimerExpired("ANAranLetterToBTimer","GLOBAL")
+	Global("AranLoveToB","GLOBAL",2)
+THEN
+	RESPONSE #100
+		SetGlobal("AranLoveToB","GLOBAL",3)
+		ActionOverride(Player1,SetDialog("PLAYER1"))
+		Wait(1)
+		ActionOverride(Player1,StartDialog("Player1",Myself))
+END
+
+
+IF
+Global("AranLoveToB","GLOBAL",4)
+Global("AranRasaadToB","GLOBAL",0)
+InParty("Rasaad")
+THEN
+	RESPONSE #100
+		SetGlobal("AranRasaadToB","GLOBAL",1)
+        RealSetGlobalTimer("ANAranLetterRasaadTimer","GLOBAL",200)
+END
+
+
+IF
+Global("AranLoveToB","GLOBAL",4)
+Global("AranMinscToB","GLOBAL",0)
+InParty("Minsc")
+THEN
+	RESPONSE #100
+		SetGlobal("AranMinscToB","GLOBAL",1)
+        RealSetGlobalTimer("ANAranLetterMinscTimer","GLOBAL",50)
+END
+
+IF
+Global("AranLoveToB","GLOBAL",4)
+Global("AranSarevokToB","GLOBAL",0)
+InParty("Sarevok")
+THEN
+	RESPONSE #100
+		SetGlobal("AranSarevokToB","GLOBAL",1)
+        RealSetGlobalTimer("ANAranLetterSarevokTimer","GLOBAL",100)
+END
+
+IF
+Global("AranLoveToB","GLOBAL",4)
+Global("AranKorganToB","GLOBAL",0)
+InParty("Korgan")
+THEN
+	RESPONSE #100
+		SetGlobal("AranKorganToB","GLOBAL",1)
+        RealSetGlobalTimer("ANAranLetterKorganTimer","GLOBAL",120)
+END
+
+IF
+Global("AranLoveToB","GLOBAL",4)
+Global("AranWilsonToB","GLOBAL",0)
+InParty("Wilson")
+THEN
+	RESPONSE #100
+		SetGlobal("AranWilsonToB","GLOBAL",1)
+        RealSetGlobalTimer("ANAranLetterWilsonTimer","GLOBAL",500)
+END

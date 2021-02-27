@@ -1,0 +1,349 @@
+// Tony 0
+IF
+	GlobalTimerExpired("ANAranLetter0Timer","GLOBAL")
+	AreaType(OUTDOOR)
+	CombatCounter(0)
+	!HasItemEquiped("BELT05", Player1)
+	Global("AranLovePrologue","GLOBAL",1) 
+	Global("TonySpawn0","GLOBAL",0)
+	Global("Chapter","GLOBAL",%bg2_chapter_3%)
+THEN
+	RESPONSE #100
+		SetGlobal("TonySpawn0","GLOBAL",1)
+		SetGlobal("AranLovePrologue","GLOBAL",2)
+		CreateCreatureObject("bdoffscr",Player1,0,0,0)  
+		ApplySpellRES("bdoffscr","bdoffscr")  // No such index
+		SmallWait(1)
+		CreateCreatureObject("ANtony1","bdoffscr",0,0,0)  
+		ActionOverride("ANtony",Dialog(Player1))
+END
+
+IF
+	Global("AranLovePrologue","GLOBAL",3)
+THEN
+	RESPONSE #100
+		SetGlobal("AranLovePrologue","GLOBAL",4)
+		ActionOverride(Player1,SetDialog("PLAYER1"))
+		Wait(1)
+		ActionOverride(Player1,StartDialog("Player1",Myself))
+END
+
+// Tony 1
+IF
+	GlobalTimerExpired("ANAranLetter1Timer","GLOBAL")
+	AreaType(OUTDOOR)
+	CombatCounter(0)
+	!HasItemEquiped("BELT05", Player1)
+	Global("TonySpawn1","GLOBAL",0)
+	Global("Chapter","GLOBAL",%bg2_chapter_3%)
+THEN
+	RESPONSE #100
+		SetGlobal("TonySpawn1","GLOBAL",1)
+		CreateCreatureObject("bdoffscr",Player1,0,0,0)  
+		ApplySpellRES("bdoffscr","bdoffscr")  // No such index
+		SmallWait(1)
+		CreateCreatureObject("ANtony1","bdoffscr",0,0,0)  
+		ActionOverride("ANtony",Dialog(Player1))
+END
+
+IF
+	Global("AranLove","GLOBAL",2)
+THEN
+	RESPONSE #100
+		SetGlobal("AranLove","GLOBAL",3)
+		ActionOverride(Player1,SetDialog("PLAYER1"))
+		Wait(1)
+		ActionOverride(Player1,StartDialog("Player1",Myself))
+END
+
+// Tony 2
+IF
+	GlobalTimerExpired("ANAranLetter2Timer","GLOBAL")
+	AreaType(OUTDOOR)
+	CombatCounter(0)
+	!HasItemEquiped("BELT05", Player1)
+	Global("TonySpawn2","GLOBAL",0)
+	OR(2)
+	Global("Chapter","GLOBAL",%bg2_chapter_3%)
+	Global("Chapter","GLOBAL",%bg2_chapter_6%)
+THEN
+	RESPONSE #100
+		SetGlobal("TonySpawn2","GLOBAL",1)
+		CreateCreatureObject("bdoffscr",Player1,0,0,0)  
+		ApplySpellRES("bdoffscr","bdoffscr")  // No such index
+		SmallWait(1)
+		CreateCreatureObject("ANtony1","bdoffscr",0,0,0)  
+		ActionOverride("ANtony",Dialog(Player1))
+END
+
+IF
+	Global("AranLove","GLOBAL",13)
+THEN
+	RESPONSE #100
+		SetGlobal("AranLove","GLOBAL",14)
+		ActionOverride(Player1,SetDialog("PLAYER1"))
+		Wait(1)
+		ActionOverride(Player1,StartDialog("Player1",Myself))
+END
+
+// Tony 3
+IF
+	GlobalTimerExpired("ANAranLetter3Timer","GLOBAL")
+	AreaType(OUTDOOR)
+	CombatCounter(0)
+	!HasItemEquiped("BELT05", Player1)
+	Global("TonySpawn3","GLOBAL",0)
+	OR(2)
+	Global("Chapter","GLOBAL",%bg2_chapter_3%)
+	Global("Chapter","GLOBAL",%bg2_chapter_6%)
+THEN
+	RESPONSE #100
+		SetGlobal("TonySpawn3","GLOBAL",1)
+		CreateCreatureObject("bdoffscr",Player1,0,0,0)  
+		ApplySpellRES("bdoffscr","bdoffscr")  // No such index
+		SmallWait(1)
+		CreateCreatureObject("ANtony1","bdoffscr",0,0,0)  
+		ActionOverride("ANtony",Dialog(Player1))
+END
+
+IF
+	Global("AranLove","GLOBAL",30)
+THEN
+	RESPONSE #100
+		SetGlobal("AranLove","GLOBAL",31)
+		ActionOverride(Player1,SetDialog("PLAYER1"))
+		Wait(1)
+		ActionOverride(Player1,StartDialog("Player1",Myself))
+END
+
+
+// Tony 4
+IF
+	Global("PGFailed","GLOBAL",1)
+	GlobalGT("AranLove","GLOBAL",20)
+	Global("PGFailedTaimer","GLOBAL",0)
+	!HasItemEquiped("BELT05", Player1)
+	OR(2)
+	Global("Chapter","GLOBAL",%bg2_chapter_3%)
+	Global("Chapter","GLOBAL",%bg2_chapter_6%)
+THEN
+	RESPONSE #100
+   SetGlobal("PGFailedTaimer","GLOBAL",1)
+   RealSetGlobalTimer("ANAranPGFailedTimer","GLOBAL",50)
+END
+
+IF
+	RealGlobalTimerExpired("ANAranPGFailedTimer","GLOBAL")
+	Global("PGFailed","GLOBAL",1)
+	AreaType(OUTDOOR)
+	CombatCounter(0)
+	Global("TonySpawn4","GLOBAL",0)
+	!Global("TonySpawn5","GLOBAL",1)
+	OR(2)
+	Global("Chapter","GLOBAL",%bg2_chapter_3%)
+	Global("Chapter","GLOBAL",%bg2_chapter_6%)	
+THEN
+	RESPONSE #100
+		SetGlobal("TonySpawn4","GLOBAL",1)
+		CreateCreatureObject("bdoffscr",Player1,0,0,0)  
+		ApplySpellRES("bdoffscr","bdoffscr")  // No such index
+		SmallWait(1)
+		CreateCreatureObject("ANtony1","bdoffscr",0,0,0)  
+		ActionOverride("ANtony",Dialog(Player1))
+END
+
+IF
+	Global("TonySpawn4","GLOBAL",2)
+THEN
+	RESPONSE #100
+		SetGlobal("TonySpawn4","GLOBAL",3)
+		ActionOverride(Player1,SetDialog("PLAYER1"))
+		Wait(1)
+		ActionOverride(Player1,StartDialog("Player1",Myself))
+END
+
+
+// Tony 5
+IF
+	GlobalTimerExpired("ANAranLetter5Timer","GLOBAL")
+	!Global("AranRomanceActive","GLOBAL",3)
+	AreaType(OUTDOOR)
+	CombatCounter(0)
+	!HasItemEquiped("BELT05", Player1)
+	Global("TonySpawn5","GLOBAL",0)
+	!Global("TonySpawn4","GLOBAL",1)
+	OR(2)
+	Global("Chapter","GLOBAL",%bg2_chapter_3%)
+	Global("Chapter","GLOBAL",%bg2_chapter_6%)
+	OR(2)
+	Global("PGFailed","GLOBAL",1)
+	Global("PlayerThiefGuild","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("TonySpawn5","GLOBAL",1)
+		CreateCreatureObject("bdoffscr",Player1,0,0,0)  
+		ApplySpellRES("bdoffscr","bdoffscr")  // No such index
+		SmallWait(1)
+		CreateCreatureObject("ANtony1","bdoffscr",0,0,0)  
+		ActionOverride("ANtony",Dialog(Player1))
+END
+
+// Lamp
+IF 
+Global("ANAranLamp","GLOBAL",2)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANAranLamp","GLOBAL",3)
+ActionOverride(Player1,SetDialog("PLAYER1"))
+Wait(1)
+ActionOverride(Player1,StartDialog("Player1",Myself))
+END
+
+IF 
+Global("ANAranLampRenal","GLOBAL",6)
+
+THEN
+  RESPONSE #100
+Wait(1)  
+SetGlobal("ANAranLampRenal","GLOBAL",7)
+ActionOverride(Player1,SetDialog("PLAYER1"))
+Wait(1)
+ActionOverride(Player1,StartDialog("Player1",Myself))
+END
+
+IF 
+Global("ANAranLampLatan","GLOBAL",2)
+
+THEN
+  RESPONSE #100
+Wait(1)  
+SetGlobal("ANAranLampLatan","GLOBAL",3)
+ActionOverride(Player1,SetDialog("PLAYER1"))
+Wait(1)
+ActionOverride(Player1,StartDialog("Player1",Myself))
+END
+
+IF 
+Global("ANAranLampLatan","GLOBAL",4) 
+Global("ANAranLampRenal","GLOBAL",2)
+!Global("ANAranLampNORenal","GLOBAL",1)
+
+THEN
+  RESPONSE #100
+Wait(1)  
+ActionOverride(Player1,SetDialog("PLAYER1"))
+Wait(1)
+ActionOverride(Player1,StartDialog("Player1",Myself))
+END
+
+IF 
+Global("ANAranLampRenal","GLOBAL",2)
+Global("ANAranLampLatan","GLOBAL",0)
+
+THEN
+  RESPONSE #100
+Wait(1)  
+ActionOverride(Player1,SetDialog("PLAYER1"))
+Wait(1)
+ActionOverride(Player1,StartDialog("Player1",Myself))
+END
+
+
+IF 
+Global("ANAranLampLatan","GLOBAL",2)
+
+THEN
+  RESPONSE #100
+Wait(1)  
+SetGlobal("ANAranLampLatan","GLOBAL",3)
+ActionOverride(Player1,SetDialog("PLAYER1"))
+Wait(1)
+ActionOverride(Player1,StartDialog("Player1",Myself))
+END
+
+// Tony Lamp
+IF
+	Global("ANAranLampTony","GLOBAL",1)
+	AreaType(OUTDOOR)
+	CombatCounter(0)
+	Global("TonySpawnLamp","GLOBAL",0)
+	OR(2)
+	Global("Chapter","GLOBAL",%bg2_chapter_3%)
+	Global("Chapter","GLOBAL",%bg2_chapter_6%)
+
+THEN
+	RESPONSE #100
+		SetGlobal("TonySpawnLamp","GLOBAL",1)
+		StartCutSceneMode()
+		CutSceneId(Player1)  
+		DisplayStringHead(Player1,@99)
+        Wait(5)	
+		FadeFromColor([70.0],0)
+		Wait(1)			
+		EndCutSceneMode()
+        SetGlobal("TonySpawnLamp","GLOBAL",2)		
+END
+
+IF
+        Global("TonySpawnLamp","GLOBAL",2)	
+
+THEN
+	RESPONSE #100
+		SetGlobal("TonySpawnLamp","GLOBAL",3)
+		DisplayStringHead(Player1,@100)
+        Wait(5)			
+		FadeFromColor([70.0],0)
+		Wait(1)	
+		CreateCreatureObject("bdoffscr",Player1,0,0,0)  
+		ApplySpellRES("bdoffscr","bdoffscr")  // No such index
+		SmallWait(1)
+		CreateCreatureObject("ANtony1","bdoffscr",0,0,0) 
+        ActionOverride(Player1,SetDialog("PLAYER1"))
+        ActionOverride("ANtony",StartDialogNoSet("Player1"))	
+END
+
+// Romance Blocks
+IF
+	Global("AranRomanceActive","GLOBAL",2)
+	Global("AnomenRomanceActive","GLOBAL",1)
+	
+THEN
+	RESPONSE #100
+	SetGlobal("AnomenRomanceActive","GLOBAL",99)
+END
+
+IF
+	Global("AranRomanceActive","GLOBAL",2)
+	Global("RasaadRomanceActive","GLOBAL",1)
+	
+THEN
+	RESPONSE #100
+	SetGlobal("RasaadRomanceActive","GLOBAL",99)
+END
+
+IF
+	Global("AranRomanceActive","GLOBAL",2)
+	Global("DornRomanceActive","GLOBAL",1)
+	
+THEN
+	RESPONSE #100
+	SetGlobal("DornRomanceActive","GLOBAL",99)
+END
+
+
+// Tony 5 (MALE QUEST)
+IF
+	GlobalTimerExpired("ANAranLetterMALETimer","GLOBAL")
+	AreaType(OUTDOOR)
+	CombatCounter(0)
+	Global("TonySpawnMALE","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("TonySpawnMALE","GLOBAL",1)
+		CreateCreatureObject("bdoffscr",Player1,0,0,0)  
+		ApplySpellRES("bdoffscr","bdoffscr")  // No such index
+		SmallWait(1)
+		CreateCreatureObject("ANtony1","bdoffscr",0,0,0)  
+		ActionOverride("ANtony",Dialog(Player1))
+END

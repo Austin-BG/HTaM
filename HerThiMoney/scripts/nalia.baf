@@ -1,0 +1,82 @@
+// Nalia - Viconia Talk
+IF
+AreaCheck("AR0300")
+Global("ANnaliaviconia1","GLOBAL",0)
+InParty("Viconia") 
+!Dead("Viconia")
+!Dead("Nalia")
+See("Viconia")
+CombatCounter(0)
+!See([ENEMY])
+!StateCheck(Myself,CD_STATE_NOTVALID)
+!StateCheck("Viconia",CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("ANnaliaviconia1","GLOBAL",1)
+RealSetGlobalTimer("ANnaliaviconiaTimer","GLOBAL",20)
+END
+
+IF
+InParty(Myself)
+See("Viconia")
+AreaCheck("AR0300")
+CombatCounter(0)
+!See([ENEMY]) 
+RealGlobalTimerExpired("ANnaliaviconiaTimer","GLOBAL")
+Global("ANnaliaviconia1","GLOBAL",1) 
+THEN
+RESPONSE #100
+SetGlobal("ANnaliaviconia1","GLOBAL",2)
+END
+
+IF
+InParty(Myself)
+See("Viconia")
+Global("ANnaliaviconia1","GLOBAL",2)
+THEN
+RESPONSE #100
+Interact("Viconia")
+END
+
+
+// Nalia - Edwin Talk
+
+IF
+Global("ANEdwinNaliatalk","GLOBAL",0)
+AreaCheck("AR2300")
+InParty("Edwin") 
+!Dead("Edwin")
+!Dead("Nalia")
+See("Edwin")
+CombatCounter(0)
+!See([ENEMY])
+!StateCheck(Myself,CD_STATE_NOTVALID)
+!StateCheck("Edwin",CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("ANEdwinNaliatalk","GLOBAL",1)
+RealSetGlobalTimer("ANEdwinNaliaTimer","GLOBAL",60)
+END
+
+IF
+InParty(Myself)
+See("Edwin")
+CombatCounter(0)
+!See([ENEMY]) 
+RealGlobalTimerExpired("ANEdwinNaliaTimer","GLOBAL")
+Global("ANEdwinNaliatalk","GLOBAL",1) 
+THEN
+RESPONSE #100
+SetGlobal("ANEdwinNaliatalk","GLOBAL",2)
+END
+
+IF
+InParty(Myself)
+See("Edwin")
+See(Player1)
+Global("ANEdwinNaliatalk","GLOBAL",2)
+THEN
+RESPONSE #100
+Interact("Edwin")
+END
+

@@ -1,0 +1,11 @@
+IF
+	Global("OwniFightBodhi","GLOBAL",1)
+	Global("OwniSpawn","AR0808",0)  // Bodhi's Hideout 
+THEN
+	RESPONSE #100
+Wait(2)
+SetGlobal("OwniSpawn","AR0808",1)  // Bodhi's Hideout 
+CreateCreature("ANOwni",[969.1573],15)
+CreateCreature("ANJock",[918.1642],15)
+CreateCreature("ANjalut",[954.1611],15)
+END

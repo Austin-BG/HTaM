@@ -1,0 +1,39 @@
+IF
+	GlobalTimerExpired("ANQuayleTimer","GLOBAL")
+	Global("ANQuayleTroll","GLOBAL",0) 
+	AreaType(OUTDOOR)
+	!AreaCheck("AR0700")
+	CombatCounter(0)
+	!Dead("Aerie")
+	!Dead("Quayle")
+	!InParty("7XQUAY") // Smiling Imp's Quayle not in party
+	!InParty("QUAYLE") // Lava's Quayle not in party
+	Global("ANbrusTalk","GLOBAL",1)
+  OR(2)
+	Global("Chapter","GLOBAL",%bg2_chapter_2%)
+	Global("Chapter","GLOBAL",%bg2_chapter_3%)
+THEN
+       RESPONSE #100
+		SetGlobal("ANQuayleTroll","GLOBAL",1)
+		SetGlobal("ANTrollEscape","GLOBAL",1)
+		ActionOverride(Player1,SetDialog("PLAYER1"))
+		CreateCreatureObject("bdoffscr",Player1,0,0,0)  
+		ApplySpellRES("bdoffscr","bdoffscr")  
+		SmallWait(1)
+		CreateCreatureObject("ANmess","bdoffscr",0,0,0)  
+		ActionOverride("ANmess",Dialog(Player1))
+END
+
+IF
+	GlobalTimerExpired("ANSireneTimer","GLOBAL")
+    Global("ANsirene","GLOBAL",0)	
+	AreaType(OUTDOOR)
+	CombatCounter(0)
+THEN
+       RESPONSE #100
+		SetGlobal("ANsirene","GLOBAL",1)
+		ActionOverride(Player1,SetDialog("PLAYER1"))
+        ActionOverride(Player1,StartDialog("Player1",Myself))
+END
+
+

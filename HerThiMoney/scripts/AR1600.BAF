@@ -1,0 +1,29 @@
+IF 
+Global("ANpiratQuest","GLOBAL",1)
+Global("ANSailorExists","AR1600",0)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANSailorExists","AR1600",1)
+CreateCreature("ANsailor",[580.2160],9)
+ActionOverride(Player1,SetDialog("PLAYER1"))
+END
+
+IF 
+Global("ANpiratQuest","GLOBAL",2)
+Global("ANLornaExists","AR1600",0)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANLornaExists","AR1600",1)
+CreateCreature("ANLorna",[2970.2569],12)
+ActionOverride(Player1,SetDialog("PLAYER1"))
+END
+
+IF
+Global("ANpiratQuest","GLOBAL",5)
+THEN
+	RESPONSE #100
+TriggerActivation("ToAN1614",TRUE)
+END
+

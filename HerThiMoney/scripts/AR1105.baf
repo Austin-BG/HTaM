@@ -1,0 +1,23 @@
+IF 
+AreaCheck("AR1105")
+Dead("FIRKRA02")
+Global("ANbardExists","AR1105",0)
+Global("ANbardTalkFirkraag","GLOBAL",0)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANbardExists","AR1105",1)
+CreateCreature("ANbard1",[666.533],14)
+CreateCreature("ANboy1",[821.539],6)
+CreateCreature("ANwomn1",[732.609],7)
+END
+
+IF
+    AreaCheck("AR1105")
+    Global("ANbardTalkFirkraag","GLOBAL",0)
+THEN
+	RESPONSE #100
+  SetGlobal("ANbardTalkFirkraag","GLOBAL",1)
+END
+
+

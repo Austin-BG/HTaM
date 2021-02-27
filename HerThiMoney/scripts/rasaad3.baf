@@ -1,0 +1,63 @@
+IF
+Global("AranLove","GLOBAL",12) 
+Global("AranRasaadTalk1","GLOBAL",0)
+!InParty("Anomen")
+See(Player1)
+InParty(Myself)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+CombatCounter(0)
+THEN
+RESPONSE #100
+ActionOverride(Myself,StartDialogNoSet(Player1))
+END
+
+IF
+Global("AranLove","GLOBAL",22) 
+Global("AranRasaadTalk2","GLOBAL",0)
+See(Player1)
+InParty(Myself)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+CombatCounter(0)
+OR(2)
+AreaCheck("AR0305")
+AreaCheck("AR0300")
+Global("RasaadRomanceActive","GLOBAL",2)
+THEN
+RESPONSE #100
+ActionOverride(Player1,SetDialog("PLAYER1"))
+SmallWait(3)
+ActionOverride(Myself,StartDialogNoSet(Player1))
+END
+
+IF
+Global("AranRomanceActive","GLOBAL",2)
+Global("AranRasaadTalk2","GLOBAL",1)
+See(Player1)
+InParty(Myself)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+CombatCounter(0)
+Global("RasaadRomanceActive","GLOBAL",2)
+THEN
+RESPONSE #100
+ActionOverride(Player1,SetDialog("PLAYER1"))
+SmallWait(3)
+ActionOverride(Myself,StartDialogNoSet(Player1))
+END
+
+
+IF
+Global("AranRasaadToB","GLOBAL",1)
+RealGlobalTimerExpired("ANAranLetterRasaadTimer","GLOBAL")
+InParty(Myself) 
+!Dead("Rasaad")
+!StateCheck(Myself,CD_STATE_NOTVALID)
+See(Player1)
+CombatCounter(0)
+!See([ENEMY])
+THEN
+	RESPONSE #100
+	   SetGlobal("AranRasaadToB","GLOBAL",2)
+       ActionOverride(Player1,SetDialog("PLAYER1"))
+       SmallWait(3)
+       ActionOverride(Myself,Dialog(Player1))
+END

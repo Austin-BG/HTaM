@@ -1,0 +1,71 @@
+IF
+	Range([PC],15)
+	Global("ANTroll","GLOBAL",11)
+	See([PC])
+THEN
+	RESPONSE #100
+	ActionOverride(Player1,SetDialog("PLAYER1"))
+	StartDialogNoSet([PC])
+END
+
+IF
+	AreaCheck("AR0700")
+	Global("ANsirene","GLOBAL",2)
+	Range([PC],15)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+	SetGlobal("ANsireneTalk","AR0700",1)
+	ActionOverride(Player1,SetDialog("PLAYER1"))
+	ActionOverride(Player1,StartDialog("Player1",Myself))
+END
+
+IF
+    OR(2)
+	SpellCastOnMe([ANYONE],WIZARD_TRUE_DISPEL_MAGIC)
+	SpellCastOnMe([ANYONE],CLERIC_DISPEL_MAGIC)
+THEN
+	RESPONSE #100
+    DisplayString(Myself,@219)
+END
+
+IF
+    OR(4)
+	SpellCastOnMe([ANYONE],CLERIC_KNOW_ALIGNMENT)
+	SpellCastOnMe([ANYONE],WIZARD_KNOW_ALIGNMENT)
+	SpellCastOnMe([ANYONE],CLERIC_TRUE_SIGHT)
+	SpellCastOnMe([ANYONE],WIZARD_TRUE_SIGHT)
+THEN
+	RESPONSE #100
+    DisplayString(Myself,@220)
+END
+
+IF
+	AreaCheck("AR0700")
+	Global("ANsirene","GLOBAL",5)
+	Range([PC],5)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+	StartDialogNoSet([PC])
+END
+
+IF
+	AreaCheck("AR0700")
+	Global("ANsirene","GLOBAL",30)
+	PartyHasItem("ANscrll2")
+	Range([PC],15)
+THEN
+	RESPONSE #100
+	SetGlobal("ANsirene","GLOBAL",31)
+END
+
+IF
+	AreaCheck("AR0700")
+	Global("ANsirene","GLOBAL",18)
+	PartyHasItem("ANscrll2")
+	Range([PC],15)
+THEN
+	RESPONSE #100
+	SetGlobal("ANsirene","GLOBAL",60)
+END

@@ -1,0 +1,11 @@
+IF
+Dead("c6bodhi")
+Gender(Player1,MALE)
+	OR(2)
+	Global("PGFailed","GLOBAL",1)
+	Global("PlayerThiefGuild","GLOBAL",1)
+	
+THEN
+	RESPONSE #100
+	SetGlobalTimer("ANAranLetterMALETimer","GLOBAL",ONE_DAY)
+END

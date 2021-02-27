@@ -1,0 +1,23 @@
+
+IF 
+Global("ANlorioPrison","GLOBAL",1)
+Global("ANlorioExists","AR1005",0)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANlorioExists","AR1005",1) 
+CreateCreature("ANlorio",[1248.426],0)
+END
+
+IF 
+Global("ANlorioPrison","GLOBAL",4)
+
+THEN
+  RESPONSE #100
+        SetGlobal("ANlorioPrison","GLOBAL",5)
+		StartCutSceneMode()
+		FadeFromColor([70.0],0)
+		ActionOverride("ANlorio",DestroySelf())
+		Wait(1)
+		EndCutSceneMode()
+END

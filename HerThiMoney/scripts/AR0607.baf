@@ -1,0 +1,52 @@
+IF 
+Global("ANQuayleTroll","GLOBAL",4)
+InParty("Aerie")
+!InParty("7XQUAY")
+!InParty("QUAYLE")
+
+THEN
+  RESPONSE #100
+		SetGlobal("ANQuayleTroll","GLOBAL",5)
+		StartCutSceneMode()
+		FadeFromColor([70.0],0)
+		ActionOverride(Player1,LeaveAreaLUA("AR0700","",[2312.2036],8))
+        ActionOverride(Player2,LeaveAreaLUA("AR0700","",[2248.2281],8))
+        ActionOverride(Player3,LeaveAreaLUA("AR0700","",[2263.2114],8))
+        ActionOverride(Player4,LeaveAreaLUA("AR0700","",[2262.2141],8))
+        ActionOverride(Player5,LeaveAreaLUA("AR0700","",[2267.2163],8))
+        ActionOverride(Player6,LeaveAreaLUA("AR0700","",[2227.2162],8))
+		Wait(1)
+		EndCutSceneMode()
+END
+
+IF 
+Global("ANQuayleTroll","GLOBAL",4)
+!InParty("Aerie")
+
+THEN
+  RESPONSE #100
+		SetGlobal("ANQuayleTroll","GLOBAL",5)
+		StartCutSceneMode()
+		FadeFromColor([70.0],0)
+		ActionOverride("Aerie",LeaveAreaLUA("AR0700","",[2183.2026],10))
+		ActionOverride(Player1,LeaveAreaLUA("AR0700","",[2312.2036],8))
+        ActionOverride(Player2,LeaveAreaLUA("AR0700","",[2248.2281],8))
+        ActionOverride(Player3,LeaveAreaLUA("AR0700","",[2263.2114],8))
+        ActionOverride(Player4,LeaveAreaLUA("AR0700","",[2262.2141],8))
+        ActionOverride(Player5,LeaveAreaLUA("AR0700","",[2267.2163],8))
+        ActionOverride(Player6,LeaveAreaLUA("AR0700","",[2227.2162],8))
+		Wait(1)
+		EndCutSceneMode()
+END
+
+IF 
+Global("ANQuayleTroll","GLOBAL",2)
+!InParty("Aerie")
+!Exists("anaerie")
+
+THEN
+  RESPONSE #100
+CreateCreatureObject("anaerie","QUAYLE",0,0,0) 
+END
+
+

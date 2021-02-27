@@ -1,0 +1,8 @@
+IF
+	AreaCheck("AR2102")
+	OR(2) Global("AN_Adalon_attack","AR2102",1) Global("AN_Adalon_attack","AR2102",2)  // Adalon's Cave
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+	ActionOverride("Keldorn",StartDialogNoSet(Player1))
+END

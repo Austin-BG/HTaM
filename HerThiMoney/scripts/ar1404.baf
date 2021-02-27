@@ -1,0 +1,44 @@
+IF 
+AreaCheck("AR1404")
+PartyHasItem("BOOK97")
+Global("ANTempleSpeak_2","AR1404",0)
+
+THEN
+  RESPONSE #100
+RealSetGlobalTimer("ANLellinTalkTimer","AR1404",10)
+SetGlobal("ANTempleSpeak_2","AR1404",1)
+END
+
+IF 
+AreaCheck("AR1404")
+RealGlobalTimerExpired("ANLellinTalkTimer","AR1404")
+Global("ANTempleSpeak_2","AR1404",1)
+CombatCounter(0)
+
+THEN
+  RESPONSE #100
+ActionOverride(Player1,SetDialog("PLAYER1"))  
+ActionOverride(Player1,StartDialog("Player1",Myself))
+END
+
+
+IF 
+AreaCheck("AR1404")
+Dead("Lellyn")
+Global("ANTempleSpeak_1","AR1404",0)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANTempleSpeak_1","AR1404",1)
+END
+
+IF 
+AreaCheck("AR1404")
+Global("ANTempleSpeak_1","AR1404",1)
+CombatCounter(0)
+
+THEN
+  RESPONSE #100
+ActionOverride(Player1,SetDialog("PLAYER1"))  
+ActionOverride(Player1,StartDialog("Player1",Myself))
+END

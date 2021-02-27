@@ -1,0 +1,30 @@
+// Kangaxx is dead
+
+IF	
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Dead("HLKANG")
+	Global("AN_Kangaxx_DeadTalk","AR0331",0)
+THEN
+	RESPONSE #100
+	SetGlobal("AN_Kangaxx_DeadTalk","AR0331",1)
+    RealSetGlobalTimer("ANKangaxxDeadTalkTimer","GLOBAL",3)
+	Continue() 
+END
+
+IF
+    RealGlobalTimerExpired("ANKangaxxDeadTalkTimer","GLOBAL")
+	Global("AN_Kangaxx_DeadTalk","AR0331",1)
+THEN
+	RESPONSE #100
+	SetGlobal("AN_Kangaxx_DeadTalk","AR0331",2)
+	Continue()
+END
+
+IF
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!ActuallyInCombat()
+	Global("AN_Kangaxx_DeadTalk","AR0331",2)
+THEN
+	RESPONSE #100
+ActionOverride(Player1,StartDialog("Player1",Myself))
+END

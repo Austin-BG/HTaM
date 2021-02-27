@@ -1,0 +1,56 @@
+// Mae'Var's Stash - Docks
+
+IF
+AreaCheck("AR0300")
+Global("ANStashRenalJOB","GLOBAL",2)
+InParty(myself) 
+InParty(Player1) 
+See(Player1) 
+THEN
+RESPONSE #100
+SetGlobal("ANStashRenalJOB","GLOBAL",3)
+END
+
+IF
+AreaCheck("AR0300")
+Global("ANStashRenalJOB","GLOBAL",3)
+InParty(myself) 
+InParty(Player1) 
+See(Player1) 
+!Dead("Edwin")
+!See([ENEMY])
+IfValidForPartyDialog(Myself)
+IfValidForPartyDialog(Player1)
+THEN
+RESPONSE #100
+ActionOverride(Player1,SetDialog("PLAYER1"))
+StartDialogNoSet(Player1)
+END
+
+// Mae'Var's Stash - Slums
+
+IF
+Global("ANStashHurpDead","GLOBAL",1)
+!See([ENEMY])
+InParty(myself)
+!Dead("Edwin")
+THEN
+RESPONSE #100
+ActionOverride(Player1,SetDialog("PLAYER1"))
+StartDialogNoSet(Player1)
+END
+
+
+// Mae'Var's Stash - Bank
+IF
+AreaCheck("AN0720")
+Global("ANStashEdwinBankTalk","AN0720",0)
+TimeOfDay(DAY)
+Global("ANStashRenalJOB","GLOBAL",9)
+InParty(myself)
+!Dead("Edwin")
+THEN
+RESPONSE #100
+ActionOverride(Player1,SetDialog("PLAYER1"))
+StartDialogNoSet(Player1)
+END

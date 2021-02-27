@@ -1,0 +1,14 @@
+IF
+Global("AranRomanceActive","GLOBAL",2)
+Global("AranDornTalk1","GLOBAL",0)
+See(Player1)
+InParty(Myself)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+CombatCounter(0)
+Global("DornRomanceActive","GLOBAL",2)
+THEN
+RESPONSE #100
+ActionOverride(Player1,SetDialog("PLAYER1"))
+SmallWait(3)
+ActionOverride(Myself,StartDialogNoSet(Player1))
+END

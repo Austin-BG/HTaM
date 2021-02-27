@@ -1,0 +1,70 @@
+IF 
+Global("ANsirene","GLOBAL",9)
+
+THEN
+  RESPONSE #100
+RealSetGlobalTimer("ANModTimer","AR0500",3)
+SetGlobal("ANsirene","GLOBAL",10) 
+END
+
+IF 
+RealGlobalTimerExpired("ANModTimer","AR0500")
+Global("ANgirlExists","AR0500",0) 
+
+THEN
+  RESPONSE #100
+        SetGlobal("ANgirlExists","AR0500",1) 
+		ActionOverride(Player1,SetDialog("PLAYER1"))
+		CreateCreatureObject("bdoffscr",Player1,0,0,0)  
+		ApplySpellRES("bdoffscr","bdoffscr")  // No such index
+		SmallWait(1)
+		CreateCreatureObject("ANgirl1","bdoffscr",0,0,0)  
+		ActionOverride("ANmod",Dialog([PC]))
+END
+
+
+IF 
+Global("ANsirene","GLOBAL",22)
+Global("ANlorioExists","AR0500",0)
+
+THEN
+  RESPONSE #100
+ClearAllActions()  
+SetGlobal("ANlorioExists","AR0500",1)  
+CreateCreature("ANlorio",[265.2701],8)
+Wait(1)
+ActionOverride("ANlorio",StartDialogNoSet("Player1"))
+END
+
+IF
+Global("ANsirene","GLOBAL",23)
+
+THEN 
+RESPONSE #100
+SetGlobal("ANsirene","GLOBAL",24)
+ClearAllActions()   
+StartCutSceneMode()
+CutSceneId(Player1)  
+ActionOverride("ANlorio",Attack("Cragmoon"))	
+Wait(2)
+FadeToColor([20.0],0)
+Wait(1)
+FadeFromColor([60.0],0)
+ClearAllActions()  
+CreateCreatureObject("AMNLEG01","ANlorio",0,0,0) 
+ChangeEnemyAlly("AMNLEG01",NEUTRAL)
+Wait(1)
+DisplayStringHead("AMNLEG01",@130)
+Wait(3)
+DisplayStringHead("ANlorio",@131)
+Wait(2)
+EndCutSceneMode()
+ClearAllActions()  
+SmallWait(3)
+ActionOverride("AMNLEG01",DestroySelf())
+ActionOverride("ANlorio",DestroySelf())
+SetGlobal("ANlorioPrison","GLOBAL",1)
+ActionOverride(Player1,SetDialog("PLAYER1"))
+Wait(2)
+ActionOverride("Cragmoon",StartDialogNoSet("Player1"))
+END  

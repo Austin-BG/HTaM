@@ -1,0 +1,10 @@
+IF 
+Global("ANlorioPrison","GLOBAL",5)
+Global("ANlorioExists","AR1000",0)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANlorioExists","AR1000",1) 
+CreateCreature("ANlorio",[1731.1038],0)
+END
+

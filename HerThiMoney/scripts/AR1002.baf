@@ -1,0 +1,26 @@
+IF 
+Global("ANTroll","GLOBAL",3)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANTroll","GLOBAL",4)  
+StartCutSceneMode() 
+CutSceneId(Player1)   
+MoveViewPoint([957.591],VERY_FAST)
+Wait(2)
+DisplayStringHead("habrega",@120)
+Wait(2)
+ActionOverride(Player1,MoveToPoint([1010.549])) 
+ActionOverride(Player2,MoveToPoint([960.558])) 
+ActionOverride(Player3,MoveToPoint([1087.602])) 
+ActionOverride(Player4,MoveToPoint([929.575])) 
+ActionOverride(Player5,MoveToPoint([1009.629])) 
+ActionOverride(Player6,MoveToPoint([889.615])) 
+Wait(5)
+EndCutSceneMode()
+ActionOverride(Player1,SetDialog("PLAYER1"))
+SmallWait(3)
+ActionOverride("habrega",StartDialogNoSet(Player1)) 
+END
+
+
