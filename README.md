@@ -1,5 +1,5 @@
 # HTaM
-"Heroes, Thieves and Moneylenders" mod
+"Heroes, Thieves and Moneylenders" mod for BG2, BG2EE, BGT, EET
 
 The mod consists of several independent components:
 
