@@ -1,0 +1,14 @@
+	DEFINE_ACTION_MACRO ~Addpic~ BEGIN
+			ACTION_IF FILE_EXISTS ~%MOD_FOLDER%/portraits/vanilla/3/%Filename%.bmp~ THEN BEGIN
+				LOG ~PATCHING: %Crename%.cre with PORTRAIT: %Filename%.bmp~
+				COPY_EXISTING ~%Crename%.cre~ ~override~
+				WRITE_EVALUATED_ASCII 0x34 ~%Filename%~ #8
+				ACTION_IF NOT FILE_EXISTS ~override\%Filename%.bmp~ THEN BEGIN
+					COPY ~%MOD_FOLDER%/portraits/vanilla/3/%Filename%.bmp~ ~override~
+				END
+			END	ELSE BEGIN     // If portrait's not in the mod, just update reference (Re-use existing portraits)
+				COPY_EXISTING ~%Crename%.cre~ ~override~
+				WRITE_EVALUATED_ASCII 0x34 ~%Filename%~ #8
+			END
+	END
+	

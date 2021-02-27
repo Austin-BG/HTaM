@@ -1,0 +1,206 @@
+ACTION_CLEAR_ARRAY NPC_PDIALOG
+ACTION_CLEAR_ARRAY NPC_ALL_L
+OUTER_SET statue_num = 1
+OUTER_SET strrx = RESOLVE_STR_REF (@10000000)
+
+COPY_EXISTING_REGEXP GLOB ~.*\.cre~ ~override~
+	READ_ASCII 0x280 ~scr_name~ (32) NULL
+	TO_UPPER ~scr_name~
+	READ_LONG 0x00c idx
+	PATCH_IF !( VARIABLE_IS_SET $NPC_ALL_L(~%scr_name%~) ) BEGIN
+		DEFINE_ASSOCIATIVE_ARRAY NPC_ALL_L BEGIN
+			~%scr_name%~ => ~%idx%~
+		END
+	END
+	BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~pdialog.2da~ ~override~
+	COUNT_2DA_ROWS 4 rws
+	FOR ( i = 0 ; i < rws ; ++i ) BEGIN
+		READ_2DA_ENTRY i 0 4 name
+		TO_UPPER ~name~
+		PATCH_IF ( ~%name%~ STR_CMP ~POST_DIALOG_FILE~ ) BEGIN
+			PATCH_IF !( VARIABLE_IS_SET $NPC_PDIALOG(~%name%~) ) BEGIN
+				PATCH_IF ( VARIABLE_IS_SET $NPC_ALL_L(~%name%~) ) BEGIN
+					SET idx = $NPC_ALL_L(~%name%~)
+					DEFINE_ASSOCIATIVE_ARRAY NPC_PDIALOG BEGIN
+						~%name%~, ~%statue_num%~ => ~%idx%~
+					END
+				END ELSE BEGIN
+					DEFINE_ASSOCIATIVE_ARRAY NPC_PDIALOG BEGIN
+						~%name%~, ~%statue_num%~ => ~%strrx%~
+					END
+				END
+				SET statue_num = statue_num + 1
+			END
+		END
+	END
+	BUT_ONLY_IF_IT_CHANGES
+ACTION_CLEAR_ARRAY NPC_ALL_L
+
+COPY_EXISTING ~statue01.cre~ ~override/anstat02.cre~
+              ~statue01.cre~ ~override/anstat03.cre~
+              ~statue01.cre~ ~override/anstat04.cre~
+              ~statue01.cre~ ~override/anstat05.cre~
+              ~statue01.cre~ ~override/anstat06.cre~
+              ~statue01.cre~ ~override/anstat01.cre~
+	WRITE_EVALUATED_ASCII 0x280 ~%DEST_RES%~ (32)
+	WRITE_EVALUATED_ASCII 0x248 ~%DEST_RES%~ (8)
+	WRITE_EVALUATED_ASCII 0x2cc ~%DEST_RES%~ (8)
+	WRITE_LONG 0x028 53760
+	LPF ADD_CRE_EFFECT INT_VAR opcode=287 target=1 timing=1 END
+	LPF ADD_CRE_EFFECT INT_VAR opcode=293 power=12 parameter2=1 timing=9 END
+	LPF ADD_CRE_EFFECT INT_VAR opcode=315 parameter2=1 timing=1 END
+	LPF ADD_CRE_EFFECT INT_VAR opcode=176 target=1 parameter1=0 parameter2=1 timing=1 END
+	PATCH_IF ( EE_GAME ) BEGIN
+		LPF GET_BIT INT_VAR number = ( BYTE_AT 0x012 ) nth_bit = 7 RET bit_value END
+		PATCH_IF ( NOT bit_value ) BEGIN WRITE_BYTE 0x012 ( THIS + 128 ) END
+		LPF ADD_CRE_EFFECT INT_VAR opcode=342 parameter2=4 timing=9 END
+	END
+
+OUTER_SPRINT ~stat_script~ ~~
+<<<<<<<< stat_dial.d
+BEGIN %stat_dialog%
+>>>>>>>>
+<<<<<<<< stat_scrp.baf
+%stat_script%
+>>>>>>>>
+ACTION_FOR_EACH stat_dialog IN anstat02 anstat03 anstat04 anstat05 anstat06 anstat01 BEGIN
+	COMPILE ~stat_dial.d~ EVALUATE_BUFFER
+END
+
+COPY_EXISTING ~cut37a.bcs~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		REPLACE_TEXTUALLY ~MoveViewPoint~ ~CreateCreatureObject("anstat01",Player1Fill,0,0,0) CreateCreatureObject("anstat02",Player2Fill,0,0,0) CreateCreatureObject("anstat03",Player3Fill,0,0,0) CreateCreatureObject("anstat04",Player4Fill,0,0,0) CreateCreatureObject("anstat05",Player5Fill,0,0,0) CreateCreatureObject("anstat06",Player6Fill,0,0,0) MoveViewPoint~
+	END
+
+OUTER_SPRINT ~block_btm1~ ~~
+OUTER_SPRINT ~block_top1~ ~~
+ACTION_CLEAR_ARRAY AN_STATUE_SCRIPTSTRING
+ACTION_CLEAR_ARRAY AN_STATUE_SCRIPTNAME
+ACTION_PHP_EACH NPC_PDIALOG AS data => strref BEGIN
+	LAF CREATE_B_BCS_NAME INT_VAR mx_lng=7 STR_VAR namez = EVAL "%data%" prefix = "AN" suffix = EVAL "%data_1%" RET script_file = result END
+	ACTION_GET_STRREF ~%strref%~ ~z_strref~
+	OUTER_SET sstr   = RESOLVE_STR_REF(@10000001)
+	OUTER_SET tkntxt = RESOLVE_STR_REF(@10000002)
+	OUTER_SPRINT ~block_btm1~ ~%block_btm1%IF%LNL%/*NumInPartyGT(slot1)*/%LNL%InPartySlot("%data%",slot1)%LNL%Global("AN_CHANGE_NPC","LOCALS",0)%LNL%THEN%LNL%RESPONSE #100%LNL%SetGlobal("AN_%data%_STATUE","GLOBAL",1)%LNL%SetGlobal("AN_CURRENT_STATUE_slot2","LOCALS",%data_1%)%LNL%SetGlobal("AN_CHANGE_NPC","LOCALS",1)%LNL%SetName(%sstr%)%LNL%MoveBetweenAreas("AR2000",slot3,0)%LNL%END%LNL%%LNL%~
+	OUTER_SPRINT ~block_top1~ ~%block_top1%IF%LNL%Global("AN_CURRENT_STATUE_slot2","LOCALS",%data_1%)%LNL%AreaCheck("AR2000")%LNL%THEN%LNL%RESPONSE #100%LNL%ChangeAIScript("%script_file%slot2",OVERRIDE)%LNL%END%LNL%%LNL%~
+	ACTION_IF ( NOT VARIABLE_IS_SET $AN_STATUE_SCRIPTNAME(~%data%~) ) BEGIN
+		ACTION_DEFINE_ASSOCIATIVE_ARRAY AN_STATUE_SCRIPTNAME BEGIN
+			~%data%~ => ~%script_file%~
+		END
+		ACTION_DEFINE_ASSOCIATIVE_ARRAY AN_STATUE_SCRIPTSTRING BEGIN
+			~%data%~ => ~IF%LNL%OR(2)%LNL%Global("AN_STATUE_izggggg_TOKENSET","GLOBAL",0)%LNL%!GlobalTimerNotExpired("AN_izggggg_STATUE_TIMER","GLOBAL")%LNL%THEN%LNL%RESPONSE #100%LNL%SetGlobal("AN_STATUE_izggggg_TOKENSET","GLOBAL",1)%LNL%SetGlobal("AN_STATUE_%data%_VALUE","GLOBAL",izggggg)%LNL%SetGlobalTimer("AN_izggggg_STATUE_TIMER","GLOBAL",60)%LNL%SetToken("AN_TOKEN_izggggg_STATUE",%tkntxt%)%LNL%END%LNL%%LNL%IF%LNL%InParty("%data%")%LNL%!Global("AN_INPARTYSTATUE_%data%","GLOBAL",1)%LNL%THEN%LNL%RESPONSE #100%LNL%SetGlobal("AN_INPARTYSTATUE_%data%","GLOBAL",1)%LNL%END%LNL%%LNL%IF%LNL%!InParty("%data%")%LNL%!Global("AN_INPARTYSTATUE_%data%","GLOBAL",0)%LNL%THEN%LNL%RESPONSE #100%LNL%SetGlobal("AN_INPARTYSTATUE_%data%","GLOBAL",0)%LNL%END~
+		END
+	END
+END
+
+OUTER_SPRINT ~zuba~ ~[~
+OUTER_SPRINT ~zubb~ ~]~
+ACTION_DEFINE_ASSOCIATIVE_ARRAY AN_NPC_POSITION BEGIN
+	~0~, ~1~, ~2~, ~1866.1326~, ~anstat02~ => ~~
+	~1~, ~2~, ~3~, ~1928.1216~, ~anstat03~ => ~~
+	~2~, ~3~, ~4~, ~1822.1120~, ~anstat04~ => ~~
+	~3~, ~4~, ~5~, ~1664.1142~, ~anstat05~ => ~~
+	~4~, ~5~, ~6~, ~1614.1272~, ~anstat06~ => ~~
+END
+
+OUTER_FOR ( i = 2 ; i < 7 ; ++i ) BEGIN
+	OUTER_SPRINT  ~stat_script~  ~~
+	ACTION_PHP_EACH AN_STATUE_SCRIPTNAME AS scrpt => tprcs BEGIN
+		ACTION_IF ( VARIABLE_IS_SET $AN_STATUE_SCRIPTSTRING(~%scrpt%~) ) BEGIN
+			OUTER_SPRINT  ~scr_str~  $AN_STATUE_SCRIPTSTRING(~%scrpt%~)
+			OUTER_TEXT_SPRINT  ~stat_script~  ~~
+			OUTER_PATCH_SAVE ~stat_script~  ~%scr_str%~ BEGIN
+				REPLACE_TEXTUALLY ~izggggg~ ~%i%~
+			END
+		END
+		COPY ~stat_scrp.baf~ ~override/%tprcs%%i%.bcs~ EVALUATE_BUFFER COMPILE_BAF_TO_BCS
+	END
+END
+
+OUTER_SPRINT ~block_top2~ ~IF%LNL%NumInPartyLT(izggggg)%LNL%Global("AN_CHANGE_NPC","LOCALS",0)%LNL%THEN%LNL%RESPONSE #100%LNL%DestroySelf()%LNL%END~
+OUTER_SPRINT ~block_btm2~ ~IF%LNL%Global("AN_CHANGE_NPC","LOCALS",0)%LNL%THEN%LNL%RESPONSE #100%LNL%DestroySelf()%LNL%END~
+ACTION_PHP_EACH AN_NPC_POSITION AS slot => _ BEGIN
+	OUTER_SPRINT ~stat_script~ ~%block_top2%%LNL%%LNL%%block_top1%%LNL%%LNL%%block_btm1%%LNL%%LNL%%block_btm2%~
+	OUTER_PATCH_SAVE ~stat_script~  ~%stat_script%~ BEGIN
+		REPLACE_TEXTUALLY ~slot1~ ~%slot_1%~
+		REPLACE_TEXTUALLY ~slot2~ ~%slot_2%~
+		REPLACE_TEXTUALLY ~slot3~ ~%zuba%%slot_3%%zubb%~
+		REPLACE_TEXTUALLY ~izggggg~ ~%slot_2%~
+	END
+	COPY ~stat_scrp.baf~ ~override/%slot_4%.bcs~ EVALUATE_BUFFER COMPILE_BAF_TO_BCS
+END
+
+<<<<<<<< anstat01.baf
+IF
+AreaCheck("AR2000")
+!Global("AN_INPARTYSTATUE_PLAYER1","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("AN_INPARTYSTATUE_PLAYER1","GLOBAL",1)
+END
+
+IF
+Global("AN_CHANGE_NPC","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("AN_CHANGE_NPC","LOCALS",1)
+MoveBetweenAreas("AR2000",[1713.1349],0)
+END
+>>>>>>>>
+COMPILE ~anstat01.baf~
+
+<<<<<<<< exAR2000.baf
+IF
+OnCreation()
+OR(5)
+GlobalGT("AN_STATUE_2_TOKENSET","GLOBAL",0)
+GlobalGT("AN_STATUE_3_TOKENSET","GLOBAL",0)
+GlobalGT("AN_STATUE_4_TOKENSET","GLOBAL",0)
+GlobalGT("AN_STATUE_5_TOKENSET","GLOBAL",0)
+GlobalGT("AN_STATUE_6_TOKENSET","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("AN_STATUE_2_TOKENSET","GLOBAL",0)
+SetGlobal("AN_STATUE_3_TOKENSET","GLOBAL",0)
+SetGlobal("AN_STATUE_4_TOKENSET","GLOBAL",0)
+SetGlobal("AN_STATUE_5_TOKENSET","GLOBAL",0)
+SetGlobal("AN_STATUE_6_TOKENSET","GLOBAL",0)
+SetToken("AN_TOKEN_2_STATUE",%strrx%)
+SetToken("AN_TOKEN_3_STATUE",%strrx%)
+SetToken("AN_TOKEN_4_STATUE",%strrx%)
+SetToken("AN_TOKEN_5_STATUE",%strrx%)
+SetToken("AN_TOKEN_6_STATUE",%strrx%)
+Continue()
+END
+>>>>>>>>
+EXTEND_TOP ~AR2000.bcs~ ~exAR2000.baf~ EVALUATE_BUFFER
+
+ACTION_GET_STRREF 3095 reg_string
+COPY_EXISTING ~AR2000.are~ ~override~
+	LPF ALTER_AREA_REGION INT_VAR info_point = RESOLVE_STR_REF (@10000003) STR_VAR region_name=StatueInfo2 END
+	LPF ALTER_AREA_REGION INT_VAR info_point = RESOLVE_STR_REF (@10000004) STR_VAR region_name=StatueInfo3 END
+	LPF ALTER_AREA_REGION INT_VAR info_point = RESOLVE_STR_REF (@10000005) STR_VAR region_name=StatueInfo4 END
+	LPF ALTER_AREA_REGION INT_VAR info_point = RESOLVE_STR_REF (@10000006) STR_VAR region_name=StatueInfo5 END
+	LPF ALTER_AREA_REGION INT_VAR info_point = RESOLVE_STR_REF (@10000007) STR_VAR region_name=StatueInfo6 END
+
+
+/*
+ Теперь мод желательно устанавливать после всех НПС модов. Можно и до, но тогда для НПС, которые установлены после этого мода, при клике по статуе будет выводиться стандартное сообщение. А для стандартных НПС и для тех, кто установлен до мода, сообщение будет типа такого: "<ИМЯ_ПЕРСОНАЖА> - Последователь героя по имени Чарнейм"
+ Переменные:
+    5.1. Global("AN_<ScriptName>_STATUE","GLOBAL",1) (Н-р: Global("AN_AERIE_STATUE","GLOBAL",1)) - персонаж имеет свою статую. Но находится он в партии или нет, не имеет значения.
+    5.2. Global("AN_INPARTYSTATUE_<ScriptName>","GLOBAL",1) (Н-р: Global("AN_INPARTYSTATUE_NALIA","GLOBAL",1)) - персонаж имеет свою статую и находится в партии.
+    5.3. Global("AN_STATUE_<ScriptName>_VALUE","GLOBAL",X), где X - значения от 2 до 6. Показывает, какая статуя принадлежит какому персонажу. Первая статуя это Чарнейм, остальные идут от него по номерам против часовой стрелки(это не я так придумал) (Н-р: Global("AN_STATUE_NALIA_VALUE","GLOBAL",3) - значит, что 3-я статуя - это Налия)
+ Добавил статуям диалоги. Теперь, используя переменные, можно подключить статую к диалогу(Н-р: прочесть описание как она выглядит, если вдруг это понадобиться):
+	* anstat01 - диалог статуи Чарнейм
+	* anstat02-anstat06 - диалоги остальных статуй
+
+ Скриптов создается много, но для управления статуями они в общем-то не нужно. 
+ Сразу имена скриптов назвать невозможно, т.к. их имена и содержимое генерируются динамически.
+
+ Если что, можно сделать и так, чтобы при клике по статуе она начинала диалог.
+ Если что, можно еще и портрет персонажа назначить статуе.
+*/
+
+
