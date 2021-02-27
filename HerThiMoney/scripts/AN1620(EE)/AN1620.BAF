@@ -1,0 +1,17 @@
+IF 
+Global("ANmonstrExists","AN1620",0)
+OnCreation()
+
+THEN
+  RESPONSE #100
+SetGlobal("ANmonstrExists","AN1620",1)
+CreateCreature("ANmonstr",[1719.219],2)
+END
+
+IF
+Global("ANPiratChestClick","AN1620",1)
+THEN
+	RESPONSE #100
+	    ActionOverride(Player1,SetDialog("PLAYER1"))
+		ActionOverride(Player1,StartDialog("Player1",Myself))
+END
