@@ -1,0 +1,13 @@
+IF 
+AreaType(FOREST)
+Race(Player1,ELF)
+!Global("AerieRomanceActive","GLOBAL",2)
+Global("ANAeriePlayer1ElfTalk","GLOBAL",0)
+
+THEN
+  RESPONSE #100
+Wait(2)  
+ActionOverride(Player1,SetDialog("Player1"))
+SetGlobal("ANAeriePlayer1ElfTalk","GLOBAL",1)
+ActionOverride(Myself,StartDialogueNoSet(Player1))
+END

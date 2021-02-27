@@ -1,0 +1,301 @@
+IF
+	OnCreation()
+	Global("ANBankFirst","AN0721",0) 
+THEN
+	RESPONSE #100
+		SetGlobal("ANBankFirst","AN0721",1) 
+		Explore()
+END
+
+IF
+Global("AnOwniBankTalk","GLOBAL",8)
+Global("ANdruidDead","GLOBAL",3)
+Global("ANOwniBankExists2","AN0721",0)
+AreaCheck("AN0721")
+	
+THEN
+	RESPONSE #100
+CreateCreature("ANBANKG2",[753.683],0)
+CreateCreature("ANBANKG2",[926.806],0)
+SetGlobal("ANOwniBankExists2","AN0721",1)
+END
+
+IF
+AreaCheck("AN0721")
+!Global("ANcollectorOwniDead","GLOBAL",2)
+!Global("AnOwniBankTalk","GLOBAL",6)
+!Global("AnOwniBankTalk","GLOBAL",7)
+!Global("AnOwniBankTalk","GLOBAL",8)
+Global("ANcollectorDead","GLOBAL",2)
+Global("ANjalutBankExists0","AN0721",0)
+OR(2)
+Global("ANDwarfCreditPay","GLOBAL",3)
+Global("ANDwarfCreditPay","GLOBAL",4)	
+THEN
+	RESPONSE #100
+SetGlobal("ANjalutBankExists0","AN0721",1)	
+CreateCreature("ANjalut",[517.1503],15)
+END
+
+IF
+AreaCheck("AN0721")
+!Global("ANcollectorOwniDead","GLOBAL",2)
+!Global("AnOwniBankTalk","GLOBAL",6)
+!Global("AnOwniBankTalk","GLOBAL",7)
+!Global("AnOwniBankTalk","GLOBAL",8)
+Global("ANcollectorDead","GLOBAL",2)
+!GlobalTimerExpired("AnOwniBankThinkTimer","GLOBAL") 
+!GlobalTimerExpired("AnOwniBankBattleTimerSkipping","GLOBAL")
+Global("ANjockBankExists0","AN0721",0)
+OR(2)
+Global("ANDwarfCreditPay","GLOBAL",3)
+Global("ANDwarfCreditPay","GLOBAL",4)	
+THEN
+	RESPONSE #100
+SetGlobal("ANjockBankExists0","AN0721",1)	
+CreateCreature("ANJock",[425.881],15)
+END
+
+IF
+AreaCheck("AN0721")
+Global("ANbankStealeIN","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("ANbankStealeIN","GLOBAL",2)
+		DisplayStringHead(Player1,9896)  // Тебя заметили! Ты слышишь, как зовут стражу!
+		CreateCreatureObject("AMNLEG01",Player1,0,0,0) 	
+		CreateCreatureObject("AMNLEG01",Player1,0,0,0)  
+		CreateCreatureObject("AMNLEG01",Player1,0,0,0) 
+		Continue()
+END
+
+IF
+Global("ANOwniBankExists0","AN0721",0)
+Global("AnOwniBankTalk","GLOBAL",6)
+THEN
+	RESPONSE #100
+PlaySong(103) 	
+MoveViewPoint([690.797],VERY_FAST)
+StartCutSceneMode()
+ActionOverride("ANbcat",MoveToPoint([1088.1270])) 
+MultiPlayerSync()
+SetGlobal("ANOwniBankExists0","AN0721",2)  
+SetGlobal("AnOwniBankTalk","GLOBAL",7)
+CutSceneId(Player1)  
+HideGUI()
+CreateCreature("ANdruid1",[711.811],0)
+CreateCreature("ANdruid2",[859.840],0)
+CreateCreature("ANwolf1",[765.808],0)
+CreateCreature("ANarch1",[968.851],0)
+CreateCreature("ANarch1",[786.693],0)
+CreateCreature("ANarch1",[705.686],0)
+CreateCreature("ANarch1",[845.740],0)
+CreateCreature("ANarch1",[883.765],0)
+CreateCreature("ANarch1",[934.814],0)
+Wait(1)
+CreateCreature("ANjalut",[823.1058],7)
+CreateCreature("ANJock",[861.928],7)
+CreateCreature("ANowni",[541.875],13)
+CreateCreature("ANyant",[447.915],12)
+Wait(1)
+DisplayStringHead("ANowni",@59)
+Wait(2)
+DisplayStringHead("ANowni",@57)
+Wait(3)
+DisplayStringHead("ANowni",@58)
+EndCutSceneMode()
+UnhideGUI()
+END
+
+IF
+Global("ANOwniBankExists0","AN0721",1)
+Global("AnOwniBankTalk","GLOBAL",6)
+THEN
+	RESPONSE #100
+PlaySong(103) 	
+MoveViewPoint([690.797],VERY_FAST)	
+StartCutSceneMode()
+ActionOverride("ANbcat",MoveToPoint([1088.1270])) 
+MultiPlayerSync()
+SetGlobal("ANOwniBankExists0","AN0721",2)  
+SetGlobal("AnOwniBankTalk","GLOBAL",7)
+CutSceneId(Player1)  
+HideGUI()
+CreateCreature("ANdruid1",[711.811],0)
+CreateCreature("ANdruid2",[859.840],0)
+CreateCreature("ANwolf1",[765.808],0)
+CreateCreature("ANarch1",[968.851],0)
+CreateCreature("ANarch1",[786.693],0)
+CreateCreature("ANarch1",[705.686],0)
+CreateCreature("ANarch1",[845.740],0)
+CreateCreature("ANarch1",[883.765],0)
+CreateCreature("ANarch1",[934.814],0)
+Wait(1)
+ActionOverride("ANjalut",JumpToPoint([823.1058]))
+ActionOverride("ANJock",JumpToPoint([861.928]))
+CreateCreature("ANowni",[541.875],13)
+CreateCreature("ANyant",[447.915],12)
+Wait(1)
+DisplayStringHead("ANowni",@59)
+Wait(2)
+DisplayStringHead("ANowni",@57)
+Wait(3)
+DisplayStringHead("ANowni",@58)
+EndCutSceneMode()
+UnhideGUI()
+END
+
+IF
+Global("AnOwniBankTalk","GLOBAL",7)
+Dead("ANdruid1")
+Global("ANdruidDead","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("ANdruidDead","GLOBAL",1)
+END
+
+IF
+Global("ANbankdruidloot","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("ANbankdruidloot","GLOBAL",2)
+ClearAllActions() 
+StartCutSceneMode()
+CutSceneId(Player1)  
+HideGUI()
+DisplayStringHead(Player1,@61)
+Wait(3)
+MultiPlayerSync()
+%baf_string1%
+Wait(1)
+FadeFromColor([20.0],0)
+ActionOverride(Player1,LeaveAreaLUA("AR0700","",[3230.3420],0))
+ActionOverride(Player2,LeaveAreaLUA("AR0700","",[3284.3381],0))
+ActionOverride(Player3,LeaveAreaLUA("AR0700","",[3262.3414],0))
+ActionOverride(Player4,LeaveAreaLUA("AR0700","",[3290.3483],0))
+ActionOverride(Player5,LeaveAreaLUA("AR0700","",[3133.3327],0))
+ActionOverride(Player6,LeaveAreaLUA("AR0700","",[3202.3305],0))
+EndCutSceneMode()
+UnhideGUI()
+END
+
+IF
+Global("AnOwniBankTalk","GLOBAL",8)
+Global("ANdruidDead","GLOBAL",3)
+Global("ANOwniBankExists3","AN0721",0)
+THEN
+	RESPONSE #100
+SetGlobal("ANOwniBankExists3","AN0721",1)	
+CreateCreature("ANjalut",[517.1503],15)
+CreateCreature("ANJock",[425.881],15)
+%baf_string2%
+END
+
+IF
+Global("ANdruidDead","GLOBAL",3)
+Global("ANallGroupDead","GLOBAL",1)
+THEN
+	RESPONSE #100
+%baf_string2%
+END
+
+
+// Воскрешение Оуни 
+IF
+Global("Player1OwniRevive","GLOBAL",2) 
+Dead("ANOwni")
+THEN
+	RESPONSE #100	
+SetInterrupt(FALSE)
+ActionOverride(Player1,SetSequence(SEQ_CAST))
+SmallWait(10)
+CreateVisualEffect("ICRAISEI",[541.875])
+FadeFromColor([20.0],0)	
+CreateCreature("ANowni",[541.875],13)
+SetGlobal("Player1OwniRevive","GLOBAL",3)
+SetGlobal("SPRITE_IS_DEADANowni","GLOBAL",0)
+SetInterrupt(TRUE)	
+END
+
+// Все погибли
+IF
+   AreaCheck("AN0721")
+   Dead("ANOwni")
+   Dead("ANdruid1")
+   Dead("ANyant")
+   Dead("ANjalut")
+   Dead("ANJock")
+   !ActuallyInCombat()  
+   Global("ANallGroupDead","GLOBAL",0)   
+THEN
+	RESPONSE #100
+SetGlobal("ANallGroupDead","GLOBAL",1)
+AddJournalEntry(@1029,QUEST)
+END
+
+// Выжили Джок и/или Джалут
+IF
+Global("AnOwniDeadBank","GLOBAL",1)
+Global("ANOwniDeadBankExists1","AN0721",0)
+!Dead("ANjalut")
+!Dead("ANJock")
+THEN
+	RESPONSE #100
+SetGlobal("ANOwniDeadBankExists1","AN0721",1)	
+CreateCreature("ANjalut",[517.1503],15)
+CreateCreature("ANJock",[425.881],15)
+END
+
+IF
+Global("AnOwniDeadBank","GLOBAL",1)
+Global("ANOwniDeadBankExists2","AN0721",0)
+Dead("ANjalut")
+!Dead("ANJock")
+THEN
+	RESPONSE #100
+SetGlobal("ANOwniDeadBankExists2","AN0721",1)	
+CreateCreature("ANJock",[425.881],15)
+END
+
+IF
+Global("AnOwniDeadBank","GLOBAL",1)
+Global("ANOwniDeadBankExists3","AN0721",0)
+!Dead("ANjalut")
+Dead("ANJock")
+THEN
+	RESPONSE #100
+SetGlobal("ANOwniDeadBankExists3","AN0721",1)	
+CreateCreature("ANJock",[425.881],15)
+END
+
+
+IF
+Global("ANallGroupDead","GLOBAL",1)
+Global("ANdruidDead","GLOBAL",3)
+Global("ANOwniBankExists7","AN0721",0)
+THEN
+	RESPONSE #100
+SetGlobal("ANOwniBankExists7","AN0721",1)	
+CreateCreature("ANBANKG2",[425.881],15)
+CreateCreature("ANBANKG2",[517.1503],15)
+END
+
+IF
+Global("ANshakal","GLOBAL",11)
+Global("ANshahbazExists","AN0721",0)
+OR(2)
+Global("Chapter","GLOBAL",%bg2_chapter_2%)
+Global("Chapter","GLOBAL",%bg2_chapter_3%)
+THEN
+	RESPONSE #100
+SetGlobal("ANshahbazExists","AN0721",1)	
+CreateCreature("ANshahba",[1324.950],4)
+END
+
+IF
+Exists("ANshahba")
+GlobalGT("Chapter","GLOBAL",%bg2_chapter_3%)
+THEN
+	RESPONSE #100
+ActionOverride("ANshahba",DestroySelf())
+END

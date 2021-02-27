@@ -1,0 +1,10 @@
+
+// Persist Player1 dialogue file
+
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    SetDialogue("Player1")
+    Continue()
+END

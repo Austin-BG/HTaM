@@ -1,0 +1,20 @@
+IF
+	Global("ANsahuagin","AN1620",2)
+	See(Player1)
+THEN
+	RESPONSE #100
+	SetGlobal("ANsahuagin","AN1620",3)
+	ActionOverride(Player1,SetDialog("PLAYER1"))
+	StartDialogNoSet(Player1)
+END
+
+IF
+	Global("ANsahuagin","AN1620",5)
+	See(Player1)
+	Dead("ANotiug")
+THEN
+	RESPONSE #100
+	SetGlobal("ANsahuagin","AN1620",6)
+	ActionOverride(Player1,SetDialog("PLAYER1"))
+	StartDialogNoSet([PC])
+END

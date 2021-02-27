@@ -1,0 +1,13 @@
+IF 
+Global("ANTroll","GLOBAL",1)
+Exists(Myself)
+OR(2)
+AreaCheck("AR0607")
+AreaCheck("AR0700")
+
+THEN
+  RESPONSE #100
+DestroySelf()
+END
+
+

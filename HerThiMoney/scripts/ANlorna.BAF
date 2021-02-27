@@ -1,0 +1,8 @@
+IF
+	See([PC])
+	Global("ANLornaExists","AR0700",1)
+THEN
+	RESPONSE #100
+	ActionOverride(Player1,SetDialog("PLAYER1"))
+	StartDialogNoSet([PC])
+END

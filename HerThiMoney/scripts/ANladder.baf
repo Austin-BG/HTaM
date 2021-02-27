@@ -1,0 +1,11 @@
+IF
+Range(Player1,40)
+Global("ANbankdruidloot","GLOBAL",0)
+!Global("AnOwniBankTalk","GLOBAL",7)
+OR(2)
+Global("AnOwniBankTalk","GLOBAL",8)
+Global("ANallGroupDead","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("ANbankdruidloot","GLOBAL",1)
+END

@@ -1,0 +1,58 @@
+IF
+	AreaCheck("AR0700")
+	Range([PC],15)
+	!TimeOfDay(DAY)
+	CombatCounter(0)
+	Global("ANbankNight","LOCALS",0)  	
+THEN
+	RESPONSE #100
+SetGlobal("ANbankNight","LOCALS",1)   
+StartDialogNoSet([PC]) 
+Continue()     
+END
+
+IF
+	!TimeOfDay(DAY)
+	Global("ANbankNight","LOCALS",1)  
+THEN
+	RESPONSE #100
+ActionOverride(Player1,MoveToPoint([3325.3548]))    
+ActionOverride(Player2,MoveToPoint([3325.3548]))  
+ActionOverride(Player3,MoveToPoint([3325.3548]))  
+ActionOverride(Player4,MoveToPoint([3325.3548]))  
+ActionOverride(Player5,MoveToPoint([3325.3548]))  
+ActionOverride(Player6,MoveToPoint([3325.3548]))  
+Continue()
+END
+
+IF
+	AreaCheck("AR0700")
+	!See([PC])
+	!TimeOfDay(DAY)
+	Global("ANbankNight","LOCALS",1)  
+THEN
+	RESPONSE #100
+SetGlobal("ANbankNight","LOCALS",0)   
+Continue()      
+END
+
+IF
+  !See([EVILCUTOFF])
+THEN
+  RESPONSE #100
+  MoveToPoint([3709.3789])
+END
+
+
+IF
+	AreaCheck("AR0700")
+	See([PC])
+	!TimeOfDay(DAY)
+	Global("ANbankNightIN","GLOBAL",1)
+THEN
+	RESPONSE #100
+EquipMostDamagingMelee()
+Enemy()  
+AttackReevaluate(NearestEnemyOf(),30)
+Continue() 
+END

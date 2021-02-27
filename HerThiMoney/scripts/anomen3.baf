@@ -1,0 +1,46 @@
+IF
+Global("AranLove","GLOBAL",12) 
+Global("AranAnomenTalk1","GLOBAL",0)
+See(Player1)
+InParty(Myself)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+CombatCounter(0)
+THEN
+RESPONSE #100
+ActionOverride(Myself,StartDialogNoSet(Player1))
+END
+
+IF
+Global("AranLove","GLOBAL",22) 
+Global("AranAnomenTalk2","GLOBAL",0)
+See(Player1)
+InParty(Myself)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+CombatCounter(0)
+OR(2)
+AreaCheck("AR0305")
+AreaCheck("AR0300")
+Global("AnomenRomanceActive","GLOBAL",2)
+THEN
+RESPONSE #100
+ActionOverride(Player1,SetDialog("PLAYER1"))
+SmallWait(3)
+ActionOverride(Myself,StartDialogNoSet(Player1))
+END
+
+IF
+Global("AranRomanceActive","GLOBAL",2)
+Global("AranAnomenTalk2","GLOBAL",1)
+See(Player1)
+InParty(Myself)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+CombatCounter(0)
+Global("AnomenRomanceActive","GLOBAL",2)
+THEN
+RESPONSE #100
+ActionOverride(Player1,SetDialog("PLAYER1"))
+SmallWait(3)
+ActionOverride(Myself,StartDialogNoSet(Player1))
+END
+
+

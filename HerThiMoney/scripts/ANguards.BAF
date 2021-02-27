@@ -1,0 +1,25 @@
+IF
+	OR(5)
+	Global("ANAranSex","GLOBAL",1)
+	Global("AranLove","GLOBAL",20)
+	Global("AranLove","GLOBAL",32)
+	Global("AranLove","GLOBAL",33)
+	Global("ANAranLamp","GLOBAL",11)
+THEN
+	RESPONSE #100
+		Deactivate(Myself)
+END
+
+IF
+	!IsActive(Myself)
+	OR(5)
+	Global("ANAranSex","GLOBAL",2)
+	Global("AranLove","GLOBAL",21)
+	Global("AranLove","GLOBAL",38)
+	Global("AranLove","GLOBAL",999)
+	Global("ANAranLamp","GLOBAL",12)
+THEN
+	RESPONSE #100
+		Activate(Myself)
+END
+

@@ -1,0 +1,17 @@
+IF
+OpenState("Door01",TRUE)
+Global("ANpiratQuest","GLOBAL",5)
+THEN
+	RESPONSE #100
+SetGlobal("ANpiratQuest","GLOBAL",6)	
+ClearAllActions()	
+StartCutSceneMode()
+CutSceneId(Player1)  
+Wait(1)
+CreateCreatureObject("ANscelet",Player1,0,0,0)
+ActionOverride(Player1,SetDialog("PLAYER1"))
+Wait(2)
+EndCutSceneMode()
+ActionOverride("ANscelet",Dialog(Player1))
+END
+

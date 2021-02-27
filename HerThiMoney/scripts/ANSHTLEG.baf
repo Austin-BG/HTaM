@@ -1,0 +1,14 @@
+IF
+    Global("ANsimoncernd","GLOBAL",0)
+	See("Cernd")
+THEN
+	RESPONSE #100
+	ActionOverride(Player1,SetDialog("PLAYER1"))
+	StartDialogNoSet("Cernd")
+END
+
+
+
+
+
+

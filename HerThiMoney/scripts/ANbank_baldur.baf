@@ -1,0 +1,65 @@
+IF
+	GlobalGT("ANBankMoney","GLOBAL",0)
+	GlobalLT("ANBankMoney_Percent","GLOBAL",2)
+THEN
+	RESPONSE #100
+		SetGlobal("ANBankMoney_Percent","GLOBAL",2)
+		Continue()
+END
+
+IF
+	Global("ANBankTimerMoney","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("ANBankTimerMoney","GLOBAL",SEVEN_DAYS)
+		SetTokenGlobal("ANBankMoney","GLOBAL","AN_BANK_GOLD")
+		//Continue()
+END
+
+IF
+	GlobalGT("ANBankTimerMoney","GLOBAL",1)
+	GlobalTimerExpired("ANBankTimerMoney","GLOBAL")
+	Global("ANCheckMoneyTimer","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("ANCheckMoneyTimer","GLOBAL",1)
+		Continue()
+END
+
+IF
+	GlobalGT("ANBankTimerMoney","GLOBAL",1)
+	!Global("ANCheckMoneyTimer","GLOBAL",0)
+	GlobalsGT("ANBankTimerMoney","ANCheckMoneyTimer")
+THEN
+	RESPONSE #100
+		SetGlobal("ANCheckMoneyTimer","GLOBAL",0)
+		Continue()
+END
+
+IF
+	GlobalGT("ANBankTimerMoney","GLOBAL",1)
+	!Global("ANCheckMoneyTimer","GLOBAL",0)
+	GlobalsGT("ANCheckMoneyTimer","ANBankTimerMoney")
+THEN
+	RESPONSE #100
+		AddGlobals("ANBankMoney","ANBankMoney_Percent")
+		SetTokenGlobal("ANBankMoney","GLOBAL","AN_BANK_GOLD")
+		IncrementGlobal("ANBankTimerMoney","GLOBAL",756000) //50400 * 15 (SEVEN_DAYS * 15)
+END
+
+
+
+
+
+
+/*IF
+	GlobalGT("ANBankTimerMoney","GLOBAL",1)
+	GlobalTimerExpired("ANBankTimerMoney","GLOBAL")
+THEN
+	RESPONSE #100
+		AddGlobals("ANBankMoney","ANBankMoney_Percent")
+		SetTokenGlobal("ANBankMoney","GLOBAL","AN_BANK_GOLD")
+		SetGlobalTimer("ANBankTimerMoney","GLOBAL",SEVEN_DAYS)
+		Continue()
+END*/
+

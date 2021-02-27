@@ -1,0 +1,63 @@
+IF 
+AreaCheck("AR1000")
+See(Player1)
+Global("ANParisFirstTalk","AR1000",0)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANParisFirstTalk","AR1000",1)
+StartDialogNoSet(Player1)
+END
+
+IF 
+Global("ANParisFirstTalk","AR1000",3)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANParisFirstTalk","AR1000",4)
+SetGlobal("ANParisGraveTalk","GLOBAL",1)
+END
+
+
+IF 
+Global("ANParisGraveTalk","GLOBAL",2)
+AreaCheck("AR0800")
+See(Player1)
+
+THEN
+  RESPONSE #100
+StartDialogNoSet(Player1)
+END
+
+IF 
+Global("ANParisGraveFinalTalk","AR0800",1)
+THEN
+  RESPONSE #100
+SetGlobal("ANParisGraveFinalTalk","AR0800",2)  
+StartDialogNoSet(Player1)
+END
+
+IF
+	AttackedBy([GOODCUTOFF],DEFAULT)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!AreaCheck("AR0800")
+THEN
+	RESPONSE #100
+		RunAwayFrom(NearestEnemyOf(Myself),150)
+END
+
+IF
+	AttackedBy([ANYONE],DEFAULT)
+	!AreaCheck("AR0800")
+THEN
+	RESPONSE #100
+		RunAwayFrom(LastAttackerOf(Myself),150)
+END
+

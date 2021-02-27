@@ -1,0 +1,10 @@
+IF 
+Range(Player1,20)
+AreaCheck("AR0511")
+Global("AranLove","GLOBAL",25)
+
+THEN
+  RESPONSE #100
+ActionOverride(Player1,SetDialog("PLAYER1"))  
+StartDialogNoSet(Player1)
+END

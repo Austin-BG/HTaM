@@ -1,0 +1,31 @@
+IF
+	OR(3)
+		OnCreation()
+		Global("AN_Check_Money","GLOBAL",0)
+		!GlobalTimerNotExpired("ANCheckMoneyTimer","GLOBAL")
+THEN
+	RESPONSE #100
+		SetTokenGlobal("ANBankMoney","GLOBAL","AN_BANK_GOLD")
+		SetGlobal("AN_Check_Money","GLOBAL",1)
+		SetGlobalTimer("ANCheckMoneyTimer","GLOBAL",60)
+		Continue()
+END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,161 @@
+IF
+	GlobalGT("ANBankMoneyGiveAllMoney","GLOBAL",0)
+	Global("ANBankMoney","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ANBankMoney","GLOBAL",0)
+		SetGlobal("ANBankMoney_Percent","GLOBAL",0)
+		SetGlobal("ANBankTimerMoney","GLOBAL",0)
+		SetGlobal("ANBankMoneyGiveAllMoney","GLOBAL",0)
+END
+
+IF
+	GlobalGT("ANBankMoneyGiveAllMoney","GLOBAL",0)
+	GlobalGT("ANBankMoney","GLOBAL",100000)
+THEN
+	RESPONSE #100
+		GiveGoldForce(100000)
+		IncrementGlobal("ANBankMoney","GLOBAL",-100000)
+END
+
+IF
+	GlobalGT("ANBankMoneyGiveAllMoney","GLOBAL",0)
+	GlobalGT("ANBankMoney","GLOBAL",50000)
+THEN
+	RESPONSE #100
+		GiveGoldForce(50000)
+		IncrementGlobal("ANBankMoney","GLOBAL",-50000)
+END
+
+IF
+	GlobalGT("ANBankMoneyGiveAllMoney","GLOBAL",0)
+	GlobalGT("ANBankMoney","GLOBAL",20000)
+THEN
+	RESPONSE #100
+		GiveGoldForce(20000)
+		IncrementGlobal("ANBankMoney","GLOBAL",-20000)
+END
+
+IF
+	GlobalGT("ANBankMoneyGiveAllMoney","GLOBAL",0)
+	GlobalGT("ANBankMoney","GLOBAL",10000)
+THEN
+	RESPONSE #100
+		GiveGoldForce(10000)
+		IncrementGlobal("ANBankMoney","GLOBAL",-10000)
+END
+
+IF
+	GlobalGT("ANBankMoneyGiveAllMoney","GLOBAL",0)
+	GlobalGT("ANBankMoney","GLOBAL",5000)
+THEN
+	RESPONSE #100
+		GiveGoldForce(5000)
+		IncrementGlobal("ANBankMoney","GLOBAL",-5000)
+END
+
+IF
+	GlobalGT("ANBankMoneyGiveAllMoney","GLOBAL",0)
+	GlobalGT("ANBankMoney","GLOBAL",2000)
+THEN
+	RESPONSE #100
+		GiveGoldForce(2000)
+		IncrementGlobal("ANBankMoney","GLOBAL",-2000)
+END
+
+IF
+	GlobalGT("ANBankMoneyGiveAllMoney","GLOBAL",0)
+	GlobalGT("ANBankMoney","GLOBAL",1000)
+THEN
+	RESPONSE #100
+		GiveGoldForce(1000)
+		IncrementGlobal("ANBankMoney","GLOBAL",-1000)
+END
+
+IF
+	GlobalGT("ANBankMoneyGiveAllMoney","GLOBAL",0)
+	GlobalGT("ANBankMoney","GLOBAL",500)
+THEN
+	RESPONSE #100
+		GiveGoldForce(500)
+		IncrementGlobal("ANBankMoney","GLOBAL",-500)
+END
+
+IF
+	GlobalGT("ANBankMoneyGiveAllMoney","GLOBAL",0)
+	GlobalGT("ANBankMoney","GLOBAL",200)
+THEN
+	RESPONSE #100
+		GiveGoldForce(200)
+		IncrementGlobal("ANBankMoney","GLOBAL",-200)
+END
+
+IF
+	GlobalGT("ANBankMoneyGiveAllMoney","GLOBAL",0)
+	GlobalGT("ANBankMoney","GLOBAL",100)
+THEN
+	RESPONSE #100
+		GiveGoldForce(100)
+		IncrementGlobal("ANBankMoney","GLOBAL",-100)
+END
+
+IF
+	GlobalGT("ANBankMoneyGiveAllMoney","GLOBAL",0)
+	GlobalGT("ANBankMoney","GLOBAL",50)
+THEN
+	RESPONSE #100
+		GiveGoldForce(50)
+		IncrementGlobal("ANBankMoney","GLOBAL",-50)
+END
+
+IF
+	GlobalGT("ANBankMoneyGiveAllMoney","GLOBAL",0)
+	GlobalGT("ANBankMoney","GLOBAL",10)
+THEN
+	RESPONSE #100
+		GiveGoldForce(10)
+		IncrementGlobal("ANBankMoney","GLOBAL",-10)
+END
+
+IF
+	GlobalGT("ANBankMoneyGiveAllMoney","GLOBAL",0)
+	GlobalGT("ANBankMoney","GLOBAL",5)
+THEN
+	RESPONSE #100
+		GiveGoldForce(5)
+		IncrementGlobal("ANBankMoney","GLOBAL",-5)
+END
+
+IF
+	GlobalGT("ANBankMoneyGiveAllMoney","GLOBAL",0)
+	GlobalGT("ANBankMoney","GLOBAL",0)
+THEN
+	RESPONSE #100
+		GiveGoldForce(1)
+		IncrementGlobal("ANBankMoney","GLOBAL",-1)
+END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,115 @@
+IF
+	OnCreation()
+	Global("ANBankFirst","AN0720",0) 
+THEN
+	RESPONSE #100
+		SetGlobal("ANBankFirst","AN0720",1) 
+		Explore()
+END
+
+IF
+!Global("ANcollectorOwniDead","GLOBAL",2)
+Global("ANcollectorDead","GLOBAL",2)
+Global("ANOwniBankExists","AN0720",0)
+!Global("AnOwniBankTalk","GLOBAL",4)
+!Global("AnOwniBankTalk","GLOBAL",7)
+!Global("AnOwniBankTalk","GLOBAL",8)
+OR(2)
+Global("ANDwarfCreditPay","GLOBAL",3)
+Global("ANDwarfCreditPay","GLOBAL",4)	
+THEN
+	RESPONSE #100
+SetGlobal("ANOwniBankExists","AN0720",1)	
+CreateCreature("ANOwni",[1041.1050],7)
+CreateCreature("ANyant",[540.309],7)
+CreateCreature("ANesra",[405.410],7)
+ActionOverride("ANesra",StartDialogueNoSet(Player1))
+END
+
+
+
+IF
+Global("ANbankStealeIN","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("ANbankStealeIN","GLOBAL",2)
+		DisplayStringHead(Player1,9896)  // Тебя заметили! Ты слышишь, как зовут стражу!
+		CreateCreatureObject("AMNLEG01",Player1,0,0,0) 	
+		CreateCreatureObject("AMNLEG01",Player1,0,0,0)  
+		CreateCreatureObject("AMNLEG01",Player1,0,0,0) 
+		Continue()
+END
+
+IF 
+Global("AnOwniBankTalk","GLOBAL",4)
+!GlobalTimerExpired("AnOwniBankBattleTimer","GLOBAL")
+OR(2) 
+TimeOfDay(NIGHT) 
+TimeOfDay(DUSK)
+
+THEN
+  RESPONSE #100
+SetGlobal("AnOwniBankTalk","GLOBAL",5)
+StartCutSceneMode()
+CutSceneId("ANowni")  
+HideGUI()
+FadeFromColor([20.0],0)
+ActionOverride("ANOwni",JumpToPoint([516.390]))
+Wait(2)
+EndCutSceneMode()
+UnhideGUI()
+ActionOverride("ANOwni",StartDialogueNoSet(Player1))
+END
+
+IF 
+Global("AnOwniBankTalk","GLOBAL",6)
+
+THEN
+  RESPONSE #100
+ClearAllActions() 
+ActionOverride("ANOwni",DestroySelf())
+ActionOverride("ANyant",DestroySelf())
+Wait(1)
+FadeFromColor([20.0],0)
+ActionOverride(Player1,LeaveAreaLUA("AN0721","",[645.998],8))
+ActionOverride(Player2,LeaveAreaLUA("AN0721","",[537.994],8))
+ActionOverride(Player3,LeaveAreaLUA("AN0721","",[704.1018],8))
+ActionOverride(Player4,LeaveAreaLUA("AN0721","",[677.1027],8))
+ActionOverride(Player5,LeaveAreaLUA("AN0721","",[572.1026],8))
+ActionOverride(Player6,LeaveAreaLUA("AN0721","",[672.1049],8))
+END
+
+IF
+Global("AnOwniBankTalk","GLOBAL",8)
+Global("ANOwniBankExists2","AN0720",0)
+!Global("AnOwniDeadBank","GLOBAL",1)
+THEN
+	RESPONSE #100
+SetGlobal("ANOwniBankExists2","AN0720",1)	
+CreateCreature("ANOwni",[1041.1050],7)
+CreateCreature("ANyant",[540.309],7)
+END
+
+
+IF
+Global("ANallGroupDead","GLOBAL",1)
+Global("ANdruidDead","GLOBAL",3)
+Global("ANOwniBankExists8","AN0720",0)
+THEN
+	RESPONSE #100
+SetGlobal("ANOwniBankExists8","AN0720",1)	
+CreateCreature("ANBANKG2",[405.410],7)
+CreateCreature("ANBANKG2",[540.309],7)
+CreateCreature("ANBANKG2",[1041.1050],7)
+END
+
+IF
+Global("ANallGroupDead","GLOBAL",1)
+Exists("ANesra")
+OR(2) 
+Global("ANdruidDead","GLOBAL",1) 
+Global("ANdruidDead","GLOBAL",2)
+THEN
+	RESPONSE #100
+ActionOverride("ANesra",StartDialogueNoSet(Player1))
+END

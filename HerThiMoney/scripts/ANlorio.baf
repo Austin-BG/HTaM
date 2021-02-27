@@ -1,0 +1,11 @@
+IF 
+Global("ANlorioPrison","GLOBAL",5)
+Range(Player1,20)
+
+THEN
+  RESPONSE #100
+ActionOverride(Player1,SetDialog("PLAYER1"))
+StartDialogNoSet([PC])
+END
+
+

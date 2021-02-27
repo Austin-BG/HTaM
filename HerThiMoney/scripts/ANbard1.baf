@@ -1,0 +1,20 @@
+IF
+    Global("ANbardTalkFirkraag","GLOBAL",1)
+	See(Player1)
+THEN
+	RESPONSE #100
+ActionOverride(Player1,SetDialog("Player1"))
+StartDialogNoSet(Player1)
+END
+
+IF
+    Global("ANbardTalkTrademeet","GLOBAL",1)
+	See(Player1)
+THEN
+	RESPONSE #100
+ActionOverride(Player1,SetDialog("Player1"))
+StartDialogNoSet(Player1)
+END
+
+
+

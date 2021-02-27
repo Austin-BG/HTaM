@@ -1,0 +1,12 @@
+IF
+	Range([PC],30)
+	StateCheck(Myself,STATE_SLEEPING)
+THEN
+	RESPONSE #100
+	    SetInterrupt(FALSE)
+		ApplySpellRES("ANawake",Myself)
+		PlaySong(103)
+		Enemy()
+		Wait(2)
+		SetInterrupt(TRUE)
+END

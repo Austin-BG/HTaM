@@ -1,0 +1,7 @@
+IF
+Dead("ANscelet")
+THEN
+	RESPONSE #100
+TriggerActivation("TranAN1616",TRUE)
+END
+

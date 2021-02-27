@@ -1,0 +1,29 @@
+IF
+	Global("ANAranTethyr","GLOBAL",200)
+THEN
+	RESPONSE #100
+StartCutSceneMode()
+CutSceneId(Player1) 	
+SetGlobal("ANAranTethyr","GLOBAL",201)
+ActionOverride(Player1,Rest())
+CreateCreature("ANgori",[1623.672],W)
+ActionOverride(Player1,SetDialog("PLAYER1"))
+ActionOverride(Player1,FaceObject("ANgori"))
+ActionOverride("ANgori",FaceObject(Player1))
+Wait(1)
+EndCutSceneMode()
+ActionOverride(Player1,StartDialog("Player1",Myself))
+END
+
+IF
+	Global("ANAranTethyr","GLOBAL",202)
+THEN
+	RESPONSE #100
+SetGlobal("ANAranTethyr","GLOBAL",203)
+StartCutSceneMode()
+CutSceneId(Player1) 
+Wait(1)
+EndCutSceneMode()
+ActionOverride(Player1,LeaveAreaLUAPanic("AN1204","",[456.397],N)) 
+ActionOverride(Player1,LeaveAreaLUA("AN1204","",[456.397],N))
+END

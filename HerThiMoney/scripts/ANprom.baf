@@ -1,0 +1,28 @@
+IF
+    Global("ANpromobuklets","GLOBAL",0)
+	See("Imoen2")
+	InParty("Imoen2") 
+	!StateCheck("Imoen2",CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+	    ActionOverride(Player1,SetDialog("PLAYER1"))
+		StartDialogNoSet("Imoen2")
+END
+
+IF
+    Global("ANpromobuklets","GLOBAL",0)
+	See("Neera")
+	InParty("Neera") 
+	!StateCheck("Neera",CD_STATE_NOTVALID)
+	!InParty("Imoen2")
+THEN
+	RESPONSE #100
+	    ActionOverride(Player1,SetDialog("PLAYER1"))
+		StartDialogNoSet("Neera")
+END
+
+
+
+
+
+

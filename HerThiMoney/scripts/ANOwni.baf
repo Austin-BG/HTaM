@@ -1,0 +1,283 @@
+IF
+    AreaCheck("AN0060")
+	Global("ANDwarfCreditPayPartExist","GLOBAL",0)
+	Global("ANDwarfOwniGroupRevive","AN0060",0)
+	OR(3)
+    Global("ANDwarfCreditPay","GLOBAL",3)
+	Global("ANDwarfCreditPay","GLOBAL",4)
+	Global("ANDwarfCreditPayPart","GLOBAL",1)
+THEN
+	RESPONSE #100
+EscapeArea() 
+END
+
+IF
+    AreaCheck("AN0060")
+	Range(Player1,20)
+	InParty("Korgan") 
+	Global("ANowniFirstTalk","AN0060",0)
+THEN
+	RESPONSE #100
+ActionOverride(Player1,SetDialog("Player1"))
+SetGlobal("ANowniFirstTalk","AN0060",1)
+StartDialogNoSet(Player1)
+END
+
+IF
+    AreaCheck("AN0060")
+	Range(Player1,20)
+	!Global("ANDwarfCreditPayPart","GLOBAL",0)
+	Global("ANCreditPayPartTalk","GLOBAL",0)
+THEN
+	RESPONSE #100
+ActionOverride(Player1,SetDialog("Player1"))
+StartDialogNoSet(Player1)
+END
+
+IF
+Global("ANownyStop","GLOBAL",0)
+!Global("ANOwniPayFriend","GLOBAL",2)
+OR(5)
+	HPPercentLT(Myself,50)
+	HPPercentLT("ANyant",50)
+	HPPercentLT("ANJock",50)
+	HPPercentLT("ANesra",50)
+	HPPercentLT("ANjalut",50)
+THEN
+	RESPONSE #100
+	ClearAllActions()
+	SetGlobal("ANownyStop","GLOBAL",1)
+	StartDialogNoSet(Player1)
+END
+
+IF
+AreaCheck("AN0060")
+CombatCounter(0)
+Global("ANcollectorDead","GLOBAL",1)
+THEN
+RESPONSE #100
+ActionOverride(Player1,SetDialog("Player1")) 
+ChangeEnemyAlly(Myself,GOODBUTBLUE) 
+ChangeEnemyAlly("ANjalut",GOODBUTBLUE) 
+ChangeEnemyAlly("ANyant",GOODBUTBLUE) 
+ChangeEnemyAlly("ANJock",GOODBUTBLUE) 
+ChangeEnemyAlly("ANesra",GOODBUTBLUE)
+StartDialogNoSet(Player1)
+END
+
+IF
+!Global("ANownyStop","GLOBAL",2)
+OR(5)
+ Allegiance(Myself,ENEMY)
+ Allegiance("ANJock",ENEMY)
+ Allegiance("ANyant",ENEMY)
+ Allegiance("ANesra",ENEMY)
+ Allegiance("ANjalut",ENEMY)
+THEN
+	RESPONSE #100
+	Enemy()
+	AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+See([EVILCUTOFF])
+!Allegiance(LastSeenBy(Myself),GOODBUTBLUE)
+!Name("ANowni",LastSeenBy(Myself))
+!Name("ANyant",LastSeenBy(Myself))
+!Name("ANesra",LastSeenBy(Myself))
+!Name("ANJock",LastSeenBy(Myself))
+!Name("ANjalut",LastSeenBy(Myself))
+!Allegiance(LastSeenBy(Myself),GOODCUTOFF)
+!Class(LastSeenBy(Myself),INNOCENT)
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(),30)	
+END
+
+IF
+HaveSpell(CLERIC_MASS_CURE)
+OR(5)
+HPPercentLT(Myself,40)
+HPPercentLT("ANyant",40)
+HPPercentLT("ANJock",40)
+HPPercentLT("ANesra",40)
+HPPercentLT("ANjalut",40)
+THEN
+RESPONSE #100
+Spell(Myself, CLERIC_MASS_CURE)
+END
+
+IF
+	Heard([ANYONE],151)
+	Allegiance(Myself,NEUTRAL)
+OR(2)
+	AreaCheck("AN0720")
+	AreaCheck("AN0721")	
+THEN
+	RESPONSE #100
+		Enemy()
+		MoveToObject(LastHeardBy(Myself))
+END
+
+IF
+!Global("AnOwniBankTalk","GLOBAL",4)
+!Global("AnOwniBankTalk","GLOBAL",5)
+!Global("AnOwniBankTalk","GLOBAL",6)
+!Global("AnOwniBankTalk","GLOBAL",7)
+!Global("AnOwniBankTalk","GLOBAL",8)
+	See([PC])
+	!TimeOfDay(DAY)
+OR(2)
+	AreaCheck("AN0720")
+	AreaCheck("AN0721")
+THEN
+	RESPONSE #100
+Enemy()  
+AttackReevaluate(NearestEnemyOf(),30)
+Continue()
+END
+
+IF
+	Global("ANbankStealeIN","GLOBAL",3)
+OR(2)
+	AreaCheck("AN0720")
+	AreaCheck("AN0721")
+THEN
+	RESPONSE #100
+EquipMostDamagingMelee()
+Enemy()  
+AttackReevaluate(NearestEnemyOf(),30)
+Continue()
+END
+
+IF
+	AttackedBy([GOODCUTOFF],DEFAULT)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Shout(99)
+		Enemy()
+END
+
+
+IF
+AreaCheck("AN0721")
+CombatCounter(0)
+Global("ANdruidDead","GLOBAL",1)
+OR(2)
+Global("Player1OwniRevive","GLOBAL",0)
+Global("Player1OwniRevive","GLOBAL",4)
+THEN
+RESPONSE #100
+ActionOverride(Player1,SetDialog("Player1")) 
+StartDialogNoSet(Player1)
+END
+
+IF
+AreaCheck("AN0720")
+See(Player1)
+Global("ANdruidDead","GLOBAL",2) 
+Global("AnOwniBankTalk","GLOBAL",8)
+THEN
+RESPONSE #100
+ActionOverride(Player1,SetDialog("Player1")) 
+StartDialogNoSet(Player1)
+END
+
+IF
+Global("Player1OwniRevive","GLOBAL",3) 
+THEN
+	RESPONSE #100	
+Wait(1)
+ActionOverride(Player1,SetDialog("Player1")) 
+StartDialogNoSet(Player1)
+END
+
+IF
+	See([PC])
+	Global("ANOwniHelp","GLOBAL",0)
+OR(2)
+	AreaCheck("AR0808") 
+	AreaCheck("AR0809") 
+THEN
+	RESPONSE #100
+		SetGlobal("ANOwniHelp","GLOBAL",1)
+		DisplayStringHead(Myself,@63)  
+END
+
+IF
+    AreaCheck("AR0808") 
+	Dead("c6del")  // Дел
+	Dead("c6valen")  // Вален
+	Dead("c6tanov")  // Танова
+	Global("ANOwniSpeak","LOCALS",0)
+THEN
+	RESPONSE #100
+SetGlobal("ANOwniSpeak","LOCALS",1)
+DisplayStringHead(Myself,@64)
+ActionOverride("ANjalut",EscapeArea())
+ActionOverride("ANJock",EscapeArea())
+END
+
+IF
+	AreaCheck("AR0808")  // Bodhi's Hideout (Abduction Plot, getting Imoen's soul)
+	OpenState("DOOR01",TRUE)
+	!Detect([PC])
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+
+IF
+	AreaCheck("AR0808")  // Bodhi's Hideout (Abduction Plot, getting Imoen's soul)
+	OpenState("DOOR01",TRUE)
+	Global("ANMoveToBodhi","LOCALS",0)
+THEN
+	RESPONSE #100
+		MoveToObjectNoInterrupt("DOOR01")
+		SetGlobal("ANMoveToBodhi","LOCALS",1)
+END
+
+IF
+	AreaCheck("AR0808")  // Bodhi's Hideout (Abduction Plot, getting Imoen's soul)
+	OpenState("DOOR01",TRUE)
+	Range("Tran0809",8)
+THEN
+	RESPONSE #100
+		EscapeArea()
+END
+
+IF
+    Global("ANOwniHelp","GLOBAL",1)
+	!Range([PC],4)
+	ActionListEmpty()
+OR(2)
+	AreaCheck("AR0808") 
+	AreaCheck("AR0809") 	
+THEN
+	RESPONSE #100
+		MoveToObject(Player1)
+END
+
+IF
+	AreaCheck("AR0809")
+	Dead("c6bodhi")  // Бодхи
+	CombatCounter(0)
+	Global("ANBodhiDead","AR0809",0)  // Bodhi's Lair (Abduction Plot, getting Imoen's soul)
+	See([PC])
+THEN
+	RESPONSE #100
+		SetGlobal("ANBodhiDead","AR0809",1) 
+		SetGlobal("OwniFightBodhi","GLOBAL",2)
+		DisplayStringHead(Myself,@65)  
+END
+
+IF
+	AreaCheck("AR0809")
+	Global("ANBodhiDead","AR0809",1)
+THEN
+	RESPONSE #100
+		Wait(2)
+		SetGlobal("ANBodhiDead","AR0809",2) 
+		EscapeArea() 
+END

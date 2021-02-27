@@ -1,0 +1,11 @@
+IF
+Opened([ANYONE])
+Global("ANTrapBankMain","AN0721",0)
+THEN
+RESPONSE #100
+SetGlobal("ANTrapBankMain","AN0721",1)
+SetGlobal("ANbankStealeIN","GLOBAL",1)
+Continue()
+END
+
+

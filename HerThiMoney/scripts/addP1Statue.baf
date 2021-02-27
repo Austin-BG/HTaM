@@ -1,0 +1,17 @@
+IF
+	AreaCheck("AR2000") // Trademeet
+	Global("MakeStatue","GLOBAL",2)
+	Global("AN_Statues_Player1_Talk","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("AN_Statues_Player1_Talk","GLOBAL",1)
+END
+
+IF
+	AreaCheck("AR2000") // Trademeet
+	Global("AN_Statues_Player1_Talk","GLOBAL",1)
+	Range(Player1,20)
+THEN
+	RESPONSE #100
+		ActionOverride(Player1,StartDialog("Player1",Myself))
+END

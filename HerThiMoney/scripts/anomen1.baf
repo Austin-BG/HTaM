@@ -1,0 +1,51 @@
+IF
+Global("ANimoenanomentalk","GLOBAL",0)
+InParty("Imoen2") 
+!Dead("Imoen2")
+!Dead("Anomen")
+See("Imoen2")
+CombatCounter(0)
+!See([ENEMY])
+!StateCheck(Myself,CD_STATE_NOTVALID)
+!StateCheck("Imoen2",CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("ANimoenanomentalk","GLOBAL",1)
+RealSetGlobalTimer("ANAnomenImoen2","GLOBAL",10)
+END
+
+IF
+InParty(Myself)
+See("Imoen2")
+CombatCounter(0)
+!See([ENEMY]) 
+RealGlobalTimerExpired("ANAnomenImoen2","GLOBAL")
+Global("ANimoenanomentalk","GLOBAL",1) 
+THEN
+RESPONSE #100
+SetGlobal("ANimoenanomentalk","GLOBAL",2)
+END
+
+IF
+InParty(Myself)
+See("Imoen2")
+Global("ANimoenanomentalk","GLOBAL",2)
+THEN
+RESPONSE #100
+Interact("Imoen2")
+END
+
+IF 
+AreaCheck("AR1000")
+Range("Door1001",50) 
+Global("AnomenIsKnight","GLOBAL",1)
+!Global("AnomenSaerk","GLOBAL",0)
+Global("ANAnomenPlayer1Talk","AR1000",0)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANAnomenPlayer1Talk","AR1000",1)
+ActionOverride(Player1,SetDialog("PLAYER1"))
+SmallWait(3)
+ActionOverride(Myself,StartDialogueNoSet(Player1))
+END
