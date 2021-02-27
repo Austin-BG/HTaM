@@ -1,0 +1,18 @@
+IF 
+Global("ANvivernExists","AN1616",0)
+OnCreation()
+
+THEN
+  RESPONSE #100
+SetGlobal("ANvivernExists","AN1616",1)
+CreateCreature("ANvivern",[843.810],0)
+END
+
+IF
+	Dead("ANvivern")  
+	Global("ANvivernDead","AN1616",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ANvivernDead","AN1616",1)
+		ReputationInc(-6)
+END
