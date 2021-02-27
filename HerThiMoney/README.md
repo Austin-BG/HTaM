@@ -1,10 +1,10 @@
 # HTaM
 "Heroes, Thieves and Moneylenders" mod
 
-[b][center]Description:[/center][/b]
+Description:
 The mod consists of several independent components:
 
-[b]Component 1. «Interjections & Mini-quests» (by Austin & Arcanecoast Team):[/b]
+Component 1. «Interjections & Mini-quests» (by Austin & Arcanecoast Team):
 - expansion of reactions of NPC (party members) to story events SoA&ToB
 - adding additional mini-quests and dialogues. Now you can help a noble from the Government District in one strange business, in the Slum area, learn how to properly milk a cow (under the direction of Cernd) and more!
 - expansion of some standard quests. For example, to Umar Hills, the quest with the extraction of a gem from a chicken can now be solved in many ways - from using your ranger or druid skills to attracting NPC druids and NPC rangers
@@ -14,7 +14,7 @@ The mod consists of several independent components:
 - after installing statues in Trademeet, the names of specific NPC companions will now be written on them, and not a general non-specific phrase
 - and other
 
-[b]Component 2. «First Calimport Bank Pack» (by Scheele & Austin & Arcanecoast Team):[/b]
+Component 2. «First Calimport Bank Pack» (by Scheele & Austin & Arcanecoast Team):
 Adds a new bank area on the Waukeen Promenade, quests, miniquests and various dialogues related to the bank, as well as an additional quest in Brynnlaw at three new areas, many new characters (and on the EE version, the two creatures will also have new animations). New area maps drawn by [b]Gorion[/b].
 In the bank, you can open an account, top up the balance, check the balance and withdraw money from the account. Each game week, 2% of the total amount will be added to the account.
 There are two different ways to get quests - one quest branch will start if there is Korgan in the group and completed his quest about Kaza's book, and the second - if the player agrees to help the half-orc collector that the player will meet. 
@@ -22,22 +22,22 @@ The beginning of one of the two quest branch will block the parallel quest branc
 In this case, both branches will end with the quest "Pirate Legacy".
 If you successfully complete the first branch of the quests, you can also ask a new ally for help in the fight against Bodhi in Chapter 6.
 
-[b]Component 3. «Shadow-Covered Love» (by Alisia & Austin):[/b]
+Component 3. «Shadow-Covered Love» (by Alisia & Austin):
 Adds:
 - for female characters: a big romance with the head of the thieves guild Aran Linvail (as with a non-group NPC) and a series of new quests (from large to microquests) that will become available as this relationship develops. Also included are flirting, reactions of other NPCs, a small episode in ToB, a new epilogue of the game with an active romance, and more!
 - for male characters: one major quest that Aran will give out after the death of Bodhi in Chapter 6, provided that the player previously took control of stronghold thieves.
 
-[b]Component 4. «The Missing Troll Case» (by Alisia & Austin):[/b]
+Component 4. «The Missing Troll Case» (by Alisia & Austin):
 Adds two new interconnected detective-focused quests to SoA. The story begins after the player solves a problem with the Waukeen Promenade circus. Expect a messenger from the circus with a problem report.
 This component has one new area.
 
 
-[b][center]Compatibility: [/center][/b]
+Compatibility:
 BG2, BG2EE, BGT, EET
 It is better to install AFTER all mods adding new NPCs (otherwise their names will not appear on statues in Trademeet, and cross-mod content will not be used)
 Compatible with "Romantic Encounters" mod ("Aran" episode) - while installing this episode and our romance with Aran, the content from "Aran" episode will not appear in the game. Added checks to disable this episode because they have a similar scene in our romance, but with further continuation of the romance. The consent of Kulyok (the author of the parallel episode) was obtained - she herself advised this solution.
 
-[b][center]Explanations:[/center][/b]
+Explanations:
 In component 2:
 To start the "Mae’Var’s Stash" quest, you need to have Edwin in the party during the last dialogue with Renal, while the player must NOT own a stronghold of thieves and must NOT have an orderly and good outlook.
 There are also differences between the content of the mod on the EE version and in the classic version of the game. For technical reasons, I had to make some characters with different types of animation (this applies to Odrik and the Monster in the second component - they have new animation for EE, and the old one for the classic version), as well as different melodies in new locations (they are new on EE, on the classic versions are standard).
@@ -55,26 +55,26 @@ If any mods are installed on Quayle, then the quest will still be available, but
 -If the Lava’s Quayle mod is installed: the quest will start if Quayle has not yet joined the group and Aerie is alive.
 
 
-[center][b]Cross-mod content:[/b][/center]
+Cross-mod content:
 The mod has cross-mod content with the following projects:
-1) Smiling Imp's [b]«BG1 NPC to BG2»[/b] 
+1) Smiling Imp's «BG1 NPC to BG2» mod 
 http://www.baldursgatemods.com/forums/index.php?topic=8355.0
 Additional dialogues of NPCs from this mod in new locations and in new situations, as well as the ability to exchange currency from gold to platinum in a bank on the Promenade
-2) Ratatoskr and BCaesar's [b]«Mega-Mod» [/b]
+2) Ratatoskr and BCaesar's «Mega-Mod»
 https://forums.beamdog.com/discussion/71473/playable-clara-all-things-mazzy-version-1-037/p1?new=1 
 Additional lines of some NPCs in dialog with a dryad in Windspear Hills.
-3) Kulyok’s [b]«Tiax NPC for BG2»[/b] mod 
+3) Kulyok’s «Tiax NPC for BG2» mod 
 https://github.com/Pocket-Plane-Group/Tiax_for_BGII. 
 Additional phrases of Tiax from this mod in new locations and in new situations.
-4) Kulyok’s [b]«Branwen BG2 NPC»[/b] mod 
+4) Kulyok’s «Branwen BG2 NPC» mod 
 https://github.com/Pocket-Plane-Group/Branwen_for_BGII/releases/ 
 Additional phrases of Branwen from this mod in new locations and in new situations.
-5) Jastey’s [b]«Imoen 4 Ever»[/b] mod 
+5) Jastey’s «Imoen 4 Ever» mod 
 https://www.gibberlings3.net/mods/other/imoen4ever/
 Compatibility (if installed Imoen4Ever mod, then some of the lines will be changed so as to remove references to the abduction of Imoen)
 
 
-[b][center]Credits:[/center][/b]
+Credits:
 Austin, Scheele, Alisia - main authors
 tipun - invaluable technical help
 Gorion - maps of new locations
@@ -82,7 +82,7 @@ Apxu (Arkie) - partial translation of the first component into English, as well 
 stn - ideas and texts of phrases
 JamesMaxwell - ideas and texts of phrases
 AGKanevchev - technical advice
-[i]And:[/i]
+And:
 Vadim Ingwall Baranovsky – partial translation of the third component into English
 MidnightVoyager, contralexical – proofreading English texts
 NiGHTMARE - ideas and texts of phrases
