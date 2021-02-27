@@ -1,0 +1,162 @@
+// Renfeld
+@0 = ~Seriously, are we really going to drag this drunkard back to Athkatla? Do we really have nothing more important to do? Just say the word, and I've got a spell I'd love to test on him. (It's the only profit I can imagine from this situation.)~
+@1 = ~Nooo! Have mercy!~
+@2 = ~My uncle Scratchy got in a similar situation when he was young - didn't I tell you this story? He really wanted to impress one lass - Augustine was her name, I think. Her turnip soup was so good that even a duke ordered it - and he was an elf! Turns out, everyone is equal before turnip soup. Of course, Augustine was surrounded by suitors. Uncle Scratchy wanted to outshine them all. But it didn't end like he imagined. It was always like that with him.~
+@3 = ~So... Where was I? Ah yes, uncle Scratchy wanted to win Augustine's heart. He asked his two friends to play bandits and attack her. Uncle Scratchy would wait for the right moment and "rescue" her from "villains". Not a very original idea, but if it didn't work, why would it be so common?~
+@4 = ~After dark, uncle Scratchy hid in the bushes near the road Augustine took every day to go home after work. But he got the date wrong. His friends were peacefully sleeping at home. But, it so happens that Augustine was robbed that day by real bandits! Scratchy mistook them with his friends and bravely rushed them.~
+@5 = ~Well, my uncle got a beating, and Augustine ran away. She never knew that she was saved by my Uncle Scratchy. In the end, she got engaged to some minstel and left the village. My poor uncle was devastated: not by the loss of his love, but her turnip stew. It was second to none...~
+@6 = ~Why am I telling you all this? My uncle was beaten just as hard as this guy! Hey, did he pass out? He missed the ending!~
+@7 = ~*Moan*~
+
+// Dialogue with Edwin
+@8 = ~So, you had been imprisoned in a secret dungeon just under the city? And his owner, Irenicus, did experiments there with various living creatures?~
+@9 = ~Interesting...~
+@10 = ~There's nothing of interest to me in that place, Edwin. For me, Imoen, and the others there was only pain and torture.~
+@11 = ~Why are you asking?~
+@12 = ~I don't want to bring these memories back. Let's move on.~
+@13 = ~As you wish. Pff. (These baboons are totally useless!)~
+@14 = ~And experience. Some knowledge requires sacrifice. That is how life works. (Why must I need to explain such simple things? Am I talking with children?)~
+@15 = ~That bastard tortured us. Used us as test subjects. And he will pay for all of this.~
+@16 = ~You are not a fool, <CHARNAME>. You must understand that the end justifies the means. This mage may be a bastard, but he's a smart one. He wanted to gain new knowledge and power, and he almost succeeded. He captured the very hero of Baldur's Gate, conducted elaborate experiments, and built a laboratory right under the guards' noses! We can learn from him.~
+@17 = ~How, I wonder, was he able to set up such a lab right under the city - and without the guards suspecting anything? How did he stealthily move the equipment there?~
+@18 = ~And what sorts of experiments did he perform? Can you remember any details? They could be quite interesting.~
+@19 = ~He was trying to get into other people's memories and minds somehow. Pulled memories and hidden desires out of us and other test subjects, as if he was turning the whole brain inside out. he studied our magical abilities. He put some subjects in glass jars, like he was preserving them, and did... something else to them, too. I don't remember much, and thank the gods for that. I wish I could forget it all.~
+@20 = ~Hm... Are you sure that laboratory was completely destroyed? It could be useful for us...~
+@2000 = ~(I'd kill for such a laboratory... I could have conducted all sorts of experiments and become even more powerful! Homeless people would have been great test subjects, no one ever looks out for them! And city council should thank me for cleaning the streets, all for science!)~
+@21 = ~Yes, the entrance collapsed after the Promenade battle. It's the same for the rest of the dungeon, I'd think. Now it's just ruins.~
+@22 = ~Even if we had such an opportunity, I would prefer to leave it. That place only brings painful memories.~
+@23 = ~Well, that's too bad... (Why am I so unlucky! I could have got my hands on powerful magical instruments and precious knowledge, and some fools just destroyed everything!)~
+
+// First meeting with Valygar
+@24 = ~Don't listen, <CHARNAME>. He just lying to save his hide. If he's not - it doesn't matter. It's not worth losing reward and angering the Cowled Wizards. (It would also clear us of suspicion of killing one of their men!)~
+@25 = ~His head's worth money! Chop it off already, and we can sell it to the Cowled ones.~
+@26 = ~People will say anything to save their skin when they're cornered.~
+@27 = ~<CHARNAME>, are you sure about your decision? Taking a wanted man in your group? I'm not sure it's right.~
+
+// Keldorn interjections in Cernd quest
+@36 = ~This woman sought only fleeting salvation, but her heart remained true to Cernd! His child do not belong to you!~
+@37 = ~You know nothing about Galia, paladin! It's your forest friend who's responsible for her death!~
+@38 = ~Children can remain one's sole comfort when the whole world is against you. See to it that he is raised a decent man, Cernd.~
+@39 = ~The Druid's Grove will show him the right path.~
+@40 = ~It seems many women forget the meaning of faithfulness.~
+@41 = ~It's not easy to remain faithful to someone who doesn't exist, paladin. The Cernd that Galia loved is long dead.~
+@42 = ~I'm sorry for what happened, Cernd. I hope your child will not repeat your mistakes...~
+@43 = ~I shall come back to him in the Druid Grove, when our journey ends. Until then, the druids shall take care of him, so he can grow like a sapling in a meadow.~
+@44 = ~I'm pleased to hear it. Now I must write a letter to Maria. I must know how she fares.~
+
+// Cernd interjections in Keldorn quest
+@35 = ~Do not repeat my mistakes, old warrior. I understand too late how important a pack is to its leader...~
+@45 = ~The tree of love has fallen under the violent winds of justice. I pray, my friend, that your soul may find peace.~
+@46 = ~I am at peace when I know that no crime shall go unpunished. This is not an exception. Enough talking.~
+@47 = ~Truly a wise decision. Enjoy every moment with your loved ones, for they are part of you, old warrior.~
+@48 = ~Thank you again.~
+@49 = ~Every tree needs time to take roots again after a strong storm. Let the old warrior's tree of love restore its strength, my friend.~
+@50 = ~I will pray to nature that you do not repeat my fate, old warrior.~
+@51 = ~No... Maria is a strong woman, she will pull through... My faith in her is as great as my faith in Torm. Remember, my dear, I will always love you.~
+@52 = ~I hope my heart shall not forget your words. Be careful, my love.~
+
+// Kangaxx
+@61 = ~Think before you accept his offer. Stories about the promise of incredible rewards rarely end well for their heroes.~
+@62 = ~This creature reeks of evil, <CHARNAME>! It must be remain in this crypt forever, far from the world of living.~
+@63 = ~I d-don't like this skull at all, but maybe it's telling the truth? No one deserves to be imprisoned like that...~
+@64 = ~Rrrrrr! (Wilson's fur stands up - he is definately unhappy to meet the crypt inhabitant.)~
+@65 = ~You talk like a friend, but Boo sees through your lies! <CHARNAME>, do not trust him!~
+@66 = ~(A fearsome lich was defeated. But was his death final? Last time, that creature was stopped only after dismemberment. Will he rise once more?)~
+@67 = ~Disgusting. See what greed for magical power can do to a living creature? Remember what he has become and how his existance came to an end.~
+@68 = ~Har! The skull was able to put up a great fight! I could make a fine cup from it!~
+@69 = ~Even after acquiring such fearsome form this fool still had no chance against Edwin Odesseiron's arcane onslaught! With the power I have now I can force zulkirs to kneel before me!~
+@70 = ~Even after acquiring such fearsome form this fool still had no chance against Edwin Odesseiron's arcane onslaught! With the power I have now I can force zulkirs to kneel before me! (This pile of golden bones might know something about fixing my current condition. I should look closely for any notes he might left...)~
+@71 = ~The demilich tried so hard to revive himself, but instead he brought his death. Anyway, this situation just confirms one Sigil superstition: Don't trust the skull.~
+@72 = ~I can't believe it! My wild magic just destroyed an ancient and knowledgeable lich!~
+@73 = ~Boo knew that he was a villain from the very beginning! You should have listened to him!~
+@74 = ~It is good that we have cleansed this evil. But some say that liches are immortal. I shall pray that we have delayed his return at least for a century...~
+
+// Town Crier
+@95 = ~Do you know any other news? Not so loud, if you would.~
+@96 = ~I've heard about many things. For instance, the 'Hero of Baldur's Gate' has arrived in town incognito. Have you heard about that?~
+@97 = ~Hmm, interesting.~
+@9700 = ~Yes, yes, with a secret mission as the emmisary of the Grand Dukes. But that is a classified information, so keep your mouth shut!~
+@9701 = ~Of course. I won't tell anyone.~
+@98 = ~Others say <PRO_HESHE> is a kinslayer running from the Flaming Fist. Didn't know <PRO_HISHER> brother was someone important and killed him on <PRO_HISHER> way to Amn. People here aren't really interested in <PRO_HIMHER> personally, besides perhaps some drunkards in dirty taverns.~
+@99 = ~Any news about that kinslayer?~
+@100 = ~Heard nothing of <PRO_HIMHER>. Maybe <PRO_HESHE> in the city, walking among us. Citizen, please, stop distracting me from my work!~
+
+// Adventure Mart
+@101 = ~Are you saying that to everyone, or you just do not like our faces?~
+@102 = ~(quietly) It's only a bluff. I did some... retrieval work here before. That guy didn't even see how some scrolls dissapeared from the shelf next to him.~
+@103 = ~(quietly) See that lady merchant? She's not paying rent, so she will be easy prey. But Ribald or Deidra... no, not a chance.~
+@104 = ~(quietly) Ribald's no problem either. See that ring?~
+@105 = ~(quietly) Oh, you have a sharp eye, Yoshimo.~
+@106 = ~Hey, haven't come here to steal! And you shouldn't mess with Ribald and the guards.~
+
+// Kellor dialog after Nalia kidnap (interjections)
+@107 = ~Bah, we should thank that Isaea for taking the girl from us! Now he has to listen to her unending whining! Let's leave her with him.~
+@108 = ~I like that Isaea's style - he gets what he wants out of life, he knows his worth, and he doesn't play with his enemies. Good for him.~
+@109 = ~How can you say sucha thing? Nalia is a good woman and our friend!~
+@110 = ~Maybe she was yer friend, but not mine! She was so annoying.~
+@111 = ~Now, cry some more!~
+@112 = ~I would prefer a bad girl to a good one. (Hmm, I wonder, maybe this Isaea guy would take this crybaby from us as well?)~
+@113 = ~Minsc is outraged! We will crush the walls and bend every prison bar just to rescue our dear Nalia from villainous hands!~
+
+// Kaza Book Fate
+@114 = ~I wouldn't sell this book, <CHARNAME>. It contains evil and shouldn't be released into the world. I suggest taking the manuscript to the Order, where it will be destroyed.~
+@115 = ~Your righteousness completely driven you mad, paladin! This book can contain many useful spells. Its power could aid us all. (Damned idiots! I will not allow them to destroy such a precious book!)~
+@116 = ~We MUST burn it. Have you forgotten who wrote it?!~
+@117 = ~Tell us, what exactly do you wish to burn, righteous fool? The knowledge contained in books, or the mind that puts your blind faith in question?~
+@118 = ~(threateningly) You dare to mock my faith, Thayvian fiend!? You have no right to judge! (Keldorn rises his voice so everyone can hear him) I am telling you all that this book is evil, and nothing good can come from it! It will only bring disaster!~
+@119 = ~Bah! Just sell it! In Athkatla ye be dead without coin. What have we got to fill our bellies and buy ammunition with, eh? Will yer Order pay for the book, knight?~
+@120 = ~We can find gold without selling the book. I shall say no more!~
+@121 = ~I agree with Edwin. We will keep the book. Are you sure that you can decipher it?~
+@122 = ~Keldorn is right. We'd better destroy the book.~
+@123 = ~I am glad that you've made a sensible decision. The dampness of the tomb didn't do it any good; many pages can't be recovered. But I think I'll be able to say something definite in a couple of days.~ [EDWIN03]
+@124 = ~(Keldorn's face darkens at the sight of a triumphant Edwin. He sighs heavily, turning to you) You make the mistake of letting evil raise its head. Mistakes always have consequences. You will understand in time.~
+@125 = ~Then we shall go to the Order. The sooner we clean our hands from this filth, the better.~
+@126 = ~(Edwin has probably taken great pains to keep his face impassive. But his voice trembles with anger as he turns to Keldorn) People like you always want to judge others, to decide what knowledge is allowed and what is forbidden, am I right? Mark my words: you can't burn knowledge. You and your Order - your dirty ignorance is just a temporary setback on the path of progress. A temporary one, Keldorn! There is no future for you!~
+@127 = ~(grins) Whatever you say, Edwin. But there's no future for this book either.~
+@128 = ~(He turns to you) I see you've made another stupid decision, as usual.~
+@129 = ~All right, stop flapping your gums, we've already decided what to do!~
+@130 = ~We will sell it. Right now, we need money.~
+@131 = ~All right, we'll wait.~
+@132 = ~The book could be useful to us, in more ways than you think. Give me a week and I'll be able to decipher it.~
+@133 = ~Finally, I have deciphered the book! It contains such peculiar magic... and all of it is meant to protect its owner when it is at hand. I shall make great use of it.~
+@134 = ~Don't forget, we agreed that this book will be mine!~
+@135 = ~Prelate, we bring you this artifact of evil - the lich Kaza's book. Can you destroy it?~
+@136 = ~Of course we can, and we will. No need to worry. We shall take all precautions.~
+@137 = ~Greetings, Keldorn. The squires will be happy to know about your visit. They still want to be just like you.~
+@138 = ~Bah! Just sell the book and forget about it.~
+@139 = ~Great! Keep it. With you, it will do us all good..~
+@140 = ~Well, now we can sell the book for a higher price! Return it to me.~
+@141 = ~I changed my mind. Give it back.~
+@142 = ~(irritated) Yes, yes, all right! I shall discard any thought that you possess even a rudimentary intelligence. (This baboon will never learn to appreciate my superior magical arts!)~ [EDWIN32]
+@143 = ~Yes, of course. (Even an unintelligent being can sometimes make a wise decision...)~
+@144 = ~Bah! Did you go to all this trouble to give the book to those priests? Even Shagbag had more brains - when he wasn't lying dead drunk under the table!~
+@145 = ~It was a wise decision, <CHARNAME>. If it had fallen into the wrong hands, it could have caused a lot of trouble.~
+
+// Rain Banters
+@146 = ~It's raining again!~
+@147 = ~Har! Big guy scared o' rain? Ye won't melt, ya know!~
+@148 = ~Minsc fears nothing! Boo hates getting wet in the rain, that's all. There is no such weather on miniature giant space hamsters' homeland.~
+@149 = ~I am not familiar with this hamster's habits, but I agree with Minsc.~
+@150 = ~As a druid, I can't complain about receiving nature gifts. But I suggest we find some shelter, as I do not want to dry my clothes for the rest of the day. The nearest inn will do just fine.~
+
+// Elf PC and Aerie
+@151 = ~It's quiet... So quiet compared to the noise of the city. But people and cities now a part of my life. How strange...~
+@152 = ~Aerie... I have a question for you. You lost your wings, but you are still an elf. How did it happen that you turned your back to Aerdrie Faenya and worship a gnome god now?~
+@153 = ~I n-never left Aerdrie, <CHARNAME>. She still has a place in my heart, and I pray to her. But she is a goddess of w-winged creatures, and Baervan is a patron of wanderers. I am a wanderer now. A wanderer of the land. I just started to look at the world from another perspective. I h-had to.~
+@154 = ~Do you think Aerdrie has rejected you?~
+@155 = ~No! But I know that Baervan welcomes my soul too. He is full of kindness and mischief, he loves life and, you know, <CHARNAME>, I like that. (She smiles, and from this smile, you understand that this girl was born to be happy and joyful)~
+@156 = ~You are so full of lightness and light, Aerie. You don't need wings to be a daughter of Aerdrie.~
+@157 = ~I'm pleased to hear it from you.~
+@158 = ~Aren't you afraid to lose Arvandor?~
+@159 = ~I believe in Baervan Wildwanderer and The Winged Mother. It's all I need.~
+@160 = ~Aerie, can you keep your thoughts to yourself? We're busy right now.~
+@161 = ~S-sorry, <CHARNAME>. I didn't mean to disturb you.~
+
+// Edwin (rep talks)
+@162 = ~Just look how this rabble bow to us!~
+@163 = ~Even these unwashed monkeys appreciate my exceptional abilities and intellect. Others should learn from them!~
+@164 = ~People's minds can be easily changed, Edwin. One little mistake and all these compliments will turn into curses.~
+@165 = ~Yes, I like to feel like a hero and a savior. We deserve it.~
+@166 = ~I prefer less attention. It's more safe and quiet.~
+@167 = ~I can't argue with you there. But we should benefit from our situation while it lasts.~
+@168 = ~(Especially me.) Fine, let's go already.~ [EDWIN21]

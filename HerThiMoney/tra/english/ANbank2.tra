@@ -1,0 +1,25 @@
+// Main clerk + "BG1NPCBG2" mod by Smiling Imp
+
+@0 = ~Can you exchange currency?~
+@1 = ~Certainly, <PRO_SIRMAAM>. We can exchange from gold to platinum and vice versa at a rate of ten gold coins for every one platinum coin.~
+@2 = ~I'd like to exchange gold for platinum.~
+@3 = ~I'd like to exchange platinum for gold.~
+@4 = ~Nothing for me, thank you.~
+@5 = ~Very well. How much would you like to exchange?~
+@6 = ~I'll take ten thousand platinum coins.~
+@7 = ~I'll take one thousand platinum coins.~
+@8 = ~I'll take one hundred platinum coins.~
+@9 = ~I'll take fifty platinum coins.~
+@10 = ~I'll take ten platinum coins.~
+@11 = ~I'll take five platinum coins.~
+@12 = ~I'll take one platinum coin.~
+@13 = ~I'd like to exchange ten thousand platinum coins for gold.~
+@14 = ~I'd like to exchange a thousand platinum coins for gold.~
+@15 = ~I'd like to exchange a hundred platinum coins for gold.~
+@16 = ~I'd like to exchange fifty platinum coins for gold.~
+@17 = ~I'd like to exchange ten platinum coins for gold.~
+@18 = ~I'd like to exchange five platinum coins for gold.~
+@19 = ~I'd like to exchange one platinum coin for gold.~
+@20 = ~A pleasure doing business with you, <PRO_SIRMAAM>.~ 
+@21 = ~Good day, <PRO_SIRMAAM>.~ 
+

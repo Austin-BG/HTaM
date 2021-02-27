@@ -1,0 +1,39 @@
+// Dialogue with Aran
+@0 = ~Be warned, Shadow Master. If you don't help us, you will soon feel my wrath... And you don't want to experience what an angry Red Wizard can do. (Ugh, my back still aches from time to time...)~
+@1 = ~The Drow have a reputation for causing pain and suffering, and it is well earned.  If you cannot provide what was promised to us and quickly, rivvil, you will come to realise why.~
+@2 = ~The only reason you and your wretched thieves still breathe is because <CHARNAME> foolishly believes that we need your help.  Cross us, and that will quickly change.~
+@3 = ~We had an agreement. Don't you think it is time to honour it? Or do you plan to disprove the old adage about honour amongst thieves?~
+@4 = ~We have witheld our end of the bargain.  Will you not do the same?~
+@5 = ~I h-hope so. <CHARNAME>'s friend Imoen n-needs our help, but we can't do anything without yours.~
+@6 = ~What good are these magical trinkets when a girl is in danger, and we don't even know where she is?~
+@7 = ~We have little time to waste. Will you tell us where we can find <CHARNAME>'s friend or not?~
+@8 = ~Well, thank you for the gifts and everything, but I rather think <CHARNAME> would like to know where Imoen is now.~
+@9 = ~ Boo thanks you for the items, but he wishes for Minsc to remind you that we must rescue Imoen.  And do much butt kicking on the way!~
+@10 = ~Look, I'm sure the items will be of great assistance to us, but an evil wizard holds <CHARNAME's> companion hostage, and we seem no closer to finding either of them.~
+
+// Dialogue with Mitsu
+@11 = ~Minsc and Boo are no thieves, little girl, no'siree! Minsc is a force for the smiting of mighty evil!~
+@12 = ~I'm afraid you are mistaken, my lady.  While I may be a thief, I prefer to be more... independent.~
+@13 = ~A despicable ruse, abusing the charity of others.  Vile in every respect.~
+@14 = ~Oh? Well I don't think much o' you lot either, knight boy, what with all your moral superiority and whatnot.  Get a paladin to spend a week in the gutter, and he'll be picking pockets by the end o' the first day, I'll bet.~
+@15 = ~I can assure you that a true paladin would never....~
+@16 = ~Heh, sorry, I haven't the time t' argue with you.  Don't think of tryin' ta pick a fight with any o' me fellows though! Most o' them are inclined to do it with weapons rather than words.~
+@17 = ~Do not be so silly, little girl! How can one as young as you be a thief?~
+@18 = ~«Ah gee, sorry mister, I was just pretending and stuff.  Don't get all mad at me!»~
+@19 = ~Minsc and Boo are not mad! We would never get angry with a child!~
+@20 = ~«Well then sir, would you.....» Ah I give up, this one's too easy.~
+
+// Aerie's reaction to torture
+@21 = ~<CHARNAME>, this is so awful! Let's get out of here soon!~
+
+//Dialogue with Edwin
+@22 = ~<CHARNAME>, are we really going to work as contract killers for this evil wizard? ~
+@23 = ~Who's that yapping over there? Stay out of the way, girl, when the grownups are talking! ~
+
+// Dialogue with Renal
+@24 = ~<CHARNAME>, why not kill this villain? You do remember how he tortured a man in front of you, don't you? He's a monster, and the world would be a better place without him. And we'll get a reward, too - we'll kill two birds with one stone. ~
+
+// Dialogue with Aran
+@25 = ~Are we supposed to take on a whole army of vampires on our own? Your guild won't even help us? ~
+@26 = ~So we have to do all the dangerous, dirty work and risk our lives, and you just wait here? ~
+@27 = ~Well, at least this is a noble task. All this thievery has sickened my soul. ~

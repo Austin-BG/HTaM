@@ -1,0 +1,274 @@
+// Quayle's Messenger
+@0 = ~Hey wait! Your name is <CHARNAME>, right?~
+@1 = ~Maybe. Who's asking?~
+@2 = ~Quayle, the circus manager, sent me. He has a problem that he thinks you might be able to help with.~
+@3 = ~<CHARNAME>, let's go to the circus, please. Uncle Quayle wouldn't call for no reason. Something must have happened.~
+@4 = ~Okay, we'll try to go.~
+@5 = ~Tell him I'm sorry, but I haven't the time.~
+@6 = ~Okay, thanks.~
+@7 = ~I'll let him know. But if you happen to find yourself near the circus soon, please stop by.~
+
+// Quayle
+@8 = ~<CHARNAME>, thanks for coming! You have done so much for our circus, I hoped you'd be willing to help us again.~ ~<CHARNAME>, thanks for coming! You have done so much for our circus, I hoped you'd be willing to help us again.~
+@9 = ~We've got a slight problem here, you see... Our trained troll, the highlight of our program and only one of its kind, has disappeared. Escaped from its cage. Someone is up to no good.~
+@10 = ~H-How...? Uncle Quayle, Kid ran away? That's great! Now he's free.~
+@11 = ~Yes, Kid escaped, which is great! Now he's free.~
+@12 = ~Aerie, Aerie... you don't know what you're talking about. You definitely need to find him.~
+@13 = ~Uncle Quayle! He felt bad in the cage! I know. I'm sure of it. He looked so sad...~
+@14 = ~Don't be silly, girl. A troll is a troll. Although you did manage to befriend him somehow.~
+@15 = ~You're getting a little flustered, Aerie. Did you have something to do with the troll's escape?~
+@16 = ~I've been with you the whole time. But I would if I could!~
+@17 = ~No! But I wish I had.~
+@18 = ~Aerie wouldn't fool anyone, <CHARNAME>, trust me, she had nothing to do with it. So can you help us?~
+@19 = ~You're right, Aerie. The other animals should be released from their cages as well.~
+@20 = ~You want to ruin us completely, <CHARNAME>? Why don't you help us instead?~
+@21 = ~It's too weird Aerie to stand up for the troll. You don't seem worried that he's now wandering somewhere around Athkatla...~
+@22 = ~No, don't blame Aerie for anything, <CHARNAME>. My girl just has a good heart, that's all. But will you help us?~
+@23 = ~Okay. I'll do it.~ ~Okay. I'll do it.~
+@24 = ~Thank you! The circus always remembers a favor.~
+@25 = ~I suppose we can't really let an evil creature roam free.~
+@26 = ~But Kid isn't evil! He's not!~
+@27 = ~Aerie, dear, don't worry. Thank you, <CHARNAME>.~
+@28 = ~No problem, Quayle, but there's no such thing as a free lunch.~
+@29 = ~Who said anything about free? You'll be well-rewarded, don't worry.~
+@30 = ~Do you seriously think I have nothing better to do besides running around, looking for escaped trolls?~
+@31 = ~(Frustratedly) Yes, I understand that you are very, very busy, I just thought that maybe... Sorry, <CHARNAME>. Come back if you change your mind.~ ~(Frustratedly) Yes, I understand that you are very, very busy, I just thought that maybe... Sorry, <CHARNAME>. Come back if you change your mind.~
+@32 = ~Aerie, are you friends with the troll? How did you manage that?~
+@33 = ~I guess it was because she fed him candy.~
+@34 = ~N-no, because I talked to him and felt sorry for him... But Kid really loves sweets.~
+@35 = ~Seems kind of strange for a troll.~
+@36 = ~I'm telling you, he's not evil. Leave Kid alone, <CHARNAME>!~
+@37 = ~Aerie, if Kid is not returned, he could be killed by the first hunter or adventurer he runs into outside Athkatla.~
+@38 = ~Oh... I hadn't thought of that. Th-Then... maybe... it makes sense. (Softly) Although I think he might prefer death to imprisonment in a cage.~
+@39 = ~Aerie, Minsc also feels sorry for Kid. But Minsc doesn't want good trolls to be killed!~
+@40 = ~Or - think, Aerie! What if he was kidnapped for some evil purpose? Do you have any ideas?~
+@41 = ~Yes! Them! Surely these are our competitors from the tent circus. They are set up in the outskirts of Athkatla. Rapscallions!~
+@42 = ~The troll was s-sold to us by a man who was not well dressed and smelled strongly of fish. So, I saw this person later, s-several different times. He stood near Kid's cage and looked at him strangely.~
+@43 = ~That's it! Probably decided to resell, and to who else but our competitors?~
+@44 = ~Okay, let's take a look at the crime scene.~
+
+// Player1
+@45 = ~It's good that everything worked out, old chap.~
+
+// At the cell
+@46 = ~So... The cage is locked. Did one of your employees do this after the troll escaped?~
+@47 = ~No, they found it this way ? empty and locked.~
+@48 = ~Strange. The troll didn?t do that. It turns out that someone opened the cage, freed Kid, and then closed it again. And he was not afraid. Maybe one of you, after all? Aerie?~
+@49 = ~I-I said no! But Kid was gentle, anyone could could see that and not be afraid of him.~
+@50 = ~Or maybe the criminal just knew the troll's habits well? Let's see what else is there ...~
+@51 = ~Look, the bars at the back of the cage are slightly bent. Did the troll try or did someone want everyone to think so? But then why lock the cage?~
+@52 = ~Some unprofessional work, don't you think, <CHARNAME>?~
+@53 = ~Or was the culprit trying to break the bars first?~
+@54 = ~Minsc and Boo, if they get really angry, could break this cage with their bare hands! And paws...~
+@55 = ~Look, there are traces of magic! And these... Cowled Wizards did not appear to arrest the sorcerer.~
+@56 = ~So, he is not poor if he has the money for an expensive license.~
+@57 = ~Any whim could have occurred to a mage - even stealing a troll from the circus...~
+@58 = ~But a powerful mage would have been more skillful.~
+@59 = ~What is this? Looks like a lockpick?~
+@60 = ~Are the Shadow Thieves stealing trolls now? They are completely unhinged.~
+@61 = ~No, this pick is crude and unprofessional. The Shadow Thieves wouldn't use such a tool. It's more likely that of an amateur.~
+@62 = ~Kid could hardly have made such a thing himself, although he is very clever for a troll.~
+@63 = ~So you a-admit that he is an unusual troll.~
+@64 = ~Well, well... we have a complete set here: an unusual troll, a locked cage, bent bars, traces of magic, a lockpick... We need to think carefully.~
+@65 = ~Tiax the Cunning knew right away that this was a bad lockpick! When he reigns, he will have lockpicks a hundred times better. Even though they are no use to the ruler of the world, as all doors will be open for him! Unless he orders them to close!~ [PPTIAX02]
+@66 = ~Okay, I have to go. I'll go shopping and return to the circus. If you find out something, look for me there.~
+@67 = ~I'll go straight to the circus and wait there.~
+
+// Quayle (add-ons)
+@68 = ~<CHARNAME> you're here, thanks! There is an issue, but to explain everything, we need Aerie. We can't proceed without her help, she can explain a lot. If you find her, please bring her!~
+@69 = ~Have you changed your mind about the troll?~ ~Have you changed your mind about the troll?~
+@70 = ~Yes, I'll take care of this, I guess.~
+@71 = ~No, I'm just here to say hello.~
+
+// Thumb, merchants, beggar
+@72 = ~Tell me, they say one of the fishermen got too big a catch ? a troll. Do you know who he is?~
+@73 = ~Oh, that's Lorio. Indeed, a funny story. He has recently been hanging around the embankment near Cromwell's shop. Maybe he's ordered something. Take a look there.~
+@74 = ~Thanks!~
+@75 = ~No, I haven't heard of that, sorry.~
+@76 = ~One of us caught a troll? Really? No, I don't know anything about that.~
+
+// Lorio
+@77 = ~(The fisherman does not notice you. He is lost in his own thoughts)~
+@78 = ~Hello, are you Lorio? The same fisherman who caught the troll?~
+@79 = ~Y-yes, that's him, I recognize this person.~
+@80 = ~(Lorio turns his pensive gaze to you and sighs.)~
+@81 = ~Yeah, I caught it. Fell on my head...~
+@82 = ~Fell out of the sky?~
+@83 = ~Maybe, who knows? I had dozed off on the shore. I have a hut there, by the lake.  And then a roar overhead. I wake up, and the troll is hanging over me... I was thinking it wants to eat me, this is the end for sure. So I jumped up, I had a knife with me - I am not the kind to surrender without a fight to any creature.~
+@84 = ~You mean to say you defeated a troll with a knife?~
+@85 = ~But he didn't fight, that's the thing. Like a lamb - nothing at all, he just allowed himself to be tied up.~
+@86 = ~W-why did you want to imprison him?~
+@87 = ~What was the purpose of tying him up then?~
+@88 = ~(Looks grimly) I had to.~
+@89 = ~They say you came to the circus and looked at a troll in a cage?~
+@90 = ~(evasively) I sold it to the circus, why not stop by and take a look?~
+@91 = ~Now admit it, you were the one who released it, weren't you?~
+@92 = ~No, I saw that the cage was already empty, but how should I know why? I caught the beast, sold it, and had nothing more to do with it. What is it to me now?~
+@93 = ~Something to resell? To another circus, for example?~
+@94 = ~I am an honest person, <PRO_SIRMAAM>, and I earn enough from my labor to avoid doing such tricks.~
+@95 = ~Well, no more questions for now. We'll find you if you need more.~
+@96 = ~(In an undertone) He's not saying something, <CHARNAME>, and he doesn't even hide it much.~
+@97 = ~(In an undertone) There is longing in his eyes, <CHARNAME>. He's in some kind of grief~
+@98 = ~Don't try to lie to Tiax the Terrible, slave! When he becomes the ruler of the world, all the fish will be caught only for the kitchen in his palace, and he won't accept your catch if you lie!~
+
+// Sidge
+@99 = ~Hello. Can you tell me who among the Shadow Thieves could be consulted about a case?~
+@100 = ~Hi, Sidge. I've got a bit of business... Perhaps you can advise me?~ ~Hi, Sidge. I've got a bit of business... Perhaps you can advise me?~
+@101 = ~Depends what it is. Maybe I can help. What have you got there?~
+@102 = ~No problem. What have you got there?~
+@103 = ~(You take out your homemade lockpick and show it to Sidge.) Here, take a look. Do you know whose work this is?~
+@104 = ~Not ours, that's for sure. Chances are... yeah, I think it's Kyrian. There is one such... craftsman. Half-elven. He works alone, but under our control, to catch those who try to go around our back. And one of ours mentioned that a mad scientist had recently ordered a lockpick from him. But there was nothing interesting for us there, just a laugh.~
+@105 = ~That character is obsessed with druidic nonsense about protecting nature and so on blah blah...~
+@106 = ~(Looks like this is just what you need. However, it would not hurt to verify your assumptions.) Thank you, Sidge.~
+
+// Corneil
+@107 = ~The Promenade is a hectic place, isn't it? Cowled Wizards, apparently, have had to go there quite a bit for enforcement purposes lately.~
+@108 = ~(grimacing) We're just keeping the streets in order, keep your opinions to yourself.~
+@109 = ~Just tell me, has there been any incidental magical activity near the circus tent recently?~
+@110 = ~Okay, since you insist. There was. But no violations were observed. The one who applied magic had every right to do so.~
+@111 = ~So he has a license? Could you tell me if some psycho scientist bought a license from you?~
+@112 = ~So he has a license?~
+@113 = ~Yes, there was. I won't say anything else.~
+@114 = ~Could you tell me if a psycho scientist bought a license to use magic from you?~
+@115 = ~Look, I believe you have a good reason to ask all these questions, but can you be more polite about a science luminary like Sartorius?~
+@116 = ~Yes, he's a bit... eccentric, and a little too committed to the teachings of the druids, but who among us is without quirks after all? And he paid for the license with solid gold, by the way.~
+@117 = ~Where can I find him?~
+@118 = ~At the Temple of Oghma, most likely. He spends his time there among the books when he isn't trying to merge with nature.~
+@119 = ~Thank you, Corneil.~
+@120 = ~Committed to the teachings of the druids? I wonder which direction. Could it be the Shadow Druids? They sometimes use trolls to set them on people.~
+
+// Inspector Brega
+@121 = ~I heard you were asking Corneil something about the circus. If it's about the escaped troll, then I think you should know ? the authorities are already aware of this unpleasant incident.~
+@122 = ~A bounty has been placed on the monster's head and bounty hunters have been alerted. If you want, you can also take part. If you happen to be the lucky one who deals with this beast, then come and get your reward. Good luck!~
+@123 = ~<CHARNAME>, hunters have already been sent for him! We must hurry!~
+@124 = ~I think it's going great! Let's find this beast, bring his head to the inspector and get a bunch of gold! Easy money!~
+@125 = ~Don't you dare! Kid hasn't done anything wrong to anyone!~
+@126 = ~He's even doing a good deed ? thanks to his head, we can have a good time in the tavern, har har!~
+@127 = ~Take it easy! We have to find him first, and before the hunters do!~
+
+// Sartorius
+@128 = ~(You see a man immersed in the study of a huge treatise on intelligent monsters. It?s embarrassing to distract a scientist from such deep studies, but the matter can't wait)~
+@129 = ~Interesting book?~
+@130 = ~Huh?! What?... Ah, the book! Oh yes, it's wonderful! It examines the peculiar thinking of some creatures that are traditionally considered hostile. Which only confirms my point of view.~
+@131 = ~You see, many of what we supposedly intelligent people think of as mindless monsters are actually quite intelligent... but they live their lives according to their own laws, not ours.~
+@132 = ~How does this relate to your commitment to the druidic ideas?~
+@133 = ~Every day I am more and more convinced how right the druids are in trying to protect nature and other creatures from our encroachments.~
+@134 = ~We are ready to kill anyone disgusts, frightens, or simply surprises us, or tear them to pieces, or lock them in cages! Oh-oh-oh, I have no words for my indignation... Sorry, but you're disturbing my research concentration. Why don't you find something to read here?~
+@135 = ~Listen, dear Sartorius! I'm sorry, but I will again distract you from your studies. Would you mind giving me some more time?~
+@136 = ~Listen, Sartorius. I've not time for reading now, there is an important matter that I think you can shed some light on.~
+@137 = ~Hey old man, take your nose out of the book for a minute. I've got questions for you.~
+@138 = ~Hmm. It is pleasant to talk with a polite young man. Perhaps I have another minute for you. What did you want?~ ~Hmm. It's nice to talk to a polite young lady. Perhaps I have another minute for you. What did you want?~
+@139 = ~(reluctantly) If this is in the pursuit of knowledge, then I'll try, but you'd better not delay me too much. What have you got there?~
+@140 = ~What a bad manners! Ugh, youths! Do not bother me. I already said I'm busy.~
+@141 = ~Maybe you heard something about a troll who recently escaped from the circus? I would like to be wrong, but everything suggests that you are somehow involved in this case.~
+@142 = ~(Sartorius is clearly worried). A troll... from the circus... involved? I have no idea what you're talking about.~
+@143 = ~What is such a well-mannered, respected person, a scientist even, doing breaking into cages and kidnapping trolls?~
+@144 = ~(Sartorius is clearly worried). A? What? You, apparently, have me confused with someone. Anyway, I have no desire to continue conversing with you. Be on your way.~
+@145 = ~So you don't know anything? What a pity. After all, there's a price on the troll's head. And the bounty hunters must be on the trail by now. We would like to save the poor thing from a sad fate. But since you have nothing to say...~
+@146 = ~A bounty! On his head... Perish the thought! Such a troll cannot be killed, it is unique. He... oh, what am I saying.~
+@147 = ~So you really let the troll out of the cage?~
+@148 = ~I'm sorry Sartorius, but the evidence is against you. Whatever your motives, you committed larceny against someone else's property, and therefore, must answer before the law. I think Inspector Brega, among others, will be interested to know how scientists are spending their free time.~
+@149 = ~You can complain to whoever you want, anyway I... Wait! keep your voice down! If the priests of this temple find out about... well, about your suspicions, they won't let me use the library. Ancient tomes... Oghma's blessing... Oh, my reputation!~
+@150 = ~You've got the right idea, Sartorius. Think about this - monster hunters are probably already on the troll's trail. Are you okay with that?~
+@151 = ~Is that so? Ordering lockpicks from thieves? Stealing someone else's property? Don't you know that no one but the Shadow Thieves can do this in Athkatla?~
+@152 = ~How would I know that? I'm not some kind of criminal. (Fearfully) What could possibly happen?~
+@153 = ~You have no idea! Say goodbye to your life... and to science. Not to mention the fact that monster hunters are probably already tracking your troll. Doesn't any of that matter to you?~
+@154 = ~Wait, hold on. I... one of my friends, also a scientist ... sharing my ideas ... he told me... Yes, he told me that a very interesting trained troll appeared in the circus.~
+@155 = ~And I... that is, he... went to watch the performance, and then observed the behavior of the subject in the cage. So imagine, the monster did not show any aggression. I would even say it was a kind, well-mannered troll. And these circus barbarians couldn't care less about who they are keeping in a cage!~
+@156 = ~And you - that is, your friend - decided to let him go?~
+@157 = ~Of course! I could have tried to buy it, but that is contrary to all the laws of nature ? paying for that which every living creature has the right, simply to live his own life.~
+@158 = ~And then I... I mean... okay, I...  first tried to open the cage with spells I carefully studied. But their power, I confess, doesn't compare to the depth of my scientific knowledge. After all, I'm an amateur in magic. So nothing happened, only the cage bars bent.~
+@159 = ~And that's when you decided to order a lockpick from a thief?~
+@160 = ~What other option do you think I had? So, with the help of a pick, I got past the lock just fine.~
+@161 = ~Why did you re-lock the cage again?~
+@162 = ~I don't like mess. Plus, I thought it would be better to make it look like an inside job by someone who had the key. Haha, bookworms, as you call us, are sometimes quite insidious, didn't you know?~ ~I don't like mess. Plus, I thought it would be better to make it look like an inside job by someone who had the key. Haha, bookworms, as you call us, are sometimes quite insidious, didn't you know?~
+@163 = ~Now tell me, where did you release the troll?~
+@164 = ~Oh, that poor troll, he didn't even fight... My heart is bleeding... You're not going to kill him, are you? Just bring him back to the circus without doing any harm?~
+@165 = ~Okay, I'll show you where he settled. It's on the outskirts of Athkatla, near the old ruins. But before you go there, you'll need to get some things ready. I'll give you the rope, which I still have. But you also need bait. He especially loves sweets from Calimshan. They are sold at Enge's shop on the Waukeen Promenade ~
+@166 = ~When you're done, come back and I'll take you.~
+@167 = ~Are you ready? Well, what can you do, let's go and see this place...~
+@168 = ~<CHARNAME>, it's true, Kid loved those sweets.~
+
+// Enge
+@169 = ~Do you have any Calimshan sweets?~
+@170 = ~Ja, off course! Best sweets from Calymshshan! For 5 gold!~
+@171 = ~I'll take a couple, thanks!~
+@172 = ~That's bad luck - I don't even have five coins. Must have left my wallet at home... (Although I don't have a home either)~
+@173 = ~Okays it's on me! Here!~
+@174 = ~Oh, thanks!~
+@175 = ~You's a good costomer! Here!~
+@176 = ~Hey you! Hand over the Calimshan sweets here, quickly!~
+@177 = ~Oi! Take it, don't touch ma!~
+@178 = ~Smart choice.~
+
+// Sartorius - add-ons
+@179 = ~You're not ready yet. Find Calimshan sweets for bait or the troll will flee. And don't forget the rope too.~
+@180 = ~I've got sweets, but the rope is lost. Maybe you have another one?~
+@181 = ~Oh gods, what a mess! Lucky for you I am used to dealing with animals, and have extra rope. Here you go.~
+@182 = ~How's it going?~
+
+// By the ruins
+@183 = ~(Sartorius leads you to the rocks near Athkatla, and then leaves. In the distance you can see the ruins of the mansion - it looks like they are very old. The wind is howling around. The troll must be somewhere nearby, we must prepare ...)~
+@184 = ~<CHARNAME> what is this place? Did the scientist deceive us? Maybe he deliberately led us into a trap?~
+@185 = ~There is only one way to find out. But get ready, the troll might be around.~
+@186 = ~You don't have to be afraid of Kid, he won't hurt anyone.~
+@187 = ~Aerie, that's how it used to be. But he could run wild and get hungry, so you have to be prepared for anything.~
+@188 = ~I wonder who owned that cliff mansion over there? Perhaps there's something of value there?~
+@189 = ~We have no time to climb the ruins now, Edwin. Let's deal with the troll first.~
+@190 = ~This is a very strong wind! Tiax the Great may catch a cold! And the subjects will not respect a ruler who constantly sniffles! I order you to leave here. Obey me.~ [TIAXm]
+@191 = ~I can't believe I'm saying this... But I think I agree with Tiax. Maybe let someone else look for the troll? I had enough of them in my castle, too.~
+@1910 = ~Maybe someone else is looking for the troll? I had enough of them in my castle, too.~
+
+// Kid
+@192 = ~(This is a troll that looks sad and doesn't show any aggression.)~
+@193 = ~(Try to lure him with sweets and then tie him up.) Hey Kid! You must be probably hungry here? Look, we brought you sweets!~
+@194 = ~(Try talking to him) Hey troll, how are you? Aren't you bored here?~
+@195 = ~(Attack him) Gotcha, creature! Now we will cut off your head and get a lot of gold for it!~
+@196 = ~(Leave and leave the troll alone) Whatever happens, stay here. I will say that I could not find you.~
+@197 = ~(You put sweets on the ground and step back a bit. The troll approaches carefully and starts eating. Taking advantage of the moment, you put a rope over it and tie it up. Oddly enough, he doesn't even resist.)~
+@198 = ~(Now you can return it to Quayle.)~
+@199 = ~(The troll mutters something back. He is clearly not interested in conducting conversations. Even if he could speak.)~
+@200 = ~<CHARNAME>, what are you doing?? He didn't do anything to us! I will not help you! Goodbye! (Runs away crying)~
+@201 = ~Go ahead, crybaby! We'll get your share of the reward!~
+@202 = ~He didn't even resist, so no excitement! I thought there would be a nice fight. Whatever, gold is gold!~
+@203 = ~(You leave, and the troll looks after long and sadly.)~
+@204 = ~(You attack the troll and chop off its head. He doesn't attack, oddly enough...)~
+@205 = ~Are you deaf? I'm talking to you! Answer me!~
+@206 = ~(Troll hums something back.)~
+@207 = ~Where did you come from? Tell us about yourself!~
+@208 = ~(The troll growls back. No use...)~
+
+// Quayle
+@209 = ~Did you find out anything about the troll?~
+@210 = ~Yes, we brought him back, he's back in the cage.~
+@211 = ~Yes, we found him and killed him. He lived in some ruin and went wild there.~
+@212 = ~Yes, we found him in the rocks on the outskirts, but he ran away and we didn't chase him. Let him live in freedom.~
+@213 = ~Great! There are no words how grateful I am. This troll earned a lot for the circus. Now we can keep afloat.~
+@214 = ~Oh, what a shame. He was a good performer. But okay, what's done is done.~
+@215 = ~I promised a reward, so here it is, considering the result.~
+@216 = ~We were happy to help, Quayle.~
+
+// Inspector Brega
+@217 = ~We brought back the head of the troll that escaped from the circus.~
+@218 = ~Great, now it won't be a threat to anyone. You earned a reward. Here, take it with gratitude.~
+
+// Dispel magic
+@219 = ~(A special spell has been cast on the creature, and normal magic is powerless here.)~
+@220 = ~(The spell has no effect, although you feel like it is working. The troll is frightened and seems to be either blocking the spell, or some other magic has been applied to it. In another situation, it may work.)~
+
+// Cross-mod content (Smiling Imp's Quayle in party)
+@221 = ~Hey Mr. Quayle! Wait! I need to tell you something!~
+@222 = ~Is that so? Well, tell me, what have you got there?~
+@223 = ~Your assistant sent me from the circus. The highlight of our program, a trained troll, the only one of its kind, has disappeared. Escaped from the cage!~
+@224 = ~Someone is up to no good.~
+@225 = ~(Upset) Yes, I understand that we are very, very busy, but I thought, what if... Sorry, <CHARNAME>.~
+@226 = ~Do you seriously think we have nothing else to do but run around and look for escaped trolls?~
+@227 = ~Has the troll story come to an end? If not for my outstanding brain, we would not have found anything!~
+@228 = ~The main thing is that we brought him back, now back in the cage.~
+@229 = ~Yes, although we killed him.~
+@230 = ~Yes, we were right not to pursue him. Let him live in freedom.~
+@231 = ~There are no words how grateful I am. This troll earned a lot for the circus. Now the guys can stay afloat.~
+@232 = ~Oh, what a shame. He was a good performer. But what's done is done.~
+@233 = ~I promised a reward, so here it is, considering the result.~
+@234 = ~We were happy to help, Quayle.~
+@235 = ~This is it! What a genius I am! My great mind led us to the troll!~

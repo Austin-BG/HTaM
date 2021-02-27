@@ -1,0 +1,24 @@
+// Minsc, Imoen, Jaheira in the dungeon 
+@0 = ~I wonder why the mage kept him alive? After all, he wouldn't have gotten any useful information from him. It's getting harder and harder to understand his intentions. ~
+@1 = ~Jaheira, don't try to make sense out of it - this guy is crazy! ~
+@2 = ~Hey Minsc, hold on, we'll get you out! ~
+@3 = ~Boo says to free Jaheira! And Minsc agrees with him - we don't abandon our friends in trouble! ~
+@4 = ~Minsc, can you break the bars of her cage like you did with yours? ~
+@5 = ~No, I can't - these bars stronger! Perhaps they are reinforced by some magic! Argh!! ~
+@6 = ~Wait a minute! <CHARNAME>, Boo says to look for the key - he saw the evil wizard go into the room behind us! Boo is so smart! ~
+@7 = ~I'm afraid it won't work. This bastard knew that I had magical skills and worked on my cell separately. It's harder to open than that one. ~
+@8 = ~So this poor fellow was a friend of the wizard, served him faithfully, and then the wizard abandoned him! Boo is outraged! Friends shouldn't be thrown away and forgotten like trash! ~
+@9 = ~He... he wants us to kill him? <CHARNAME> ... ~
+@10 = ~Poor fellow... And there is nothing we can do to help him... ~
+@11 = ~It hurts !! ~
+
+// Minsc-Imoen Banter
+@12 = ~Boo doesn't like that smell! It is the smell of goblins! How did they get here?~
+@13 = ~I don’t know, Minsc - I don't think the sorcerer put a bunch of those things in every corridor on purpose. The dungeon was attacked by someone - they must have broken the walls during the attack, and the goblins crawled in through the gaps. ~
+@14 = ~If someone was able to get in here to attack the wizard, then we can get out the same way! I don't know who launched this attack, but they certainly helped us! ~
+@15 = ~I don't think they meant to help us on purpose. We don't even know who was behind the attack. ~
+
+// Jaheira's responses 
+@16 = ~Wait, dwarves! Why do you serve him? ~
+@17 = ~Because he pays us well, silly woman! What other reasons do we need? Now die! ~
+@18 = ~That's right. Dryads have a special bond with their trees. They are inseparable from them. As long as the tree is alive, so is its keeper. But it is dangerous to stay here. We must help them! ~

@@ -1,0 +1,37 @@
+// Tirdir
+@0 = ~Some idiots they were! They should have killed them and buried them afterwards so there would have been less risk! But they wanted to show off, and that's the result - their plan fell through! ~
+@1 = ~Boo and I are outraged! We will punish these villains! ~
+@2 = ~This is definitely not the work of the Shadow Thieves, <CHARNAME>. They would have simply killed them and left the corpse to rot in the street. And kidnapping for ransom is not their style either. ~
+@3 = ~Maybe it was just a gang fight, and they buried him because he didn't want to share the loot? ~
+@4 = ~No! I'm telling the truth, I swear! ~
+
+
+// Mini-quest "For Love"
+@5 = ~Hello <PRO_SIRMAAM>. May I speak to you? ~
+@6 = ~Of course. ~
+@7 = ~No! I don't have time to talk to everyone. ~
+@8 = ~Sorry, but I am on urgent business. Please contact someone else. ~
+@9 = ~It's a little personal. I'm going to meet with my sweetheart, but she's got me confused about where to meet... ~
+@10 = ~The cemetery at night! Of all the possible places, why did she choose such a dangerous one? No matter how hard I try, I cannot understand the reason for this. ~
+@11 = ~But no matter what, I'll go to meet Charlize! I would go through hell, just for the sake of her fleeting smile. ~
+@12 = ~But it's unsettling to go to a cemetery alone at night. Bandits and grave diggers often gather there! <PRO_SIRMAAM>, may I ask you to come with me? Just in case? ~
+@13 = ~Be a man! Go yourself. ~
+@14 = ~Of course, I'll go with you. ~
+@15 = ~Oh... Okay, sorry... ~
+@16 = ~Thank you. My name is Paris. I'll meet you in the evening at the southern entrance to the cemetery. ~
+@17 = ~Thank gods you're here! How creepy it is... did my Charlize really come here at night?~
+@18 = ~Someone help!!! ~ [PEASF09]
+@19 = ~That voice... It's Charlize! Something must have happened to her! We were supposed to meet at the wall with the four statues. Let's hurry! ~
+@20 = ~Oh! Are you alright, my love? ~
+@21 = ~I was waiting for you when that brute suddenly attacked me... I was so scared... ~
+@22 = ~Thank you, <PRO_SIRMAAM>. Words cannot express my gratitude. But, dear Charlize, why did you decide to meet in a dangerous place? ~
+@23 = ~What do you mean? Paris, you chose the meeting place yourself. You sent me a letter two days ago and asked me to come here! ~
+@24 = ~What!? I did not write any letter. ~
+@25 = ~How? ~
+@26 = ~It was a trap. And ... This brute knew my name. But who hired him? And who have I upset? ~
+@27 = ~*sigh* Sorry, <PRO_SIRMAAM>. This mystery doesn't mean you won't be rewarded for your help. ~
+@28 = ~I'll take Charlize home. Here, take this for the trouble. Thanks again! ~
+@29 = ~Someone thought it out well. If Paris had gone alone, he would already be dead. ~
+@30 = ~Yes, wandering among the graves is not very romantic. Lovers often do crazy things, but something else seems to be going on here. ~
+@31 = ~What weirdos. Better in bed than on stone slabs, eh? ~
+@32 = ~Wealthy people often look for a thrill, all from boredom with the mundane. ~

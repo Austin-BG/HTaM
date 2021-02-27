@@ -1,0 +1,58 @@
+// Edwin banter (Illithids)
+@0 = ~<CHARNAME>, now that we're in the Underdark, I must warn you - we may encounter Illithids, very dangerous creatures. I've read a lot about them in the libraries of Thay, and even encountered them occasionally in battle. They are also called mind flayers for their need to consume their victims' brains. (Not that they would get much sustenance from this tribe of primates.)~
+@1 = ~How much do you know about them? Where are they from?~
+@2 = ~I'll figure it out myself.  We need to go.~ 
+@3 = ~Illithids are the most advanced race of the Underdark. Originating from the Outer Planes, they reigned over many worlds and had huge armies of mind-controlled slaves.~
+@4 = ~Can you tell me about Illithid lairs? How do they communicate amongst themselves?~
+@5 = ~Do they worship any gods?~
+@6 = ~What about Illithid procreation?~
+@7 = ~They use telepathy to communicate between each other. Every Illithid city is ruled by an Elder Brain who feeds on the brains of its lesser brethren. Its chamber is usually located near the hatchery. The Elder Brain can read the minds of his every servant - very convenient, isn't it? Any surface ruler would give everything for such ability.~
+@8 = ~There are other inhabitants as well - slaves from the Underdark or surface races they managed to capture in the tunnels and dominate their wills. Mind flayers love pitting slaves against each other in gladiator battles. If they capture us, we're almost certainly done for. We must be careful.~
+@9 = ~What use is this information to you? All right, don't think I can't answer. Illithids worship Ilsensine, the Great Brain. They have no concept of an afterlife. Instead, an Illithid's mind becomes one with the Elder Brain after death.~
+@10 = ~Well, if this is your main interest... fine. Mind flayers are sexless. Any Illithid can lay eggs in the special chambers. Tadpoles hatch from the eggs. Many of them die, some become food for the Elder Brain. When a tadpole reaches maturity it is placed on a slave - human or elf. It then burrows into the head of the victim, merging with their body and devouring the brain. In time it transforms into a full-fledged Illithid.~
+@11 = ~Can the transformation be stopped before the victim becomes an Illithid?~
+@12 = ~Yes, some books which I read in Thay mentioned cases of incomplete transformations - either Illithids with an untouched mind or the reverse - people with a mind flayer's brain. That's why Illithids are very suspicious of their own brethren who show any trace of human behavior.~
+@13 = ~So, what's the best way to deal with them, if we run into any?~
+@14 = ~Thank you, Edwin. Indeed, you're very knowledgeable.~
+@15 = ~As always, many words but no sense in them at all. Let's move on.~
+@16 = ~An Illithid's common battle tactic is sucking out its enemy's brain. Therefore, simple-minded adventurers - like your vermin-loving friend - will die almost immediately, especially when surrounded by a group of mind flayers. A person of great intelligence - me, for example - can resist for much longer.~
+@17 = ~Hey, Minsc can hear you!~
+@18 = ~Ahem. Well, just don't let them eat your brains. Use intellect boosting potions to resist them longer! That's my first advice.~
+@19 = ~Secondly, try to fight only one Illithid at a time. Don't attack them in a group! Together, they will make short work of your brain!~
+@20 = ~Thirdly, if you can summon undead creatures - do it! Skeletons, for instance, would work. A mind flayer's main weapon is useless against mindless creatures, so they can resist its attacks.~
+@21 = ~Well, you said something useful for a change. Now I don't regret having you in the group!~
+@22 = ~I'm not lecturing you for my own pleasure. In this place you must be as prepared as I am, if we all want to survive. So heed my warnings. Now, we must go.~
+@23 = ~Pfft. (What am I doing, traveling with them? I could be at home reading magical tomes near the fire instead of running all over the Underdark with a bunch of idiots!)~
+@24 = ~Whatever. Fine, let's go. We can't stay in one place for long. It's too dangerous.~
+@25 = ~(I can only hope these morons don't get me killed down here.)~
+@26 = ~You know much for a surfacer, mage.~
+@27 = ~Even you can be useful, so it seems.~
+@28 = ~Ah, we only covered the basics. (And I doubt they will remember even that much.)~
+@29 = ~You're an exceptional person, I get it. Do you have any more practical advice?~
+@30 = ~Maybe Minsc is not a genius, but unlike you, villain, I fight for the good!~
+
+// Adalon death - NPC reactions
+@31 = ~(Adalon's body lies in front of you - she is beautiful even in death. Perhaps, she was the last silver dragon on Faerun...)~
+@32 = ~Pfft. Ust Natha drow are weak, if they feared that pathetic lizard.~
+@33 = ~<CHARNAME>, the death of the only good creature around will definitely harm the local balance. Now the forces of evil will take the offensive and plunge these lands into chaos.~
+@34 = ~I agree with Jaheira. That was a mistake, <CHARNAME>.~
+@35 = ~You are not the person I thought you were. Forgive me, but... from now on we will talk only when we have to.~
+@36 = ~A difficult decision, which, I think, will change the fate of this land. Adalon's presence senselessly and unsuccessfully contained entropy, and now the Underdark denizens will be able to bring their chaos to the surface.~
+@37 = ~Why cry over a lizard? We won, and to the victors go the spoils! Come, let's loot her hoard, and don't forget to collect some scales - they might make fine armor!~
+@38 = ~Aye, I slaughtered many things, but a silver dragon, now that's a first! Quite a story to tell over a pint o' ale! We'll be the envy of all!~
+@39 = ~Boo is not happy about the lady dragon's death. She had a big heart, not like the others.~
+
+// Adalon interjections
+@40 = ~I have no need for this disguise. But for others it may not be enough. Even if they look like Drow, they may give us away if they start whining and pitying the weak, as they always do.~
+@41 = ~<CHARNAME>, what are you doing? She is a good and noble creature!~
+@42 = ~Stop, <CHARNAME>! If you attack this wondrous creature, I won't just stand aside! Our paths diverge here!~
+@43 = ~I shall not allow you to kill her!~
+@44 = ~Sneaking into the drow city in disguise, learning their secrets, and getting out alive... It doesn't get any better! (No Thayvian has ever managed this!)~
+
+// House De'Vir refugees - Viconia reaction
+@45 = ~So this is what became of the once-proud House De'Vir... You are naive, Veldrin, if you thought I would mourn their fate. The past can't be changed, and these Drow are paying the price for their weakness.~
+@46 = ~(quietly) I may have some pity for them. But only a little. They may be my distant relatives, but by now I have more in common with you than with them.~
+@47 = ~(quietly) Don't speak with them, <CHARNAME>. One of them might recognize me, and we can't allow ourselves to be discovered. These weaklings will die and nothing can change that.~
+
+// Elhan interjections
+@48 = ~So, now even forest elves are indebted to me for their rescue? Our partnership brings more and more benefits, even better than I expected. When half of the Faerun owes you, it opens up so many... possibilities!~

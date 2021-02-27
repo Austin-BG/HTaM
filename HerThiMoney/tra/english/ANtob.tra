@@ -1,0 +1,54 @@
+// Imoen-Anomen Banter
+@0 = ~Imoen... You said last time that I was not so bad. And I thought - you hardly know me. We didn't talk much.~
+@1 = ~Yes, at first you seemed pompous to me, like all knights. That's why I didn't care to socialize. But you've changed lately. Becoming somehow... more easy going, or something. Less pathos.~
+@2 = ~But I feel a kind of anxiety and insecurity in you. It's like you're lost.~
+@3 = ~It's bitter to admit, but you're right. Before, my path was clear. I understood perfectly what I wanted to achieve in life and who I wanted to be. But after I broke up with these foolish knights, I'm trying to figure out what to live for now. Or for whom...~
+@4 = ~It's as if... there used to be a lighthouse ahead of me, through which I could find my way in any darkness. And now this fire has gone out. And the new one doesn't light up...~
+@5 = ~Anomen... I didn't know it was that difficult for you. It's a pity that we didn't talk heart to heart before. Most importantly, do not be discouraged! You know what my adoptive father used to say, old Winthrop? 'Believe in the best and it will definitely come!'~
+@6 = ~Yes, right... What if everything I've been through is just a test? And in fact, my main role is still ahead?~
+@7 = ~I recently had a strange dream. And I got the feeling that this is some kind of sign... But you might find it strange.~
+@8 = ~Not at all! I love listening to other people's dreams and trying to interpret them! Come on, tell me!~
+@9 = ~I dreamed of a jungle that I had never been in... outlandish plants and flowers... the chatter of thousands of birds. And a deer with a blue pupil, stood fearlessly in front of me. Then he shook his horns and went deep into the thicket, and I followed him. I walked without fear, without fatigue. On the contrary, I was filled with such strength and determination that it seems I could have walked a thousand miles without rest. And the jungle didn't end ... On the way, I picked fruits that I saw for the first time in my life, ripe and sweet, drank spring water, which tasted better than wine...~
+@10 = ~Then I woke up. But inside there was a strange feeling that something important was ahead of me, some great accomplishments.~
+@11 = ~Maybe. Dreams often predict the future. Maybe this one meant something and warned you about something?~
+@12 = ~Only time will tell.~
+
+// Marlow 1 (Edwin, Aerie, Jaheira)
+@13 = ~What do we care about your problems, slave? We are here deciding the fate of the world, we have no time for you! (I wonder what happened to him?)~
+@14 = ~If his d-daughter might die, we must definitely help this poor man, <CHARNAME>!~
+@15 = ~Go to his house? This could be another trap, <CHARNAME>. Let's be careful.~
+
+// In Amkethran Tavern (Mazzy)
+@16 = ~You said yourself that they will fight the drow and the mind flayers. You don't seem to be one of them, friend, so what are you afraid of?~
+@17 = ~Uh. Well I don't know. I'm just scared!~
+
+// Marlowe 2 (Valygar, Haer'Dalis, Imoen, Keldorn, Jaheira, Nalia, Korgan, Minsc, Aerie, Mazzy)
+@18 = ~<CHARNAME>, it's up to you, but I would not recommend messing with a lich to a stranger. Liches are extremely dangerous opponents, almost immortal.~
+@19 = ~I am the only one who thinks that this little bird is not saying something?~
+@20 = ~All I do is for the sake of my daughter! Help, please!~
+@21 = ~What? <CHARNAME>, this poor fellow hasn't done anything to us! How can you say that? Is the legacy of Bhaal influencing you so much! Stop!~
+@22 = ~<CHARNAME>, I will not participate in the killing of innocents! If you are serious, then you have to kill me too!~
+@23 = ~This man is poor and did not hurt us! I will not stand aside if you attack him!~
+@24 = ~Minsc will not look at such a murder calmly! Stop, <CHARNAME>, what's gotten into you?~
+@25 = ~He's right! The man is scared, his daughter is sick! We must help, not attack! I'm leaving, <CHARNAME>. I don't want to have anything to do with you!~
+@26 = ~The man is scared, his daughter is sick! We must help, not attack! I'm leaving, <CHARNAME>. I don't want to have anything to do with you!~
+@27 = ~Does he really have nothing? I bet he hid something in the house. Let's rob him and rough him up to keep him quiet!~
+@28 = ~I didn't go with you <CHARNAME> for doing this! The world is already full of evil, we must fight it, not attack the simple poor.~
+@29 = ~He hasn't done anything wrong to n-us, <CHARNAME>! Why are you doing this?~
+@30 = ~<CHARNAME>, I won't abandon you - you must be influenced by Bhaal. But resist it!~
+@3000 = ~No please! Have mercy!~
+
+// Boy at the cemetery (Minsc, Nira, Haerdalis)
+@31 = ~Boy, look at this giant space hamster! Does it look like he's afraid of anything? No! And neither should you be! If there are evil creatures there, we will chop them to pieces! Good should come with fists!~
+@32 = ~Undead again! <CHARNAME>, let's not go there! We are already fighting with someone all the time...~
+@33 = ~So my premonitions did not deceive me. I knew that the sparrow was hiding something. Why, of all the inhabitants of the city, the spirits began to haunt his daughter? He did something to anger them.~
+
+// Sarevok (participation in the Imoen-Aerie banter at the birth of a child)
+@34 = ~If anyone here calls me Uncle Sarevok, they're dead. I'm serious.~
+
+// Zaki Rafeha
+@35 = ~So Melissan brought Balthazar here? And for what purpose, I wonder? She's clearly not saying something, <CHARNAME>.~
+@36 = ~Eat Me Ogre!! Yet another son of Bhaal?? How did he manage to have so many children? Did he do nothing else with his life? What a stud!~
+@37 = ~I'm starting to respect that Bhaal! You can't throw a rock without hitting one of his childs. Such fertility!~
+@38 = ~My wonder brain tells me that this Melissan is keeping quiet about a lot, since she hasn't said anything about her role in the rise of Balthazar. No need to thank me. I know you would never have guessed yourself!~
+@39 = ~Bah! Tiax will have a thousand times more childs than this pathetic Bhaal! And those who are not childs of Tiax will be forced to pay a heavy tax!~

@@ -1,0 +1,96 @@
+// Death of the Shadow Dragon - NPC reactions
+@0 = ~Looking at the cooling body of the mighty Thaxl'ssillia, you can hardly believe that this huge monster fell at your hands.~
+@1 = ~Yes! This is how Minsc punishes evil! But we couldn't have done it without Boo's help - he was distracting this dragon himself!~
+@2 = ~We did it. I can hardly believe it. But even with the dragon dead, evil remains in the temple. We need to finish what we started.~
+@3 = ~Glad we've slain this dragon, otherwise it might have attacked Imnesvale, and I couldn't have done it alone to protect the villagers.~
+@4 = ~Now there will be something to tell your relatives over a mug of turnip juice! Uncle Scratchy would have been surprised to learn that I killed the dragon with these hands. I would say, I suppose, that I am an inventor. Have I ever lied or invented something? No, there is no one truer than me in the Jansen family.~
+@5 = ~Har har! It was a glorious battle! Let's search his corpse, and then celebrate our victory in the tavern! I'll even treat everyone for this occasion!~
+
+// Chickens
+@6 = ~*clucking*~
+@7 = ~*cluck!* *cluck* *cluck*~
+@8 = ~(This chicken is no different from the rest.)~
+@9 = ~Hello chicken! Tell me, did your master hide something valuable in you?~
+@10 = ~(The chicken ignores you, continuing to peck at grains on the ground.)~
+@11 = ~(The chicken is startled by your voice and runs away.)~
+@12 = ~(The chicken looks at you for a moment before turning its attention to the worm sticking out of the ground.)~
+@13 = ~What are you doing there? Get lost! Leave my chickens alone!~
+@14 = ~(You decide to scare the chicken. It tries to fly up, but something pulls it towards the ground. Maybe the farmer hid something valuable inside.)~
+@15 = ~(When you hold the chicken in your hands, you can feel something large rattling around inside it. It may be a hidden treasure.)~
+@16 = ~(Pick up the chicken and shake it.)~
+@17 = ~(Scare the chicken.)~
+@18 = ~(Leave the chicken alone.)~
+@19 = ~I know your secret, old man... hand over the chickens, or else.~
+@20 = ~How much are you asking for these chickens? I want to buy them from you.~
+@21 = ~Valygar, can you help me get the treasure out of the chicken?~
+@22 = ~Jaheira, help me remove what's hidden from inside the chicken.~
+@23 = ~Cernd, do you know how to get a hidden object out of a chicken?~
+@24 = ~No. A chicken is not a bag that you can just take something out of. I want no part of such foolishness.~
+@25 = ~<CHARNAME> what sort of childish prank is this? Do you really want to rob these refugees in this way? If you really need what is hidden in the chicken, try to negotiate with its owner.~
+@26 = ~If something foreign enters a living creature, its body will try to get rid of it. But, if that man's story is to be believed, the hidden object can harm the chicken when it is released. If you want, I can relieve her pain and speed up the process.~
+@27 = ~Yes, do it.~
+@28 = ~(Cernd carefully examines the chickens. After a few seconds he walks over to one of them and sits down next to it. He removes the pouch from his belt, sprinkles some berries and feeds the bird. The chicken stands still for a couple of minutes, then goes back to the flock. It left behind a gem where it was standing.)~
+@29 = ~No, I can do it without your help.~
+@30 = ~Minsc, you're a tracker. You can surely get the treasure out of the chicken.~
+@31 = ~Some villain is using chickens as secret places? We must help poor animals! But Minsc is afraid to harm the bird, because he is so big, and the chicken is so small... Boo, do you want to say something?... Great idea! Minsc and Boo know how to save this bird from torment!~
+@32 = ~Okay, Minsc, go ahead.~
+@33 = ~I'll look for another way to rid the chicken of the treasure.~
+@34 = ~(Minsc takes Boo off his shoulder and puts him on the ground. He starts running around the chickens. After a while the hamster stops and starts sneaking up on one of the birds...)~
+@35 = ~*Squeak!*~
+@36 = ~*There!* (The chicken breaks loose and rushes away. In its place you notice a bluish sheen. Bending down, you pick up and clean the object, which turns out to be a gem.)~
+
+// Lellin's death
+@37 = ~What was that?~
+@38 = ~I heard screams. Let's check it out.~
+@3800 = ~Some fool was yelling over there. Probably another drunken provincial wandered in. No one in their right mind would come here. (Except for the suicidal, like us, of course...)~
+@39 = ~Boo heard something, over there!~
+@40 = ~<CHARNAME> what a terrible place! This place has me ill at ease...~
+@41 = ~(You are holding the diary of the deceased Lellin. There are eerie bloodstains on the pages, and fear permeates the surrounding air...)~
+@42 = ~This weakling killed himself with his own fear.~
+@43 = ~Eh, the guy is not far off... He chose opponents beyond his strength.~
+@44 = ~Don't judge the guy - this was probably his first fight.~
+@45 = ~I noticed how easy it was to get here ? probably following the trail of Mazzy and her people who cleared the way for us. And this man is from her squad.~
+@46 = ~Mazzy? Is this the girl the mayor mentioned?~
+@47 = ~This brave Mazzy, I want to meet her already!~
+@48 = ~Yeah, <CHARNAME>, it's even darker here than the Candlekeep cellar ? you know, where the monks used to send us to retrieve the preserved groceries? Remember that time you got scared the told the monks there were monsters down there?~
+@49 = ~That was me! Before you were sent, I hid in the basement and then made spooky noises! When the monks checked and found nothing, they called you a coward!?I kept this secret for years and only now you know the whole truth!~
+@50 = ~Imoen, someday I'll figure out how to pay you back for all these tricks. Then you'll really be sorry!~
+@51 = ~But this is clearly not the time or place for jokes.~
+@52 = ~I rarely agree with you, but now is one of those times.~
+@53 = ~Maybe enough talking already? These dreadful shadows could attack us at any moment! This forest is overwhelmed by darkness and seems to be crying out for help.~
+
+// Minister Lloyd 
+@54 = ~How awful!~
+@55 = ~There is also a maniac flaying people in Athkatla. Is this some new cult of mad butchers?~
+@56 = ~No human could do such a thing, it must be some kind of monster! We'll deal with him soon enough!~
+@57 = ~*Sniff-sniff...*~
+@58 = ~Fear not, Wilson, the bears are safe here. On the contrary, with your help, we will punish these dastardly killers!~
+@59 = ~With all due respect, sir, how could wolves turn their victims' skin inside out? This theory is clearly wrong, wolves would simply eat the bodies.~
+@60 = ~I agree with Jaheira. Animals definitely have nothing to do with it.~
+@61 = ~How could wolves turn their victims' skin inside out? No, animals have nothing to do with it.~
+
+// At Valygar's cabin
+@62 = ~Listen, druids or whoever you are. We don't want trouble, but we represent the law here, so back off.~
+@63 = ~Nothing personal, it's just business.~
+@64 = ~We have no quarrel with Valygar, but he had better surrender to the hands of law and order. And let him be thankful that it was us who came for him, and not some bandits who only care about the price on his head.~
+@65 = ~We just want to talk to Valygar. And it's possible for him to go with us voluntarily. It's in his best interest.~
+@66 = ~We'll track you. Don't even try it!~
+@67 = ~Get them!~
+
+// Chickens (supplements)
+@68 = ~(Try to get a feel for what has happened to the chicken lately.)~
+@69 = ~(You see a creature with a dog's head sneaking around in the dark. It makes its way behind the inn, where rubbish is usually dumped. After a while, it returns, carrying something potentially edible, and runs off toward the river.)~
+@70 = ~(You run away from three guys with sticks who have been tormenting you since forever. You manage to reach your master without getting hit. The master yells at the guys, driving them off.)~
+@71 = ~(At the market, you see new visitors to the village. They are half the size of an ordinary person. One of them has something edible peeking out of the pouch on his belt. You peck at the sack, trying to pull it to the ground. The man twitches sharply with a yelp, and the pouch bursts open, spilling nuts everywhere. A red-haired woman standing next to the man laughs and says something to him, then chases you away.)~
+@72 = ~(At night, you wake up to the sound of your master's footsteps. He comes up and grabs you tightly with one hand, holding a blue stone in the other. You feel a sharp burning sensation in your throat, and then a heaviness inside your body. The master leaves, and it takes you a long time to fall asleep.)~
+@73 = ~(Ask the chicken to move away from the farmer.)~
+@74 = ~(After the previous experiences, the chicken doesn't trust people and won't comply. You need to make it obedient.)~
+@75 = ~(The chicken trusts you completely and will fulfill any request.)~
+@76 = ~(Order the hen to "lay" the gem somewhere away from the farmer.)~
+@77 = ~(The chicken accepts your order, and all that remains is to wait...)~
+@78 = ~(You relieve the hen of the jewel and the farmer of his last valuable possession.)~
+@79 = ~(Cut out the stone without harming the chicken.)~
+@80 = ~(The chicken has gone behind the bushes, you follow it. Reinforced with a charm spell, you take out a knife and make an incision on the abdomen. Gently pulling out a gem, you cast a healing spell and not a single scratch remains on the chicken.)~
+@81 = ~(The chicken obeys and steps away from the farmer.)~
+@82 = ~(Inspect chicken)~
+@83 = ~(This chicken is no different from the rest, but something tells you to take a closer look.)~

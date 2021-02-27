@@ -1,0 +1,77 @@
+// Dialogue of Anomen with a whore
+@0 = ~Hey there, handsome knight! Shall we get to know each other better? ~
+@1 = ~Go away! I am a priest of Helm, and I will not defile myself by communicating with someone like you! ~
+@2 = ~But you've already started, haven't you, kitten? ...what did you say? Oh yes - 'defile yourself with communication.' Well? How about some privacy, my knight? I will gladly listen to you when we are alone. ~
+@3 = ~I'm not the kind of man to use the services of... fallen women. Find yourself someone else. ~
+@4 = ~Anomen, why be so rude? The girl is just trying to make a living. We need to be more tolerant of those who are less fortunate than us in life. ~
+@5 = ~"Less fortunate"? Who's the lucky one? You, a ruffian? Look at yourself and then at me - which of us looks better? ~
+@6 = ~I am young and beautiful, my clients are crazy about me. And I earn more per day than all your poor company in a month! So don't get involved in someone else's conversation! ~
+@7 = ~Shut up! I should burn you with magic! ~
+@8 = ~Neera, calm down. You said it yourself - we should be more tolerant. ~
+@9 = ~Imoen, calm down. You said it yourself - we should be more tolerant. ~
+@10 = ~I... perhaps I was too rude. That's no way for a knight to speak to a woman, even one like you. ~
+@11 = ~So? Maybe you will come to visit me and have some fun? I can do a lot of things, you'd be surprised. ~
+@12 = ~The statutes of the Order and Helm forbid me this kind of recreation. Really, I don't remember how the clause is worded in the charter... But I'm sure it was there. I should check again. ~
+@13 = ~No! I must not give into temptation!! <CHARNAME>! Let's go!~
+
+// Andy (vagabond in the Bridge area)
+@14 = ~<PRO_SIRMAAM>, can I borrow some money? I promise I'll get it back as soon as I get out!~
+@15 = ~Here, take a couple of coins.~
+@16 = ~So I'm not the only one, <PRO_SIRMAAM>. If only it were that simple ... ~
+@17 = ~That's how I got fired. They paid me a pittance, not enough to feed my child. I went to my bosses and asked for a raise, and I was out on the street the same day. ~
+@18 = ~What if all you poor people got together and went on strike until they raised your wages? You bet they will, when the streets are covered in garbage and there's no one to serve the rich! ~
+@19 = ~You ain't been here. Folks figgered that out. And those who hired us... they figgered that out too. Look, if folks get together, there's got to be a leader that does the talkin'. Well, first time this fella opens his mouth, they grab 'im an' stick 'im in jail. An' if another leader pops up, why, they stick 'im in jail, too.~
+@20 = ~Well, a fella eats in jail anyways.~
+@21 = ~His kids don't. How'd you like to be in an' your kids starvin' to death?~
+@22 = ~Yes, it's misery on all sides.~
+@23 = ~An' here's another thing. Ever hear a' the blacklist?~
+@24 = ~What's that?~
+@25 = ~Well, you jus' open your trap about us folks gettin' together, an' you'll see. They take your portrait an' send it all over. Then you can't get work nowhere. An' if you got kids...?~
+@26 = ~So we take what we can get or we starve; an' if we speak up, we starve, too.~
+@27 = ~Someday we'll change everything. And the rich will regret that they didn't hear our voice in time. There's an army like us, and there's no bridle for it.~
+@28 = ~Folks are beating their wings like birds in an attic. Gonna bust their wings on a dusty winda tryin' ta get out.~
+@29 = ~These here folks want to live decent and bring up their kids decent. An' when they're old, they wanta sit in the door an' watch the sun go down.~
+@30 = ~However, the people we work for don't consider us human. ~
+@31 = ~Everything will change someday. It will... Tell me, what's your name? I forgot to ask first ~ ~Everything will change someday. It will... Tell me, what's your name? I forgot to ask first. ~
+@32 = ~Andy. I've rarely been asked that, <PRO_SIRMAAM>. ~
+@33 = ~Good luck, Andy. Maybe I'll see you again. ~
+@34 = ~Hello, <PRO_SIRMAAM>. Thanks for the coins I borrowed last time - thanks to them I was able to buy some food for my daughter. ~
+@35 = ~I use ta think prayer helped. Say a prayer an' all your troubles'd stick to that prayer like flies on flypaper. The prayer'd go sailin' off, taken' all those troubles along. But it don' work no more.~
+@36 = ~Prayer never brought in meat. Takes work to buy a pig.~
+@37 = ~Yeah. An' the almighty gods never raised no wages.~
+@38 = ~Why don't you get a job? The city is big, and it probably needs workers. ~
+@39 = ~Go away, beggar! ~
+@40 = ~What's your name? ~
+@41 = ~Things will change someday. They must... ~
+@42 = ~Thank you, <PRO_SIRMAAM>. Kind hearts are scarce these days. ~
+@43 = ~Sorry, I can't, I don't have enough myself. ~
+@44 = ~Never mind, <PRO_SIRMAAM>. May you be more fortunate in life than me. ~
+@45 = ~I disapprove of charity. We need to educate citizens in something useful so that they can take care of themselves. ~
+@46 = ~<CHARNAME>! How can you turn your back on the unfortunate? They deserve our help. ~
+@47 = ~This is the right thing to do, <CHARNAME>. ~
+@48 = ~Good luck, friend. ~
+@49 = ~Sorry to disturb you, <PRO_SIRMAAM>. ~
+@50 = ~The city is full of unemployed people! Even the worst job's in high demand. For a job that takes three workers, ten come in. Bosses get them men for whatever they want to pay. ~
+@51 = ~If ya don't want the pay they give, goddamn it, there's a thousand men waitin' for that job.~
+@52 = ~Thank you, <PRO_SIRMAAM>. ~
+
+// Andy's daughter
+@53 = ~My friend Billy boasts all the time. If he don't have no supper know what he does? Las' night, he said they got chicken to eat. Well, I looked in while they ate and it was fried dough jus' like everybody else.~
+@54 = ~I heard that nobles have hot water in their homes! ~
+
+// Shank and Karbos
+@80 = ~They're fools, both of them. ~
+@81 = ~Fighting over a woman? Ugh! There are plenty of others around who will be happy to do whatever you want for a couple of coins! And these henpecked men fought as if everything was covered in gold under this girl's skirt! They ran after her like dogs after a bitch. ~
+@82 = ~Pah!! Korgan, your manners are a nightmare. ~
+@83 = ~Get used to it, little girl! Soon I will teach you to speak without lisping! You noble cocksuckers and snot-noses are used to pouring bullshit in each other's ears! ~
+@84 = ~I'm not a little girl. And, while walking through the slums and talking to the poor, I listened to everyone. But your speech is too much, even for the slums. ~
+@85 = ~But I say it straightforward! And I don't care who thinks what, especially any noble fool! ~
+@86 = ~This poor guy died for a woman. For a poet, there is no nobler death. I already have a plot for a sad song. ~
+@87 = ~Oh, sing it for us later, Haer'Dalis! You sing so beautifully! ~
+@88 = ~I'll dedicate it to you. When old woman night covers the sky with a starry veil, see me, and I will sing for you alone. ~
+@89 = ~Ooh... I... ~
+@90 = ~Don't say anything, my Oriole. Sometimes words only get in the way - hiding our true feelings like a veil of fog. ~
+@91 = ~Ha, not bad, pointy-ear! You've really got a mouth on you, the ladies love it! ~
+@92 = ~This boy had a mother, a father... They raised and cared for him, and he died because of a stupid passion for a girl who has already forgotten about him in a minute. ~
+@93 = ~What a pity... Killed in vain, all for nothing. ~
+@94 = ~Bubbles! Wait!! ~
