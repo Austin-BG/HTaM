@@ -1,120 +1,120 @@
 // "Siren's silence"
 
 // Lorio
-@0 = ~ (The story of the troll, who was brought back to the circus, haunts you. Something is clearly wrong here, you can't get the idea that this creature is actually not evil at all) ~
+@0 = ~ (The story of the troll, who was brought back to the circus, haunts you. Something doesn't add up, and you can't shake the idea that this creature is actually not evil at all) ~
 @1 = ~ (Yeah, maybe it's time to finally check it out... you decide to go back to the cage and take another look at the troll) ~
-@2 = ~ (Whatever it is, but you have a lot of other things to do, you better get all these trolls out of your head) ~
-@3 = ~ (As soon as you get to the cage, you feel that something unusual is coming from the troll, a strange longing is gradually enveloping your mind. Definitely, this needs to be dealt with) ~
-@4 = ~ You're coming back again... Can you feel it too? Why does the disgusting creature seem to bewitch and make you come again and again?~
+@2 = ~ (Whatever it is, you have a lot of other things to do, you'd better put this troll business out of your mind) ~
+@3 = ~ (As soon as you get to the cage, you feel something unusual coming from the troll, a strange longing is gradually enveloping your mind. Definitely, this needs to be dealt with) ~
+@4 = ~ You're coming back again... Can you feel it too? Why does the disgusting creature seem to bewitch and make you come back again and again?~
 @5 = ~ What happened, Lorio? Tell me.~
-@6 = ~ Are you the person Aerie mentioned? Who sold the troll to the circus... and my name is <CHARNAME>. So what happened? Tell me. ~
-@7 = ~ This story lies like a stone in my heart, and I didn't want to tell it to anyone. But since this is all going on ... I have already said that I have a hut by the lake near Atkhatla. I love this lake, and I went on a boat quite far. ~
-@8 = ~ Yes... My name is Lorio. This story lies like a stone in my heart, and I did not want to tell it to anyone. But since this is all going on ... I have a hut by the lake near Atkhatla. I love this lake, and I went on a boat quite far. ~
-@9 = ~ One day a siren appeared out of the water. She did not try to charm me, but I was already submissive. She... Eirin... confessed that she had been watching me for a long time because she liked me. ~
-@10 = ~ But sirens are dangerous creatures ... ~
-@11 = ~ Oh, <CHARNAME>, you can say that for many ... But Eirin didn't do anything wrong. She came to my shore, we loved each other, and this went on for a long time ... ~
-@12 = ~ Until that very night when I fell asleep on the beach, hugging the siren, and woke up to the roar of a troll. My eyes were dimmed by the thought that he ate Eirin! I wasn't even too scared for myself. But then you know. The troll did not fight, and I tied him up. This is the most I could do, since I had no fire or acid on hand. Then I never found any sign that the troll had killed Eirin. But she could get scared and run away - forever ... after all, she is a siren ... ~
+@6 = ~ Are you the person Aerie mentioned? Who sold the troll to the circus...? My name is <CHARNAME>. Tell me what happened?~
+@7 = ~ This story lies like a stone in my heart, and I didn't want to tell it to anyone. But since this is all going on... I already told you that I have a hut by the lake near Athkatla. I love this lake, and I've gone out quite far by boat. ~
+@8 = ~ Yes... My name is Lorio. This story lies like a stone in my heart, and I did not want to tell it to anyone. But since this is all going on... I have a hut by the lake near Athkatla. I love this lake, and I've gone out quite far by boat. ~
+@9 = ~ One day a siren appeared out of the water. She did not try to charm me, but I was already taken. She... Eirin... confessed that she had been watching me for a long time because she liked me. ~
+@10 = ~ But sirens are dangerous creatures... ~
+@11 = ~ Oh, <CHARNAME>, you can say that about a lot of people... But Eirin didn't do anything wrong. She came to me at the shore, we loved each other, and this went on for a long time... ~
+@12 = ~ Until the night when I fell asleep on the beach with her in my arms, and woke up to the roar of a troll. I wasn't scared at all for myself, but my eyes darkened at the thought of him eating Eirin! You know the rest. The troll didn't fight, so I tied him up. That's all I could do, since I had no fire or acid on hand. I never found any sign that the troll had killed Eirin. But she might have gotten scared and run away - forever... after all, she is a siren... ~
 @13 = ~ What next? ~
-@14 = ~ I went back to the lake many times, called, looked for her. Everything is meaningless. But I am constantly drawn now to Atkhatla. Right here. Look at this monster. As if I want to see something in his stupid head ... and he wants it too. Although, most likely, this is my roof going. ~
+@14 = ~ I went back to the lake many times, called to her, looked for her. All in vain. But I am constantly drawn now to Athkatla. Right here. Looking at this monster, as if I want to see something in him... and he wants it too. I'm probably just going crazy. ~
 @15 = ~ I even asked Mrs. Cragmoon for a healing potion, but it didn't work. ~
 @16 = ~ Mrs. Cragmoon? ~
 @17 = ~ Mrs. Cragmoon? Ah, a potions vendor in the Bridge area. ~
-@18 = ~ She sells potions in the Bridge area. Good woman. And a little magician. We know her, sometimes she comes to the lake to collect herbs ... ~
-@19 = ~ She is. Good woman. And a little magician. We know her, sometimes she comes to the lake to collect herbs... ~
-@20 = ~ But what does all this matter? I have to go, <CHARNAME>. Soon Cromwell will finish the order, on which I have spent all my savings, because I need a good weapon for the journey. I decided to leave here - aimlessly. It's sick in the city, but I don't want to look at the lake anymore. So goodbye. ~
+@18 = ~ She sells potions in the Bridge area. Good woman. A bit of a hedge mage. We know her, sometimes she comes to the lake to collect herbs... ~
+@19 = ~ That's her. Good woman. A bit of a hedge mage. We know her, sometimes she comes to the lake to collect herbs... ~
+@20 = ~ But what does all this matter? I have to go, <CHARNAME>. Cromwell's almost done with the order I spent all my savings on. I need a good weapon for the journey. I've decided to leave here - for somewhere. I'm sick of the city, and I can't stand the sight of the lake anymore. So goodbye. ~
 
 // Troll
-@21 = ~(So the picture seems to be clearing up. One night, a charming siren suddenly disappears on the lake shore and an ugly but peaceful troll appears. Now you know what to do ...) ~
+@21 = ~(So the picture seems to be clearing up. One night, a charming siren suddenly disappears on the lake shore and an ugly but peaceful troll appears. Now you know what to do...) ~
 @22 = ~(Cast Know Alignment) ~
 @23 = ~(Cast True Sight) ~
 @24 = ~(This requires either the Know Alignment spell or the True Sight spell. Unfortunately, you don't have either.) ~
 @25 = ~(The troll looks at you sadly. Know Alignment or True Sight should be tried.) ~
 @26 = ~(Alignment is defined as good!) ~
-@27 = ~(Good troll? Both Aerie and Sartorius seem to think they were dealing with a rare exception, but you don't think so) ~
-@28 = ~(With the help of a spell, you can see a tortured siren in a cage instead of a troll, and this no longer surprises you. Now you know everything except the most important thing - who has bewitched the poor thing and how to return her to her true appearance. find out, it's better not to give Lorio hopelessly) ~
-@29 = ~(The troll looks at you sadly ...) ~
+@27 = ~(A Good troll? Both Aerie and Sartorius seem to think they were dealing with a rare exception, but you don't think so) ~
+@28 = ~(With the help of a spell, you can see a tortured siren in the cage instead of a troll, and this no longer surprises you. Now you know everything except the most important part - who has cursed the poor thing and how to return her to her true form. Until you figure it out, it's best not to give Lorio false hope) ~
+@29 = ~(The troll looks at you sadly...) ~
 
 // Cragmoon (part 1)
 @30 = ~Thanks, but not right now. Tell me, do you know Lorio, the fisherman? ~
-@31 = ~Of course. Hopefully nothing wrong with him? ~
-@32 = ~How can I put it ... Could you tell me how long you have known each other?~
-@33 = ~But why are you asking me these questions? ~
-@34 = ~I see that Lorio is not himself. And he seemed to ask you for help ... Are you friends? ~
-@35 = ~This fisherman is involved in a curious business that I would love to understand. ~
+@31 = ~Of course. Hopefully nothing's wrong with him? ~
+@32 = ~How can I put it... Could you tell me how long you have known each other?~
+@33 = ~What's the meaning of all these questions? ~
+@34 = ~I can see that Lorio is not himself. And he seemed to have asked you for help... Are you friends? ~
+@35 = ~This fisherman is involved in a curious intrigue that I'm trying to get to the bottom of. ~
 @36 = ~Just talk. ~
-@37 = ~Friends? I think you can say so. Lorio has a house by the lake, on the banks of which there are rare herbs that I need to create potions. I sometimes go there ... that's where we met. Now I buy fish from Lorio. And here in Athkatla, he sometimes helps me when I need a man's hand ... it's not easy being a widow, you know. ~
+@37 = ~Friends? You could say that. Lorio has a house by the lake that has rare herbs growing on the banks which I need to make potions. I sometimes go there... that's where we met. Now I buy fish from Lorio. And here in Athkatla, he sometimes helps me when I need a man's hand... it's not easy being a widow, you know. ~
 @38 = ~I see, you are on good terms. Then maybe you heard something about the troll and the siren? ~
-@39 = ~About the troll and? .. No, nothing like that. And I don't think I can tell you anything interesting at all. Sorry. ~
-@40 = ~But I don't have to satisfy your curiosity, do I? Why don't you talk to someone else? So goodbye. ~
+@39 = ~About the troll and...? No, nothing like that. And I don't think I can tell you anything interesting at all. Sorry. ~
+@40 = ~Well it's not up to me to satisfy your curiosity, is it? Why don't you talk to someone else? Goodbye. ~
 @41 = ~No, I don't have to answer you. Go away. ~
 
 // Mod
-@42 = ~I heard everything! In general, I listen to a lot of different things, but they don't notice me. When I grow up, I will become a Shadow Thief. Ha! ~
+@42 = ~I heard everything! I listen to a lot of different things, but no one notices me. When I grow up, I'm going to become a Shadow Thief. Ha! ~
 @43 = ~What exactly did you hear, girl? ~
 @44 = ~Well, since you're such a sneak, tell me something interesting. And if I like the story, I'll give you money. ~
-@45 = ~What? Did you overhear our conversation? Get out of here! ~
-@46 = ~(important) My name is Mod, mi <PRO_LADYLORD>. And this name will still thunder along the Coast, really, really! Do you want me to tell you something? But you will give me a coin for this! ~
+@45 = ~What? Eavesdropping on our conversation? Get out of here! ~
+@46 = ~(important) My name is Mod, mi<PRO_LADYLORD>. And this name will still thunder along the Coast, really, really! Do you want me to tell you something? It will cost you a coin! ~
 @47 = ~Okay, little extortionist. Tell us and we'll see. ~
 @48 = ~Get out, beggar. ~
-@49 = ~(narrowing eyes) Oh, that's it! You will regret it, dumbass! ~
-@50 = ~(joyfully) Oh, mi <PRO_LADYLORD>, about people like you, adults say: knows how to do business! By the way, my name is Mod. ~
-@51 = ~So... you talked to Mrs. Cragmoon about some troll, and I remembered ... Well, they talk about her that she is a witch, I don't know, but the fact that a real witch came to her I saw it myself! ~
-@52 = ~Mrs. Cragmoon was selling potions on the street as usual when that woman, dressed as a magician, with a beautiful staff, appeared and her eyes were so ... dangerous. Mrs. Cragmoon called her "Mrs. Agnes", and traded a large batch of potions for magic scrolls, among which there was something about turning into a troll - she heard me to die! Gorgeous, right? So don’t anger Mrs. Cragmun, or she’ll turn into a troll! ~
-@53 = ~Nice, otherwise ... Thanks, Mod, here's your money. ~
-@54 = ~Wow! And you are generous, mi <PRO_LADYLORD>! We are friends now, and Mod does not forget friends. ~
-@55 = ~This is not a good story. I expected more. Take...~ 
-@56 = ~Is this charity or what? Are you holding me for a beggar? Okay, but now take care of your wallet, mi <PRO_LADYLORD>. ~
-@57 = ~What nonsense! And it was worth wasting time on you ... Get out. ~
+@49 = ~(narrowing eyes) Oh, that's it! You're gonna be sorry, meany! ~
+@50 = ~(joyfully) Oh, mi<PRO_LADYLORD>, you're someone who knows how to do business, as the grown-ups say. By the way, my name is Mod. ~
+@51 = ~So... you talked to Mrs. Cragmoon about some troll, and I remembered... Well, they say she is a witch. I don't know about that, but a real witch came to see her. I saw it myself! ~
+@52 = ~Mrs. Cragmoon was selling potions on the street as usual when a woman, dressed as a magician, with a beautiful staff appeared and she had that look... dangerous. Mrs. Cragmoon called her "Mistress Agnes", and traded a large batch of potions for magic scrolls. There was something in them about turning into a troll! Incredible, right? So don't anger Mrs. Cragmoon, or she'll turn you into a troll! ~
+@53 = ~Great, unless... Thanks, Mod, here's your money. (10) ~
+@54 = ~Wow! So generous, mi<PRO_LADYLORD>! We are friends now, and Mod does not forget friends. ~
+@55 = ~Is that all? I was expecting more. Here... (5)~ 
+@56 = ~What is this, charity? You take me for a beggar? Fine, but keep a close eye on your wallet, mi<PRO_LADYLORD>. ~
+@57 = ~What nonsense! To think I wasted time on you... Get out. ~
 
 // Cragmoon (part 2 in a positive conversation with Mod)
-@58 = ~Are you again? It seemed to me that we already talked. ~
-@59 = ~I thought, if you don't know the story of the troll and the siren, I can tell you. Better yet, about the impression she made on Lorio. Don't you yourself know that something weighs heavily on him?~
+@58 = ~You again? It seemed to me that we already talked. ~
+@59 = ~I thought, since you don't know the story of the troll and the siren, I could tell you. Better yet, about the impression she made on Lorio. Don't you know that something has been weighing heavily on him?~
 @60 = ~Actually, yes, he asked me for a potion. But I hope that all this will soon pass. ~
-@61 = ~I strongly doubt it. Lorio was about to leave these places. Because he thinks his beloved siren is dead or left him forever. ~
+@61 = ~I highly doubt it. Lorio is about to leave these parts because he thinks his beloved siren is dead or has left him forever. ~
 @62 = ~(Mrs. Cragmoon looks surprised and upset) ~
-@63 = ~It can't be! Leave? But why? .. This I did not expect. Those vile sirens ... ~
-@64 = ~Don't you like sirens? So much so that you bought the scroll from a witch to turn one of them into a troll? ~
-@65 = ~(Her eyes flash, she no longer controls herself): Don't like it? Still would! How do you think a woman feels when one of these sweet-voiced creatures charmed and took her husband away with her? Certainly for certain death ... Yes, I hate them, and I have no reason to hide it! ~
-@66 = ~Tell me what happened on the lake? Did you turn Siren Eirin into a troll? ~
-@67 = ~Yes! An ugly, ugly creature ... Lorio is a good person. He does not deserve to be tied to a hideous charm, albeit a lovely, but monster. I wanted to help him ... free him. ~
+@63 = ~It can't be! Leave? But why? ... I didn't expect this. Those vile sirens... ~
+@64 = ~You don't like sirens? So much so that you bought a scroll from a witch to turn one of them into a troll? ~
+@65 = ~(Her eyes flash out of control) Dislike them? More than that! How do you think a woman feels when one of these sweet-voiced creatures charms and takes her husband away with her? Likely to certain death... Yes, I hate them, and I have no reason to hide it! ~
+@66 = ~Tell me what happened on the lake? Did you turn the siren Eirin into a troll? ~
+@67 = ~Yes! An ugly, repulsive creature... Lorio is a good person. He does not deserve to be bound by disgusting spells to a monstrous creature. I wanted to help him... free him. ~
 @68 = ~Tell me. ~
-@69 = ~I went to the lake early in the morning to collect the herbs in the dew ... and I saw them together. They slept so sweetly in the grass, embracing! I had heard before, how from the side of the lake where Lorio directed his boat, the songs of the seducer were heard. It was better for her to be silent forever! ~
+@69 = ~I went to the lake early in the morning to collect the herbs in the dew... and I saw them together. They slept so sweetly in the grass, embracing! I had heard the seductress's song from across the lake. It was better for her to be silent forever! ~
 @70 = ~I'm not a very strong magician, the locals flatter me by calling me a witch, but I carry scrolls with me. Including those that the Tethyrian witch Agnes gave me. Sometimes she comes to Athkatla. Agnes is a master of transformations and creates her own spells that are different from the usual. ~
 @71 = ~And you intended one of them for Eirin? ~
-@72 = ~Exactly. Agnes's enchantment is very strong, and only a spell she wrote can remove it. Even after death, the vile siren will look like a troll. ~
-@73 = ~You took care of everything. Aren't you afraid that in the guise of a troll the siren will kill you or Lorio?~
-@74 = ~Didn't think about it, to be honest. But, perhaps, she was not afraid. I quickly disappeared, and of course she did not touch Lorio. Ah, if only he had come to terms with her loss ... ~
+@72 = ~Exactly. Agnes's enchantment is very strong, and only her own spell can remove it. Even in death, the vile siren will look like a troll. ~
+@73 = ~You took care of everything. Weren't you afraid that in the body of a troll the siren would kill you or Lorio?~
+@74 = ~Didn't think about it, to be honest, but I suppose not. I quickly disappeared, and of course she did not touch Lorio. Ah, if only he could come to terms with losing her... ~
 @75 = ~Do you have a scroll with a spell that could disenchant Eirin? ~
 @76 = ~I don't even want to think about that. ~
 
 // Group reactions (Cragmoon)
 @77 = ~I've always said magic is a problem, here's another proof. ~
-@78 = ~<CHARNAME>, we must help the Kid! I mean, E-Eirin ... I can't stop calling her Kid.~
+@78 = ~<CHARNAME>, we must help Kid! I mean, E-Eirin ... I can't stop calling her Kid.~
 @79 = ~Tiax the Wise orders you to disenchant the siren, witch! So she can sing love serenades to Tiax at dinner! This fisherman is being executed so that he does not distract the siren from more important matters. ~ [PPTIAX12]
 @80 = ~But she didn't hurt you! You acted meanly! ~
-@81 = ~Have you ever loved, girl? And you were thrown? If not, then you don't know what you're talking about. ~
-@82 = ~These sirens are evil creatures, <CHARNAME>! The sorceress is right, let her remain a troll and make people laugh at the circus. That way she won't hurt anyone. ~
+@81 = ~Have you ever loved, girl? And been dumped? If not, then you don't know what you're talking about. ~
+@82 = ~These sirens are evil creatures, <CHARNAME>! The witch is right, let her remain a troll and make people laugh at the circus. That way she won't hurt anyone. ~
 @83 = ~Love sometimes takes on strange forms and can be violent. ~
-@84 = ~I understand this poor woman, <CHARNAME>. The feeling of being dumped is awful. But I still can't approve of her act. ~
-@85 = ~It was not love that spoke in it, but the desire for revenge and selfishness. If she truly loved Lorio, she would let him go and be glad that he is happy. ~
+@84 = ~I understand this poor woman, <CHARNAME>. The feeling of being dumped is awful. But I still can't approve of her actions. ~
+@85 = ~It wasn't love that moved her, but the desire for revenge and selfishness. If she truly loved Lorio, she would let him go and be glad that he is happy. ~
 
 // Decision
-@86 = ~(Well, everything is clear, there are no more riddles left. Now we need to decide what to do next. You can tell Lorio everything, let him know the truth, but if the fisherman has a difficult character, then instead of helping him, you can spoil everything) ~
-@87 = ~(Something tells you that if Lorio finds out the truth about Mrs. Cragmoon, it won't end well. Better follow through on your own.) ~
-@88 = ~(Should you continue to do someone else's business? You found out everything you could, and let Lorio deal with his "girlfriend" himself)~ 
+@86 = ~(Well, everything is clear, there are no more riddles left. Now we need to decide what to do next. You could tell Lorio everything, but if he doesn't take it well, it might only make things worse) ~
+@87 = ~(Something tells you that if Lorio finds out the truth about Mrs. Cragmoon, it won't end well. Better to handle this on your own.) ~
+@88 = ~(Should you continue to do someone else's business? You found out everything you could, and Lorio can deal with his "girlfriend" himself)~ 
 
 // Cragmoon (part 2, with a negative conversation with Mod)
 @89 = ~(Mrs. Cragmoon looks at you incredulously) ~
-@90 = ~I thought about it and decided that our conversation was not over. Some girl is spinning here, says that she has a story to tell. What are you hiding? What if some kind of crime?~
-@91 = ~Leave me alone, <CHARNAME>, you're messing with your business. ~
-@92 = ~So there’s something I don’t need to get into? Should I speak to the guards? ~
-@93 = ~So there’s something I don’t need to get into? Maybe I should ask the Shadow Thieves to deal with you?~
+@90 = ~I thought about it and decided that our conversation was not over. Some girl is hanging around, saying that she has a story to tell. What are you hiding? Maybe some kind of crime?~
+@91 = ~Leave me alone, <CHARNAME>, this is none of your business. ~
+@92 = ~So there's something I don't need to get into? Should I speak to the guards? ~
+@93 = ~So there's something I don't need to get into? Maybe I should ask the Shadow Thieves to deal with you?~
 @94 = ~Leave me! I haven't done anything wrong. Since when have people been threatened for helping someone get rid of a monster?~
-@95 = ~I'm tired of pulling a word out of you. So you "helped" Lorio? So much so that he was going to leave these places, because he believes that his beloved siren died or left him forever. ~
+@95 = ~I'm tired of prying the truth out of you. So you "helped" Lorio? So much so that he's going to leave these parts, because he believes that his beloved siren either died or left him forever. ~
 @96 = ~Do you have anything against sirens? ~
-@97 = ~(Her eyes flash, she no longer controls herself): And that's putting it mildly! From them only troubles! How do you think a woman feels when one of these sweet-voiced creatures charmed and took her husband with her? Certainly for certain death ... Yes, I hate them, and I have no reason to hide it! ~
-@98 = ~And what did you do to one of them, Eirin? Listen, you better tell it all in a good way. ~
-@99 = ~Let it go ... okay! I bought several scrolls from the Tethyrian witch Agnes, who sometimes visits Atkhatla, and among them was the scroll of becoming a troll. Yes, I turned that Eirin of yours into an ugly, ugly creature... Lorio is a good person. He does not deserve to be tied to a hideous charm, albeit a lovely, but monster. I wanted to help him ... free him. ~
+@97 = ~(Her eyes flash out of control) Dislike them? More than that! How do you think a woman feels when one of these sweet-voiced creatures charms and takes her husband away with her? Likely to certain death... Yes, I hate them, and I have no reason to hide it! ~
+@98 = ~And what did you do to one of them, Eirin? You'd better come clean. ~
+@99 = ~Why you... fine! I bought some scrolls, including a troll transformation, from the Tethyrian witch Agnes who sometimes visits Athkatla. Yes, I turned that Eirin of his into an ugly, repulsive creature... Lorio is a good person. He does not deserve to be trapped by disgusting spells to a monstrous creature. I wanted to help him... free him. ~
 
 // Decision (additions)
 @100 = ~(Mrs. Cragmoon is determined, but so are you. You decide at any cost to obtain a scroll to disenchant the siren) ~
@@ -124,36 +124,36 @@
 
 // Scroll mining
 @104 = ~(Mrs. Cragmoon is clearly unwilling to disenchant Eirin) ~
-@105 = ~Look, don't you think you're being cruel to Lorio? You call him a friend, but after all, friendship is not about managing someone else's life in the way we think is right. You think you saved him from the monster, but look what happened to him? He will now leave his native land, lonely, with a broken heart, and who knows what else will happen to him? You yourself will now be constantly thinking about it and tormented by remorse. What if he cannot bear the dangers of a long journey or ... ~
-@106 = ~Look, I think you're overdoing it. It is jealousy, or is it really caring for a friend, but you climb into someone else's life, dispose of the love of others, and it's time to tie it up. Give me the scroll. ~
-@107 = ~Let's end this story. Give me the scroll immediately! Or you'll regret it. ~
+@105 = ~Look, don't you think you're being cruel to Lorio? You call him a friend, but after all, friendship is not about meddling in someone else's life as we think is right. You think you saved him from the monster, but look what happened to him? He will now leave his native land, lonely, with a broken heart, and who knows what else will happen to him? You yourself will now be constantly thinking about it and tormented by remorse. What if he cannot bear the dangers of a long journey or... ~
+@106 = ~Look, I think you've gone too far. Whether out of jealousy, or really just caring for a friend, but you're barging into someone's life, interfering with love, and it's time to stop. Give me the scroll. ~
+@107 = ~Let's get this over with. Hand over the scroll. Or else. ~
 @108 = ~I said no. Don't bother me anymore. ~
 @109 = ~Get your hands off my scrolls! ~
 @110 = ~(You are trying to steal the unenchanting scroll from Mrs. Cragmoon) ~
 @111 = ~(You have the scroll. Now you can finally return to the Waukeen Promenade and disenchant the unfortunate siren) ~
 @112 = ~(Your attempts to figure it out on your own did not lead to anything. It is probably worth telling Lorio about everything after all) ~
-@113 = ~Okay, that's enough. Consider that you managed to pity me. And really, why should I interfere with Lorio's life if he himself wants to act like the last fool?~
+@113 = ~Okay, that's enough. I see your point. Really, why should I interfere with Lorio's life if he himself wants to act like the ultimate fool?~
 @114 = ~I think it's worth fixing everything before it's too late. ~
-@115 = ~(sighs) Okay, <CHARNAME>. Take this scroll - with it you can disenchant the troll. Lorio can be calm, I will no longer appear on that lake, I will find another place to collect herbs. Actually, thank you ... maybe my conscience would really hurt me. ~
-@116 = ~Oh, this is my great and generous friend <CHARNAME>! ~ ~ Oh, this is my great and generous friend <CHARNAME>! ~
-@117 = ~Listen, Mod, I got the impression that your little hands are dexterous enough to convince a person to part with a thing that he does not want to voluntarily give away ... ~
-@118 = ~(Winks) And then! You think correctly, mi <PRO_LADYLORD>. And who is this man? Is it Mrs. Cragmoon? ~
-@119 = ~She is. We need to take the unenchanting scroll from her ... ~
-@120 = ~I'll take all the scrolls I find! Then I'll return the excess if you want ... Significantly so ... Wait for me here, I'll manage quickly. ~
-@122 = ~Here you go. What is needed? ~
-@123 = ~It's the best! Thanks, Mod. Here's to you for your trouble. ~
-@124 = ~How nice to deal with you, mi <PRO_LADYLORD>! If anything - always contact. ~
+@115 = ~(sighs) Okay, <CHARNAME>. Take this scroll - with it you can disenchant the troll. Lorio can relax, I won't go to the lake any more, I will find another place to collect herbs. Actually, thank you... maybe my conscience really would have hurt me. ~
+@116 = ~Oh, it's my great and generous friend <CHARNAME>! ~ ~ Oh, it's my great and generous friend <CHARNAME>! ~
+@117 = ~Listen, Mod, I got the impression that your little hands are nimble enough to convince someone to part with something they might not want give up... ~
+@118 = ~(Winks) And how! You think correctly, mi<PRO_LADYLORD>. And who is this man? Is it Mrs. Cragmoon? ~
+@119 = ~That's the one. We need to get the unenchanting scroll from her... ~
+@120 = ~I'll take every scroll I can find! Then I'll return the excess... if you want. Wait for me here, I won't be long. ~
+@122 = ~Here you go. Which one do you need? ~
+@123 = ~That's the one! Thanks, Mod. Here's to you for your trouble. ~
+@124 = ~Nice doing business with you, mi<PRO_LADYLORD>! Anything else you need, just ask. ~
 @125 = ~(Mrs. Cragmoon looks at you grimly) ~
-@126 = ~Your job, <CHARNAME>? The Disenchanting Scroll is gone... Don't try to play an innocent lamb! Well, you can rejoice - I will no longer appear on that lake, and I will leave foolish Lorio alone. It's time to really forget about this story. ~
+@126 = ~Your doing, <CHARNAME>? The Disenchanting Scroll is gone... Don't try to play an innocent lamb! Well, you can rejoice - I won't show up at the lake any more, and I will leave foolish Lorio alone. It's time to put this story behind us. ~
 
 //Lorio, Cragmoon (conflict)
 @127 = ~Listen, Lorio. Don't be nervous, but I managed to find out something about your case. (Tell him everything about Mrs. Cragmoon) ~
-@128 = ~(Turning pale with anger) Oh, that's it! And I considered this witch my friend! I even asked her for help, got mad ... Well, never mind, I will forcefully tear the scroll away from her. She will pay for everything she did to my Eirin! ~
+@128 = ~(Turning pale with anger) Oh, that's it! And I considered this witch my friend! I even asked her for help. Well, never mind that, I'll rip that scroll out of her hands. She will pay for everything she did to my Eirin! ~
 @129 = ~I know everything, damn witch! What have you done? ~
 @130 = ~I just wanted to help you! And hoped that someday you and I... ~
 @131 = ~Oh, you hoped... vile traitor! ~
-@132 = ~Did he ... raise his hand to me? On me?! And I thought... you bastard! What, <CHARNAME>, do you like everything now? Here, take this stupid scroll, do whatever you want with it. I do not care anymore. I will forget about this whole story. And look for another place to collect herbs ... ~
-@133 = ~(You have a Dispelling Scroll, the spell it contains is actually unique. The scroll can be sold at a high price. But you won't leave an unfortunate siren in trouble, what you know about creatures like it suggests that she will die, left without water for a long time) ~
+@132 = ~Did he... raise his hand to me? Against me?! And I thought... you bastard! What, <CHARNAME>, is this what you wanted? Here, take this stupid scroll, do whatever you want with it. I do not care anymore. I will forget about this whole thing. And look for another place to collect herbs... ~
+@133 = ~(You have a Dispelling Scroll, the spell it contains is actually unique. The scroll can be sold for a high price, but you won't leave an unfortunate siren in trouble. What you know about creatures like it suggests that she will die, if left without water for a long time) ~
 @134 = ~(Save Eirin) ~
 @135 = ~(Keep the scroll for yourself) ~
 @136 = ~(The siren needs to be disenchanted as soon as possible. She has already suffered) ~
@@ -164,84 +164,84 @@
 @139 = ~It might be worth talking to this Mrs. Cragmoon... ~
 
 // Eirin
-@140 = ~Ah! I became myself again! No more vile troll... how easy it is to live, breathe! Thanks! But I beg you, have mercy, let me out of the cage soon, I need to go to the water ... ~
-@141 = ~These are the times. And little Aerie was right! We got not a simple troll. Who did this to this beauty? ~
-@142 = ~I told you, Uncle Quayle! Didn't she? H-hurry, get her out of the cage soon! ~
-@143 = ~I'm going ... Okay, after all, the money we paid for the troll has worked. ~
+@140 = ~Ah! I'm myself again! No more vile troll... how easy it is to live, breathe! Thanks! But I beg you, have mercy, let me out of this cage, I need to get to the water... ~
+@141 = ~That's it. And little Aerie was right! We got not a simple troll. Who did this to this beauty? ~
+@142 = ~I told you, Uncle Quayle! Didn't I? H-hurry, get her out of the cage soon! ~
+@143 = ~All right, I'm coming... So much for the money we paid for the troll. ~
 @144 = ~Free! Truly free! Where is Lorio? ~
-@145 = ~Now I'm afraid I'll have to upset you. Lorio is in prison. (You tell Eirin what happened) ~
-@146 = ~(deeply saddened) Are all human men like this? Impatient fools ... But he tried to save me ... Tell him that I am returning to our lake. And I will wait for him there. As much as I can. And yet I am glad that I am free again, and my torment is behind me. Thank you! Please accept this gift from me. ~
-@147 = ~Phew. A strange story happened. But all's well that ends well. ~
+@145 = ~Now I'm afraid I'll have to disappoint you. Lorio is in prison. (You tell Eirin what happened) ~
+@146 = ~(deeply saddened) Are all human men like this? Impatient fools... But he tried to save me... Tell him that I am returning to our lake, and I will wait for him there for as long as I can. Still, I am glad to be free again, and my torment is over. Thank you! Please accept this gift from me. ~
+@147 = ~Phew. What a strange story, but all's well that ends well. ~
 @148 = ~There he is! ~
-@149 = ~Again we meet here, <CHARNAME>. I got my sword from Cromwell, I'm leaving, and I wanted to take one last look at ... Wait ... is the cage empty again? ~
+@149 = ~Again we meet here, <CHARNAME>. I got my sword from Cromwell, I'm leaving, and I wanted to take one last look at... Wait... is the cage empty again? ~
 @150 = ~Lorio! ~
-@151 = ~What... can't be. Eirin! Eirin honey you're alive ~
-@152 = ~Yes, my Lorio. Turned into a disgusting troll, I languished without you and without water, in which my life is ... I mentally called you, and you came - only this was consolation ... and pain - because you did not recognize me. ~
-@153 = ~But the benevolent hero cast a terrifying spell on me. I became myself again, and we are together again. Let's go back to our lake soon, love! There we will be happy again. ~
-@154 = ~Are you... a troll? Spell? Oh, Eirin! And I myself, with my own hands, captured you, put you in this cage ... ~
-@155 = ~How did you know, Lorio... someone made fun of us. ~
-@156 = ~Tell who - and I'll destroy him! ~
-@157 = ~I don't know, honey. But I would like to return to the lake as soon as possible. It's hard for me without water ... ~
-@158 = ~Lorio, listen to her. Whoever did it, now you are no longer in danger. Don't think about revenge, protect your happiness differently. ~
-@159 = ~Ok, <CHARNAME>. I don't know how to thank you ... Maybe you will take this sword as a gift? I am a fisherman, not a warrior, and since I am staying, let this weapon serve you. I’m sure you’ll be better at using it than I am. Thanks again! ~
-@160 = ~Sweet Aerie! You were a sip of water for me in this terrible test. Thank you for your kindness. ~
-@161 = ~Yeah n-not at all ... I'm so glad Eirin you're fine now! ~
-@162 = ~Come to our lake. It's so pretty ... ~
+@151 = ~What... it can't be. Eirin! Eirin, honey, you're alive ~
+@152 = ~Yes, my Lorio. Turned into a disgusting troll, I languished without you and without water, which is my life... I mentally called you, and you came - my only consolation... and pain - because you did not recognize me. ~
+@153 = ~But the benevolent hero lifted terrifying spell from me. I'm myself again, and we are together again. Let's go back to our lake soon, love! There we will be happy again. ~
+@154 = ~You... the troll? Spell? Oh, Eirin! And I myself, with my own hands, captured you, put you in this cage ... ~
+@155 = ~How did you know, Lorio... someone played a cruel joke on us. ~
+@156 = ~Tell me who - I'll destroy him! ~
+@157 = ~I don't know, love. But I would like to return to the lake as soon as possible. It's hard for me without water... ~
+@158 = ~Lorio, listen to her. Whoever did it, now you are no longer in danger. Don't think about revenge, think about protecting your own happiness. ~
+@159 = ~Ok, <CHARNAME>. I don't know how to thank you... Maybe you will take this sword as a gift? I am a fisherman, not a warrior, and since I am staying, let this weapon serve you. I'm sure you'll be better at using it than I am. Thanks again! ~
+@160 = ~Sweet Aerie! You were a sip of water for me in this terrible ordeal. Thank you for your kindness. ~
+@161 = ~Yeah n-not at all... I'm so glad you're fine now Eirin! ~
+@162 = ~Come visit us at our lake. It's so pretty ... ~
 @163 = ~Of course, we'd love to see you. Thanks again for everything. ~
 
 // Lorio (in prison)
-@164 = ~Oh, is that you, <CHARNAME>? I acted like the last fool, right? ~
+@164 = ~Oh, is that you, <CHARNAME>? I acted like a fool, right? ~
 @165 = ~(Telling him about Eirin) ~
-@166 = ~Yes, it is. ~
-@167 = ~Serves me right. Got nothing and could not help Eirin ... ~
-@168 = ~I'll just say hello, I have to go. But you are, hold on. ~
+@166 = ~Yes, you sure did. ~
+@167 = ~Serves me right. Got nothing and could not help Eirin... ~
+@168 = ~I just came to say hello, I have to go. But you hang in there. ~
 @169 = ~Thanks for that too. ~
-@170 = ~(Relieved) So my beauty is alive and well ... How can I thank you, <CHARNAME>? I owe you forever. But she left ... well, the sirens can't go without water for long ... I wish they'd let me out of here! ~
+@170 = ~(Relieved) So my beauty is alive and well ... How can I thank you, <CHARNAME>? I owe you forever. But she left... well, the sirens can't go without water for long... I wish they'd let me out of here! ~
 @171 = ~Listen, Lorio. Eirin is lovely, but she is a siren. And you are a man. Are you sure you're made for each other? She will wait for you for a while, but then she will be comforted with another. Why don't you pay attention to Mrs. Cragmoon? Yes, she did a lot of things, but only because she considers the sirens soulless monsters, and just wanted to protect you. I think you'll make up. ~
-@172 = ~I can't see how, one step away from the happy ending, a beautiful love story does not come to the most successful ending. Do you know what? Let me pay whoever needs it and they'll let you out of here. And you will hurry to your Eirin ... before some sea elf takes her away from you. ~
-@173 = ~(Sad) Maybe there is something in your words ... I'll think about them. I have nothing more to do here, just think. Anyway, thank you for everything. Take care of yourself. ~
+@172 = ~I can't stand to see such a beautiful love story end one step short of a happy ending. You know what? Let me pay whoever needs it and they'll let you out of here. And you will hurry to your Eirin... before some sea elf takes her away from you. ~
+@173 = ~(Sad) Maybe there is something in your words... I'll think about them. I have nothing more to do here, just think. Anyway, thank you for everything. Take care of yourself. ~
 @174 = ~You too. Goodbye Lorio. ~
-@175 = ~What? Will you really do this, <CHARNAME>? .. You have no idea how I want to see her as soon as possible, to hug, to see firsthand that everything is fine with her! ~
-@176 = ~That's great. Then wait, I'll be soon. ~
-@177 = ~Thank you again! I am your debtor ... In general ... I'm going to her! But first I will go to Cromwell and tell him to give the sword that I ordered him to you. This is the least I can thank you for. Come to our lake, <CHARNAME> .. Eirin and I will be very glad to see you. ~
-@178 = ~All is well that ends well. ~
-@179 = ~Well Lorio, I can only wish you both patience. I hope Eirin can see you. ~
+@175 = ~What? Will you really do this, <CHARNAME>? You have no idea how I want to see her, hold her, to see firsthand that everything is fine with her! ~
+@176 = ~That's great. Then wait, I'll be right back. ~
+@177 = ~Thank you again! I am in your debt. Anyway, I'm going to see her! But first I will go to Cromwell and tell him to give you that sword that I ordered from him. That's the least I can do to thank you. Come to our lake, <CHARNAME>. Eirin and I will be very glad to see you. ~
+@178 = ~All's well that ends well. ~
+@179 = ~Well Lorio, I can only wish you both patience. I hope Eirin will wait for you. ~
 @180 = ~(Bitterly) I hope so too. ~
 
 // Overseer
-@181 = ~Look, a friend of mine got here by mistake. His name is Lorio, arrested for assaulting a woman. In fact, it was she who attacked him, and he only defended himself. ~
-@182 = ~Listen, a friend of mine is sitting here. His name is Lorio. How much will it cost you to turn your back for a while while I free him?~
-@183 = ~The officer thinks differently and this guy will be judged. Unless, of course, you pay for him ... uh, bail. Yes, let's call it that. Given the severity of the deed he committed, it would take ... Hmm, 100 gold. ~
-@184 = ~How dare you bastard! We don't take bribes! But if you put in... hmm, bail for him. Yes, let's call it that... Then I'll bother. Given the severity of his deed, it would take ... Hmm, 100 gold. ~
-@185 = ~Okay, here's... the bond amount. ~
-@186 = ~I don't have that much. Would you like a discount? ~
-@187 = ~No, 100 gold for this ragamuffin is too much. Let it rot in the jail. ~
-@188 = ~This is not a shop, no discounts! If you don't have money, get out of it! ~
-@189 = ~What, now with you money? 100 coins on the table and your friend is free ~
+@181 = ~Look, a friend of mine ended up here by mistake. His name is Lorio, arrested for assaulting a woman. In fact, it was she who attacked him, and he only defended himself. ~
+@182 = ~Listen, a friend of mine is in custody. His name is Lorio. How much will it cost you to turn your back for a while while I free him?~
+@183 = ~The officer thinks differently and this guy will be judged. Unless, of course, you pay for his... uh, bail. Yes, let's call it that. Given the severity of the deed he committed, it would take... Hmm, 100 gold. ~
+@184 = ~How dare you bastard! We don't take bribes! But if you put in... hmm, bail for him. Yes, let's call it that... I'll take care of it. Given the severity of his deed, it would take... Hmm, 100 gold. ~
+@185 = ~Okay, here's the... bail. ~
+@186 = ~I don't have that much. Couldn't you give me a break? ~
+@187 = ~No, 100 gold for this ragamuffin is too much. Let him rot in jail. ~
+@188 = ~This is not a shop, no discounts! If you don't have money, get out of here! ~
+@189 = ~What, now you got the money? 100 coins on the table and your friend is free. ~
 @190 = ~Looks like your friend isn't so dear to you, is he? Ahah! ~
-@191 = ~Great, I have less work to do. It's free. ~
+@191 = ~Great, less work for me. He's free to go. ~
 
 // Lorio (additions)
 @192 = ~If you can help me, I will be forever grateful! ~
 
 // More group reactions
-@193 = ~It happened to my great-uncle too! He somehow got drunk with friends of turnip moonshine, barely made it home and fell asleep, and when he woke up, there was an angry troll nearby. Well, he thought so from the binge. He soon realized that this was not a troll, but his wife. And then he became really scared - after all, in anger she was angrier and colder than a hundred frosty trolls! And at that moment she was very angry, because he spent on drink all the money that she gave him. He had to buy planks with them to repair the roof. Yes, the roof had been leaking for several weeks and in the rain the room was flooded with water so that you could only get into the bedroom by swimming... And the Jansens were never good swimmers, especially my great-aunt. And so, it means that she was standing over her grandfather and was already raising her hand with a rolling pin above his head, when suddenly ... ~
+@193 = ~It happened to my great-uncle too! He somehow got drunk with friends off turnip moonshine, barely made it home and fell asleep, and when he woke up, there was an angry troll nearby. Well, he thought so from the binge. He soon realized that this was not a troll, but his wife. And then he became really scared - after all, in anger she was angrier and colder than a hundred frost trolls! And at that moment she was very angry, because he spent on drink all the money that she gave him. He was supposed to buy planks with it to repair the roof. Yes, the roof had been leaking for several weeks and in the rain the room was flooded with water so that you could only get into the bedroom by swimming... And the Jansens were never good swimmers, especially my great-aunt. And so, it means that she was standing over my great-uncle and was already raising her hand with a rolling pin above his head, when suddenly... ~
 @194 = ~Jan, can you tell me later? Lorio seemed to want to say something too. ~
-@195 = ~You are always like this. Interrupt such a story at the most interesting place! ~
-@196 = ~Some stupid witch can do unusual high-level spells? It cannot be, if she did not study in some outstanding school of magic arts! If so, I would have heard of her. ~
-@197 = ~So this is probably some quack who accidentally managed to cast one spell. (Even I couldn't make an illusion that would work after death! How did she do it??) ~
-@198 = ~Not at all, I have known her for a long time and bought scrolls from her many times. She is a very secretive but powerful sorceress. ~
-@199 = ~Witch? Does she have a defender? How are Minsc and Boo who defended our witch? Eh, Boo became sad, remembering his beloved Dynaheir... And I too... ~
-@200 = ~<CHARNAME>, you have nothing more to do, what, but help all sorts of monsters? Better sell the scroll, we can use the money ~
-@201 = ~This story needs to be translated into verse. A good ballad will come out.~
-@202 = ~Oh, what a romantic story that turned out... I can already hear the ballad being sung throughout Faerun about how the brave Sir Garrick and his faithful assistants did not fear the creepy troll and returned him to his true appearance and love... ~
-@203 = ~This story is really romantic. But more than that, it proves that under the sun of love all birds fly on equal terms, since it is able to connect even a person with a siren. ~
-@204 = ~Tiax wanted a siren to live in his palace in the future and sing songs to him. But these two are so happy that he decided not to come between them. There are still many sirens in the sea anyway, and anyone will consider it an honor to serve him if he so wishes. ~ [PPTIAX12]
-@205 = ~Of course, if she knew what the future was before her and what treasures Tiax, Lord of the Worlds, could throw at her feet, she would have left this beggar fisherman at once!~
-@206 = ~I agree with the dwarf. Stop running errands for all the poor and helping everyone right and left. ~
+@195 = ~You are always like this. Interrupt such a story at the most interesting part! ~
+@196 = ~Some stupid witch can do unusual high-level spells? Impossible, unless she studied at some outstanding school of magic arts! And if she did, I would have heard of her. ~
+@197 = ~So this is probably some quack who managed to cast one spell by chance. (Even I couldn't make an illusion that would work after death! How did she do it??) ~
+@198 = ~Not at all, I have known her for a long time and bought scrolls from her many times. She is a very secretive but powerful witch. ~
+@199 = ~Witch? Does she have a defender? Like how Minsc and Boo defended our witch? Eh, now Boo is sad, remembering his beloved Dynaheir... And I too... ~
+@200 = ~<CHARNAME>, you have nothing better to do, but help all sorts of monsters? Better sell the scroll, we can use the money. ~
+@201 = ~This story needs to be translated into verse. It would make a good ballad.~
+@202 = ~Oh, what a romantic story this turned out to be... I can already hear the ballad being sung throughout Faerun about how the brave Sir Garrick and his faithful assistants did not fear the creepy troll and returned her to her true appearance and love... ~
+@203 = ~This story is really romantic. But more than that, it proves that under the sun of love all birds fly on equal terms, since it is able to unite even a man with a siren. ~
+@204 = ~Tiax wanted a siren to live in his palace and sing songs to him. But these two are so happy that he decided not to come between them. There are still many sirens in the sea after all, and any one would consider it an honor to serve him if he so wishes. ~ [PPTIAX12]
+@205 = ~Of course, if she knew what future lay before her, and what treasures Tiax, Lord of the Worlds, could throw at her feet, she would have left this beggar fisherman at once!~
+@206 = ~I agree with the dwarf. Stop running errands for peasants and helping everyone right and left. ~
 @207 = ~<CHARNAME>, we must help the poor siren or she will die! Please! ~
 @208 = ~I think, <CHARNAME>, we need to do a good deed and return the siren to its form. It's up to you, of course, but listen to your heart. ~
 
 // Cromwell
 @209 = ~Fisherman Lorio said I could take the sword you prepared for him. ~
-@210 = ~Oh, that fisherman... I told him right away that he was no warrior, but he stubbornly resisted. In general, I tried to make his sword stronger so that he would not be killed so quickly. Hold on!~
+@210 = ~Oh, that fisherman... I told him right away that he was no warrior, but he insisted. Anyway, I tried to make his sword stronger so that he would not be killed so quickly. Here you go!~

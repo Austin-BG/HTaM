@@ -1,11 +1,11 @@
 // Nalia-Edwin Banter in Sahuagin City
-@0 = ~<CHARNAME>, once we're stuck in this place... What do you think about adding some democracy in our group? Considering your next move with friends didn't hurt anyone. I didn't like that captain from the very start, by the way.~
-@1 = ~Such changes rarely bring benefits, Nalia. I shall tell you a story from my young age to show you the consequences of leadership divisions.~
-@2 = ~It happened when Thay waged another war of conquest in Rashemen. The small army, consisted mostly of orcs, was led not by the tharchion, who came down with an illness, but his two younger brothers. They failed to find common ground and everyone had suffered because of that.~
-@3 = ~The army just stood near the Rashemen border and remained there. Younger brother sabotaged supply lines and the middle one bribed his commanders and arrested him. It didn't help the situation. Middle brother had spent days asking for council's advices and was not able to give clear orders.~
-@4 = ~The army were halved just in a week. About fifty orcs just ran and roughly as much fell sick. Rashemi, who amassed a considerable amount of fighters for that time, had surrounded the rest of the army.~
-@5 = ~We were crushed, of course. Both brothers died, and I survived only by chance. This is the cost of a weak authority and non-ending considerations. Only a one-man rule will lead to a success.~
-@6 = ~I disagree with your conclusions, Edwin, but your story brought me something to think about.~
+@0 = ~<CHARNAME>, since we're stuck in this place... How about taking more advice from your companions? Considering your next move with friends never hurt anyone. I didn't like that captain from the very start, by the way.~
+@1 = ~Really, Nalia? Are you suggesting debate and discuss while our enemies do us in? Let me tell you a story from my youth about the perils of weak leadership.~
+@2 = ~It so happened that Thay, once again, tried to invade Rashemen. The small army, consisting mostly of orcs, was led not by the tharchion, who fell ill, but his two younger brothers. They failed to reach consensus and everyone had suffered for it, as usual.~
+@3 = ~The army just stood near the Rashemen border and never advanced. The youngest brother sabotaged the supply lines, so the middle brother bribed his commanders and arrested him. It didn't help the situation. Middle brother spent days in endless meetings, unable to give any clear orders.~
+@4 = ~The army was cut in half over a week of paralysis. About fifty orcs deserted and roughly as many fell sick. The rest were surrounded by Rashemi, who had covertly amassed a considerable force around our camp.~
+@5 = ~We were crushed, of course. Both brothers died, and I survived only by chance. It took me two days of wandering the forests to reach allies. This is the cost of weak leadership and endless deliberation. That's why success demands a firm, steady hand.~
+@6 = ~I disagree with your conclusions, Edwin, but your story gave me something to think about.~
 
 // Sahuagin King talk
 @7 = ~(quietly) Meddling with these fish-men will be a waste of time! Unless... I'll tolerate this foolish decision if some powerful artifact will leave their treasury as our reward.~
