@@ -6,18 +6,19 @@ TimeOfDay(NIGHT)
 THEN
   RESPONSE #100
 SetGlobal("ANspym1Exists","AR0022",1)
+SetGlobal("ANspyStart","AR0022",1)
 CreateCreature("ANspym1",[220.503],10)
 END
 
 IF 
 Global("AranLove","GLOBAL",17)
-Global("ANspyStart","AR0022",0)
+Global("ANspyStart","AR0022",1)
 InActiveArea("ANspym1")
 NumInPartyGT(1)
 
 THEN
   RESPONSE #100
-SetGlobal("ANspyStart","AR0022",1)
+SetGlobal("ANspyStart","AR0022",2)
 ClearAllActions()   
 StartCutSceneMode()
 CutSceneId(Player1)  

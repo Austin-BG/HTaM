@@ -22,7 +22,9 @@ SetGlobalTimer("ANAranLetter0Timer","GLOBAL",ONE_DAY)
 END
 
 IF 
+OR(2)
 Global("AranJob","GLOBAL",2)
+Global("AranJob","GLOBAL",3)
 Global("AranLove","GLOBAL",0)
 Global("AranLovePrologue","GLOBAL",8)
 
