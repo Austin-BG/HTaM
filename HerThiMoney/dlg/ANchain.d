@@ -2,17 +2,17 @@ BEGIN ANshakal
 
 IF ~~ THEN BEGIN ANshakalFirstTalkEnd
 SAY @9 
- IF ~~ THEN DO ~EscapeArea()~ EXIT
+ IF ~~ THEN DO ~EscapeArea() ActionOverride("ANorc1",EscapeArea()) ActionOverride("ANorc2",EscapeArea()) ActionOverride("ANcaytig",EscapeArea())~ EXIT
 END
 
 IF ~~ THEN BEGIN ANshakalFirstTalkEnd1
 SAY @27 
- IF ~~ THEN DO ~EscapeArea()~ EXIT
+ IF ~~ THEN DO ~EscapeArea() ActionOverride("ANorc1",EscapeArea()) ActionOverride("ANorc2",EscapeArea()) ActionOverride("ANcaytig",EscapeArea())~ EXIT
 END
 
 IF ~~ THEN BEGIN ANshakalFirstTalkEnd2
 SAY @34 
- IF ~~ THEN DO ~EscapeArea()~ EXIT
+ IF ~~ THEN DO ~EscapeArea() ActionOverride("ANorc1",EscapeArea()) ActionOverride("ANorc2",EscapeArea()) ActionOverride("ANcaytig",EscapeArea())~ EXIT
 END
 
 IF ~~ THEN BEGIN ANshakalFirstTalkYES
