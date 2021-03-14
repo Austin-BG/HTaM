@@ -559,12 +559,12 @@ END
 
 IF ~~ BEGIN AnaranFlirt1
   SAY @376
-IF ~RandomNum(6,1) Global("AranQuest1","AR0307",0)~ THEN GOTO ANAranQuest1
-IF ~RandomNum(6,2) Global("AranQuest2","AR0307",0)~ THEN GOTO ANAranQuest2
-IF ~RandomNum(6,3) Global("AranQuest5","AR0307",0)~ THEN GOTO ANAranQuest5
-IF ~RandomNum(6,4) Global("AranQuest6","AR0307",0)~ THEN GOTO ANAranQuest6
-IF ~RandomNum(6,5) Global("AranQuest7","AR0307",0)~ THEN GOTO ANAranQuest7
-IF ~RandomNum(6,6) Global("AranQuest8","AR0307",0)~ THEN GOTO ANAranQuest8
+IF ~True()~ THEN GOTO ANAranQuest1
+IF ~RandomNum(5,1) Global("AranQuest2","AR0307",0)~ THEN GOTO ANAranQuest2
+IF ~RandomNum(5,2) Global("AranQuest5","AR0307",0)~ THEN GOTO ANAranQuest5
+IF ~RandomNum(5,3) Global("AranQuest6","AR0307",0)~ THEN GOTO ANAranQuest6
+IF ~RandomNum(5,4) Global("AranQuest7","AR0307",0)~ THEN GOTO ANAranQuest7
+IF ~RandomNum(5,5) Global("AranQuest8","AR0307",0)~ THEN GOTO ANAranQuest8
 IF ~Global("AranQuest3","AR0307",0) Kit(Player1,ASSASIN)~ THEN GOTO ANAranQuest3
 IF ~Global("AranQuest4","AR0307",0) Kit(Player1,BOUNTYHUNTER)~ THEN GOTO ANAranQuest4
 END
@@ -2660,7 +2660,7 @@ IF ~Global("ANAranTethyr","GLOBAL",22) NumInPartyLT(2)~ THEN PLAYER1 ANAranTethy
 EXIT
 
 CHAIN
-IF ~Global("ANAranTethyr","GLOBAL",2)~ THEN PLAYER1 ANAranTethyrPlayer1Talk1_1 
+IF ~~ THEN PLAYER1 ANAranTethyrPlayer1Talk1_1
 @839
 == AERIEJ IF ~InParty("Aerie") InMyArea("Aerie") !StateCheck("Aerie",CD_STATE_NOTVALID)~ THEN @830
 == EDWINJ IF ~InParty("Edwin") InMyArea("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID) InParty("Aerie") InMyArea("Aerie") !StateCheck("Aerie",CD_STATE_NOTVALID)~ THEN @831
