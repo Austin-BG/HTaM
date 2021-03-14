@@ -495,7 +495,7 @@ END
 IF ~!AreaCheck("AR0808") !AreaCheck("AR0809") Global("AnOwniBankTalk","GLOBAL",8) !Global("ANdruidDead","GLOBAL",2)~ THEN BEGIN ANOwniBankTalkLater
   SAY @200
 IF ~Global("Chapter","GLOBAL",%bg2_chapter_6%) Global("OwniFightBodhi","GLOBAL",0) !Dead("c6bodhi")~ THEN REPLY @229 GOTO ANOwniBankTalkBodhi 
-IF ~Global("ANpiratOwni","AN0720",0)~ THEN DO ~ActionOverride(Player1,SetDialog("PLAYER1")) SetGlobal("ANpiratOwni","AN0720",1)~ REPLY @237 EXTERN ANOwni ANpiratOwniDialog
+IF ~Global("ANpiratOwni","AN0720",0) OR(2) Global("Chapter","GLOBAL",%bg2_chapter_2%) Global("Chapter","GLOBAL",%bg2_chapter_3%)~ THEN DO ~ActionOverride(Player1,SetDialog("PLAYER1")) SetGlobal("ANpiratOwni","AN0720",1)~ REPLY @237 EXTERN ANOwni ANpiratOwniDialog
 IF ~Global("ANpiratOwni","AN0720",3)~ THEN DO ~ActionOverride(Player1,SetDialog("PLAYER1")) SetGlobal("ANpiratOwni","AN0720",4)~ REPLY @238 EXTERN ANOwni ANpiratOwniDialogReplay
 IF ~~ THEN REPLY @201 GOTO ANOwniBankTalkMyself
 IF ~~ THEN REPLY @202 GOTO ANOwniBankTalkCleric
