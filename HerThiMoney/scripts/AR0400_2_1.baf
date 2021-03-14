@@ -10,7 +10,7 @@ Global("ANDwarfCreditNoPay","GLOBAL",0)
 THEN
 RESPONSE #100
 SetGlobal("ANshakalexists","AR0400",1)
-RealSetGlobalTimer("ANshakalTimer","GLOBAL",2000)
+RealSetGlobalTimer("ANshakalTimer","GLOBAL",3000)
 Continue()
 END
 
