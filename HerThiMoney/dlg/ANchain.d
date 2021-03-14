@@ -2,17 +2,17 @@ BEGIN ANshakal
 
 IF ~~ THEN BEGIN ANshakalFirstTalkEnd
 SAY @9 
- IF ~~ THEN DO ~EscapeArea() ActionOverride("ANorc1",EscapeArea()) ActionOverride("ANorc2",EscapeArea()) ActionOverride("ANcaytig",EscapeArea())~ EXIT
+ IF ~~ THEN DO ~EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN ANshakalFirstTalkEnd1
 SAY @27 
- IF ~~ THEN DO ~EscapeArea() ActionOverride("ANorc1",EscapeArea()) ActionOverride("ANorc2",EscapeArea()) ActionOverride("ANcaytig",EscapeArea())~ EXIT
+ IF ~~ THEN DO ~EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN ANshakalFirstTalkEnd2
 SAY @34 
- IF ~~ THEN DO ~EscapeArea() ActionOverride("ANorc1",EscapeArea()) ActionOverride("ANorc2",EscapeArea()) ActionOverride("ANcaytig",EscapeArea())~ EXIT
+ IF ~~ THEN DO ~EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN ANshakalFirstTalkYES
@@ -30,15 +30,15 @@ IF ~~ THEN BEGIN ANshakalFirstTalk2
 SAY @28 
 IF ~~ THEN REPLY @29 GOTO ANshakalFirstTalkQuestion
 IF ~~ THEN REPLY @30 GOTO ANshakalFirstTalkYES
-IF ~~ THEN REPLY @31 GOTO ANshakalFirstTalkEnd2
-IF ~~ THEN REPLY @32 GOTO ANshakalFirstTalkEnd2
+IF ~~ THEN DO ~SetGlobal("ANshakalEXIT","AR0400",1)~ REPLY @31 GOTO ANshakalFirstTalkEnd2
+IF ~~ THEN DO ~SetGlobal("ANshakalEXIT","AR0400",1)~ REPLY @32 GOTO ANshakalFirstTalkEnd2
 END
 
 IF ~~ THEN BEGIN ANshakalFirstTalkQuestion
 SAY @33 
 IF ~~ THEN REPLY @30 GOTO ANshakalFirstTalkYES
-IF ~~ THEN REPLY @31 GOTO ANshakalFirstTalkEnd2
-IF ~~ THEN REPLY @32 GOTO ANshakalFirstTalkEnd2
+IF ~~ THEN DO ~SetGlobal("ANshakalEXIT","AR0400",1)~ REPLY @31 GOTO ANshakalFirstTalkEnd2
+IF ~~ THEN DO ~SetGlobal("ANshakalEXIT","AR0400",1)~ REPLY @32 GOTO ANshakalFirstTalkEnd2
 END
 
 IF ~Global("ANshakal","GLOBAL",8) OR(2) !Dead("ANcaytig") Global("ANsisterDead","LOCALS",0)~ THEN BEGIN ANshakalFinalCaytigaLive
@@ -74,7 +74,7 @@ CHAIN IF ~Global("ANshakalTalk","AR0400",1)~ THEN PLAYER1 ANshakalFirstTalk
 == KELDORJ IF ~InParty("Keldorn") InMyArea("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID) OR(3) !InParty("Anomen") !InMyArea("Anomen") StateCheck("Anomen",CD_STATE_NOTVALID)~ THEN @137
 == ANshakal @6
 END
-++ @7 EXTERN ANshakal ANshakalFirstTalkEnd
+++ @7 DO ~SetGlobal("ANshakalEXIT","AR0400",1)~ EXTERN ANshakal ANshakalFirstTalkEnd
 ++ @8 EXTERN ANshakal ANshakalFirstTalk1
 
 CHAIN IF ~Global("ANshakalTalk","AR0400",2)~ THEN ANshakal ANshakalFirstTalk1
@@ -112,8 +112,8 @@ CHAIN IF ~Global("ANshakalTalk","AR0400",2)~ THEN ANshakal ANshakalFirstTalk1
 == ANshakal IF ~InParty("Minsc") InMyArea("Minsc") !StateCheck("Minsc",CD_STATE_NOTVALID)~ THEN @145
 == KELDORJ IF ~InParty("Keldorn") InMyArea("Keldorn") !Dead("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID)~ THEN @138
 END
-++ @24 EXTERN ANshakal ANshakalFirstTalkEnd1
-++ @25 EXTERN ANshakal ANshakalFirstTalkEnd1
+++ @24 DO ~SetGlobal("ANshakalEXIT","AR0400",1)~ EXTERN ANshakal ANshakalFirstTalkEnd1
+++ @25 DO ~SetGlobal("ANshakalEXIT","AR0400",1)~ EXTERN ANshakal ANshakalFirstTalkEnd1
 ++ @26 EXTERN ANshakal ANshakalFirstTalk2
 
 //cross-mod (Smiling Imp's Quayle)
