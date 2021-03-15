@@ -5,7 +5,7 @@ BEGIN "TRIGGER" ~Global("ANkors","GLOBAL",0)~ "ACTION" ~ActionOverride(Player1,S
 
 APPEND KORGANJ
 
-IF ~GlobalTimerExpired("KorganContract","GLOBAL") Global("KorMentionedContract","LOCALS",1) Global("ANkors","GLOBAL",0)~ THEN BEGIN ANkorganBankAlternateStart
+IF ~GlobalTimerExpired("KorganContract","GLOBAL") Global("KorMentionedContract","LOCALS",1) Global("ANkors","GLOBAL",0) Global("ANDwarfCreditPay","GLOBAL",0) Global("ANDwarfCreditNoPay","GLOBAL",0)~ THEN BEGIN ANkorganBankAlternateStart
   SAY @36
 =@0  
 = @1   
@@ -173,8 +173,8 @@ THEN ANOwni ANOwniTalk1
 == PLAYER1 @27
 == ANOwni @28
 END
-IF ~Global("ANDwarfCreditNoPay","GLOBAL",1)~ THEN DO ~SetGlobal("ANDwarfCreditNoPay","GLOBAL",2) ActionOverride(Player1,SetDialog("Player1"))~ REPLY @29 + ANOwniBattle
-IF ~Global("ANDwarfCreditPay","GLOBAL",1)~ THEN DO ~SetGlobal("ANDwarfCreditPay","GLOBAL",2) ActionOverride(Player1,SetDialog("Player1"))~ REPLY @30 + ANOwniTalk2
+IF ~~ THEN DO ~ActionOverride(Player1,SetDialog("Player1"))~ REPLY @30 + ANOwniTalk2
+IF ~~ THEN DO ~SetGlobal("ANDwarfCreditNoPay","GLOBAL",2) ActionOverride(Player1,SetDialog("Player1"))~ REPLY @29 + ANOwniBattle
 
 CHAIN 
 IF ~~ THEN ANOwni ANOwniTalk2
@@ -187,8 +187,8 @@ IF ~~ THEN ANOwni ANOwniTalk2
 == KORGANJ @41
 == ANOwni @42
 END
-IF ~PartyGoldGT(4999)~ THEN REPLY @43 + ANOwniPayAll1
-IF ~PartyGoldGT(999)~ THEN REPLY @44 + ANOwniPayPart1
+IF ~PartyGoldGT(4999)~ THEN DO ~SetGlobal("ANDwarfCreditPay","GLOBAL",2)~ REPLY @43 + ANOwniPayAll1
+IF ~PartyGoldGT(999)~ THEN DO ~SetGlobal("ANDwarfCreditPay","GLOBAL",2)~ REPLY @44 + ANOwniPayPart1
 IF ~~ THEN REPLY @48 + ANOwniBattle2
 IF ~~ THEN REPLY @50 + ANOwniBattle2
 
@@ -197,7 +197,7 @@ IF ~~ THEN REPLY @50 + ANOwniBattle2
 CHAIN 
 IF ~~ THEN ANOwni ANOwniBattle
 @31
-== PLAYER1 @32 
+== PLAYER1 @32
 == ANOwni @33 DO ~ChangeEnemyAlly(Myself,EVILCUTOFF) Enemy()~
 == PLAYER1 @34 
 EXIT
