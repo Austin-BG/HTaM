@@ -339,7 +339,7 @@ END
 	COMPILE ~ddd1.d~
 
 <<<<<<<< ddd2.d
-REPLACE %d_var%
+REPLACE ~%d_var%~
 	IF ~~ THEN BEGIN %d_var_5%
 	SAY #%d_var_6%
 		COPY_TRANS Player1 5
@@ -347,7 +347,7 @@ REPLACE %d_var%
 END
 
 EXTEND_BOTTOM PLAYER1 5
-	IF ~%d_var_2%~ THEN DO ~%d_var_3%~ EXTERN %d_var% %d_var_4%
+	IF ~%d_var_2%~ THEN DO ~%d_var_3%~ EXTERN ~%d_var%~ %d_var_4%
 END
 >>>>>>>>
 	ACTION_PHP_EACH AN_NPC_DLG AS d_var => _ BEGIN
