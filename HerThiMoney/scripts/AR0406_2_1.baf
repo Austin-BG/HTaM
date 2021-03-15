@@ -1,9 +1,9 @@
 IF
-Global("ANbanditsxists","AR0400",0)
-Global("ANkors","GLOBAL",2)
+Global("ANbanditsxists","AR0406",0)
+GlobalGT("ANkors","GLOBAL",1)
 THEN
 RESPONSE #100
-SetGlobal("ANbanditsxists","AR0400",1)
+SetGlobal("ANbanditsxists","AR0406",1)
 CreateCreature("ANband1",[1536.1910],0)
 CreateCreature("ANband2",[1535.1906],10)
 Continue()
@@ -11,7 +11,7 @@ END
 
 IF
 OnCreation()
-Global("ANkors","GLOBAL",3)
+Global("ANbanditsxists","AR0406",2)
 OR(2)
 Exists("ANband1")
 Exists("ANband2")
@@ -19,5 +19,4 @@ THEN
 RESPONSE #100
 ActionOverride("ANband1",DestroySelf())
 ActionOverride("ANband2",DestroySelf())
-Continue()
 END
