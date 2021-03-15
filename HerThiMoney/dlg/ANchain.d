@@ -22,8 +22,8 @@ SAY @35
 =@38
 =@39
 =@40
- IF ~OR(3) !InParty("7XQUAY") !InMyArea("7XQUAY") StateCheck("7XQUAY",CD_STATE_NOTVALID)~ THEN DO ~SetGlobal("ANkors","GLOBAL",1) SetGlobal("ANlorens","GLOBAL",1) AddJournalEntry(@1099,QUEST) EscapeArea()~ EXIT
- IF ~InParty("7XQUAY") InMyArea("7XQUAY") !StateCheck("7XQUAY",CD_STATE_NOTVALID)~ THEN DO ~SetGlobal("ANkors","GLOBAL",1) SetGlobal("ANlorens","GLOBAL",1) AddJournalEntry(@1099,QUEST) EscapeArea()~ EXTERN IF_FILE_EXISTS 7XQUAYJ ANshakalFirstTalkQuayle
+ IF ~OR(3) !InParty("7XQUAY") !InMyArea("7XQUAY") StateCheck("7XQUAY",CD_STATE_NOTVALID)~ THEN DO ~SetGlobal("ANshakalEXIT","AR0400",1) SetGlobal("ANkors","GLOBAL",1) SetGlobal("ANlorens","GLOBAL",1) AddJournalEntry(@1099,QUEST) EscapeArea()~ EXIT
+ IF ~InParty("7XQUAY") InMyArea("7XQUAY") !StateCheck("7XQUAY",CD_STATE_NOTVALID)~ THEN DO ~SetGlobal("ANshakalEXIT","AR0400",1) SetGlobal("ANkors","GLOBAL",1) SetGlobal("ANlorens","GLOBAL",1) AddJournalEntry(@1099,QUEST) EscapeArea()~ EXTERN IF_FILE_EXISTS 7XQUAYJ ANshakalFirstTalkQuayle
 END
 
 IF ~~ THEN BEGIN ANshakalFirstTalk2
