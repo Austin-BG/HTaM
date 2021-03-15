@@ -275,3 +275,12 @@ THEN
   RESPONSE #100
 %an_no_travel%
 END
+
+IF
+AreaCheck("AN0060")
+Global("ANDwarfCreditNoPay","GLOBAL",2)
+Dead("ANOwni") 
+THEN
+	RESPONSE #100
+%an_travel%	
+END

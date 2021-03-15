@@ -1,5 +1,6 @@
 IF
 	!IsForcedRandomEncounterActive("AN0060")
+	InParty("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)
 	GlobalTimerExpired("ANOneWeekPayTimer","GLOBAL")
 	OR(4)
 		Global("ANDwarfCreditPayPart","GLOBAL",1)
@@ -14,6 +15,7 @@ END
 
 IF
 	!IsForcedRandomEncounterActive("AN0060")
+	InParty("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)
 	GlobalGT("AN_ALLAREA_RENCOUNTER","GLOBAL",7)
 	GlobalTimerExpired("AN_RENCOUNTER_TIMER","GLOBAL")
 	OR(2)
@@ -27,6 +29,7 @@ END
 
 IF
 	!IsForcedRandomEncounterActive("AN0060")
+	InParty("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)
 	GlobalGT("AN_ALLAREA_RENCOUNTER","GLOBAL",4)
 	GlobalTimerExpired("AN_RENCOUNTER_TIMER","GLOBAL")
 OR(2)
@@ -43,6 +46,7 @@ END
 
 IF
 	!IsForcedRandomEncounterActive("AN0060")
+	InParty("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)
 OR(2)
 	Global("ANDwarfCreditPay","GLOBAL",1) //переменная для запуска энкаунтера
     Global("ANDwarfCreditNoPay","GLOBAL",1)

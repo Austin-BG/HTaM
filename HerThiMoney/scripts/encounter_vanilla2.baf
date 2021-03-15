@@ -1,6 +1,7 @@
 IF
 	OnCreation()
 	Global("AN_PayEncounter","GLOBAL",1)
+	InParty("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)
 THEN
 	RESPONSE #100
 		MultiPlayerSync()
@@ -16,6 +17,7 @@ END
 
 IF
 	OnCreation()
+	InParty("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)
 	GlobalGT("AN_ALLAREA_RENCOUNTER","GLOBAL",23)
 OR(2)
 	Global("ANDwarfCreditPay","GLOBAL",1) //переменная для запуска энкаунтера
@@ -36,6 +38,7 @@ END
 
 IF
 	OnCreation()
+	InParty("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)
 	GlobalGT("AN_ALLAREA_RENCOUNTER","GLOBAL",4)
 OR(2)
 	Global("ANDwarfCreditPay","GLOBAL",1) //переменная для запуска энкаунтера

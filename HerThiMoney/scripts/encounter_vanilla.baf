@@ -1,6 +1,7 @@
 IF
 	!Global("AN_PayEncounter","GLOBAL",1)
 	GlobalTimerExpired("ANOneWeekPayTimer","GLOBAL")
+	InParty("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)
 	OR(4)
 		Global("ANDwarfCreditPayPart","GLOBAL",1)
 		Global("ANDwarfCreditPayPart","GLOBAL",2)
@@ -13,9 +14,10 @@ THEN
 END
 
 IF
+InParty("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)
 OR(2)
 	Global("ANDwarfCreditPay","GLOBAL",1) //переменная для запуска энкаунтера
-    Global("ANDwarfCreditNoPay","GLOBAL",1)
+    Global("ANDwarfCreditNoPay","GLOBAL",1)	
 OR(2)
 		!Global("AN_MYAREA_RENCOUNTER","MYAREA",1)
 		GlobalTimerExpired("AN_RENCOUNTER_TIMER","GLOBAL")
