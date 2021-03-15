@@ -238,8 +238,8 @@ END
 
 
 CHAIN IF ~Global("ANkors","GLOBAL",1)~ THEN ANsheila ANSheilaTalk
-@62 DO ~ActionOverride(Player1,SetDialog("PLAYER1")) SetGlobal("ANkors","GLOBAL",2)~
-== PLAYER1 @63
+@62 DO ~ActionOverride(Player1,SetDialog("PLAYER1"))~
+== PLAYER1 @63 DO ~SetGlobal("ANkors","GLOBAL",2)~
 == ANsheila @64
 == PLAYER1 @65
 == ANsheila @66
@@ -254,7 +254,7 @@ CHAIN IF ~Global("ANkors","GLOBAL",1)~ THEN ANsheila ANSheilaTalk
 EXIT
 
 BEGIN ANband1
-IF ~!Global("ANkors","GLOBAL",2)~ THEN BEGIN ANBandit1
+IF ~Global("ANbanditsxists","AR0406",2)~ THEN BEGIN ANBandit1
 SAY @88 
 IF ~~ THEN EXIT
 END
@@ -274,7 +274,7 @@ END
 BEGIN ANorc1
 BEGIN ANorc2
 
-CHAIN IF ~Global("ANkors","GLOBAL",2)~ THEN ANband1 ANbanditTalk
+CHAIN IF ~!Global("ANbanditsxists","AR0406",2)~ THEN ANband1 ANbanditTalk
 @75 DO ~ActionOverride(Player1,SetDialog("PLAYER1")) SetGlobal("ANkors","GLOBAL",3)~
 =@76
 == PLAYER1 @77
@@ -285,9 +285,9 @@ CHAIN IF ~Global("ANkors","GLOBAL",2)~ THEN ANband1 ANbanditTalk
 == ANband1 @82
 == ANband2 @83
 == ANband1 @84
-=@85
-=@86
-=@87 DO ~GiveGoldForce(180) Polymorph(SLEEPING_MAN_HUMAN)~
+=@85 DO ~SetGlobal("ANbanditsxists","AR0406",2)~
+=@86 DO ~Polymorph(SLEEPING_MAN_HUMAN)~
+=@87 DO ~GiveGoldForce(180)~
 EXIT
 
 CHAIN IF ~GlobalGT("ANkors","GLOBAL",2) Global("ANshakal","GLOBAL",0) PartyGoldGT(699)~ THEN ANshakal ANShakalAfterTalk
