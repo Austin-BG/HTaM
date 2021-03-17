@@ -1,693 +1,695 @@
 @0 = ~Component 1. Interjections & Mini-quests (by Austin & Arcanecoast Team)~
-@1 = ~It would be too risky for me to stay in the service of the Shadow Thieves - this whole story with Mae'Var, and even the stupid war with vampires ... Besides, I stayed too long here, there is no way to get new knowledge. Your pitiful company will obviously not be hindered by an intelligent magician - and you won't find anyone better than me. (Gods, again "adventures" with these primates! But this way I will have reliable protection and rest in the best hotels!) ~
-@2 = ~Simon Shortleg~
-@3 = ~First Bank of Calimport~
-@4 = ~Clerk~
-@5 = ~Senior Clerk~
-@6 = ~Client~
-@7 = ~Bank Guardian~
-@8 = ~There are robbers in the bank! Kill!~
+@1 = ~Для меня будет слишком рискованно остаться на службе у Теневых Воров - вся эта история с Маэ'Варом, да еще дурацкая война с вампирами... К тому же я тут засиделся, новых знаний так не получить. Твоей жалкой компании явно не помешает толковый маг - а лучше меня тебе никого не найти. (Боги, опять "приключения" с этими приматами! Но так у меня будет надёжная охрана и отдых в лучших гостиницах!)~
+@2 = ~Саймон Шортлег~
+@3 = ~Первый Калимпортский Банк~
+@4 = ~Клерк~
+@5 = ~Старший клерк~
+@6 = ~Клиентка~
+@7 = ~Страж банка~
+@8 = ~В банке грабители! Убить!~
 @9 = ~Component 2. First Calimport Bank Pack (by Scheele & Austin & Arcanecoast Team)~
-@10 = ~Batch~
-@11 = ~Hurp~
-@12 = ~Encrypted code~
-@13 = ~ A heavy parchment scroll previously owned by Mae'Var. At the top of the scroll, large letters are inscribed: "PKB". Below, with a careless hand, three pictures are drawn.
+@10 = ~Батч~
+@11 = ~Харп~
+@12 = ~Зашифрованный код~
+@13 = ~Свиток из плотного пергамента, ранее принадлежавший Маэ’Вару. Вверху свитка начертаны крупные буквы: "ПКБ". Ниже, небрежной рукой, нарисованы три рисунка. 
 
-The first picture shows an ivy-covered peasant house with open windows and a dog with its tongue sticking out, running towards a bowl of water. The name is engraved on the dog's collar: "HARPTOS".
+На первом рисунке изображен увитый плющом, крестьянский дом с открытыми окнами, и собака с высунутым языком, бегущая к миске с водой. На ошейнике у пса выбито имя: "ХАРПТОС".
 
-In the second picture, a peasant is throwing snow from the roof of the same house. Snowdrifts piled up almost to the very shutters.
+На втором рисунке - крестьянин сбрасывает снег с крыши того же домика. Сугробов намело, чуть не до самых ставней.
 
-The third picture shows the same peasant next to the mill. In the rain, he loads sacks of oats and barley onto a cart. The cart is packed to the brim.~
+На третьем рисунке - этот же крестьянин рядом с мельницей. В дождь он грузит на телегу мешки овса и ячменя. Телега набита доверху.~
+@14 = ~Камни Маэ’Вара~
+@15 = ~Небольшой мешочек с хранящимися внутри самоцветами Маэ’Вара. Их можно будет продать, но лишь после того, как задание будет сдано Реналу и тот отзовёт слежку за вами.~
+@16 = ~Опись самоцветов~
+@17 = ~В свитке перечислены: четыре черных опала, четыре водяных опала, четыре изумруда, два бриллианта и гранат. Внизу обведена кругом цифра пятнадцать.~
 
-@14 = ~Mae'Var Gems~
-@15 = ~A small pouch containing Mae'Var Gems. They can be sold, but only after the assignment is handed over to Renal and he withdraws the spying on you. ~
-@16 = ~Gem Inventory ~
-@17 = ~The scroll lists four black opals, four water opals, four emeralds, two diamonds, and a garnet. The number fifteen is circled at the bottom. ~
+@18 = ~Камни Маэ’Вара~
+@19 = ~Небольшой мешочек с хранящимися внутри самоцветами Маэ’Вара. Теперь, когда история с тайником закончена и слежка за вами снята, их можно аккуратно сбыть какому-нибудь торговцу.~
 
-@18 = ~Mae'Var Gems~
-@19 = ~A small pouch containing Mae'Var Gems. Now that the story of the cache is over and the tracking has been removed, they can be carefully sold to some merchant. ~
+@20 = ~Гроссбух~
+@21 = ~Толстая, тяжелая книга, переплетённая телячьей кожей. В ней хранятся записи о сделках, расходах и доходах Гильдии Маэ'Вара за год 1369 по Летоисчислению Долин.~
+@22 = ~Договор аренды~
+@23 = ~Договор аренды личной банковской ячейки с кодовым замком. Заключен сроком на год, стороны: Аткатлский Филиал Первого Калимпортского банка и Маэ'Вар.~
 
-@20 = ~Ledger~
-@21 = ~A thick, heavy book bound in calfskin. It records the transactions, expenses, and income of the Mae'Var Guild for the year 1369 in the Valley Chronicle. ~
-@22 = ~Lease agreement~
-@23 = ~Lease agreement for a personal safety deposit box with a combination lock. Concluded for one year, parties: Athkatla Branch of the First Calimport Bank and Mae'Var. ~
+@24 = ~Книга-буклет «Первый Калимпортский»~
+@25 = ~«Пересекая страны, обогащая людей»
+Транснациональный, универсальный, коммерческий банк
 
-@24 = ~Booklet "The First Calimport Bank" ~
-@25 = ~"Crossing countries, enriching people"
-Transnational, universal, commercial bank
+Первый Калимпортский - крупнейший банк Калимшана, охватывает также Тетир и Амн, одна из самых больших коммерческих организаций Фаэруна.
+Основанный в 1350 ЛД в Калимпорте, ныне банк насчитывает пять филиалов в городах Альмрейвен, Сулдолфор, Миратма, Зазесспур, Аткатла.
 
-First Calimport, Calimshan's largest bank, also encompasses Tethyr and Amn, one of Faerun's largest commercial organizations.
-Founded in 1350 LD in Calimport, the bank now has five branches in the cities of Almraven, Suldolfor, Miratma, Zazesspur, Ahtkatla.
+Мы работаем в области кредитования и вкладов как с отдельными клиентами, так и с гильдиями.
+Ваш вклад в нашем банке полностью защищен, мы несем за него полную ответственность.
 
-We work in the field of lending and deposits both with individual clients and with guilds.
-Your deposit in our bank is fully protected, we are fully responsible for it.
+Первый Калимпортский - это постоянное развитие и совершенствование услуг, нацеленность в будущее, стремление обогатить наших клиентов.~
 
-First Calimport Bank is a constant development and improvement of services, focus on the future, striving to enrich our clients. ~
+@26 = ~Директор филиала~
+@27 = ~Банковский кот~
 
-@26 = ~Branch Director~
-@27 = ~Bank Cat~
+@28 = ~Ключ от сейфа~
+@29 = ~Этот красивый золотой ключ должен подойти к замку главного сейфа филиала Первого Калимпортского банка в Аткатле.~
 
-@28 = ~Safe Key~
-@29 = ~This beautiful golden key should fit the lock on the main safe of the Athkatla branch of the First Calimport Bank.~
+@30 = ~«Виды калимшанского табака»~
+@31 = ~В книге перечисляется много разных видов табака, доступного в Калимшане, но, если ей верить, то самые распространённые там - вот эти:
 
-@30 = ~"Types of Calimshan Tobacco" ~
-@31 = ~The book lists many different types of tobacco available in Calimshan, but if she is to be believed the most common are these:
-
-Al-Sidran ("Calimshan")
-Quality: 9/10 (add opium to the mix)
-Price: 3 gold per pipe, 8 gold per cigar, 30 gold per pouch
+Аль-Сидран («Калимшанский»)
+Качество: 9/10 (в смесь добавляют опиум)
+Цена: 3 золотых за трубку, 8 золотых за сигару, 30 золотых за кисет 
  
-Al-Ferizi ("Dawn")
-Quality: 6/10 (1/2 opium, 1/2 pipe-weed)
-Price: 1 gold pipe, 3 gold for a cigar, 10 gold for a pouch ~
+Аль-Феризи («Рассвет»)
+Качество: 6/10 (1/2 опиум, 1/2 трубочное зелье)
+Цена: 1 золотой за трубку, 3 золотых за сигару, 10 золотых за кисет~
 
-@32 = ~Calimport Travel Guide~
-@33 = ~Calimport is the miles-long capital of the country of Calimshan, located in southwestern Faerun and comprising the Kalim Desert and Spider Marsh. It is located on the northern coast of the Shining Sea.
-Calimport is one of the largest metropolises in Faerнаn. It was founded in 7800 by the ruler Kalim. The population of Calimport is 192,795 people. It is composed of humans (95%), halflings (2%), half-orcs (2%), and half-elves (1%).
-Calimport's main trading partners are Memnon and Manshaka. The trade route to Memnon runs through the desert, while trade with Manshaka is by sea. Periodically, local merchants make long journeys, up to Luskan.
-The city has many inns, harems and taverns, as well as establishments that provide all services at once. The most famous of these are the Mystic Tavern, which houses the drug den in the back, and the Glittering Harem, with its magnificent bathhouse. The city also has two arenas and a large slave market. ~
-@34 = ~Advertising Manager~
+@32 = ~Путеводитель по Калимпорту~
+@33 = ~Калимпорт — это раскинувшаяся на многие километры столица страны Калимшан, расположенной на юго-западе Фаэруна и включающей в себя пустыню Калим и Паучьи Топи. Он расположен на северном побережье Сияющего Моря. 
+Калимпорт является одной из самых больших метрополий Фаэруна. Он был основан в ?7800 году правителем Калимом. Население Калимпорта 192 795 человек. Оно состоит из людей (95%), хафлингов (2%), полуорков (2%) и полуэльфов (1%). 
+Основными торговыми партнёрами Калимпорта являются Мемнон и Маншака. Торговый путь в Мемнон лежит через пустыню, в то время как торговля с Маншакой ведётся по морю. Периодически местные купцы совершают далёкие путешествия, вплоть до Лускана.
+В городе находится множество постоялых дворов, гаремов и таверн, а также заведений, предоставляющих все услуги сразу. Наиболее известными из них являются «Мистическая Таверна», в задних помещениях которой находится наркопритон, и «Сверкающий Гарем», с его великолепной баней. Также в городе расположены две арены и крупный невольничий рынок.~
 
-@35 = ~Storyteller~
-@36 = ~Listener~
-@37 = ~Boy~
+@34 = ~Менеджер по рекламе~
 
-@38 = ~Owney~
-@39 = ~Jalut~
-@40 = ~Esra~
-@41 = ~Jock Big Cobblestone~
-@42 = ~Yantina ~
-@43 = ~Collector~
-@44 = ~Blik~
-@45 = ~Collector Soldier~
-@46 = ~Collector Fighter~
+@35 = ~Сказитель~
+@36 = ~Слушательница~
+@37 = ~Мальчик~
 
-@47 = ~ Korgan's promissory note~
-@48 = ~ This document states the amount of the loan taken by Korgan - five thousand - and the term of its repayment set by the bank. Also, the percentage charged is indicated in small print. Below, next to the neat bank clerk's painting, are the large, lurid scrawls of the dwarf, apparently depicting his signature. ~
+@38 = ~Оуни~
+@39 = ~Джалут~
+@40 = ~Эзра~
+@41 = ~Джок Большой Булыжник~
+@42 = ~Янтина~
+@43 = ~Сборщик~
+@44 = ~Блик~
+@45 = ~Коллектор~
+@46 = ~Коллектор-боец~
 
-@49 = ~ Kaza's Book (transcribed)~
-@50 = ~ Deciphered by Edwin, Kaza's book has a powerful enchantment that protects the owner. Most of the pages in it have been destroyed or hopelessly spoiled by unsuccessful attempts to decipher them. The few remaining untouched sheets contain the spells of necromancy. Only Edwin can use the book.
+@47 = ~Долговая расписка Коргана~
+@48 = ~В этом документе проставлена сумма взятого Корганом кредита - пять тысяч - и установленный банком срок его погашения. Также, мелким шрифтом, указан взимаемый процент. Внизу, рядом с аккуратной росписью банковского служащего, гордо красуются крупные, аляповатые каракули дварфа - видимо, изображающие его подпись.~
 
-OPTIONS:
+@49 = ~Книга Казы (расшифрованная)~
+@50 = ~Расшифрованная Эдвином, книга Казы обладает мощными чарами, защищающими владельца. Большая часть страниц в ней уничтожена или безнадежно испорчена неудачными попытками их расшифровать. Немногие оставшиеся нетронутыми листы содержат в себе заклинания некромантии. Пользоваться книгой может только Эдвин.
 
-Permanent +1 bonus to saving throws against polymorphism
+ПАРАМЕТРЫ:
 
-Book properties:
-- Finger of Death, once a day
-Distance: caster's field of view
-Area of effect: 1 creature
+Постоянный бонус +1 к спасброскам против полиморфии
+
+Свойства книги:
+– Перст смерти, 1 раз в день
+Дистанция: поле зрения заклинателя
+Зона действия: 1 существо
   
-- Control undead, 1 time per day
-Distance: 40 feet
-Duration: 6 rounds + 1 round / level
-Coverage: radius 4 feet
+– Управление нежитью, 1 раз в день
+Дистанция: 40 футов
+Длительность: 6 раундов + 1 раунд/уровень
+Зона действия: радиус 4 фута 
 
-Weight: 3 ~
+Вес: 3~
 
-@51 = ~Vagabond~
-@52 = ~Andy~
-@53 = ~Girl~
+@51 = ~Бродяга~
+@52 = ~Энди~
+@53 = ~Девочка~
 
-@54 = ~Leader~
-@55 = ~Shadow Druid~
-@56 = ~Tethyrian Mercenary~
+@54 = ~Главарь~
+@55 = ~Теневой друид~
+@56 = ~Тетирский наёмник~
 
-@57 = ~Attack on my command!~
-@58 = ~Let's go!~
-@59 = ~They're already here!~
+@57 = ~Атакуем по моей команде!~
+@58 = ~Начали!~
+@59 = ~Они уже здесь!~
 
-@60 = ~Dire Wolf~
+@60 = ~Ужасный волк~
 
-@61 = ~The Sentinels are Coming! We must leave or Owney's plan will fail! ~
-@62 = ~The Sentinels are Coming! We must go! ~
+@61 = ~Стража приближается! Надо уходить, иначе план Оуни провалится!~
+@62 = ~Стража приближается! Надо уходить!~
 
-@63 = ~We kept our word, <CHARNAME>, and came to the rescue! Let's finish off these critters! ~
-@64 = ~Friends, go back to the bank, then I can handle it myself. <CHARNAME>, let's go! ~
-@65 = ~Nice battle! It's time for me to go back to the bank, debt is calling. See you there. ~
+@63 = ~Мы сдержали слово, <CHARNAME>, и пришли на подмогу! Прикончим этих тварей!~
+@64 = ~Друзья, возвращайтесь в банк, дальше я сам справлюсь. <CHARNAME>, пойдём!~
+@65 = ~Хорошая битва получилась! Мне пора вернуться в банк, долг зовёт. Увидимся там.~
 
-@66 = ~Paris~
-@67 = ~Charlize~
-@68 = ~Assassin~
-@69 = ~Here comes lord Paris! It's time for you to die, and for me to work off the money! You were paid well for ... ~
-@70 = ~Stop, who's with you? I was told that you will be alone! ~
-@71 = ~Life is full of surprises!~
+@66 = ~Пэрис~
+@67 = ~Шарлиз~
+@68 = ~Убийца~
+@69 = ~А вот и лoрд Пэрис! Пора тебе умереть, а мне отработать денежки! За тебя хорошо заплатили...~
+@70 = ~Стоп, а это ещё кто с тобой? Мне сказали, что ты будешь один!~
+@71 = ~Жизнь полна сюрпризов.~
 
 @72 = ~Component 3. Shadow-Covered Love (by Alisia & Austin)~
-@73 = ~Tony~
-@74 = ~Then I will go alone, as Aran asked. Be back soon. ~
-@75 = ~You are studying a scroll... ~
-@76 = ~Spy~
-@77 = ~Folks, why don't you step outside for a while. Leave us alone.~
-@78 = ~Sealed Message~
-@79 = ~This is the message you received from the contact in Riatavin. Aran Linvail will find it useful. ~
+@73 = ~Тони~
+@74 = ~Дальше я пойду одна, как просил Аран. Скоро вернусь.~
+@75 = ~Изучаешь свиток...~
+@76 = ~Шпион~
+@77 = ~Ребята, выйдите пока. Оставьте нас одних.~
+@78 = ~Запечатанное послание~
+@79 = ~Это послание, которое вы получили от связного из Риатавина. Арану Линвайлу оно очень пригодится.~
 
-@80 = ~Leena's Letter~
-@81 = ~This letter contains detailed instructions for Riatavin's recruited mage Leena. She is tasked with killing Aran Linvile, who appears to have taken an interest in her in the past. Liina's brother, apparently betraying the Guild, enjoys some of the Shadow Master's confidence.~
-@82 = ~Leena~
-@83 = ~Mysterious Woman ~
-@84 = ~Tony, you're just in time! Tie her hands, buddy. ~
-@85 = ~I'll meet him alone, so there’s no suspicion. Wait here. ~
+@80 = ~Письмо Лиины~
+@81 = ~Это письмо содержит подробные указания для завербованного Риатавином мага Лиины. Ей поручено убить Арана Линвайла, который в прошлом, кажется, проявлял к ней интерес. Брат Лиины, видимо, предавший Гильдию, пользуется некоторым доверием Мастера Теней.~
+@82 = ~Лиина~
+@83 = ~Загадочная женщина~
+@84 = ~Тони, ты как раз вовремя! Свяжи ей руки, дружок.~
+@85 = ~Я встречусь с ним одна, чтобы не было подозрений. Подождите здесь.~
 
-@86 = ~Refusing to accept the horrific legacy, <CHARNAME> returned to Athkatla. There she was warmly received by many of her Shadow Guild comrades. Aran Linvail did not hide joy and triumph - after all, Bhaal's daughter kept her promise. Since then, <CHARNAME> has not left the Master of Shadows, becoming his right hand. For a long time they lived in love and harmony, together strengthening the reputation of the Shadow Guild, which became an increasingly powerful force, attracting the most skilled and dangerous thieves along the entire Coast to their ranks and spreading their threads of influence beyond Amn. It was rumored that <CHARNAME> would soon take the place of the head of the guild, but she was quite content with the position of the second person, entering all the affairs of Aran and using his unlimited trust. Her life has never been boring.~
+@86 = ~Отказавшись принять ужасающее наследие, <CHARNAME> вернулась в Аткатлу. Там она была тепло встречена многими своими товарищами по Теневой гильдии. Аран Линвайл не скрывал радости и торжества – ведь дочь Баала сдержала данное ему обещание. С тех пор <CHARNAME> не покидала Мастера Теней, став его правой рукой. Они долго жили в любви и согласии, сообща укрепляя репутацию Теневой гильдии, которая становилась все более могущественной силой, привлекая в свои ряды самых искусных и опасных воров на всем Побережье и распространяя нити своего влияния за пределы Амна. Ходили слухи, что <CHARNAME> скоро займет место главы гильдии, но она вполне довольствовалась положением второго лица, входя во все дела Арана и пользуясь его неограниченным доверием. Ее жизнь никогда не была скучной.~
 
-@87 = ~Letter from Aran~
-@88 = ~«My <CHARNAME>!
+@87 = ~Письмо от Арана~
+@88 = ~«Моя <CHARNAME>!
+Меня сильно обеспокоили новости об этой заварушке, связанной с наследниками твоего покойного родителя. И в первую очередь, конечно, из-за того, что ты вновь подвергаешься нешуточной опасности. 
+Я никогда не считал себя слишком чувствительным, но сейчас не стыжусь признаться, что твое отсутствие ощущается как пустота, которую не заполнить. Тем не менее, Аткатла кипит, в ней, как всегда, нет места скуке и безделью, и очень много дел требуют моего внимания и личного вмешательства. Я был бы счастлив разделить с тобой как заботы, так и власть, пускай она и несоизмерима с той, права на которую дает тебе божественное происхождение. Но, любовь моя, кроме золота и власти, я хочу дать тебе то, чего ты не обретешь, даже став богиней. 
+Думаю, мне не нужно много говорить – если, как и я, ты вспоминаешь все, что было между нами, то и сама это понимаешь.
+Прошу, береги себя. Восторжествуй над своими врагами, как всегда это делала. 
+Я верю в тебя. 
+И я тебя люблю.
 
-I was greatly disturbed by the news of this mess involving your late parent's heirs. And first of all, of course, because you are again in serious danger. I never thought I was too sensitive, but now I am not ashamed to admit that your absence feels like a void that cannot be filled. Nevertheless, Athkatla is in full swing, as always, there is no place for boredom and idleness, and a lot of things require my attention and personal intervention. I would be happy to share with you both concerns and power, even if it is incommensurable with the right to which your divine origin gives you. But, my love, besides gold and power, I want to give you something that you will not get, even if you become a goddess. I don't think I need to say much - if, like me, you remember everything that happened between us, then you yourself understand it.
+Твой Аран»~
+@89 = ~*Спустя полчаса*~
+@90 = ~Порин~
+@91 = ~Джови Герк~
+@92 = ~Азора~
+@94 = ~Волшебная лампа~
+@95 = ~Волшебная лампа Абу Хазаба, торговца из Калимшана. Она слегка вибрирует от мощной магии, которая в ней заключена. Лучше не рисковать использовать такой артефакт. Найти эту лампу тебя просил Мастер теней Аран Линвайл.~
+@96 = ~*Убегает с криком*~
+@97 = ~Гигантский василиск~
+@98 = ~Я схожу к Арану, отнесу ему лампу. Скоро вернусь.~
+@99 = ~Вы просите Тони разузнать что-нибудь про гостей Абу Хазаба...~
+@100 = ~Проходит несколько часов...~
+@101 = ~Альтар~
+@102 = ~Наемник~
+@103 = ~(Сквозь сон ты чувствуешь, что происходит что-то странное. Это... нехорошо. Ты пытаешься подняться, твоя рука тянется к оружию, но... ты ничего не ощущаешь. Что это? Магия?! Мысль о том, что тебя застали врасплох, мелькает на краю сознания, но осознать все до конца ты не успеваешь...)~
+@104 = ~Гнев переполняет тебя, и ты чувствуешь, что контроль ускользает, в то время как зло манит тебя. Ты становишься Убийцей...~
+@105 = ~Горайон~
 
-Please take care of yourself. Triumph over your enemies, as you always did. 
+@106 = ~Скинь мне на вып-пивку, и я поделюсь с тобой любыми слухами!~
+@107 = ~Пьяный пират~
+@108 = ~Лорна~
+@109 = ~Свиток Фаяза~
+@110 = ~Этот кусок пергамента надорван в нескольких местах. Все, что вам удается на нем разобрать - это строки стихотворений. Вряд ли Фаяз был тайным ценителем искусства, тогда зачем ему понадобился такой свиток? Стоит приглядеться к этим стихам повнимательнее...
 
-I believe in you. And I love you. 
+«Пять вершин»
 
-Your Aran»~
-@89 = ~*Half an hour later* ~
-@90 = ~Porin ~
-@91 = ~Jovi Gerk ~
-@92 = ~Azora ~
-@94 = ~Magic Lamp~
-@95 = ~The magic lamp of Abu Hazab, a merchant from Calimshan. It vibrates slightly with the powerful magic that it contains. Better not to risk using such an artifact. Shadow Master Aran Linvile asked you to find this lamp. ~
-@96 = ~*Runs away screaming*~
-@97 = ~Giant Basilisk ~
-@98 = ~I'll go to Aran and take the lamp to him. Be back soon. ~
-@99 = ~You are asking Tony to find out about Abu Hazab's guests ... ~
-@100 = ~Several hours pass... ~
-@101 = ~Altar ~
-@102 = ~Mercenary ~
-@103 = ~(Through your sleep you feel that something strange is happening. This is ... not good. You try to get up, your hand reaches for the weapon, but ... you don't feel anything. What is this? Magic ?! Thought of the fact that you were taken by surprise flashes on the edge of consciousness, but you do not have time to realize everything to the end ...) ~
-@104 = ~Anger overwhelms you and you feel that control is slipping away while evil beckons you. You become a Killer ... ~
-@105 = ~Gorion~
+Стоит высокая гора, в средине каменной гряды
+Издревле славится она, прорыты в ней ходы.
+В них камешек прозрачный добывают рьяно,
+Чтоб стал он украшеньем в цвет румянам.
 
-@106 = ~Drop me a beer and I'll share any rumors with you!~
-@107 = ~Drunken Pirate~
-@108 = ~Lorna~
-@109 = ~Fayaz's Scroll~
-@110 = ~This piece of parchment has been torn in several places. All you can make out on it are lines of poems. It is unlikely that Fayaz was a secret connoisseur of art, then why did he need such a scroll? It is worth taking a closer look at these verses ...
+Гора одна, помельче остальных,
+Но каждый внутрь нее стремится.
+В ней залежи, богаче всех других,
+И в беге к ней нельзя остановится.
+Проложит путь туда купец,
+Услышит звон руды скупец,
+Глухой старик и паж младой -
+Любой покорен жажде той.
 
-"Five peaks"
+Вулкан огромный, пробудившись,
+До основания всю гору сотрясает.
+Все в смерче огненном сгорает
+И камни-птицы падают, разбившись.
 
-There is a high mountain, in the middle of a stone ridge
-Since ancient times, it is famous, holes are dug in it
-In them, the transparent stone is extracted zealously
-So that it becomes a decoration in the color of blush
+Несет в себе державный лик
+Невзрачная гора.
+Остался без названья этот пик,
+В нем ценная заключена руда.
+И слышно под горой, порой,
+Шум рынка множится базарною толпой,
+И злого оборотня предсмертный вой
+Проносится в неясной мгле ночной.
 
-One mountain, smaller than the others
-But everyone wants to go inside it
-It has deposits that are richer than all the others
-And you can't stop running to it
-The merchant will pave the way there
-The miser will hear the clink of ore
-The deaf old man and the young page
-Anyone who is submissive to that thirst
+Поодаль высится одна гора, темнее многих прочих,
+Царит в ней тьма, собою вытеснив весь свет,
+В пещерном мраке призывают там Богиню Ночи
+Чья поступь, черным следом, рассыпает самоцвет.~
 
-The volcano is huge, having awakened
-It shakes the whole mountain to the ground
-Everything in the tornado of fire burns up
-And the stones-birds fall crashing
-
-It bears the face of a sovereign
-Nondescript mountain
-This peak was left without a name
-It contains valuable ore
-And you can hear it under the mountain, sometimes
-The noise of the market is multiplied by the market crowd
-And the evil werewolf, the death howl
-Rushing through the hazy darkness of the night
-
-In the distance stands one mountain, darker than many others
-Reigns her in the darkness, pushing himself all the light
-In the cavernous darkness, they call upon the Dark Goddess
-Whose footsteps, like a black trail, scatter the gem.~
-
-@111 = ~Odrik~
-@112 = ~Skeleton Guardian~
-@113 = ~Rarrrshituoah~
-@114 = ~Furlusialeo~
-@115 = ~Monster~
+@111 = ~Одрик~
+@112 = ~Скелет-страж~
+@113 = ~Раррршитуоа~
+@114 = ~Фурлузиалео~
+@115 = ~Монстр~
 
 @116 = ~Component 4. The Missing Troll Case (by Alisia & Austin)~
-@117 = ~Kid~
-@118 = ~Messenger~
-@119 = ~Lorio~
-@120 = ~Hey you! Come here, there is one thing! ~
-@121 = ~Sartorius~
-@122 = ~Troll Head~
-@123 = ~This is the head of the Kid troll who escaped from the circus. When you look at her, you have a strange feeling inside you that you have done a terrible thing. You drive these thoughts away from you. ~
-@124 = ~Rope~
-@125 = ~Regular rope. May come in handy for tying someone up, or getting to hard-to-reach places~
-@126 = ~Bag of Sweets~
-@127 = ~This pouch contains some sweets from Calimshan. The troll Kid is very fond of them... according to Sartorius. They smell delicious, and you can hardly help yourself not to eat them. ~
-@128 = ~Mod~
-@129 = ~(Some time passes and Maud returns) ~
-@130 = ~Stop it! Hey, you! We saw you attack this woman. You are under arrest, and do not try to resist. ~
-@131 = ~Damn it! ~
-@132 = ~Eirin~
-@133 = ~Shape Change Scroll~
-@134 = ~This scroll, according to Mrs. Cragmoon, will help remove the spell from the siren transformed into a troll, and restore her to her true form. But you can just sell the scroll. The spell it contains is unique and money doesn't smell. ~
-@135 = ~(You are casting a spell from a scroll on a troll...) ~
+@117 = ~Малыш~
+@118 = ~Посланник~
+@119 = ~Лорио~
+@120 = ~Эй, вы! Подойдите сюда, есть одно дело!~
+@121 = ~Сарториус~
+@122 = ~Голова тролля~
+@123 = ~Это голова тролля Малыша, бежавшего из цирка. При взгляде на нее у вас внутри рождается странное ощущение, что вы совершили ужасный поступок. Вы гоните от себя эти мысли.~
+@124 = ~Веревка~
+@125 = ~Обычная веревка. Может пригодиться, чтобы связать кого-то, или добраться до труднодоступных мест.~
+@126 = ~Мешочек со сладостями~
+@127 = ~В этом мешочке лежит несколько сладостей из Калимшана. Они очень нравятся троллю Малышу... если верить Сарториусу. Пахнут они очень вкусно, и вы с трудом удерживаетесь, чтобы самим не съесть их.~
+@128 = ~Мод~
+@129 = ~(Проходит какое-то время, и Мод возвращается)~
+@130 = ~А ну прекратить! Эй, ты! Мы видели, как ты напал на эту женщину. Ты арестован, и не вздумай сопротивляться.~
+@131 = ~Проклятье!~
+@132 = ~Эйрин~
+@133 = ~Свиток смены формы~
+@134 = ~Этот свиток, если верить миссис Крагмун, поможет снять с сирены Эйрин, превращенной в тролля, заклятие и вернуть ей истинный облик. 
+Но можно и просто продать свиток. Заклинание, которое он содержит, уникально, а деньги не пахнут.~
+@135 = ~(Ты читаешь заклинание со свитка на тролля...)~
 
-@142 = ~Jackal~
-@143 = ~Caityga~
-@144 = ~Lawrence~
-@145 = ~Sheila~
-@146 = ~Galtarro~
-@147 = ~Three-Fingered~
-@148 = ~Bank Courier~
-@149 = ~Shahbaz~
+@142 = ~Шакал~
+@143 = ~Кайтига~
+@144 = ~Лоренс~
+@145 = ~Шейла~
+@146 = ~Галтарро~
+@147 = ~Трехпалый~
+@148 = ~Курьер банка~
+@149 = ~Шахбаз~
 
-@999 = ~Mae’Var’s Stash
+@999 = ~Тайник Маэ'Вара
 
-Renal has commissioned us to search for Mae’Var’s Stash. First you need to talk to his assistant named Batch. It should be somewhere near the entrance to the guild ... ~
+Ренал поручил нам поиски тайника Маэ'Вара. Для начала надо поговорить с его помощником пои мени Батч. Он должен быть где-то у входа в гильдию...~
 
-@1000 = ~Mae’Var’s Stash
+@1000 = ~Тайник Маэ'Вара
 
-Renal has commissioned us to search for Mae’Var’s Stash. All I have is an encrypted scroll. I should have asked Edwin better - he knew his former boss well ... ~
+Ренал поручил нам поиски тайника Маэ'Вара. Всё, что у меня есть - это зашифрованный свиток. Надо бы получше расспросить Эдвина - он хорошо знал своего бывшего начальника...~
 
-@1001 = ~Mae’Var’s Stash
+@1001 = ~Тайник Маэ'Вара
 
-Edwin said that the scroll was encrypted using the Imperial cipher method, and the symbols were somehow connected with the newly opened branch of the First Caliport Bank in Athkatla. So far, this does not give us much, but Edwin knows the former treasurer of the guild and he can explain something. It remains to find him. As far as we know, he is hiding somewhere in the Slums area. ~
+Эдвин сказал, что свиток зашифрован по методу имперского шифра, а символы как-то связаны с недавно открывшимся в Аткатле филиалом Первого Калипортского банка. Пока нам это мало что даёт, но Эдвин знает бывшего казначея гильдии и тот может что-то пояснить. Осталось его найти. Насколько мы знаем, он прячется где-то в районе Трущоб.~
 
-@1002 = ~Mae’Var’s Stash
+@1002 = ~Тайник Маэ'Вара
 
-We found a former treasurer of Mae'Var named Hurp. He was reluctant to share information, but after our 'urgent requests', he revealed that his former boss had set up a cell at a branch of First Calimport Bank, which had recently opened in the Promenade area. What exactly he put in the cell is not known for sure, but there is clearly something valuable there. Hurp gave us the contract that Mae'Var signed when opening the cell, and the accounting documents. It remains to decipher the scroll, study the agreement and go to the bank to try to somehow open the cell. ~
+Мы нашли бывшего казначея Маэ'Вара по имени Харп. Он не очень хотел делиться информацией, но после наших 'настоятельных просьб' поведал, что его бывший начальник завёл ячейку в филиале Первого Калимпортского банка, который недавно открылся в районе Променада. Что именно он положил в ячейку - точно неизвестно, но явно там что-то ценное. Харп отдал нам договор, который Маэ'Вар подписал при открытии ячейки, и отчётные документы. Осталось расшифровать свиток, изучить договор и отправляться в банк, чтобы попробовать как-то открыть ячейку.~
 
-@1003 = ~Mae’Var’s Stash
+@1003 = ~Тайник Маэ'Вара
 
-Success. We've managed to get hold of the Mae'Var Gems. Now it remains to decide how to dispose of them. Selling them is definitely not allowed - Renal's people are watching us. ~
+Успех. Мы сумели заполучить самоцветы Маэ'Вара. Теперь осталось решить, как ими распорядиться. Продавать их пока точно нельзя - за нами следят люди Ренала.~
 
-@1004 = ~Mae’Var’s Stash
+@1004 = ~Тайник Маэ'Вара
 
-Failure. It looks like Mae'Var's cell will remain in the bank forever. ~
+Неудача. Похоже, ячейка Маэ'Вара навсегда останется в банке.~
 
-@1005 = ~Mae’Var’s Stash
+@1005 = ~Тайник Маэ'Вара
 
-We got off easy. Now further collaboration with Renal is unlikely. Not much of a loss, though, since we're now dealing directly with his boss. ~
+Мы легко отделались. Теперь дальнейшее сотрудничество с Реналом маловероятно. Впрочем, невелика потеря, раз теперь мы имеем дело напрямую с его боссом.~
 
-@1006 = ~Mae’Var’s Stash
+@1006 = ~Тайник Маэ'Вара
 
-We faked for Renal's people that we had found a cache in the cemetery. In fact, they took everything from the bank and kept Mae'Var's treasures for themselves. ~
+Мы инсценировали для людей Ренала, что нашли тайник на кладбище. А на самом деле забрали всё из банка и оставили сокровища Маэ'Вара себе.~
 
-@1007 = ~Mae'Var's Stash
+@1007 = ~Тайник Маэ'Вара
 
-We found the secret place of the former guild leader and ended this long story. ~
+Мы нашли тайник бывшего главы гильдии и закончили эту долгую историю.~
 
-@1008 = ~Mae'Var's Stash
+@1008 = ~Тайник Маэ'Вара
 
-We found the secret place of the former guild leader and ended this long story. It’s a pity that we didn’t manage to get the money out of it. ~
+Мы нашли тайник бывшего главы гильдии и закончили эту долгую историю. Жаль лишь, что деньги достать из него так и не удалось.~
 
-@1009 = ~Imoen found a job
+@1009 = ~Имоен нашла работу
 
-In the branch of the First Calimport Bank, Imoen was offered a job with a career opportunity and a stable salary. But the duties are rather dull - you need to distribute leaflets with advertising of the bank to passers-by. Imoen was clearly disappointed, but decided not to throw out the flyers. She wants to speak to the city clerk about this. ~
+В отделении Первого Калимпортского банка Имоен предложили работу с возможностью карьерного роста и стабильной зарплатой. Вот только обязанности довольно унылые - надо раздавать прохожим листовки с рекламой банка. Имоен явно была разочарована, но решила не выбрасывать листовки. Она хочет поговорить с городским глашатаем на эту тему.~
 
-@1010 = ~Imoen found a job
+@1010 = ~Имоен нашла работу
 
-Imoen gave her pack of leaflets to the herald and agreed that he would distribute them - for a percentage of her profits. I had to pay him 100 coins. All that remains is to go back to the bank and get paid. ~
+Имоен отдала свою пачку листовок глашатаю и договорилась, что он их раздаст - за процент с её прибыли. Пришлось заплатить ему 100 монет. Осталось вернуться в банк и получить зарплату.~
 
-@1011 = ~Neera found a job
+@1011 = ~Нира нашла работу
 
-In a branch of the First Calimport Bank, Neera was offered a job with career opportunities and a stable salary. But the duties are rather dull - you need to distribute leaflets with advertising of the bank to passers-by. Neera was clearly disappointed, but decided not to throw out the flyers. She wants to speak to the town clerk about this. ~
+В отделении Первого Калимпортского банка Нире предложили работу с возможностью карьерного роста и стабильной зарплатой. Вот только обязанности довольно унылые - надо раздавать прохожим листовки с рекламой банка. Нира явно была разочарована, но решила не выбрасывать листовки. Она хочет поговорить с городским глашатаем на эту тему.~
 
-@1012 = ~Neera found a job
+@1012 = ~Нира нашла работу
 
-Neera gave her pack of leaflets to the herald and agreed that he would distribute them - for a percentage of her profits. I had to pay him 100 coins. All that remains is to go back to the bank and get paid. ~
+Нира отдала свою пачку листовок глашатаю и договорилась, что он их раздаст - за процент с её прибыли. Пришлось заплатить ему 100 монет. Осталось вернуться в банк и получить зарплату.~
 
-@1013 = ~Great Dwarf Debt
+@1013 = ~Большой долг дварфа
 
-It turned out that Korgan took out a loan from the First Calimport Bank and owed them 5,000. Of course, he was not going to pay, as he does not like traders. Which, however, does not prevent him from borrowing from them for a drink. We supported him and advised him not to pay. Now we are facing a meeting with collectors, whom the bank will surely incite. And the meeting is unlikely to be friendly and pleasant. ~
+Оказалось, что Корган взял кредит в Первом Калимпортском банке и должен им 5000. Платить, разумеется, он и не собирался, так как торгашей недолюбливает. Что, впрочем, не мешает ему одалживать у них на выпивку. Мы поддержали его и посоветовали не платить. Теперь нам грозит встреча с коллекторами, которых банк наверняка натравит. И вряд ли встреча будет дружеской и приятной.~
 
-@1014 = ~Great Dwarf Debt
+@1014 = ~Большой долг дварфа
 
-It turned out that Korgan took out a loan from the First Calimport Bank and owed them 5,000. Of course, he was not going to pay, as he does not like traders. Which, however, does not prevent him from borrowing from them for a drink. We decided not to make unnecessary problems and help him pay off the debt. And the meeting with the collectors will certainly not keep you waiting. ~
+Оказалось, что Корган взял кредит в Первом Калимпортском банке и должен им 5000. Платить, разумеется, он и не собирался, так как торгашей недолюбливает. Что, впрочем, не мешает ему одалживать у них на выпивку. Мы решили не наживать лишних проблем и помочь ему выплатить долг. А встреча с коллекторами наверняка не заставит себя ждать.~
 
-@1015 = ~Great Dwarf Debt
+@1015 = ~Большой долг дварфа
 
-We met a group of collectors led by a certain Owney, who looks like a priest and an assassin at the same time. With him was a team of desperate fighters. We had to kill them all, since we were not going to pay the debt for Korgan. ~
+Мы встретили группу коллекторов во главе с неким Оуни, похожим на жреца и на наёмного убийцу одновременно. С ним была команда отчаянных бойцов. Пришлось их всех убить, так как платить долг за Коргана мы не собирались.~
 
-@1016 = ~Great Dwarf Debt
+@1016 = ~Большой долг дварфа
 
-We met a group of collectors led by a certain Owney, who looks like a priest and an assassin at the same time. With him was a team of desperate fighters. We had to pay off the entire debt of Korgan, and they lagged behind us. Case closed. ~
+Мы встретили группу коллекторов во главе с неким Оуни, похожим на жреца и на наёмного убийцу одновременно. С ним была команда отчаянных бойцов. Пришлось выплатить весь долг Коргана, и они от нас отстали. Дело закрыто.~
 
-@1017 = ~Great Dwarf Debt
+@1017 = ~Большой долг дварфа
 
-We met a group of collectors led by a certain Owney, who looks like a priest and an assassin at the same time. We agreed with them that we will pay in installments, 1000 per week. The first installment was made, now in a week they will find us again, we need to prepare money. ~
+Мы встретили группу коллекторов во главе с неким Оуни, похожим на жреца и на наёмного убийцу одновременно. Договорились с ними, что будем платить частями, по 1000 в неделю. Первый взнос внесли, теперь через неделю они найдут нас снова, надо подготовить денежки.~
 
-@1018 = ~Great Dwarf Debt
+@1018 = ~Большой долг дварфа
 
-We met a group of collectors led by a certain Owney, who looks like a priest and an assassin at the same time. He offered us a deal - they will write off Korgan's debt, and we will help them deal with competitors who planned to oust them from their jobs at the bank. ~
+Мы встретили группу коллекторов во главе с неким Оуни, похожим на жреца и на наёмного убийцу одновременно. Он предложил нам сделку - они спишут долг Коргана, а мы поможем им разобраться с конкурентами, которые планировали вытеснить их с работы в банке.~
 
-@1019 = ~Great Dwarf Debt
+@1019 = ~Большой долг дварфа
 
-We helped Owney and his friends deal with a group of competitors. They were led by a very strange and dangerous type from another plane, nicknamed the Collector. With difficulty, but we got through and finished off his group. Owney returned Korgan's debt list in exchange for help and promised to close the issue with the bank. ~
+Мы помогли коллектору Оуни и его друзьям разобраться с группой конкурентов. Возглавлял их очень странный и опасный тип с другого Плана, по прозвищу Сборщик. С трудом, но мы справились и прикончили его группу. Оуни в обмен на помощь вернул нам долговую арсписку Коргана и обещал закрыть вопрос с банком.~
 
-@1020 = ~Great Dwarf Debt
+@1020 = ~Большой долг дварфа
 
-We paid off Korgan's debt to the bank. One less problem, and now you can not look back, waiting for collectors. ~
+Мы выплатили долг Коргана банку. Одной проблемой меньше, и можно теперь не оглядываться, ожидая коллекторов.~
 
-@1021 = ~Great Dwarf Debt
+@1021 = ~Большой долг дварфа
 
-We helped Owney and his friends fight his competitors. Unfortunately, he himself died, but his associates promised us that his promise would be fulfilled and they would settle the issue with the bank, since we helped them. ~
+Мы помогли Оуни и его друзьям в бою с его конкурентами. К сожалению, сам он погиб, но его соратники обещали нам, что его обещание будет выполнено и они уладят вопрос с банком, раз мы им помогли.~
 
-@1022 = ~Great Dwarf Debt
+@1022 = ~Большой долг дварфа
 
-We paid off the entire debt of Korgan to the collectors, and they lagged behind us. Case closed. ~
+Мы выплатили весь долг Коргана коллекторам, и они от нас отстали. Дело закрыто.~
 
-@1023 = ~Great Dwarf Debt
+@1023 = ~Большой долг дварфа
 
-We made an agreement with Uri and he, for a certain fee, removed the record of Korgan's debt from the bank's accounting department. Case closed. ~
+Мы договорились с Ури и тот за некоторое вознаграждение убрал запись о долге Коргана из бухгалтерии банка. Дело закрыто.~
 
-@1024 = ~Great Dwarf Debt
+@1024 = ~Большой долг дварфа
 
-On the body of the Collector, we found Korgan's promissory note - we would have to bring it to the bank and try to negotiate with the senior clerk so that he quietly removed the record of the debt in the bank's documentation. ~
+На трупе коллектора мы нашли долговую расписку Коргана - надо будет занести её в банк и попробовать договориться со старшим клерком, чтобы он по-тихому убрал запись о долге в документации банка.~
 
-@1025 = ~Dangerous Book
+@1025 = ~Опасная книга
 
-We have found a dangerous artifact - Kaza's book containing the spells of necromancy. Whoever deciphers the ancient text of this dusty manuscript will gain great power. In the hands of evil magicians, it can become a formidable force, so we decided to take it to the Order and give it to the paladins so that they destroy the book once and for all. I'll have to give it to the prelate. ~
+Мы нашли опасный артефакт - книгу Казы, содержащую заклинания некромантии. Тот, кто расшифрует древний текст этого пыльного манускрипта, обретёт большую силу. В руках злых магов она может стать грозной силой, поэтому мы решили отнести её в Орден и отдать паладинам, чтобы те уничтожили книгу раз и навсегда. Надо будет отдать её прелату.~
 
-@1026 = ~Dangerous Book
+@1026 = ~Опасная книга
 
-We gave the book to the prelate Wessalen, he promised to see to it that it was destroyed. Straight off the shoulder.~
+Мы отдали книгу прелату Вессалену, он обещал позаботиться о том, чтобы её уничтожили. Прямо камень с плеч.~
 
-@1027 = ~Trap for Druids
+@1027 = ~Западня для друидов
 
-Owney fell victim to his ambitions. His people will pay for him and bury him in a foreign land. I better leave them alone with their grief now. ~
+Оуни пал жертвой своих амбиций. Его люди оплачут его и похоронят, в чужой земле. Мне же сейчас лучше оставить их наедине с их горем.~
 
-@1028 = ~Trap for Druids
+@1028 = ~Западня для друидов
 
-Owney fell victim to his ambitions. His friends also gave their lives for his plan. Only Esra survived, she decided to leave the ill-fated bank and leave Athkatla. ~
+Оуни пал жертвой своих амбиций. Его друзья тоже отдали свои жизни ради его плана. Выжила только Эзра, она решила уйти из злополучного банка и покинуть Аткатлу.~
 
-@1029 = ~Trap for Druids
+@1029 = ~Западня для друидов
 
-With the death of Owney and his men, the mission itself lost its meaning. There is no time to grieve over them, you need to hurry to leave before the guard arrives. It’s a pity that it ended that way for them. I'll have to talk to Esra, she stayed behind to guard the entrance and that's why she survived the massacre. ~
+С гибелью Оуни и его людей, само задание потеряло смысл. Нет времени горевать над ними, нужно поспешить уйти до того, как подоспеет стража. Жаль, что все так для них закончилось. Надо будет поговорить с Эзрой, она осталась сторожить вход и лишь поэтому пережила бойню.~
 
-@1030 = ~Trap for Druids
+@1030 = ~Западня для друидов
 
-Owney and his associates were appointed guards at First Calimport Bank. A dizzying career! He also asked me to help in one more case. He learned that the Shadow Druids decided for some reason to rob a bank and conspired with one of the senior clerks named Gazir. He will give them the key to the internal storage, and they will dig a tunnel and enter the bank at night. Owney knows about their plan and has foreseen everything - and for the reprisal against the robbers, he will receive another promotion. But he needs my help to deal with the druids. We took time to think, we have to give an answer before the evening, otherwise Owney will start without us. ~
+Коллектора Оуни и его соратников назначили стражниками в Первом Калимпортском банке. Головокружительная карьера! Также он попросил меня помочь ещё в одном деле. Он узнал, что Теневые друиды решили зачем-то ограбить банк и сговорились с одним из старших клерков по имени Газир. Тот даст им ключ от внутреннего хранилища, а они устроят подкоп и ночью проникнут в банк. Оуни знает про их план и всё предусмотрел - а за расправу с грабителями его ждёт очередное повышение. Но ему нужна моя помощь, чтобы справиться с друидами. Мы взяли время подумать, до вечера надо дать ответ, иначе Оуни начнёт без нас.~
 
-@1031 = ~Trap for Druids
+@1031 = ~Западня для друидов
 
-Owney and his associates were appointed guards at First Calimport Bank. A dizzying career! He also asked me to help in one more case. He learned that the Shadow Druids decided for some reason to rob a bank and conspired with one of the senior clerks named Gazir. He will give them the key to the internal storage, and they will dig a tunnel and enter the bank at night. Owney knows about their plan and has foreseen everything - and for the reprisal against the robbers, he will receive another promotion. But he needs my help to deal with the druids. We agreed. Now we need to arrive at the bank after dark ... and prepare for the fight. ~
+Коллектора Оуни и его соратников назначили стражниками в Первом Калимпортском банке. Головокружительная карьера! Также он попросил меня помочь ещё в одном деле. Он узнал, что Теневые друиды решили зачем-то ограбить банк и сговорились с одним из старших клерков по имени Газир. Тот даст им ключ от внутреннего хранилища, а они устроят подкоп и ночью проникнут в банк. Оуни знает про их план и всё предусмотрел - а за расправу с грабителями его ждёт очередное повышение. Но ему нужна моя помощь, чтобы справиться с друидами. Мы согласились. Теперь надо прибыть в банк после наступления темноты... и подготовиться к схватке.~
 
-@1032 = ~Trap for Druids
+@1032 = ~Западня для друидов
 
-Owney and his associates were appointed guards at First Calimport Bank. A dizzying career! He also asked me to help in one more case. He learned that the Shadow Druids decided for some reason to rob a bank and conspired with one of the senior clerks named Gazir. He will give them the key to the internal storage, and they will dig a tunnel and enter the bank at night. Owney knows about their plan and has foreseen everything - and for the reprisal against the robbers, he will receive another promotion. But he needs my help to deal with the druids. We refused. Let Owney figure it out for himself, this is not our fight. ~
+Коллектора Оуни и его соратников назначили стражниками в Первом Калимпортском банке. Головокружительная карьера! Также он попросил меня помочь ещё в одном деле. Он узнал, что Теневые друиды решили зачем-то ограбить банк и сговорились с одним из старших клерков по имени Газир. Тот даст им ключ от внутреннего хранилища, а они устроят подкоп и ночью проникнут в банк. Оуни знает про их план и всё предусмотрел - а за расправу с грабителями его ждёт очередное повышение. Но ему нужна моя помощь, чтобы справиться с друидами. Мы отказались. Пусть Оуни сам разбирается, это не наш бой.~
 
-@1033 = ~Trap for Druids
+@1033 = ~Западня для друидов
 
-We never dared to agree to Owney's proposal, so they started the fight without us. And it seems that one of them died. Now Ounie won't talk to me. ~
+Мы так и не решились согласиться на предложение Оуни, так что они начали бой без нас. И, кажется, кто-то из них погиб. Теперь Оуни со мной общаться не будет.~
 
-@1034 = ~Trap for Druids
+@1034 = ~Западня для друидов
 
-We helped Owney and his group deal with the bank attack. All the attackers are dead and now we will never know what made them take such a step. But the main thing is that Owney's plan worked and the druids fell into a trap that he prepared. Tomorrow I have to visit him at the bank and receive the rest of our award. ~
+Мы помогли Оуни и его группе справиться с нападением на банк. Все нападавшие мертвы и теперь мы никогда не узнаем, что заставило их пойти на такой шаг. Но главное, что план Оуни сработал и друиды попали в ловушку, которую он подготовил. Завтра надо проведать его в банке и получить оставшуюся часть нашей награды.~
 
-@1035 = ~Trap for Druids
+@1035 = ~Западня для друидов
 
-Owney's plan worked exactly as he intended. We got the award and he got a new job. ~
+План Оуни сработал именно так, как он и задумывал. Мы получили награду, а он - новую должность.~
 
-@1036 = ~Trap for Druids
+@1036 = ~Западня для друидов
 
-We helped Owney and his group cope with the attack on the bank, but he himself was killed in the battle, and Yantina, in grief, left. All the attackers are dead and now we will never know what made them take such a step. All I have to do is go back to the bank tomorrow morning and collect my payment from Jalut, Jock or Esra. ~
+Мы помогли Оуни и его группе справиться с нападением на банк, но сам он погиб в битве, а Янтина, охваченная горем, ушла. Все нападавшие мертвы и теперь мы никогда не узнаем, что заставило их пойти на такой шаг. Мне осталось вернуться в банк завтра утром и забрать свою оплату у Джалута, Джока или Эзры.~
 
-@1037 = ~Trap for Druids
+@1037 = ~Западня для друидов
 
-We helped Owney and his group cope with the attack on the bank, but Owney and Jalut were killed, and Yantina, in grief, left. All the attackers are dead and now we will never know what made them take such a step. All I have to do is return to the bank tomorrow morning and collect my payment from Jock or Esra. ~
+Мы помогли Оуни и его группе справиться с нападением на банк, но сам Оуни и Джалут погибли, а Янтина, охваченная горем, ушла. Все нападавшие мертвы и теперь мы никогда не узнаем, что заставило их пойти на такой шаг. Мне осталось вернуться в банк завтра утром и забрать свою оплату у Джока или Эзры.~
 
-@1038 = ~For love
+@1038 = ~Ради любви
 
-Lord Paris, who met us in the Government District, wants me to accompany him to the cemetery at night, where he is to meet his beloved Charlize. Why she chose such a strange place for a date, Paris does not know. We agreed to meet at the southern entrance to the cemetery when it gets dark. ~
+Лорд Пэрис, который нам встретился в Правительственном районе, хoчет, чтoбы я сопроводил его ночью на кладбище, где он должен встретиться со своей возлюбленной Шарлиз. Почему она выбрала такое странное место для свидания, Пэрис не знает. Мы договорились встретиться у южного входа на кладбище, когда стемнеет.~
 
-@1039 = ~For love
+@1039 = ~Ради любви
 
-Necto was going to kill Paris, but we prevented the trouble, and now Charlize is back in his arms. Great! ~
+Нектo сoбирался убить Пэриса, нo мы предoтвратили беду, и теперь Шарлиз вернулась в егo oбъятия. Вoт и прекраснo!~
 
-@1040 = ~Message from Aran
+@1040 = ~Послание от Арана
 
-The head of the Shadow Thieves Guild, the powerful Aran Linvail, sent a messenger to you and invited you to visit him, and asked to come alone. What does he want? There is only one way to find out. ~
+Глава гильдии Теневых воров, могущественный Аран Линвайл, прислал к вам посыльного и пригласил к себе, причем просил зайти одной. Что ему надо? Есть лишь один способ узнать.~
 
-@1041 = ~Message from Aran
+@1041 = ~Послание от Арана
 
-I deciphered the letter Aran Linvail gave me - I suspect that it was some kind of test and new tasks will not keep you waiting. ~
+Я расшифровала письмо, которое мне дал Аран Линвайл - подозреваю, что это была некая проверка и новые задания не заставят себя ждать.~
 
-@1042 = ~Messenger from Riatavin
+@1042 = ~Посыльный из Риатавина
 
-Aran asked me to exchange letters with Riatavin's agent, who will come to the meeting at night at the hotel in the City Gate area - most likely, he will be on the top floor. I'll have to tell him the password - "Tethyr and the Nightingale." ~
+Аран попросил меня обменяться письмами с агентом Риатавина, который придет на встречу ночью в гостиницу в районе Городских Ворот - скорее всего, он будет на верхнем этаже. Я должна буду назвать ему пароль - «Тетир и Соловей».~
 
-@1043 = ~Messenger from Riatavin
+@1043 = ~Посыльный из Риатавина
 
-The messenger from Riatavin suspected deception and disappeared, frustrating our plans. Aran will be very unhappy. ~
+Посыльный из Риатавина заподозрил обман и скрылся, сорвав наши планы. Аран будет очень недоволен.~
 
-@1044 = ~Messenger from Riatavin
+@1044 = ~Посыльный из Риатавина
 
-I met with Riatavin's agent and handed him a letter that Aran had prepared, and took another one in return. I'll have to take it to Aran, he is waiting. ~
+Я встретилась с агентом Риатавина и передала ему письмо, которое подготовил Аран, а взамен забрала другое. Надо будет отнести его Арану, тот ждет.~
 
-@1045 = ~Messenger from Riatavin
+@1045 = ~Посыльный из Риатавина
 
-I gave the documents of the riathavin spy to Aran, as promised. He was grateful. ~
+Я отдала документы риатавинского шпиона Арану, как и обещала. Тот был благодарен.~
 
-@1046 = ~Messenger from Riatavin
+@1046 = ~Посыльный из Риатавина
 
-I helped Aran compose a letter in the Riatavin code, which I had studied on a previous visit. Politics is a dirty business. I hope I don't have to get into this anymore. ~
+Я помогла Арану составить письмо на риатавинском шифре, который изучила при прошлом визите. Политика - грязное дело. Надеюсь, больше мне не придётся в это влезать.~
 
-@1047 = ~Messenger from Riatavin
+@1047 = ~Посыльный из Риатавина
 
-As expected, Aran was gloomy because I thwarted his plans and frightened the spy away instead of giving him a fake letter. It looks like Aran won't come to me with such questions anymore. ~
+Как и ожидалось, Аран был мрачен из-за того, что я сорвала его планы и спугнула шпиона вместо того, чтобы передать ему поддельное письмо. Похоже, больше Аран ко мне по таким вопросам обращаться не станет.~
 
-@1048 = ~Mysterious Stranger
+@1048 = ~Таинственная незнакомка
 
-When I left the Thieves' Guild, it seemed to me that someone was following me. A woman in a robe that looks like the clothes of magicians. But what does she want? She headed somewhere in the Bridge area. We must look in the hotels there - perhaps we will meet with her again. ~
+При выходе из гильдии воров мне почудилось, что кто-то за мной следит. Какая-то женщина в робе, похожей на одежды магов. Но что ей нужно? Она направилась куда-то в район Моста. Надо поискать в тамошних гостиницах - возможно, мы с ней еще встретимся.~
 
-@1049 = ~Mysterious Stranger
+@1049 = ~Таинственная незнакомка
 
-In the Five Flagons Inn, we found that strange woman who was watching us. The conversation did not go very constructively and I had to kill her. We must search the body, and then take to Aran what we will find with her. He needs to know what she's up to. ~
+В таверне 'Пять графинов' мы нашли ту странную женщину, которая за нами следила. Разговор пошёл не очень конструктивно и пришлось её убить. Надо обыскать тело, а потом отнести Арану то, что при ней найдём. Он должен знать о том, что она замышляла.~
 
-@1050 = ~Mysterious Stranger
+@1050 = ~Таинственная незнакомка
 
-In the Five Flagons Inn, we found that strange woman who was watching us. She was plotting to kill Aran Linvail. I frightened her and let her go. Perhaps my kindness is sometimes harmful, but I did not dare to kill her. We need to tell Aran everything. ~
+В таверне 'Пять графинов' мы нашли ту странную женщину, которая за нами следила. Она замышляла убить Арана Линвайла. Я припугнула ее и отпустила. Возможно, моя доброта иногда идёт во вред, но я не решилась её убить. Надо рассказать все Арану.~
 
-@1051 = ~Mysterious Stranger
+@1051 = ~Таинственная незнакомка
 
-In the Five Flagons Inn, we found that strange woman who was watching us. She was plotting to kill Aran Linvail, and I decided to take her to the guild so that he would personally interrogate her. With the help of Tony, who always appears at the right time, I succeeded. ~
+В таверне 'Пять графинов' мы нашли ту странную женщину, которая за нами следила. Она замышляла убить Арана Линвайла, и я решила доставить ее в гильдию, чтобы тот лично ее допросил. С помощью Тони, который всегда появляется в нужный момент, мне это удалось.~
 
-@1052 = ~Mysterious Stranger
+@1052 = ~Таинственная незнакомка
 
-It turned out that Aran was already aware of what had happened - his people were not asleep. I did what I could, then he will figure it out on his own. ~
+Оказалось, что Аран уже в курсе произошедшего - его люди не дремлют. Я сделала, что могла, дальше он уже сам разберется.~
 
-@1053 = ~Mysterious Stranger
+@1053 = ~Таинственная незнакомка
 
-It turned out that Aran was already aware of what had happened - his people were not asleep. I did what I could. And I realized that I was already tired of this connection with Aran. I made him understand that it is better to leave only the business relationship. ~
+Оказалось, что Аран уже в курсе произошедшего - его люди не дремлют. Я сделала, что могла. И поняла, что уже устала от этой связи с Араном. Дала ему понять, что лучше оставить только деловые отношения.~
 
-@1054 = ~Shadow-Covered Love
+@1054 = ~Любовь, укрытая тенью
 
-I promised Aran that I would return to him as soon as I finish my mission and we will be together. The choice has been made and I do not regret it because I follow my heart. ~
+Я обещала Арану, что вернусь к нему, как только закончу свою миссию, и мы будем вместе. Выбор сделан и я о нем не жалею, потому что следую за своим сердцем.~
 
-@1055 = ~Abu Hazab's Magic Lamp
+@1055 = ~Волшебная лампа Абу Хазаба
 
-Azora Rilin was healed from petrification, but she seems to be out of her mind after experiencing misfortunes. We can only hope that she gets home safely, or Lady Rilin's people will finally find her. ~
+Азора Рилин была исцелена от окаменения, но, похоже, она не в себе после пережитых злоключений. Остается только надеяться, что она благополучно доберется до дома или люди леди Рилин наконец ее разыщут.~
 
-@1056 = ~Abu Khazab's Magic Lamp
+@1056 = ~Волшебная лампа Абу Хазаба
 
-Aran Linvail has asked me to help in the search for the stolen magic lamp of merchant Abu Hazab. He collaborated with the Shadow Thieves, but someone managed to steal his lamp anyway, and now the reputation of the entire guild and personally Aran is at stake. I should speak to either Renal or Lathan - they know a lot and can lead on the trail. ~
+Аран Линвайл попросил меня помочь в поисках украденной волшебной лампы торговца Абу Хазаба. Он сотрудничал с Теневыми ворами, но кто-то ухитрился все равно похитить его лампу, и теперь репутация всей гильдии и лично Арана стоит на кону. Мне стоит поговорить либо с Реналом, либо с Латаном - они многое знают и могут навести на след.~
 
-@1057 = ~Abu Hazab's Magic Lamp
+@1057 = ~Волшебная лампа Абу Хазаба
 
-Dwarf Porin - an inexperienced thief who was captured by Renal's guys - said that he had ransacked the Rilin mansion and that he had heard there talk about a missing daughter who had escaped with some guy. The note that was found said something about the meeting in the Copper Coronet. And the Rilin family was among the guests of Abu Khazab. I don't know if all this will help me in the investigation, but I must take note. ~
+Гном Порин - неопытный вор, которого схватили ребята Ренала - сказал, что обчистил особняк Рилинов и что слышал там разговоры о пропавшей дочери, сбежавшей с каким-то парнем. В найденной записке говорилось что-то про встречу в Медной Короне. А семейство Рилинов было среди гостей Абу Хазаба. Не знаю, поможет ли мне все это в следствии, но надо взять на заметку.~
 
-@1058 = ~Abu Hazab's Magic Lamp
+@1058 = ~Волшебная лампа Абу Хазаба
 
-Lathan, one of my assistants in the former Mae'Var guild, reported that one of our thieves, Jovi Gerk, is missing. And that he recently contacted some noble girl. ~
+Латан, один из моих помощников в бывшей гильдии Маэ'Вара, сообщил, что пропал один из наших воров, Джови Герк. И что недавно он связался с какой-то знатной девушкой.~
 
-@1059 = ~Abu Hazab's Magic Lamp
+@1059 = ~Волшебная лампа Абу Хазаба
 
-It looks like all traces lead to the Copper Coronet. I should go there and ask Bernard if he saw the missing couple. ~
+Похоже, все следы ведут в Медную Корону. Надо сходить туда и расспросить Бернарда, не видел ли он пропавшую парочку.~
 
-@1060 = ~Abu Hazab's Magic Lamp
+@1060 = ~Волшебная лампа Абу Хазаба
 
-Tony, Aran's messenger, says that rumors are circulating in the city about the missing daughter of the Rilin family, as if she escaped with some guy. The note that was found said something about the meeting in the Copper Coronet. And the Rilin family was among the guests of Abu Khazab. ~
+Тони, посыльный Арана, говорит, что в городе ходят слухи о пропавшей дочери семейства Рилин, якобы она сбежала с каким-то парнем. В найденной записке говорилось что-то про встречу в Медной Короне. А семейство Рилинов было среди гостей Абу Хазаба.~
 
-@1061 = ~Abu Hazab's Magic Lamp
+@1061 = ~Волшебная лампа Абу Хазаба
 
-Bernard said that a noble girl came to the tavern last night and there was a thief boy with her. And then for some reason he took her to the entrance to the sewer, and Bernard asked not to give them to anyone. Weird, what did they want there?~
+Бернард сказал, что прошлой ночью в таверну пришла какая-то девушка из знатных, а с ней был парень-вор. И потом он почему-то повел ее ко входу в канализацию, а Бернарда попросил никому их не выдавать. Странно, что им там понадобилось?~
 
-@1062 = ~Abu Hazab's Magic Lamp
+@1062 = ~Волшебная лампа Абу Хазаба
 
-Lamp found! It remains to return her to Aran. Azora Rilin survived and will return to her family. ~
+Лампа найдена! Осталось вернуть ее Арану. Азора Рилин выжила и вернется к семье.~
 
-@1063 = ~Abu Hazab's Magic Lamp
+@1063 = ~Волшебная лампа Абу Хазаба
 
-Lamp found! It remains to return her to Aran. But Azora Rilin, unfortunately, died, and at the hands of her yesterday's lover. ~
+Лампа найдена! Осталось вернуть ее Арану. Но Азора Рилин, к сожалению, погибла, причем от рук своего вчерашнего возлюбленного.~
 
-@1064 = ~Abu Hazab's Magic Lamp
+@1064 = ~Волшебная лампа Абу Хазаба
 
-I managed to find the missing lamp and return it to Aran. Now the authority of the guild, albeit shaken, will be restored. And the story of Azora and Jovi is very instructive, even if you write a book. ~
+Мне удалось найти пропавшую лампу и вернуть ее Арану. Теперь авторитет гильдии, пусть и пошатнувшись, но будет восстановлен. А история Азоры и Джови очень поучительна, хоть книгу пиши.~
 
-@1065 = ~Pirate Legacy
+@1065 = ~Пиратское наследие
 
-Owney asked me to find one of the bank's debtors, a pirate named Fayaz, and get the money out of him. You can find it somewhere in Brynnlaw. If I get there, I have to do it. ~
+Оуни попросил меня найти одного из должников банка, пирата по имени Фаяз, и выбить из него деньги. Найти его можно где-то в Бриннлоу. Если попаду туда, надо этим заняться.~
 
-@1066 = ~Pirate Legacy
+@1066 = ~Пиратское наследие
 
-It turned out that Fayaz had died and had spent all the money on drink. The only option that remained was to talk to his wife, suddenly it would be possible to learn something from her. Her name is Lorna and she is somewhere on the dock, according to a drunken sailor. ~
+Оказалось, что Фаяз умер и пропил все деньги. Единственный вариант, который остался - поговорить с его женой, вдруг удастся у нее что-то узнать. Ее зовут Лорна и она где-то на пристани, если верить пьяному моряку.~
 
-@1067 = ~Pirate Legacy
+@1067 = ~Пиратское наследие
 
-I could not find out anything from Lorna and the conversation turned out to be useless. It looks like Fayaz's debt will remain irrecoverable. ~
+Мне ничего не удалось узнать у Лорны и разговор оказался бесполезным. Похоже, долг Фаяза так и останется невозвратным.~
 
-@1068 = ~Pirate Legacy
+@1068 = ~Пиратское наследие
 
-Lorna wanted to leave Brynnlaw and go to Athkatla, start a new life. In return for a little financial help with this, she gave me a scroll that had remained from Fayaz, and said that he sometimes visited an abandoned house in the northern part of the town. We should see what's in there. ~
+Лорна хотела уехать из Бриннло и попасть в Аткатлу, начать новую жизнь. Взамен за небольшую финансовую помощь в этом она передала мне свиток, который остался от Фаяза, и сказала, что он иногда посещал заброшенный дом в северной части городка. Надо бы посмотреть, что там.~
 
-@1069 = ~Pirate Legacy
+@1069 = ~Пиратское наследие
 
-I managed to find a secret passage through the cliffs, along which Fayaz got to a secluded bay in another part of the island. There was a pirate chest in which there were valuables. With difficulty, but the task is completed! You can report to the bank. ~
+Мне удалось найти тайный проход через скалы, по которому Фаяз добирался до уединенной бухты в другой части острова. Там был пиратский сундук, в котором оказались ценности. С трудом, но задание выполнено! Можно отчитаться в банке.~
 
-@1070 = ~The Missing Troll Case
+@1070 = ~Дело о пропавшем тролле
 
-Quayle turned to us for help. A trained troll, the highlight of the program, disappeared from his circus. We examined the scene and found broken bars of the cage and traces of magic on it. The door was closed, and a strange master key was lying nearby. Aerie also mentioned that the troll was sold to the circus by a strange man who smelled of fish, and then he often came to the cage and looked at him for a long time. Why? I think you can look for this type in the Docks area, since he smelled of fish. Local bartenders and traders may know something about him. Or try some other leads? ~
+Квэйл обратился к нам за помощью. Из его цирка пропал дрессированный тролль, гвоздь программы. Мы осмотрели место происшествия и обнаружили сломанные прутья клетки и следы магии на ней. Дверь была закрыта, а рядом валялась странная отмычка. А еще Аэри упоминала, что тролля продал цирку странный человек, от которого пахло рыбой, и он потом не раз приходил к клетке и подолгу на него смотрел. Зачем? Думаю, этого типа можно поискать в районе Доков, раз от него пахло рыбой. Местные бармены и торговцы о нем могут что-то знать. Или попробовать проработать другие зацепки?~
 
-@1071 = ~The Missing Troll Case
+@1071 = ~Дело о пропавшем тролле
 
-We found a fisherman at the Docks who sold the troll to the circus. He doesn't seem to be saying something. We weren't able to get anything useful from him. ~
+Мы нашли в Доках рыбака, который продал тролля цирку. Он, похоже, чего-то не договаривает. Ничего полезного нам от него добиться не удалось.~
 
-@1072 = ~The Missing Troll Case
+@1072 = ~Дело о пропавшем тролле
 
-We showed the lockpick found near the troll's cage to Sidge of the Thieves Guild. He said that a certain Kyrian could have made it, and that it seemed that some scientist, a weirdo, had just approached him recently. Why he needed a master key is unknown. I think in this direction and it is necessary to dig and look for this type. But where? There are other clues to remember. ~
+Мы показали отмычку, найденную у клетки тролля, Сиджу из гильдии воров. Он сказал, что ее мог сделать некий Кириан и что вроде бы недавно к нему как раз обращался какой-то ученый, человек со странностями. Зачем тому понадобилась отмычка, неизвестно. Думаю, в этом направлении и надо копать и поискать этого типа. Но где? Надо вспомнить другие зацепки.~
 
-@1073 = ~The Missing Troll Case
+@1073 = ~Дело о пропавшем тролле
 
-We asked Corneil - the one who issues licenses on behalf of the Cowled Wizards - if any magic has been used by anyone in the Promenade Waukeen area lately. Except, of course, Irenicus. Corneil replied that it was used, but by whom, he did not say. We need more leads, and then we can try to get more information out of it. ~
+Мы спросили у Корнейла - того, кто выдает лицензии от имени Волшебников в Рясах - не применялась ли кем-то магия в районе Променада в последнее время. Кроме, разумеется, Айреникуса. Корнейл ответил, что применялась, но кем именно - не сказал. Нужны еще зацепки, и тогда можно будет попробовать из него вытащить больше информации.~
 
-@1074 = ~The Missing Troll Case
+@1074 = ~Дело о пропавшем тролле
 
-Corneil of the Council building admitted that magic in the Promenade area was recently used by a certain Sartorius, a scientist with a passion for Druidic ideas. He has a license. It looks like I need it. Look for him in the temple of Oghma, according to Corneil. ~
+Корнейл из здания Совета признался, что магию в районе Променада недавно применял некий Сарториус, ученый, увлекающийся друидскими идеями. Лицензия у него есть. Похоже, он-то мне и нужен. Искать его надо в храме Огмы, если верить Корнейлу.~
 
-@1075 = ~The Missing Troll Case
+@1075 = ~Дело о пропавшем тролле
 
-We found Sartorius, a strange scientist, and, presenting all the evidence we had collected, we forced him to confess that he had released the troll. He is ready to take us to where the troll has settled, but first we need to find the bait - his favorite Kalimshan sweets. At Enge's shop on the Promenade, there might be some. ~
+Мы нашли Сарториуса, странноватого ученого, и, предъявив все собранные улики, вынудили его признаться - это он выпустил тролля. Он готов отвести нас туда, где поселился тролль, но сначала надо найти приманку - его любимые калимшанские сладости. В лавке Энге на Променаде такие могут быть.~
 
-@1076 = ~The Missing Troll Case
+@1076 = ~Дело о пропавшем тролле
 
-We got the Calimshan sweets - now it remains to return to Sartorius and he will take to the troll. ~
+Мы достали калимшанские сладости - теперь осталось вернуться к Сарториусу и он отведет к троллю.~
 
-@1077 = ~The Missing Troll Case
+@1077 = ~Дело о пропавшем тролле
 
-We found the missing troll and brought him back to the circus. All thanks to the deduction method! ~
+Мы нашли пропавшего тролля и вернули его в цирк. Все благодаря методу дедукции!~
 
-@1078 = ~The Missing Troll Case
+@1078 = ~Дело о пропавшем тролле
 
-We found the missing troll and killed it. You can take his head to Chief Inspector Brega for a reward. ~
+Мы нашли пропавшего тролля и убили. Можно отнести его голову инспектору Бреге и получить награду.~
 
-@1079 = ~The Missing Troll Case
+@1079 = ~Дело о пропавшем тролле
 
-We found the missing troll, but did not decide what to do with it, and left it as it is. We need to tell Quayle - Maybe we will get at least some kind of reward, regardless of the result. ~
+Мы нашли пропавшего тролля, но не решили, что с ним делать, и оставили как есть. Надо рассказать Квэйлу - может, хоть какая-то наградда нам перепадёт, несмотря на результат.~
 
-@1080 = ~The Missing Troll Case
+@1080 = ~Дело о пропавшем тролле
 
-We told Quayle what we had learned. He was upset, but at least now he knows that the troll is fine and he was not killed. ~
+Мы рассказали Квэйлу о том, что удалось узнать. Он расстроился, но по крайней мере теперь он знает, что с троллем все хорошо и его не убили.~
 
-@1081 = ~The Missing Troll Case
+@1081 = ~Дело о пропавшем тролле
 
-We gave the severed troll head to the authorities and received the money. Rest in peace, Kid. ~
+Мы отдали отрубленную голову тролля властям и получили деньги. Покойся с миром, Малыш.~
 
-@1082 = ~Siren’s Silence
+@1082 = ~Молчание сирены
 
-I still want to figure out why the trained troll Kid in the Promenade circus is so strange. I should go to the cage and examine it again. ~
+Мне хочется все-таки разобраться в том, почему дрессированный тролль Малыш в цирке Променада такой странный. Надо пойти к клетке и осмотреть его еще раз.~
 
-@1083 = ~Siren’s Silence
+@1083 = ~Молчание сирены
 
-At the Kid's cage, I met the fisherman Lorio, who told me that he had found the troll near the river on the day his beloved, siren Eirin, disappeared. He may have eaten it, but he looks too peaceful ... We need to test this troll with the Know Alignment or True Sight spells and see what he is. ~
+У клетки Малыша мне встретился рыбак Лорио, который рассказал, что тролля он обнаружил около реки в тот день, когда пропала его возлюбленная, сирена Эйрин. Возможно, он ее съел, но уж слишком мирным он выглядит... Надо проверить этого тролля заклинаниями "Узнать характер" или "Истинное видение" и посмотреть, каков он.~
 
-@1084 = ~Siren’s Silence
+@1084 = ~Молчание сирены
 
-The spell showed the true essence of the troll, he is not at all dangerous and, apparently, this appearance is an illusion, and very powerful. Lorio mentioned that he was in contact with Mrs. Cragmoon, a potions and scroll merchant in the Bridge area. Maybe she can tell you something useful ...~
+Заклинание показало истинную сущность тролля, он вовсе не опасен и, судя по всему, этот облик - иллюзия, причем очень могущественная. Лорио упоминал, что общался с миссис Крагмун, торговкой зельями и свитками в районе Моста. Может, что-то полезное она подскажет...~
 
-@1085 = ~Siren’s Silence
+@1085 = ~Молчание сирены
 
-The conversation with Mrs. Cragmoon gave nothing, except for one thing - she does not tell the truth, it is clear. After the conversation, a girl named Mod came up to me, wanted to tell something about her, and extorted money for it. We drove her away, but now we can try to talk to Mrs. Cragmoon again and scare her with the fact that we supposedly learned some secret from the girl. Well, or somehow "split" it ...~
+Разговор с миссис Крагмун ничего не дал, кроме одного - она не договаривает правду, это ясно. После беседы ко мне подошла девочка по имени Мод, хотела что-то рассказать про нее, вымогала за это деньги. Мы прогнали ее, но теперь можно попробовать еще раз поговорить с миссис Крагмун и припугнуть ее тем, что якобы мы узнали от девочки какую-то ее тайну. Ну или как-то иначе ее "расколоть"...~
 
-@1086 = ~Siren’s Silence
+@1086 = ~Молчание сирены
 
-The conversation with Mrs. Cragmoon gave nothing, except for one thing - she does not tell the truth, it is clear. After the conversation, a girl named Mod came up to me and said that she recently bought scrolls from a woman and they mentioned a troll ... Now you can try to talk to Mrs. Cragmoon again and scare her with what we learned from the girl. Well, or somehow "split" it ...~
+Разговор с миссис Крагмун ничего не дал, кроме одного - она не договаривает правду, это ясно. После беседы ко мне подошла девочка по имени Мод и сказала, что недавно та покупала свитки у какой-то женщины и они упоминали про тролля... Теперь можно попробовать еще раз поговорить с миссис Крагмун и припугнуть ее тем, что мы узнали от девочки. Ну или как-то иначе ее "расколоть"...~
 
-@1087 = ~Siren’s Silence
+@1087 = ~Молчание сирены
 
-Mrs. Cragmoon confessed that she bewitched the siren Eirin and gave her the appearance of a troll with a powerful spell created by a witch named Agnes. Thanks to this spell, the siren will look like a troll even after death. We decided not to get involved even further in this story - we will tell everything to Lorio and let him act on his own. He must be at Cromwell's, waiting for an order. ~
+Миссис Крагмун призналась, что заколдовала сирену Эйрин и придала ей облик тролля мощным заклинанием, которое создала ведьма по имени Агнес. Благодаря этому заклятью сирена даже после смерти будет выглядеть как тролль. Мы решили не ввязываться еще дальше в эту историю - расскажем все Лорио и пусть он действуем сам. Он должен быть у Кромвеля, ждет там какой-то заказ.~
 
-@1088 = ~Siren’s Silence
+@1088 = ~Молчание сирены
 
-Mrs. Cragmoon confessed that she bewitched the siren Eirin and gave her the appearance of a troll with a powerful spell created by a witch named Agnes. Thanks to this spell, the siren will look like a troll even after death. We decided to disenchant Eirin, it remains to get a scroll that removes witchcraft. I will ask Maud to steal it, since Cragmoon herself does not give it up. Judging by what Mod said, you need to look for her somewhere at the thieves' guild, since these are her idols. ~
+Миссис Крагмун призналась, что заколдовала сирену Эйрин и придала ей облик тролля мощным заклинанием, которое создала ведьма по имени Агнес. Благодаря этому заклятью сирена даже после смерти будет выглядеть как тролль. Мы решили расколдовать Эйрин, осталось добыть свиток, снимающий колдовство. Попрошу Мод украсть его, раз сама Крагмун не отдает. Судя по сказанному Мод, искать ее надо где-то у гильдии воров, раз это ее кумиры.~
 
-@1089 = ~Siren’s Silence
+@1089 = ~Молчание сирены
 
-Mrs. Cragmoon confessed that she bewitched the siren Eirin and gave her the appearance of a troll with a powerful spell created by a witch named Agnes. Thanks to this spell, the siren will look like a troll even after death. We decided to disenchant Eirin and got a scroll that removes witchcraft from Mrs. Cragmoon, we just have to use it. ~
+Миссис Крагмун призналась, что заколдовала сирену Эйрин и придала ей облик тролля мощным заклинанием, которое создала ведьма по имени Агнес. Благодаря этому заклятью сирена даже после смерти будет выглядеть как тролль. Мы решили расколдовать Эйрин и добыли у миссис Крагмун свиток, снимающий колдовство, осталось его использовать.~
 
-@1090 = ~Siren’s Silence
+@1090 = ~Молчание сирены
 
-Mrs. Cragmoon confessed that she bewitched the siren Eirin and gave her the appearance of a troll with a powerful spell created by a witch named Agnes. Thanks to this spell, the siren will look like a troll even after death. We decided to disenchant Eirin, but we could not get the scroll from Mrs. Cragmoon. We'll have to tell Lorio everything and let him act on his own. He must be at Cromwell's, waiting for an order. ~
+Миссис Крагмун призналась, что заколдовала сирену Эйрин и придала ей облик тролля мощным заклинанием, которое создала ведьма по имени Агнес. Благодаря этому заклятью сирена даже после смерти будет выглядеть как тролль. Мы решили расколдовать Эйрин, но не смогли добыть у миссис Крагмун свиток. Придется рассказать все Лорио и пусть он действует сам. Он должен быть у Кромвеля, ждет там какой-то заказ.~
 
-@1091 = ~Siren’s Silence
+@1091 = ~Молчание сирены
 
-Lorio attacked Mrs. Cragmoon after learning what she had done. As a result, the guards arrested him and took him to prison. After that, Kragmoon gave me the shape change scroll. It remains to read it and disenchant the siren. ~
+Лорио напал на миссис Крагмун, узнав, что она сделала. В итоге стражники его арестовали и увели в тюрьму. А Крагмун после этого отдала мне свиток смены формы. Осталось прочитать его и расколдовать сирену.~
 
-@1092 = ~Siren’s Silence
+@1092 = ~Молчание сирены
 
-We managed to disenchant Eirin's siren and restore her to her true form. But Lorio remains in prison, he ought to visit him and tell him that his beloved is saved. ~
+Нам удалось расколдовать сирену Эйрин и вернуть ей истинный облик. Но Лорио остается в тюрьме, надо бы его проведать и рассказать, что возлюбленная спасена.~
 
-@1093 = ~Siren’s Silence
+@1093 = ~Молчание сирены
 
-We managed to disenchant Eirin's siren and restore her to her true form. They met with Lorio and left together, rewarding me for my efforts and thanks many times. A happy ending to a story about the power of love and revenge ... ~
+Нам удалось расколдовать сирену Эйрин и вернуть ей истинный облик. Они встретились с Лорио и вместе ушли, наградив меня за труды и много раз благодаря. Счастливый конец истории о силе любви и мести...~
 
-@1094 = ~Siren’s Silence
+@1094 = ~Молчание сирены
 
-We visited Lorio in prison and told him everything that happened. When he is free, they will be together again. Well... a happy ending to a story about the power of love and revenge. ~
+Мы проведали Лорио в тюрьме и рассказали ему обо всем, что произошло. Когда он освободится, они снова будут вместе. Что ж... Счастливый конец истории о силе любви и мести.~
 
-@1095 = ~Siren’s Silence
+@1095 = ~Молчание сирены
 
-With the help of the thief girl Mod, we got a scroll from Mrs. Cragmoon that can disenchant a troll, we just have to use it. ~
+С помощью девочки-воровки Мод мы добыли у миссис Крагмун свиток, который может расколдовать тролля, осталось его использовать.~
 
-@1096 = ~Siren’s Silence
+@1096 = ~Молчание сирены
 
-Lorio attacked Mrs. Cragmoon after learning what she had done. As a result, the guards arrested him and took him to prison. After that, Cragmoon gave me the shape change scroll. But I got tired of this story, so it was decided to keep the scroll and sell it. Enough charity! This story is over. ~
+Лорио напал на миссис Крагмун, узнав, что она сделала. В итоге стражники его арестовали и увели в тюрьму. А Крагмун после этого отдала мне свиток смены формы. Но мне надоела эта история, поэтому было решено оставить свиток себе и продать его. Хватит благотворительности! Этой истории конец.~
 
-@1097 = ~Lorio Sword
+@1097 = ~Меч Лорио
 
-Lorio said that he would ask Cromwell to give me a sword that he made for him to order. I should go in and pick it up. ~
+Лорио сказал, что попросит Кромвеля отдать мне меч, который тот делал для него на заказ. Надо бы зайти и забрать его.~
 
-@1098 = ~Lorio Sword
+@1098 = ~Меч Лорио
 
-Cromwell gave me the sword he was preparing for Lorio, since he did not need it after the happy ending of his love story. The blade is not bad and can come in handy on your travels. ~
+Кромвель отдал мне меч, который готовил для Лорио, раз ему он не понадобился после счастливой концовки его истории любви. Клинок неплох и может пригодится в странствиях.~
 
-@1099 = ~Nothing comes without a price
+@1099 = ~За все надо платить
 
-I met a half-orc collector named Jackal. I asked for help in collecting debts from two defaulters - if I help, then part of the award will go to me. And then he promises some serious business. I have little desire to work as a collector, but extra money will not hurt. The first debtor's name is Lawrence, he is somewhere near the temple of Helm in the Most area. And the second is called Kors, but he disappeared and, perhaps, it is better to talk to his wife, she may know something. Her name is Sheila and she is somewhere in the Slums. When both debts are repaid, you must meet with the Jackal on the roof of the Copper Coronet. ~
+Мне встретился полуорк-коллектор по имени Шакал. Попросил помочь ему во взыскании долгов с двух неплательщиков - если я помогу, то часть награды достанется мне. А еще потом он обещает какое-то серьезное дело. У меня мало желания работать коллектором, но лишние деньги не помешают. Первого должника зовут Лоренс, он где-то у храма Хельма в районе Моста. А второго зовут Корс, но он пропал и, возможно, лучше поговорить с его женой, она может что-то знать. Ее зовут Шейла и она где-то в Трущобах. Когда оба долга будут возвращены, надо встретиться с Шакалом на крыше Медной Короны.~
 
-@1100 = ~Nothing comes without a price
+@1100 = ~За все надо платить
 
-I managed to get back 700 coins that the elf Lawrence owed the bank. True, for this it was necessary to become accomplices in the grave digging. When both debts are repaid, you must meet with the Jackal on the roof of the Copper Coronet. ~
+Мне удалось вернуть 700 монет, которые эльф Лоренс задолжал банку. Правда, для этого пришлось стать соучастниками гробокопательства. Когда оба долга будут возвращены, надо встретиться с Шакалом на крыше Медной Короны.~
 
-@1101 = ~Nothing comes without a price
+@1101 = ~За все надо платить
 
-The debts are returned and the Jackal will transfer them to the bank. I managed to find the bandits who killed Kors and took the money from them. His widow, Sheila, will have to do without them - how she gets along with her two children without money is no longer my concern. ~
+Долги возвращены и Шакал передаст их в банк. Мне удалось найти бандитов, убивших Корса, и забрать у них деньги. Его вдове, Шейле, придется обойтись без них - как она проживет с двумя детьми без денег, меня уже не касается.~
 
-@1102 = ~Nothing comes without a price
+@1102 = ~За все надо платить
 
-The debts are returned and the Jackal will transfer them to the bank. I managed to find the bandits who killed Kors and took the money from them. His widow Sheila needs them more than me, so it was decided to give 180 coins to her, and to pay the Jackal out of his own. ~
+Долги возвращены и Шакал передаст их в банк. Мне удалось найти бандитов, убивших Корса, и забрать у них деньги. Его вдове Шейле они нужнее, чем мне, так что было решено отдать 180 монет ей, а с Шакалом расплатиться из своих.~
 
-@1103 = ~Nothing comes without a price
+@1103 = ~За все надо платить
 
-The debts are returned and the Jackal will transfer them to the bank. I managed to find the bandits who killed Kors and took the money from them. And also to make a donation to Kors' widow, Sheila, so she can move out of the Slums to a better area. ~
+Долги возвращены и Шакал передаст их в банк. Мне удалось найти бандитов, убивших Корса, и забрать у них деньги. И еще сделать пожертвование вдове Корса, Шейле, чтобы она смогла перебраться из Трущоб в район получше.~
 
-@1104 = ~Combat the Collector
+@1104 = ~Битва со Сборщиком
 
-Together with the half-orcs, I managed to deal with the group of the Collector, who was the rival of the Jackal. I don’t know why we got involved in this at all, but my instinct told me that it could be useful in the future. ~
+Мне удалось вместе с полуорками расправиться с группой Сборщика, который был конкурентом Шакала. Не знаю, зачем мы в это вообще ввязались, но чутье подсказало мне, что от этого может быть польза в дальнейшем.~
 
-@1105 = ~Pirate Legacy
+@1105 = ~Пиратское наследие
 
-Shahbaz, the head of security at the Athkatla branch of the First Calimport Bank, asked me to find one of the bank's debtors, a pirate named Fayaz, and get the money out of him. You can find it somewhere in Brynnlaw. If I get there, I have to do it. ~
+Шахбаз, начальник охраны филиала Первого Калимпортского банка в Аткатле, попросил меня найти одного из должников банка, пирата по имени Фаяз, и выбить из него деньги. Найти его можно где-то в Бриннлоу. Если попаду туда, надо этим заняться.~
 
-@1106 = ~Call to bank
+@1106 = ~Вызов в банк
 
-A courier from the bank said that Shahbaz, the head of security at the Athkatla branch of the First Calimport Bank, wanted to meet me in person. What does that mean? There is only one way to find out. ~
+Курьер из банка сообщил, что Шахбаз, начальник охраны филиала Первого Калимпортского банка в Аткатле, хочет со мной встретиться лично. Что бы это значило? Есть лишь один способ узнать.~
+
 
 @10000000 = ~~
-@10000001 = ~Statue: %z_strref%~
+@10000001 = ~Статуя: %z_strref%~
 @10000002 = ~%z_strref% - ~
 @10000003 = ~<AN_TOKEN_2_STATUE>%reg_string%~
 @10000004 = ~<AN_TOKEN_3_STATUE>%reg_string%~
