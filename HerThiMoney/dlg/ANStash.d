@@ -640,23 +640,23 @@ END
 IF ~~ BEGIN ANstashBank1
 SAY @107
 = @108
-IF ~~ THEN REPLY @109 + ANstashBank2 
+IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1)~ REPLY @109 + ANstashBank2 
 IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1)~ REPLY @110 + ANstashBank2
 IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1)~ REPLY @111 + ANstashBank2
 IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1)~ REPLY @112 + ANstashBank2
 IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1)~ REPLY @113 + ANstashBank2
 IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1)~ REPLY @114 + ANstashBank2
-IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1)~ REPLY @115 + ANstashBank2
+IF ~~ THEN REPLY @115 + ANstashBank2
 IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1)~ REPLY @116 + ANstashBank2
 IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1)~ REPLY @117 + ANstashBank2
 END
 
 IF ~~ BEGIN ANstashBank2
   SAY @118
-IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1)~ REPLY @109 + ANstashBank3 
+IF ~~ THEN REPLY @109 + ANstashBank3 
 IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1)~ REPLY @110 + ANstashBank3
 IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1)~ REPLY @111 + ANstashBank3
-IF ~~ THEN REPLY @112 + ANstashBank3
+IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1)~ REPLY @112 + ANstashBank3
 IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1)~ REPLY @113 + ANstashBank3
 IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1)~ REPLY @114 + ANstashBank3
 IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1)~ REPLY @115 + ANstashBank3
@@ -667,11 +667,11 @@ END
 IF ~~ BEGIN ANstashBank3
   SAY @119
 IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1)~ REPLY @109 + ANstashBank4 
-IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1)~ REPLY @110 + ANstashBank4
+IF ~~ THEN REPLY @110 + ANstashBank4
 IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1)~ REPLY @111 + ANstashBank4
 IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1)~ REPLY @112 + ANstashBank4
 IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1)~ REPLY @113 + ANstashBank4
-IF ~~ THEN REPLY @114 + ANstashBank4
+IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1)~ REPLY @114 + ANstashBank4
 IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1)~ REPLY @115 + ANstashBank4
 IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1)~ REPLY @116 + ANstashBank4
 IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1)~ REPLY @117 + ANstashBank4
@@ -679,7 +679,7 @@ END
 
 IF ~~ BEGIN ANstashBank4
   SAY @120
-IF ~~ THEN REPLY @109 + ANstashBank5 
+IF ~~ THEN REPLY DO ~ActionOverride(Player1,SetDialog("PLAYER1"))~ @109 + ANstashBank5 
 IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1) ActionOverride(Player1,SetDialog("PLAYER1"))~ REPLY @110 + ANstashBank5
 IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1) ActionOverride(Player1,SetDialog("PLAYER1"))~ REPLY @111 + ANstashBank5
 IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1) ActionOverride(Player1,SetDialog("PLAYER1"))~ REPLY @112 + ANstashBank5
@@ -692,9 +692,9 @@ END
 
 IF ~~ BEGIN ANstashBank5
   SAY @121
-IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1) ActionOverride(Player1,SetDialog("PLAYER1"))~ REPLY @109 EXTERN PLAYER1 ANstashBank6 
+IF ~~ THEN DO ~ActionOverride(Player1,SetDialog("PLAYER1"))~ REPLY @109 EXTERN PLAYER1 ANstashBank6 
 IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1) ActionOverride(Player1,SetDialog("PLAYER1"))~ REPLY @110 EXTERN PLAYER1 ANstashBank6
-IF ~~ THEN DO ~ActionOverride(Player1,SetDialog("PLAYER1"))~ REPLY @111 EXTERN PLAYER1 ANstashBank6
+IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1) ActionOverride(Player1,SetDialog("PLAYER1"))~ REPLY @111 EXTERN PLAYER1 ANstashBank6
 IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1) ActionOverride(Player1,SetDialog("PLAYER1"))~ REPLY @112 EXTERN PLAYER1 ANstashBank6
 IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1) ActionOverride(Player1,SetDialog("PLAYER1"))~ REPLY @113 EXTERN PLAYER1 ANstashBank6
 IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1) ActionOverride(Player1,SetDialog("PLAYER1"))~ REPLY @114 EXTERN PLAYER1 ANstashBank6
