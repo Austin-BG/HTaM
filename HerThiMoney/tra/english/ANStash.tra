@@ -161,8 +161,8 @@
 @143 = ~No. Renal won't get anything from here! ~
 @144 = ~Yes, you have to give up some. We had a deal. ~
 @145 = ~Whatever you say ~
-@146 = ~I have an idea. Must visit the graveyard. ~
-@147 = ~To the graveyard? Yes, I also wanted to propose this option. (What, nine hells, is he up to it? Why are we in the graveyard?) ~
+@146 = ~I have an idea. We should visit the graveyard.~
+@147 = ~The graveyard? Yes, I also wanted to propose this option. (What in the nine hells is <PRO_HESHE> up to? Why are we going to the graveyard?)~
 
 // Graveyard
 @148 = ~(You walk through the graveyard and stop at a tombstone near the entrance. ~
@@ -187,18 +187,18 @@
 @165 = ~We have completed our mission, Renal. ~
 @166 = ~Glad to hear that. And what is the result? ~
 @167 = ~We found his stash in the graveyard. It was empty. Apparently, Mae'Var, in the last month for him, took care of strengthening his guild. He hired half a dozen new men and paid bonuses to his most loyal fighters. He also discussed with Edwin the purchase of powerful magical artifacts. All this, of course, required money - and, apparently, Mae'Var paid with his own. ~
-@168 = ~That's how it is. Well, that sounds pretty neat. Batch, do you have anything to add? ~
+@168 = ~So, that's how it is. Well, sounds pretty neat. Batch, do you have anything to add? ~
 @169 = ~Yes, one trifle. (Batch pushes Hurp forward). Look, <CHARNAME>, who we found. He told us about the agreement with the bank - the same one near which you were recently seen. ~
 @170 = ~(Hurp moves his broken lips with difficulty) These ones ... were asking about Mae'Vara ... they took the agreement with the bank ... and the guild's records. ~
 @171 = ~You don't have to say anything, <CHARNAME>. You're only going to stay safe because my boss has plans for you. I will not make this case public. But you will give me all the Mae'Var stones. ~
 @172 = ~We found his cache. It was not money, but precious stones. This inventory was attached to them. Here's your piece, Renal. ~
-@173 = ~That's how it is. Well, that sounds pretty neat. We examined this cache, it is empty. It looks like Mae'Var scooped up all the cash he had on his bet. But I still lost. ~
+@173 = ~That's how it is. Well, that sounds pretty neat. We examined the cache and it turned out empty. Looks like Mae'var wasted all the cash he had on his bet, but he still lost.~
 @174 = ~Since there is no money, there is no reward. That was our agreement with you. Cheer up <CHARNAME>, we don't always get what we want. But at least this question with the cache was closed. Have a nice day. ~
-@175 = ~Nice work. I bet on you for a reason. By the way, my people found the treasurer Mae'Var, he told us about the bank. Probably, it was difficult to get money from there, eh, <CHARNAME>? But it doesn't matter. I got mine. Consider you and I counting. ~
-@176 = ~And one more thing. I've got the Mae'Var guild's records for 1369 here. ~
-@177 = ~Interesting to see. I'll throw another two hundred coins for her. Have a nice day ~
+@175 = ~Nice work. I bet on you for a reason. By the way, my people found Harp, Mae'var's treasurer. He told us about the bank. It was probably difficult to get the money stashed there, eh, <CHARNAME>? But it doesn't matter. I got mine. This make us square.~
+@176 = ~One more thing: I've got Maevar guild's record for the year 1369 here.~
+@177 = ~Interesting piece. I'll throw another two hundred coins for it.  Have a nice day.~
 @178 = ~You will no longer be able to trade with my people, and you will never, hear me - never get any support from me and my guild. This is where we end up. ~
-@179 = ~Nice work. No wonder I bet on you. I got mine - consider me and you in the calculation. ~
+@179 = ~Nice work. No wonder I bet on you. I got mine - this make us square. ~
 @180 = ~Yes, one more thing. Where did you find Mae'Var's stash? ~
 @181 = ~At the bank. Edwin had Mae'Var's contract with him, he took it from the guild. We decided to check what was in the bank and found the stones. ~
 @182 = ~Did Mae'Var keep the stones in a jar? In the eastern one that recently opened? ~

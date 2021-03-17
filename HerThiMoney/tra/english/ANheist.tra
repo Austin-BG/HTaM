@@ -3,15 +3,15 @@
 // Yantina
 @0 = ~Hello <CHARNAME>. Could you find Owney? He has an important conversation with you. ~
 @1 = ~I see you haven't changed much, Yantina. ~
-@2 = ~Jaheira!? I'm surprised to see familiar face!~
+@2 = ~Jaheira!? I'm surprised to see a familiar face!~
 @3 = ~We certainly banished you for a reason. Now you're collecting debts with your partner. ~
 @4 = ~I thank the gods every day that I'm no longer with the Harpers. Listening to your endless instructions day after day... never again! As for my partner, he's doing quite well. We have a great job now, and we are together. Can you say the same about yourself, Jaheira? Probably still kicking yourself while doing endless errands from your superiors. ~
-@5 = ~(Jaheira is silent for a moment, pondering what he has heard. Then, she begins to speak, suppressing her anger with difficulty) You have no principles and never have, you two-faced wretch! You seduced a good man, you stole from us, and now you stand here and mock me! ~
+@5 = ~(Jaheira is silent for a moment, pondering what he has heard. Then, she begins to speak, suppressing her anger with difficulty) You had no principles and you'll never have them, you two-faced wretch! You seduced a good man, you stole from us, and now you stand here and mock me! ~
 @6 = ~(You decide to end this argument before it becomes a fight and forcefully pull Jahera aside) ~
 @7 = ~Get your hands off me! I will say what I like! ~
 @8 = ~You've already told her how you feel, Jaheira. We have better things to do right now, so pull yourself together. You say you banished her? What's done is done, leave it behind you! ~
 @9 = ~She can't be trusted in anything! She betrayed us! ~
-@10 = ~That's all in the past. Do me a favor and concentrate on our CURRENT problems ~
+@10 = ~That's all in the past. Do me a favor and concentrate on our CURRENT problems.~
 @11 = ~(Slowly and reluctantly calming down) Okay... You're right. Let's move on. ~
 @12 = ~Come on, girls, fight! Don't ruin the show, <CHARNAME>, har har!~
 
@@ -51,30 +51,30 @@
 @35 = ~Shadow Druids? Why would they want to rob a bank?~
 @36 = ~I must ask - where did you get this information? Either you have the gift of foresight, or...~
 @37 = ~I have no idea. Maybe they need the money to save the forest from being cut down, maybe they need to cure a dragon of the clap, who knows. It doesn't matter. The main thing is that they are planning it. ~
-@38 = ~The Druids were ratted by the Shadow Thieves in exchange an opportunity to get our old jobs as debt collectors. Our promotion left a lot of empty positions. ~
+@38 = ~The Druids were ratted by the Shadow Thieves in exchange of an opportunity to get our old jobs as debt collectors. Our promotion left a lot of empty positions. ~
 @39 = ~Why would the Shadow Thieves want these jobs? ~
 @40 = ~(Owney hesitates visibly before continuing) Okay ... I'll tell it to you straight. ~
 @41 = ~An order was issued from above not to hire anyone from Amn. They even sent us a janitor from Calimshan, so they certainly wouldn't let us hire local security. Calimport doesn't want to get involved with the Shadow Thieves; we rely on the Council of Six here, and the branch was opened entirely with their permission. The thieves desperately want some of their people on the inside, even if they are in lower positions. ~
 @42 = ~In exchange for the information I received from them, I agreed to recommend them to the superiors as Tethyrians - the same as us. (Owney grins wryly) Of course, they'll have to be watched closely in the future, but that was the deal. ~
 @43 = ~You say the thieves gave up the druids - so the druids turned to them for help, right? ~
 @44 = ~Exactly. The druids got the information I sent them through the thieves. In fact, their plan was made with my help. They want to get into the bank through the basement, for which they rented the house across the street. They've been digging from there for three days now. ~
-@45 = ~They're digging with an ankeg - they brought it into town as an exotic animal and have already dug a hundred feet with it. Today, their digging will be completely finished. After we close, they'll break up the stonework in the basement, probably with plant roots or something, and then they'll be in. ~
+@45 = ~They're digging with an ankheg - they brought it into town as an exotic animal and have already dug a hundred feet with it. Today, their digging will be completely finished. After we close, they'll break up the stonework in the basement, probably with plant roots or something, and then they'll be in. ~
 @46 = ~How do you know that the tunnel is ready? ~
 @47 = ~It's simple. They took the ankheg out of town - they must have let the thing go free. So if it's no longer needed, it's already done its job. ~
 @48 = ~That makes sense. What about the building's magical defenses? Won't that stop them? ~
-@49 = ~No, it won't. The bank's protection is on three levels: these are runes that absorb magic directed against the walls and foundations of the building, and there are runes that distort spatial spells. I was told about a mage-robber from Suldolphor who once tried to open a gate from the street to the bank and ended up inside a wall. Terrible way to go.. ~
+@49 = ~No, it won't. The bank's protection is on three levels: there are runes that absorb magic directed against the walls and foundations of the building, and there are runes that distort spatial spells. I was told about a mage-robber from Suldolphor who once tried to open a gate from the street to the bank and ended up inside a wall. Terrible way to go.. ~
 @50 = ~And the third level? ~
-@51 = ~The third level is the runes that block magic inside the building. However, there aren't any of those runes here - it's just a rumor. We disrupted them ourselves as a protective measure. ~
+@51 = ~The third level is supposed to have runes that block the use of magic inside the building. It's not a rumor, but we have already took care of them by disrupting them.~
 @52 = ~Wait, but you just said yourself that there are runes protecting the walls of the bank. How will the druids break through then?~
 @53 = ~I disrupted the rune below. The thieves, in turn, lied to the druids that there were no runes in the basement. ~
 @54 = ~How do you explain the disrupted rune to the management? After all, that could only be done from the inside. ~
 @55 = ~I'll tell them a story about a senior clerk conspiring with robbers. A stupid, greedy clerk who wanted to get everything in the vault at once. ~
 @56 = ~I don't understand. Is he really their accomplice?~
 @57 = ~No, but he does have the spare key to the vault. I wasn't supposed to know that there was a second key, but Esra managed to sniff it out. I handed the druids this clerk, Gazir, on a platter. Of course, he has a bank security guard who escorts him to his home, but that will not help him much. The druids will intercept him on the way home, knock him out, and take the key. ~
-@58 = ~In the morning, Jalut will explain the trouble he's in. Gazir is cowardly, so he will certainly run, and he won't stop until he reaches ... I don't know, probably Rashemen. ~
+@58 = ~In the morning, Jalut will explain the trouble he's in. Gazir is a coward, so he will certainly run and won't stop until he reaches .... I don't know, Rashemen, probably.~
 @59 = ~I understand. What about the head of the guard? You're going to bury him, too. I assume you're aiming to become the new head?~
 @60 = ~This is not the first mistake that fat hog's made at this post, but he'll never be forgiven for missing an attempted robbery. And they would never appoint a rookie in his place. ~
-@61 = ~A new head of security will be sent here from Tethyr. I know the candidate; he is a former adventurer. When I prevent the robbery, it should be easy for me to secure the position as his right hand, and that will allow me to fulfil my part of my deal with the thieves. ~
+@61 = ~A new head of security will be sent here from Tethyr. I know the candidate; he is a former adventurer. When I prevent the robbery, it should be easy for me to secure the position as his right hand, and that will allow me to fulfill my part of my deal with the thieves. ~
 @62 = ~I see that you've thought this through. ~
 @63 = ~(Owney looks anxious and extremely tired. You suddenly realize how difficult it was for him to confide in you. After a moment, the priest speaks to you again in a more confidential tone) ~
 @64 = ~Listen, <CHARNAME>, you know how it is. You are an adventurer yourself, just like I was. But that's all in the past now. We've all decided to settle here in Athkatla and end our travels. ~
@@ -102,7 +102,7 @@
 @86 = ~Easy, <PRO_BROTHERSISTER>. I only work in a bank, I don't own it. I don't have that much. We can agree on 1,200. ~
 @87 = ~We don't have that much up front, so far we've only been paid a small advance. We can pay 600 on completion and the rest in a week. We will also leave you all the druid's equipment, except for the armor and weapons of the leader. ~
 @88 = ~You got a deal. ~
-@89 = ~I've already discussed with my men what we will do, so now I need to talk it over with you. We will attack first, giving them no time to recover. First, you need to kill the leader-druid; you will recognize him by the green armor from an ankeg. He will most likely be armed with a scimitar. ~
+@89 = ~I've already discussed with my men what we will do, so now I need to talk it over with you. We will attack first, giving them no time to recover. First, you need to kill the leader-druid; you will recognize him by the green armor from an ankheg. He will most likely be armed with a scimitar. ~
 @90 = ~What else can you tell us about these druids? ~
 @91 = ~Actually, there is only one druid and his apprentice or assistant - I have no idea how the druids hierarchy works. They also have a wolf. They always keep their animals with them. So I wouldn't be surprised if they bring him along. ~
 @92 = ~The bad news is, this bastard hasn't been idle. He's hired six soldiers, Tethyrian mercenaries. He's paid them in advance, and he's almost certainly promised a share from the vault. ~
@@ -191,20 +191,20 @@
 @164 = ~Good luck! ~
 
 // Esra
-@165 = ~ Hello, hello! ~
-@166 = ~ Tell me about yourself, Esra. ~
-@167 = ~ Why did you join this group? ~
-@168 = ~ <CHARNAME>, take care of this matter with Owney, it's important. ~
-@169 = ~ I just came over to say hello. ~ ~ I just came over to say hello. ~
-@170 = ~ I'm from Tethyr. From a family of thieves - that's why I chose the same craft for myself. My parents did not teach me anything else, because they could not do anything else themselves. ~
-@171 = ~ They once saved me from prison. Since then we have been together, and I couldn't ask for better friends. And they need my help - when there was absolutely nothing to eat, I got us all the food I could. ~
-@172 = ~ Everyone survives as best they can. And it's easier to survive together. ~
-@173 = ~ I didn't like beating the last coins out of the poor, so it's much better here. A bit boring though. ~
-@174 = ~ And there is less risk to life here than on the streets. ~
-@175 = ~ Got it. I didn't know my parents at all, so don't blame yours - at least they were there.~ 
-@176 = ~ Is there anything else you want to ask? ~
-@177 = ~ No, I think I'll be going now. ~
-@178 = ~ Good luck! ~
+@165 = ~Hello, hello! ~
+@166 = ~Tell me about yourself, Esra. ~
+@167 = ~Why did you join this group? ~
+@168 = ~<CHARNAME>, take care of this matter with Owney, it's important. ~
+@169 = ~I just came over to say hello. ~ ~ I just came over to say hello. ~
+@170 = ~I'm from Tethyr. From a family of thieves - that's why I chose the same craft for myself. My parents did not teach me anything else, because they could not do anything else themselves. ~
+@171 = ~They once saved me from prison. Since then we have been together, and I couldn't ask for better friends. And they need my help - when there was absolutely nothing to eat, I got us all the food I could. ~
+@172 = ~Everyone survives as best they can. And it's easier to survive together. ~
+@173 = ~I didn't like beating the last coins out of the poor, so it's much better here. A bit boring though. ~
+@174 = ~And there is less risk to life here than on the streets. ~
+@175 = ~Got it. I didn't know my parents at all, so don't blame yours - at least they were there.~ 
+@176 = ~Is there anything else you want to ask? ~
+@177 = ~No, I think I'll be going now. ~
+@178 = ~Good luck! ~
 
 // Jalut
 @179 = ~Hello! ~

@@ -827,7 +827,7 @@ You are different flight, dear birds!'~
 @768 = ~(earful of great pain, you spill everything you know these people expect of you... and there is nothing else in the world but darkness and despair) ~
 @769 = ~Great job, <CHARNAME>... I can only thank you. And say goodbye to you. Die... ~
 @770 = ~Well, of course I expected something like this. So sorry <CHARNAME>... ~
-@771 = ~(The pain pierces your insides, bites into the flesh, does not allow breathing, and a dark sensation covers you - t's been there before, Irenicus, his experiments... But you endured it then - what else was left? And now, for Aran's sake...) ~
+@771 = ~(The pain pierces your insides, bites into the flesh, makes you unable to breath. You feel a dark sensation - you already met it during Irenicus's experiments... There was no choice. And now you endure for Aran's sake...) ~
 @772 = ~Will you talk? ~
 @773 = ~(No reply) ~
 @774 = ~No. ~
@@ -883,7 +883,7 @@ Aran"~
 @817 = ~What's up?~
 @818 = ~I've gotten myself into an unpleasant adventure here... ~
 @819 = ~(You tell your friends everything that happened to you) ~
-@820 = ~rom now on, we must triple our vigilance and not be caught off guard. We are surrounded by enemies. Let's not forget that. ~
+@820 = ~From now on, we must triple our vigilance and not be caught off guard. We are surrounded by enemies. Let's not forget that. ~
 @821 = ~(There are great challenges ahead... Before you go to Elhan, you decide to rest in the forest and recuperate) ~
 @822 = ~How's it going?~
 @823 = ~Don't you want to talk yet? ~

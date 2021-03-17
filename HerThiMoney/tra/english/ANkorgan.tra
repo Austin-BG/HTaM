@@ -46,7 +46,7 @@
 @40 = ~Korgan, stand back! ~
 @41 = ~(Grudgingly steps back from Owney.) ~
 @42 = ~(With a grin) That's better. Well, how will you pay? ~
-@43 = ~This is the total debt. ~
+@43 = ~Here are all the 5000 gold coins you need.~
 @44 = ~We don't have five thousand with us ... ~
 @45 = ~Then let's split the debt into four parts. You pay 1000 now, and you can pay 1000 a week. You can pay directly to the bank, if you like. ~
 @46 = ~That is... perfectly acceptable. I think we'll be able to pay it back. ~
@@ -59,13 +59,13 @@
 @53 = ~What exactly do you want? ~
 @54 = ~(Silently hand over the money - a thousand coins) ~
 @55 = ~There's another group of collectors that must be eliminated. They're a big problem for us. ~
-@56 = ~Why would you kill your own? Whar's your trouble with them?~
+@56 = ~Why would you kill your own? What's your trouble with them?~
 @57 = ~(A fleeting, contemptuous chuckle appears on the priest's face) This Amn is a filthy sewer. You don't see 'our own' here very often, just everyone fighting against everyone else. ~
 @58 = ~You're not from Amn yourself? ~
 @59 = ~No, we're not from here. Usually the bank has to hire local collectors, but not here, not in Athkatla. The Council of Six offered their own people, from the city guard, I think, but they turned out to be of little use for such a 'job'. Then they sent for us. ~
-@60 = ~(In an undertone to you) He has a Tethyrian accent alright. ~
+@60 = ~(In an undertone to you) He has an alright Tethyrian accent. ~
 @61 = ~So, to the point. There are six of them in total, and their leader is the Collector who escaped from Sigil. ~
-@62 = ~(Noticing your surprised look, Owney smiles weakly.) Don't ask me where that is, or how he got to Amn from there - I don't know. At home, he apparently collected corpses. ~
+@62 = ~(Noticing your surprised look, Owney smiles weakly.) Don't ask me where Sigil is, or how the Collector arrived to Amn from there - I don't know. At home, he collected corpses, apparently.~
 @63 = ~Do you know anything about Collectors, bard? You're from those lands.~
 @64 = ~Not much, really. The Gatherers deal with death. Their job is to deliver the bodies to their last harbor - the Mortuary. They pay well there for the dead. They are quite dangerous, my raven> Sometimes there are those among them who not only find corpses... but also escort the living on the Path of Death. ~
 @65 = ~Tramps, beggars, careless travelers, killed and stripped naked, then ending up on the morgue's cutting table ... (Tiefling shudders as if chilled) ~
@@ -119,8 +119,8 @@
 @111 = ~That's it, Korgan. No more debt. ~
 @112 = ~That's a mountain lifted off my shoulders! We should celebrate with a keg of good ale, and not just one! ~
 @113 = ~(Korgan is silent for a while, then, struggling to find his words, begins to speak) I... thank you, surfacer. You helped me, and I will not forget it. We dwarves have better memories than anyone else, be sure!~
-@114 = ~Ideed, why not celebrate? One of these days, when we get things sorted out. ~
-@115 = ~Be careful what you borrow from someone from now on, Korgan. Otherwise, you might end up much worse off. ~
+@114 = ~Indeed, why don't we celebrate? This is one of these days, when we get things sorted out.~
+@115 = ~Be careful of what you borrow from someone from now on, Korgan. Otherwise, you might end up much worse off. ~
 @116 = ~Yes, Korgan, I would like to take this opportunity to advise you to contact my cousin - he is an experienced businessman and can give you a couple of financial literacy lessons. You name it, about cannons and oil and all that. Usually he teaches kids, but since you are small, you will not stand out. So I don't think he's going to object. And then, you see, you can also open your own business, start selling turnips, get married ... ~
 @117 = ~Shut up, gnome! Trade your turnips yourself, I won't listen to the chatter of pigs! Money is needed only for one thing - to spend it on beer and women! ~
 @118 = ~You only need money for one thing - to spend it on beer and women! ~

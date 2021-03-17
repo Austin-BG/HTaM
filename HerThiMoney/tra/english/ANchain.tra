@@ -5,7 +5,7 @@
 @3 = ~How do you know me? ~
 @4 = ~Your name is not well-known in Athkatla... yet. But I know that you came here from the north, from Baldur's Gate. I also know that you need money fast. I have something to offer you. ~
 @5 = ~So you've been following me! I don't like this at all. You'll have to explain yourself, orc. ~
-@6 = ~(Jackal raises his hand in warning) Wait, listen first! The there are many eyes watching you here: thieves, a bank, and many others. I was assigned to follow you, and I followed my orders. But as you can see, I myself voluntarily came out of the shadows. These are troubled times for everyone, and in them I see opportunity. Opportunity to rise up and get rich. ~
+@6 = ~(Jackal raises his hand in warning) Wait, listen first! There are many eyes watching you here: thieves, a bank, and many others. I was assigned to follow you and I followed my orders. But as you can see, I came out of the shadows voluntarily. These are troubled times for everyone, and in them I see opportunity. Opportunity to rise up and get rich. ~
 @7 = ~The conversation is over. I will give you and your scum only one opportunity to clear this street. ~
 @8 = ~Well, half-orc, you've got an uncommon knack for words. Tell us more. ~
 @9 = ~(You see frustration and anger on the Jackal's face, followed by feigned humility) Yes, <PRO_SIRMAAM>, as you wish. We're leaving.~
@@ -13,14 +13,14 @@
 @11 = ~Collecting debt? Why would I get my hands dirty with this? Do you think I have nothing better to do than chase debtors around Athkatla!?~
 @12 = ~Of course, we'd normally do it ourselves, <PRO_SIRMAAM>, but now we need speed more than ever. These debts must be collected as soon as possible! After that, we will have a chance to turn this around, and I will be able, I swear, to offer you a much more serious matter! ~
 @13 = ~So why is there such a rush? As far as I know, these are long-term cases. Debtors sometimes pay only interest for years. And what is this more serious matter?~
-@14 = ~I'll explain, if you please. The one who gives us orders, Mr. Shahbaz, is the head of security of the bank that I work for. We deal here with debtors ad much more.  Anyway, we've been managing, but there's someone in the way... someone called The Collector. Like us, he's a debt collector, but we've got no idea where he came from. He started bringing it... a lot... and quickly rose up the ranks. Praise to Gruumsh, his assignment to guard the vault failed, or he would have been out of our reach! ~
+@14 = ~I'll explain, if you please. The one who gives us orders, Mr. Shahbaz, is the head of security of the bank that I work for. We deal here with debtors and much more.  Anyway, we are doing well, but there's someone in the way... someone called The Collector. Like us, he's a debt collector, but we've got no idea where he came from. He started bringing it... a lot... and quickly rose up the ranks. Praise to Gruumsh, his assignment to guard the vault failed, or he would have been out of our reach! ~
 @15 = ~So he rubbed your noses in his success, this Collector? ~
 @16 = ~Yes, <PRO_SIRMAAM>, but only for now. Despite his successes, he hasn't gotten strong enough yet. There is an opportunity to hit him now, and it will benefit both of us, <PRO_SIRMAAM>! ~
 @17 = ~(With difficulty calming himself, the half-orc continues his dialogue) Forgive me, <PRO_SIRMAAM>. When we have collected our debts and proven our worthiness to Master Shahbaz, I shall finally have the opportunity to deal with the Collector! But right now we need to collect the debts quickly. ~ ~ (With difficulty calming himself, the half-orc continues his dialogue) Forgive me, madam. When we have collected our debts and proven our worthiness to Master Shahbaz, I shall finally have the opportunity to deal with the Collector! But right now we need to collect the debts quickly. ~
 @18 = ~Why don't you finish off the Collector yourself? ~
 @19 = ~It's not that easy. He is a mighty warrior, and his men are experienced fighters. But if we go up against him with you, that bastard won't stand a chance. Rumors about you say that you've fought far more powerful enemies! ~
 @20 = ~The rumors about us don't lie. How many men does he have? ~
-@21 = ~Five, <PRO_SIRMAAM>. Among them is a spellcaster who is good with magic. He burned the spy I sent to him, but we have managed to get a couple of elixirs that will protect us from fire and allow you to get closer.~
+@21 = ~Five, <PRO_SIRMAAM>. Amongst them there is a spellcaster who is good with magic. He burned the spy I sent him. To make it easier for you to get closer, we retrieved a couple of elixirs that will protect you from fire.~
 @22 = ~So, the Cowled Wizards didn't detain him? ~
 @23 = ~No, <PRO_SIRMAAM>, the Collector's got it covered. He has enough money for more than one license. ~
 @24 = ~(Chuckle) Well, apparently, this Collector is a trickster.  It's doubtful you can beat him, what's-your-name. He'll probably put you in a cell! My answer is no. Get out!~
@@ -35,9 +35,9 @@
 @33 = ~You're right, <PRO_SIRMAAM>, I've spent a lot of time with people and learned a lot from them. But what is your answer to my proposal? ~
 @34 = ~A pity. It would be a profitable venture for you, <PRO_SIRMAAM>. But I will not detain you any longer. (Turning around, the Jackal commands his fighters and they all silently leave the street.) ~
 @35 = ~Good, <PRO_SIRMAAM>. We have several debtors, and we can handle many of them ourselves. But we won't be able to handle two of them in time, and this is where we need help. ~
-@36 = ~The first is Lawrence the elf. Lives in the Bridge District somewhere near the temple of Helm. He owes the bank 500 gold, and it looks like he's not planning to give it back, the bastard. It's up to you to decide how to deal with him, as long as he pays the debt. ~
+@36 = ~The first is Lawrence the elf. He lives in the Bridge District somewhere near the temple of Helm. He owes the bank 500 gold, and it looks like he's not planning to give it back, the bastard. It's up to you to decide how to deal with him, as long as he pays the debt. ~
 @37 = ~The other one's name is Kors. Usually poor people ask for a loan when they have no other choice, but this one is a special case, a real scoundrel. He should have been chased out of the bank, not lent money. And they gave him 200 coins! He must've really worked on the clerk's sense of pity, but now it's up to us to clean it up. ~
-@38 = ~Well, they've already tried to find him, but he seems to have run off somewhere. But his wife's still in town, so try to get the debt out of her. She's in the Slums somewhere. Her name's Sheila. ~
+@38 = ~Well, they've already tried to find him, but he seems to have run off somewhere. But his wife's still in town, so try to get the sum out of her. She's in the Slums somewhere. Her name's Sheila. ~
 @39 = ~When you're done with both, meet me on the roof of the Copper Coronet. Thanks for doing this, <PRO_SIRMAAM>. ~
 @40 = ~Come on guys!~
 
@@ -162,7 +162,7 @@
 @146 = ~This will be a battle worthy of Sir Garrick's poetry! If you do not understand yet, Mr. Collector, we are talking about me. It is a pity that you will not hear the ballad about your death. I promise it will be beautiful and bring us a lot of extra coins. ~
 
 // Additions (Jackal)
-@147 = ~It won't be that hard. The Collector has grown too bold, forgotten about caution. Recently, he came by to laugh at us! He told me that he would lock me in a cage with naught but bones to eat! That he would kill all my brothers in front of me! Rr-agh! (The Jackal interrupts his narration with a growl, completely baring his yellow fangs. His eyes burn with fierce, animal malice towards the Collector) ~
+@147 = ~It won't be that hard. The Collector has grown too bold, forgetting caution. Recently, he came by to laugh at us! He told me that he would lock me in a cage with naught but bones to eat! That he would kill all my brothers in front of me! Rr-agh! (The Jackal interrupts his narration with a growl, completely baring his yellow fangs. His eyes burn with fierce, animal malice towards the Collector) ~
 
 // Courier
 @148 = ~Oh <PRO_LADYLORD> <CHARNAME>, it's you! It took a long time to find you... Phew! I work as a courier at the First Calimport Bank, and I was sent to invite you to a meeting with the head of security, Mr. Shahbaz. He wanted to see you personally. Why? He will tell you, I'm sure, I don't know anything about the details. That's it, I've got to run! ~
