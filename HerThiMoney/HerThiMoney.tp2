@@ -1,7 +1,7 @@
 BACKUP ~HerThiMoney/backup~
 
 AUTHOR ~Austin, Scheele, Alisia & Arcanecoast Team~
-VERSION 2.4
+VERSION 2.5
 
 AUTO_TRA ~HerThiMoney/tra/%s~
 
@@ -1213,11 +1213,11 @@ OUTER_SPRINT ~tilde~ "~"
 
 ACTION_IF ( arr_cnt > 0 ) BEGIN
 	ACTION_PHP_EACH PDIALOG_ARRAY AS dv => jdia BEGIN
-		OUTER_SPRINT ~replies_player2~ ~%replies_player2%== %jdia% IF %tilde%IsValidForPartyDialog(Player2) Name("%dv%",Player2)%tilde% THEN @813%LNL%~
-		OUTER_SPRINT ~replies_player3~ ~%replies_player3%== %jdia% IF %tilde%IsValidForPartyDialog(Player3) Name("%dv%",Player3)%tilde% THEN @814%LNL%~
-		OUTER_SPRINT ~replies_player4~ ~%replies_player4%== %jdia% IF %tilde%IsValidForPartyDialog(Player4) Name("%dv%",Player4)%tilde% THEN @815%LNL%~
-		OUTER_SPRINT ~replies_player5~ ~%replies_player5%== %jdia% IF %tilde%IsValidForPartyDialog(Player5) Name("%dv%",Player5)%tilde% THEN @816%LNL%~
-		OUTER_SPRINT ~replies_player6~ ~%replies_player6%== %jdia% IF %tilde%IsValidForPartyDialog(Player6) Name("%dv%",Player6)%tilde% THEN @817%LNL%~
+		OUTER_SPRINT ~replies_player2~ ~%replies_player2%== "%jdia%" IF %tilde%IsValidForPartyDialog(Player2) Name("%dv%",Player2)%tilde% THEN @813%LNL%~
+		OUTER_SPRINT ~replies_player3~ ~%replies_player3%== "%jdia%" IF %tilde%IsValidForPartyDialog(Player3) Name("%dv%",Player3)%tilde% THEN @814%LNL%~
+		OUTER_SPRINT ~replies_player4~ ~%replies_player4%== "%jdia%" IF %tilde%IsValidForPartyDialog(Player4) Name("%dv%",Player4)%tilde% THEN @815%LNL%~
+		OUTER_SPRINT ~replies_player5~ ~%replies_player5%== "%jdia%" IF %tilde%IsValidForPartyDialog(Player5) Name("%dv%",Player5)%tilde% THEN @816%LNL%~
+		OUTER_SPRINT ~replies_player6~ ~%replies_player6%== "%jdia%" IF %tilde%IsValidForPartyDialog(Player6) Name("%dv%",Player6)%tilde% THEN @817%LNL%~
 	END
 END
 //@813 - @817 - в tra файле диалога, не в setup
