@@ -11,7 +11,14 @@
 @10 = ~Batch~
 @11 = ~Hurp~
 @12 = ~Encrypted code~
-@13 = ~A scroll of thick parchment with a drawing inside that had once belonged to Mae'Var. The drawing shows an ogre-guard with a bloody club in his left hand, who has just finished off an unlucky adventurer. Apparently, for added security, he also laid a large stone over the entrance to the treasury, as a primitive but effective trap. At the top of the scroll, in large letters, the word "GOLD" is inscribed, at the bottom there is the number "3", and a little further away the letters "FCB" are indistinct.~
+@13 = ~ A heavy parchment scroll previously owned by Mae'Var. At the top of the scroll, large letters are inscribed: "PKB". Below, with a careless hand, three pictures are drawn.
+
+The first picture shows an ivy-covered peasant house with open windows and a dog with its tongue sticking out, running towards a bowl of water. The name is engraved on the dog's collar: "HARPTOS".
+
+In the second picture, a peasant is throwing snow from the roof of the same house. Snowdrifts piled up almost to the very shutters.
+
+The third picture shows the same peasant next to the mill. In the rain, he loads sacks of oats and barley onto a cart. The cart is packed to the brim.~
+
 @14 = ~Mae'Var Gems~
 @15 = ~A small pouch containing Mae'Var Gems. They can be sold, but only after the assignment is handed over to Renal and he withdraws the spying on you. ~
 @16 = ~Gem Inventory ~
@@ -88,7 +95,7 @@ Permanent +1 bonus to saving throws against polymorphism
 Book properties:
 - Finger of Death, once a day
 Distance: caster's field of view
-Area of ??effect: 1 creature
+Area of effect: 1 creature
   
 - Control undead, 1 time per day
 Distance: 40 feet
