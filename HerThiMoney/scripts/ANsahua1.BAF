@@ -11,7 +11,9 @@ END
 IF
 	Global("ANsahuagin","AN1620",5)
 	See(Player1)
+	OR(2)
 	Dead("ANotiug")
+	Dead("ANmonstr")
 THEN
 	RESPONSE #100
 	SetGlobal("ANsahuagin","AN1620",6)
