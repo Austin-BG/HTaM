@@ -679,7 +679,7 @@ END
 
 IF ~~ BEGIN ANstashBank4
   SAY @120
-IF ~~ THEN REPLY DO ~ActionOverride(Player1,SetDialog("PLAYER1"))~ @109 + ANstashBank5 
+IF ~~ THEN DO ~ActionOverride(Player1,SetDialog("PLAYER1"))~ REPLY @109 + ANstashBank5 
 IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1) ActionOverride(Player1,SetDialog("PLAYER1"))~ REPLY @110 + ANstashBank5
 IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1) ActionOverride(Player1,SetDialog("PLAYER1"))~ REPLY @111 + ANstashBank5
 IF ~~ THEN DO ~SetGlobal("ANstashBankNO","GLOBAL",1) ActionOverride(Player1,SetDialog("PLAYER1"))~ REPLY @112 + ANstashBank5
