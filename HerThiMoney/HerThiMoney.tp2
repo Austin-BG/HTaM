@@ -1,7 +1,7 @@
 BACKUP ~HerThiMoney/backup~
 
 AUTHOR ~Austin, Scheele, Alisia & Arcanecoast Team~
-VERSION 2.5
+VERSION 2.6
 
 AUTO_TRA ~HerThiMoney/tra/%s~
 
@@ -1305,6 +1305,10 @@ SAY NAME1 @94
 SAY NAME2 @94
 SAY UNIDENTIFIED_DESC @94
 SAY DESC @95
+
+ACTION_IF NOT (FILE_EXISTS_IN_GAME ~OHHIOIL.bam~) BEGIN // Если в игре нет картинки лампы
+COPY ~HerThiMoney/bam/lamp~ ~override~
+END
 
 EXTEND_TOP ~AR0307.bcs~ ~%MOD_FOLDER%/scripts/AR0307.baf~
 EXTEND_TOP ~AR0022.bcs~ ~%MOD_FOLDER%/scripts/AR0022.baf~
