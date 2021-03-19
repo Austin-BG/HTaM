@@ -2,43 +2,43 @@
 
 // Renal
 @0 = ~Are there any other quests? I could use some extra money. ~
-@1 = ~Hmm. Okay. Actually, there is one little business. Let's just say, close the topic with Mae'Var. ~
+@1 = ~Hmm. Okay. Actually, there is one, shall we say, loose end with Mae'Var to be tied up. ~
 @2 = ~He and his people are dead. What else do you need? ~
 @3 = ~What will it be? ~
 @4 = ~Oh, nothing too serious. The trifling legacy of an unlucky thief. You will need to find his cache, you can take half of it for yourself. We are now talking about an amount of about five thousand. And of course, you can jump off at any moment. My people will just keep looking, without you. ~
 @5 = ~This is... acceptable terms. Where should I start looking? Any clues? ~
 @6 = ~How about 60 by 40? We'll have to draw it out of thin air, you know ... ~
 @7 = ~Sorry, I'm not interested. I have other tasks now. ~
-@8 = ~Talk to my lieutenant, Batch. He is fully aware of the matter. You can find it right at the entrance. ~
+@8 = ~Talk to my lieutenant, Batch. He is fully aware of the matter. You can find him right at the entrance. ~
 @9 = ~There is some... meaning in your words. As you wish. But the bargaining is over. ~
-@10 = ~No. With all due respect, my people can handle this and it will come out cheaper. Either that or not, take your pick. ~
+@10 = ~No. With all due respect, my people can handle this and it will come out cheaper. Take it or leave it, you decide. ~
 @11 = ~Well... then no luck. Anyway, I was delighted with our cooperation. ~
 @12 = ~Such conditions suit us. So where should you start your search? ~
 @13 = ~Find Batch, he's nearby. ~
-@1300 = ~As you know. ~
+@1300 = ~Suit yourself. ~
 
 // Batch
-@14 = ~Oh, there you are. Listen. This rat, Mae'Var, left a stash somewhere. On Renal's orders, my group ransacked his guild ... after you, of course. Found something interesting that you missed.~
+@14 = ~Oh, there you are. Listen. This rat, Mae'Var, left a stash somewhere. On Renal's orders, my group ransacked his guild... after you, of course. Found something interesting that you missed.~
 @15 = ~I thought we looked at everything thoroughly. ~
 @16 = ~We searched from top to bottom there. We hardly missed anything! ~
 @17 = ~If you had a standing thief in your group, you wouldn't have missed a very curious scroll we found. ~
-@18 = ~You and your people were two steps away from the scroll and did not see it. Crafted casually for me. ~
+@18 = ~You and your people were two steps away from the scroll and did not see it. Sloppy work, in my opinion. ~
 @19 = ~What scroll? Is it somehow connected to the stash? ~
 @20 = ~I have no idea. Maybe. Here, take a look yourself. (Hands you the scroll) ~
 @21 = ~(Scanning scroll) How did you even know about the cache? ~
 @22 = ~From an informant, of course. Where else. Of those you killed. ~
 @23 = ~Is that so? ~
-@24 = ~We don't really like rats, you know. This guy betrayed Mae'Var, who once raised him from the mud. He would have betrayed us too. And the fact that it fell to you to fill it up is good. Let us wash our hands. ~
+@24 = ~We don't really like rats, you know. This guy betrayed Mae'Var, who once raised him from the mud. He would have betrayed us too. And the fact that it fell to you to get rid of him is good. Let us wash our hands. ~
 @25 = ~The scroll appears to be encrypted. So we were hired because of a scroll that was too tough for you?~
-@26 = ~Looks like it. It’s dead to me, but Renal believes this will lead us to our stash. Well, he's the boss - he knows best. ~
+@26 = ~Looks like it. Seems like a dead end to me, but Renal believes this will lead us to our stash. Well, he's the boss - he knows best. ~
 @27 = ~Then we'll start looking. Your people will surely follow us, won't they?~
-@28 = ~Following someone is our bread. Especially in a case where you can get yourself five pieces. No offense buddy. ~
+@28 = ~Following people is our bread and butter. Especially in a case with five grand on the line. No offense buddy. ~
 
 // Edwin
-@30 = ~So what is it? In that scroll? (These monkeys probably can't figure it out without me, you need to take a look.) ~
+@30 = ~So what is it? In that scroll? (These monkeys probably can't figure it out on their own. I'd better take a look.) ~
 @31 = ~(Give the scroll to Edwin) Do you know anything about this? ~
-@32 = ~(Thoughtfully) I've heard about the cache from Mae'Var himself. He even bragged about them. But where he is - I have no idea. This is the first time I see the scroll. It looks like a simple imperial cipher, used in Netheril. ~ [EDWIN28]
-@33 = ~Imperial cipher ... with letter shift. Yes, I once read about him in Candlekeep. This means that there is a key word in the scroll ... But where should the letters be shifted, to the right or to the left? And how much? ~
+@32 = ~(Thoughtfully) I've heard about the cache from Mae'Var himself. He even bragged about it. But as to where it is, I have no idea. This is the first time I've seen this scroll. It looks like a simple imperial cipher, used in Netheril. ~ [EDWIN28]
+@33 = ~Imperial cipher... with letter shift. Yes, I once read about it in Candlekeep. This means that there is a key word in the scroll... But where should the letters be shifted, to the right or to the left? And how much? ~
 @34 = ~It's probably all hidden in the scroll. ~
 @35 = ~What about the letters on it? Some kind of FPK ... ~
 @36 = ~I've seen these letters somewhere... wait, I remember. One little bastard gave me recently. Wait, where was that ... (rummages in the pockets of his robes) Here! (Hands you some booklets) ~
