@@ -92,7 +92,7 @@
 @82 = ~Shut up, Hurp. ~
 @83 = ~No, Edwin. Renal's men might intercept him, and I don't want him to know about the pact. ~
 @84 = ~Gods, no! You don't have to do this! ~
-@85 = ~Thank you sir! Thank you a thousand times! I'll just take my things from home and try to leave town today. An acquaintance of mine equips a caravan and... ~
+@85 = ~Thank you <PRO_SIRMAAM>! Thank you a thousand times! I'll just take my things from home and try to leave town today. An acquaintance of mine equips a caravan and... ~
 @86 = ~I'll do exactly as you said, <PRO_SIRMAAM>. I'll hire a boat and get out of town today. ~
 @87 = ~Shut up and get out, idiot. ~
 @88 = ~(Hurp hastily leaves the Slum) ~
@@ -102,19 +102,19 @@
 
 // PC - Edwin - other NPCs
 @92 = ~Have you reviewed the contract, Edwin?~
-@93 = ~Yes, take it (Gods, could we not discuss everything and sort out papers in some hotel, without fuss and haste?) (Gives you the contract) ~ [EDWIN21]
-@94 = ~The agreement states that Mae'Var rented one medium-sized cell at the bank. We will introduce ourselves as his people, show the contract, type in the code from the decrypted scroll and take the contents. ~
-@95 = ~Yes, whatever you say. If the decoded code is incorrect, we will have problems.~
+@93 = ~Yes, take it. (Gods, couldn't we have discussed everything and handled the paperwork at some inn, without the fuss and haste?) (Gives you the contract) ~ [EDWIN21]
+@94 = ~The agreement states that Mae'Var rented one medium-sized safe deposit box at the bank. We will introduce ourselves as his people, show the contract, enter the code from the deciphered scroll, and take the contents. ~
+@95 = ~Yes, whatever you say. If the deciphered code is incorrect, we will have problems.~
 @96 = ~<CHARNAME>, is it really worth getting into this? What if the bank already knows about Mae'Var's death and realizes that we got the contract illegally?~
 @97 = ~Are we going to have to impersonate this thief? Somehow I don't like this, <CHARNAME>.~
-@98 = ~Great! Let's open the safe and see what this bastard hid there for a rainy day! Loot the loot!~
+@98 = ~Great! Let's open the safe and see what this bastard hid there for a rainy day! Get the loot!~
 @99 = ~This messing around with Mae'Var's affairs seems endless already. Let's deal with this soon, shall we?~
 @100 = ~It would be nice if the safe in there was worth the effort. ~
-@101 = ~Hope everything goes smoothly. It's time for us to go to the bank. ~
+@101 = ~Hope everything goes smoothly. Let's get to the bank. ~
 
 // Edwin at the bank
-@103 = ~(In an undertone) You understand, <CHARNAME>, that we will have one, maximum two attempts with a cell? Then the employee will have questions for us. ~
-@104 = ~It will be okay, Edwin. We need to contact some lower-ranking clerk. The older one is more likely to suspect something than the average employee. ~
+@103 = ~(In an undertone) You understand, <CHARNAME>, that we will have one, maximum two attempts with the box? Then the banker will have questions for us. ~
+@104 = ~It will be okay, Edwin. We need to go to some lower-ranking clerk. The more senior ones are more likely to get suspicious than the average employee. ~
 
 // Bank
 @105 = ~(A short, elderly clerk meets you. He gives you a quick glance). ~
@@ -136,77 +136,77 @@
 @121 = ~(Fifth digit). ~
 @122 = ~(You enter the last digit and anxiously await what will happen next). ~
 @1222 = ~Soooo... ~
-@123 = ~Opened. Are you intending to completely empty the cell of its contents? ~
+@123 = ~Opened. Do you intend to empty the deposit box completely? ~
 @124 = ~Yes. ~
 @125 = ~In that case, sign here and here. ~
 @126 = ~(Sign) Anything else? ~
-@127 = ~No, <PRO_SIRMAAM>. Thank you for using the services of First Kalimport. Is there anything else I can help you with? ~
-@128 = ~Probably not yet. ~
+@127 = ~No, <PRO_SIRMAAM>. Thank you for using the services of First Calimport. Is there anything else I can help you with? ~
+@128 = ~That's all for now. ~
 @129 = ~Good day to you. ~
-@130 = ~Hello. How can I help? ~
-@131 = ~(You introduce yourself as Mae'Var's ambassadors. After you have discussed all the details with him and presented the contract, he finally brings the desired cell to the counter and turns away, giving you the opportunity to dial the code.) ~
-@132 = ~Looks like you were wrong. Will you try again? However, I must warn you that if you fail to enter the correct code a second time, I will be forced to block the cell and notify the branch management of this incident. ~
+@130 = ~Hello, how may I help you? ~
+@131 = ~(You introduce yourself as envoys of Mae'Var. After discussing all the details with him and presenting the contract, he finally brings the desired safe deposit box to the counter and turns away, giving you the opportunity to dial the code.) ~
+@132 = ~Looks like you were wrong. Will you try again? However, I must warn you that if you fail to enter the correct code a second time, I will be forced to lock up the box and notify the branch management of this incident. ~
 @133 = ~Yes, of course. (Try again) ~
-@134 = ~What a devil! (Leave the cell alone) ~
-@135 = ~Sometimes clients forget the code. Try to remember now or next visit. ~
-@136 = ~Sorry, I have to lock the cell. This is provided for by your agreement and the rules of the Bank. You can contact the management of the Bank to resolve the incident. ~
-@137 = ~(Skimming through the contract) The cell will be kept intact with us until Mr. Mae'Var himself arrives. I will ask you gentlemen to leave the branch. ~
-@138 = ~Remember the cell code? Want to try again? I warn you, it will be the last one. ~
+@134 = ~What a devil! (Leave the box alone) ~
+@135 = ~Sometimes clients forget the code. Try to remember now or on your next visit. ~
+@136 = ~Sorry, I have to secure the box. This is specified by your agreement and in accordance with the rules of the Bank. You can contact the management of the Bank to resolve the incident. ~
+@137 = ~(Skimming through the contract) The box will be kept intact with us until Mr. Mae'Var himself arrives. I will ask you all to leave the branch. ~
+@138 = ~Remember the deposit box code? Want to try again? I warn you, it will be the last attempt. ~
 @139 = ~Yes, please. ~
-@140 = ~No, I'm not for that, thanks. ~
+@140 = ~No, that's not what I'm here for, thanks. ~
 
 // Edwin After Bank
 @141 = ~It worked! I can't even believe it! ~
-@142 = ~Now what? Give some of the pebbles to Renal or... ~
+@142 = ~Now what? Give some of the stones to Renal or... ~
 @143 = ~No. Renal won't get anything from here! ~
-@144 = ~Yes, you have to give up some. We had a deal. ~
-@145 = ~Whatever you say ~
+@144 = ~Yes, we have to give up some. We had a deal. ~
+@145 = ~Whatever you say. ~
 @146 = ~I have an idea. We should visit the graveyard.~
-@147 = ~The graveyard? Yes, I also wanted to propose this option. (What in the nine hells is <PRO_HESHE> up to? Why are we going to the graveyard?)~
+@147 = ~The graveyard? Yes, I was just about to suggest that. (What in the nine hells is <PRO_HESHE> up to? Why are we going to the graveyard?)~
 
 // Graveyard
 @148 = ~(You walk through the graveyard and stop at a tombstone near the entrance. ~
-@149 = ~Edwin, we were being followed all this time and of course they saw that we entered the bank. But they don't know anything about the cell. And in the bank itself they will not be told. This bank itself is more influential and more powerful than the Shadow Thieves. You won't be able to click on it. This means that the clerks will keep the banking secrets. What do you say? ~
+@149 = ~Edwin, we were being followed all this time and of course they saw that we entered the bank. But they don't know anything about the safe deposit box. And the bank won't tell them. This bank is more influential and more powerful than the Shadow Thieves. They can't be pressured. This means that the clerks will keep the bank's secrets. What do you think? ~
 @150 = ~Hmm, so far this sounds pretty good. (And when did this primate learn to think so coherently?) ~ ~ Hmm, this sounds good so far. (And when did this monkey learn to think so coherently?) ~
 @151 = ~Great. Then grab a shovel and dig! ~
 @152 = ~What? (He's not serious!?)~ [EDWIN22] ~What? (She's not serious!?)~ [EDWIN22]
 @153 = ~You heard me, mage. ~
 @154 = ~Yes, come on, wizard! Dig. You can do at least something. ~
-@155 = ~Why me? Let the thug that talks to the chipmunk dig! ~
-@156 = ~Boo is not a chipmunk, but a hamster! And he forbids me to dig in the graveyard. According to hamsters, this is a bad omen! And Boo, I believe he won't cheat. ~
-@157 = ~I would help you Edwin, but I'm not feeling well today. Sorry, I'm completely weak ... ~
+@155 = ~Why me? Let the brute that talks to the chipmunk dig! ~
+@156 = ~Boo is not a chipmunk, but a hamster! And he forbids me to dig in the graveyard. According to hamsters, this is a bad omen! And I believe Boo, he wouldn't lie. ~
+@157 = ~I would help you Edwin, but I'm not feeling well today. Sorry, I'm completely drained... ~
 @158 = ~Rffff. ~
-@159 = ~Pf! (Yeah, what else do you have to do when you get involved with such dicks!) ~ [EDWIN30]
-@160 = ~(You and Edwin have been digging for a while ...) ~
+@159 = ~Pf! (Oh, the things one must do when getting mixed up with such half-wits!) ~ [EDWIN30]
+@160 = ~(You and Edwin have been digging for a while...) ~
 @161 = ~(Shaking the dirt off his robes) Why all this? To trick Batch's people?~
 @162 = ~Bingo. We "found" a cache here. (Throw an old bag and a handful of coins into the resulting shallow hole.) ~
-@163 = ~Now it's time for Renal. ~
-@164 = ~Here, Wilson can help you dig too! Let's get it right now! ~
+@163 = ~Now let's go see Renal. ~
+@164 = ~Here, Wilson can help us dig too! We'll be done in no time! ~
 
 // Renal - final
 @165 = ~We have completed our mission, Renal. ~
 @166 = ~Glad to hear that. And what is the result? ~
-@167 = ~We found his stash in the graveyard. It was empty. Apparently, Mae'Var, in the last month for him, took care of strengthening his guild. He hired half a dozen new men and paid bonuses to his most loyal fighters. He also discussed with Edwin the purchase of powerful magical artifacts. All this, of course, required money - and, apparently, Mae'Var paid with his own. ~
-@168 = ~So, that's how it is. Well, sounds pretty neat. Batch, do you have anything to add? ~
+@167 = ~We found his stash in the graveyard. It was empty. Apparently, Mae'Var has been strengthening his guild over the past month. He hired half a dozen new men and paid bonuses to his most loyal fighters. He also discussed with Edwin the purchase of powerful magical artifacts. All this, of course, required money and, apparently, Mae'Var paid with his own. ~
+@168 = ~So, that's how it is. Well, sounds pretty convincing. Batch, do you have anything to add? ~
 @169 = ~Yes, one trifle. (Batch pushes Hurp forward). Look, <CHARNAME>, who we found. He told us about the agreement with the bank - the same one near which you were recently seen. ~
-@170 = ~(Hurp moves his broken lips with difficulty) These ones ... were asking about Mae'Vara ... they took the agreement with the bank ... and the guild's records. ~
-@171 = ~You don't have to say anything, <CHARNAME>. You're only going to stay safe because my boss has plans for you. I will not make this case public. But you will give me all the Mae'Var stones. ~
+@170 = ~(Hurp struggles to speak through busted lips) That's them... they were asking about Mae'Var... they took the agreement with the bank... and the guild's ledgers. ~
+@171 = ~You don't have to say anything, <CHARNAME>. You're still in one piece, only because my boss has plans for you. I will not make this case public, but you will give me all of Mae'Var gems. ~
 @172 = ~We found his cache. It was not money, but precious stones. This inventory was attached to them. Here's your piece, Renal. ~
-@173 = ~That's how it is. Well, that sounds pretty neat. We examined the cache and it turned out empty. Looks like Mae'var wasted all the cash he had on his bet, but he still lost.~
-@174 = ~Since there is no money, there is no reward. That was our agreement with you. Cheer up <CHARNAME>, we don't always get what we want. But at least this question with the cache was closed. Have a nice day. ~
-@175 = ~Nice work. I bet on you for a reason. By the way, my people found Harp, Mae'var's treasurer. He told us about the bank. It was probably difficult to get the money stashed there, eh, <CHARNAME>? But it doesn't matter. I got mine. This make us square.~
+@173 = ~That's how it is. Well, that sounds pretty neat. We searched the cache and it turned out empty. Looks like Mae'var staked all the money he had, and lost it anyway.~
+@174 = ~Since there is no money, there is no reward. That was the deal. Cheer up <CHARNAME>, we don't always get what we want, but at least this matter with the cache was cleard up. Have a nice day. ~
+@175 = ~Nice work. I bet on you for a reason. By the way, my people found Hurp, Mae'var's treasurer. He told us about the bank. It was probably difficult to get the money stashed there, eh, <CHARNAME>? But it doesn't matter. I got mine. This make us square.~
 @176 = ~One more thing: I've got Maevar guild's record for the year 1369 here.~
-@177 = ~Interesting piece. I'll throw another two hundred coins for it.  Have a nice day.~
-@178 = ~You will no longer be able to trade with my people, and you will never, hear me - never get any support from me and my guild. This is where we end up. ~
-@179 = ~Nice work. No wonder I bet on you. I got mine - this make us square. ~
+@177 = ~Interesting piece. I'll throw in another two hundred for it. Have a nice day.~
+@178 = ~You will no longer be able to trade with my people, and you will never, hear me, never get any support from me and my guild. This is where we part ways. ~
+@179 = ~Nice work. I knew I could count on you. I got mine, so we're square. ~
 @180 = ~Yes, one more thing. Where did you find Mae'Var's stash? ~
 @181 = ~At the bank. Edwin had Mae'Var's contract with him, he took it from the guild. We decided to check what was in the bank and found the stones. ~
-@182 = ~Did Mae'Var keep the stones in a jar? In the eastern one that recently opened? ~
-@183 = ~Yes, in First Calimport. We opened the cell using the code from the decrypted list. ~
+@182 = ~So Mae'Var kept the stones in a bank? The one that recently opened on the east side? ~
+@183 = ~Yes, in First Calimport. We opened the safe deposit box using the code from a decrypted list. ~
 @184 = ~I see. Well, thank you again for your work. Have a nice day, <CHARNAME>. ~
 @185 = ~We found his cache. Mae'Var kept the money in the First Calimport Bank, here is his contract. ~
-@186 = ~But we couldn't find the correct code for his cell. Now you can't get the money. ~
-@187 = ~Batch said you were escorted by bank security. We then talked to one of the guards. He told how you tried to open the cell. ~
-@188 = ~Bad luck. Well... since there is no money, there is no reward. That was our agreement, <CHARNAME>. But at least this stash issue has been closed. ~
+@186 = ~But we couldn't find the correct code for his deposit box. Now you can't get the money. ~
+@187 = ~Batch said you were escorted by bank security. We then talked to one of the guards. He told us how you tried to open the box. ~
+@188 = ~Bad luck. Well... since there is no money, there is no reward. That was the deal, <CHARNAME>. But at least this stash issue has been cleared up. ~
 @189 = ~We did what we could. ~
-@190 = ~Good luck. ~
+@190 = ~All right, good luck. ~
