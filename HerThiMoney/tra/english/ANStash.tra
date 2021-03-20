@@ -14,8 +14,6 @@
 @10 = ~No. With all due respect, my people can handle this and it will come out cheaper. Take it or leave it, you decide. ~
 @11 = ~Well... it wasn't meant to be. Anyway, it was a pleasure working with you. ~
 @12 = ~The terms are agreeable. So where should we start our search? ~
-@13 = ~Find Batch, he's nearby. ~
-@1300 = ~Suit yourself. ~
 
 // Batch
 @14 = ~Oh, there you are. Listen. This rat, Mae'Var, left a stash somewhere. On Renal's orders, my group ransacked his guild... after you, of course. Found something interesting that you missed.~
@@ -61,7 +59,7 @@
 @51 = ~(You notice a nondescript person who looks a little suspicious ...) ~
 @52 = ~Yeah, here comes Hurp! Did you think you could sit in your burrow forever, ferret!? ~
 @53 = ~Edwin!? How did you manage to survive!? Everyone there was killed! ~
-@54 = ~I survived thanks to my new employer (Edwin nods at you). And now you will answer all <PRO_HISHER> questions. Or... well, you know the alternative. ~
+@54 = ~I survived thanks to my new employer (Edwin nods at you). And now you will answer all our questions. Or... well, you know the alternative. ~
 @55 = ~Of course, I swear by Timora, of course! I'll tell you everything I know. Please don't kill me! I can be a better friend to you alive! ~
 @56 = ~That will depend on your answers. So the first question is: where is Mae'Var's stash? ~
 @57 = ~I have no idea. I swear I'm telling the truth, <PRO_SIRMAAM>! ~
