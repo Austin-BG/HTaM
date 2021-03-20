@@ -247,8 +247,7 @@ END
 
 IF ~~ BEGIN ANStashRenal2.2
 SAY @9 
-= @8 
-IF ~~ THEN DO ~SetGlobal("ANStashRenalJOB","GLOBAL",1) SetGlobal("ANStashRenalTORG","GLOBAL",1) AddJournalEntry(@999,QUEST)~ EXIT
+IF ~~ THEN DO ~SetGlobal("ANStashRenalTORG","GLOBAL",1)~ REPLY @12 GOTO ANStashRenal2.1
 END
 
 IF ~~ BEGIN ANStashRenal2.2.1
@@ -258,7 +257,7 @@ IF ~~ THEN REPLY @7 + ANStashRenal2.3
 END
 
 IF ~~ BEGIN ANStashRenal2.3
-SAY @1300
+SAY @11
 IF ~~ THEN EXIT
 END
 
