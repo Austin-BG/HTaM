@@ -760,6 +760,7 @@ EXIT
 CHAIN 
 IF ~AreaCheck("AN0720") Global("AnOwniBankTalk","GLOBAL",1) Global("AnOwniBankTalkThink","GLOBAL",0) Global("AnOwniBankTalkAboutDruids","LOCALS",1)~ THEN ANOwni ANOwniBankTalk1.6
 @37 DO ~SetGlobal("AnOwniBankTalkAboutDruids","LOCALS",2)~
+== IF_FILE_EXISTS 7XFALDJ IF ~InParty("7XFALD") InMyArea("7XFALD") !StateCheck("7XFALD",CD_STATE_NOTVALID)~ THEN @255
 == JAHEIRAJ IF ~IsValidForPartyDialog("Jaheira")~ THEN @212
 == ANOwni IF ~IsValidForPartyDialog("Jaheira")~ THEN @213
 == JAHEIRAJ IF ~IsValidForPartyDialog("Jaheira")~ THEN @214
