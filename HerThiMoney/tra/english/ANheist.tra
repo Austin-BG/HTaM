@@ -293,3 +293,6 @@
 @252 = ~That's great. You have all the paperwork with you. I'll look forward to the good news. ~
 @253 = ~Whatever you say, <PRO_BROTHERSISTER>. Perhaps you are right; you should not climb into the hornet's nest unless absolutely necessary. In any case, if you change your mind, the offer stands.~ 
 @254 = ~(Gives you the scrolls) Keep me posted. If Fayaz ever returns to Athkatla, we will help you as well. Good luck! ~
+
+// Additions (group reactions)
+@255 = ~This is very strange. Usually, Shadow Druids do not come so close to the city unless absolutely necessary and do not intervene in such adventures. Something is wrong here. ~
