@@ -1,7 +1,7 @@
 BACKUP ~HerThiMoney/backup~
 
 AUTHOR ~Austin, Scheele, Alisia & Arcanecoast Team~
-VERSION 2.6
+VERSION 2.7
 
 AUTO_TRA ~HerThiMoney/tra/%s~
 
@@ -851,14 +851,20 @@ COPY ~HerThiMoney/cre/ANscelet.cre~ ~override/ANscelet.cre~
 SAY NAME1 @112
 SAY NAME2 @112
 
-ACTION_IF EE_GAME BEGIN
+ACTION_IF (EE_GAME OR MOD_IS_INSTALLED ~INFINITYANIMATIONS.TP2~ ~0~) BEGIN
 COPY ~HerThiMoney/cre/ANdragon.cre~ ~override/ANdragon.cre~
 SAY NAME1 @111
 SAY NAME2 @111
+PATCH_IF !EE_GAME BEGIN
+ WRITE_SHORT 0x28 21071
+END
 
 COPY ~HerThiMoney/cre/ANmonstr.cre~ ~override/ANmonstr.cre~
 SAY NAME1 @115
 SAY NAME2 @115
+PATCH_IF !EE_GAME BEGIN
+ WRITE_SHORT 0x28 20556
+END
 
 END 
 
@@ -924,12 +930,30 @@ COMPILE ~HerThiMoney/scripts/ANsahua2.baf~
 EXTEND_TOP ~AR0808.bcs~ ~HerThiMoney/scripts/AR0808.baf~ 
 EXTEND_TOP ~AR0809.bcs~ ~HerThiMoney/scripts/AR0809_2.baf~ 
 
-ACTION_IF EE_GAME BEGIN
+ACTION_IF (EE_GAME OR MOD_IS_INSTALLED ~INFINITYANIMATIONS.TP2~ ~0~) BEGIN
 COMPILE ~HerThiMoney/scripts/AN1616(EE)/AN1616.baf~
 COMPILE ~HerThiMoney/scripts/AN1620(EE)/AN1620.baf~
 COMPILE ~HerThiMoney/scripts/ANdragon.baf~ 
 COMPILE ~HerThiMoney/scripts/ANmonstr.baf~ 
 COPY ~HerThiMoney/spl/~ ~override~
+
+ACTION_IF NOT (FILE_EXISTS_IN_GAME ~mwd2a1.bam~) BEGIN // Если в игре нет анимации маленького дракона
+COPY ~HerThiMoney/bam/dragon_young~ ~override~
+END
+
+ACTION_IF NOT (FILE_EXISTS_IN_GAME ~MREMA1.bam~) BEGIN // Если в игре нет анимации Ремораза
+COPY ~HerThiMoney/bam/remorhaz~ ~override~
+END
+
+
+ACTION_IF NOT (FILE_EXISTS_IN_GAME ~baby01a.wav~) BEGIN
+COPY ~HerThiMoney/audio/Dragon~ ~override~
+END
+
+ACTION_IF NOT (FILE_EXISTS_IN_GAME ~remor01.wav~) BEGIN
+COPY ~HerThiMoney/audio/Monstr~ ~override~
+END
+
 END 
 ELSE BEGIN
 COMPILE ~HerThiMoney/scripts/AN1616(vanilla)/AN1616.baf~
@@ -937,21 +961,6 @@ COMPILE ~HerThiMoney/scripts/AN1620(vanilla)/AN1620.baf~
 COMPILE ~HerThiMoney/scripts/ANvivern.baf~ 
 END
 
-ACTION_IF EE_GAME AND NOT (FILE_EXISTS_IN_GAME ~mwd2a1.bam~) BEGIN // Если в игре нет анимации маленького дракона
-COPY ~HerThiMoney/bam/dragon_young~ ~override~
-END
-
-ACTION_IF EE_GAME AND NOT (FILE_EXISTS_IN_GAME ~MREMA1.bam~) BEGIN // Если в игре нет анимации Ремораза
-COPY ~HerThiMoney/bam/remorhaz~ ~override~
-END
-
-ACTION_IF (GAME_IS ~bg2ee~) BEGIN
-COPY ~HerThiMoney/audio\Dragon~ ~override~
-END
-
-ACTION_IF EE_GAME AND NOT (FILE_EXISTS_IN_GAME ~remor01.wav~) BEGIN
-COPY ~HerThiMoney/audio\Monstr~ ~override~
-END
 
 // Добавляем переменную, чтобы работало и на старой версии игры (не-ЕЕ)
 OUTER_SPRINT ~tilde~ "~"
@@ -1307,7 +1316,11 @@ SAY UNIDENTIFIED_DESC @94
 SAY DESC @95
 
 ACTION_IF NOT (FILE_EXISTS_IN_GAME ~OHHIOIL.bam~) BEGIN // Если в игре нет картинки лампы
-COPY ~HerThiMoney/bam/lamp~ ~override~
+ACTION_IF EE_GAME BEGIN	
+COPY ~HerThiMoney/bam/lamp/ee~ ~override~
+END ELSE BEGIN
+COPY ~HerThiMoney/bam/lamp/vanilla~ ~override~
+END
 END
 
 EXTEND_TOP ~AR0307.bcs~ ~%MOD_FOLDER%/scripts/AR0307.baf~
