@@ -11,7 +11,7 @@
 @10 = ~Batch~
 @11 = ~Hurp~
 @12 = ~Encrypted code~
-@13 = ~A heavy parchment scroll previously owned by Mae'Var. At the top of the scroll, large letters are inscribed: "FKB". Below, with a careless hand, three pictures are drawn.
+@13 = ~ A heavy parchment scroll previously owned by Mae'Var. At the top of the scroll, large letters are inscribed: "FCB". Below, with a careless hand, three pictures are drawn.
 
 The first picture shows an ivy-covered peasant house with open windows and a dog with its tongue sticking out, running towards a bowl of water. The name is engraved on the dog's collar: "HARPTOS".
 
@@ -76,7 +76,7 @@ The city has many inns, harems and taverns, as well as establishments that provi
 @39 = ~Jalut~
 @40 = ~Esra~
 @41 = ~Jock Big Cobblestone~
-@42 = ~Yantina ~
+@42 = ~Yantina~
 @43 = ~Collector~
 @44 = ~Blik~
 @45 = ~Collector Soldier~
@@ -95,7 +95,7 @@ Permanent +1 bonus to saving throws against polymorphism
 Book properties:
 - Finger of Death, once a day
 Distance: caster's field of view
-Area of ??effect: 1 creature
+Area of effect: 1 creature
   
 - Control undead, 1 time per day
 Distance: 40 feet
