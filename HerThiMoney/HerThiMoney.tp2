@@ -1,7 +1,7 @@
 BACKUP ~HerThiMoney/backup~
 
 AUTHOR ~Austin, Scheele, Alisia & Arcanecoast Team~
-VERSION 2.7
+VERSION 2.8
 
 AUTO_TRA ~HerThiMoney/tra/%s~
 
@@ -1114,6 +1114,15 @@ BEGIN @72 DESIGNATED 20
 
 APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
 
+//это есть в ЕЕ, но нет в оригинальной игре
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~dir.ids~ BEGIN
+COPY "%MOD_FOLDER%/lib/dir.ids" override
+COPY_EXISTING "action.ids" override
+    REPLACE_TEXTUALLY "Face\*)" "Face*DIR)"
+    REPLACE_TEXTUALLY "Direction\*)" "Direction*DIR)"
+    BUT_ONLY
+END
+
 // Добавляем диалог Вилсону
 
 ACTION_IF EE_GAME BEGIN
@@ -1482,6 +1491,15 @@ BEGIN @116 DESIGNATED 30
 APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
 APPEND ~gtimes.ids~ ~7200 ONE_DAY~ UNLESS ~ONE_DAY~
 APPEND ~gtimes.ids~ ~50400 SEVEN_DAYS~ UNLESS ~SEVEN_DAYS~
+
+//это есть в ЕЕ, но нет в оригинальной игре
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~dir.ids~ BEGIN
+COPY "%MOD_FOLDER%/lib/dir.ids" override
+COPY_EXISTING "action.ids" override
+    REPLACE_TEXTUALLY "Face\*)" "Face*DIR)"
+    REPLACE_TEXTUALLY "Direction\*)" "Direction*DIR)"
+    BUT_ONLY
+END
 
 ACTION_IF EE_GAME BEGIN
    // If a EE-version is installed, change the journal entries to adapt it 
