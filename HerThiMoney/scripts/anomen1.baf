@@ -1,8 +1,8 @@
 IF
 Global("ANimoenanomentalk","GLOBAL",0)
+!Global("AnomenRomanceActive","GLOBAL",2)
+Alignment(Myself,CHAOTIC_NEUTRAL)
 InParty("Imoen2") 
-!Dead("Imoen2")
-!Dead("Anomen")
 See("Imoen2")
 CombatCounter(0)
 !See([ENEMY])
@@ -16,6 +16,9 @@ END
 
 IF
 InParty(Myself)
+InParty("Imoen2")
+!StateCheck(Myself,CD_STATE_NOTVALID)
+!StateCheck("Imoen2",CD_STATE_NOTVALID)
 See("Imoen2")
 CombatCounter(0)
 !See([ENEMY]) 
@@ -24,19 +27,14 @@ Global("ANimoenanomentalk","GLOBAL",1)
 THEN
 RESPONSE #100
 SetGlobal("ANimoenanomentalk","GLOBAL",2)
-END
-
-IF
-InParty(Myself)
-See("Imoen2")
-Global("ANimoenanomentalk","GLOBAL",2)
-THEN
-RESPONSE #100
 Interact("Imoen2")
 END
 
+
 IF 
 AreaCheck("AR1000")
+!StateCheck(Myself,CD_STATE_NOTVALID)
+!StateCheck(Player1,CD_STATE_NOTVALID)
 Range("Door1001",50) 
 Global("AnomenIsKnight","GLOBAL",1)
 !Global("AnomenSaerk","GLOBAL",0)
