@@ -5,8 +5,6 @@ IF  ~InParty("Imoen2")
 See("Imoen2")
 !StateCheck("Imoen2",CD_STATE_NOTVALID)
 !StateCheck("Anomen",CD_STATE_NOTVALID)
-Alignment("Anomen",CHAOTIC_NEUTRAL)
-!Global("AnomenRomanceActive","GLOBAL",2)
 Global("ANimoenanomentalk","GLOBAL",2)~ 
 THEN BANOME25 anomenimoen2
 @0 DO ~SetGlobal("ANimoenanomentalk","GLOBAL",3)~
