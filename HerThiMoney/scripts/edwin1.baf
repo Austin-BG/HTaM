@@ -56,20 +56,14 @@ IF
 InParty(Myself)
 See(Player1)
 AreaCheck("AR2100")
+!StateCheck(Myself,CD_STATE_NOTVALID)
 CombatCounter(0)
 !See([ENEMY]) 
 Global("ANedwinUnderdark","GLOBAL",1) 
 THEN
 RESPONSE #100
 SetGlobal("ANedwinUnderdark","GLOBAL",2)
-END
-
-IF
-InParty(Myself)
-See(Player1)
-Global("ANedwinUnderdark","GLOBAL",2)
-THEN
-RESPONSE #100
+SmallWait(10)
 StartDialogNoSet(Player1)
 END
 
