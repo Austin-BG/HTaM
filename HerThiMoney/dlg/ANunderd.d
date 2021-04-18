@@ -3,8 +3,8 @@ APPEND ~EDWINJ~
 
 IF ~Global("ANedwinUnderdark","GLOBAL",2)~ BEGIN ANEedUnderTalk1
   SAY @0 
-  ++ @1 DO ~SetGlobal("ANEdwinDungeonTalk","GLOBAL",3)~ + ANEedUnderTalk2 
-  ++ @2 DO ~SetGlobal("ANEdwinDungeonTalk","GLOBAL",3)~ + ANEedUnderTalk1end 
+  ++ @1 DO ~SetGlobal("ANedwinUnderdark","GLOBAL",3)~ + ANEedUnderTalk2 
+  ++ @2 DO ~SetGlobal("ANedwinUnderdark","GLOBAL",3)~ + ANEedUnderTalk1end 
 END
 
 IF ~~ ANEedUnderTalk2
