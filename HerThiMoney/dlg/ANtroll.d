@@ -312,6 +312,43 @@ IF ~Global("ANTroll","GLOBAL",1) Global("ANTrollSidge","LOCALS",0) Global("Playe
 IF ~Global("ANTroll","GLOBAL",1) Global("ANTrollSidge","LOCALS",0) !Global("PlayerThiefGuild","GLOBAL",0)~ THEN DO ~SetGlobal("ANTroll","GLOBAL",2) SetGlobal("ANTrollSidge","LOCALS",1)~ REPLY @100 GOTO ANtrollSidgeTalk2
 END
 
+EXTEND_BOTTOM RENAL 76
+IF ~Global("ANTroll","GLOBAL",1)~ THEN REPLY @103 GOTO ANtrollRenalLockpick
+END
+
+EXTEND_BOTTOM BMTHIEF 0
+IF ~Global("ANTroll","GLOBAL",1)~ THEN REPLY @103 GOTO ANtrollBMTHIEFLockpick
+END
+
+EXTEND_BOTTOM BMTHIEF 4
+IF ~Global("ANTroll","GLOBAL",1)~ THEN REPLY @103 GOTO ANtrollBMTHIEFLockpick
+END
+
+EXTEND_BOTTOM STGUARD1 3
+IF ~Global("ANTroll","GLOBAL",1)~ THEN REPLY @103 GOTO ANtrollSTGUARD1Lockpick
+END
+
+APPEND RENAL
+IF ~~ THEN BEGIN ANtrollRenalLockpick
+  SAY @236
+IF ~~ THEN EXIT
+END
+END
+
+APPEND BMTHIEF
+IF ~~ THEN BEGIN ANtrollBMTHIEFLockpick
+  SAY @237
+IF ~~ THEN EXIT
+END
+END
+
+APPEND STGUARD1
+IF ~~ THEN BEGIN ANtrollSTGUARD1Lockpick
+  SAY @238
+IF ~~ THEN EXIT
+END
+END
+
 APPEND THIEF1
 
 IF ~~ THEN BEGIN ANtrollSidgeTalk1
@@ -396,7 +433,6 @@ IF WEIGHT #-4 ~Global("ANTroll","GLOBAL",4)~ THEN HABREGA ANtrollBregaTalk1
 == JAHEIRAJ IF ~InParty("Jaheira") InMyArea("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID) OR(2) InParty("Aerie") InParty("Korgan") OR(2) InMyArea("Korgan") InMyArea("Aerie") OR(2) !StateCheck("Korgan",CD_STATE_NOTVALID) !StateCheck("Aerie",CD_STATE_NOTVALID)~ THEN @127
 == PLAYER1 IF ~OR(3) !InParty("Jaheira") !InMyArea("Jaheira") StateCheck("Jaheira",CD_STATE_NOTVALID) OR(2) InParty("Aerie") InParty("Korgan") OR(2) InMyArea("Korgan") InMyArea("Aerie") OR(2) !StateCheck("Korgan",CD_STATE_NOTVALID) !StateCheck("Aerie",CD_STATE_NOTVALID)~ THEN @127
 EXIT
-
 
 EXTEND_TOP HABREGA 0
 IF ~PartyHasItem("ANhead")~ THEN DO ~AddJournalEntry(@1081,QUEST_DONE) TakePartyItem("ANhead") GiveGoldForce(2500) AddexperienceParty(8000)~ REPLY @217 GOTO ANtrollBregaTalk2
