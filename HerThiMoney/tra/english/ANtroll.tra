@@ -116,7 +116,7 @@
 @100 = ~Hi, Sidge. I've got a bit of business... Perhaps you can advise me?~ ~Hi, Sidge. I've got a bit of business... Perhaps you can advise me?~
 @101 = ~Depends what it is. Maybe I can help. What have you got there?~
 @102 = ~No problem. What have you got there?~
-@103 = ~(You take out your homemade lockpick and show it to Sidge.) Here, take a look. Do you know whose work this is?~
+@103 = ~(You take out homemade lockpick and show it.) Here, take a look. Do you know whose work this is?~
 @104 = ~Not ours, that's for sure. Chances are... yeah, I think it's Kyrian. There is one such... craftsman. Half-elven. He works alone, but under our control, to catch those who try to go around our back. And one of ours mentioned that a mad scientist had recently ordered a lockpick from him. But there was nothing interesting for us there, just a laugh.~
 @105 = ~That character is obsessed with druidic nonsense about protecting nature and so on blah blah...~
 @106 = ~(Looks like this is just what you need. However, it would not hurt to verify your assumptions.) Thank you, Sidge.~
@@ -272,3 +272,7 @@
 @233 = ~I promised a reward, so here it is, considering the result.~
 @234 = ~We were happy to help, Quayle.~
 @235 = ~This is it! What a genius I am! My great mind led us to the troll!~
+
+@236 = ~Talk to Sidge about it. I don't have time to do such small things. ~
+@237 = ~Talk to Sidge about it. He probably knows.~
+@238 = ~Talk to Sidge about it. ~
