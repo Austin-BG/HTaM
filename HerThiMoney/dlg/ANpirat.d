@@ -422,6 +422,17 @@ IF ~Global("ANOdrikTalk1","AN1616",1)~ THEN ANvivern ANvivernTalk1
 EXIT
 
 APPEND PLAYER1
+/*
+на мизинец - золотое
+
+на безымянный - серебряное
+
+на средний - рубиновое
+
+на указательный - из оникса
+
+на большой - из огненного опала
+*/
 
 IF ~Global("ANPiratChestClick","AN1620",1)~ THEN BEGIN ANpiratchestPlayer1Talk
   SAY @98
