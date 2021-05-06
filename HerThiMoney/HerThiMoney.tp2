@@ -1610,6 +1610,33 @@ COPY_EXISTING ~AERIE12.CRE~ ~override/anaerie.cre~ //используем сущ
 	LPF ADD_CRE_EFFECT INT_VAR opcode=315 target=1 parameter2=1 timing=9 END //убираем анимацию
 	LPF ADD_CRE_EFFECT INT_VAR opcode=287 target=1 timing=9 END //убираем круг под ногами
 	
+// Отключаем уход Сиджа с локации Гильдии Воров
+COPY_EXISTING ~SIDGE.bcs~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SET start_offset = BUFFER_LENGTH - 1 //назначаем смещение начала поиска
+		SET reverse = 1 //указываем, что поиск должен производится с конца файла в начало
+		WHILE ( start_offset >= 0 ) BEGIN //цикл закончится, когда переменная start_offset будет меньше 0
+			LPF GET_SCRIPT_BLOCK //ищем строку Global("TalkedToRenal","GLOBAL",1)
+				INT_VAR start_offset reverse
+				STR_VAR search_regexp = "^.*TalkedToRenal.*,.*,1"
+				RET script_block start_offset end_offset
+			END
+			SET startx = start_offset //сохраняем значение start_offset, которое выдала функция в промежуточную переменную
+			PATCH_IF ( start_offset >= 0 ) BEGIN //если строка Global("TalkedToRenal","GLOBAL",1) найдена ->
+				LPF GET_SCRIPT_BLOCK // -> проверяем, что найденный блок скрипта содержит строку EscapeArea()
+					INT_VAR start_offset reverse = 0 //тут reverse = 0 указывает, что надо искать с начала выбранного блока вниз
+					STR_VAR search_regexp = ~EscapeArea()~
+					RET start_offset end_offset
+				END
+				PATCH_IF ( start_offset >= 0 ) BEGIN //если найдена строка EscapeArea(), удаляем блок скрипта, содержащий оба условия
+					DELETE_BYTES start_offset ( end_offset - start_offset )
+				END
+			END
+			SET start_offset = startx - 1 //возвращаем переменной start_offset сохраненное промежуточное значение (отнимаем 1 для защиты от того, чтобы не вылезло за пределы размера файла после удаления байтов)
+			SET reverse = 1 //т.к. reverse в процессе проверки может изменится на 0, снова указываем, что искать надо снизу вверх
+		END
+	END
+	BUT_ONLY_IF_IT_CHANGES
 	
 // Локация
 COPY ~HerThiMoney/are/4~ ~override~
