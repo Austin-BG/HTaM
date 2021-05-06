@@ -1,3 +1,45 @@
+// To remove snippets of code in a safe way
+DEFINE_PATCH_FUNCTION GET_SCRIPT_BLOCK
+INT_VAR
+  start_offset  = 0
+  reverse       = 0
+STR_VAR
+  search_regexp = ~~
+RET
+  script_block
+  start_offset
+  end_offset
+BEGIN
+  SET offset = start_offset
+  PATCH_IF (offset < 0) BEGIN SET offset = 0 END
+  PATCH_IF (offset > BUFFER_LENGTH) BEGIN SET offset = BUFFER_LENGTH END
+
+  TEXT_SPRINT script_block ~~
+  SET start_offset = "-1"
+  SET end_offset = "-1"
+
+  PATCH_IF (NOT ~%search_regexp%~ STR_EQ ~~) BEGIN
+    PATCH_IF (reverse) BEGIN
+      SET offset = RINDEX_BUFFER(~%search_regexp%~ offset)
+    END ELSE BEGIN
+      SET offset = INDEX_BUFFER(~%search_regexp%~ offset)
+    END
+
+    PATCH_IF (offset >= 0) BEGIN
+      SET ofsStart = RINDEX_BUFFER(~^IF$~ offset)
+      PATCH_IF (ofsStart >= 0) BEGIN
+        SET ofsEnd = INDEX_BUFFER(~^END$~ offset)
+        PATCH_IF (ofsEnd >= 0) BEGIN
+          SET ofsEnd += 3
+          READ_ASCII ofsStart script_block (ofsEnd - ofsStart)
+          SET start_offset = ofsStart
+          SET end_offset = ofsEnd
+        END
+      END
+    END
+  END
+END
+
 // To add replicas in difficult situations
 
 DEFINE_ACTION_FUNCTION FC_COMPILE_EXTERNAL_DLG
