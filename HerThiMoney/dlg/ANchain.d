@@ -136,14 +136,14 @@ END
 IF ~~ THEN BEGIN ANlorensTalkBridge1
 SAY @45
 =@46 
-IF ~~ THEN DO ~SetGlobal("ANlorens","GLOBAL",2)~ REPLY @47 GOTO ANlorensTalkBridge2
-IF ~~ THEN DO ~SetGlobal("ANlorens","GLOBAL",2)~ REPLY @48 GOTO ANlorensTalkBridge2
+IF ~~ THEN DO ~SetGlobal("ANlorens","GLOBAL",2) EscapeArea()~ REPLY @47 GOTO ANlorensTalkBridge2
+IF ~~ THEN DO ~SetGlobal("ANlorens","GLOBAL",2) EscapeArea()~ REPLY @48 GOTO ANlorensTalkBridge2
 IF ~~ THEN REPLY @49 EXIT
 END
 
 IF ~~ THEN BEGIN ANlorensTalkBridge2
 SAY @50
-IF ~~ THEN DO ~EscapeArea()~ EXIT
+IF ~~ THEN EXIT
 END
 
 IF ~Global("ANlorens","GLOBAL",4)~ THEN BEGIN ANlorensTalkGrave
