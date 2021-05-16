@@ -10,6 +10,16 @@ THEN
 END
 
 IF 
+GlobalGT("ANlorens","GLOBAL",1)
+Exists("ANlorens")
+
+THEN
+  RESPONSE #100
+       ActionOverride("ANlorens", DestroySelf())
+       Continue() 
+END
+
+IF 
 Global("ANlorens","GLOBAL",2)
 
 THEN
