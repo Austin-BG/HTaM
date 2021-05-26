@@ -1,6 +1,38 @@
 IF
+	TimeGT(19)
+	TimeLT(DUSK_END)
 	See([PC])
-	!TimeOfDay(DAY)
+	Global("ANbankNightTimerIN","GLOBAL",0)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("ANbankNightTimerIN","GLOBAL",THIRTY_MINUTES) //Пол часа
+		DisplayStringHead(Myself,@150) //Просьба покинуть банк
+END
+
+IF
+	OR(2)
+		TimeLT(8)
+		TimeGT(DUSK_START)
+	Global("ANbankNightTimerIN","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ANbankNightTimerIN","GLOBAL",1)
+END
+
+IF
+	TimeGT(DAWN_END)
+	TimeLT(DUSK_START)
+	!Global("ANbankNightTimerIN","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ANbankNightTimerIN","GLOBAL",0) //Сброс таймера
+END
+
+IF
+	See([PC])
+!GlobalTimerNotExpired("ANbankNightTimerIN","GLOBAL")
+!Global("ANbankNightTimerIN","GLOBAL",0)
 	Global("ANbankNightIN","GLOBAL",0)
 !Global("AnOwniBankTalk","GLOBAL",4)
 !Global("AnOwniBankTalk","GLOBAL",5)
@@ -22,7 +54,8 @@ END
 
 IF
 	See([PC])
-	!TimeOfDay(DAY)
+!GlobalTimerNotExpired("ANbankNightTimerIN","GLOBAL")
+!Global("ANbankNightTimerIN","GLOBAL",0)
 	Global("ANbankNightIN","GLOBAL",1)
 !Global("AnOwniBankTalk","GLOBAL",4)
 !Global("AnOwniBankTalk","GLOBAL",5)
@@ -34,8 +67,8 @@ OR(2)
 	AreaCheck("AN0721")
 THEN
 	RESPONSE #100
+SetGlobal("ANbankNightIN","GLOBAL",2)
 EquipMostDamagingMelee()
-SetGlobal("ANbankNightIN","GLOBAL",1)
 Enemy()  
 AttackReevaluate(NearestEnemyOf(),30)
 Continue()

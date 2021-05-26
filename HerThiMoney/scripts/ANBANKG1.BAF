@@ -9,7 +9,6 @@ END
 IF
 	AreaCheck("AR0700")
 	See([PC])
-	!TimeOfDay(DAY)
 	Global("ANbankNightIN","GLOBAL",1)
 THEN
 	RESPONSE #100

@@ -1,9 +1,11 @@
 IF
 	AreaCheck("AR0700")
 	Range([PC],15)
-	!TimeOfDay(DAY)
 	CombatCounter(0)
-	Global("ANbankNight","LOCALS",0)  	
+	Global("ANbankNight","LOCALS",0) 
+	OR(2)
+		TimeLT(8)
+		TimeGT(19)
 THEN
 	RESPONSE #100
 SetGlobal("ANbankNight","LOCALS",1)   
@@ -12,7 +14,9 @@ Continue()
 END
 
 IF
-	!TimeOfDay(DAY)
+	OR(2)
+		TimeLT(8)
+		TimeGT(19)
 	Global("ANbankNight","LOCALS",1)  
 THEN
 	RESPONSE #100
@@ -28,7 +32,9 @@ END
 IF
 	AreaCheck("AR0700")
 	!See([PC])
-	!TimeOfDay(DAY)
+	OR(2)
+		TimeLT(8)
+		TimeGT(19)
 	Global("ANbankNight","LOCALS",1)  
 THEN
 	RESPONSE #100
@@ -47,7 +53,6 @@ END
 IF
 	AreaCheck("AR0700")
 	See([PC])
-	!TimeOfDay(DAY)
 	Global("ANbankNightIN","GLOBAL",1)
 THEN
 	RESPONSE #100
