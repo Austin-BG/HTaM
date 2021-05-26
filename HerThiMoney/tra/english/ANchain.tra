@@ -44,7 +44,7 @@
 // Lawrence
 @41 = ~Hey, I'm busy actually. What do you want? ~
 @42 = ~You owe the bank something, friend. I was sent to help you pay. ~
-@43 = ~You owe the bank money! Drive 500 coins, you bastard! ~
+@43 = ~You owe the bank money! Hand over 500 coins, you bastard! ~
 @44 = ~Eh, nothing, I'm already leaving. ~
 @45 = ~Oh, so that's it... Fucking people, they only think about money. ~
 @46 = ~I have nothing to pay with. So tell your superiors. ~
@@ -91,8 +91,8 @@
 @83 = ~(The sleeping man does not respond and continues to snore) ~
 @84 = ~Ronnie! Get up ... ~
 @85 = ~Okay, I'll take care of this myself! You're gonna get it now, *hiccups*! ~
-@86 = ~(He tries to swing his fist at you but can't make his fingers form a fist. Staring dumbly at his hand, he stands and sways) ~
-@87 = ~(You poke him with your finger, and he falls, unable to stand on his feet. You search his pockets and find 180 coins. It's good that they didn't have time to drink all of it away) ~
+@86 = ~*He tries to swing his fist at you but can't make his fingers form a fist. Staring dumbly at his hand, he stands and sways*~
+@87 = ~*You poke him with your finger, and he falls, unable to stand on his feet. You search his pockets and find 180 coins. It's good that they didn't have time to drink all of it away*~
 @88 = ~Hrrr-hr ... ~
 
 // Sheila (return)
@@ -108,39 +108,39 @@
 @96 = ~And we've tracked down the Collector. Now is the most opportune moment to attack! His men are wavering, and he has become vulnerable! I will give you two of my best fighters, both well trained and armed. Caityga will be in command. ~
 @97 = ~Aren't you afraid to send your sister? This fight will definitely not be easy. ~
 @98 = ~No, <PRO_SIRMAAM>. I've decided that she needed a lesson for a long time. If she dies, she dies. Caityga thinks I don't know how she turns my fighters against me using her feminine charms! ~
-@99 = ~(You can hardly contain your laughter when you remember how "beautiful" Caityga is) Well, as you say, Jackal. How is she as a fighter? ~
+@99 = ~*You can hardly contain your laughter when you remember how "beautiful" Caityga is* Well, as you say, Jackal. How is she as a fighter? ~
 @100 = ~She is good with bows, <PRO_SIRMAAM>.~ 
-@101 = ~(In an undertone) If she doesn't return from the battle, I will add two hundred more coins to the thousand we agreed on. ~
-@102 = ~(Laughs) You value your sister's head at 200 coins!? Hmmm... not much. We'll see. I won't promise anything, I'll decide when we're there. ~
+@101 = ~*In an undertone* If she doesn't return from the battle, I will add two hundred more coins to the thousand we agreed on. ~
+@102 = ~*Laughs* You value your sister's head at 200 coins!? Hmmm... not much. We'll see. I won't promise anything, I'll decide when we're there. ~
 @103 = ~Solve your own family problems, orc! I do not intend to get into other people's family squabbles! ~
 @104 = ~As you wish, <PRO_SIRMAAM>. I look forward to hearing from you. ~ 
 @105 = ~Sorry <PRO_SIRMAAM>. Consider this proposal as having never happened. ~
-@106 = ~Caityga, Galtarro, Three-Fingered! Now he is your commander. (Jackal points at you) Obey him in everything! Once the enemy is finished, you will all return to the squad. ~ ~ Kaitiga, Galtarro, Three-Finger! She is now your commander. (Jackal points to you) Obey her in everything! How to finish off the enemy - you will all return back to the squad. ~
-@107 = ~(You line up the squad of half-orcs handed to you) Listen carefully, you half-wits. My name is <CHARNAME>. For the duration of the next battle, I am your commander. You will listen to me and do as I say! I'll kill anyone who disobeys or tries anything funny!!! Is that clear!? ~
-@108 = ~(You see a vicious grin on Caityga's ugly face, but it disappears as if by magic when her eyes meet yours. The half-orcs look at each other cautiously, then nod together.) ~
-@109 = ~(You raise your voice to a scream) I can't hear! Everyone's clear, Orc scum!? ~
-@110 = ~(The half-orcs respond to your question with a discordant roar. Apparently, no one has any questions.) ~
+@106 = ~Caityga, Galtarro, Three-Fingered! Now this is your commander. *Jackal points at you* Obey <PRO_HIMHER> in everything! Once the enemy is finished, you will all return to the squad. ~
+@107 = ~*You line up the squad of half-orcs handed to you* Listen carefully, you half-wits. My name is <CHARNAME>. For the duration of the next battle, I am your commander. You will listen to me and do as I say! I'll kill anyone who disobeys or tries anything funny!!! Is that clear!? ~
+@108 = ~*You see a vicious grin on Caityga's ugly face, but it disappears as if by magic when her eyes meet yours. The half-orcs look at each other cautiously, then nod together.*~
+@109 = ~*You raise your voice to a scream* I can't hear! Everyone's clear, Orc scum!? ~
+@110 = ~*The half-orcs respond to your question with a discordant roar. Apparently, no one has any questions.*~
 @111 = ~Well then let's go! ~
 @112 = ~The Collector is dead, Jackal.Hand over the money. ~
 @113 = ~The Collector is dead, Jackal. And your sister too. Hand over the money. ~
-@114 = ~(Gives you a bag of coins) Yes <PRO_SIRMAAM>, as agreed - a thousand coins.~ 
-@115 = ~(Passes you a bag of coins) Glad to hear, <PRO_SIRMAAM>. Here, as agreed - one thousand two hundred coins.~
+@114 = ~*Gives you a bag of coins* Yes <PRO_SIRMAAM>, as agreed - a thousand coins.~ 
+@115 = ~*Passes you a bag of coins* Glad to hear, <PRO_SIRMAAM>. Here, as agreed - one thousand two hundred coins.~
 
 // Collector
 @116 = ~This is it! The Collector! ~
-@117 = ~(The Collector, a short, elderly man, slowly approaches you from the opposite end of the street with a mage and several fighters at the ready next to him. A little further away, you notice a young, beautiful half-elf girl.) ~
-@118 = ~I see this Jackal lived up to his nickname and hesitated to come himself. He sent his sister and some guards instead! (The Collector's wolf gaze falls on you) And you, I suppose, are their mercenary? You shouldn't have gotten involved... ~
-@119 = ~(You order the half-orcs to pick targets and prepare for battle. Caityga slowly raises the bow, her rough fingers preparing to pull the string.) ~
+@117 = ~*The Collector, a short, elderly man, slowly approaches you from the opposite end of the street with a mage and several fighters at the ready next to him. A little further away, you notice a young, beautiful half-elf girl.*~
+@118 = ~I see this Jackal lived up to his nickname and hesitated to come himself. He sent his sister and some guards instead! *The Collector's wolf gaze falls on you* And you, I suppose, are their mercenary? You shouldn't have gotten involved... ~
+@119 = ~*You order the half-orcs to pick targets and prepare for battle. Caityga slowly raises the bow, her rough fingers preparing to pull the string.*~
 @120 = ~<CHARNAME>, he is from another plane, I can tell it right away. And he's very dangerous. ~
 @121 = ~Grrrr! (Wilson growls menacingly at the Collector) ~
 @122 = ~(Whispering) <CHARNAME>, do you really think messing with these types is a good idea? ~
 @123 = ~Hey Collector, what if we try to negotiate? ~
-@124 = ~(A metallic note slips into the Collector's harsh laughter at your suggestion) You're on fire today! That's a good joke. ~ [GGMAL04]
+@124 = ~*A metallic note slips into the Collector's harsh laughter at your suggestion* You're on fire today! That's a good joke. ~ [GGMAL04]
 @125 = ~Now be nice and get off this street. Soon these half-orc freaks will be kicked out of the bank, I'll make sure of it! "Try to negotiate"! Ha! ~
 @126 = ~(A battle begins, you and the half-orcs against the Collector and his men) ~
 @127 = ~Victory! We're leaving. Let's return to the Jackal. ~
-@128 = ~(Victory! Caityga is dead - and it looks like the Jackal won't mourn her) ~
-@129 = ~(The half-orc is clearly nervous, although he doesn't show it) ~
+@128 = ~*Victory! Caityga is dead - and it looks like the Jackal won't mourn her*~
+@129 = ~*The half-orc is clearly nervous, although he doesn't show it*~
 
 // Group reactions
 @130 = ~Dirty half-orc!! How dare you speak to Tiax the the Magnificent without bowing or even calling beforehand?!~ [TIAXm]
