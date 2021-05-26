@@ -6,30 +6,30 @@
 @2 = ~Jaheira!? I'm surprised to see a familiar face!~
 @3 = ~We certainly banished you for a reason. Now you're collecting debts with your partner. ~
 @4 = ~I thank the gods every day that I'm no longer with the Harpers. Listening to your endless instructions day after day... never again! As for my partner, he's doing quite well. We have a great job now, and we are together. Can you say the same about yourself, Jaheira? Probably still kicking yourself while doing endless errands from your superiors. ~
-@5 = ~(Jaheira is silent for a moment, pondering what she has heard. Then, she begins to speak, suppressing her anger with difficulty) You don't have any principles, and you've never had any, you two-faced wretch! You seduced a good man, you stole from us, and now you stand here and mock me! ~
-@6 = ~(You decide to end this argument before it becomes a fight and forcefully pull Jaheira aside) ~
+@5 = ~*Jaheira is silent for a moment, pondering what she has heard. Then, she begins to speak, suppressing her anger with difficulty* You don't have any principles, and you've never had any, you two-faced wretch! You seduced a good man, you stole from us, and now you stand here and mock me! ~
+@6 = ~*You decide to end this argument before it becomes a fight and forcefully pull Jaheira aside*~
 @7 = ~Get your hands off me! I'll tell her what I really think of her, that— ~
 @8 = ~You've already done enough of that, Jaheira. We have better things to do right now, so pull yourself together. You say you banished her? What's done is done, leave it behind you! ~
 @9 = ~She can't be trusted for anything! She betrayed us! ~
 @10 = ~That's all in the past. Do me a favor and concentrate on OUR problems.~
-@11 = ~(Slowly and reluctantly calming down) Okay... You're right. Let's move on. ~
+@11 = ~*Slowly and reluctantly calming down* Okay... You're right. Let's move on. ~
 @12 = ~Come on, girls, fight! Don't ruin the show, <CHARNAME>, har har!~
 
 // Esra
-@13 = ~(As soon as he sees you, the halfling rushes happily towards you) Brandobaris's bare feet, I'm so glad to see you! After that terrible battle, I didn't get a wink of sleep! And Jalut was tossing and turning all night; at least everything ended well! ~
+@13 = ~*As soon as he sees you, the halfling rushes happily towards you* Brandobaris's bare feet, I'm so glad to see you! After that terrible battle, I didn't get a wink of sleep! And Jalut was tossing and turning all night; at least everything ended well! ~
 @14 = ~Oh, I almost forgot. Owney asked me to tell you to find him. He's got business for you, and it seems important - he hasn't been himself all morning. ~ ~Oh, I almost forgot. Owney asked me to tell you to find him. He's got business for you, and it seems important - he hasn't been himself all morning.~
 
 // Jalut
 @15 = ~Owney wanted to talk to you, <PRO_BROTHERSISTER>. Find him, he's in the bank somewhere. ~
-@16 = ~(The orc leisurely attaches the wrist strap to his morningstar. He smiles good-naturedly when he sees you) I know you've spoken to Owney. I'm glad you're with us now. The commander rarely speaks about anyone as well as he has you. I think he likes you. ~ ~ (The orc leisurely attaches the wrist strap to his morningstar. He smiles good-naturedly when he sees you) I know you've spoken to Owney. I'm glad you're with us now. The commander rarely speaks about anyone as well as he has you. I think he likes you. ~
+@16 = ~*The orc leisurely attaches the wrist strap to his morningstar. He smiles good-naturedly when he sees you* I know you've spoken to Owney. I'm glad you're with us now. The commander rarely speaks about anyone as well as he has you. I think he likes you. ~ ~ (The orc leisurely attaches the wrist strap to his morningstar. He smiles good-naturedly when he sees you) I know you've spoken to Owney. I'm glad you're with us now. The commander rarely speaks about anyone as well as he has you. I think he likes you. ~
 @17 = ~How's it going? ~
 @18 = ~Boring. But it will be more fun in the evening. ~
 @19 = ~I have to go. Take care of yourself. ~
 @20 = ~Bye. ~
 
 // Jock
-@21 = ~ Owney wants to talk t'you. You go to him.~
-@22 = ~ (Glances at you with displeasure while sucking on a mutton bone) Grr! ~
+@21 = ~Owney wants to talk t'you. You go to him.~
+@22 = ~*Glances at you with displeasure while sucking on a mutton bone* Grr! ~
 
 // Yantina
 @23 = ~Well, have you come to an agreement with Owney? Glad to have you with us. ~
@@ -38,7 +38,7 @@
 @24 = ~Are you on board? Great! ~
 
 // Owney
-@25 = ~(Owney looks thoughtful) ~
+@25 = ~*Owney looks thoughtful*~
 @26 = ~You wanted to see me? ~
 @27 = ~Yes. I wanted to talk to you. There is something we need your help with. ~
 @28 = ~Let's hear it. ~
@@ -46,16 +46,16 @@
 @30 = ~Let's get to the point. ~
 @31 = ~Well, to be honest, people have a reason to fear them. ~
 @32 = ~Yes, you're right, let's get down to business. ~ ~ Yes, you're right, let's get down to business. ~
-@33 = ~Is that so? When Jalut and Jock were rescuing settlers in the North, why was nobody frightened of them, huh!? Vicious, hypocritical creatures! "Untidy look"! (Unable to restrain himself, Owney hits his open palm with his fist) ~
+@33 = ~Is that so? When Jalut and Jock were rescuing settlers in the North, why was nobody frightened of them, huh!? Vicious, hypocritical creatures! "Untidy look"! *Unable to restrain himself, Owney hits his open palm with his fist*~
 @34 = ~So here's the thing. Tonight, Shadow Druids will try to rob us. They'll sneak in through the basement, and they'll have the key to the vault with them. We'll ambush and kill them all, with your help, if you agree. Any questions? ~
 @35 = ~Shadow Druids? Why would they want to rob a bank?~
 @36 = ~I must ask - where did you get this information? Either you have the gift of foresight, or...~
 @37 = ~I have no idea. Maybe they need the money to save the forest from being cut down, maybe they need to cure a dragon of the clap, who knows. It doesn't matter. The main thing is that they are planning it. ~
 @38 = ~The Druids were ratted out by the Shadow Thieves in exchange for an opportunity to get our old jobs as debt collectors. Our promotion left a lot of empty positions. ~
 @39 = ~Why would the Shadow Thieves want these jobs? ~
-@40 = ~(Owney hesitates visibly before continuing) Okay... I'll tell it to you straight. ~
+@40 = ~*Owney hesitates visibly before continuing* Okay... I'll tell it to you straight. ~
 @41 = ~An order was issued from above not to hire anyone from Amn. They even sent us a janitor from Calimshan, so they certainly wouldn't let us hire local security. Calimport doesn't want to get involved with the Shadow Thieves; we rely on the Council of Six here, and the branch was opened entirely with their permission. The thieves desperately want some of their people on the inside, even if they are in lower positions. ~
-@42 = ~In exchange for the information I received from them, I agreed to recommend them to the management as Tethyrians - the same as us. (Owney grins wryly) Of course, they'll have to be watched closely in the future, but that was the deal. ~
+@42 = ~In exchange for the information I received from them, I agreed to recommend them to the management as Tethyrians - the same as us. *Owney grins wryly* Of course, they'll have to be watched closely in the future, but that was the deal. ~
 @43 = ~You say the thieves gave up the druids - so the druids must have gone to them for help with the robbery, right? ~
 @44 = ~Exactly. The druids got the information I sent them through the thieves. In fact, their plan was made with my help. They want to get into the bank through the basement, for which they rented the house across the street. They've been digging from there for three days now. ~
 @45 = ~They're digging with an ankheg. They brought it into town as an exotic animal and have already dug a hundred feet with it. They'll be completely finished today. They're going to break through the stonework in the basement, probably with plant roots or something, and then they'll be in. ~
@@ -76,7 +76,7 @@
 @60 = ~This is by far not the first mistake that fat bastard's made at this post, but the bosses will never forgive him for missing an attempted robbery. A rookie like me can't take his place, though. ~
 @61 = ~A new head of security will be sent here from Tethyr. I know the candidate; he is a former adventurer. By stopping the robbery, it should be easy for me to secure the position as his right hand, and that will allow me to fulfill my part of my deal with the thieves. ~
 @62 = ~I see that you've thought everything through. ~
-@63 = ~(Owney looks anxious and extremely tired. You suddenly realize how difficult it was for him to confide in you. After a moment, the priest speaks to you again in a more confidential tone) ~
+@63 = ~*Owney looks anxious and extremely tired. You suddenly realize how difficult it was for him to confide in you. After a moment, the priest speaks to you again in a more confidential tone*~
 @64 = ~Listen, <CHARNAME>, you know how it is. You are an adventurer yourself, just like I was. But that's all in the past now. We've all decided to settle here in Athkatla and end our travels. ~
 @65 = ~Being an adventurer... sometimes means enduring poverty, filth, hunger. My people are tired of this. Jalut threw out his back hauling logs for all four of us when we were hired to help build the siege camp a year ago. There was continuous fighting with the Orcs far to the North, and there was always work for us. ~
 @66 = ~During the assault, Jock took an arrow. It hit him right in the neck, in one side and out the other. It's a miracle that he survived. We thought we would have to leave him on the ice. The wound he received will never fully heal. Two of our brothers will never return from that war. But at least we could bury them... what's left of them. ~
@@ -87,7 +87,7 @@
 @71 = ~What if I say no? ~
 @72 = ~I need some time to think about your proposal. ~
 @73 = ~So name your price. ~
-@74 = ~(Owney's face freezes momentarily) I... see that I was wrong about you. Consider that this conversation never happened. This is where we part. ~
+@74 = ~*Owney's face freezes momentarily* I... see that I was wrong about you. Consider that this conversation never happened. This is where we part. ~
 @75 = ~You have until evening, the druids won't wait for us. I'll need to to hear your answer before then. ~
 @76 = ~1,000 gold. ~
 @77 = ~1,200 gold. ~
@@ -111,8 +111,8 @@
 @95 = ~Well, it's a good plan. It's good that you thought of everything. ~
 @96 = ~One more thing. None of them can leave the bank alive. We cannot accept their surrender. ~
 @97 = ~I understand... If a captured druid puts two and two together, they might tell the wrong people about exactly who turned him in. Then, your thief partners would have a serious problem with their superiors. And so would you.~
-@98 = ~(A faint shadow of a smile softens Owney's face a little - apparently the priest liked your answer) That's right. I see you know how to use your head. But you were wrong about one thing.~ 
-@99 = ~(The Tethyrian's face twists in contempt) They are not my partners. You can't deal with thieves at all - they're the scum of the earth. When it comes to saving their own hides, they'll turn on anyone, even the one they called brother a moment before. I plan to use them and then throw them away. ~
+@98 = ~*A faint shadow of a smile softens Owney's face a little - apparently the priest liked your answer* That's right. I see you know how to use your head. But you were wrong about one thing.~ 
+@99 = ~*The Tethyrian's face twists in contempt* They are not my partners. You can't deal with thieves at all - they're the scum of the earth. When it comes to saving their own hides, they'll turn on anyone, even the one they called brother a moment before. I plan to use them and then throw them away. ~
 @100 = ~I've dealt with them before and I can't say anything good about them. ~ 
 @101 = ~As can be expected. You would do better to stay away from those two-legged animals. ~
 @102 = ~I wonder why the druids want to rob a bank. ~
@@ -130,7 +130,7 @@
 @114 = ~Now, let's go. Esra, you stay here and guard the entrance to the bank. We can't leave it unguarded. Call me if you need anything. ~
 
 // Defeat Druids
-@115 = ~(Owney pats you on the shoulder approvingly) Nice work, <CHARNAME>! Now it's just a matter of reporting to our superiors and calling the guards. You should leave before they get here, but there's a couple of minutes to search the bodies. ~
+@115 = ~*Owney pats you on the shoulder approvingly* Nice work, <CHARNAME>! Now it's just a matter of reporting to our superiors and calling the guards. You should leave before they get here, but there's a couple of minutes to search the bodies. ~
 @116 = ~Here, as agreed, your six hundred gold, the rest we'll have in a week. See you in the morning. And take care of yourself, <PRO_BROTHERSISTER>. ~
 @117 = ~You too. ~
 @118 = ~I will revive my fallen comrades, of course. That's my responsibility. ~
@@ -142,18 +142,18 @@
 @124 = ~Too bad we had to kill them. We never found out why they staged this attack. Okay, let's search the bodies quickly and leave before the guards arrive. ~
 
 // Next morning
-@125 = ~(The priest greets amicably) Everything went perfectly! The chief of security was recalled back to Calimport, no doubt to guard the latrines there! Gazir disappeared... everything is as planned. There's still a hole in the basement to be repaired, but it's small, and we'll have it fixed quickly. ~
+@125 = ~*The priest greets amicably* Everything went perfectly! The chief of security was recalled back to Calimport, no doubt to guard the latrines there! Gazir disappeared... everything is as planned. There's still a hole in the basement to be repaired, but it's small, and we'll have it fixed quickly. ~
 @126 = ~We've all got a huge bonus, so here's the rest of your payment. (Gives you the owed amount) In short, everything worked out, and it's all thanks to you. ~
 @127 = ~From now on, you can always count on us, <PRO_BROTHERSISTER>! If you ever need help, we'll be there. Now if you'll excuse me, business awaits. It's been a mess all morning! ~
 @128 = ~Good luck, Owney. ~
 @1281 = ~Oh, one more thing - they cleaned up the downstairs after the fight, and put some stuff in the chest in the center of the room. If the clerks haven't emptied it out yet, help yourself to whatever's left. ~
 
 // Owney's Death and Resurrection
-@129 = ~(Crying) Owney! No! ~
-@130 = ~(Yantina rushes to you with a plea) You're a priest! Bring him back to life, we'll pay you anything! ~
-@131 = ~(The huge orc growls in rage and grief) Commander! I couldn't save anyone! ~
+@129 = ~*Crying* Owney! No! ~
+@130 = ~*Yantina rushes to you with a plea* You're a priest! Bring him back to life, we'll pay you anything! ~
+@131 = ~*The huge orc growls in rage and grief* Commander! I couldn't save anyone! ~
 @132 = ~The Commander and Yantina, dead! Priest, please help us! We'll pay you back, whatever it takes! ~
-@133 = ~(Jock looks lonely and confused, bewilderment frozen in his eyes) All dead... Only me left... ~
+@133 = ~*Jock looks lonely and confused, bewilderment frozen in his eyes* All dead... Only me left... ~
 @134 = ~You! You a priest! Raise them all! I pay, whatever you want! ~
 @135 = ~I'll try... ~
 @136 = ~Sorry... He was a good man. ~
@@ -283,7 +283,7 @@
 @242 = ~How much of that will you offer me? ~
 @243 = ~Every single coin. You've helped us a lot, so consider it a friendly favor on our part. ~ ~ Every single coin. You helped us a lot, so consider this a friendly favor on our part. ~
 @244 = ~What do we know about the debtor? ~
-@245 = ~(Handing over a few scrolls to you) Everything is detailed here. The debtor's name is Fayaz, nicknamed "One-Eyed". At the bank, he introduced himself as the skipper of a merchant ship who needed money for repairs. Fayaz's claims were checked and, lo and behold, everything miraculously matched up. Needless to say, he was in bed with the head of security and the senior clerk. ~
+@245 = ~*Handing over a few scrolls to you* Everything is detailed here. The debtor's name is Fayaz, nicknamed "One-Eyed". At the bank, he introduced himself as the skipper of a merchant ship who needed money for repairs. Fayaz's claims were checked and, lo and behold, everything miraculously matched up. Needless to say, he was in bed with the head of security and the senior clerk. ~
 @246 = ~With the money, Crooked Fayaz, who happens to be a wanted pirate, hastily set sail for the pirate base at Brynnlaw. He's staying there now, and he's drinking the money away as we speak. It's gonna be hard to get it out of him, especially in their lair... ~
 @247 = ~Anyway, don't take any unnecessary risks. Fayaz is dangerous - wait until he's alone and make sure you have an escape route. ~
 @248 = ~Now I get it. Very clever, giving me the cold case. If I come up empty, it's all the same, but if I can get the money back, rumors about it will spread all over the Coast. They'll say the bank's got a long arm, and they've even collected from pirates at their base. You win either way. ~
@@ -292,7 +292,7 @@
 @251 = ~No, I don't think I'll ever get to Brynnlaw. Besides, the risk is too great. ~
 @252 = ~That's great. You have all the paperwork with you. I'll look forward to the good news. ~
 @253 = ~Whatever you say, <PRO_BROTHERSISTER>. Perhaps you are right; you should not climb into the hornet's nest unless absolutely necessary. In any case, if you change your mind, the offer stands.~ 
-@254 = ~(Gives you the scrolls) Keep me posted. If Fayaz ever returns to Athkatla, we will help you as well. Good luck! ~
+@254 = ~*Gives you the scrolls* Keep me posted. If Fayaz ever returns to Athkatla, we will help you as well. Good luck! ~
 
 // Additions (group reactions)
 @255 = ~This is very strange. Usually, Shadow Druids do not come so close to the city unless absolutely necessary and do not intervene in such adventures. Something is wrong here. ~
