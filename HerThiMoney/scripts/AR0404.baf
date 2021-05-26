@@ -117,6 +117,7 @@ Global("ANjoviRevive","GLOBAL",2)
 
 THEN
   RESPONSE #100
+HideGUI()  
 SetGlobal("ANjoviRevive","GLOBAL",3)
 SetInterrupt(FALSE)
 ActionOverride("ANjovi",FaceObject("ANAzora"))
@@ -126,6 +127,7 @@ Wait(2)
 ActionOverride("ANAzora",Kill(Myself))
 Wait(1)
 SetInterrupt(TRUE)	
+UnhideGUI() 
 ActionOverride("ANjovi",StartDialogNoSet(Player1)) 
 END
 
