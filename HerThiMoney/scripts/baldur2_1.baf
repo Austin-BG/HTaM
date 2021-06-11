@@ -6,11 +6,11 @@ IF
 	CombatCounter(0)
 THEN
        RESPONSE #100
-		SetGlobal("ANshakal","GLOBAL",10)
 		CreateCreatureObject("bdoffscr",Player1,0,0,0)  
 		ApplySpellRES("bdoffscr","bdoffscr")  // No such index
 		SmallWait(1)
 		CreateCreatureObject("ANmess1","bdoffscr",0,0,0)  
+		SetGlobal("ANshakal","GLOBAL",10)
 		ActionOverride("ANmess1",Dialog(Player1))
 END
 
