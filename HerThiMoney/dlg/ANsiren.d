@@ -253,7 +253,7 @@ END
 
 IF ~~ BEGIN ANCragmoonUbedit1_1
   SAY @115
-IF ~~ THEN EXTERN PLAYER1 ANCragmoonScroll
+IF ~~ THEN DO ~GiveItemCreate("ANscrll2",Player1,1,0,0)~ EXTERN PLAYER1 ANCragmoonScroll
 END
 
 IF ~~ BEGIN ANCragmoonUbedit2
