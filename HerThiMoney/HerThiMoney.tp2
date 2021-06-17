@@ -157,7 +157,11 @@ SAY NAME1 @49
 SAY NAME2 @49
 SAY UNIDENTIFIED_DESC @49
 SAY DESC @50
-
+PATCH_IF NOT GAME_IS ~bg2ee eet~
+    BEGIN
+        LPF DELETE_ITEM_EQEFFECT INT_VAR opcode_to_delete=319
+    END
+END
 
 EXTEND_TOP ~Player1.bcs~ ~HerThiMoney/scripts/addp1dlg.baf~ 
 
