@@ -146,6 +146,11 @@ SAY NAME1 @49
 SAY NAME2 @49
 SAY UNIDENTIFIED_DESC @49
 SAY DESC @50
+PATCH_IF NOT GAME_IS ~bg2ee eet~
+    BEGIN
+        LPF DELETE_ITEM_EQEFFECT INT_VAR opcode_to_delete=319
+    END
+END
 
 COPY ~HerThiMoney/items/ANkazas.itm~ ~Override/ANkazas.itm~
 SAY NAME1 @49
@@ -856,14 +861,14 @@ COPY ~HerThiMoney/cre/ANdragon.cre~ ~override/ANdragon.cre~
 SAY NAME1 @111
 SAY NAME2 @111
 PATCH_IF !EE_GAME BEGIN
- WRITE_SHORT 0x28 21071
+ WRITE_SHORT 0x28 (IDS_OF_SYMBOL (~animate~ ~FEYR~)) 
 END
 
 COPY ~HerThiMoney/cre/ANmonstr.cre~ ~override/ANmonstr.cre~
 SAY NAME1 @115
 SAY NAME2 @115
 PATCH_IF !EE_GAME BEGIN
- WRITE_SHORT 0x28 20556
+ WRITE_SHORT 0x28 (IDS_OF_SYMBOL (~animate~ ~REMORHAZ~))
 END
 
 END 
