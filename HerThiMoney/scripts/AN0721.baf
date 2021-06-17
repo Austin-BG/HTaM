@@ -298,4 +298,15 @@ GlobalGT("Chapter","GLOBAL",%bg2_chapter_3%)
 THEN
 	RESPONSE #100
 ActionOverride("ANshahba",DestroySelf())
+SetGlobal("ANshahbazExists","AN0721",0)
+END
+
+IF
+OR(2) Global("ANpiratQuest","GLOBAL",7) Global("ANpiratQuest","GLOBAL",8)
+Global("ANshahbazExists","AN0721",0)
+GlobalGT("Chapter","GLOBAL",%bg2_chapter_4%)
+THEN
+	RESPONSE #100
+SetGlobal("ANshahbazExists","AN0721",1)	
+CreateCreature("ANshahba",[1324.950],4)
 END
