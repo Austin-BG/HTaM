@@ -400,7 +400,7 @@ IF ~~ THEN REPLY @159 EXTERN ANshahba ANshahbazPirateTalk2
 IF ~~ THEN REPLY @160 EXTERN ANshahba ANshahbazPirateTalk3
 
 CHAIN
-IF ~OR(2) Global("ANpiratQuest","GLOBAL",7) Global("ANpiratQuest","GLOBAL",8)~ THEN ANshahba ANshahbazPiratQuestFinal
+IF WEIGHT #-90 ~OR(2) Global("ANpiratQuest","GLOBAL",7) Global("ANpiratQuest","GLOBAL",8)~ THEN ANshahba ANshahbazPiratQuestFinal
 @175 DO ~ActionOverride(Player1,SetDialog("PLAYER1")) SetGlobal("ANpiratQuest","GLOBAL",9)~
 =@168
 == PLAYER1 @169
