@@ -100,7 +100,7 @@ And:
 
 Vadim Ingwall Baranovsky – partial translation of the third component into English
 
-MidnightVoyager, contralexical – proofreading English texts
+MidnightVoyager, contralexical, Guest Raelis, Fishmalk_1 – proofreading English texts
 
 NiGHTMARE - ideas and texts of phrases
 
