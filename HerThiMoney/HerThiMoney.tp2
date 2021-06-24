@@ -413,6 +413,7 @@ END
 END
 
 //это есть в ЕЕ, но нет в оригинальной игре
+APPEND ~gtimes.ids~ ~150 THIRTY_MINUTES~ UNLESS ~THIRTY_MINUTES~
 APPEND ~gtimes.ids~ ~50400 SEVEN_DAYS~ UNLESS ~SEVEN_DAYS~
 APPEND ~gtimes.ids~ ~7200 ONE_DAY~ UNLESS ~ONE_DAY~
 APPEND ~gtimes.ids~ ~600 TWO_HOURS~ UNLESS ~TWO_HOURS~
