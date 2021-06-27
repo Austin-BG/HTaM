@@ -621,8 +621,8 @@ THEN TOWNC01 ANtowncrImoenTalk1
 == IMOEN2J @239
 == TOWNC01 @240
 == IMOEN2J @241
-== TOWNC01 @242
-== IMOEN2J @243 DO ~TakePartyItemAll("ANbukl") TakePartyGold(100)~
+== TOWNC01 @242 DO ~TakePartyItemAll("ANbukl") TakePartyGold(100)~
+== IMOEN2J @243 
 = @244
 == JANJ IF ~InParty("Jan") InMyArea("Jan") !Dead("Jan") !StateCheck("Jan",CD_STATE_NOTVALID)~ THEN @245
 == IMOEN2J IF ~InParty("Jan") InMyArea("Jan") !Dead("Jan") !StateCheck("Jan",CD_STATE_NOTVALID)~ THEN @246
@@ -641,8 +641,8 @@ EXIT
 CHAIN  
 IF WEIGHT #-4 ~InParty("Imoen2") InMyArea("Imoen2") !Dead("Imoen2") !StateCheck("Imoen2",CD_STATE_NOTVALID) Global("ANpromobuklets","GLOBAL",1) Global("ANtowncrimoen","GLOBAL",1) PartyHasItem("ANbukl") PartyGoldGT(99)~ 
 THEN TOWNC01 ANtowncrImoenTalk3 
-@248 DO ~SetGlobal("ANpromobuklets","GLOBAL",2)~
-== IMOEN2J @243 DO ~TakePartyItemAll("ANbukl") TakePartyGold(100)~
+@248 DO ~SetGlobal("ANpromobuklets","GLOBAL",2) TakePartyItemAll("ANbukl") TakePartyGold(100)~
+== IMOEN2J @243
 = @244
 == JANJ IF ~InParty("Jan") InMyArea("Jan") !Dead("Jan") !StateCheck("Jan",CD_STATE_NOTVALID)~ THEN @245
 == IMOEN2J IF ~InParty("Jan") InMyArea("Jan") !Dead("Jan") !StateCheck("Jan",CD_STATE_NOTVALID)~ THEN @246
@@ -704,8 +704,8 @@ THEN TOWNC01 ANtowncrNeeraTalk1
 == IF_FILE_EXISTS NEERAJ @239
 == TOWNC01 @240
 == IF_FILE_EXISTS NEERAJ @241
-== TOWNC01 @242
-== IF_FILE_EXISTS NEERAJ @243 DO ~TakePartyItemAll("ANbukl") TakePartyGold(100)~
+== TOWNC01 @242 DO ~TakePartyItemAll("ANbukl") TakePartyGold(100)~
+== IF_FILE_EXISTS NEERAJ @243 
 = @244
 == JANJ IF ~InParty("Jan") InMyArea("Jan") !Dead("Jan") !StateCheck("Jan",CD_STATE_NOTVALID)~ THEN @245
 == IF_FILE_EXISTS NEERAJ IF ~InParty("Jan") InMyArea("Jan") !Dead("Jan") !StateCheck("Jan",CD_STATE_NOTVALID)~ THEN @246
@@ -724,8 +724,8 @@ EXIT
 CHAIN  
 IF WEIGHT #-4 ~InParty("Neera") InMyArea("Neera") !Dead("Neera") !StateCheck("Neera",CD_STATE_NOTVALID) Global("ANpromobuklets","GLOBAL",1) Global("ANtowncrneera","GLOBAL",1) PartyHasItem("ANbukl") PartyGoldGT(99)~ 
 THEN TOWNC01 ANtowncrNeeraTalk3 
-@248 DO ~SetGlobal("ANpromobuklets","GLOBAL",2)~
-== IF_FILE_EXISTS NEERAJ @243 DO ~TakePartyItemAll("ANbukl") TakePartyGold(100)~
+@248 DO ~SetGlobal("ANpromobuklets","GLOBAL",2) TakePartyItemAll("ANbukl") TakePartyGold(100)~
+== IF_FILE_EXISTS NEERAJ @243
 = @244
 == JANJ IF ~InParty("Jan") InMyArea("Jan") !Dead("Jan") !StateCheck("Jan",CD_STATE_NOTVALID)~ THEN @245
 == IF_FILE_EXISTS NEERAJ IF ~InParty("Jan") InMyArea("Jan") !Dead("Jan") !StateCheck("Jan",CD_STATE_NOTVALID)~ THEN @246
