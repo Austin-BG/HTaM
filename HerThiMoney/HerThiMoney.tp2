@@ -1611,6 +1611,17 @@ END
 
 
 // Создаем Аэри-невидимку (для диалога с Квэйлом на случай, если она не в группе - иначе диалог часто прерывается)
+ACTION_IF EE_GAME BEGIN
+COPY_EXISTING ~AERIE12.CRE~ ~override/anaerie.cre~ //используем существующий файл (портрет и имя уже прописаны)
+	FOR ( i = 0xa4 ; i < 0x234 ; i = i + 0x4 ) BEGIN WRITE_LONG i "-1" END //удаляем все звуки на всякий случай
+	WRITE_ASCII 0x248 ~anaerie~ (40) //удаляем все скрипты и в override прописываем anaerie
+	WRITE_ASCII 0x280 ~anaerie~ (32) //script_name
+	WRITE_ASCII 0x2cc ~anaerie~ (8)  //dialog
+	WRITE_BYTE 0x12 THIS + 128 // Убираем отображение имени при нажатии TAB
+	REMOVE_CRE_ITEMS //удаляем все предметы на всякий случай
+	LPF ADD_CRE_EFFECT INT_VAR opcode=315 target=1 parameter2=1 timing=9 END //убираем анимацию
+	LPF ADD_CRE_EFFECT INT_VAR opcode=287 target=1 timing=9 END //убираем круг под ногами
+END ELSE BEGIN
 COPY_EXISTING ~AERIE12.CRE~ ~override/anaerie.cre~ //используем существующий файл (портрет и имя уже прописаны)
 	FOR ( i = 0xa4 ; i < 0x234 ; i = i + 0x4 ) BEGIN WRITE_LONG i "-1" END //удаляем все звуки на всякий случай
 	WRITE_ASCII 0x248 ~anaerie~ (40) //удаляем все скрипты и в override прописываем anaerie
@@ -1619,6 +1630,7 @@ COPY_EXISTING ~AERIE12.CRE~ ~override/anaerie.cre~ //используем сущ
 	REMOVE_CRE_ITEMS //удаляем все предметы на всякий случай
 	LPF ADD_CRE_EFFECT INT_VAR opcode=315 target=1 parameter2=1 timing=9 END //убираем анимацию
 	LPF ADD_CRE_EFFECT INT_VAR opcode=287 target=1 timing=9 END //убираем круг под ногами
+END
 	
 // Отключаем уход Сиджа с локации Гильдии Воров
 COPY_EXISTING ~SIDGE.bcs~ ~override~
