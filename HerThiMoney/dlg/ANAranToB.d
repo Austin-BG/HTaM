@@ -182,6 +182,27 @@ IF ~~ BEGIN ANAranToBTalkKorgan2
   SAY @54
 =@55
 =@56
+IF ~~ THEN EXIT
+END
+
+END
+
+APPEND IF_FILE_EXISTS 7XGar25J
+
+IF  WEIGHT #-10 ~Global("AranGarrickToB","GLOBAL",2)~ BEGIN ANAranToBTalkGarrick
+  SAY @74
+IF ~~ THEN DO ~SetGlobal("AranGarrickToB","GLOBAL",3)~ REPLY @75 GOTO ANAranToBTalkGarrick1
+IF ~~ THEN DO ~SetGlobal("AranGarrickToB","GLOBAL",3)~ REPLY @77 GOTO ANAranToBTalkGarrick2
+END
+
+IF ~~ BEGIN ANAranToBTalkGarrick1
+  SAY @76
+IF ~~ THEN EXIT
+END
+
+IF ~~ BEGIN ANAranToBTalkGarrick2
+  SAY @78
+IF ~~ THEN EXIT
 END
 
 END

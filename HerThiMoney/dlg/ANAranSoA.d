@@ -1258,7 +1258,7 @@ IF ~~ THEN REPLY @319 EXTERN ARAN AnaranFlirtBye
 
 // Аномен
 APPEND ANOMENJ
-IF ~Global("AranLove","GLOBAL",12) Global("AranAnomenTalk1","GLOBAL",0)~ BEGIN ANAranAnomenTalk1
+IF WEIGHT #-10 ~Global("AranLove","GLOBAL",12) Global("AranAnomenTalk1","GLOBAL",0)~ BEGIN ANAranAnomenTalk1
   SAY @66
 IF ~~ THEN DO ~SetGlobal("AranAnomenTalk1","GLOBAL",1)~ REPLY @68 GOTO ANAranAnomenTalk1_1
 IF ~~ THEN DO ~SetGlobal("AranAnomenTalk1","GLOBAL",1)~ REPLY @69 GOTO ANAranAnomenTalk1_2
@@ -1276,7 +1276,7 @@ IF ~~ BEGIN ANAranAnomenTalk1_2
 IF ~~ THEN EXIT
 END
 
-IF ~Global("AranLove","GLOBAL",22) Global("AranAnomenTalk2","GLOBAL",0) Global("AnomenRomanceActive","GLOBAL",2)~ BEGIN ANAranAnomenTalk2
+IF WEIGHT #-10 ~Global("AranLove","GLOBAL",22) Global("AranAnomenTalk2","GLOBAL",0) Global("AnomenRomanceActive","GLOBAL",2)~ BEGIN ANAranAnomenTalk2
   SAY @237
 =@238
 =@239  
@@ -1291,8 +1291,7 @@ END
 
 END
 
-CHAIN
-IF ~Global("AranLove","GLOBAL",22) Global("AranAnomenTalk2","GLOBAL",1)~ THEN ANOMENJ ANAranAnomenTalk2_2_CN
+CHAIN ANOMENJ ANAranAnomenTalk2_2_CN
 @245 DO ~SetGlobal("AranAnomenTalk2","GLOBAL",2) SetGlobal("AnomenRomanceActive","GLOBAL",3)~
 =@246
 == PLAYER1 @247
@@ -1301,15 +1300,14 @@ IF ~Global("AranLove","GLOBAL",22) Global("AranAnomenTalk2","GLOBAL",1)~ THEN AN
 == ANOMENJ @250
 EXIT
 
-CHAIN
-IF ~Global("AranLove","GLOBAL",22) Global("AranAnomenTalk2","GLOBAL",1)~ THEN ANOMENJ ANAranAnomenTalk2_2_LG
+CHAIN ANOMENJ ANAranAnomenTalk2_2_LG
 @251 DO ~SetGlobal("AranAnomenTalk2","GLOBAL",2) SetGlobal("AnomenRomanceActive","GLOBAL",3)~
 == PLAYER1 @252
 == ANOMENJ @253
 EXIT
 
 CHAIN
-IF ~Global("AranRomanceActive","GLOBAL",2) Global("AranAnomenTalk2","GLOBAL",1) Global("AnomenRomanceActive","GLOBAL",2)~ THEN ANOMENJ ANAranAnomenTalk2Again
+IF WEIGHT #-10 ~Global("AranRomanceActive","GLOBAL",2) Global("AranAnomenTalk2","GLOBAL",1) Global("AnomenRomanceActive","GLOBAL",2)~ THEN ANOMENJ ANAranAnomenTalk2Again
 @254 DO ~SetGlobal("AranAnomenTalk2","GLOBAL",2)~
 == PLAYER1 @255
 == ANOMENJ @256
@@ -1320,7 +1318,7 @@ IF ~!Alignment("Anomen",CHAOTIC_NEUTRAL)~ THEN EXTERN ANOMENJ ANAranAnomenTalk2_
 
 // Расаад
 APPEND IF_FILE_EXISTS RASAADJ
-IF ~Global("AranLove","GLOBAL",12) Global("AranRasaadTalk1","GLOBAL",0)~ BEGIN ANAranRasaadTalk1
+IF WEIGHT #-10 ~Global("AranLove","GLOBAL",12) Global("AranRasaadTalk1","GLOBAL",0)~ BEGIN ANAranRasaadTalk1
   SAY @66
 IF ~~ THEN DO ~SetGlobal("AranRasaadTalk1","GLOBAL",1)~ REPLY @68 GOTO ANAranRasaadTalk1_1
 IF ~~ THEN DO ~SetGlobal("AranRasaadTalk1","GLOBAL",1)~ REPLY @69 GOTO ANAranRasaadTalk1_2
@@ -1338,7 +1336,7 @@ IF ~~ BEGIN ANAranRasaadTalk1_2
 IF ~~ THEN EXIT
 END
 
-IF ~Global("AranLove","GLOBAL",22) Global("AranRasaadTalk2","GLOBAL",0) Global("RasaadRomanceActive","GLOBAL",2)~ BEGIN ANAranRasaadTalk2
+IF WEIGHT #-10 ~Global("AranLove","GLOBAL",22) Global("AranRasaadTalk2","GLOBAL",0) Global("RasaadRomanceActive","GLOBAL",2)~ BEGIN ANAranRasaadTalk2
   SAY @258
 =@259
 IF ~~ THEN DO ~SetGlobal("AranRasaadTalk2","GLOBAL",1)~ REPLY @260 EXTERN PLAYER1 ANAranRasaadTalk2_1
@@ -1352,8 +1350,7 @@ END
 
 END
 
-CHAIN
-IF ~Global("AranLove","GLOBAL",22) Global("AranRasaadTalk2","GLOBAL",1)~ THEN IF_FILE_EXISTS RASAADJ ANAranRasaadTalk2_2_1
+CHAIN IF_FILE_EXISTS RASAADJ ANAranRasaadTalk2_2_1
 @265 DO ~SetGlobal("AranRasaadTalk2","GLOBAL",2) SetGlobal("RasaadRomanceActive","GLOBAL",3)~
 == PLAYER1 @266
 == IF_FILE_EXISTS RASAADJ @267
@@ -1364,7 +1361,7 @@ IF ~Global("AranLove","GLOBAL",22) Global("AranRasaadTalk2","GLOBAL",1)~ THEN IF
 EXIT
 
 CHAIN
-IF ~Global("AranRomanceActive","GLOBAL",2) Global("AranRasaadTalk2","GLOBAL",1) Global("RasaadRomanceActive","GLOBAL",2)~ THEN IF_FILE_EXISTS RASAADJ ANAranRasaadTalk2Again
+IF WEIGHT #-10 ~Global("AranRomanceActive","GLOBAL",2) Global("AranRasaadTalk2","GLOBAL",1) Global("RasaadRomanceActive","GLOBAL",2)~ THEN IF_FILE_EXISTS RASAADJ ANAranRasaadTalk2Again
 @272 DO ~SetGlobal("AranRasaadTalk2","GLOBAL",2)~
 == PLAYER1 @273
 == IF_FILE_EXISTS RASAADJ @274
@@ -1374,7 +1371,7 @@ EXTERN RASAADJ ANAranRasaadTalk2_2_1
 
 // Джахейра
 APPEND JAHEIRAJ
-IF ~Global("AranLove","GLOBAL",12) Global("AranJaheiraTalk1","GLOBAL",0)~ BEGIN ANAranJaheiraTalk1
+IF WEIGHT #-10 ~Global("AranLove","GLOBAL",12) Global("AranJaheiraTalk1","GLOBAL",0)~ BEGIN ANAranJaheiraTalk1
   SAY @67
 IF ~~ THEN DO ~SetGlobal("AranJaheiraTalk1","GLOBAL",1)~ REPLY @68 GOTO ANAranJaheiraTalk1_1
 IF ~~ THEN DO ~SetGlobal("AranJaheiraTalk1","GLOBAL",1)~ REPLY @69 GOTO ANAranJaheiraTalk1_2
@@ -1395,7 +1392,7 @@ END
 
 // Келдорн 
 APPEND KELDORJ
-IF ~Global("AranLove","GLOBAL",12) Global("AranKeldornTalk1","GLOBAL",0) !Global("C#IM_ImoenStays","GLOBAL",1) !Global("C#IM_ImoenStays","GLOBAL",3)~ BEGIN ANAranKeldornTalk1Imoen
+IF WEIGHT #-10 ~Global("AranLove","GLOBAL",12) Global("AranKeldornTalk1","GLOBAL",0) !Global("C#IM_ImoenStays","GLOBAL",1) !Global("C#IM_ImoenStays","GLOBAL",3)~ BEGIN ANAranKeldornTalk1Imoen
   SAY @222
 IF ~~ THEN DO ~SetGlobal("AranKeldornTalk1","GLOBAL",1)~ REPLY @224 GOTO ANAranKeldornTalk1_1
 IF ~~ THEN DO ~SetGlobal("AranKeldornTalk1","GLOBAL",1)~ REPLY @225 GOTO ANAranKeldornTalk1_2
@@ -1404,7 +1401,7 @@ IF ~~ THEN DO ~SetGlobal("AranKeldornTalk1","GLOBAL",1)~ REPLY @227 GOTO ANAranK
 IF ~~ THEN DO ~SetGlobal("AranKeldornTalk1","GLOBAL",1)~ REPLY @228 GOTO ANAranKeldornTalk1_1
 END
 
-IF ~Global("AranLove","GLOBAL",12) Global("AranKeldornTalk1","GLOBAL",0) OR(2) Global("C#IM_ImoenStays","GLOBAL",1) Global("C#IM_ImoenStays","GLOBAL",3)~ BEGIN ANAranKeldornTalk1Iren
+IF WEIGHT #-10 ~Global("AranLove","GLOBAL",12) Global("AranKeldornTalk1","GLOBAL",0) OR(2) Global("C#IM_ImoenStays","GLOBAL",1) Global("C#IM_ImoenStays","GLOBAL",3)~ BEGIN ANAranKeldornTalk1Iren
   SAY @223
 IF ~~ THEN DO ~SetGlobal("AranKeldornTalk1","GLOBAL",1)~ REPLY @224 GOTO ANAranKeldornTalk1_1
 IF ~~ THEN DO ~SetGlobal("AranKeldornTalk1","GLOBAL",1)~ REPLY @225 GOTO ANAranKeldornTalk1_2
@@ -1426,7 +1423,7 @@ END
 
 // Викония
 APPEND VICONIJ
-IF ~Global("AranRomanceActive","GLOBAL",2) Global("AranViconiaTalk1","GLOBAL",0)~ BEGIN ANAranViconiaTalk1
+IF WEIGHT #-10 ~Global("AranRomanceActive","GLOBAL",2) Global("AranViconiaTalk1","GLOBAL",0)~ BEGIN ANAranViconiaTalk1
   SAY @232
 IF ~~ THEN DO ~SetGlobal("AranViconiaTalk1","GLOBAL",1)~ EXIT
 END
@@ -1447,7 +1444,7 @@ END
 
 // Аэри
 APPEND AERIEJ
-IF ~Global("AranRomanceActive","GLOBAL",2) Global("AranAerieTalk1","GLOBAL",2)~ BEGIN ANAranAerie1Talk
+IF WEIGHT #-10 ~Global("AranRomanceActive","GLOBAL",2) Global("AranAerieTalk1","GLOBAL",2)~ BEGIN ANAranAerie1Talk
   SAY @382
 IF ~~ THEN DO ~SetGlobal("AranAerieTalk1","GLOBAL",3)~ REPLY @383 GOTO ANAranAerie1Talk1
 IF ~~ THEN DO ~SetGlobal("AranAerieTalk1","GLOBAL",3)~ REPLY @385 GOTO ANAranAerie1Talk2
@@ -1539,7 +1536,7 @@ END
 
 // Хаер'Далис
 APPEND HAERDAJ
-IF ~Global("AranRomanceActive","GLOBAL",2) Global("AranHaerdaTalk1","GLOBAL",2)~ BEGIN ANAranHaerdaTalk
+IF WEIGHT #-10 ~Global("AranRomanceActive","GLOBAL",2) Global("AranHaerdaTalk1","GLOBAL",2)~ BEGIN ANAranHaerdaTalk
   SAY @414
 IF ~~ THEN DO ~SetGlobal("AranHaerdaTalk1","GLOBAL",3)~ REPLY @415 GOTO ANAranHaerdaTalk1
 END
@@ -1580,7 +1577,7 @@ END
 // Дорн
 
 CHAIN
-IF ~Global("AranRomanceActive","GLOBAL",2) Global("AranDornTalk1","GLOBAL",0) Global("DornRomanceActive","GLOBAL",2)~ THEN IF_FILE_EXISTS DORNJ ANAranDornTalk1
+IF WEIGHT #-10 ~Global("AranRomanceActive","GLOBAL",2) Global("AranDornTalk1","GLOBAL",0) Global("DornRomanceActive","GLOBAL",2)~ THEN IF_FILE_EXISTS DORNJ ANAranDornTalk1
 @689 DO ~SetGlobal("AranDornTalk1","GLOBAL",1) SetGlobal("DornRomanceActive","GLOBAL",3)~
 == PLAYER1 @690
 == IF_FILE_EXISTS DORNJ @691
@@ -1595,7 +1592,7 @@ EXIT
 
 // Йошимо
 APPEND YOSHJ
-IF ~Global("AranRomanceActive","GLOBAL",2) Global("AranYoshimoTalk","GLOBAL",2)~ BEGIN ANAranYoshimoTalk
+IF WEIGHT #-10 ~Global("AranRomanceActive","GLOBAL",2) Global("AranYoshimoTalk","GLOBAL",2)~ BEGIN ANAranYoshimoTalk
   SAY @707
 IF ~~ THEN DO ~SetGlobal("AranYoshimoTalk","GLOBAL",3)~ REPLY @708 GOTO ANAranYoshimoTalk1
 IF ~~ THEN DO ~SetGlobal("AranYoshimoTalk","GLOBAL",3)~ REPLY @714 GOTO ANAranYoshimoTalk2
@@ -1628,7 +1625,7 @@ END
 
 // Маззи
 APPEND MAZZYJ
-IF ~Global("AranRomanceActive","GLOBAL",2) Global("AranMazzyTalk","GLOBAL",2)~ BEGIN ANAranMazzyTalk
+IF WEIGHT #-10 ~Global("AranRomanceActive","GLOBAL",2) Global("AranMazzyTalk","GLOBAL",2)~ BEGIN ANAranMazzyTalk
   SAY @715
 IF ~~ THEN DO ~SetGlobal("AranMazzyTalk","GLOBAL",3)~ REPLY @716 GOTO ANAranMazzyTalk1
 END
@@ -1653,7 +1650,7 @@ END
 
 // Налия
 APPEND NALIAJ
-IF ~Global("AranRomanceActive","GLOBAL",2) Global("AranNaliaTalk","GLOBAL",2)~ BEGIN ANAranNaliaTalk
+IF WEIGHT #-10 ~Global("AranRomanceActive","GLOBAL",2) Global("AranNaliaTalk","GLOBAL",2)~ BEGIN ANAranNaliaTalk
   SAY @735
 IF ~~ THEN DO ~SetGlobal("AranNaliaTalk","GLOBAL",3)~ REPLY @736 GOTO ANAranNaliaTalk1
 IF ~~ THEN DO ~SetGlobal("AranNaliaTalk","GLOBAL",3)~ REPLY @737 GOTO ANAranNaliaTalkEnd
@@ -1665,6 +1662,8 @@ IF ~~ BEGIN ANAranNaliaTalk1
 =@740 
 IF ~~ THEN REPLY @741 GOTO ANAranNaliaTalk2_1
 IF ~~ THEN REPLY @742 GOTO ANAranNaliaTalk2_2
+IF ~!Global("GarrickNaliaRomance","GLOBAL",2)~ THEN REPLY @742 GOTO ANAranNaliaTalk2_2
+IF ~Global("GarrickNaliaRomance","GLOBAL",2)~ THEN REPLY @890 GOTO ANAranNaliaTalk2_2Garrick
 IF ~~ THEN REPLY @743 GOTO ANAranNaliaTalk2_3
 IF ~~ THEN REPLY @744 GOTO ANAranNaliaTalk2_4
 IF ~~ THEN REPLY @745 GOTO ANAranNaliaTalk2_5
@@ -1678,6 +1677,11 @@ END
 
 IF ~~ BEGIN ANAranNaliaTalk2_2
   SAY @749
+IF ~~ THEN EXIT
+END
+
+IF ~~ BEGIN ANAranNaliaTalk2_2Garrick
+  SAY @891
 IF ~~ THEN EXIT
 END
 
@@ -1706,6 +1710,44 @@ IF ~~ BEGIN ANAranNaliaTalkEnd
 IF ~~ THEN EXIT
 END
 
+
+END
+
+
+// Гаррик
+APPEND IF_FILE_EXISTS 7XGarJ
+
+IF WEIGHT #-10 ~Global("AranRomanceActive","GLOBAL",2) Global("AranGarrickTalk","GLOBAL",2)~ BEGIN ANAranGarrickTalk1
+  SAY @874
+IF ~~ THEN DO ~SetGlobal("AranGarrickTalk","GLOBAL",3)~ REPLY @875 GOTO ANAranGarrickTalk2
+IF ~~ THEN DO ~SetGlobal("AranGarrickTalk","GLOBAL",3)~ REPLY @877 GOTO ANAranGarrickTalk3
+IF ~~ THEN DO ~SetGlobal("AranGarrickTalk","GLOBAL",3)~ REPLY @879 GOTO ANAranGarrickTalk4
+END
+
+IF ~~ BEGIN ANAranGarrickTalk2
+  SAY @876
+IF ~~ THEN EXIT
+END
+
+IF ~~ BEGIN ANAranGarrickTalk3
+  SAY @878
+IF ~~ THEN EXIT
+END
+
+IF ~~ BEGIN ANAranGarrickTalk4
+  SAY @880
+IF ~~ THEN EXIT
+END
+
+END
+
+// Коран
+APPEND IF_FILE_EXISTS 7XCoranJ
+
+IF WEIGHT #-10 ~Global("AranRomanceActive","GLOBAL",2) Global("AranCoranTalk","GLOBAL",2)~ BEGIN ANAranCoranTalk1
+  SAY @881
+IF ~~ THEN DO ~SetGlobal("AranCoranTalk","GLOBAL",3)~ EXIT
+END
 
 END
 
@@ -1854,6 +1896,9 @@ IF ~Global("LeenaGuildExists","AR0307",1)~ THEN ANleena ANleena1TalkGuild
 == CERNDJ IF ~InParty("Cernd") InMyArea("Cernd") !StateCheck("Cernd",CD_STATE_NOTVALID)~ THEN @695
 == IF_FILE_EXISTS NEERAJ IF ~InParty("Neera") InMyArea("Neera") !StateCheck("Neera",CD_STATE_NOTVALID)~ THEN @706
 == PLAYER1 IF ~OR(5) InParty("Aerie") InParty("Jaheira") InParty("Anomen") InParty("Cernd") InParty("Neera")~ @696
+== IF_FILE_EXISTS 7XGarJ IF ~InParty("7XGAR") InMyArea("7XGAR") !StateCheck("7XGAR",CD_STATE_NOTVALID)~ THEN @882
+== IF_FILE_EXISTS 7XCoranJ IF ~InParty("7XCORAN") InMyArea("7XCORAN") !StateCheck("7XCORAN",CD_STATE_NOTVALID)~ THEN @883
+== IF_FILE_EXISTS O#CORANJ IF ~InParty("O#Coran") InMyArea("O#Coran") !StateCheck("O#Coran",CD_STATE_NOTVALID)~ THEN @883
 == MAZZYJ IF ~InParty("Mazzy") InMyArea("Mazzy") !StateCheck("Mazzy",CD_STATE_NOTVALID)~ THEN @694
 =@703
 == KELDORJ IF ~InParty("Keldorn") InMyArea("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID)~ THEN @702
@@ -2264,6 +2309,9 @@ IF WEIGHT #-2 ~Global("ANAranLamp","GLOBAL",8) Dead("ANbasil")~ THEN ANAzora ANL
 == IF_FILE_EXISTS O#TiaxJ IF ~InParty("O#Tiax") InMyArea("O#Tiax") !StateCheck("O#Tiax",CD_STATE_NOTVALID)~ THEN @682
 == IF_FILE_EXISTS 7XBRANJ IF ~InParty("7XBRAN") InMyArea("7XBRAN") !StateCheck("7XBRAN",CD_STATE_NOTVALID)~ THEN @681
 == IF_FILE_EXISTS 7XTIAXJ IF ~InParty("7XTIAX") InMyArea("7XTIAX") !StateCheck("7XTIAX",CD_STATE_NOTVALID)~ THEN @682
+== IF_FILE_EXISTS 7XGarJ IF ~InParty("7XGAR") InMyArea("7XGAR") !StateCheck("7XGAR",CD_STATE_NOTVALID)~ THEN @884
+== IF_FILE_EXISTS 7XCoranJ IF ~InParty("7XCORAN") InMyArea("7XCORAN") !StateCheck("7XCORAN",CD_STATE_NOTVALID)~ THEN @885
+== IF_FILE_EXISTS O#CORANJ IF ~InParty("O#Coran") InMyArea("O#Coran") !StateCheck("O#Coran",CD_STATE_NOTVALID)~ THEN @885
 END
 IF ~~ THEN REPLY @622 GOTO ANLampAzoraNoStone3
 IF ~~ THEN REPLY @623 GOTO ANLampAzoraNoStone4
@@ -2289,6 +2337,9 @@ IF ~Global("ANAranLamp","GLOBAL",7) AreaCheck("AR0404") Global("ANAranLampRenal"
 == IF_FILE_EXISTS O#TiaxJ IF ~InParty("O#Tiax") InMyArea("O#Tiax") !StateCheck("O#Tiax",CD_STATE_NOTVALID)~ THEN @680
 == IF_FILE_EXISTS 7XBRANJ IF ~InParty("7XBRAN") InMyArea("7XBRAN") !StateCheck("7XBRAN",CD_STATE_NOTVALID)~ THEN @679
 == IF_FILE_EXISTS 7XTIAXJ IF ~InParty("7XTIAX") InMyArea("7XTIAX") !StateCheck("7XTIAX",CD_STATE_NOTVALID)~ THEN @680
+== IF_FILE_EXISTS 7XGarJ IF ~InParty("7XGAR") InMyArea("7XGAR") !StateCheck("7XGAR",CD_STATE_NOTVALID)~ THEN @884
+== IF_FILE_EXISTS 7XCoranJ IF ~InParty("7XCORAN") InMyArea("7XCORAN") !StateCheck("7XCORAN",CD_STATE_NOTVALID)~ THEN @885
+== IF_FILE_EXISTS O#CORANJ IF ~InParty("O#Coran") InMyArea("O#Coran") !StateCheck("O#Coran",CD_STATE_NOTVALID)~ THEN @885
 == EDWINJ IF ~InParty("Edwin") InMyArea("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN @665
 == JAHEIRAJ IF ~InParty("Jaheira") InMyArea("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID) InParty("Edwin") InMyArea("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN @666
 == PLAYER1 IF ~InParty("Edwin") InMyArea("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID) OR(2) !InParty("Jaheira") StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN @666
@@ -2652,6 +2703,10 @@ IF ~Global("ANAranTethyr","GLOBAL",23) NumInPartyGT(1)~ THEN PLAYER1 ANAranTethy
 == NALIAJ IF ~InParty("Nalia") InMyArea("Nalia") !StateCheck("Nalia",CD_STATE_NOTVALID)~ THEN @872
 == IMOEN2J IF ~InParty("Imoen2") InMyArea("Imoen2") !StateCheck("Imoen2",CD_STATE_NOTVALID)~ THEN @865
 == PLAYER1 IF ~InParty("Imoen2") InMyArea("Imoen2") !StateCheck("Imoen2",CD_STATE_NOTVALID)~ THEN @866
+== IF_FILE_EXISTS 7XGarJ IF ~InParty("7XGAR") InMyArea("7XGAR") !StateCheck("7XGAR",CD_STATE_NOTVALID)~ THEN @886
+== PLAYER1 IF ~InParty("7XGAR") InMyArea("7XGAR") !StateCheck("7XGAR",CD_STATE_NOTVALID)~ THEN @887
+== IF_FILE_EXISTS 7XGarJ IF ~InParty("7XGAR") InMyArea("7XGAR") !StateCheck("7XGAR",CD_STATE_NOTVALID)~ THEN @888
+== PLAYER1 IF ~InParty("7XGAR") InMyArea("7XGAR") !StateCheck("7XGAR",CD_STATE_NOTVALID)~ THEN @889
 EXIT
 
 CHAIN
