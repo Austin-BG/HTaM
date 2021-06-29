@@ -1,45 +1,3 @@
-// To remove snippets of code in a safe way
-DEFINE_PATCH_FUNCTION GET_SCRIPT_BLOCK
-INT_VAR
-  start_offset  = 0
-  reverse       = 0
-STR_VAR
-  search_regexp = ~~
-RET
-  script_block
-  start_offset
-  end_offset
-BEGIN
-  SET offset = start_offset
-  PATCH_IF (offset < 0) BEGIN SET offset = 0 END
-  PATCH_IF (offset > BUFFER_LENGTH) BEGIN SET offset = BUFFER_LENGTH END
-
-  TEXT_SPRINT script_block ~~
-  SET start_offset = "-1"
-  SET end_offset = "-1"
-
-  PATCH_IF (NOT ~%search_regexp%~ STR_EQ ~~) BEGIN
-    PATCH_IF (reverse) BEGIN
-      SET offset = RINDEX_BUFFER(~%search_regexp%~ offset)
-    END ELSE BEGIN
-      SET offset = INDEX_BUFFER(~%search_regexp%~ offset)
-    END
-
-    PATCH_IF (offset >= 0) BEGIN
-      SET ofsStart = RINDEX_BUFFER(~^IF$~ offset)
-      PATCH_IF (ofsStart >= 0) BEGIN
-        SET ofsEnd = INDEX_BUFFER(~^END$~ offset)
-        PATCH_IF (ofsEnd >= 0) BEGIN
-          SET ofsEnd += 3
-          READ_ASCII ofsStart script_block (ofsEnd - ofsStart)
-          SET start_offset = ofsStart
-          SET end_offset = ofsEnd
-        END
-      END
-    END
-  END
-END
-
 // To add replicas in difficult situations
 
 DEFINE_ACTION_FUNCTION FC_COMPILE_EXTERNAL_DLG
@@ -236,156 +194,53 @@ BEGIN
 	END
 END
 
-/* Патчим файл player1, чтобы добавить диалоги всем NPC после превращения игрока в Убийцу (ранее говорил только кто-то один), подключаем функцию*/
-OUTER_SET minus_one = ( 0 - 1 )
-OUTER_SPRINT tilde "~"
-OUTER_SET new_added_string = RESOLVE_STR_REF ( ~...~ )
+// Патчим файл player1, чтобы добавить диалоги всем NPC после превращения игрока в Убийцу (ранее говорил только кто-то один), подключаем функцию
 DEFINE_ACTION_FUNCTION GET_EDIT_STATE
 	INT_VAR
 		detect_state = 1
-		add_empty_block = 1
-		addedx = 0
-		clear = 1
-		aablock = 0
 	STR_VAR
+		detect_file  = "IMOEN2J"
 		found_file   = ""
 	RET
-		string
-		addedx
-		aablock
-	RET_ARRAY
-		STATES_IN_DLG
+		strref
+		state
 BEGIN
-	OUTER_SET added = 0
-	OUTER_SPRINT string ~~
-	OUTER_SPRINT action_text ~~
-	OUTER_SPRINT new_blocks ~CHAIN
-IF %tilde%%tilde% THEN %tilde%%found_file%%tilde% state_new_block
-#%new_added_string%
-%action_text%
-COPY_TRANS PLAYER1 5%LNL%%LNL%~
-	ACTION_IF ( clear ) BEGIN 
-		ACTION_CLEAR_ARRAY STATES_IN_DLG
-	END
-	ACTION_IF ( FILE_EXISTS_IN_GAME ~%found_file%.dlg~ ) BEGIN
-		COPY_EXISTING ~%found_file%.dlg~ ~override~
-			READ_LONG 0x08 xstat_num
-			READ_LONG 0x0c xstat_off
-			READ_LONG 0x10 xresp_num
-			READ_LONG 0x14 xresp_off
-			READ_LONG 0x28 xaction_off
-			PATCH_IF ( xstat_num > 0 ) AND ( detect_state < xstat_num ) BEGIN
-				SET offset = xstat_off + detect_state * 0x10
-				READ_LONG offset + 0x00 strref
-				READ_LONG offset + 0x04 resp_first
-				READ_LONG offset + 0x08 resp_num
-				SPRINT ~string~ ~%string%
-CHAIN
-IF %tilde%%tilde% THEN %tilde%%found_file%%tilde% num_%detect_state%
-#%strref%
-END%LNL%~
-				SET resp_all = resp_first + resp_num
-				SET insert_terminate = 1
-				SET exists_terminate = 0
-				SPRINT terminate ~~
-				SPRINT response_block ~~
-				SPRINT add_new_blocks ~~
-				FOR ( i = resp_first ; i < resp_all ; ++i ) BEGIN
-					SET offs2 = xresp_off + i * 0x20
-					READ_LONG  offs2 + 0x00 flags
-					READ_LONG  offs2 + 0x10 xacti_ids
-					SPRINT action_text ~~
-					SPRINT if_do_text ~~
-					LPF GET_BIT INT_VAR number = flags nth_bit = 2 RET act_bit = bit_value END
-					PATCH_IF ( act_bit ) BEGIN
-							LPF GET_TRIGGER_ACTION_TEXT INT_VAR ta_idx = xacti_ids ta = xaction_off RET zx2_acti = ta_text END
-							PATCH_IF ( ~%zx2_acti%~ STR_CMP ~~ ) BEGIN
-								SPRINT action_text ~ DO %tilde%%zx2_acti%%tilde% ~
-								SPRINT if_do_text ~ IF THEN %tilde%%tilde% ~
-							END
-					END
-					LPF GET_BIT INT_VAR number = flags nth_bit = 3 RET bit_value END
-					READ_ASCII offs2 + 0x14 next_dial (8) NULL
-					READ_LONG  offs2 + 0x1c next_state
-					READ_SLONG offs2 + 0x04 resp_text
-					PATCH_IF ( ( bit_value ) AND ( exists_terminate = 0 ) AND ( resp_text < 1 ) ) BEGIN
-						PATCH_IF ( act_bit ) BEGIN
-							PATCH_IF ( NOT add_empty_block ) AND ( NOT aablock ) BEGIN
-								SPRINT add_new_blocks ~%new_blocks%~
-								SET aablock = 1
-							END
-							SPRINT ~terminate~ ~IF %tilde%%tilde% THEN%action_text% EXTERN %tilde%%found_file%%tilde% state_new_block%LNL%%LNL%%add_new_blocks%~
-							PATCH_PRINT ~add_empty_block = %add_empty_block%~
-						END ELSE BEGIN
-							SPRINT ~terminate~ ~%terminate% COPY_TRANS PLAYER1 5%LNL%~
-						END					
-						SET exists_terminate = 1
-					END
-					PATCH_IF ( resp_text > 0 ) BEGIN SPRINT ~ttttx~ ~ REPLY #%resp_text%~ END ELSE BEGIN SPRINT ~ttttx~ ~~ END
-					PATCH_IF ( ~%found_file%~ STR_EQ ~%next_dial%~ ) BEGIN
-						SET insert_terminate = 0
-						SPRINT ~response_block_X~ ~IF %tilde%%tilde% THEN%ttttx%%action_text% EXTERN %tilde%%next_dial%%tilde% num_%next_state%%LNL%~
-						PATCH_IF ( resp_text > 0 ) BEGIN
-							SPRINT ~response_block~ ~%response_block%%response_block_X%~
-						END ELSE BEGIN
-							SPRINT ~response_block~ ~%response_block_X%~
-						END
-						SET added = added + 1
-						SET EVAL ~new_state_%added%~ = next_state
-					END ELSE BEGIN
-						PATCH_IF ( bit_value ) AND ( resp_text > 0 ) BEGIN
-							SET insert_terminate = 0
-							SPRINT ~response_block~ ~%response_block%IF %tilde%%tilde% THEN%ttttx%%action_text% EXTERN %tilde%%found_file%%tilde% state_new_block%LNL%~
-							SET addedx = addedx + 1
-						END
-						ELSE BEGIN
-							PATCH_IF ( NOT bit_value ) AND ( resp_text > 0 ) BEGIN
-								SET insert_terminate = 0
-								SPRINT ~response_block_X~ ~IF %tilde%%tilde% THEN%ttttx%%action_text% EXTERN %tilde%%next_dial%%tilde% %next_state%%LNL%~
-								SPRINT ~response_block~ ~%response_block%%response_block_X%~
-								SET added = added + 1
-								SET EVAL ~new_state_%added%~ = next_state
-							END
+	SILENT
+		OUTER_SET strref = "-1"
+		OUTER_SET state  = "-1"
+		OUTER_SET xidx   = "-1"
+		ACTION_IF ( FILE_EXISTS_IN_GAME ~%detect_file%.dlg~ ) AND ( FILE_EXISTS_IN_GAME ~%found_file%.dlg~ ) BEGIN
+			COPY_EXISTING ~%found_file%.dlg~ ~override~
+				READ_LONG 0x08 xstat_num
+				READ_LONG 0x0c xstat_off
+				READ_LONG 0x10 xresp_num
+				READ_LONG 0x14 xresp_off
+				PATCH_IF ( xresp_num > 0 ) BEGIN
+					FOR ( i = 0 ; i < xresp_num ; ++i ) BEGIN
+						SET xoffset = xresp_off + i * 0x20
+						READ_ASCII xoffset + 0x14 xdlg (8) NULL
+						READ_LONG  xoffset + 0x1c xstate
+						PATCH_IF ( ~%xdlg%~ STR_EQ ~%detect_file%~ ) AND ( ~%xstate%~ = ~%detect_state%~ ) BEGIN
+							SET xidx = i
+							SET i = xresp_num
 						END
 					END
 				END
-				PATCH_IF ( insert_terminate ) BEGIN SPRINT ~response_block~ ~%terminate%%response_block%~ END
-				SPRINT ~string~ ~%string%%response_block%~
-				PATCH_IF ( added > 0 ) BEGIN
-					FOR ( i = 1 ; i <= added ; ++i ) BEGIN
-						SET hohoho = EVAL ~new_state_%i%~
-						SPRINT pipipi ~num_%hohoho%~
-						TO_UPPER pipipi
-						INNER_ACTION BEGIN
-							ACTION_IF ( NOT VARIABLE_IS_SET $STATES_IN_DLG ( ~%pipipi%~ ) ) BEGIN
-								LAF GET_EDIT_STATE
-									INT_VAR
-										detect_state = hohoho
-										add_empty_block = 0
-										addedx
-										clear = 0
-										aablock
-									STR_VAR
-										found_file   = EVAL "%next_dial%"
-									RET
-										echo_string = string
-										addedx
-										aablock
-									RET_ARRAY
-										STATES_IN_DLG
-								END
-								OUTER_SPRINT ~string~ ~%string%%echo_string%~
-								ACTION_DEFINE_ASSOCIATIVE_ARRAY STATES_IN_DLG BEGIN ~%pipipi%~ => ~~ END
-							END
+				PATCH_IF ( xstat_num > 0 ) AND ( xidx >= 0 ) BEGIN
+					FOR ( i = 0 ; i < xstat_num ; ++i ) BEGIN
+						SET xoffset = xstat_off + i * 0x10
+						READ_LONG xoffset + 0x04 xfirst_idx
+						SET xlast_idx = LONG_AT ( xoffset + 0x08 ) + xfirst_idx
+						PATCH_IF ( xidx >= xfirst_idx ) AND ( xidx < xlast_idx ) BEGIN
+							SET state = i
+							READ_LONG xoffset strref
+							SET i = xstat_num
 						END
 					END
 				END
-			END
-			BUT_ONLY
-		ACTION_IF ( add_empty_block ) AND ( addedx ) AND ( NOT aablock ) BEGIN
-			OUTER_SPRINT ~string~ ~%new_blocks%%string%~
+				BUT_ONLY_IF_IT_CHANGES
 		END
-	END
+	VERBOSE
 END
 
 DEFINE_PATCH_FUNCTION GET_TRIGGER_ACTION_TEXT
@@ -402,37 +257,32 @@ BEGIN
 END
 
 
-DEFINE_ACTION_FUNCTION AN_PATCH_P1DIALOG_RESPONSES RET new_dialog RET_ARRAY AN_NPC_DLG NEW_DIALOG_ARRAY BEGIN
+DEFINE_ACTION_MACRO AN_PATCH_P1DIALOG_RESPONSES BEGIN
 	ACTION_CLEAR_ARRAY AN_NPC_DLG
-	ACTION_CLEAR_ARRAY NEW_DIALOG_ARRAY
 	ACTION_DEFINE_ASSOCIATIVE_ARRAY AN_NPC_DLG BEGIN
-		~IMOEN2J~,  ~0~, ~IsValidForPartyDialogue("IMOEN2") Global("AN_Imoen_Spellh","AR1514",0)~,        ~SetGlobal("AN_Imoen_Spellh","AR1514",1)~,     ~1~,   ~6~,   ~49869~, ~~, ~%minus_one%~  => ~IMOEN2~
-		~JAHEIRAJ~, ~0~, ~IsValidForPartyDialogue("JAHEIRA") Global("AN_Jaheira_Spellh","AR1514",0)~,     ~SetGlobal("AN_Jaheira_Spellh","AR1514",1)~,   ~432~, ~433~, ~50640~, ~~, ~%minus_one%~  => ~JAHEIRA~
-		~VICONIJ~,  ~0~, ~IsValidForPartyDialogue("VICONIA") Global("AN_Viconia_Spellh","AR1514",0)~,     ~SetGlobal("AN_Viconia_Spellh","AR1514",1)~,   ~87~,  ~88~,  ~50642~, ~~, ~%minus_one%~  => ~VICONIA~
-		~AERIEJ~,   ~0~, ~IsValidForPartyDialogue("AERIE") Global("AN_Aerie_Spellh","AR1514",0)~,         ~SetGlobal("AN_Aerie_Spellh","AR1514",1)~,     ~116~, ~117~, ~50644~, ~~, ~%minus_one%~  => ~AERIE~
-		~ANOMENJ~,  ~0~, ~IsValidForPartyDialogue("ANOMEN") Global("AN_Anomen_Spellh","AR1514",0)~,       ~SetGlobal("AN_Anomen_Spellh","AR1514",1)~,    ~250~, ~251~, ~50646~, ~~, ~%minus_one%~  => ~ANOMEN~
-		~EDWINJ~,   ~0~, ~IsValidForPartyDialogue("EDWIN") Global("AN_Edwin_Spellh","AR1514",0)~,         ~SetGlobal("AN_Edwin_Spellh","AR1514",1)~,     ~149~, ~152~, ~57710~, ~~, ~%minus_one%~  => ~EDWIN~
-		~VALYGARJ~, ~0~, ~IsValidForPartyDialogue("VALYGAR") Global("AN_Valygar_Spellh","AR1514",0)~,     ~SetGlobal("AN_Valygar_Spellh","AR1514",1)~,   ~103~, ~104~, ~57714~, ~~, ~%minus_one%~  => ~VALYGAR~
-		~KELDORJ~,  ~0~, ~IsValidForPartyDialogue("KELDORN") Global("AN_Keldorn_Spellh","AR1514",0)~,     ~SetGlobal("AN_Keldorn_Spellh","AR1514",1)~,   ~243~, ~245~, ~57717~, ~~, ~%minus_one%~  => ~KELDORN~
-		~KORGANJ~,  ~0~, ~IsValidForPartyDialogue("KORGAN") Global("AN_Korgan_Spellh","AR1514",0)~,       ~SetGlobal("AN_Korgan_Spellh","AR1514",1)~,    ~177~, ~179~, ~57720~, ~~, ~%minus_one%~  => ~KORGAN~
-		~JANJ~,     ~0~, ~IsValidForPartyDialogue("JAN") Global("AN_Jan_Spellh","AR1514",0)~,             ~SetGlobal("AN_Jan_Spellh","AR1514",1)~,       ~178~, ~180~, ~57723~, ~~, ~%minus_one%~  => ~JAN~
-		~NALIAJ~,   ~0~, ~IsValidForPartyDialogue("NALIA") Global("AN_Nalia_Spellh","AR1514",0)~,         ~SetGlobal("AN_Nalia_Spellh","AR1514",1)~,     ~308~, ~310~, ~57726~, ~~, ~%minus_one%~  => ~NALIA~
-		~MAZZYJ~,   ~0~, ~IsValidForPartyDialogue("MAZZY") Global("AN_Mazzy_Spellh","AR1514",0)~,         ~SetGlobal("AN_Mazzy_Spellh","AR1514",1)~,     ~194~, ~196~, ~57729~, ~~, ~%minus_one%~  => ~MAZZY~
-		~HAERDAJ~,  ~0~, ~IsValidForPartyDialogue("HAERDALIS") Global("AN_Haerdalis_Spellh","AR1514",0)~, ~SetGlobal("AN_Haerdalis_Spellh","AR1514",1)~, ~141~, ~145~, ~57734~, ~~, ~%minus_one%~  => ~HAERDALIS~
-		~CERNDJ~,   ~0~, ~IsValidForPartyDialogue("CERND") Global("AN_Cernd_Spellh","AR1514",0)~,         ~SetGlobal("AN_Cernd_Spellh","AR1514",1)~,     ~130~, ~132~, ~57739~, ~~, ~%minus_one%~  => ~CERND~
-		~MINSCJ~,   ~0~, ~IsValidForPartyDialogue("MINSC") Global("AN_Minsc_Spellh","AR1514",0)~,         ~SetGlobal("AN_Minsc_Spellh","AR1514",1)~,     ~202~, ~203~, ~57741~, ~~, ~%minus_one%~  => ~MINSC~
-		~RASAADJ~,  ~1~, ~IsValidForPartyDialogue("RASAAD") Global("AN_Rasaad_Spellh","AR1514",0)~,       ~SetGlobal("AN_Rasaad_Spellh","AR1514",1)~,    ~325~, ~326~, ~98384~, ~~, ~%minus_one%~  => ~RASAAD~
-		~DORNJ~,    ~1~, ~IsValidForPartyDialogue("DORN") Global("AN_Dorn_Spellh","AR1514",0)~,           ~SetGlobal("AN_Dorn_Spellh","AR1514",1)~,      ~33~,  ~34~,  ~98529~, ~~, ~%minus_one%~  => ~DORN~
-		~HEXXATJ~,  ~1~, ~IsValidForPartyDialogue("HEXXAT") Global("AN_Hexxat_Spellh","AR1514",0)~,       ~SetGlobal("AN_Hexxat_Spellh","AR1514",1)~,    ~287~, ~287~, ~98267~, ~~, ~%minus_one%~  => ~HEXXAT~
-		~NEERAJ~,   ~1~, ~IsValidForPartyDialogue("NEERA") Global("AN_Neera_Spellh","AR1514",0)~,         ~SetGlobal("AN_Neera_Spellh","AR1514",1)~,     ~461~, ~465~, ~98462~, ~~, ~%minus_one%~  => ~NEERA~
+		~IMOEN2J~,  ~0~, ~IsValidForPartyDialogue("IMOEN2") Global("AN_Imoen_Spellh","AR1514",0)~,        ~SetGlobal("AN_Imoen_Spellh","AR1514",1)~,     ~1~,   ~6~,   ~49869~  => ~IMOEN2~
+		~JAHEIRAJ~, ~0~, ~IsValidForPartyDialogue("JAHEIRA") Global("AN_Jaheira_Spellh","AR1514",0)~,     ~SetGlobal("AN_Jaheira_Spellh","AR1514",1)~,   ~432~, ~433~, ~50640~  => ~JAHEIRA~
+		~VICONIJ~,  ~0~, ~IsValidForPartyDialogue("VICONIA") Global("AN_Viconia_Spellh","AR1514",0)~,     ~SetGlobal("AN_Viconia_Spellh","AR1514",1)~,   ~87~,  ~88~,  ~50642~  => ~VICONIA~
+		~AERIEJ~,   ~0~, ~IsValidForPartyDialogue("AERIE") Global("AN_Aerie_Spellh","AR1514",0)~,         ~SetGlobal("AN_Aerie_Spellh","AR1514",1)~,     ~116~, ~117~, ~50644~  => ~AERIE~
+		~ANOMENJ~,  ~0~, ~IsValidForPartyDialogue("ANOMEN") Global("AN_Anomen_Spellh","AR1514",0)~,       ~SetGlobal("AN_Anomen_Spellh","AR1514",1)~,    ~250~, ~251~, ~50646~  => ~ANOMEN~
+		~EDWINJ~,   ~0~, ~IsValidForPartyDialogue("EDWIN") Global("AN_Edwin_Spellh","AR1514",0)~,         ~SetGlobal("AN_Edwin_Spellh","AR1514",1)~,     ~149~, ~152~, ~57710~  => ~EDWIN~
+		~VALYGARJ~, ~0~, ~IsValidForPartyDialogue("VALYGAR") Global("AN_Valygar_Spellh","AR1514",0)~,     ~SetGlobal("AN_Valygar_Spellh","AR1514",1)~,   ~103~, ~104~, ~57714~  => ~VALYGAR~
+		~KELDORJ~,  ~0~, ~IsValidForPartyDialogue("KELDORN") Global("AN_Keldorn_Spellh","AR1514",0)~,     ~SetGlobal("AN_Keldorn_Spellh","AR1514",1)~,   ~243~, ~245~, ~57717~  => ~KELDORN~
+		~KORGANJ~,  ~0~, ~IsValidForPartyDialogue("KORGAN") Global("AN_Korgan_Spellh","AR1514",0)~,       ~SetGlobal("AN_Korgan_Spellh","AR1514",1)~,    ~177~, ~179~, ~57720~  => ~KORGAN~
+		~JANJ~,     ~0~, ~IsValidForPartyDialogue("JAN") Global("AN_Jan_Spellh","AR1514",0)~,             ~SetGlobal("AN_Jan_Spellh","AR1514",1)~,       ~178~, ~180~, ~57723~  => ~JAN~
+		~NALIAJ~,   ~0~, ~IsValidForPartyDialogue("NALIA") Global("AN_Nalia_Spellh","AR1514",0)~,         ~SetGlobal("AN_Nalia_Spellh","AR1514",1)~,     ~308~, ~310~, ~57726~  => ~NALIA~
+		~MAZZYJ~,   ~0~, ~IsValidForPartyDialogue("MAZZY") Global("AN_Mazzy_Spellh","AR1514",0)~,         ~SetGlobal("AN_Mazzy_Spellh","AR1514",1)~,     ~194~, ~196~, ~57729~  => ~MAZZY~
+		~HAERDAJ~,  ~0~, ~IsValidForPartyDialogue("HAERDALIS") Global("AN_Haerdalis_Spellh","AR1514",0)~, ~SetGlobal("AN_Haerdalis_Spellh","AR1514",1)~, ~141~, ~145~, ~57734~  => ~HAERDALIS~
+		~CERNDJ~,   ~0~, ~IsValidForPartyDialogue("CERND") Global("AN_Cernd_Spellh","AR1514",0)~,         ~SetGlobal("AN_Cernd_Spellh","AR1514",1)~,     ~130~, ~132~, ~57739~  => ~CERND~
+		~MINSCJ~,   ~0~, ~IsValidForPartyDialogue("MINSC") Global("AN_Minsc_Spellh","AR1514",0)~,         ~SetGlobal("AN_Minsc_Spellh","AR1514",1)~,     ~202~, ~203~, ~57741~  => ~MINSC~
+		~RASAADJ~,  ~1~, ~IsValidForPartyDialogue("RASAAD") Global("AN_Rasaad_Spellh","AR1514",0)~,       ~SetGlobal("AN_Rasaad_Spellh","AR1514",1)~,    ~325~, ~326~, ~98384~  => ~RASAAD~
+		~DORNJ~,    ~1~, ~IsValidForPartyDialogue("DORN") Global("AN_Dorn_Spellh","AR1514",0)~,           ~SetGlobal("AN_Dorn_Spellh","AR1514",1)~,      ~33~,  ~34~,  ~98529~  => ~DORN~
+		~HEXXATJ~,  ~1~, ~IsValidForPartyDialogue("HEXXAT") Global("AN_Hexxat_Spellh","AR1514",0)~,       ~SetGlobal("AN_Hexxat_Spellh","AR1514",1)~,    ~287~, ~287~, ~98267~  => ~HEXXAT~
+		~NEERAJ~,   ~1~, ~IsValidForPartyDialogue("NEERA") Global("AN_Neera_Spellh","AR1514",0)~,         ~SetGlobal("AN_Neera_Spellh","AR1514",1)~,     ~461~, ~465~, ~98462~  => ~NEERA~
 	END
 	
 	OUTER_SET resp_cnt = 16
 	ACTION_IF EE_GAME BEGIN OUTER_SET resp_cnt = 24 END
-	
-	OUTER_SPRINT strring ""
-	OUTER_SPRINT ~new_text~ ~~
-	OUTER_SET new_dialog = 0
 
 	COPY_EXISTING ~Player1.dlg~ ~override~
 		READ_LONG 0x08 stat_num
@@ -453,18 +303,8 @@ DEFINE_ACTION_FUNCTION AN_PATCH_P1DIALOG_RESPONSES RET new_dialog RET_ARRAY AN_N
 				READ_LONG  offset + 0x10 acti_ids
 				READ_ASCII offset + 0x14 dlgx (8) NULL
 				READ_LONG  offset + 0x1c next_stt
-				SPRINT ~strring~ ~~
-				SPRINT ~new_text~ ~~
 				INNER_ACTION BEGIN
-					LAF GET_EDIT_STATE
-						INT_VAR
-							detect_state = next_stt
-						STR_VAR
-							found_file  = EVAL "%dlgx%"
-						RET
-							string
-					END
-					OUTER_SPRINT ~strring~ ~%strring%%LNL%%string%~
+					LAF GET_EDIT_STATE STR_VAR found_file = EVAL ~%dlgx%~ RET n_strref = strref n_state = state END
 				END
 				SPRINT zx_trig ~~
 				SPRINT zx_acti ~~
@@ -476,13 +316,10 @@ DEFINE_ACTION_FUNCTION AN_PATCH_P1DIALOG_RESPONSES RET new_dialog RET_ARRAY AN_N
 				PATCH_IF ( bit_value ) BEGIN
 					LPF GET_TRIGGER_ACTION_TEXT INT_VAR ta_idx = acti_ids ta = action_off RET zx_acti = ta_text END
 				END
-				SPRINT ~new_text~ ~%new_text%EXTEND_BOTTOM PLAYER1 5
-	IF %tilde%%zx_trig%%tilde% THEN DO %tilde%%zx_acti%%tilde% EXTERN %tilde%%dlgx%%tilde% num_%next_stt%
-END%LNL%%LNL%~
-				SPRINT ~strring~ ~%new_text%%strring%~
-				PATCH_IF ( NOT VARIABLE_IS_SET $NEW_DIALOG_ARRAY ( ~%dlgx%~ ) ) BEGIN
-					DEFINE_ASSOCIATIVE_ARRAY NEW_DIALOG_ARRAY BEGIN ~%dlgx%~, ~%strring%~ => ~~ END
-					SET new_dialog = new_dialog + 1
+				PATCH_IF ( NOT VARIABLE_IS_SET $AN_NPC_DLG( ~%dlgx%~ ) ) AND ( n_state >= 0 ) AND ( n_strref >= 0 ) BEGIN
+					DEFINE_ASSOCIATIVE_ARRAY AN_NPC_DLG BEGIN
+						~%dlgx%~, ~0~, ~%zx_trig%~, ~%zx_acti%~, ~%next_stt%~, ~%n_state%~, ~%n_strref%~ => ~%dlgx%~
+					END
 				END
 			END
 		END
@@ -490,7 +327,7 @@ END%LNL%%LNL%~
 END
 
 DEFINE_ACTION_MACRO AN_PLAYER1DLG_PATCH BEGIN
-	LAF AN_PATCH_P1DIALOG_RESPONSES RET new_dialog RET_ARRAY AN_NPC_DLG NEW_DIALOG_ARRAY END
+	LAM AN_PATCH_P1DIALOG_RESPONSES
 <<<<<<<< ddd1.d
 REPLACE PLAYER1
 	IF ~~ THEN BEGIN 5
@@ -500,6 +337,7 @@ REPLACE PLAYER1
 END
 >>>>>>>>
 	COMPILE ~ddd1.d~
+
 <<<<<<<< ddd2.d
 REPLACE ~%d_var%~
 	IF ~~ THEN BEGIN %d_var_5%
@@ -516,17 +354,6 @@ END
 		ACTION_IF ( EE_GAME ) OR ( ~%d_var_1%~ = 0 ) BEGIN
 			SILENT
 				COMPILE ~ddd2.d~ EVALUATE_BUFFER
-			VERBOSE
-		END
-	END
-<<<<<<<< ddd3.d
-%d_var_1%
->>>>>>>>
-	ACTION_IF ( new_dialog > 0 ) BEGIN
-		ACTION_PHP_EACH NEW_DIALOG_ARRAY AS d_var => _ BEGIN
-			PRINT ~COMPILE  %d_var%.d~
-			SILENT
-				COMPILE ~ddd3.d~ EVALUATE_BUFFER
 			VERBOSE
 		END
 	END
