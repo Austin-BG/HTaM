@@ -1372,6 +1372,21 @@ EXTEND_TOP ~nalia.bcs~ ~HerThiMoney/scripts/nalia3.baf~
 EXTEND_TOP ~AR2500.bcs~ ~HerThiMoney/scripts/AR2500.baf~ 
 EXTEND_TOP ~Player1.bcs~ ~HerThiMoney/scripts/addp1dlg.baf~
 
+ACTION_IF FILE_EXISTS_IN_GAME ~7XGarJ.dlg~
+BEGIN
+EXTEND_TOP ~7XGARR.bcs~ ~%MOD_FOLDER%/scripts/garrick3.baf~
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~7XCoranJ.dlg~
+BEGIN
+EXTEND_TOP ~7XCoran.bcs~ ~%MOD_FOLDER%/scripts/coran3.baf~
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~7XGar25J.dlg~
+BEGIN
+EXTEND_TOP ~7XGar25.bcs~ ~%MOD_FOLDER%/scripts/garrick25_3.baf~
+END
+
 COMPILE ~HerThiMoney/scripts/ANaran.baf~ EVALUATE_BUFFER USING ~%MOD_FOLDER%/tra/%LANGUAGE%/ANAranSoA.tra~ 
 
 COMPILE ~HerThiMoney/scripts/ANleena.baf~
