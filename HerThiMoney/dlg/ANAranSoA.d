@@ -1751,6 +1751,15 @@ END
 
 END
 
+APPEND IF_FILE_EXISTS O#CORANJ
+
+IF WEIGHT #-10 ~Global("AranRomanceActive","GLOBAL",2) Global("AranCoranTalk","GLOBAL",2)~ BEGIN ANAranCoranTalk1
+  SAY @881
+IF ~~ THEN DO ~SetGlobal("AranCoranTalk","GLOBAL",3)~ EXIT
+END
+
+END
+
 //
 
 // Шпион
