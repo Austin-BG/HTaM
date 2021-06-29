@@ -1382,6 +1382,11 @@ BEGIN
 EXTEND_TOP ~7XCoran.bcs~ ~%MOD_FOLDER%/scripts/coran3.baf~
 END
 
+ACTION_IF FILE_EXISTS_IN_GAME ~O#CORANJ.dlg~
+BEGIN
+EXTEND_TOP ~O#CoranS.bcs~ ~%MOD_FOLDER%/scripts/coran3.baf~
+END
+
 ACTION_IF FILE_EXISTS_IN_GAME ~7XGar25J.dlg~
 BEGIN
 EXTEND_TOP ~7XGar25.bcs~ ~%MOD_FOLDER%/scripts/garrick25_3.baf~
