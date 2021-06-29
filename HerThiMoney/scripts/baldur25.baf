@@ -61,3 +61,13 @@ THEN
 		SetGlobal("AranWilsonToB","GLOBAL",1)
         RealSetGlobalTimer("ANAranLetterWilsonTimer","GLOBAL",500)
 END
+
+IF
+Global("AranLoveToB","GLOBAL",4)
+Global("AranGarrickToB","GLOBAL",0)
+InParty("7XGAR")
+THEN
+	RESPONSE #100
+		SetGlobal("AranGarrickToB","GLOBAL",1)
+        RealSetGlobalTimer("ANAranLetterGarrickTimer","GLOBAL",200)
+END

@@ -1,0 +1,23 @@
+IF
+Global("AranCoranTalk","GLOBAL",0)
+Global("AranRomanceActive","GLOBAL",2)
+THEN
+	RESPONSE #100
+	   SetGlobal("AranCoranTalk","GLOBAL",1)
+	   RealSetGlobalTimer("AranCoranTalkTimer","GLOBAL",1140)
+END
+
+IF
+Global("AranCoranTalk","GLOBAL",1)
+Global("AranRomanceActive","GLOBAL",2)
+RealGlobalTimerExpired("AranCoranTalkTimer","GLOBAL")
+InParty(Myself) 
+!StateCheck(Myself,CD_STATE_NOTVALID)
+See(Player1)
+CombatCounter(0)
+!See([ENEMY])
+THEN
+	RESPONSE #100
+	  SetGlobal("AranCoranTalk","GLOBAL",2)
+      StartDialogNoSet(Player1)
+END

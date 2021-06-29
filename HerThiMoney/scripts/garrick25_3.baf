@@ -1,0 +1,14 @@
+IF
+Global("AranGarrickToB","GLOBAL",1)
+RealGlobalTimerExpired("ANAranLetterGarrickTimer","GLOBAL")
+InParty(Myself) 
+!StateCheck(Myself,CD_STATE_NOTVALID)
+See(Player1)
+CombatCounter(0)
+!See([ENEMY])
+THEN
+	RESPONSE #100
+	   SetGlobal("AranGarrickToB","GLOBAL",2)
+       SmallWait(3)
+       ActionOverride(Myself,Dialog(Player1))
+END
