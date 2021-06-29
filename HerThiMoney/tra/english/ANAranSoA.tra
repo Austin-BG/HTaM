@@ -944,3 +944,23 @@ Aran"~
 @871 = ~Thanks Aerie, it's okay now. ~
 @872 = ~<CHARNAME>, I'm afraid to imagine what you've been through. And endured... I don't think Aran has ever had a more loyal person around. I hope he appreciates your loyalty the way it deserves. ~
 @873 = ~Who was that mage, <CHARNAME>? You say he called himself Altar? Hmm-hmmmm... I think I've heard of a wizard with that name. Self-taught, but talented, I must admit. Did you find any magical books or writings on his corpse? It would be interesting to examine them... ~
+
+// NEW (v.3.1)
+@874 = ~Oh, <CHARNAME>, of course I knew you were very brave, but now you surprise me... again. You and Aran Linvail... You play a virtuoso game with this dark fire, huh? It's not my business to advise something in personal matters, just please, be careful not to burn yourself. ~
+@875 = ~Ah, Garrick. Love inspires, don't you know? ~
+@876 = ~Yes... I know that. Although it happens in a different way... hmm. Your love story does not leave the bard's heart indifferent. But do not worry, I will not expand on this in my work, I understand everything. ~
+@877 = ~Garrick, your interest in this topic scares me a little. I don’t want everyone around to know about my relationship with Aran because of your writing. ~
+@878 = ~It was rude, but I understand your concerns. Don't worry, singing the deeds of the daughter of Bhaal, I will leave your love under a veil of shadow. ~
+@879 = ~You're messing with your own business again, bard.~
+@880 = ~Wow... but I thought that Aran is a sophisticated person and appreciates good manners in a woman. I was wrong, huh? ~
+@881 = ~Shadows and intrigues, new dangers and adventures... and it's all love! Love for the mysterious and powerful Shadow Master. Ah, <CHARNAME>, I won't warn you, you don't need it. I'd rather be happy for you and wish you luck. ~
+@882 = ~What brutality! Isn't it possible to try to learn something from this woman in a less barbaric way? When you come across such scenes over and over again, you involuntarily begin to doubt that life is so beautiful... ~
+@883 = ~What is this?! How can that be? She's a woman! So what if she is a traitor is not a reason to crush a beautiful flower so cruelly in the grip of excruciating pain... Oh, humans, humans... however, sometimes the elves are no better. ~
+@884 = ~And the drama is here! Reading or listening to ballads about such stories is one thing, but participating in them yourself... is not always pleasant. ~
+@885 = ~It's a shame the love story ended so badly. And was there any love here? This feeling brings joy and excitement, not... that's not all. ~
+@886 = ~Ah, <CHARNAME>, that's what I feared! The fact that loving someone like Aran can bring you more than just joy. ~
+@887 = ~Like love for anyone, Garrick. But without risk, there would be no happiness. ~
+@888 = ~Probably so, but... Come on, I'm chatting. I am very glad that you are doing well now. ~
+@889 = ~Thanks, Garrick.~
+@890 = ~Have you ever loved someone so much that all your thoughts went back to that person over and over again? When everything else paled in his shadow? I'm sure the answer is yes. This means that you can quite understand me. ~
+@891 = ~Yes, <CHARNAME>, you're right. I myself did not notice how I fell in love, and now I know how overwhelming this feeling is. Of course, Garrick is not Aran, with him, I'm sure everything is different, and nevertheless... Yes, I understand you. And then I just wish you happiness. ~
