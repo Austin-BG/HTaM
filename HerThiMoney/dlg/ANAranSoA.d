@@ -42,6 +42,16 @@ IF ~Global("TonySpawn5","GLOBAL",1)~ BEGIN ANtonyFiveTalk
 IF ~~ THEN REPLY @481 DO ~SetGlobal("TonySpawn5","GLOBAL",2) SetGlobal("ANAranLamp","GLOBAL",1) EscapeArea()~ EXIT
 END
 
+IF ~Global("TonySpawnAlternate","GLOBAL",2)~ BEGIN ANtonyAlternateLampTalk
+  SAY @892
+IF ~~ THEN REPLY @481 DO ~SetGlobal("TonySpawnAlternate","GLOBAL",3) SetGlobal("ANAranLamp","GLOBAL",1) EscapeArea()~ EXIT
+END
+
+
+
+
+
+
 IF ~Global("ANAranLampTony","GLOBAL",1)~ BEGIN ANtonyLampTalk
   SAY @540 
 IF ~~ THEN DO ~AddJournalEntry(@1060,QUEST) SetGlobal("ANAranLampTony","GLOBAL",2) SetGlobal("ANAranLamp","GLOBAL",5) EscapeArea()~ EXTERN PLAYER1 ANtonyLampTalk1
@@ -736,24 +746,22 @@ IF ~~ THEN DO ~SetGlobal("AranRomanceActive","GLOBAL",3) SetGlobal("AranLove","G
 END
 
 
-
-
-
-
 END
 
 
 CHAIN
 IF WEIGHT #-17 ~Global("ANAranLamp","GLOBAL",1)~ THEN ARAN ANAranLamp
 @482 DO ~SetGlobal("ANAranLamp","GLOBAL",2)~
-=@483
-=@484
+== ARAN IF ~Global("TonySpawnAlternate","GLOBAL",0)~ THEN @483
+== ARAN IF ~!Global("TonySpawnAlternate","GLOBAL",0)~ THEN @893
+== ARAN @484
 == PLAYER1 @485
 == ARAN @486
 == PLAYER1 @487
 == ARAN @488
 == PLAYER1 @489 DO ~AddJournalEntry(@1056,QUEST)~
-== ARAN @490
+== ARAN IF ~Global("TonySpawnAlternate","GLOBAL",0)~ THEN @490
+== ARAN IF ~!Global("TonySpawnAlternate","GLOBAL",0)~ THEN @894
 EXIT
 
 
@@ -1918,13 +1926,18 @@ EXIT
 // Ренал
 APPEND RENAL
 
-IF WEIGHT #-20 ~Global("ANAranLamp","GLOBAL",4) Global("ANAranLampRenal","GLOBAL",1) Global("PlayerThiefGuild","GLOBAL",1)~ BEGIN ANAranLampRenalTalkGuild
+IF WEIGHT #-20 ~Global("ANAranLamp","GLOBAL",4) Global("ANAranLampRenal","GLOBAL",1) Global("PlayerThiefGuild","GLOBAL",1) Global("TonySpawnAlternate","GLOBAL",0)~ BEGIN ANAranLampRenalTalkGuild
   SAY @497
 IF ~~ THEN DO ~SetGlobal("ANAranLampRenal","GLOBAL",2)~ REPLY @499 GOTO ANAranLampRenalTalk1
 END
 
-IF WEIGHT #-21 ~Global("ANAranLamp","GLOBAL",4) Global("ANAranLampRenal","GLOBAL",1) Global("PGFailed","GLOBAL",1)~ BEGIN ANAranLampRenalTalkNoGuild
+IF WEIGHT #-21 ~Global("ANAranLamp","GLOBAL",4) Global("ANAranLampRenal","GLOBAL",1) Global("PGFailed","GLOBAL",1) Global("TonySpawnAlternate","GLOBAL",0)~ BEGIN ANAranLampRenalTalkNoGuild
   SAY @498
+IF ~~ THEN DO ~SetGlobal("ANAranLampRenal","GLOBAL",2)~ REPLY @499 GOTO ANAranLampRenalTalk1
+END
+
+IF WEIGHT #-21 ~Global("ANAranLamp","GLOBAL",4) Global("ANAranLampRenal","GLOBAL",1) !Global("TonySpawnAlternate","GLOBAL",0)~ BEGIN ANAranLampRenalTalkAlternate
+  SAY @895
 IF ~~ THEN DO ~SetGlobal("ANAranLampRenal","GLOBAL",2)~ REPLY @499 GOTO ANAranLampRenalTalk1
 END
 
@@ -2142,7 +2155,8 @@ IF ~~ BEGIN ANLampBernardTalk5
   SAY @557
 IF ~Kit(Player1,ASSASIN)~ THEN REPLY @558 GOTO ANLampBernardTalk5_1
 IF ~Kit(Player1,SWASHBUCKLER)~ THEN REPLY @561 EXTERN BERNARD ANLampBernardTalk5_2
-IF ~CheckStatGT(Player1,14,CHR)~ THEN REPLY @563 GOTO ANLampBernardTalk5_3
+IF ~CheckStatGT(Player1,14,CHR) Gender(Player1,MALE)~ THEN REPLY @896 GOTO ANLampBernardTalk5_3
+IF ~CheckStatGT(Player1,14,CHR) Gender(Player1,FEMALE)~ THEN REPLY @563 GOTO ANLampBernardTalk5_3
 IF ~CheckStatGT(Player1,14,INT)~ THEN REPLY @573 GOTO ANLampBernardTalk5_4
 IF ~PartyGoldGT(99)~ THEN DO ~TakePartyGold(100)~ REPLY @568 EXTERN BERNARD ANLampBernardTalk5_5   
 IF ~PartyGoldLT(100)~ THEN REPLY @574 EXTERN BERNARD ANLampBernardTalk5_6
@@ -2370,16 +2384,16 @@ IF WEIGHT #-20 ~Global("AranLampFinish","AR0307",1) Global("ANAzoraStoneEscape",
   SAY @592
 =@593 
 =@595 
-IF ~Gender(Player1,MALE)~ THEN DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) GiveGoldForce(3000) AddexperienceParty(8000) SetGlobal("ANAranLamp","GLOBAL",10)~ EXIT
-IF ~Gender(Player1,FEMALE)~ THEN DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) SetGlobal("ANAranLamp","GLOBAL",10) GiveGoldForce(3000) AddexperienceParty(8000)~ GOTO ANaranLampFinishTalk
+IF ~!Global("TonySpawnAlternate","GLOBAL",0)~ THEN DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) GiveGoldForce(3000) AddexperienceParty(8000) SetGlobal("ANAranLamp","GLOBAL",10)~ EXIT
+IF ~Global("TonySpawnAlternate","GLOBAL",0)~ THEN DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) SetGlobal("ANAranLamp","GLOBAL",10) GiveGoldForce(3000) AddexperienceParty(8000)~ GOTO ANaranLampFinishTalk
 END
 
 
 IF WEIGHT #-20 ~Global("AranLampFinish","AR0307",1) Global("ANAzoraStoneEscape","GLOBAL",1) Global("ANjoviNoStone","GLOBAL",1) PartyHasItem("ANLamp") !Global("ANAranLamp","GLOBAL",10)~ BEGIN ANAranLampEndJoviNoStone
   SAY @592
 =@595 
-IF ~Gender(Player1,MALE)~ THEN DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) SetGlobal("ANAranLamp","GLOBAL",10) GiveGoldForce(3000) AddexperienceParty(8000)~ EXIT
-IF ~Gender(Player1,FEMALE)~ THEN DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) SetGlobal("ANAranLamp","GLOBAL",10) GiveGoldForce(3000) AddexperienceParty(8000)~ GOTO ANaranLampFinishTalk
+IF ~!Global("TonySpawnAlternate","GLOBAL",0)~ THEN DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) SetGlobal("ANAranLamp","GLOBAL",10) GiveGoldForce(3000) AddexperienceParty(8000)~ EXIT
+IF ~Global("TonySpawnAlternate","GLOBAL",0)~ THEN DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) SetGlobal("ANAranLamp","GLOBAL",10) GiveGoldForce(3000) AddexperienceParty(8000)~ GOTO ANaranLampFinishTalk
 END
 
 
@@ -2387,16 +2401,16 @@ IF WEIGHT #-21 ~Global("AranLampFinish","AR0307",1) Global("ANAzoraStoneEscape",
   SAY @594
 =@593 
 =@595 
-IF ~Gender(Player1,MALE)~ THEN DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) SetGlobal("ANAranLamp","GLOBAL",10) GiveGoldForce(3000) AddexperienceParty(8000)~ EXIT
-IF ~Gender(Player1,FEMALE)~ THEN DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) SetGlobal("ANAranLamp","GLOBAL",10) GiveGoldForce(3000) AddexperienceParty(8000)~ GOTO ANaranLampFinishTalk
+IF ~!Global("TonySpawnAlternate","GLOBAL",0)~ THEN DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) SetGlobal("ANAranLamp","GLOBAL",10) GiveGoldForce(3000) AddexperienceParty(8000)~ EXIT
+IF ~Global("TonySpawnAlternate","GLOBAL",0)~ THEN DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) SetGlobal("ANAranLamp","GLOBAL",10) GiveGoldForce(3000) AddexperienceParty(8000)~ GOTO ANaranLampFinishTalk
 END
 
 IF WEIGHT #-22 ~Global("AranLampFinish","AR0307",1) Global("ANjoviRevive","GLOBAL",3) Dead("ANAzora") PartyHasItem("ANLamp") !Global("ANAranLamp","GLOBAL",10)~ BEGIN ANAranLampEndJoviAzoraStone
   SAY @637
 =@638
 =@595 
-IF ~Gender(Player1,MALE)~ THEN DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) SetGlobal("ANAranLamp","GLOBAL",10) GiveGoldForce(3000) AddexperienceParty(8000)~ EXIT
-IF ~Gender(Player1,FEMALE)~ THEN DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) SetGlobal("ANAranLamp","GLOBAL",10) GiveGoldForce(3000) AddexperienceParty(8000)~ GOTO ANaranLampFinishTalk
+IF ~!Global("TonySpawnAlternate","GLOBAL",0)~ THEN DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) SetGlobal("ANAranLamp","GLOBAL",10) GiveGoldForce(3000) AddexperienceParty(8000)~ EXIT
+IF ~Global("TonySpawnAlternate","GLOBAL",0)~ THEN DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) SetGlobal("ANAranLamp","GLOBAL",10) GiveGoldForce(3000) AddexperienceParty(8000)~ GOTO ANaranLampFinishTalk
 END
 
 IF ~~ BEGIN ANaranLampFinishTalk
