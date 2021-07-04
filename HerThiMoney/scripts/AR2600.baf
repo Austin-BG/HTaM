@@ -1,0 +1,71 @@
+IF
+	CombatCounter(0)
+	InParty("Aerie")
+	!StateCheck("Aerie",CD_STATE_NOTVALID)
+	Global("AN_AgnesWitch","AR2600",0)
+THEN
+	RESPONSE #100
+	SetGlobal("AN_AgnesWitch","AR2600",1)
+    RealSetGlobalTimer("ANSilfaTalkTimer","GLOBAL",30)
+	Continue() 
+END
+
+IF
+    RealGlobalTimerExpired("ANSilfaTalkTimer","GLOBAL")
+    !StateCheck(Player1,CD_STATE_NOTVALID)
+    CombatCounter(0)
+	InParty("Aerie")
+	!StateCheck("Aerie",CD_STATE_NOTVALID)
+    Global("AN_AgnesWitch","AR2600",1)
+THEN
+	RESPONSE #100
+	SetGlobal("AN_AgnesWitch","AR2600",2)
+	ActionOverride(Player1,SetDialog("PLAYER1"))	
+    ActionOverride(Player1,StartDialog("Player1",Myself))
+END
+
+
+IF
+    RealGlobalTimerExpired("ANAgnesTalkTimer","GLOBAL")
+    !StateCheck(Player1,CD_STATE_NOTVALID)
+    CombatCounter(0)
+	InParty("Aerie")
+	!StateCheck("Aerie",CD_STATE_NOTVALID)
+    Global("AN_AgnesWitch","AR2600",4)
+THEN
+	RESPONSE #100
+	SetGlobal("AN_AgnesWitch","AR2600",5)
+	CreateCreatureObject("ANagness",Player1,0,0,0)
+	SmallWait(3)
+	ActionOverride("ANagness",Dialog(Player1)) 
+END
+
+
+IF
+    Global("AN_AgnesWitch","AR2600",7)  
+THEN
+	RESPONSE #100
+	SetGlobal("AN_AgnesWitch","AR2600",8)
+	StartCutSceneMode()
+	Wait(1)
+	CreateVisualEffectObject("SPCSWOUI","ANagness")
+	Wait(2)
+	EndCutSceneMode()
+	ActionOverride("Aerie",StartDialogNoSet(Player1)) 
+END
+
+IF
+    Global("AN_AgnesWitch","AR2600",6)
+    Dead("ANagness")	
+THEN
+	RESPONSE #100
+	SetGlobal("AN_AgnesWitch","AR2600",11)
+	StartCutSceneMode()
+	Wait(1)
+	CreateVisualEffectObject("SPCSWOUI",Player1)
+	Wait(2)
+	EndCutSceneMode()
+	ActionOverride(Player1,SetDialog("PLAYER1"))
+	SmallWait(3)
+	ActionOverride("Aerie",StartDialogNoSet(Player1)) 
+END

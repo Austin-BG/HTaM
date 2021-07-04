@@ -169,7 +169,6 @@ IF
 	!Global("AranRomanceActive","GLOBAL",3)
 	AreaType(OUTDOOR)
 	CombatCounter(0)
-	!HasItemEquiped("BELT05", Player1)
 	Global("TonySpawn5","GLOBAL",0)
 	!Global("TonySpawn4","GLOBAL",1)
 	OR(2)
@@ -181,6 +180,23 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("TonySpawn5","GLOBAL",1)
+		CreateCreatureObject("bdoffscr",Player1,0,0,0)  
+		ApplySpellRES("bdoffscr","bdoffscr")  // No such index
+		SmallWait(1)
+		CreateCreatureObject("ANtony1","bdoffscr",0,0,0)  
+		ActionOverride("ANtony",Dialog(Player1))
+END
+
+
+// Tony (lamp) - man or female no romance
+IF
+	GlobalTimerExpired("ANAranLetterLAMPTimer","GLOBAL")
+	AreaType(OUTDOOR)
+	CombatCounter(0)
+	Global("TonySpawnAlternate","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("TonySpawnAlternate","GLOBAL",2)
 		CreateCreatureObject("bdoffscr",Player1,0,0,0)  
 		ApplySpellRES("bdoffscr","bdoffscr")  // No such index
 		SmallWait(1)
