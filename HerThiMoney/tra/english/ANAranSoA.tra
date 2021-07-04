@@ -452,7 +452,7 @@
 @369 = ~(Aran, with a cunning look in his eyes, accepts your modest gift. Suddenly, a luxurious orchid is in his hand, which he presents to you) ~
 @370 = ~Two sentimental Thieves! We thought the same thing. ~
 @371 = ~Aran, my joy... ~
-@372 = ~(Linvail gently pulls you towards him) ~
+@372 = ~*Linvail gently pulls you towards him*~
 @373 = ~No matter what, there is so much tenderness in you, <CHARNAME>... With you, I feel like I'm in another world. ~
 @374 = ~I love you, Aran! ~
 @375 = ~You know my answer, but I'm happy to say it again: I love you too. ~
@@ -496,14 +496,14 @@
 @410 = ~(You take your time answering Aerie. Your eyes are staring off into the distance, and your mind's eye is filled with images of your last date with Aran... and you catch yourself smiling) No, Aerie. I am deeply convinced that there is no catch in our relationship. He really loves me. And I love him, too.. ~
 @412 = ~Oh... you know, you're just glowing now when you talk about him. I-I hope... I hope I was wrong ~ [AERIE33]
 @413 = ~And... <CHARNAME>... how does it feel to love? N-no, don't answer. Maybe I'll find out myself someday. ~
-@414 = ~(Humming to himself):
+@414 = ~*Humming to himself*:
 'Until a shadow falls on the world and covers us,
 Love everyone, everyone, because that will save us!'~
 @415 = ~Haer'Dalis... you're looking at me strangely.~
 @416 = ~So what, my black bird? ~
 @417 = ~Hmm... meaning? ~
 @418 = ~Just thinking of a bird seeking under the wing of a predatory hawk. ~
-@419 = ~(Laughter) That little bird, my dear bard, also has sharp claws. ~
+@419 = ~*Laughter* That little bird, my dear bard, also has sharp claws. ~
 @420 = ~Ah, you are a high-flying bird, no one doubts. A true ballad heroine, and someday all the bards of Faerûn will be at your feet. Well, in Sigil, of course, if I get to Sigil again, they will learn songs about you. I promise. ~
 @421 = ~But the hawk has such delicate feathers, my friend... ~
 @422 = ~Ah, even a stone would soften for you, my dear! For some reason, I'm not surprised. I'd rather not think about it, though - I'm beginning to envy the Shadow Master. ~
@@ -511,41 +511,41 @@ Love everyone, everyone, because that will save us!'~
 So come on, my dove, let's dance while we can still!'~
 @424 = ~Why would you think about that? And you know, if you would sing elsewhere, your vocals are giving me a headache. ~
 @425 = ~Oh, how are you with me... This is somehow... petty for you. ~
-@426 = ~(Leaves and sings softly):
+@426 = ~*Leaves and sings softly*:
 'So the black rose bloomed in the garden,
 And the seagull hurries to the cockatoo.
 Should you wait and rush in vain?
 You are different flight, dear birds!'~
 
 // Episode 7. The Magic Lamp of Abu Khazab
-@480 = ~Greetings, my lord! It's so good that you are here and not away on heroic deeds somewhere! The Shadow Master wants to see you and told me to tell you to come as soon as possible ~ ~ Oh, Madam <CHARNAME>, I sincerely greet you! The Master always orders me to go to you without delay, and I am so glad that you are not in a dragon's lair or having a pleasant conversation with a lich. This time there is no letter, he is just waiting for you. ~
-@481 = ~Thanks, I'm on my way.~ ~Thank you, Tony, I'm on my way. ~
+@480 = ~Greetings, <PRO_SIRMAAM>! It's so good that you are here and not away on heroic deeds somewhere! The Shadow Master Aran wants to see you and told me to tell you to come as soon as possible.~
+@481 = ~Thanks, I'm on my way.~
 @482 = ~There you are, <CHARNAME>.~
-@483 = ~Once again, I want to thank you for dealing with Bodhi. You have proven yourself a worthy member of our guild, so I decided to entrust you with one task. ~ ~ (Aran comes closer and straightens a strand of your hair, and, as often happens with him, the exciting intimacy of this gesture contrasts with his harsh efficiency) ~
-@484 = ~You see, an important partnership is at stake. A certain influential merchant from Calimshan, Abu Khazab, with whom we do business while providing his protection, has been robbed. This could have been done either by one of the free birds or by one of ours in violation of the laws of the Guild. What do you say? ~ ~ Got it. It may not be the most difficult thing, but I have decided to entrust it to you. You see, an important partnership is at stake. A certain influential merchant from Calimshan, Abu Khazab, with whom we do business while providing his protection, has been robbed. This could have been done either by one of the free birds or by one of ours in violation of the laws of the Guild. There is, of course, the possibility that the Riatavians will not calm down in any case, but I will work that out myself. What do you say? ~
+@483 = ~*Aran comes closer and straightens a strand of your hair, and, as often happens with him, the exciting intimacy of this gesture contrasts with his harsh efficiency*~
+@484 = ~You see, an important partnership is at stake. A certain influential merchant from Calimshan, Abu Khazab, with whom we do business while providing his protection, has been robbed. This could have been done either by one of the free birds or by one of ours in violation of the laws of the Guild. What do you say?~ 
 @485 = ~Don't worry, whoever did this will get what they deserve. What was stolen? ~
 @486 = ~A magical vessel that summons a variety of creatures, one of a kind. Looks like a genie lamp. Three days ago, the owner demonstrated its capabilities at a party in his mansion. Here, take the guest list, you might find it useful. After that, Abu Khazab locked the magic lamp in a safe. Yesterday morning, he found the safe broken open. The kidnapper knew his business, worked cleanly, and left no trace. ~
 @487 = ~Was this a veteran thief at work? ~
 @488 = ~I'm sure of that. ~
 @489 = ~Okay Aran, I get it. I'll get started.~ 
-@490 = ~Good luck <CHARNAME>. I trust you will not fail.~ ~(Aran's voice softens) And again, I ask you to be careful, <CHARNAME>. In our business, you never know where dangers lie.~
-@491 = ~(You are carefully looking at the guest list, which contains the names of several wealthy and noble residents of Athkatla. So, where to start...) ~
-@492 = ~(Talk to Renal Bloodscalp) ~
-@493 = ~(Talk to Lathan) ~
-@494 = ~(Little can be hidden from Renal, who is believed by the ignorant to be the head of the Shadow Thieves of Athkatla. You decide to talk to him first) ~
-@495 = ~(Lathan is your right-hand man in the guild you run, so it would be a good idea to consult with him. Perhaps this weasel can lead you on the trail) ~
-@496 = ~(Lathan was your right-hand man in the guild you ran. And although you lost her, it would still be nice to consult him. Perhaps this weasel can lead you on the trail) ~
-@497 = ~Ah, <CHARNAME>... Your victory over the vampire is the stuff of legends around here. It was a good job, and it's good that you are with us, boy. But did you want something? ~ ~ Ah, <CHARNAME>... or should I be calling you "Mistress <CHARNAME>" now? It is not customary for us to gossip, but some people cannot help but gossip about your secret elevation. Don't worry though, I always remind them that the guild doesn't like talkers. Did you want something? ~
-@498 = ~Ah, <CHARNAME>... Your victory over the vampire is the stuff of legends around here. It was a good job, and it's good that you are with us, boy. But did you want something? ~ ~ Ah, <CHARNAME>... I see you are doing well. Must have been a bit of a loss for you, losing your own guild. All right, I'm not a barmaid or a gossipy woman. Did you want something? ~
+@490 = ~*Aran's voice softens* And again, I ask you to be careful, <CHARNAME>. In our business, you never know where dangers lie.~
+@491 = ~*You are carefully looking at the guest list, which contains the names of several wealthy and noble residents of Athkatla. So, where to start...*~
+@492 = ~*Talk to Renal Bloodscalp*~
+@493 = ~*Talk to Lathan*~
+@494 = ~*Little can be hidden from Renal, who is believed by the ignorant to be the head of the Shadow Thieves of Athkatla. You decide to talk to him first) ~
+@495 = ~*Lathan is your right-hand man in the guild you run, so it would be a good idea to consult with him. Perhaps this weasel can lead you on the trail*~
+@496 = ~*Lathan was your right-hand man in the guild you ran. And although you lost her, it would still be nice to consult him. Perhaps this weasel can lead you on the trail*~
+@497 = ~Ah, <CHARNAME>... or should I be calling you "Mistress <CHARNAME>" now? It is not customary for us to gossip, but some people cannot help but gossip about your secret elevation. Don't worry though, I always remind them that the guild doesn't like talkers. Did you want something? ~
+@498 = ~Ah, <CHARNAME>... I see you are doing well. Must have been a bit of a loss for you, losing your own guild. All right, I'm not a barmaid or a gossipy woman. Did you want something? ~
 @499 = ~Renal, do you know of anyone who may be operating behind the backs of the Shadow Thieves? Have we had any suspicious happenings ourselves?~
-@500 = ~Hmm... Not that I know of, but I can't keep track of everyone, you know. As for free birds, here you've hit the spot. I was just about to send my boys over to teach one of them not to ignore our warnings. A small bird, indeed, a dwarf who's recently arrived in Athkatla. If you wish, I can have him brought before your eyes. You'll just have to wait a little while. What do you say? ~ ~ mm... Not that I know of, but I can't keep track of everyone, you know. As for free birds, here you've hit the spot. I was just about to send my boys over to teach one of them not to ignore our warnings. A small bird, indeed, a dwarf who's recently arrived in Athkatla. If you wish, I can have him brought before your eyes. You'll just have to wait a little while. What do you say? ~
+@500 = ~Hmm... Not that I know of, but I can't keep track of everyone, you know. As for free birds, here you've hit the spot. I was just about to send my boys over to teach one of them not to ignore our warnings. A small bird, indeed, a gnome who's recently arrived in Athkatla. If you wish, I can have him brought before your eyes. You'll just have to wait a little while. What do you say?~
 @501 = ~OK, Renal, I'll wait. ~
 @502 = ~No, unfortunately I don't have much time. ~
 @503 = ~Great. I think the guys will handle it quickly. ~
 @504 = ~As you wish. Then let's say goodbye, I also have a lot to do. ~
-@505 = ~(You are having a good time in the guild until finally Bloodscalp's men come back from their mission. They've finished faster than you expected. A young dwarf with red hair and big round eyes appears in front of you. He shivers with fear) ~ ~ (You are having a good time in the guild until finally Bloodscalp's men come back from their mission. They've finished faster than you expected. A young dwarf with red hair and large round eyes appears before you. He shivers with fear) ~
+@505 = ~(You are having a good time in the guild until finally Bloodscalp's men come back from their mission. They've finished faster than you expected. A young gnome with red hair and big round eyes appears in front of you. He shivers with fear)~
 @506 = ~What's your name? ~
-@507 = ~Porin, your grace. I didn't mean anything bad... believe me, nothing, nothing. I just... (He sobs, clearly trying to rouse your pity) ~
+@507 = ~Porin, your grace. I didn't mean anything bad... believe me, nothing, nothing. I just... *He sobs, clearly trying to rouse your pity*~
 @508 = ~Now let's be honest. Do you know the name Abu Hazab? ~
 @509 = ~Don't give me that nonsense. Spit it out, you fool. Did you rob Abu Khazab? ~
 @510 = ~Baatezu take you, stop whining! Are you saying you weren't warned? ~
@@ -553,7 +553,7 @@ You are different flight, dear birds!'~
 @512 = ~What's this little thing? ~
 @513 = ~There was such a commotion in the Rilin house in the morning! How could I not take advantage of it? I thought I would warm my hands just once more in Athkatla... ~
 @514 = ~It was my last time... I wanted to sail north to Baldur's Gate, but not empty-handed... And there was such a commotion in the Rilin house in the morning! How could I not take advantage of it? I thought I would warm my hands just once more in Athkatla... ~
-@515 = ~(You recall that Lady Rilin and her daughter Azora were mentioned in the guest list Aran gave you... Interesting...) ~
+@515 = ~*You recall that Lady Rilin and her daughter Azora were mentioned in the guest list Aran gave you... Interesting...*~
 @516 = ~This will be your last time, don't doubt it. Stop whining and keep talking. What's with the Rilins? ~
 @517 = ~Their daughter is gone! I accidentally heard that she... how was it... "was caught making inappropriate acquaintances"! She wasn't kidnapped, no. She ran away with some guy herself. And they found a note in the unwise maiden's chamber, something like "we'll meet in the Copper Coronet" or something like that. That's how it is. ~
 @518 = ~(You interrogate Porin for a long time, but you learn anything new from him) ~
@@ -561,14 +561,14 @@ You are different flight, dear birds!'~
 @520 = ~Don't bother with him, Renal, just slit his throat. ~
 @521 = ~Didn't you want your boys to deal with him? Well, let them. I'm not interested in him anymore. ~
 @522 = ~Give him a kick, Renal, to fly to Baldur's Gate. Seriously, this misunderstanding, as you say, is not worth our time - let him go. ~
-@523 = ~Oh, how kind you are. I have tears of emotion in my eyes. Oh well, have it your way. ~ ~ Oh, how kind you are. I already have tears of emotion in my eyes. Oh well, have it your way. ~
-@524 = ~(Renal cuts Porin's throat, being careful not to stain his suit with blood) ~
-@525 = ~(Porin sniffles) ~
-@526 = ~(Porin looks at you hopefully) ~
+@523 = ~Oh, how kind you are. I have tears of emotion in my eyes. Oh well, have it your way.~
+@524 = ~*Renal cuts Porin's throat, being careful not to stain his suit with blood*~
+@525 = ~*Porin sniffles*~
+@526 = ~*Porin looks at you hopefully*~
 @527 = ~Well, if the spirit of mercy has descended upon you, <CHARNAME>... Get out, little fry, and if you show up in Athkatla again, you will become even smaller - by about a head. ~
-@528 = ~Thank you my lord, thank you! (Runs off) ~ ~ Thank you madam, thank you! (Runs away) ~
-@529 = ~(What to do next?) ~
-@530 = ~(Comparing what Lathan told you with the information received from Porin, you come to certain conclusions. You need to go to the Copper Coronet)~
+@528 = ~Thank you <PRO_SIRMAAM>, thank you! *Runs away*~
+@529 = ~*What to do next?*~
+@530 = ~*Comparing what Lathan told you with the information received from Porin, you come to certain conclusions. You need to go to the Copper Coronet*~
 @531 = ~Hello!~
 @532 = ~Hi Lathan. Is everything okay in the guild? ~
 @533 = ~How is my former guild doing, is everything okay? ~
@@ -577,10 +577,10 @@ You are different flight, dear birds!'~
 @536 = ~Jovi Gerk is missing. He was supposed to report to work yesterday morning, but he never showed up. He hasn't been seen at the Gift of the Sea, where he usually hangs out. He didn't go to jail, that's for sure, and no one found his body. ~
 @537 = ~Yesterday morning, you say? Weird coincidence. What else do you know about him?~
 @538 = ~Not much. They say he's got an acquaintance with a certain noblewoman. He's kind of a handsome guy. Listen, maybe she locked him in her bedroom and is not letting go out of jealousy, do you think? ~
-@539 = ~(Even after learning something that you think is useful, you cannot draw any conclusions yet. Maybe you should have done what Bloodscalp advised you, but now it’s too late to talk about it. You decide, with Tony's help, to gather as much information as you can about the guests who were at Abu Hazab's party when he demonstrated the wonders of the magic lamp) ~
-@540 = ~Oh my lord! I just found out something: it turns out that Lady Rilin's daughter ran away with some suspicious type, and it could well be one of ours. In the girl's room, they found a note, which said something about a meeting in the "Copper Coronet". Is it important, do you think? ~ ~ Oh my lady! I just found out something: it turns out that Lady Rilin's daughter ran away with some suspicious type, and it could well be one of ours. In the girl's room, they found a note which said something about a meeting in the "Copper Coronet". Is it important, do you think? ~
-@541 = ~(Now you seem to know what to do. And although a lot of time has been wasted, now you are sure that the solution is waiting for you in Copper Coronet.) ~ ~ (Now you seem to know what to do. And although a lot of time has been wasted, now you are sure that the answer awaits you in the Copper Coronet)~
-@542 = ~(Consider all information gathered) ~
+@539 = ~*Even after learning something that you think is useful, you cannot draw any conclusions yet. Maybe you should have done what Bloodscalp advised you, but now it’s too late to talk about it. You decide, with Tony's help, to gather as much information as you can about the guests who were at Abu Hazab's party when he demonstrated the wonders of the magic lamp*~
+@540 = ~Oh <PRO_SIRMAAM>! I just found out something: it turns out that Lady Rilin's daughter ran away with some suspicious type, and it could well be one of ours. In the girl's room, they found a note, which said something about a meeting in the "Copper Coronet". Is it important, do you think? ~
+@541 = ~*Now you seem to know what to do. And although a lot of time has been wasted, now you are sure that the solution is waiting for you in Copper Coronet.) ~
+@542 = ~*Consider all information gathered*~
 @543 = ~Hi Bernard. Look, I need some information from you. ~
 @544 = ~Oh, what a day. I can see it in your eyes. Are you gonna torture me with questions too? ~
 @545 = ~Who's been asking you questions, my good man? ~
@@ -601,9 +601,9 @@ You are different flight, dear birds!'~
 @560 = ~To the Abyss with you... Okay, listen. ~
 @561 = ~My weapon has pierced many... many... and many. I like you, Bernard, you are doing a good deed by welcoming adventurers to your tavern, and I will be sorry to harm you. But business is business. Nothing personal.~
 @562 = ~You really have to throw threats, eh? That's a shame... Eh. Okay listen... ~
-@563 = ~(You gaze into Bernard's eyes, as if trying to subdue his will) ~ ~ (You lean on the counter and look Bernard in the eyes, smiling charmingly) ~
-@564 = ~I could tell you a story myself. Here, listen. Once upon a time, there was one innkeeper who was very well fed and contented with life. He would have lived happily ever after, but one day, he accidentally pissed off the Shadow Thieves. That was the end of his tale. I don't know about you, but my heart breaks for that outcome. ~ ~ I could tell you a story myself. Here, listen. Once upon a time, there was one innkeeper who was very well fed and contented with life. He would have lived happily ever after, but one day, he accidentally pissed off the Shadow Thieves. That was the end of his tale. I don't know about you, but my heart breaks for that outcome. ~
-@565 = ~Well, as for my heart, the sight of you makes it go to my heels. Okay, look. ~ ~ Well, as for my heart, your gaze penetrates into its very depths, I can't help it. Okay listen... ~
+@563 = ~(You lean on the counter and look Bernard in the eyes, smiling charmingly)~
+@564 = ~I could tell you a story myself. Here, listen. Once upon a time, there was one innkeeper who was very well fed and contented with life. He would have lived happily ever after, but one day, he accidentally pissed off the Shadow Thieves. That was the end of his tale. I don't know about you, but my heart breaks for that outcome.~
+@565 = ~Well, as for my heart, your gaze penetrates into its very depths, I can't help it. Okay listen...~
 @566 = ~So, Bernard, yesterday some very determined people sent by Lady Rilin came to see you and demanded to know if her daughter Azora had appeared at the Copper Coronet. And they were unlikely to be willing to pay for their story. You blurted out something to them to discourage them, but what was it? Let's get this story straight. ~
 @567 = ~I knew you were looking for that couple too. The guy is from the Shadow Thieves, right? Okay listen... ~
 @568 = ~I'm tired of this gimmick. Here's 100 gold for you - and lay out what is happening here. ~
@@ -622,8 +622,8 @@ You are different flight, dear birds!'~
 @585 = ~Azora... so did she...? Never mind. I knew it wouldn't end well. For you, too, by the way. ~
 @586 = ~You're coming with me. ~
 @587 = ~You want a fight, you got one. ~
-@588 = ~Idiot, I saved you! ~ ~ Idiot, I saved you! ~
-@589 = ~No way, buddy! You think I don't know what we do to people who break guild rules? I don't give up my freedom for nothing!~ ~No way, pretty! You think I don't know what we do to people who break guild rules? I don't give up my freedom for nothing! ~
+@588 = ~Idiot, I saved you! ~ 
+@589 = ~No way, buddy! You think I don't know what we do to people who break guild rules? I don't give up my freedom for nothing!~
 @590 = ~What did you think? You'd take me alive? It won't work! ~
 @591 = ~Yes, to hand me over to the bosses. Don't you know what will happen to me? So thank you, you shouldn't have. Now die. ~
 @592 = ~So it's done! Congratulations, <CHARNAME>. Yes, this is the same lamp. Old man Abu will be delighted. These Calimshan people run around with their artifacts like children with toys. Of course, it's a pity that Azora Rilin didn't work out very well, and my curiosity, to be honest, is not satisfied, but these are little things. ~
@@ -633,7 +633,7 @@ You are different flight, dear birds!'~
 @596 = ~Y-you... did you kill it? That monster? Praise to Mystra! ~
 @597 = ~Are you Azora Rilin? Stop stuttering and tell me what happened. ~
 @598 = ~Calm down, Azora, the thing is dead. What's going on here? ~
-@599 = ~Of course I killed him! I felled these in batches in the vicinity of Baldur's Gate. You'd better tell me what's going on here. ~ ~ Of course I killed him! I felled these in batches in the vicinity of Baldur's Gate. You'd better tell me what's going on here, though. ~
+@599 = ~Of course I killed him! I felled these in batches in the vicinity of Baldur's Gate. You'd better tell me what's going on here.~
 @600 = ~I-I'm just... I'm coming to my senses now, yeah. Ugh, I feel a little better. I'll tell you everything, and then you'll walk me home, right? ~
 @601 = ~Anyway... it's my love of beauty... Jovi seemed so beautiful... and that bird too... Now, now I'll tell you everything in order. ~
 @602 = ~Jovi Gerk saw me in the Government District when he said he was cleaning the pockets of a nobleman. He fell in love at first sight and did everything to achieve a meeting with me in private. And I returned his feelings... ~
@@ -964,3 +964,9 @@ Aran"~
 @889 = ~Thanks, Garrick.~
 @890 = ~Have you ever loved someone so much that all your thoughts went back to that person over and over again? When everything else paled in his shadow? I'm sure the answer is yes. This means that you can quite understand me. ~
 @891 = ~Yes, <CHARNAME>, you're right. I myself did not notice how I fell in love, and now I know how overwhelming this feeling is. Of course, Garrick is not Aran, with him, I'm sure everything is different, and nevertheless... Yes, I understand you. And then I just wish you happiness. ~
+
+@892 = ~Greetings, <PRO_SIRMAAM>! It's so good that you are here and not away on heroic deeds somewhere! The Shadow Master Aran wants to see you and told me to tell you to come as soon as possible.~
+@893 = ~Once again, I want to thank you for dealing with Bodhi. You have proven yourself a worthy member of our guild, so I decided to entrust you with one task. ~
+@894 = ~Good luck <CHARNAME>. I trust you will not fail.~
+@895 = ~Ah, <CHARNAME>... Your victory over the vampire is the stuff of legends around here. It was a good job, and it's good that you are with us, buddy. But did you want something? ~
+@896 = ~(You gaze into Bernard's eyes, as if trying to subdue his will)~
