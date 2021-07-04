@@ -141,6 +141,10 @@ COPY ~HerThiMoney/cre/ANkiller.cre~ ~override/ANkiller.cre~
 SAY NAME1 @68
 SAY NAME2 @68
 
+COPY ~HerThiMoney/cre/ANagness.cre~ ~override/ANagness.cre~
+SAY NAME1 @136
+SAY NAME2 @136
+
 COPY ~HerThiMoney/items/ANkazab.itm~ ~Override/ANkazab.itm~
 SAY NAME1 @49
 SAY NAME2 @49
@@ -176,6 +180,7 @@ EXTEND_TOP ~ar1404.bcs~ ~HerThiMoney/scripts/ar1404.baf~ EVALUATE_BUFFER
 EXTEND_TOP ~ar1105.bcs~ ~HerThiMoney/scripts/ar1105.baf~ EVALUATE_BUFFER
 EXTEND_TOP ~AR0406.bcs~ ~HerThiMoney/scripts/AR0406.baf~ EVALUATE_BUFFER
 EXTEND_TOP ~AR1000.bcs~ ~HerThiMoney/scripts/AR1000_1.baf~ 
+EXTEND_TOP ~AR2600.bcs~ ~HerThiMoney/scripts/AR2600.baf~ 
 
 ACTION_IF EE_GAME BEGIN
 OUTER_SPRINT ~baf_string_wait~ ~AdvanceTime(ONE_HOUR) ~
@@ -331,6 +336,8 @@ COMPILE ~HerThiMoney/dlg/ANkeep.d~
 ACTION_FOR_EACH state IN 1 2 4 5 10 19 BEGIN
 	COMPILE ~HerThiMoney/dlg/ANkeep1.d~ EVALUATE_BUFFER USING ~HerThiMoney/tra/%LANGUAGE%/ANkeep.tra~ 
 END
+
+COMPILE ~HerThiMoney/dlg/ANsilfa.d~
 
 COMPILE ~HerThiMoney/scripts/ANSHTLEG.baf~ EVALUATE_BUFFER
 COMPILE ~HerThiMoney/scripts/ANbard1.baf~ EVALUATE_BUFFER
@@ -1370,6 +1377,7 @@ EXTEND_TOP ~YOSHIMO.bcs~ ~HerThiMoney/scripts/yoshimo3.baf~
 EXTEND_TOP ~mazzy.bcs~ ~HerThiMoney/scripts/mazzy3.baf~
 EXTEND_TOP ~nalia.bcs~ ~HerThiMoney/scripts/nalia3.baf~
 EXTEND_TOP ~AR2500.bcs~ ~HerThiMoney/scripts/AR2500.baf~ 
+
 EXTEND_TOP ~Player1.bcs~ ~HerThiMoney/scripts/addp1dlg.baf~
 
 ACTION_IF FILE_EXISTS_IN_GAME ~7XGarJ.dlg~
@@ -1395,9 +1403,26 @@ END
 COMPILE ~HerThiMoney/scripts/ANaran.baf~ EVALUATE_BUFFER USING ~%MOD_FOLDER%/tra/%LANGUAGE%/ANAranSoA.tra~ 
 
 COMPILE ~HerThiMoney/scripts/ANleena.baf~
-COMPILE ~HerThiMoney/scripts/AR2500.baf~
 COMPILE ~HerThiMoney/scripts/AN1204.baf~
 COMPILE ~HerThiMoney/scripts/AN0012.baf~
+
+// Добавляем скрипт локации входа в ѓильдию
+COPY_EXISTING ~AR0305.are~ ~override~
+	SPRINT ~scrp~ ~%SOURCE_RES%~ //сохранение в переменную имени локации
+	READ_ASCII 0x94 are_script (8) NULL //сохранение в переменную имени скрипта локации
+	PATCH_IF ( ~%are_script%~ STR_EQ ~~ ) OR // если имя скрипта пустое
+	         ( ~%are_script%~ STR_EQ ~None~ ) BEGIN //или None
+		WRITE_EVALUATED_ASCII 0x94 ~%scrp%~ (8) // то записывается в имя скрипта имя локации
+		SPRINT are_script ~%scrp%~ // сохранение в переменную нового имени скрипта
+	END
+	BUT_ONLY_IF_IT_CHANGES
+
+//если baf файл имеет такое же имя
+ACTION_IF FILE_EXISTS_IN_GAME ~%are_script%.bcs~ BEGIN
+	EXTEND_TOP ~%are_script%.bcs~ ~%MOD_FOLDER%/scripts/AR0305_3.baf~ EVALUATE_BUFFER //если скрипт существует, добавляем сверху или снизу
+END ELSE BEGIN
+	COMPILE ~%MOD_FOLDER%/scripts/AR0305_3.baf~ EVALUATE_BUFFER //если не существует, то создаем новый
+END
 
 COMPILE ~HerThiMoney/dlg/ANAranSoA.d~ EVALUATE_BUFFER
 COMPILE ~HerThiMoney/dlg/ANAranToB.d~ 
