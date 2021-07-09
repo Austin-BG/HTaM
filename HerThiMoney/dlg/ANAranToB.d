@@ -15,11 +15,11 @@ IF ~Global("AranLoveToB","GLOBAL",1) Global("AranRomanceActive","GLOBAL",2)~ THE
 == ANTony IF ~Global("PlayerThiefGuild","GLOBAL",1) !Global("PGFailed","GLOBAL",1)~ THEN @10
 == PLAYER1 IF ~OR(2) !Global("PlayerThiefGuild","GLOBAL",1) Global("PGFailed","GLOBAL",1)~ THEN @59
 == ANTony IF ~OR(2) !Global("PlayerThiefGuild","GLOBAL",1) Global("PGFailed","GLOBAL",1)~ THEN @60
-== IF_FILE_EXISTS O#TiaxJ IF ~InParty("O#Tiax") InMyArea("O#Tiax") !StateCheck("O#Tiax",CD_STATE_NOTVALID)~ THEN @61
-== IF_FILE_EXISTS 7XTIAXJ IF ~InParty("7XTIAX") InMyArea("7XTIAX") !StateCheck("7XTIAX",CD_STATE_NOTVALID)~ THEN @61
+== IF_FILE_EXISTS O#TIA25J IF ~InParty("O#Tiax") InMyArea("O#Tiax") !StateCheck("O#Tiax",CD_STATE_NOTVALID)~ THEN @61
+== IF_FILE_EXISTS 7XTIA25J IF ~InParty("7XTIAX") InMyArea("7XTIAX") !StateCheck("7XTIAX",CD_STATE_NOTVALID)~ THEN @61
 == PLAYER1 @11
-== ANTony @12
-=@13 DO ~RealSetGlobalTimer("ANAranLetterToBTimer","GLOBAL",5) EscapeArea()~
+== ANTony @12 DO ~RealSetGlobalTimer("ANAranLetterToBTimer","GLOBAL",5) EscapeArea()~
+=@13
 EXIT
 
 
@@ -235,3 +235,140 @@ IF WEIGHT #-70 ~Global("AranWilsonToB","GLOBAL",2) Global("AranRomanceActive","G
 == PLAYER1 @72
 == WILSO25J @73
 EXIT
+
+APPEND PLAYER1
+
+IF ~Global("ANfinalAranTalk","AR4500",1)~ BEGIN ANAranFinalToBTalkFatesp
+  SAY @79
+=@80  
+=@81 
+IF ~~ THEN DO ~SetGlobal("ANfinalAranTalk","AR4500",2)~ REPLY @82 GOTO ANAranFinalToBTalkNO
+IF ~~ THEN DO ~ActionOverride("ANfatesp",DestroySelf()) SetGlobal("ANfinalAranTalk","AR4500",3)~ REPLY @84 GOTO ANAranFinalToBTalkYES
+END
+
+IF ~~ BEGIN ANAranFinalToBTalkNO
+  SAY @83
+IF ~~ THEN EXIT
+END
+
+IF ~~ BEGIN ANAranFinalToBTalkYES
+  SAY @85
+IF ~~ THEN REPLY @86 EXTERN FATESP 9
+END
+
+IF ~~ BEGIN ANAranFinalToBTalk5
+  SAY @97
+IF ~~ THEN EXTERN ARAN ANAranFinalToBTalk6
+END
+
+IF ~~ BEGIN ANAranFinalToBTalk9
+  SAY @122
+IF ~~ THEN EXIT
+END
+
+END
+
+APPEND ARAN
+
+IF WEIGHT #-99 ~Global("ANfinalAranTalk","AR4500",4)~ BEGIN ANAranFinalToBTalk
+  SAY @87
+ =@88 
+ =@89
+IF ~~ THEN DO ~ActionOverride(Player1,SetDialog("PLAYER1")) SetGlobal("ANfinalAranTalk","AR4500",4)~ REPLY @90 GOTO ANAranFinalToBTalk1
+IF ~~ THEN DO ~ActionOverride(Player1,SetDialog("PLAYER1")) SetGlobal("ANfinalAranTalk","AR4500",4)~ REPLY @92 GOTO ANAranFinalToBTalk2
+IF ~~ THEN DO ~ActionOverride(Player1,SetDialog("PLAYER1")) SetGlobal("ANfinalAranTalk","AR4500",4)~ REPLY @94 GOTO ANAranFinalToBTalk3
+END
+
+IF ~~ BEGIN ANAranFinalToBTalk1
+  SAY @91
+IF ~~ THEN GOTO ANAranFinalToBTalk4
+END
+
+IF ~~ BEGIN ANAranFinalToBTalk2
+  SAY @93
+IF ~~ THEN GOTO ANAranFinalToBTalk4
+END
+
+IF ~~ BEGIN ANAranFinalToBTalk3
+  SAY @95
+IF ~~ THEN GOTO ANAranFinalToBTalk4
+END
+
+IF ~~ BEGIN ANAranFinalToBTalk4
+  SAY @96
+IF ~~ THEN EXTERN PLAYER1 ANAranFinalToBTalk5
+END
+
+IF ~~ BEGIN ANAranFinalToBTalk6
+  SAY @98
+IF ~~ THEN REPLY @99 GOTO ANAranFinalToBTalk6_1
+IF ~~ THEN REPLY @101 GOTO ANAranFinalToBTalk6_2
+IF ~~ THEN REPLY @103 GOTO ANAranFinalToBTalk6_3
+IF ~~ THEN REPLY @105 GOTO ANAranFinalToBTalk6_4
+END
+
+IF ~~ BEGIN ANAranFinalToBTalk6_1
+  SAY @100
+IF ~~ THEN GOTO ANAranFinalToBTalk7
+END
+
+IF ~~ BEGIN ANAranFinalToBTalk6_2
+  SAY @102
+IF ~~ THEN GOTO ANAranFinalToBTalk7
+END
+
+IF ~~ BEGIN ANAranFinalToBTalk6_3
+  SAY @104
+IF ~~ THEN GOTO ANAranFinalToBTalk7
+END
+
+IF ~~ BEGIN ANAranFinalToBTalk6_4
+  SAY @106
+IF ~~ THEN GOTO ANAranFinalToBTalk7
+END
+
+IF ~~ BEGIN ANAranFinalToBTalk7
+  SAY @107
+=@108
+IF ~~ THEN REPLY @109 GOTO ANAranFinalToBTalk7_1
+IF ~~ THEN REPLY @111 GOTO ANAranFinalToBTalk7_2
+IF ~~ THEN REPLY @113 GOTO ANAranFinalToBTalk7_3
+END
+
+IF ~~ BEGIN ANAranFinalToBTalk7_1
+  SAY @110
+IF ~OR(2) GlobalLT("ANAranTethyr","GLOBAL",5) Global("ANaltarDead","GLOBAL",1)~ THEN REPLY @115 GOTO ANAranFinalToBTalk8_1
+IF ~!Global("ANaltarDead","GLOBAL",1) GlobalGT("ANAranTethyr","GLOBAL",4)~ THEN REPLY @115 GOTO ANAranFinalToBTalk8_2
+END
+
+IF ~~ BEGIN ANAranFinalToBTalk7_2
+  SAY @112
+IF ~OR(2) GlobalLT("ANAranTethyr","GLOBAL",5) Global("ANaltarDead","GLOBAL",1)~ THEN REPLY @115 GOTO ANAranFinalToBTalk8_1
+IF ~!Global("ANaltarDead","GLOBAL",1) GlobalGT("ANAranTethyr","GLOBAL",4)~ THEN REPLY @115 GOTO ANAranFinalToBTalk8_2
+END
+
+IF ~~ BEGIN ANAranFinalToBTalk7_3
+  SAY @114
+IF ~OR(2) GlobalLT("ANAranTethyr","GLOBAL",5) Global("ANaltarDead","GLOBAL",1)~ THEN REPLY @115 GOTO ANAranFinalToBTalk8_1
+IF ~!Global("ANaltarDead","GLOBAL",1) GlobalGT("ANAranTethyr","GLOBAL",4)~ THEN REPLY @115 GOTO ANAranFinalToBTalk8_2
+END
+
+IF ~~ BEGIN ANAranFinalToBTalk8_1
+  SAY @116
+=@118  
+=@119
+=@120 
+=@121
+IF ~~ THEN DO ~CreateVisualEffect("SPPORTAL",[1999.1218]) DestroySelf()~ EXTERN PLAYER1 ANAranFinalToBTalk9
+END
+
+IF ~~ BEGIN ANAranFinalToBTalk8_2
+  SAY @117
+=@118  
+=@119
+=@120 
+=@121
+IF ~~ THEN DO ~CreateVisualEffect("SPPORTAL",[1999.1218]) DestroySelf()~ EXTERN PLAYER1 ANAranFinalToBTalk9
+END
+
+END
