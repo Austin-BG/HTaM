@@ -1,7 +1,7 @@
 BACKUP ~HerThiMoney/backup~
 
 AUTHOR ~Austin, Scheele, Alisia & Arcanecoast Team~
-VERSION 3.1
+VERSION 3.2
 
 AUTO_TRA ~HerThiMoney/tra/%s~
 
@@ -1313,6 +1313,8 @@ COPY ~HerThiMoney/cre/ANaltar5.cre~ ~override/ANaltar5.cre~
 SAY NAME1 @102
 SAY NAME2 @102
 
+COPY ~HerThiMoney/cre/ANFATESP.cre~ ~override/ANFATESP.cre~
+
 COPY ~HerThiMoney/cre/ANgori.cre~ ~override/ANgori.cre~
 SAY NAME1 @105
 SAY NAME2 @105
@@ -1377,6 +1379,7 @@ EXTEND_TOP ~YOSHIMO.bcs~ ~HerThiMoney/scripts/yoshimo3.baf~
 EXTEND_TOP ~mazzy.bcs~ ~HerThiMoney/scripts/mazzy3.baf~
 EXTEND_TOP ~nalia.bcs~ ~HerThiMoney/scripts/nalia3.baf~
 EXTEND_TOP ~AR2500.bcs~ ~HerThiMoney/scripts/AR2500.baf~ 
+EXTEND_TOP ~AR4500.bcs~ ~HerThiMoney/scripts/AR4500_3.baf~ 
 
 EXTEND_TOP ~Player1.bcs~ ~HerThiMoney/scripts/addp1dlg.baf~
 
@@ -1405,6 +1408,7 @@ COMPILE ~HerThiMoney/scripts/ANaran.baf~ EVALUATE_BUFFER USING ~%MOD_FOLDER%/tra
 COMPILE ~HerThiMoney/scripts/ANleena.baf~
 COMPILE ~HerThiMoney/scripts/AN1204.baf~
 COMPILE ~HerThiMoney/scripts/AN0012.baf~
+COMPILE ~HerThiMoney/scripts/ANfatesp.baf~
 
 // Добавляем скрипт локации входа в ѓильдию
 COPY_EXISTING ~AR0305.are~ ~override~
