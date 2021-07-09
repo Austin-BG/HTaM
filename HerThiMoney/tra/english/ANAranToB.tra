@@ -88,8 +88,55 @@ Please take care of yourself. Triumph over your enemies, as you always have. I b
 @73 = ~Grr. Sniff. ~
 
 // NEW (v.3.1)
-@74 = ~<CHARNAME?... You're so sad... Do you want me to entertain you with a song? ~
+@74 = ~<CHARNAME>?... You're so sad... Do you want me to entertain you with a song? ~
 @75 = ~I have no time for songs now. ~
 @76 = ~Yeah... I understand... I guess. Then I won't bother you for now. ~
 @77 = ~*You gratefully squeeze Garrick's hand* Thank you. But there is no need to sing now, your sympathy and understanding is enough for me. ~
 @78 = ~You know... we've been through so much together that I really seem to have learned to understand you. Don't be so upset. Everything will fine. Sir Garrick said that! ~
+
+// NEW (v.3.2)
+// The final
+@79 = ~*You are tormented by anxiety more and more, growing into excitement, almost into a panic. The goal is so close... but what is your real goal? The bloody path to the throne of Baal is coming to an end, but do you realize what your soul really longs for?* ~
+@80 = ~*Confusion still hurts your heart, but your thoughts suddenly clear up and your feelings become more defined. You understand that now, at this moment, you want only one thing - to see Aran. Not just to see, but to touch, to hear his voice...* ~
+@81 = ~*The spirit of destiny can help you with this. A crazy thought takes possession of you like an obsession. Aran ... if now you take him away from important business or catch him by surprise, will he be happy to meet you? The idea is selfish, but if he loves you as he says, there is nothing to be afraid of.* ~
+@82 = ~This is crazy. I don't want to tempt fate. ~
+@83 = ~*You don't want to drown out the voice of prudence in you. This decision seems to be the right one, but it leaves a feeling of regret in the soul* ~
+@84 = ~Yes, I want to. I want Aran, my beloved man, to be here. ~
+@85 = ~*You can't resist the urge anymore. Why not?...* ~
+@86 = ~Call upon me Aran Linvail, Master of the Amnian Shadow Thieves. ~
+@87 = ~*Aran appears in front of you. Surely he is alarmed, but his composure does not fail him, he is ready to meet possible danger face to face, gripping the hilt of a sharp dagger. Your eyes meet...* ~
+@88 = ~*You don’t notice how and where Aran’s weapons are hiding... after a moment he’s squeezing you so painfully in his arms and kissing you hard* ~
+@89 = ~<CHARNAME> ... my favorite <CHARNAME>.~ [aransong]
+@90 = ~You're crazy! What if it were a trap?~
+@91 = ~I know for a fact that you are not an illusion, and everything else can be dealt with. ~
+@92 = ~Aran, I'm sorry if I got you out of business. ~
+@93 = ~*Laughs* Just a little. It doesn't make any difference. ~
+@94 = ~Don't worry! I'm real and we're safe.~
+@95 = ~It is precisely because you are the real one that I'm worried about, <CHARNAME>! Dangers are nothing before this excitement. ~
+@96 = ~And yet, I have to admit... you have a truly divine way to ask out on a date! I'm happy you did it. ~
+@97 = ~*You sit Aran next to you and start talking. Words pour out of you in a stream, you talk about the latest events, about your doubts and melancholy, which sometimes finds you. Aran listens attentively, from time to time running his palm across your cheek* ~
+@98 = ~Just a little more, huh? Soon we will all find out how the daughter of Bhaal's journey, begun within the walls of Candlekeep Citadel, will end. ~
+@99 = ~Whatever awaits me, I will do my best to keep my promise and return to you, Aran. ~
+@100 = ~Thank you... my <CHARNAME>. ~
+@101 = ~I'm afraid I won't... be able to resist the temptation of divine authority. ~
+@102 = ~And I can quite understand you. ~
+@103 = ~Aran... I'm so confused. I don't really know what I want myself.~
+@104 = ~But I'm sure your heart will give you a solution at the decisive moment. Only listen to him.~
+@105 = ~What if I don't go anywhere at all? I will die, I will be gone forever.~
+@106 = ~I will pray to the gods that this does not happen. ~
+@107 = ~But this is what I want to tell you... My feelings did not weaken, but I realized that it was wrong to tie you with a promise. Love... it was thanks to you that I learned what this very worn-out word actually carries.~
+@108 = ~Love abhors coercion. I want to set you free - you are free to make any decision. If it is not what I long for, I will not consider it a hoax and... I will try to reconcile.~
+@109 = ~Oh! Didn't your feelings really get weaker?~
+@110 = ~Yes. I just don't want to tie the wings of a bird like you.~
+@111 = ~Thank you, Aran, but this is not necessary. I said I would come back to you - and I will. Only death can get in the way. ~
+@112 = ~*Instead of answering, Aran kisses you warmly* ~
+@113 = ~Thank you... these words made me feel better. ~
+@114 = ~Yes, I already realized how valuable freedom is to you. ~
+@115 = ~Now tell me, my Master, how are you and what are you doing? ~
+@116 = ~Nothing really important to waste our precious time talking about it. Better sometime later, but now... ~
+@117 = ~Nothing really important to waste our precious time talking about it. I will say one thing: I promised to avenge you to the magician Altara, and I did it. He and all of his minions are dead. I'll tell you the details sometime later, but now... ~
+@118 = ~My dear <CHARNAME>... maybe enough words already?~
+@119 = ~*Your unexpected closeness gives you pleasure with a touch of bitterness - you both know that it can be the last. But that is why passion is even stronger, and tenderness is more piercing. Inside the strange little world of the pocket plan, you create a bright world just for the two of you, even more incomprehensible and detached... This happiness helps you to forget about the gravity of recent events.* ~
+@120 = ~*When the time comes to part with Aran, you feel your love and gratitude for him. You hardly say anything when you break up. Just one...* ~
+@121 = ~I love you, <CHARNAME>. ~
+@122 = ~And I love you, Aran. ~
