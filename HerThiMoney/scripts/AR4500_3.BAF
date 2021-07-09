@@ -1,0 +1,27 @@
+IF
+Global("ChallengesDone","GLOBAL",1)
+Global("AranRomanceActive","GLOBAL",2)
+  OR(2)
+Dead("Balth")
+Global("BalthazarFights","GLOBAL",1)
+Global("ANfinalAranTalk","AR4500",0)
+	
+THEN
+	RESPONSE #100
+	CreateCreature("ANFATESP",[1986.1040],S) 
+	SetGlobal("ANfinalAranTalk","AR4500",1)
+END
+
+IF
+Global("ANfinalAranTalk","AR4500",3)
+	
+THEN
+	RESPONSE #100
+	CreateVisualEffect("SPPORTAL",[1999.1218])
+	Wait(2)
+	FadeFromColor([60.0],0)
+	CreateCreature("Aran",[1999.1218],S) 
+	SetGlobal("ANfinalAranTalk","AR4500",4)
+	SmallWait(4)
+	ActionOverride("Aran",StartDialogNoSet(Player1))
+END

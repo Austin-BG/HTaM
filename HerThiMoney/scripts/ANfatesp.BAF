@@ -1,0 +1,9 @@
+IF
+See(Player1)
+Global("ANfinalAranTalk","AR4500",1)
+	
+THEN
+	RESPONSE #100
+	ActionOverride(Player1,SetDialog("PLAYER1"))	
+    ActionOverride(Player1,StartDialog("Player1",Myself))
+END

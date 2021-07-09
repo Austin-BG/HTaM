@@ -59,7 +59,7 @@ InParty("Wilson")
 THEN
 	RESPONSE #100
 		SetGlobal("AranWilsonToB","GLOBAL",1)
-        RealSetGlobalTimer("ANAranLetterWilsonTimer","GLOBAL",500)
+        RealSetGlobalTimer("ANAranLetterWilsonTimer","GLOBAL",250)
 END
 
 IF
@@ -69,5 +69,5 @@ InParty("7XGAR")
 THEN
 	RESPONSE #100
 		SetGlobal("AranGarrickToB","GLOBAL",1)
-        RealSetGlobalTimer("ANAranLetterGarrickTimer","GLOBAL",200)
+        RealSetGlobalTimer("ANAranLetterGarrickTimer","GLOBAL",180)
 END
