@@ -22,8 +22,10 @@ END
 
 IF
 Global("ANpiratQuest","GLOBAL",5)
+Global("ANpiratQuest","MYAREA",0)
 THEN
 	RESPONSE #100
 TriggerActivation("ToAN1614",TRUE)
+SetGlobal("ANpiratQuest","MYAREA",1)
 END
 
