@@ -1,0 +1,105 @@
+// Statues
+IF
+AreaCheck("AR2000")
+Global("MakeStatue","GLOBAL",2)
+Global("AN_STATUE_7XGAR_VALUE","GLOBAL",2)
+Global("AN_7XGAR_STATUE","GLOBAL",1)
+Global("AN_Statues_Garrick_Talk","GLOBAL",0)
+Range("StatueInfo2",20)
+THEN
+	RESPONSE #100
+SetGlobal("AN_Statues_Garrick_Talk","GLOBAL",1)
+END
+
+IF
+AreaCheck("AR2000")
+Global("AN_Statues_Garrick_Talk","GLOBAL",1)
+Range("StatueInfo2",20)
+THEN
+	RESPONSE #100
+StartDialogNoSet(Player1)
+END
+
+IF
+AreaCheck("AR2000")
+Global("MakeStatue","GLOBAL",2)
+Global("AN_STATUE_7XGAR_VALUE","GLOBAL",3)
+Global("AN_7XGAR_STATUE","GLOBAL",1)
+Global("AN_Statues_Garrick_Talk","GLOBAL",0)
+Range("StatueInfo3",20)
+THEN
+	RESPONSE #100
+SetGlobal("AN_Statues_Garrick_Talk","GLOBAL",1)
+END
+
+IF
+AreaCheck("AR2000")
+Global("AN_Statues_Garrick_Talk","GLOBAL",1)
+Range("StatueInfo3",20)
+THEN
+	RESPONSE #100
+StartDialogNoSet(Player1)
+END
+
+IF
+AreaCheck("AR2000")
+Global("MakeStatue","GLOBAL",2)
+Global("AN_STATUE_7XGAR_VALUE","GLOBAL",4)
+Global("AN_7XGAR_STATUE","GLOBAL",1)
+Global("AN_Statues_Garrick_Talk","GLOBAL",0)
+Range("StatueInfo4",20)
+THEN
+	RESPONSE #100
+SetGlobal("AN_Statues_Garrick_Talk","GLOBAL",1)
+END
+
+IF
+AreaCheck("AR2000")
+Global("AN_Statues_Garrick_Talk","GLOBAL",1)
+Range("StatueInfo4",20)
+THEN
+	RESPONSE #100
+StartDialogNoSet(Player1)
+END
+
+IF
+AreaCheck("AR2000")
+Global("MakeStatue","GLOBAL",2)
+Global("AN_STATUE_7XGAR_VALUE","GLOBAL",5)
+Global("AN_7XGAR_STATUE","GLOBAL",1)
+Global("AN_Statues_Garrick_Talk","GLOBAL",0)
+Range("StatueInfo5",20)
+THEN
+	RESPONSE #100
+SetGlobal("AN_Statues_Garrick_Talk","GLOBAL",1)
+END
+
+IF
+AreaCheck("AR2000")
+Global("AN_Statues_Garrick_Talk","GLOBAL",1)
+Range("StatueInfo5",20)
+THEN
+	RESPONSE #100
+StartDialogNoSet(Player1)
+END
+
+IF
+AreaCheck("AR2000")
+Global("MakeStatue","GLOBAL",2)
+Global("AN_STATUE_7XGAR_VALUE","GLOBAL",6)
+Global("AN_7XGAR_STATUE","GLOBAL",1)
+Global("AN_Statues_Garrick_Talk","GLOBAL",0)
+Range("StatueInfo6",20)
+THEN
+	RESPONSE #100
+SetGlobal("AN_Statues_Garrick_Talk","GLOBAL",1)
+END
+
+IF
+AreaCheck("AR2000")
+Global("AN_Statues_Garrick_Talk","GLOBAL",1)
+Range("StatueInfo6",20)
+THEN
+	RESPONSE #100
+StartDialogNoSet(Player1)
+END
