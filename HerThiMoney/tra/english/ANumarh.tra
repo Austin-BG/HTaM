@@ -36,7 +36,7 @@
 @32 = ~Okay, Minsc, go ahead.~
 @33 = ~I'll look for another way to rid the chicken of the treasure.~
 @34 = ~(Minsc takes Boo off his shoulder and puts him on the ground. He starts running around the chickens. After a while the hamster stops and starts sneaking up on one of the birds...)~
-@35 = ~*Squeak!*~
+@35 = ~*Squeak!*~ [GAM_48]
 @36 = ~*There!* (The chicken breaks loose and rushes away. In its place you notice a bluish sheen. Bending down, you pick up and clean the object, which turns out to be a gem.)~
 
 // Lellin's death
