@@ -41,3 +41,8 @@ CHAIN
 IF ~Global("AN_Statues_Jan_Talk","GLOBAL",1) Global("AN_INPARTYSTATUE_JAN","GLOBAL",1)~ THEN JANJ AN_Statues_Jan
 @17 DO ~SetGlobal("AN_Statues_Jan_Talk","GLOBAL",2)~
 EXIT
+
+CHAIN  
+IF ~Global("AN_Statues_Garrick_Talk","GLOBAL",1) Global("AN_INPARTYSTATUE_7XGAR","GLOBAL",1)~ THEN IF_FILE_EXISTS 7XGARJ AN_Statues_Garrick
+@20 DO ~SetGlobal("AN_Statues_Garrick_Talk","GLOBAL",2)~
+EXIT
