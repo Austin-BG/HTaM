@@ -1,0 +1,56 @@
+// Beshaba (SelfTalk)
+IF
+    Global("ThiefSpawn0","GLOBAL",3)
+	Global("BeshabaCurse","GLOBAL",0)
+	OR(2)
+	Global("Chapter","GLOBAL",%bg2_chapter_3%)
+	GlobalGT("Chapter","GLOBAL",%bg2_chapter_5%)
+THEN
+	RESPONSE #100
+		ActionOverride(Player1,SetDialog("PLAYER1"))
+		SmallWait(3)
+		ActionOverride(Player1,StartDialog("Player1",Myself))
+END
+
+// Beshaba - Renal talk quest
+IF
+	Global("BeshabaCurse","GLOBAL",5)
+THEN
+	RESPONSE #100
+SetGlobal("BeshabaCurse","GLOBAL",6)	
+StartCutSceneMode()
+CutSceneId(Player1)  
+ActionOverride(Player1,MoveToPoint([645.683])) 
+Wait(4)
+CreateCreature("ANgie1",[417.648],9)
+SmallWait(5)
+ActionOverride("ANgie1",MoveToPoint([678.697])) 
+Wait(1)
+EndCutSceneMode()
+ActionOverride(Player1,SetDialog("PLAYER1"))
+SmallWait(5)
+ActionOverride("ANgie1",StartDialogNoSet("Player1"))
+END
+
+// Aran lamp talk
+IF
+Global("ANAranLampRenal","GLOBAL",3)
+
+THEN 
+RESPONSE #100
+SetGlobal("ANAranLampRenal","GLOBAL",4)
+ActionOverride(Player1,SetDialog("PLAYER1"))
+ClearAllActions()   
+StartCutSceneMode()
+CutSceneId(Player1)  
+DisplayStringHead(Player1,@89)
+Wait(4)
+FadeFromColor([60.0],0)
+CreateCreatureObject("bdoffscr",Player1,0,0,0)  
+ApplySpellRES("bdoffscr","bdoffscr")  
+SmallWait(1)
+CreateCreatureObject("ANporin","bdoffscr",0,0,0) 
+Wait(1)
+EndCutSceneMode()
+ActionOverride(Player1,StartDialog("Player1",Myself))
+END  
