@@ -14,11 +14,22 @@ OR(3)
 Race(Player1,HUMAN)
 Race(Player1,ELF)
 Race(Player1,HALF_ELF)
+Global("BeshabaCurse","GLOBAL",15) // Beshaba quest finished
 
 THEN
   RESPONSE #100
 SetGlobal("AranLovePrologue","GLOBAL",1) 
 SetGlobalTimer("ANAranLetter0Timer","GLOBAL",ONE_DAY)
+END
+
+// Beshaba (SelfTalk)
+IF
+	Global("BeshabaCurse","GLOBAL",8)
+THEN
+	RESPONSE #100
+		ActionOverride(Player1,SetDialog("PLAYER1"))
+		SmallWait(5)
+		ActionOverride(Player1,StartDialog("Player1",Myself))
 END
 
 IF 

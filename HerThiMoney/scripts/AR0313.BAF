@@ -1,0 +1,10 @@
+IF 
+Global("BeshabaCurse","GLOBAL",10)
+Global("ANlaniaExists","AR0313",0)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANlaniaExists","AR0313",1)
+CreateCreature("ANlania",[738.329],0)
+Continue()
+END

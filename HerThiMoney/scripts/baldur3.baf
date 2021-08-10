@@ -1,3 +1,43 @@
+// Beshaba 
+IF
+    Global("RenalJob","GLOBAL",4)
+	Global("AranLove","GLOBAL",0)
+    Global("AranLovePrologue","GLOBAL",0) 
+	Global("ThiefSpawn0","GLOBAL",0)
+	OR(2)
+	Global("Chapter","GLOBAL",%bg2_chapter_3%)
+	GlobalGT("Chapter","GLOBAL",%bg2_chapter_5%)
+THEN
+	RESPONSE #100
+		SetGlobal("ThiefSpawn0","GLOBAL",1)
+        SetGlobalTimer("ANbeshabaBeginTimer","GLOBAL",20)
+END
+
+IF
+	GlobalTimerExpired("ANbeshabaBeginTimer","GLOBAL")
+	AreaType(OUTDOOR)
+	AreaType(CITY)
+	CombatCounter(0)
+	Global("ThiefSpawn0","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("ThiefSpawn0","GLOBAL",2)
+		CreateCreatureObject("ANmess2",Player1,0,0,0)  
+		ActionOverride("ANmess2",Dialog(Player1))
+END
+
+IF
+Global("BeshabaCurse","GLOBAL",3)
+AreaType(OUTDOOR)
+THEN
+	RESPONSE #100
+		ActionOverride(Player1,SetDialog("PLAYER1"))
+		SmallWait(3)
+		ActionOverride(Player1,StartDialog("Player1",Myself))
+		Continue()
+END
+
+
 // Tony 0
 IF
 	GlobalTimerExpired("ANAranLetter0Timer","GLOBAL")

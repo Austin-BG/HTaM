@@ -1,0 +1,9 @@
+IF 
+Global("BeshabaCurse","GLOBAL",4)
+Global("ANbeshabaWomanExists","AR0902",0)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANbeshabaWomanExists","AR0902",1)
+CreateCreature("ANwoman1",[1114.1256],9)
+END
