@@ -23,7 +23,7 @@ The beginning of one of the two quest branch will block the parallel quest branc
 In this case, both branches will end with the quest "Pirate Legacy".
 If you successfully complete the first branch of the quests, you can also ask a new ally for help in the fight against Bodhi in Chapter 6.
 
-Component 3. «Shadow-Covered Love» (by Alisia & Austin):
+Component 3. «Shadow-Covered Love & Mysteries» (by Alisia & Austin):
 
 Adds:
 - for female characters: a big romance with the head of the thieves guild Aran Linvail (as with a non-group NPC) and a series of new quests (from large to microquests) that will become available as this relationship develops. Also included are flirting, reactions of other NPCs, a small episode in ToB, a new epilogue of the game with an active romance, and more!
