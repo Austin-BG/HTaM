@@ -211,6 +211,12 @@ END
 // Добавляем скрипт статуи для главного героя в Трейдмите
 EXTEND_BOTTOM ~anstat01.bcs~ ~%MOD_FOLDER%/scripts/addP1Statue.baf~
 
+// Расширяем скрипт Гаррика, чтобы он высказался о своей статуе
+ACTION_IF FILE_EXISTS_IN_GAME ~7XGarJ.dlg~
+BEGIN
+EXTEND_TOP ~7XGARR.bcs~ ~%MOD_FOLDER%/scripts/garrick1.baf~
+END
+
 // Для добавления расширения квеста в Холмах Умар
 COPY_EXISTING ~GEMCH01.CRE~ ~override~
 	SPRINT ~new_dialog~ ~%SOURCE_RES%~
