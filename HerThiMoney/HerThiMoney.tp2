@@ -1,7 +1,7 @@
 BACKUP ~HerThiMoney/backup~
 
 AUTHOR ~Austin, Scheele, Alisia & Arcanecoast Team~
-VERSION 3.2
+VERSION 3.3
 
 AUTO_TRA ~HerThiMoney/tra/%s~
 
@@ -1119,7 +1119,7 @@ AT_INTERACTIVE_EXIT ~VIEW HerThiMoney/readme/%LANGUAGE%/readme.pdf~
 //
 //
 /////////////////////////////////////////////////////////
-// Component 3. "Shadow-Covered Love" /////////////////////////////////////
+// Component 3. "Shadow-Covered Love & Mysterios" /////////////////////////////////////
 /////////////////////////////////////////////////////////
 //
 //
@@ -1201,9 +1201,9 @@ COPY_EXISTING ~AR0306.are~ ~override~
 
 //Если baf файл имеет такое же имя
 ACTION_IF FILE_EXISTS_IN_GAME ~%are_script%.bcs~ BEGIN
-	EXTEND_TOP ~%are_script%.bcs~ ~%MOD_FOLDER%/scripts/AR0306_3.baf~ EVALUATE_BUFFER //если скрипт существует, добавляем сверху или снизу
+	EXTEND_TOP ~%are_script%.bcs~ ~%MOD_FOLDER%/scripts/AR0306-3/AR0306.baf~ EVALUATE_BUFFER //если скрипт существует, добавляем сверху или снизу
 END ELSE BEGIN
-	COMPILE ~%MOD_FOLDER%/scripts/AR0306-ALT/AR0306.baf~ EVALUATE_BUFFER //если не существует, то создаем новый
+	COMPILE ~%MOD_FOLDER%/scripts/AR0306-3/AR0306.baf~ EVALUATE_BUFFER //если не существует, то создаем новый
 END
 // Если есть переменные внутри baf, не забыть EVALUATE_BUFFER
 
@@ -1315,9 +1315,33 @@ SAY NAME2 @102
 
 COPY ~HerThiMoney/cre/ANFATESP.cre~ ~override/ANFATESP.cre~
 
+COPY ~HerThiMoney/cre/ANmess2.cre~ ~override/ANmess2.cre~
+SAY NAME1 @151
+SAY NAME2 @151
+
 COPY ~HerThiMoney/cre/ANgori.cre~ ~override/ANgori.cre~
 SAY NAME1 @105
 SAY NAME2 @105
+
+COPY ~HerThiMoney/cre/ANwoman1.cre~ ~override/ANwoman1.cre~
+SAY NAME1 @152
+SAY NAME2 @152
+
+COPY ~HerThiMoney/cre/ANbesha1.cre~ ~override/ANbesha1.cre~
+SAY NAME1 @153
+SAY NAME2 @153
+
+COPY ~HerThiMoney/cre/ANpalad1.cre~ ~override/ANpalad1.cre~
+SAY NAME1 @154
+SAY NAME2 @154
+
+COPY ~HerThiMoney/cre/ANgie1.cre~ ~override/ANgie1.cre~
+SAY NAME1 @155
+SAY NAME2 @155
+
+COPY ~HerThiMoney/cre/ANlania.cre~ ~override/ANlania.cre~
+SAY NAME1 @156
+SAY NAME2 @156
 
 COPY ~HerThiMoney/items/ANlet1.itm~ ~Override/ANlet1.itm~
 SAY NAME1 @78
@@ -1354,7 +1378,7 @@ END
 EXTEND_TOP ~AR0307.bcs~ ~%MOD_FOLDER%/scripts/AR0307.baf~
 EXTEND_TOP ~AR0022.bcs~ ~%MOD_FOLDER%/scripts/AR0022.baf~
 EXTEND_TOP ~AR0511.bcs~ ~%MOD_FOLDER%/scripts/AR0511.baf~
-EXTEND_TOP ~AR0300.bcs~ ~%MOD_FOLDER%/scripts/AR0300.baf~
+EXTEND_TOP ~AR0300.bcs~ ~%MOD_FOLDER%/scripts/AR0300_3.baf~
 EXTEND_TOP ~AR0803.bcs~ ~%MOD_FOLDER%/scripts/AR0803.baf~
 EXTEND_TOP ~AR5500.bcs~ ~%MOD_FOLDER%/scripts/AR5500.baf~
 EXTEND_TOP ~AR0404.bcs~ ~%MOD_FOLDER%/scripts/AR0404.baf~
@@ -1380,6 +1404,9 @@ EXTEND_TOP ~mazzy.bcs~ ~HerThiMoney/scripts/mazzy3.baf~
 EXTEND_TOP ~nalia.bcs~ ~HerThiMoney/scripts/nalia3.baf~
 EXTEND_TOP ~AR2500.bcs~ ~HerThiMoney/scripts/AR2500.baf~ 
 EXTEND_TOP ~AR4500.bcs~ ~HerThiMoney/scripts/AR4500_3.baf~ 
+EXTEND_TOP ~AR0900.bcs~ ~HerThiMoney/scripts/AR0900_3.baf~ 
+EXTEND_TOP ~AR0902.bcs~ ~HerThiMoney/scripts/AR0902_3.baf~ 
+EXTEND_TOP ~AR0313.bcs~ ~HerThiMoney/scripts/AR0313.baf~
 
 EXTEND_TOP ~Player1.bcs~ ~HerThiMoney/scripts/addp1dlg.baf~
 
@@ -1409,6 +1436,7 @@ COMPILE ~HerThiMoney/scripts/ANleena.baf~
 COMPILE ~HerThiMoney/scripts/AN1204.baf~
 COMPILE ~HerThiMoney/scripts/AN0012.baf~
 COMPILE ~HerThiMoney/scripts/ANfatesp.baf~
+COMPILE ~HerThiMoney/scripts/ANbesha1.baf~
 
 // Добавляем скрипт локации входа в ѓильдию
 COPY_EXISTING ~AR0305.are~ ~override~
@@ -1423,18 +1451,19 @@ COPY_EXISTING ~AR0305.are~ ~override~
 
 //если baf файл имеет такое же имя
 ACTION_IF FILE_EXISTS_IN_GAME ~%are_script%.bcs~ BEGIN
-	EXTEND_TOP ~%are_script%.bcs~ ~%MOD_FOLDER%/scripts/AR0305_3.baf~ EVALUATE_BUFFER //если скрипт существует, добавляем сверху или снизу
+	EXTEND_TOP ~%are_script%.bcs~ ~%MOD_FOLDER%/scripts/AR0305-3/AR0305.baf~ EVALUATE_BUFFER //если скрипт существует, добавляем сверху или снизу
 END ELSE BEGIN
-	COMPILE ~%MOD_FOLDER%/scripts/AR0305_3.baf~ EVALUATE_BUFFER //если не существует, то создаем новый
+	COMPILE ~%MOD_FOLDER%/scripts/AR0305-3/AR0305.baf~ EVALUATE_BUFFER //если не существует, то создаем новый
 END
 
 COMPILE ~HerThiMoney/dlg/ANAranSoA.d~ EVALUATE_BUFFER
 COMPILE ~HerThiMoney/dlg/ANAranToB.d~ 
+COMPILE ~HerThiMoney/dlg/ANbeshaba.d~ 
 
 
 ACTION_IF EE_GAME BEGIN
    // If a EE-version is installed, change the journal entries to adapt it 
-  ADD_JOURNAL @1040 @1041 @1042 @1043 @1044 @1045 @1046 @1047 @1048 @1049 @1050 @1051 @1052 @1053 @1054 @1055 @1056 @1057 @1058 @1059 @1060 @1061 @1062 @1063 @1064 USING ~%MOD_FOLDER%/tra/%LANGUAGE%/setup.tra~ 
+  ADD_JOURNAL @1040 @1041 @1042 @1043 @1044 @1045 @1046 @1047 @1048 @1049 @1050 @1051 @1052 @1053 @1054 @1055 @1056 @1057 @1058 @1059 @1060 @1061 @1062 @1063 @1064 @1107 @1108 @1109 @1110 @1111 @1112 @1113 @1114 USING ~%MOD_FOLDER%/tra/%LANGUAGE%/setup.tra~ 
 END 
 
 APPEND ~gtimes.ids~ ~21600 THREE_DAYS~ UNLESS ~THREE_DAYS~
