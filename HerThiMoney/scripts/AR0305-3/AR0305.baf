@@ -1,0 +1,55 @@
+// Beshaba (SelfTalk)
+IF
+    Global("ThiefSpawn0","GLOBAL",3)
+	Global("BeshabaCurse","GLOBAL",0)
+	OR(2)
+	Global("Chapter","GLOBAL",%bg2_chapter_3%)
+	GlobalGT("Chapter","GLOBAL",%bg2_chapter_5%)
+THEN
+	RESPONSE #100
+		ActionOverride(Player1,SetDialog("PLAYER1"))
+		SmallWait(3)
+		ActionOverride(Player1,StartDialog("Player1",Myself))
+END
+
+// Tony (lamp) - man
+IF
+	!GlobalTimerNotExpired("ANAranLetterLAMPTimer","GLOBAL")
+	Global("AranJob","GLOBAL",2)
+	Global("RenalJob","GLOBAL",4)
+	Gender(Player1,MALE)
+	CombatCounter(0)
+	Global("TonySpawnAlternate","GLOBAL",0)
+	OR(2)
+	Global("Chapter","GLOBAL",%bg2_chapter_3%)
+	Global("Chapter","GLOBAL",%bg2_chapter_6%)
+	OR(2)
+	Global("PGFailed","GLOBAL",1)
+	Global("PlayerThiefGuild","GLOBAL",1)
+THEN
+	RESPONSE #100
+SetGlobal("TonySpawnAlternate","GLOBAL",1)	
+SetGlobalTimer("ANAranLetterLAMPTimer","GLOBAL",TWO_DAYS)
+END
+
+// Tony (lamp) - female no romance
+IF
+!GlobalTimerNotExpired("ANAranLetterLAMPTimer","GLOBAL")
+Gender(Player1,FEMALE)
+Global("AranJob","GLOBAL",2)
+Global("AranLove","GLOBAL",0)
+Global("AranLovePrologue","GLOBAL",0) 
+Global("RenalJob","GLOBAL",4)
+	CombatCounter(0)
+	Global("TonySpawnAlternate","GLOBAL",0)
+	OR(2)
+	Global("Chapter","GLOBAL",%bg2_chapter_3%)
+	Global("Chapter","GLOBAL",%bg2_chapter_6%)
+	OR(2)
+	Global("PGFailed","GLOBAL",1)
+	Global("PlayerThiefGuild","GLOBAL",1)
+THEN
+	RESPONSE #100
+SetGlobal("TonySpawnAlternate","GLOBAL",1)	
+SetGlobalTimer("ANAranLetterLAMPTimer","GLOBAL",TWO_DAYS)
+END
