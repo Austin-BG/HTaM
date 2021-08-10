@@ -27,7 +27,8 @@ Component 3. «Shadow-Covered Love & Mysteries» (by Alisia & Austin):
 
 Adds:
 - for female characters: a big romance with the head of the thieves guild Aran Linvail (as with a non-group NPC) and a series of new quests (from large to microquests) that will become available as this relationship develops. Also included are flirting, reactions of other NPCs, a small episode in ToB, a new epilogue of the game with an active romance, and more!
-- for male characters: one major quest that Aran will give out after the death of Bodhi in Chapter 6, provided that the player previously took control of stronghold thieves.
+- for male characters, this component adds two quests in the Thieves guild: the first quest will be given by Renal after completing his task (wait for the messenger on the street) in chapter 3, and the second major quest will be given by Aran after the death of Bodhi in chapter 6, provided that the player earlier took control of stronghold thieves.
+Take your time to complete the third chapter, there is a lot of new things in it!
 
 Component 4. «The Missing Troll Case» (by Alisia & Austin):
 
