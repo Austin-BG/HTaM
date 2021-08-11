@@ -132,7 +132,7 @@ Weight: 3 ~
 @70 = ~Stop, who's with you? I was told that you will be alone! ~
 @71 = ~Life is full of surprises!~
 
-@72 = ~Component 3. Shadow-Covered Love (by Alisia & Austin)~
+@72 = ~Component 3. Shadow-Covered Love & Death (by Alisia & Austin)~
 @73 = ~Tony~
 @74 = ~Then I will go alone, as Aran asked. Be back soon. ~
 @75 = ~You are studying a scroll... ~
@@ -256,6 +256,13 @@ Whose footsteps, like a black trail, scatter the gem.~
 @149 = ~Shahbaz~
 
 @150 = ~The bank is closing soon! Everyone, please leave the building! ~
+
+@151 = ~Thief~
+@152 = ~Woman~
+@153 = ~Strange Man~
+@154 = ~Paladin~
+@155 = ~Gie~
+@156 = ~Lania~
 
 @999 = ~Mae’Var’s Stash
 
@@ -688,6 +695,38 @@ Shahbaz, the head of security at the Athkatla branch of the First Calimport Bank
 @1106 = ~Call to bank
 
 A courier from the bank said that Shahbaz, the head of security at the Athkatla branch of the First Calimport Bank, wanted to meet me in person. What does that mean? There is only one way to find out. ~
+
+@1107 = ~Beshaba's Curse
+
+The messenger from Renal Bloodscalp said his boss wants to talk to me about something. I'll have to go to him.~
+
+@1108 = ~Beshaba's Curse
+
+Renal said that things for the guild suddenly deteriorated - thieves are catastrophically unlucky, and no one can understand the reason. It looks like some kind of curse. If I want to help them, then it is probably better to start the inspection from the temples - perhaps we will be able to find out something there. ~
+
+@1109 = ~Beshaba's Curse
+
+The Order paladin informed me that a cult of supporters of the goddess of failure Beshaba has recently appeared in the city and they are behaving very aggressively. Perhaps one of the thieves hurt their interests and they decided to take revenge by sending this curse. We need to report this to Renal. ~
+
+@1110 = ~Beshaba's Curse
+
+It turned out that the culprit for the curse was a thief named Gie, a master of traps. For some reason he robbed the priest of Beshaba by stealing the amulet from him. Renal asked me to speak to Aran Linvail, the leader of the Thieves Guild, about all this and give him the amulet. ~
+
+@1111 = ~Beshaba's Curse
+
+It turned out that the culprit for the curse was a thief named Gie, a master of traps. For some reason he robbed the priest of Beshaba. Now Renal's guys will figure it out for themselves. I didn't want to help them further in this story. ~
+
+@1112 = ~Beshaba's Curse
+
+Aran Linvile asked me to find out for whom Gie stole this amulet and for what purpose. Probably worth asking Renal about this. ~
+
+@1113 = ~Beshaba's Curse
+
+According to Renal, Gie often dates a girl named Lania. She may know something about why he needed Beshaba's amulet. You can find Lania somewhere in the tavern - most likely nearby. ~
+
+@1114 = ~Beshaba's Curse
+
+We found Lania and learned the whole truth. The story is over. ~
 
 @10000000 = ~~
 @10000001 = ~Statue: %z_strref%~
