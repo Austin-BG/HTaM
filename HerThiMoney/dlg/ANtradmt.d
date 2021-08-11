@@ -43,6 +43,6 @@ IF ~Global("AN_Statues_Jan_Talk","GLOBAL",1) Global("AN_INPARTYSTATUE_JAN","GLOB
 EXIT
 
 CHAIN  
-IF ~Global("AN_Statues_Garrick_Talk","GLOBAL",1) Global("AN_INPARTYSTATUE_7XGAR","GLOBAL",1)~ THEN IF_FILE_EXISTS 7XGARJ AN_Statues_Garrick
+IF ~Global("AN_Statues_Garrick_Talk","GLOBAL",1) Global("AN_INPARTYSTATUE_7XGAR","GLOBAL",1)~ THEN IF_FILE_EXISTS 7XGarJ AN_Statues_Garrick
 @20 DO ~SetGlobal("AN_Statues_Garrick_Talk","GLOBAL",2)~
 EXIT
