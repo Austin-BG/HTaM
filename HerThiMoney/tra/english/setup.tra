@@ -1,0 +1,738 @@
+@0 = ~Component 1. Interjections & Mini-quests (by Austin & Arcanecoast Team)~
+@1 = ~It would be too risky for me to stay in the service of the Shadow Thieves - this whole story with Mae'Var, and even the stupid war with vampires... Besides, I stayed too long here, there is no way to get new knowledge. Your pitiful company will obviously not be hindered by an intelligent magician - and you won't find anyone better than me. (Gods, "adventuring" again with these primates! But this way I will have reliable protection and rest in the best hotels!) ~
+@2 = ~Simon Shortleg~
+@3 = ~First Bank of Calimport~
+@4 = ~Clerk~
+@5 = ~Senior Clerk~
+@6 = ~Client~
+@7 = ~Bank Guardian~
+@8 = ~There are robbers in the bank! Kill!~
+@9 = ~Component 2. First Calimport Bank Pack (by Scheele & Austin & Arcanecoast Team)~
+@10 = ~Batch~
+@11 = ~Hurp~
+@12 = ~Encrypted code~
+@13 = ~ A heavy parchment scroll previously owned by Mae'Var. At the top of the scroll, large letters are inscribed: "FCB". Below, with a careless hand, three pictures are drawn.
+
+The first picture shows an ivy-covered peasant house with open windows and a dog with its tongue sticking out, running towards a bowl of water. There is a name engraved on the dog's collar: "HARPTOS".
+
+In the second picture, a peasant is throwing snow from the roof of the same house. Snowdrifts piled up almost to the very shutters.
+
+The third picture shows the same peasant next to the mill. In the rain, he loads sacks of oats and barley onto a cart. The cart is packed to the brim.~
+
+@14 = ~Mae'Var’s Gems~
+@15 = ~A small pouch containing Mae'Var’s Gems. They can be sold, but only after the assignment is settled with Renal and he ends the spying on you.~
+@16 = ~Gem Inventory~
+@17 = ~The scroll lists four black opals, four water opals, four emeralds, two diamonds, and a garnet. The number fifteen is circled at the bottom. ~
+
+@18 = ~Mae'Var Gems~
+@19 = ~A small pouch containing Mae'Var Gems. Now that the story of the cache is over and the tracking has been removed, they can be carefully sold to some merchant. ~
+
+@20 = ~Ledger~
+@21 = ~A thick, heavy book bound in calfskin. It records the transactions, expenses, and income of the Mae'Var Guild for the year 1369 in the Valley Chronicle. ~
+@22 = ~Lease agreement~
+@23 = ~Lease agreement for a personal safety deposit box with a combination lock. Leased for one year, parties: Athkatla Branch of the First Calimport Bank and Mae'Var. ~
+
+@24 = ~Booklet "The First Calimport Bank" ~
+@25 = ~"Crossing countries, enriching people"
+Transnational, universal, commercial bank
+
+First Calimport, Calimshan's largest bank, also encompasses Tethyr and Amn, one of Faerun's largest commercial organizations.
+Founded in 1350 LD in Calimport, the bank now has five branches in the cities of Almraven, Suldolfor, Miratma, Zazesspur, Ahtkatla.
+
+We work in the field of lending and storing deposits both with individual clients and with guilds.
+We fully protect and guarantee all deposits. Your belongings are safe with us.
+
+First Calimport Bank is constantly developing and improving our services, focusing on the future, and striving to enrich our clients.~
+
+@26 = ~Branch Director~
+@27 = ~Bank Cat~
+
+@28 = ~Safe Key~
+@29 = ~This beautiful golden key should fit the lock on the main safe of the Athkatla branch of the First Calimport Bank.~
+
+@30 = ~"Types of Calimshan Tobacco" ~
+@31 = ~The book lists many different types of tobacco available in Calimshan, but if it is to be believed the most common are these:
+
+Al-Sidran ("Calimshan")
+Quality: 9/10 (add opium to the mix)
+Price: 3 gold per pipe, 8 gold per cigar, 30 gold per pouch
+ 
+Al-Ferizi ("Dawn")
+Quality: 6/10 (1/2 opium, 1/2 pipe-weed)
+Price: 1 gold pipe, 3 gold for a cigar, 10 gold for a pouch ~
+
+@32 = ~Calimport Travel Guide~
+@33 = ~Calimport is the miles-long capital of the country of Calimshan, located in southwestern Faerun and comprising the Kalim Desert and Spider Marsh. It is located on the northern coast of the Shining Sea.
+Calimport is one of the largest metropolises in Faeríàn. It was founded in 7800 by the ruler Kalim. The population of Calimport is 192,795 people. It is composed of humans (95%), halflings (2%), half-orcs (2%), and half-elves (1%).
+Calimport's main trading partners are Memnon and Manshaka. The trade route to Memnon runs through the desert, while trade with Manshaka is by sea. Periodically, local merchants make long journeys up to Luskan.
+The city has many inns, harems and taverns, as well as establishments that provide all services at once. The most famous of these are the Mystic Tavern, which houses the drug den in the back, and the Glittering Harem, with its magnificent bathhouse. The city also has two arenas and a large slave market. ~
+@34 = ~Advertising Manager~
+
+@35 = ~Storyteller~
+@36 = ~Listener~
+@37 = ~Boy~
+
+@38 = ~Owney~
+@39 = ~Jalut~
+@40 = ~Esra~
+@41 = ~Jock Big Cobblestone~
+@42 = ~Yantina~
+@43 = ~Collector~
+@44 = ~Blik~
+@45 = ~Collector Soldier~
+@46 = ~Collector Fighter~
+
+@47 = ~ Korgan's promissory note~
+@48 = ~ This document states the amount of the loan taken by Korgan - five thousand - and the term of its repayment set by the bank. Also, the interest charged is indicated in small print. Below, next to the neat bank clerk's painting, are the large, lurid scrawls of the dwarf, apparently depicting his signature. ~
+
+@49 = ~ Kaza's Book (transcribed)~
+@50 = ~ Deciphered by Edwin, Kaza's book has a powerful enchantment that protects the owner. Most of the pages in it have been destroyed or hopelessly spoiled by unsuccessful attempts to decipher them. The few remaining untouched sheets contain spells of necromancy. Only Edwin can use the book.
+
+OPTIONS:
+
+Permanent +1 bonus to saving throws against polymorphism
+
+Book properties:
+- Finger of Death, once a day
+Distance: caster's field of view
+Area of effect: 1 creature
+  
+- Control undead, 1 time per day
+Distance: 40 feet
+Duration: 6 rounds + 1 round / level
+Coverage: radius 4 feet
+
+Weight: 3 ~
+
+@51 = ~Vagabond~
+@52 = ~Andy~
+@53 = ~Girl~
+
+@54 = ~Leader~
+@55 = ~Shadow Druid~
+@56 = ~Tethyrian Mercenary~
+
+@57 = ~Attack on my command!~
+@58 = ~Let's go!~
+@59 = ~They're already here!~
+
+@60 = ~Dire Wolf~
+
+@61 = ~The Sentinels are Coming! We must leave or Owney's plan will fail! ~
+@62 = ~The Sentinels are Coming! We must go! ~
+
+@63 = ~We kept our word, <CHARNAME>, and came to the rescue! Let's finish off these critters! ~
+@64 = ~Friends, go back to the bank, then I can handle it myself. <CHARNAME>, let's go! ~
+@65 = ~Nice battle! It's time for me to go back to the bank, debt is calling. See you there. ~
+
+@66 = ~Paris~
+@67 = ~Charlize~
+@68 = ~Assassin~
+@69 = ~Here comes lord Paris! It's time for you to die, and for me to work off the money! You were paid well for ... ~
+@70 = ~Stop, who's with you? I was told that you will be alone! ~
+@71 = ~Life is full of surprises!~
+
+@72 = ~Component 3. Shadow-Covered Love & Death (by Alisia & Austin)~
+@73 = ~Tony~
+@74 = ~Then I will go alone, as Aran asked. Be back soon. ~
+@75 = ~You are studying a scroll... ~
+@76 = ~Spy~
+@77 = ~Folks, why don't you step outside for a while. Leave us alone.~
+@78 = ~Sealed Message~
+@79 = ~This is the message you received from the contact in Riatavin. Aran Linvail will find it useful. ~
+
+@80 = ~Leena's Letter~
+@81 = ~This letter contains detailed instructions for Riatavin's recruited mage Leena. She is tasked with killing Aran Linvail, who appears to have taken an interest in her in the past. Leena's brother, apparently betraying the Guild, enjoys some of the Shadow Master's confidence.~
+@82 = ~Leena~
+@83 = ~Mysterious Woman~
+@84 = ~Tony, you're just in time! Tie her hands, buddy. ~
+@85 = ~I'll meet him alone, so there’s no suspicion. Wait here. ~
+
+@86 = ~Refusing to accept her horrific legacy, <CHARNAME> returned to Athkatla. There she was warmly received by many of her Shadow Guild comrades. Aran Linvail did not hide joy and triumph - after all, Bhaal's daughter kept her promise. Since then, <CHARNAME> has not left the Master of Shadows, becoming his right hand. For a long time they lived in love and harmony, together strengthening the reputation of the Shadow Guild, which became an increasingly powerful force, attracting the most skilled and dangerous thieves along the entire Coast to their ranks and spreading their threads of influence beyond Amn. It was rumored that <CHARNAME> would soon take the place of the head of the guild, but she was quite content with the position of the second person, entering all the affairs of Aran and using his unlimited trust. Her life has never been boring.~
+
+@87 = ~Letter from Aran~
+@88 = ~«My <CHARNAME>!
+
+I was greatly disturbed by the news of this mess involving your late parent's heirs. Most of all, of course, because you are again in serious danger. I never thought I was too sensitive, but now I am not ashamed to admit that your absence feels like a void that cannot be filled. Nevertheless, Athkatla is in full swing, as always, there is no place for boredom and idleness, and a lot of things require my attention and personal intervention. I would be happy to share with you both concerns and power, even if it is incommensurable with the right to which your divine origin gives you. But, my love, besides gold and power, I want to give you something that you will not get, even if you become a goddess. I don't think I need to say much - if, like me, you remember everything that happened between us, then you yourself understand it.
+
+Please take care of yourself. Triumph over your enemies, as you always did. 
+
+I believe in you. And I love you. 
+
+Your Aran»~
+@89 = ~*Half an hour later* ~
+@90 = ~Porin ~
+@91 = ~Jovi Gerk ~
+@92 = ~Azora ~
+@94 = ~Magic Lamp~
+@95 = ~The magic lamp of Abu Hazab, a merchant from Calimshan. It vibrates slightly with the powerful magic that it contains. Better not to risk using such an artifact. Shadow Master Aran Linvail asked you to find this lamp. ~
+@96 = ~*Runs away screaming*~
+@97 = ~Giant Basilisk ~
+@98 = ~I'll go to Aran and take the lamp to him. Be back soon. ~
+@99 = ~You are asking Tony to find out about Abu Hazab's guests ... ~
+@100 = ~*Several hours pass...*~
+@101 = ~Altar~
+@102 = ~Mercenary~
+@103 = ~*Through your sleep you feel that something strange is happening. This is... not good. You try to get up, your hand reaches for the weapon, but... you don't feel anything. What is this? Magic?! Teetering on the edge of consciousness, the thought that you were taken by surprise flashes through your mind, but you are unable to gather your wits before*~
+@104 = ~Anger overwhelms you and you feel that control is slipping away while evil beckons you. You become the Slayer... ~
+@105 = ~Gorion~
+
+@106 = ~Drop me a beer and I'll share any rumors with you!~
+@107 = ~Drunken Pirate~
+@108 = ~Lorna~
+@109 = ~Fayaz's Scroll~
+@110 = ~This piece of parchment has been torn in several places. All you can make out on it are lines of poems. It is unlikely that Fayaz was a secret connoisseur of art. Why, then, did he need such a scroll? It is worth taking a closer look at these verses...
+
+"Five peaks"
+
+There is a high mountain, in the middle of a stone ridge
+Since ancient times, it is famous, holes are dug in it
+In them, the transparent stone is extracted zealously
+So that it becomes a decoration in the color of blush
+
+One mountain, smaller than the others
+But everyone wants to go inside it
+It has deposits that are richer than all the others
+And you can't stop running to it
+The merchant will pave the way there
+The miser will hear the clink of ore
+The deaf old man and the young page
+Anyone who is submissive to that thirst
+
+The volcano is huge, having awakened
+It shakes the whole mountain to the ground
+Everything in the tornado of fire burns up
+And the stones-birds fall crashing
+
+There is another mountain nearby.
+Trees surround this mountain like a ring
+It contains valuable ore
+And you can hear it under the mountain, sometimes
+The noise of the market is multiplied by the market crowd
+And the evil werewolf, the death howl
+Rushing through the hazy darkness of the night
+
+In the distance stands one mountain, darker than many others
+Reigns her in the darkness, pushing himself all the light
+In the cavernous darkness, they call upon the Dark Goddess
+Whose footsteps, like a black trail, scatter the gem.~
+
+@111 = ~Odrik~
+@112 = ~Skeleton Guardian~
+@113 = ~Rarrrshituoah~
+@114 = ~Furlusialeo~
+@115 = ~Monster~
+
+@116 = ~Component 4. The Missing Troll Case (by Alisia & Austin)~
+@117 = ~Kid~
+@118 = ~Messenger~
+@119 = ~Lorio~
+@120 = ~Hey you! Come here, there is one thing! ~
+@121 = ~Sartorius~
+@122 = ~Troll Head~
+@123 = ~This is the head of the troll Kid who escaped from the circus. When you look at her, you have a strange feeling inside you that you have done a terrible thing. You drive these thoughts away from you. ~
+@124 = ~Rope~
+@125 = ~Regular rope. May come in handy for tying someone up, or getting to hard-to-reach places~
+@126 = ~Bag of Sweets~
+@127 = ~This pouch contains some sweets from Calimshan. The troll Kid is very fond of them... according to Sartorius. They smell delicious, and you can hardly help yourself not to eat them. ~
+@128 = ~Mod~
+@129 = ~(Some time passes and Maud returns) ~
+@130 = ~Stop it! Hey, you! We saw you attack this woman. You are under arrest, and do not try to resist. ~
+@131 = ~Damn it! ~
+@132 = ~Eirin~
+@133 = ~Shape Change Scroll~
+@134 = ~This scroll, according to Mrs. Cragmoon, will help remove the spell from the siren transformed into a troll, and restore her to her true form. But you can just sell the scroll. The spell it contains is unique and money doesn't smell. ~
+@135 = ~(You are casting a spell from a scroll on a troll...) ~
+
+@136 = ~Agnes~
+
+@142 = ~Jackal~
+@143 = ~Caityga~
+@144 = ~Lawrence~
+@145 = ~Sheila~
+@146 = ~Galtarro~
+@147 = ~Three-Fingered~
+@148 = ~Bank Courier~
+@149 = ~Shahbaz~
+
+@150 = ~The bank is closing soon! Everyone, please leave the building! ~
+
+@151 = ~Thief~
+@152 = ~Woman~
+@153 = ~Strange Man~
+@154 = ~Paladin~
+@155 = ~Gie~
+@156 = ~Lania~
+
+@999 = ~Mae’Var’s Stash
+
+Renal has commissioned us to search for Mae’Var’s Stash. First you need to talk to his assistant named Batch. He should be somewhere near the entrance to the guild... ~
+
+@1000 = ~Mae’Var’s Stash
+
+Renal has commissioned us to search for Mae’Var’s Stash. All I have is an encrypted scroll. I should have asked Edwin better - he knew his former boss well... ~
+
+@1001 = ~Mae’Var’s Stash
+
+Edwin said that the scroll was encrypted using the Imperial cipher method, and the symbols were somehow connected with the newly opened branch of the First Caliport Bank in Athkatla. So far, this does not give us much, but Edwin knows the former treasurer of the guild and he can explain something. It remains to find him. As far as we know, he is hiding somewhere in the Slums area. ~
+
+@1002 = ~Mae’Var’s Stash
+
+We found a former treasurer of Mae'Var named Hurp. He was reluctant to share information, but after our 'urgent requests', he revealed that his former boss had set up a cell at a branch of First Calimport Bank, which had recently opened in the Promenade area. What exactly he put in the cell is not known for sure, but there is clearly something valuable there. Hurp gave us the contract that Mae'Var signed when opening the cell, and the accounting documents. It remains to decipher the scroll, study the agreement and go to the bank to try to somehow open the cell. ~
+
+@1003 = ~Mae’Var’s Stash
+
+Success. We've managed to get hold of the Mae'Var Gems. Now it remains to decide how to dispose of them. Selling them is definitely not allowed - Renal's people are watching us. ~
+
+@1004 = ~Mae’Var’s Stash
+
+Failure. It looks like Mae'Var's cell will remain in the bank forever. ~
+
+@1005 = ~Mae’Var’s Stash
+
+We got off easy. Now further collaboration with Renal is unlikely. Not much of a loss, though, since we're now dealing directly with his boss. ~
+
+@1006 = ~Mae’Var’s Stash
+
+We lied to Renal's people that we had found a cache in the cemetery. In fact, they took everything from the bank and kept Mae'Var's treasures for themselves. ~
+
+@1007 = ~Mae'Var's Stash
+
+We found the secret place of the former guild leader and ended this long story. ~
+
+@1008 = ~Mae'Var's Stash
+
+We found the secret place of the former guild leader and ended this long story. It’s a pity that we didn’t manage to get the money out of it. ~
+
+@1009 = ~Imoen found a job
+
+In the branch of the First Calimport Bank, Imoen was offered a job with career opportunities and a stable salary. But the duties are rather dull - you need to distribute leaflets with advertising of the bank to passers-by. Imoen was clearly disappointed, but decided not to throw out the flyers. She wants to speak to the town crier about this. ~
+
+@1010 = ~Imoen found a job
+
+Imoen gave her pack of leaflets to the town crier and he agreed to distribute them - for a percentage of her profits. I had to pay him 100 coins. All that remains is to go back to the bank and get paid.~
+
+@1011 = ~Neera found a job
+
+In a branch of the First Calimport Bank, Neera was offered a job with career opportunities and a stable salary. But the duties are rather dull - you need to distribute leaflets with advertising of the bank to passers-by. Neera was clearly disappointed, but decided not to throw out the flyers. She wants to speak to the town crier about this. ~
+
+@1012 = ~Neera found a job
+
+Neera gave her pack of leaflets to the town crier and he agreed to distribute them - for a percentage of her profits. I had to pay him 100 coins. All that remains is to go back to the bank and get paid.~
+
+@1013 = ~Great Dwarf Debt
+
+It turned out that Korgan took out a loan from the First Calimport Bank and owed them 5,000. Of course, he was not going to pay, as he does not like traders. Which, however, does not prevent him from borrowing from them for a drink. We supported him and advised him not to pay. Now we are facing a meeting with collectors, whom the bank will surely incite. And the meeting is unlikely to be friendly and pleasant. ~
+
+@1014 = ~Great Dwarf Debt
+
+It turned out that Korgan took out a loan from the First Calimport Bank and owed them 5,000. Of course, he was not going to pay, as he does not like traders. Which, however, does not prevent him from borrowing from them for a drink. We decided not to make unnecessary problems and help him pay off the debt. And the meeting with the collectors will certainly not keep you waiting. ~
+
+@1015 = ~Great Dwarf Debt
+
+We met a group of collectors led by a certain Owney, who looks like a priest and an assassin at the same time. With him was a team of desperate fighters. We had to kill them all, since we were not going to pay the debt for Korgan. ~
+
+@1016 = ~Great Dwarf Debt
+
+We met a group of collectors led by a certain Owney, who looks like a priest and an assassin at the same time. With him was a team of desperate fighters. We had to pay off the entire debt of Korgan, and they lagged behind us. Case closed. ~
+
+@1017 = ~Great Dwarf Debt
+
+We met a group of collectors led by a certain Owney, who looks like a priest and an assassin at the same time. We agreed with them that we will pay in installments, 1000 per week. The first installment was made, now in a week they will find us again, we need to prepare money. ~
+
+@1018 = ~Great Dwarf Debt
+
+We met a group of collectors led by a certain Owney, who looks like a priest and an assassin at the same time. He offered us a deal - they will write off Korgan's debt, and we will help them deal with competitors who planned to oust them from their jobs at the bank. ~
+
+@1019 = ~Great Dwarf Debt
+
+We helped Owney and his friends deal with a group of competitors. They were led by a very strange and dangerous type from another plane, nicknamed the Collector. It was difficult, but we got through and finished off his group. Owney returned Korgan's debt list in exchange for help and promised to close the issue with the bank. ~
+
+@1020 = ~Great Dwarf Debt
+
+We paid off Korgan's debt to the bank. One less problem, and now we no longer need to watch your back, waiting for collectors.~
+
+@1021 = ~Great Dwarf Debt
+
+We helped Owney and his friends fight his competitors. Unfortunately, he himself died, but his associates promised us that his promise would be fulfilled and they would settle the issue with the bank, since we helped them. ~
+
+@1022 = ~Great Dwarf Debt
+
+We paid off the entire debt of Korgan to the collectors, and they lagged behind us. Case closed. ~
+
+@1023 = ~Great Dwarf Debt
+
+We made an agreement with Uri and he, for a certain fee, removed the record of Korgan's debt from the bank's accounting department. Case closed. ~
+
+@1024 = ~Great Dwarf Debt
+
+On the body of the Collector, we found Korgan's promissory note - we would have to bring it to the bank and try to negotiate with the senior clerk so that he quietly removed the record of the debt in the bank's documentation. ~
+
+@1025 = ~Dangerous Book
+
+We have found a dangerous artifact - Kaza's book containing spells of necromancy. Whoever deciphers the ancient text of this dusty manuscript will gain great power. In the hands of evil magicians, it can become a formidable force, so we decided to take it to the Order and give it to the paladins so that they destroy the book once and for all. I'll have to give it to the prelate. ~
+
+@1026 = ~Dangerous Book
+
+We gave the book to the prelate Wessalen, who promised to see to it that it was destroyed. Problem solved.~
+
+@1027 = ~Trap for Druids
+
+Owney fell victim to his ambitions. His people will pay for him and bury him in a foreign land. I better leave them alone with their grief now. ~
+
+@1028 = ~Trap for Druids
+
+Owney fell victim to his ambitions. His friends also gave their lives for his plan. Only Esra survived. She decided to leave the ill-fated bank and leave Athkatla. ~
+
+@1029 = ~Trap for Druids
+
+With the death of Owney and his men, the mission itself lost its meaning. There is no time to grieve over them, I need to hurry to leave before the guard arrives. It’s a pity that it ended that way for them. I'll have to talk to Esra, she stayed behind to guard the entrance and that's why she survived the massacre. ~
+
+@1030 = ~Trap for Druids
+
+Owney and his associates were appointed guards at First Calimport Bank. A dizzying career! He also asked me to help in one more case. He learned that the Shadow Druids decided for some reason to rob a bank and conspired with one of the senior clerks named Gazir. He will give them the key to the internal storage, and they will dig a tunnel and enter the bank at night. Owney knows about their plan and has planned everything. For fending off the robbers he will receive another promotion, but he needs my help to deal with the druids. We took time to consider his offer. We have to give an answer before the evening, otherwise Owney will start without us.~
+
+@1031 = ~Trap for Druids
+
+Owney and his associates were appointed guards at First Calimport Bank. A dizzying career! He also asked me to help in one more case. He learned that the Shadow Druids decided for some reason to rob a bank and conspired with one of the senior clerks named Gazir. He will give them the key to the internal storage, and they will dig a tunnel and enter the bank at night. Owney knows about their plan and has foreseen everything - and for the reprisal against the robbers, he will receive another promotion. But he needs my help to deal with the druids. We agreed. Now we need to arrive at the bank after dark ... and prepare for the fight. ~
+
+@1032 = ~Trap for Druids
+
+Owney and his associates were appointed guards at First Calimport Bank. A dizzying career! He also asked me to help in one more case. He learned that the Shadow Druids decided for some reason to rob a bank and conspired with one of the senior clerks named Gazir. He will give them the key to the internal storage, and they will dig a tunnel and enter the bank at night. Owney knows about their plan and has foreseen everything - and for the reprisal against the robbers, he will receive another promotion. But he needs my help to deal with the druids. We refused. Let Owney figure it out for himself, this is not our fight. ~
+
+@1033 = ~Trap for Druids
+
+We never dared to agree to Owney's proposal, so they started the fight without us. It seems that one of them died. Now Owney won't talk to me.~
+
+@1034 = ~Trap for Druids
+
+We helped Owney and his group deal with the bank attack. All the attackers are dead and now we will never know what made them take such a step. The main thing is that Owney's plan worked and the druids fell into a trap that he prepared. Tomorrow I have to visit him at the bank and receive the rest of our award. ~
+
+@1035 = ~Trap for Druids
+
+Owney's plan worked exactly as he intended. We got the award and he got a new job. ~
+
+@1036 = ~Trap for Druids
+
+We helped Owney and his group with the attack on the bank, but he was killed in the battle, and Yantina left in grief. All the attackers are dead and now we will never know what made them take such a step. All I have to do is go back to the bank tomorrow morning and collect my payment from Jalut, Jock or Esra. ~
+
+@1037 = ~Trap for Druids
+
+We helped Owney and his group cope with the attack on the bank, but Owney and Jalut were killed, and Yantina left in grief. All the attackers are dead and now we will never know what made them take such a step. All I have to do is return to the bank tomorrow morning and collect my payment from Jock or Esra. ~
+
+@1038 = ~For love
+
+Lord Paris, who met us in the Government District, wants me to accompany him to the cemetery at night, where he is to meet his beloved Charlize. Why she chose such a strange place for a date, Paris does not know. We agreed to meet at the southern entrance to the cemetery when it gets dark. ~
+
+@1039 = ~For love
+
+Someone was going to kill Paris, but we prevented the trouble, and now Charlize is back in his arms. Great! ~
+
+@1040 = ~Message from Aran
+
+The head of the Shadow Thieves Guild, the powerful Aran Linvail, sent a messenger to me and invited me to visit him, and asked me to come alone. What does he want? There is only one way to find out.~
+
+@1041 = ~Message from Aran
+
+I deciphered the letter Aran Linvail gave me - I suspect that it was some kind of test and new tasks will not keep me waiting. ~
+
+@1042 = ~Messenger from Riatavin
+
+Aran asked me to exchange letters with Riatavin's agent, who will come to the meeting at night at the hotel in the City Gate area - most likely, he will be on the top floor. I'll have to tell him the password - "Tethyr and the Nightingale." ~
+
+@1043 = ~Messenger from Riatavin
+
+The messenger from Riatavin suspected deception and disappeared, frustrating our plans. Aran will be very unhappy. ~
+
+@1044 = ~Messenger from Riatavin
+
+I met with Riatavin's agent and handed him a letter that Aran had prepared, and took another one in return. I'll have to take it to Aran, he is waiting. ~
+
+@1045 = ~Messenger from Riatavin
+
+I gave the documents of the Riatavin spy to Aran, as promised. He was grateful. ~
+
+@1046 = ~Messenger from Riatavin
+
+I helped Aran compose a letter in the Riatavin code, which I had studied on a previous visit. Politics is a dirty business. I hope I don't have to get into this anymore. ~
+
+@1047 = ~Messenger from Riatavin
+
+As expected, Aran was gloomy because I thwarted his plans and frightened the spy away instead of giving him a fake letter. It looks like Aran won't come to me with such questions anymore. ~
+
+@1048 = ~Mysterious Stranger
+
+When I left the Thieves' Guild, it seemed to me that someone was following me. A woman in a robe that looks like the clothes of magicians. But what does she want? She headed somewhere in the Bridge area. We must look in the hotels there - perhaps we will meet with her again. ~
+
+@1049 = ~Mysterious Stranger
+
+In the Five Flagons Inn, we found that strange woman who was watching us. The conversation did not go very constructively and I had to kill her. We must search the body, and then take to Aran what we will find with her. He needs to know what she's up to. ~
+
+@1050 = ~Mysterious Stranger
+
+In the Five Flagons Inn, we found that strange woman who was watching us. She was plotting to kill Aran Linvail. I frightened her and let her go. Perhaps my kindness is sometimes harmful, but I did not dare to kill her. We need to tell Aran everything. ~
+
+@1051 = ~Mysterious Stranger
+
+In the Five Flagons Inn, we found that strange woman who was watching us. She was plotting to kill Aran Linvail, and I decided to take her to the guild so that he would personally interrogate her. With the help of Tony, who always appears at the right time, I succeeded. ~
+
+@1052 = ~Mysterious Stranger
+
+It turned out that Aran was already aware of what had happened - his people were not asleep. I did what I could, and he will figure out the rest on his own.~
+
+@1053 = ~Mysterious Stranger
+
+It turned out that Aran was already aware of what had happened - his people were not asleep. I did what I could, and I realized that I was already tired of this connection with Aran. I made him understand that it is better to limit our relationship to business only.~
+
+@1054 = ~Shadow-Covered Love
+
+I promised Aran that I would return to him as soon as I finished my mission and we will be together. The choice has been made and I do not regret it because I follow my heart. ~
+
+@1055 = ~Abu Hazab's Magic Lamp
+
+Azora Rilin was healed from petrification, but she seems to be out of her mind after experiencing misfortunes. We can only hope that she gets home safely, or Lady Rilin's people will finally find her. ~
+
+@1056 = ~Abu Khazab's Magic Lamp
+
+Aran Linvail has asked me to help in the search for the stolen magic lamp of merchant Abu Hazab. He collaborated with the Shadow Thieves, but someone managed to steal his lamp anyway, and now the reputation of both the entire guild and Aran personally is at stake. I should speak to either Renal or Lathan - they know a lot and can give us a lead on the trail.~
+
+@1057 = ~Abu Hazab's Magic Lamp
+
+The gnome Porin - an inexperienced thief who was captured by Renal's guys - said that he had ransacked the Rilin mansion and that he had heard there talk about a missing daughter who had escaped with some guy. The note that was found said something about the meeting in the Copper Coronet and that the Rilin family was among the guests of Abu Khazab. I don't know if all this will help me in the investigation, but I must take note. ~
+
+@1058 = ~Abu Hazab's Magic Lamp
+
+Lathan, one of my assistants in Mae'Var’s former guild, reported that one of our thieves, Jovi Gerk, is missing, and that he recently contacted some noble girl. ~
+
+@1059 = ~Abu Hazab's Magic Lamp
+
+It looks like all traces lead to the Copper Coronet. I should go there and ask Bernard if he saw the missing couple. ~
+
+@1060 = ~Abu Hazab's Magic Lamp
+
+Tony, Aran's messenger, says that rumors are circulating in the city about the missing daughter of the Rilin family, as if she escaped with some guy. The note that was found said something about the meeting in the Copper Coronet. And the Rilin family was among the guests of Abu Khazab. ~
+
+@1061 = ~Abu Hazab's Magic Lamp
+
+Bernard said that a noble girl came to the tavern last night and there was a thief boy with her. For some reason he took her to the entrance to the sewer and asked Bernard not to tell anyone about them. Weird, what did they want there?~
+
+@1062 = ~Abu Hazab's Magic Lamp
+
+Lamp found! All that remains is to return it to Aran. Azora Rilin survived and will return to her family. ~
+
+@1063 = ~Abu Hazab's Magic Lamp
+
+Lamp found! All that remains to return her to Aran. Azora Rilin, unfortunately, died, and at the hands of her would-be lover.~
+
+@1064 = ~Abu Hazab's Magic Lamp
+
+I managed to find the missing lamp and return it to Aran. Now the authority of the guild, albeit shaken, will be restored. The story of Azora and Jovi is very instructive, enough to write a book.~
+
+@1065 = ~Pirate Legacy
+
+Owney asked me to find one of the bank's debtors, a pirate named Fayaz, and get the money out of him. He can be found somewhere in Brynnlaw. If I get there, I have to do it. ~
+
+@1066 = ~Pirate Legacy
+
+It turned out that Fayaz had died and had spent all the money on drink. The only option that remained was to talk to his wife, and try to learn something from her. Her name is Lorna and she is somewhere on the dock, according to a drunken sailor.~
+
+@1067 = ~Pirate Legacy
+
+I could not find out anything from Lorna and the conversation turned out to be useless. It looks like Fayaz's debt will remain irrecoverable. ~
+
+@1068 = ~Pirate Legacy
+
+Lorna wanted to leave Brynnlaw and go to Athkatla, start a new life. In return for a little financial help with this, she gave me a scroll that had remained from Fayaz, and said that he sometimes visited an abandoned house in the northern part of the town. We should see what's in there. ~
+
+@1069 = ~Pirate Legacy
+
+I managed to find a secret passage through the cliffs, which Fayaz used to reach a secluded bay in another part of the island. There was a pirate chest in which there were valuables. Difficult, but the task was completed! I can report to the bank.~
+
+@1070 = ~The Missing Troll Case
+
+Quayle turned to us for help. A trained troll, the highlight of the program, disappeared from his circus. We examined the scene and found broken bars of the cage and traces of magic on it. The door was closed, and a strange master key was lying nearby. Aerie also mentioned that the troll was sold to the circus by a strange man who smelled of fish, and then he often came to the cage and looked at him for a long time. Why? I think I can look for this type in the Docks area, since he smelled of fish. Local bartenders and traders may know something about him. Or try some other leads? ~
+
+@1071 = ~The Missing Troll Case
+
+We found the fisherman at the Docks who sold the troll to the circus. He doesn't seem to be saying anything. We weren't able to get anything useful from him.~
+
+@1072 = ~The Missing Troll Case
+
+We showed the lockpick found near the troll's cage to Sidge of the Thieves Guild. He said that a certain Kyrian could have made it, and that it seemed that some scientist, a weirdo, had just approached him recently. Why he needed a master key is unknown. I think we need to find this man to solve the mystery. But where? There are other clues to remember.~
+
+@1073 = ~The Missing Troll Case
+
+We asked Corneil - the one who issues licenses on behalf of the Cowled Wizards - if any magic has been used by anyone in the Promenade Waukeen area lately. Except, of course, Irenicus. Corneil replied that it was used, but by whom, he did not say. We need more leads, and then we can try to get more information out of him.~
+
+@1074 = ~The Missing Troll Case
+
+Corneil of the Council building admitted that magic in the Promenade area was recently used by a certain Sartorius, a scientist with a passion for Druidic ideas. He has a license. It looks like I need it. Look for him in the temple of Oghma, according to Corneil. ~
+
+@1075 = ~The Missing Troll Case
+
+We found Sartorius, a strange scientist, and, presenting all the evidence we had collected, we forced him to confess that he had released the troll. He is ready to take us to where the troll has settled, but first we need to find the bait - his favorite Kalimshan sweets. At Enge's shop on the Promenade, there might be some. ~
+
+@1076 = ~The Missing Troll Case
+
+We got the Calimshan sweets - now we must return to Sartorius and he will take us to the troll.~
+
+@1077 = ~The Missing Troll Case
+
+We found the missing troll and brought him back to the circus. All thanks to the deductive method! ~
+
+@1078 = ~The Missing Troll Case
+
+We found the missing troll and killed it. You can take his head to Chief Inspector Brega for a reward. ~
+
+@1079 = ~The Missing Troll Case
+
+We found the missing troll, but did not decide what to do with it, and left it as it is. We need to tell Quayle - Maybe we will get at least some kind of reward, regardless of the result. ~
+
+@1080 = ~The Missing Troll Case
+
+We told Quayle what we had learned. He was upset, but at least now he knows that the troll is fine and he was not killed. ~
+
+@1081 = ~The Missing Troll Case
+
+We gave the severed troll head to the authorities and received the money. Rest in peace, Kid. ~
+
+@1082 = ~Siren’s Silence
+
+I still want to figure out why the trained troll Kid in the Promenade circus is so strange. I should go to the cage and examine it again. ~
+
+@1083 = ~Siren’s Silence
+
+At Kid's cage, I met the fisherman Lorio, who told me that he had found the troll near the river on the day his beloved siren Eirin disappeared. He may have eaten it, but he looks too peaceful ... We need to test this troll with the Know Alignment or True Sight spells and see what he is.~
+
+@1084 = ~Siren’s Silence
+
+The spell showed the true essence of the troll: he is not at all dangerous. Apparently, his appearance is a very powerful illusion. Lorio mentioned that he was in contact with Mrs. Cragmoon, a potions and scroll merchant in the Bridge area. Maybe she can tell me something useful...~
+
+@1085 = ~Siren’s Silence
+
+The conversation with Mrs. Cragmoon gave nothing, except for one thing - she does not tell the truth, it is clear. After the conversation, a girl named Mod came up to me, wanted to tell something about her, and extorted money for it. We drove her away, but now we can try to talk to Mrs. Cragmoon again and scare her with the fact that we supposedly learned some secret from the girl. Well, or somehow "split" it ...~
+
+@1086 = ~Siren’s Silence
+
+The conversation with Mrs. Cragmoon yielded nothing, but it was clear she did not tell us the truth. After the conversation, a girl named Mod came up to me, wanted to tell us something about Cragmoon, and extorted money for it. We drove her away, but now we can try to talk to Mrs. Cragmoon again and scare her with the fact that we supposedly learned some secret from the girl. Well, or somehow "split" it...~
+
+@1087 = ~Siren’s Silence
+
+Mrs. Cragmoon confessed that she bewitched the siren Eirin and gave her the appearance of a troll with a powerful spell created by a witch named Agnes. Thanks to this spell, the siren will look like a troll even after death. We decided not to get involved even further in this story - we will tell everything to Lorio and let him act on his own. He must be at Cromwell's, waiting for an order. ~
+
+@1088 = ~Siren’s Silence
+
+Mrs. Cragmoon confessed that she bewitched the siren Eirin and gave her the appearance of a troll with a powerful spell created by a witch named Agnes. Thanks to this spell, the siren will look like a troll even after death. We decided to disenchant Eirin. All that remains is to get a scroll that removes witchcraft. I will ask Maud to steal it, since Cragmoon herself does not give it up. Judging by what Mod said, you need to look for her somewhere at the Thieves guild, since they are her idols.~
+
+@1089 = ~Siren’s Silence
+
+Mrs. Cragmoon confessed that she bewitched the siren Eirin and gave her the appearance of a troll with a powerful spell created by a witch named Agnes. Thanks to this spell, the siren will look like a troll even after death. We decided to disenchant Eirin and got a scroll that removes witchcraft from Mrs. Cragmoon, we just have to use it. ~
+
+@1090 = ~Siren’s Silence
+
+Mrs. Cragmoon confessed that she bewitched the siren Eirin and gave her the appearance of a troll with a powerful spell created by a witch named Agnes. Thanks to this spell, the siren will look like a troll even after death. We decided to disenchant Eirin, but we could not get the scroll from Mrs. Cragmoon. We'll have to tell Lorio everything and let him act on his own. He must be at Cromwell's, waiting for an order. ~
+
+@1091 = ~Siren’s Silence
+
+Lorio attacked Mrs. Cragmoon after learning what she had done. As a result, the guards arrested him and took him to prison. After that, Cragmoon gave me the shape change scroll. It remains to read it and disenchant the siren. ~
+
+@1092 = ~Siren’s Silence
+
+We managed to disenchant Eirin's siren and restore her to her true form, but Lorio remains in prison, he ought to visit him and tell him that his beloved is saved. ~
+
+@1093 = ~Siren’s Silence
+
+We managed to disenchant Eirin's siren and restore her to her true form. She met with Lorio and they left together, rewarding me for my efforts and offering thanks many times. A happy ending to a story about the power of love and revenge...~
+
+@1094 = ~Siren’s Silence
+
+We visited Lorio in prison and told him everything that happened. When he is free, they will be together again. Well... a happy ending to a story about the power of love and revenge. ~
+
+@1095 = ~Siren’s Silence
+
+With the help of the thief girl Mod, we got a scroll from Mrs. Cragmoon that can disenchant a troll, we just have to use it. ~
+
+@1096 = ~Siren’s Silence
+
+Lorio attacked Mrs. Cragmoon after learning what she had done. As a result, the guards arrested him and took him to prison. After that, Cragmoon gave me the shape change scroll. But I got tired of this story, so it was decided to keep the scroll and sell it. Enough charity! This story is over. ~
+
+@1097 = ~Lorio Sword
+
+Lorio said that he would ask Cromwell to give me a sword that he made for him to order. I should go in and pick it up. ~
+
+@1098 = ~Lorio Sword
+
+Cromwell gave me the sword he was preparing for Lorio, since he did not need it after the happy ending of his love story. The blade is not bad and can come in handy on my travels. ~
+
+@1099 = ~Nothing comes without a price
+
+I met a half-orc collector named Jackal. I asked for help in collecting debts from two defaulters - if I help, then part of the award will go to me. And then he promises some serious business. I have little desire to work as a collector, but extra money will not hurt. The first debtor's name is Lawrence, he is somewhere near the temple of Helm in the Bridge area. And the second is called Kors, but he disappeared and, perhaps, it is better to talk to his wife, she may know something. Her name is Sheila and she is somewhere in the Slums. When both debts are repaid, I must meet with the Jackal on the roof of the Copper Coronet. ~
+
+@1100 = ~Nothing comes without a price
+
+I managed to get back 500 coins that the elf Lawrence owed the bank. True, for this it was necessary to become accomplices in the grave digging. When both debts are repaid, I must meet with the Jackal on the roof of the Copper Coronet. ~
+
+@1101 = ~Nothing comes without a price
+
+The debts are returned and the Jackal will transfer them to the bank. I managed to find the bandits who killed Kors and took the money from them. His widow, Sheila, will have to do without them - how she gets along with her two children without money is no longer my concern. ~
+
+@1102 = ~Nothing comes without a price
+
+The debts are returned and the Jackal will transfer them to the bank. I managed to find the bandits who killed Kors and took the money from them. His widow Sheila needs them more than me, so it was decided to give 180 coins to her, and to pay the Jackal out of his own. ~
+
+@1103 = ~Nothing comes without a price
+
+The debts are returned and the Jackal will transfer them to the bank. I managed to find the bandits who killed Kors and took the money from them, and also made a donation to Kors' widow, Sheila, so she can move out of the Slums to a better area. ~
+
+@1104 = ~Combat the Collector
+
+Together with the half-orcs, I managed to deal with the group of the Collector, who was the rival of the Jackal. I don’t know why we got involved in this at all, but my instinct told me that it could be useful in the future. ~
+
+@1105 = ~Pirate Legacy
+
+Shahbaz, the head of security at the Athkatla branch of the First Calimport Bank, asked me to find one of the bank's debtors, a pirate named Fayaz, and get the money out of him. I can find it somewhere in Brynnlaw. If I get there, I have to do it. ~
+
+@1106 = ~Call to bank
+
+A courier from the bank said that Shahbaz, the head of security at the Athkatla branch of the First Calimport Bank, wanted to meet me in person. What does that mean? There is only one way to find out. ~
+
+@1107 = ~Beshaba's Curse
+
+The messenger from Renal Bloodscalp said his boss wants to talk to me about something. I'll have to go to him.~
+
+@1108 = ~Beshaba's Curse
+
+Renal said that things for the guild suddenly deteriorated - thieves are catastrophically unlucky, and no one can understand the reason. It looks like some kind of curse. If I want to help them, then it is probably better to start the inspection from the temples - perhaps we will be able to find out something there. ~
+
+@1109 = ~Beshaba's Curse
+
+The Order paladin informed me that a cult of supporters of the goddess of failure Beshaba has recently appeared in the city and they are behaving very aggressively. Perhaps one of the thieves hurt their interests and they decided to take revenge by sending this curse. We need to report this to Renal. ~
+
+@1110 = ~Beshaba's Curse
+
+It turned out that the culprit for the curse was a thief named Gie, a master of traps. For some reason he robbed the priest of Beshaba by stealing the amulet from him. Renal asked me to speak to Aran Linvail, the leader of the Thieves Guild, about all this and give him the amulet. ~
+
+@1111 = ~Beshaba's Curse
+
+It turned out that the culprit for the curse was a thief named Gie, a master of traps. For some reason he robbed the priest of Beshaba. Now Renal's guys will figure it out for themselves. I didn't want to help them further in this story. ~
+
+@1112 = ~Beshaba's Curse
+
+Aran Linvile asked me to find out for whom Gie stole this amulet and for what purpose. Probably worth asking Renal about this. ~
+
+@1113 = ~Beshaba's Curse
+
+According to Renal, Gie often dates a girl named Lania. She may know something about why he needed Beshaba's amulet. You can find Lania somewhere in the tavern - most likely nearby. ~
+
+@1114 = ~Beshaba's Curse
+
+We found Lania and learned the whole truth. The story is over. ~
+
+@10000000 = ~~
+@10000001 = ~Statue: %z_strref%~
+@10000002 = ~%z_strref% - ~
+@10000003 = ~<AN_TOKEN_2_STATUE>%reg_string%~
+@10000004 = ~<AN_TOKEN_3_STATUE>%reg_string%~
+@10000005 = ~<AN_TOKEN_4_STATUE>%reg_string%~
+@10000006 = ~<AN_TOKEN_5_STATUE>%reg_string%~
+@10000007 = ~<AN_TOKEN_6_STATUE>%reg_string%~
