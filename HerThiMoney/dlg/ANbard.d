@@ -7,7 +7,7 @@ BEGIN Anbard
 
 // Фиркрааг
 CHAIN  
-IF ~Global("ANbardTalkFirkraag","GLOBAL",1)~ 
+IF ~Global("ANbardTalkFirkraag","GLOBAL",1) AreaCheck("AR1105")~ 
 THEN ANbard ANbardFirkraagTalk1
 @0 DO ~SetGlobal("ANbardTalkFirkraag","GLOBAL",2) ActionOverride(Player1,SetDialog("Player1"))~
 == NALIAJ IF ~Global("ANbardTalkTrademeet","GLOBAL",2) InParty("Nalia") InMyArea("Nalia") !StateCheck("Nalia",CD_STATE_NOTVALID)~ THEN @44
@@ -45,7 +45,7 @@ EXIT
 
 // Трейдмит
 CHAIN  
-IF ~Global("ANbardTalkTrademeet","GLOBAL",1)~ 
+IF ~Global("ANbardTalkTrademeet","GLOBAL",1) AreaCheck("AR0406")~ 
 THEN ANbard ANbardTrademeetTalk1
 @21 DO ~SetGlobal("ANbardTalkTrademeet","GLOBAL",2) ActionOverride(Player1,SetDialog("Player1"))~
 == NALIAJ IF ~Global("ANbardTalkFirkraag","GLOBAL",2) InParty("Nalia") InMyArea("Nalia") !StateCheck("Nalia",CD_STATE_NOTVALID)~ THEN @44
