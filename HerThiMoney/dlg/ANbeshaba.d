@@ -12,7 +12,7 @@ IF ~~ THEN EXIT
 END
 
 APPEND PLAYER1
-IF WEIGHT #-99 ~Global("BeshabaCurse","GLOBAL",0)~ BEGIN ANbeshabaGuild
+IF WEIGHT #-99 ~Global("BeshabaCurse","GLOBAL",0) OR(2) AreaCheck("AR0305") AreaCheck("AR0306")~ BEGIN ANbeshabaGuild
   SAY @4 
 IF ~~ THEN DO ~SetGlobal("BeshabaCurse","GLOBAL",1)~ EXIT
 END
