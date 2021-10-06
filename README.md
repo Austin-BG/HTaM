@@ -6,12 +6,17 @@ The mod consists of several independent components:
 Component 1. «Interjections & Mini-quests» (by Austin & Arcanecoast Team):
 
 - expansion of reactions of NPC (party members) to story events SoA&ToB
-- adding additional mini-quests and dialogues. Now you can help a noble from the Government District in one strange business, in the Slum area, learn how to properly milk a cow (under the direction of Cernd) and more!
+- a few new mini-quests (for example, if Cernd in the party, a mini-quest with milking a cow in the Slums will be available, in the Government District a nobleman will give a new quest, etc.
+- new NPC reactions to killing powerful monsters (dragons, lich Kangaxx)
+- new dialogs between the protagonist and the NPC (for example, a large dialogue with Edwin in the Underdark)
+- new banters between NPCs
+- when you guess riddles in Spellhold, your companions will no longer be silent! Each of them (including the cross-mod NPCs from "BG1 NPCs in BG2" mod) will give their opinion on the riddles!
+- extended solution to the quest about Kaza book, if the group has Keldorn, Edwin or both together (in this case, there will be a dispute between them)
 - expansion of some standard quests. For example, to Umar Hills, the quest with the extraction of a gem from a chicken can now be solved in many ways - from using your ranger or druid skills to attracting NPC druids and NPC rangers
 - after completing quests in Trademeet and defeating Firkraag, in taverns, you may meet a storyteller telling about it (but be prepared that in his stories everything will be presented a little differently from what it really was)
-- when you guess riddles in Spellhold, your companions will no longer be silent! Each of them (including the cross-mod NPCs from Smiling Imp) will give their opinion on the riddles!
 - unlocked dialogs of all NPC after the first transformation of a player into a Slayer in Spellhold (previously only one group member spoke, although the game developers wrote dialogs for everyone)
 - after installing statues in Trademeet, the names of specific NPC companions will now be written on them, and not a general non-specific phrase
+- Keldorn and Cernd's reaction to each other's family quests (if someone's quest is completed before the other and both are in a group)
 - and other
 
 Component 2. «First Calimport Bank Pack» (by Scheele & Austin & Arcanecoast Team):
