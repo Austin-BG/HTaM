@@ -12,14 +12,14 @@ IF ~~ THEN EXIT
 END
 
 APPEND PLAYER1
-IF WEIGHT #-99 ~Global("BeshabaCurse","GLOBAL",0) OR(2) AreaCheck("AR0305") AreaCheck("AR0306")~ BEGIN ANbeshabaGuild
+IF WEIGHT #-99 ~Global("BeshabaCurse","GLOBAL",0) OR(2) AreaCheck("AR0305") AreaCheck("AR0306") Global("ThiefSpawn0","GLOBAL",3)~ BEGIN ANbeshabaGuild
   SAY @4 
 IF ~~ THEN DO ~SetGlobal("BeshabaCurse","GLOBAL",1)~ EXIT
 END
 END
 
 CHAIN
-IF WEIGHT #-99 ~Global("BeshabaCurse","GLOBAL",1)~ THEN RENAL ANBeshabaRenalTalk
+IF WEIGHT #-99 ~Global("BeshabaCurse","GLOBAL",1) Global("RenalJob","GLOBAL",4)~ THEN RENAL ANBeshabaRenalTalk
 @5 DO ~SetGlobal("BeshabaCurse","GLOBAL",2)~
 =@6
 END
