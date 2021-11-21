@@ -2048,15 +2048,15 @@ END
 END
 
 // Бернард
-EXTEND_TOP BERNARD 22 
+EXTEND_BOTTOM BERNARD 22 
 IF ~Global("ANAranLamp","GLOBAL",5)~ THEN DO ~ActionOverride(Player1,SetDialog("PLAYER1"))~ REPLY @543 GOTO ANLampBernardTalk
 END
 
-EXTEND_TOP BERNARD 24 
+EXTEND_BOTTOM BERNARD 24 
 IF ~Global("ANAranLamp","GLOBAL",5)~ THEN DO ~ActionOverride(Player1,SetDialog("PLAYER1"))~ REPLY @543 GOTO ANLampBernardTalk
 END
 
-EXTEND_TOP BERNARD 0
+EXTEND_BOTTOM BERNARD 0
 IF ~Global("ANAranLamp","GLOBAL",5)~ THEN DO ~ActionOverride(Player1,SetDialog("PLAYER1"))~ REPLY @543 GOTO ANLampBernardTalk
 END
 
