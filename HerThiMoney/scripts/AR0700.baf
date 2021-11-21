@@ -1,4 +1,13 @@
 IF 
+Global("ANbankExists","GLOBAL",0)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANbankExists","GLOBAL",1)
+Continue()
+END
+
+IF 
 Global("ANLornaExists","AR0700",0)
 GlobalGT("ANpiratQuest","GLOBAL",3)
 
