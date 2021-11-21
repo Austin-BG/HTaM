@@ -35,8 +35,8 @@
 // Edwin
 @30 = ~So what is it? In that scroll? (These monkeys probably can't figure it out on their own. I'd better take a look.) ~
 @31 = ~*Give the scroll to Edwin* Do you know anything about this? ~
-@32 = ~*Thoughtfully* I've heard about the cache from Mae'Var himself. He even bragged about it. But as to where it is, I have no idea. This is the first time I've seen this scroll. It looks like a simple imperial cipher, used in Netheril. ~ [EDWIN28]
-@33 = ~Imperial cipher... with letter shift. Yes, I once read about it in Candlekeep. This means that there is a key word in the scroll... But where should the letters be shifted, to the right or to the left? And how much? ~
+@32 = ~*Thoughtfully* I've heard about the cache from Mae'Var himself. He even bragged about it. But as to where it is, I have no idea. This is the first time I've seen this scroll. It looks like a cipher. ~ [EDWIN28]
+@33 = ~So, there must be some hidden numbers... But which ones?~
 @34 = ~It's probably all hidden in the scroll. ~
 @35 = ~What about the letters on it? Some kind of FKB... ~
 @36 = ~I've seen these letters somewhere... wait, I remember. Some little bastard handed me something recently. Hold on, where was it... *rummages in the pockets of his robes* Here! *Hands you some pamphlets*~
