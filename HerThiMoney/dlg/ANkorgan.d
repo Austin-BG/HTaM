@@ -162,7 +162,7 @@ END
 CHAIN  
 IF ~Global("ANowniFirstTalk","AN0060",1) Global("ANDwarfCreditPayPart","GLOBAL",0)~ 
 THEN ANOwni ANOwniTalk1
-@20 DO ~ActionOverride(Player1,SetDialog("Player1")) SetGlobal("ANowniFirstTalk","AN0060",2)~
+@20 DO ~ActionOverride(Player1,SetDialog("Player1")) SetGlobal("ANowniFirstTalk","AN0060",2) SetGlobal("ANDwarfCreditEncounter","GLOBAL",1)~
 == KORGANJ @21
 == PLAYER1 @22
 =@23
