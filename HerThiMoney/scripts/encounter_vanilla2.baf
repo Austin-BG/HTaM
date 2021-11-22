@@ -19,8 +19,9 @@ IF
 	OnCreation()
 	InParty("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)
 	GlobalGT("AN_ALLAREA_RENCOUNTER","GLOBAL",23)
+	Global("ANDwarfCreditEncounter","GLOBAL",0) //переменная для запуска энкаунтера	
 OR(2)
-	Global("ANDwarfCreditPay","GLOBAL",1) //переменная для запуска энкаунтера
+	Global("ANDwarfCreditPay","GLOBAL",1) 
     Global("ANDwarfCreditNoPay","GLOBAL",1)	
 THEN
 	RESPONSE #100
@@ -40,8 +41,9 @@ IF
 	OnCreation()
 	InParty("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)
 	GlobalGT("AN_ALLAREA_RENCOUNTER","GLOBAL",4)
+	Global("ANDwarfCreditEncounter","GLOBAL",0) //переменная для запуска энкаунтера	
 OR(2)
-	Global("ANDwarfCreditPay","GLOBAL",1) //переменная для запуска энкаунтера
+	Global("ANDwarfCreditPay","GLOBAL",1) 
     Global("ANDwarfCreditNoPay","GLOBAL",1)	
 THEN
 	RESPONSE #100

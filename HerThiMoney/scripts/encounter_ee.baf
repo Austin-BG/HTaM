@@ -18,8 +18,9 @@ IF
 	InParty("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)
 	GlobalGT("AN_ALLAREA_RENCOUNTER","GLOBAL",7)
 	GlobalTimerExpired("AN_RENCOUNTER_TIMER","GLOBAL")
+	Global("ANDwarfCreditEncounter","GLOBAL",0) //переменная для запуска энкаунтера, ее надо изменить, когда попадешь на ту локацию, или же добавить еще одну переменную. При запуске энкаунтера я переменную не устанавливаю, чтобы не пропустить его, если вдруг другой мод или оригинальная игра будет использовать ForceRandomEncounter
 	OR(2)
-	Global("ANDwarfCreditPay","GLOBAL",1) //переменная для запуска энкаунтера, ее надо изменить, когда попадешь на ту локацию, или же добавить еще одну переменную. При запуске энкаунтера я переменную не устанавливаю, чтобы не пропустить его, если вдруг другой мод или оригинальная игра будет использовать ForceRandomEncounter
+	Global("ANDwarfCreditPay","GLOBAL",1) 
     Global("ANDwarfCreditNoPay","GLOBAL",1)
 THEN
 	RESPONSE #100
@@ -32,8 +33,9 @@ IF
 	InParty("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)
 	GlobalGT("AN_ALLAREA_RENCOUNTER","GLOBAL",4)
 	GlobalTimerExpired("AN_RENCOUNTER_TIMER","GLOBAL")
+	Global("ANDwarfCreditEncounter","GLOBAL",0) //переменная для запуска энкаунтера
 OR(2)
-	Global("ANDwarfCreditPay","GLOBAL",1) //переменная для запуска энкаунтера
+	Global("ANDwarfCreditPay","GLOBAL",1) 
     Global("ANDwarfCreditNoPay","GLOBAL",1)
 THEN
 	RESPONSE #100
@@ -47,8 +49,9 @@ END
 IF
 	!IsForcedRandomEncounterActive("AN0060")
 	InParty("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)
+	Global("ANDwarfCreditEncounter","GLOBAL",0) //переменная для запуска энкаунтера
 OR(2)
-	Global("ANDwarfCreditPay","GLOBAL",1) //переменная для запуска энкаунтера
+	Global("ANDwarfCreditPay","GLOBAL",1) 
     Global("ANDwarfCreditNoPay","GLOBAL",1)
 OR(2)
 		!Global("AN_MYAREA_RENCOUNTER","MYAREA",1)
