@@ -73,7 +73,7 @@ Kill("ANaltar2")
 Kill("ANaltar3")
 Kill("ANaltar4")
 Kill("ANaltar5")
-ActionOverride(Player1,ReallyForceSpellRES("spin718a",Myself))  // Выходит из формы Убийцы
+ActionOverride(Player1,ReallyForceSpellRES("spin718",Myself))  // Выходит из формы Убийцы
 Wait(3)
 EndCutSceneMode()
 ActionOverride(Player1,StartDialog("Player1",Myself))
