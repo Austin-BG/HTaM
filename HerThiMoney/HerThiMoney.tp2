@@ -2,7 +2,7 @@
 BACKUP ~HerThiMoney/backup~
 
 AUTHOR ~Austin, Scheele, Alisia & Arcanecoast Team~
-VERSION 3.5.2
+VERSION 3.6
 
 AUTO_TRA ~HerThiMoney/tra/%s~
 
@@ -153,8 +153,18 @@ SAY UNIDENTIFIED_DESC @49
 SAY DESC @50
 PATCH_IF NOT GAME_IS ~bg2ee eet~
     BEGIN
-        LPF DELETE_ITEM_EQEFFECT INT_VAR opcode_to_delete=319
-    END
+    LPF DELETE_ITEM_EQEFFECT INT_VAR opcode_to_delete=319 END
+	WRITE_LONG 0x1e 0xf7fbffed // evil, lawful, mage, human
+	WRITE_BYTE 0x29 0b11111111 // none
+	WRITE_BYTE 0x2b 0b11111111 // none
+	WRITE_BYTE 0x2d 0b11111111 // none
+	WRITE_BYTE 0x2f 0b01111111 // conjurer
+	WRITE_BYTE 0x26 10 // Str
+	WRITE_BYTE 0x2a 18 // Int
+	WRITE_BYTE 0x2c 10 // dex
+	WRITE_BYTE 0x2e 10 // wiz
+	WRITE_BYTE 0x30 16 // con
+	WRITE_BYTE 0x32 10 // chr    
 END
 
 COPY ~HerThiMoney/items/ANkazas.itm~ ~Override/ANkazas.itm~
@@ -164,8 +174,18 @@ SAY UNIDENTIFIED_DESC @49
 SAY DESC @50
 PATCH_IF NOT GAME_IS ~bg2ee eet~
     BEGIN
-        LPF DELETE_ITEM_EQEFFECT INT_VAR opcode_to_delete=319
-    END
+    LPF DELETE_ITEM_EQEFFECT INT_VAR opcode_to_delete=319 END
+	WRITE_LONG 0x1e 0xf7fbffed // evil, lawful, mage, human
+	WRITE_BYTE 0x29 0b11111111 // none
+	WRITE_BYTE 0x2b 0b11111111 // none
+	WRITE_BYTE 0x2d 0b11111111 // none
+	WRITE_BYTE 0x2f 0b01111111 // conjurer
+	WRITE_BYTE 0x26 10 // Str
+	WRITE_BYTE 0x2a 18 // Int
+	WRITE_BYTE 0x2c 10 // dex
+	WRITE_BYTE 0x2e 10 // wiz
+	WRITE_BYTE 0x30 16 // con
+	WRITE_BYTE 0x32 10 // chr
 END
 
 EXTEND_TOP ~Player1.bcs~ ~HerThiMoney/scripts/addp1dlg.baf~ 
