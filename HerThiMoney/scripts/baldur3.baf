@@ -2,6 +2,7 @@
 IF
     Global("RenalJob","GLOBAL",4)
 	Global("AranLove","GLOBAL",0)
+	Global("BodhiJob","GLOBAL",0)
     Global("AranLovePrologue","GLOBAL",0) 
 	Global("ThiefSpawn0","GLOBAL",0)
 	OR(2)
@@ -15,6 +16,7 @@ END
 
 IF
 	GlobalTimerExpired("ANbeshabaBeginTimer","GLOBAL")
+	Global("BodhiJob","GLOBAL",0)
 	AreaType(OUTDOOR)
 	AreaType(CITY)
 	CombatCounter(0)
@@ -43,6 +45,7 @@ IF
 	GlobalTimerExpired("ANAranLetter0Timer","GLOBAL")
 	AreaType(OUTDOOR)
 	CombatCounter(0)
+	Global("BodhiJob","GLOBAL",0)
 	!HasItemEquiped("BELT05", Player1)
 	Global("AranLovePrologue","GLOBAL",1) 
 	Global("TonySpawn0","GLOBAL",0)
@@ -73,6 +76,7 @@ IF
 	GlobalTimerExpired("ANAranLetter1Timer","GLOBAL")
 	AreaType(OUTDOOR)
 	CombatCounter(0)
+	Global("BodhiJob","GLOBAL",0)
 	!HasItemEquiped("BELT05", Player1)
 	Global("TonySpawn1","GLOBAL",0)
 	Global("Chapter","GLOBAL",%bg2_chapter_3%)
@@ -101,6 +105,7 @@ IF
 	GlobalTimerExpired("ANAranLetter2Timer","GLOBAL")
 	AreaType(OUTDOOR)
 	CombatCounter(0)
+	Global("BodhiJob","GLOBAL",0)
 	!HasItemEquiped("BELT05", Player1)
 	Global("TonySpawn2","GLOBAL",0)
 	OR(2)
@@ -131,6 +136,7 @@ IF
 	GlobalTimerExpired("ANAranLetter3Timer","GLOBAL")
 	AreaType(OUTDOOR)
 	CombatCounter(0)
+	Global("BodhiJob","GLOBAL",0)
 	!HasItemEquiped("BELT05", Player1)
 	Global("TonySpawn3","GLOBAL",0)
 	OR(2)
@@ -160,6 +166,7 @@ END
 // Tony 4
 IF
 	Global("PGFailed","GLOBAL",1)
+	Global("BodhiJob","GLOBAL",0)
 	GlobalGT("AranLove","GLOBAL",20)
 	Global("PGFailedTaimer","GLOBAL",0)
 	!HasItemEquiped("BELT05", Player1)
@@ -176,6 +183,7 @@ IF
 	RealGlobalTimerExpired("ANAranPGFailedTimer","GLOBAL")
 	Global("PGFailed","GLOBAL",1)
 	AreaType(OUTDOOR)
+	Global("BodhiJob","GLOBAL",0)
 	CombatCounter(0)
 	Global("TonySpawn4","GLOBAL",0)
 	!Global("TonySpawn5","GLOBAL",1)
@@ -209,6 +217,7 @@ IF
 	!Global("AranRomanceActive","GLOBAL",3)
 	AreaType(OUTDOOR)
 	CombatCounter(0)
+	Global("BodhiJob","GLOBAL",0)
 	Global("TonySpawn5","GLOBAL",0)
 	!Global("TonySpawn4","GLOBAL",1)
 	OR(2)
@@ -232,6 +241,7 @@ END
 IF
 	GlobalTimerExpired("ANAranLetterLAMPTimer","GLOBAL")
 	AreaType(OUTDOOR)
+	Global("BodhiJob","GLOBAL",0)
 	CombatCounter(0)
 	Global("TonySpawnAlternate","GLOBAL",1)
 THEN
@@ -322,6 +332,7 @@ END
 IF
 	Global("ANAranLampTony","GLOBAL",1)
 	AreaType(OUTDOOR)
+	Global("BodhiJob","GLOBAL",0)
 	CombatCounter(0)
 	Global("TonySpawnLamp","GLOBAL",0)
 	OR(2)
@@ -392,6 +403,7 @@ END
 IF
 	GlobalTimerExpired("ANAranLetterMALETimer","GLOBAL")
 	AreaType(OUTDOOR)
+	Global("BodhiJob","GLOBAL",0)
 	CombatCounter(0)
 	Global("TonySpawnMALE","GLOBAL",0)
 THEN
