@@ -2,7 +2,7 @@
 BACKUP ~HerThiMoney/backup~
 
 AUTHOR ~Austin, Scheele, Alisia & Arcanecoast Team~
-VERSION 3.6.1
+VERSION 3.6.2
 
 AUTO_TRA ~HerThiMoney/tra/%s~
 
@@ -1782,8 +1782,8 @@ END ELSE BEGIN
 END	
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdoffscr.cre~ BEGIN
-COPY "%MOD_FOLDER%/cre/bdoffscr.cre" override
-COPY "%MOD_FOLDER%/spl/bdoffscr.spl" override
+COPY "%MOD_FOLDER%/cre/bdoffscr.cre" ~override~
+COPY "%MOD_FOLDER%/spl/bdoffscr.spl" ~override~
 END
 
 ACTION_IF GAME_IS ~tob bgt~ BEGIN
