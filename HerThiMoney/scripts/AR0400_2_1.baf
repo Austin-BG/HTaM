@@ -30,10 +30,11 @@ OR(2)
 	Global("Chapter","GLOBAL",%bg2_chapter_3%)
 THEN
 RESPONSE #100
-SetGlobal("ANshakalexists","AR0400",2)
-SetGlobal("ANshakalTalk","AR0400",1)
+ClearAllActions()
 StartCutSceneMode()
 CutSceneId(Player1) 
+SetGlobal("ANshakalexists","AR0400",2)
+SetGlobal("ANshakalTalk","AR0400",1)
 Wait(1)
 CreateCreatureObject("bdoffscr",Player1,0,0,0)  
 ApplySpellRES("bdoffscr","bdoffscr") 
