@@ -3,40 +3,40 @@ BEGIN ANSHTLEG
 // Саймон Шортлег
 
 
-IF ~!InParty("Cernd") RandomNum(3,1)~ THEN BEGIN ANSimon1 
+IF ~!InParty("Cernd") !InParty("Hubelpot") RandomNum(3,1)~ THEN BEGIN ANSimon1 
   SAY @55 
 IF ~~ THEN EXIT
 END
 
-IF ~!InParty("Cernd") RandomNum(3,2)~ THEN BEGIN ANSimon2
+IF ~!InParty("Cernd") !InParty("Hubelpot") RandomNum(3,2)~ THEN BEGIN ANSimon2
   SAY @56 
 IF ~~ THEN EXIT
 END
 
-IF ~!InParty("Cernd") RandomNum(3,3)~ THEN BEGIN ANSimon3
+IF ~!InParty("Cernd") !InParty("Hubelpot") RandomNum(3,3)~ THEN BEGIN ANSimon3
   SAY @57 
 IF ~~ THEN EXIT
 END
 
 
-IF ~InParty("Cernd") !Global("ANsimoncernd","GLOBAL",0) RandomNum(3,1)~ THEN BEGIN ANSimon4 
+IF ~OR(2) InParty("Cernd") InParty("Hubelpot") !Global("ANsimoncernd","GLOBAL",0) RandomNum(3,1)~ THEN BEGIN ANSimon4 
   SAY @55 
 IF ~~ THEN EXIT
 END
 
-IF ~InParty("Cernd") !Global("ANsimoncernd","GLOBAL",0) RandomNum(3,2)~ THEN BEGIN ANSimon5
+IF ~OR(2) InParty("Cernd") InParty("Hubelpot") !Global("ANsimoncernd","GLOBAL",0) RandomNum(3,2)~ THEN BEGIN ANSimon5
   SAY @56 
 IF ~~ THEN EXIT
 END
 
-IF ~InParty("Cernd") !Global("ANsimoncernd","GLOBAL",0) RandomNum(3,3)~ THEN BEGIN ANSimon6
+IF ~OR(2) InParty("Cernd") InParty("Hubelpot") !Global("ANsimoncernd","GLOBAL",0) RandomNum(3,3)~ THEN BEGIN ANSimon6
   SAY @57 
 IF ~~ THEN EXIT
 END
 
 
 CHAIN  
-IF WEIGHT #-1 ~InParty("Cernd") InMyArea("Cernd") !Dead("Cernd") !StateCheck("Cernd",CD_STATE_NOTVALID) Global("ANsimoncernd","GLOBAL",0)~ 
+IF WEIGHT #-1 ~OR(3) !InParty("Hubelpot") !InMyArea("Hubelpot") StateCheck("Hubelpot",CD_STATE_NOTVALID) InParty("Cernd") InMyArea("Cernd") !StateCheck("Cernd",CD_STATE_NOTVALID) Global("ANsimoncernd","GLOBAL",0)~ 
 THEN ANSHTLEG ANsimoncernd1 
 @0 DO ~SetGlobal("ANsimoncernd","GLOBAL",1) ActionOverride(Player1,SetDialog("PLAYER1"))~
 = @1
@@ -58,16 +58,24 @@ THEN ANSHTLEG ANsimoncernd1
 == ANSHTLEG @17
 == CERNDJ @18
 == ANSHTLEG @19 
-EXTERN PLAYER1 ANsimoncernd1_1 
+END
+IF ~OR(3) !InParty("Imoen2") !InMyArea("Imoen2") StateCheck("Imoen2",CD_STATE_NOTVALID)~ THEN REPLY @20 EXTERN CERNDJ ANsimoncernd1_1
+IF ~InParty("Imoen2") InMyArea("Imoen2") !StateCheck("Imoen2",CD_STATE_NOTVALID)~ THEN REPLY @20 EXTERN IMOEN2J ANsimoncernd1_1Imoen
 
-CHAIN IF ~~ THEN PLAYER1 ANsimoncernd1_1 
-@20
-== IMOEN2J IF ~InParty("Imoen2") InMyArea("Imoen2") !StateCheck("Imoen2",CD_STATE_NOTVALID)~ THEN @54
-== CERNDJ @21
-== PLAYER1 @22
-== CERNDJ @23
-== PLAYER1 @24
-EXTERN ANSHTLEG ANsimoncernd1_2
+CHAIN IF ~~ THEN IMOEN2J ANsimoncernd1_1Imoen
+@54
+END
+IF ~~ THEN REPLY @22 EXTERN CERNDJ ANsimoncernd1_1
+
+CHAIN CERNDJ ANsimoncernd1_1
+@21
+END
+IF ~~ THEN REPLY @22 EXTERN CERNDJ ANsimoncernd1_1_1
+
+CHAIN CERNDJ ANsimoncernd1_1_1 
+@23
+END
+IF ~~ THEN REPLY @24 EXTERN ANSHTLEG ANsimoncernd1_2
 
 CHAIN IF ~~ THEN ANSHTLEG ANsimoncernd1_2
 @25
@@ -79,8 +87,11 @@ IF ~~ THEN REPLY @28 EXTERN ANSHTLEG ANsimoncernd2
 CHAIN 
 IF ~~ THEN ANSHTLEG ANsimoncernd2
 @29
-== PLAYER1 @30
-== CERNDJ @31
+END
+IF ~~ THEN REPLY @30 EXTERN CERNDJ ANsimoncernd2_1
+
+CHAIN CERNDJ ANsimoncernd2_1
+@31
 END
 IF ~~ THEN REPLY @32 EXTERN CERNDJ ANsimoncernd4 
 IF ~~ THEN REPLY @33 EXTERN ANSHTLEG ANsimoncernd3

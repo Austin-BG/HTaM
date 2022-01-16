@@ -1,14 +1,10 @@
 // Реплики в Медной Короне
-INTERJECT_COPY_TRANS NALIA 45 ANnaliajaheira
-== JAHEIRAJ 
-IF ~InParty("Jaheira") InMyArea("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID) Global("ANnaliajah","GLOBAL",0)~ 
-THEN @0 DO ~SetGlobal("ANnaliajah","GLOBAL",1)~
+INTERJECT_COPY_TRANS2 NALIA 45 ANnaliajaheira
+== JAHEIRAJ  IF ~InParty("Jaheira") InMyArea("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN @0 
 END
 
-INTERJECT_COPY_TRANS NALIA 46 ANnaliajaheira
-== JAHEIRAJ 
-IF ~InParty("Jaheira") InMyArea("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID) Global("ANnaliajah","GLOBAL",0)~ 
-THEN @0 DO ~SetGlobal("ANnaliajah","GLOBAL",1)~
+INTERJECT_COPY_TRANS2 NALIA 46 ANnaliajaheira
+== JAHEIRAJ IF ~InParty("Jaheira") InMyArea("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN @0 
 END
 
 INTERJECT_COPY_TRANS3 NALIA 51 ANnaliaother

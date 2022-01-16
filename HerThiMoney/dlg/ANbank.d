@@ -24,7 +24,7 @@ IF ~Global("ANallGroupDead","GLOBAL",1) Global("ANClerkName","AN0720",0)~ THEN R
 IF ~Global("ANClerkName","AN0720",0) OR(2) GlobalTimerExpired("AnOwniBankThinkTimer","GLOBAL") GlobalTimerExpired("AnOwniBankBattleTimerSkipping","GLOBAL")~ THEN REPLY @172 + ANclerk2-NewsSkip
 IF ~!Global("AnOwniBankTalk","GLOBAL",8) Global("ANClerkName","AN0720",0) !GlobalTimerExpired("AnOwniBankThinkTimer","GLOBAL") !GlobalTimerExpired("AnOwniBankBattleTimerSkipping","GLOBAL") !Global("ANallGroupDead","GLOBAL",1)~ THEN REPLY @172 + ANclerk2-Nonews
 IF ~PartyGoldGT(999) PartyHasItem("ANveksl") !Global("AnKorganUriDeal","GLOBAL",1) !Global("AnKorganCreditOtkaz","GLOBAL",1) !Global("ANDwarfCreditPay","GLOBAL",3) !Global("ANDwarfCreditPay","GLOBAL",4) InParty("Korgan") !Dead("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN REPLY @140 + ANclerk2-Dwarf-veksel
-IF ~PartyGoldGT(4999) Global("ANDwarfCreditPay","GLOBAL",1) InParty("Korgan") !Dead("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN REPLY @134 + ANclerk2-Dwarfcredit
+IF ~PartyGoldGT(4999) Global("ANDwarfCreditPay","GLOBAL",1)  InParty("Korgan") !Dead("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN REPLY @134 + ANclerk2-Dwarfcredit
 IF ~PartyGoldGT(3999) Global("ANDwarfCreditPayPart","GLOBAL",1) Global("ANDwarfCreditPay","GLOBAL",2) InParty("Korgan") !Dead("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN REPLY @134 + ANclerk2-Dwarfcredit
 IF ~PartyGoldGT(2999) Global("ANDwarfCreditPayPart","GLOBAL",2) Global("ANDwarfCreditPay","GLOBAL",2) InParty("Korgan") !Dead("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN REPLY @134 + ANclerk2-Dwarfcredit
 IF ~PartyGoldGT(1999) Global("ANDwarfCreditPayPart","GLOBAL",3) Global("ANDwarfCreditPay","GLOBAL",2) InParty("Korgan") !Dead("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN REPLY @134 + ANclerk2-Dwarfcredit
@@ -247,13 +247,13 @@ END
 
 IF ~~ THEN BEGIN ANclerk2-calimport
   SAY @56
-IF ~~ THEN DO ~ActionOverride(Player1,SetDialog("PLAYER1"))~ EXTERN PLAYER1 ANclerk2-calimport1
+IF ~~ THEN DO ~ActionOverride(Player1,SetDialog("PLAYER1"))~ REPLY @57 GOTO ANclerk2-calimport2
 END
 
 IF ~~ THEN BEGIN ANclerk2-calimport2
   SAY @58
 =@59  
-IF ~~ THEN DO ~ActionOverride(Player1,SetDialog("PLAYER1"))~ EXTERN PLAYER1 ANclerk2-calimport3
+IF ~~ THEN DO ~ActionOverride(Player1,SetDialog("PLAYER1"))~ REPLY @60 GOTO ANclerk2-calimport4
 END
 
 IF ~~ THEN BEGIN ANclerk2-calimport4
@@ -374,20 +374,6 @@ END
 END
 
 
-APPEND PLAYER1
-
-IF ~~ THEN BEGIN ANclerk2-calimport1
-  SAY @57
-IF ~~ THEN EXTERN ANclerk2 ANclerk2-calimport2
-END
-
-IF ~~ THEN BEGIN ANclerk2-calimport3
-  SAY @60
-IF ~~ THEN EXTERN ANclerk2 ANclerk2-calimport4
-END
-
-END
-
 // Clerk
 
 BEGIN ANclerk1
@@ -422,19 +408,19 @@ END
 
 BEGIN ANdirt
 
-IF ~RandomNum(3,1)~ THEN BEGIN ANdirt-1 
+IF ~!Global("ANMirandaCredit","GLOBAL",3) RandomNum(3,1)~ THEN BEGIN ANdirt-1 
   SAY @4
 IF ~~ THEN EXIT
 IF ~IsValidForPartyDialog("Jan") Global("AnJanDirtTalk","AN0721",0)~ THEN DO ~SetGlobal("AnJanDirtTalk","AN0721",1)~ EXTERN JANJ ANdirt-TurnipPrice
 END
 
-IF ~RandomNum(3,2)~ THEN BEGIN ANdirt-2
+IF ~!Global("ANMirandaCredit","GLOBAL",3) RandomNum(3,2)~ THEN BEGIN ANdirt-2
   SAY @5 
 IF ~~ THEN EXIT
 IF ~IsValidForPartyDialog("Jan") Global("AnJanDirtTalk","AN0721",0)~ THEN DO ~SetGlobal("AnJanDirtTalk","AN0721",1)~ EXTERN JANJ ANdirt-TurnipPrice
 END
 
-IF ~RandomNum(3,3)~ THEN BEGIN ANdirt-3
+IF ~!Global("ANMirandaCredit","GLOBAL",3) RandomNum(3,3)~ THEN BEGIN ANdirt-3
   SAY @6
 IF ~~ THEN EXIT
 IF ~IsValidForPartyDialog("Jan") Global("AnJanDirtTalk","AN0721",0)~ THEN DO ~SetGlobal("AnJanDirtTalk","AN0721",1)~ EXTERN JANJ ANdirt-TurnipPrice
@@ -568,7 +554,7 @@ END
 
 // Promo - Imoen
 CHAIN  
-IF WEIGHT #-1 ~InParty("Imoen2") InMyArea("Imoen2") !Dead("Imoen2") !StateCheck("Imoen2",CD_STATE_NOTVALID) Global("ANpromobuklets","GLOBAL",0)~ 
+IF WEIGHT #-1 ~InParty("Imoen2") !StateCheck("Imoen2",CD_STATE_NOTVALID) Global("ANpromobuklets","GLOBAL",0)~ 
 THEN ANprom ANpromobukletsTalk1
 @202 DO ~SetGlobal("ANpromobuklets","GLOBAL",1) ActionOverride(Player1,SetDialog("PLAYER1"))~
 == IMOEN2J @203
@@ -579,8 +565,12 @@ THEN ANprom ANpromobukletsTalk1
 == IMOEN2J @208
 == ANprom @209
 == IMOEN2J @210
-== PLAYER1 @211
-== IMOEN2J @212
+END
+IF ~~ THEN REPLY @211 EXTERN IMOEN2J ANpromobukletsTalk1_1
+IF ~~ THEN REPLY @501 EXTERN IMOEN2J ANpromobukletsTalk1_1
+
+CHAIN IMOEN2J ANpromobukletsTalk1_1 
+@212
 == ANprom @213
 == IMOEN2J @214
 == ANprom @215
@@ -590,13 +580,17 @@ THEN ANprom ANpromobukletsTalk1
 DO ~GiveItemCreate("ANbukl","Imoen2",10,0,0)~
 == IMOEN2J @219
 == ANprom @220
-== PLAYER1 @221
+END
+IF ~~ THEN REPLY @221 EXTERN IMOEN2J ANpromobukletsTalk1_2
+IF ~~ THEN REPLY @502 EXTERN IMOEN2J ANpromobukletsTalk1_2
+
+CHAIN IMOEN2J ANpromobukletsTalk1_2
+@224
 == KORGANJ IF ~InParty("Korgan") InMyArea("Korgan") !Dead("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN @222
 == JAHEIRAJ IF ~InParty("Jaheira") InMyArea("Jaheira") !Dead("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN @223
 == JANJ IF ~InParty("Jan") InMyArea("Jan") !Dead("Jan") !StateCheck("Jan",CD_STATE_NOTVALID)~ THEN @230
 = @231
 == ANprom IF ~InParty("Jan") InMyArea("Jan") !Dead("Jan") !StateCheck("Jan",CD_STATE_NOTVALID)~ THEN @232
-== IMOEN2J @224
 == ANprom @225
 == IMOEN2J @226
 == VALYGARJ IF ~InParty("Valygar") InMyArea("Valygar") !StateCheck("Valygar",CD_STATE_NOTVALID)~ THEN @227
@@ -651,7 +645,7 @@ EXIT
 // Promo - Neera
 
 CHAIN  
-IF WEIGHT #-1 ~InParty("Neera") Global("ANpromobuklets","GLOBAL",0)~ 
+IF WEIGHT #-1 ~InParty("Neera") !StateCheck("Neera",CD_STATE_NOTVALID) Global("ANpromobuklets","GLOBAL",0)~ 
 THEN ANprom ANpromobukletsTalkNeera1
 @202 DO ~SetGlobal("ANpromobuklets","GLOBAL",1) ActionOverride(Player1,SetDialog("PLAYER1"))~
 == IF_FILE_EXISTS NEERAJ @203
@@ -662,8 +656,12 @@ THEN ANprom ANpromobukletsTalkNeera1
 == IF_FILE_EXISTS NEERAJ @208
 == ANprom @209
 == IF_FILE_EXISTS NEERAJ @210
-== PLAYER1 @249
-== IF_FILE_EXISTS NEERAJ @212
+END
+IF ~~ THEN REPLY @249 EXTERN IF_FILE_EXISTS NEERAJ ANpromobukletsTalkNeera1_1
+IF ~~ THEN REPLY @501 EXTERN IF_FILE_EXISTS NEERAJ ANpromobukletsTalkNeera1_1
+
+CHAIN IF_FILE_EXISTS NEERAJ ANpromobukletsTalkNeera1_1
+@212
 == ANprom @213
 == IF_FILE_EXISTS NEERAJ @214
 == ANprom @215
@@ -673,13 +671,17 @@ THEN ANprom ANpromobukletsTalkNeera1
 DO ~GiveItemCreate("ANbukl","Neera",10,0,0)~
 == IF_FILE_EXISTS NEERAJ @219
 == ANprom @220
-== PLAYER1 @250
+END
+IF ~~ THEN REPLY @250 EXTERN IF_FILE_EXISTS NEERAJ ANpromobukletsTalkNeera1_2
+IF ~~ THEN REPLY @502 EXTERN IF_FILE_EXISTS NEERAJ ANpromobukletsTalkNeera1_2
+
+CHAIN IF_FILE_EXISTS NEERAJ ANpromobukletsTalkNeera1_2
+@224
 == KORGANJ IF ~InParty("Korgan") InMyArea("Korgan") !Dead("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN @222
 == JAHEIRAJ IF ~InParty("Jaheira") InMyArea("Jaheira") !Dead("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN @251
 == JANJ IF ~InParty("Jan") InMyArea("Jan") !Dead("Jan") !StateCheck("Jan",CD_STATE_NOTVALID)~ THEN @230
 = @231
 == ANprom IF ~InParty("Jan") InMyArea("Jan") !Dead("Jan") !StateCheck("Jan",CD_STATE_NOTVALID)~ THEN @232
-== IF_FILE_EXISTS NEERAJ @224
 == ANprom @225
 == IF_FILE_EXISTS NEERAJ @226
 == VALYGARJ IF ~InParty("Valygar") InMyArea("Valygar") !StateCheck("Valygar",CD_STATE_NOTVALID)~ THEN @253
@@ -742,3 +744,268 @@ IF ~~ THEN ANclerk2 ANclerk2-Dwarfcredit
 == ANclerk2 IF ~Global("ANDwarfCreditPayPart","GLOBAL",4)~ THEN @137 DO ~TakePartyGold(1000) SetGlobal("ANDwarfCreditPayPart","GLOBAL",10) SetGlobal("ANDwarfCreditPay","GLOBAL",3)~ 
 == KORGANJ @139 DO ~AddJournalEntry(@1020,QUEST_DONE)~
 EXIT
+
+// Miranda quest
+BEGIN ANmiran
+
+IF ~NumTimesTalkedTo(0) Global("ANMirandaCredit","GLOBAL",0)~ THEN BEGIN ANmiranFirstTalk
+  SAY @503
+IF ~~ THEN REPLY @504 GOTO ANmiranFirstTalk1
+IF ~~ THEN REPLY @505 EXIT
+END
+
+IF ~NumTimesTalkedToGT(0) Global("ANMirandaCredit","GLOBAL",0)~ THEN BEGIN ANmiranFirstTalkRepeat
+  SAY @574
+IF ~~ THEN REPLY @504 GOTO ANmiranFirstTalk1
+IF ~~ THEN REPLY @505 EXIT
+END
+
+IF ~NumTimesTalkedToGT(0) Global("ANMirandaCredit","GLOBAL",1)~ THEN BEGIN ANmiranFirstTalkRepeat
+  SAY @574
+IF ~~ THEN REPLY @513 GOTO ANmiranFirstTalk3-1
+IF ~~ THEN REPLY @515 GOTO ANmiranFirstTalk3-2
+IF ~~ THEN REPLY @514 GOTO ANmiranFirstTalk3-End
+END
+
+IF ~~ THEN BEGIN ANmiranFirstTalk1
+  SAY @506
+IF ~~ THEN DO ~SetGlobal("ANMirandaCredit","GLOBAL",1)~ REPLY @507 GOTO ANmiranFirstTalk2
+IF ~~ THEN REPLY @508 GOTO ANmiranFirstTalk2-End
+IF ~~ THEN DO ~SetGlobal("ANMirandaCredit","GLOBAL",1)~ REPLY @509 GOTO ANmiranFirstTalk2
+END
+
+IF ~~ THEN BEGIN ANmiranFirstTalk2-End
+  SAY @511
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN BEGIN ANmiranFirstTalk2
+  SAY @510
+=@512  
+IF ~~ THEN REPLY @513 GOTO ANmiranFirstTalk3-1
+IF ~~ THEN REPLY @515 GOTO ANmiranFirstTalk3-2
+IF ~~ THEN REPLY @514 GOTO ANmiranFirstTalk3-End
+END
+
+IF ~~ THEN BEGIN ANmiranFirstTalk3-End
+  SAY @516
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN BEGIN ANmiranFirstTalk3-1
+  SAY @518
+IF ~~ THEN REPLY @519 GOTO ANmiranFirstTalk4
+IF ~~ THEN REPLY @514 GOTO ANmiranFirstTalk3-End
+END
+
+IF ~~ THEN BEGIN ANmiranFirstTalk3-2
+  SAY @517
+IF ~~ THEN REPLY @519 GOTO ANmiranFirstTalk4
+IF ~~ THEN REPLY @514 GOTO ANmiranFirstTalk3-End
+END
+
+IF ~~ THEN BEGIN ANmiranFirstTalk4
+  SAY @520
+=@521  
+IF ~~ THEN DO ~SetGlobal("ANMirandaCredit","GLOBAL",2)~ REPLY @522 GOTO ANmiranFirstTalk5
+IF ~~ THEN REPLY @523 GOTO ANmiranFirstTalk3-End
+END
+
+IF ~~ THEN BEGIN ANmiranFirstTalk5
+  SAY @575
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN BEGIN ANmiranDirectorTalkFALSE
+  SAY @566
+IF ~~ THEN DO ~EscapeArea()~ EXIT
+END
+
+IF ~~ THEN BEGIN ANmiranDirectorTalk3-1
+  SAY @546
+IF ~~ THEN EXTERN ANdirt ANmiranDirectorTalk4
+END
+
+IF ~~ THEN BEGIN ANmiranDirectorTalk5YES1
+  SAY @563
+IF ~~ THEN DO ~DestroySelf()~ EXTERN ANdirt ANmiranDirectorTalk6
+END
+
+IF ~~ THEN BEGIN ANmiranDirectorTalk5NO1
+  SAY @564
+IF ~~ THEN DO ~DestroySelf()~ EXTERN ANdirt ANmiranDirectorTalk6
+END
+
+APPEND ANdirt
+IF WEIGHT #-1 ~Global("ANMirandaCredit","GLOBAL",3)~ THEN BEGIN ANmiranDirectorTalk
+  SAY @576
+IF ~~ THEN REPLY @524 GOTO ANmiranDirectorTalk1
+END
+
+IF ~~ THEN BEGIN ANmiranDirectorTalk1
+  SAY @525
+IF ~CheckStatGT(Player1,12,CHR)~ THEN DO ~SetGlobal("ANApproveCredit","LOCALS",1)~ REPLY @526 GOTO ANmiranDirectorTalk2-1Yes
+IF ~!CheckStatGT(Player1,12,CHR)~ THEN REPLY @526 GOTO ANmiranDirectorTalk2-1No
+IF ~~ THEN REPLY @527 GOTO ANmiranDirectorTalk2-2
+IF ~Gender(Player1,MALE)~ THEN REPLY @528 GOTO ANmiranDirectorTalk2-3
+IF ~Gender(Player1,FEMALE)~ THEN REPLY @529 GOTO ANmiranDirectorTalk2-3
+IF ~~ THEN REPLY @530 GOTO ANmiranDirectorTalk2-4
+IF ~~ THEN REPLY @531 GOTO ANmiranDirectorTalk2-5
+IF ~~ THEN REPLY @544 GOTO ANmiranDirectorTalkEXIT
+END
+
+IF ~~ THEN BEGIN ANmiranDirectorTalk2-1Yes
+  SAY @532
+IF ~~ THEN GOTO ANmiranDirectorTalk3
+END
+
+IF ~~ THEN BEGIN ANmiranDirectorTalk2-1No
+  SAY @533
+IF ~~ THEN GOTO ANmiranDirectorTalk3
+END
+
+IF ~~ THEN BEGIN ANmiranDirectorTalk2-2
+  SAY @534
+IF ~~ THEN GOTO ANmiranDirectorTalk3
+END
+
+IF ~~ THEN BEGIN ANmiranDirectorTalk2-3
+  SAY @535
+IF ~~ THEN DO ~SetGlobal("ANApproveCredit","LOCALS",1)~ REPLY @536 GOTO ANmiranDirectorTalk2-3Yes
+IF ~~ THEN REPLY @537 GOTO ANmiranDirectorTalk2-3No
+IF ~~ THEN REPLY @538 GOTO ANmiranDirectorTalk2-3No
+IF ~~ THEN REPLY @544 GOTO ANmiranDirectorTalkEXIT
+END
+
+IF ~~ THEN BEGIN ANmiranDirectorTalk2-3Yes
+  SAY @539
+IF ~~ THEN GOTO ANmiranDirectorTalk3
+END
+
+IF ~~ THEN BEGIN ANmiranDirectorTalk2-3No
+  SAY @540
+IF ~~ THEN GOTO ANmiranDirectorTalk3
+END
+
+IF ~~ THEN BEGIN ANmiranDirectorTalk2-4
+  SAY @541
+IF ~CheckStatGT(Player1,12,CHR)~ THEN DO ~SetGlobal("ANApproveCredit","LOCALS",1)~ REPLY @526 GOTO ANmiranDirectorTalk2-1Yes
+IF ~!CheckStatGT(Player1,12,CHR)~ THEN REPLY @526 GOTO ANmiranDirectorTalk2-1No
+IF ~~ THEN REPLY @527 GOTO ANmiranDirectorTalk2-2
+IF ~Gender(Player1,MALE)~ THEN REPLY @528 GOTO ANmiranDirectorTalk2-3
+IF ~Gender(Player1,FEMALE)~ THEN REPLY @529 GOTO ANmiranDirectorTalk2-3
+IF ~~ THEN REPLY @531 GOTO ANmiranDirectorTalk2-5
+IF ~~ THEN REPLY @544 GOTO ANmiranDirectorTalkEXIT
+END
+
+IF ~~ THEN BEGIN ANmiranDirectorTalk2-5
+  SAY @543
+IF ~CheckStatGT(Player1,12,CHR)~ THEN DO ~SetGlobal("ANApproveCredit","LOCALS",1)~ REPLY @526 GOTO ANmiranDirectorTalk2-1Yes
+IF ~!CheckStatGT(Player1,12,CHR)~ THEN REPLY @526 GOTO ANmiranDirectorTalk2-1No
+IF ~~ THEN REPLY @527 GOTO ANmiranDirectorTalk2-2
+IF ~Gender(Player1,MALE)~ THEN REPLY @528 GOTO ANmiranDirectorTalk2-3
+IF ~Gender(Player1,FEMALE)~ THEN REPLY @529 GOTO ANmiranDirectorTalk2-3
+IF ~~ THEN REPLY @531 GOTO ANmiranDirectorTalk2-5
+IF ~~ THEN REPLY @544 GOTO ANmiranDirectorTalkEXIT
+END
+
+IF ~~ THEN BEGIN ANmiranDirectorTalkEXIT
+  SAY @562
+IF ~~ THEN EXTERN ANmiran ANmiranDirectorTalkFALSE
+END
+
+IF ~~ THEN BEGIN ANmiranDirectorTalk3
+  SAY @545
+IF ~~ THEN EXTERN ANmiran ANmiranDirectorTalk3-1
+END
+
+IF ~~ THEN BEGIN ANmiranDirectorTalk4
+  SAY @547
+=@548  
+IF ~~ THEN DO ~IncrementGlobal("ANApproveCredit","LOCALS",1)~ REPLY @549 GOTO ANmiranDirectorTalk4-1
+IF ~~ THEN REPLY @550 GOTO ANmiranDirectorTalk4-2
+IF ~~ THEN REPLY @551 GOTO ANmiranDirectorTalk4-3
+IF ~~ THEN DO ~IncrementGlobal("ANApproveCredit","LOCALS",1)~ REPLY @552 GOTO ANmiranDirectorTalk4-4
+IF ~~ THEN REPLY @553 GOTO ANmiranDirectorTalk4-5
+END
+
+IF ~~ THEN BEGIN ANmiranDirectorTalk4-1
+  SAY @554
+IF ~~ THEN GOTO ANmiranDirectorTalk5
+END
+
+IF ~~ THEN BEGIN ANmiranDirectorTalk4-2
+  SAY @555
+IF ~~ THEN GOTO ANmiranDirectorTalk5
+END
+
+IF ~~ THEN BEGIN ANmiranDirectorTalk4-3
+  SAY @556
+IF ~~ THEN GOTO ANmiranDirectorTalk5
+END
+
+IF ~~ THEN BEGIN ANmiranDirectorTalk4-4
+  SAY @557
+IF ~~ THEN GOTO ANmiranDirectorTalk5
+END
+
+IF ~~ THEN BEGIN ANmiranDirectorTalk4-5
+  SAY @558
+IF ~~ THEN GOTO ANmiranDirectorTalk5
+END
+
+IF ~~ THEN BEGIN ANmiranDirectorTalk5
+  SAY @547
+IF ~Global("ANApproveCredit","LOCALS",2)~ THEN GOTO ANmiranDirectorTalk5YES
+IF ~!Global("ANApproveCredit","LOCALS",2)~ THEN GOTO ANmiranDirectorTalk5NO
+END
+
+IF ~~ THEN BEGIN ANmiranDirectorTalk5YES
+  SAY @559
+=@561  
+IF ~~ THEN DO ~SetGlobal("ANMirandaCredit","GLOBAL",4)~ EXTERN ANmiran ANmiranDirectorTalk5YES1
+END
+
+IF ~~ THEN BEGIN ANmiranDirectorTalk5NO
+  SAY @560
+IF ~~ THEN DO ~SetGlobal("ANMirandaCredit","GLOBAL",97)~ EXTERN ANmiran ANmiranDirectorTalk5NO1
+END
+
+IF ~~ THEN BEGIN ANmiranDirectorTalk6
+  SAY @562
+IF ~~ THEN EXIT
+END
+
+END
+
+APPEND ANmiran
+IF ~Global("ANMirandaCredit","GLOBAL",5)~ THEN BEGIN ANmiranFinalTalkYES
+  SAY @565
+=@567  
+IF ~~ THEN DO ~SetGlobal("ANMirandaCredit","GLOBAL",6) AddexperienceParty(1000)~ REPLY @568 GOTO ANmiranFinalTalkYES1
+IF ~~ THEN DO ~SetGlobal("ANMirandaCredit","GLOBAL",6) ReputationInc(1) AddexperienceParty(1000)~ REPLY @569 GOTO ANmiranFinalTalkYES2
+IF ~~ THEN DO ~SetGlobal("ANMirandaCredit","GLOBAL",6) AddexperienceParty(1000)~ REPLY @570 GOTO ANmiranFinalTalkYES3
+END
+
+IF ~~ THEN BEGIN ANmiranFinalTalkYES1
+  SAY @571
+IF ~~ THEN DO ~GiveGoldForce(100) AddJournalEntry(@1115,QUEST_DONE) EscapeArea()~ EXIT
+END
+
+IF ~~ THEN BEGIN ANmiranFinalTalkYES2
+  SAY @572
+IF ~~ THEN DO ~AddJournalEntry(@1115,QUEST_DONE) EscapeArea()~ EXIT
+END
+
+IF ~~ THEN BEGIN ANmiranFinalTalkYES3
+  SAY @573
+IF ~~ THEN DO ~GiveGoldForce(500) AddJournalEntry(@1115,QUEST_DONE) EscapeArea()~ EXIT
+END
+
+IF ~Global("ANMirandaCredit","GLOBAL",98)~ THEN BEGIN ANmiranFinalTalkNO
+  SAY @566
+IF ~~ THEN DO ~SetGlobal("ANMirandaCredit","GLOBAL",99) AddJournalEntry(@1116,QUEST_DONE) EscapeArea()~ EXIT
+END
+
+
+END

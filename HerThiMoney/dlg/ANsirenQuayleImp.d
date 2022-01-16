@@ -9,8 +9,11 @@ EXIT
 CHAIN
 IF ~Global("ANsirene","GLOBAL",34)~ THEN ANsirene ANsirene1FinalTalk2
 @144 DO ~SetGlobal("ANsirene","GLOBAL",35) AddJournalEntry(@1092,QUEST)~
-== PLAYER1 @145
-== ANsirene @146 DO ~GiveItemCreate("AMUL11",Player1,1,0,0) EscapeArea()~
+END
+IF ~~ THEN REPLY @145 EXTERN ANsirene ANsirene1FinalTalk2_1
+
+CHAIN ANsirene ANsirene1FinalTalk2_1
+@146 DO ~GiveItemCreate("AMUL11",Player1,1,0,0) EscapeArea()~
 == 7XQUAYJ @147 
 EXIT
 
@@ -35,8 +38,11 @@ IF ~Global("ANsirene","GLOBAL",63)~ THEN ANsirene ANsirene2FinalTalk2QuayleImp
 == ANsirene @155
 == ANlorio @156
 == ANsirene @157
-== PLAYER1 @158
-== ANlorio @159 DO ~GiveItemCreate("SW1H42",Player1,1,0,0)~
+END
+IF ~~ THEN REPLY @158 EXTERN ANsirene ANsirene2FinalTalk2QuayleImp_1
+
+CHAIN ANlorio ANsirene2FinalTalk2QuayleImp_1
+@159 DO ~GiveItemCreate("SW1H42",Player1,1,0,0)~
 == ANsirene IF ~InParty("Aerie") InMyArea("Aerie") !StateCheck("Aerie",CD_STATE_NOTVALID)~ THEN @160 DO ~GiveItemCreate("AMUL11","Aerie",1,0,0)~
 == AERIEJ IF ~InParty("Aerie") InMyArea("Aerie") !StateCheck("Aerie",CD_STATE_NOTVALID)~ THEN @161
 == ANsirene @162 DO ~AddJournalEntry(@1093,QUEST_DONE) EscapeArea()~

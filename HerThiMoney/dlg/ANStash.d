@@ -47,8 +47,8 @@ END
 IF ~~ BEGIN ANStashRenalFinal_LIEOPEN3 
 SAY @171 
 = @178
-IF ~~ THEN DO ~SetGlobal("ANStashRenalJOB","GLOBAL",15)  
-TakePartyItem("ANlistM")
+IF ~~ THEN DO ~SetGlobal("ANStashRenalJOB","GLOBAL",15) SetGlobal("ANStashRenalJOBFAILED","AR0306",1)  
+TakePartyItem("ANlistM") TakePartyItem("ANgemM")
 AddJournalEntry(@1005,QUEST_DONE) 
 EraseJournalEntry(@999)
 EraseJournalEntry(@1000)
@@ -266,74 +266,9 @@ END
 
 APPEND PLAYER1
 
-IF ~~ BEGIN ANstashEdwinTalk5
-  SAY @38 
-IF ~~ THEN EXTERN EDWINJ ANstashEdwinTalk6
-END
-
 IF ~~ BEGIN ANstashBank6
   SAY @122
 IF ~~ THEN EXTERN ANClerk1 ANstashBank6.1
-END
-
-IF ~~ BEGIN ANButch2.1 
-SAY @21
-IF ~~ THEN EXTERN ANButch ANButch3 
-END
-
-IF ~~ BEGIN ANButch3.1 
-SAY @23
-IF ~~ THEN EXTERN ANButch ANButch4 
-END
-
-IF ~~ BEGIN ANButch4.1 
-SAY @25
-IF ~~ THEN EXTERN ANButch ANButch5 
-END
-
-IF ~~ BEGIN ANButch5.1 
-SAY @27
-IF ~~ THEN EXTERN ANButch ANButch6 
-END
-
-IF ~~ BEGIN ANstashEdwinHurp2.1
-SAY @56
-IF ~~ THEN DO ~ActionOverride(Player1,SetDialog("PLAYER1"))~ EXTERN ANHurp ANstashEdwinHurp3
-END
-
-IF ~~ BEGIN ANstashEdwinHurp3.1
-SAY @58
-IF ~~ THEN EXTERN ANHurp ANstashEdwinHurp4
-END
-
-IF ~~ BEGIN ANstashEdwinHurp6.1
-SAY @62
-IF ~~ THEN EXTERN ANHurp ANstashEdwinHurp7
-END
-
-IF ~~ BEGIN ANstashEdwinHurp7.1
-SAY @64
-IF ~~ THEN EXTERN ANHurp ANstashEdwinHurp8
-END
-
-IF ~~ BEGIN ANstashEdwinHurp8.1
-SAY @66
-IF ~~ THEN EXTERN ANHurp ANstashEdwinHurp9
-END
-
-IF ~~ BEGIN ANstashEdwinHurp9.1
-SAY @68
-IF ~~ THEN EXTERN ANHurp ANstashEdwinHurp10
-END
-
-IF ~~ BEGIN ANstashEdwinHurp10.1
-SAY @70
-IF ~~ THEN EXTERN ANHurp ANstashEdwinHurp11
-END
-
-IF ~~ BEGIN ANstashEdwinHurp11.1
-SAY @72
-IF ~~ THEN EXTERN ANHurp ANstashEdwinHurp12
 END
 
 IF ~~ BEGIN ANstashBankStart1
@@ -354,13 +289,16 @@ END
 
 IF ~Global("ANStashRenalJOB","GLOBAL",1)~ BEGIN ANButch1 
 SAY @14
-IF ~~ THEN DO ~ActionOverride(Player1,SetDialog("PLAYER1"))~ REPLY @15 + ANButch1.1 
-IF ~~ THEN DO ~ActionOverride(Player1,SetDialog("PLAYER1"))~ REPLY @16 + ANButch1.2 
+IF ~~ THEN REPLY @15 + ANButch1.1 
+IF ~~ THEN REPLY @16 + ANButch1.2 
+IF ~~ THEN REPLY @192 + ANButch1.3
 END
 
 IF ~~ BEGIN ANButch1.1 
 SAY @17
 IF ~~ THEN REPLY @19 + ANButch2 
+IF ~~ THEN REPLY @191 GOTO ANButch2
+IF ~~ THEN REPLY @194 GOTO ANButch2
 END
 
 IF ~~ BEGIN ANButch1.2 
@@ -368,24 +306,39 @@ SAY @18
 IF ~~ THEN REPLY @19 + ANButch2 
 END
 
+IF ~~ BEGIN ANButch1.3 
+SAY @193
+IF ~~ THEN REPLY @19 + ANButch2 
+END
+
 IF ~~ BEGIN ANButch2 
 SAY @20
-IF ~~ THEN DO ~GiveItem("ANcode1",Player1) ActionOverride(Player1,SetDialog("PLAYER1"))~ EXTERN PLAYER1 ANButch2.1 
+IF ~~ THEN DO ~GiveItem("ANcode1",Player1)~ REPLY @21 GOTO ANButch3
+IF ~~ THEN DO ~GiveItem("ANcode1",Player1)~ REPLY @25 GOTO ANButch5
+IF ~~ THEN DO ~GiveItem("ANcode1",Player1)~ REPLY @195 GOTO ANButch5
+IF ~~ THEN DO ~GiveItem("ANcode1",Player1)~ REPLY @196 GOTO ANButch5
 END
+
 
 IF ~~ BEGIN ANButch3 
 SAY @22
-IF ~~ THEN DO ~ActionOverride(Player1,SetDialog("PLAYER1"))~ EXTERN PLAYER1 ANButch3.1 
+IF ~~ THEN REPLY @23 GOTO ANButch4 
+IF ~~ THEN REPLY @25 GOTO ANButch5
+IF ~~ THEN REPLY @195 GOTO ANButch5
+IF ~~ THEN REPLY @196 GOTO ANButch5
 END
 
 IF ~~ BEGIN ANButch4 
 SAY @24
-IF ~~ THEN DO ~ActionOverride(Player1,SetDialog("PLAYER1"))~ EXTERN PLAYER1 ANButch4.1 
+IF ~~ THEN REPLY @25 GOTO ANButch5
+IF ~~ THEN REPLY @195 GOTO ANButch5
+IF ~~ THEN REPLY @196 GOTO ANButch5
 END
 
 IF ~~ BEGIN ANButch5 
 SAY @26
-IF ~~ THEN DO ~ActionOverride(Player1,SetDialog("PLAYER1"))~ EXTERN PLAYER1 ANButch5.1
+IF ~~ THEN REPLY @27 GOTO ANButch6 
+IF ~~ THEN REPLY @197 GOTO ANButch6 
 END
 
 IF ~~ BEGIN ANButch6 
@@ -402,27 +355,57 @@ END
 
 IF ~~ BEGIN ANstashEdwinTalk2
   SAY @32 
-IF ~~ THEN REPLY @33 + ANstashEdwinTalk3
+IF ~~ THEN REPLY @33 + ANstashEdwinTalk3-1
+IF ~~ THEN REPLY @198 + ANstashEdwinTalk3-2
+IF ~~ THEN REPLY @199 + ANstashEdwinTalk3-3
 END
 
-IF ~~ BEGIN ANstashEdwinTalk3
+IF ~~ BEGIN ANstashEdwinTalk3-1
   SAY @34 
 IF ~~ THEN REPLY @35 + ANstashEdwinTalk4
+IF ~~ THEN REPLY @202 + ANstashEdwinTalk4
+END
+
+IF ~~ BEGIN ANstashEdwinTalk3-2
+  SAY @201 
+IF ~~ THEN REPLY @35 + ANstashEdwinTalk4
+IF ~~ THEN REPLY @202 + ANstashEdwinTalk4
+END
+
+IF ~~ BEGIN ANstashEdwinTalk3-3
+  SAY @200
+IF ~~ THEN REPLY @35 + ANstashEdwinTalk4
+IF ~~ THEN REPLY @202 + ANstashEdwinTalk4
 END
 
 IF ~~ BEGIN ANstashEdwinTalk4
   SAY @36 
-IF ~~ THEN DO ~ActionOverride(Player1,SetDialog("PLAYER1"))~ REPLY @37 EXTERN PLAYER1 ANstashEdwinTalk5
+IF ~~ THEN REPLY @37 GOTO ANstashEdwinTalk5
+IF ~~ THEN REPLY @203 GOTO ANstashEdwinTalk5
+IF ~~ THEN REPLY @204 GOTO ANstashEdwinTalk5
+END
+
+IF ~~ BEGIN ANstashEdwinTalk5
+  SAY @38 
+IF ~~ THEN GOTO ANstashEdwinTalk6
 END
 
 IF ~~ BEGIN ANstashEdwinTalk6
   SAY @39
-IF ~~ THEN REPLY @40 + ANstashEdwinTalk7
+IF ~~ THEN REPLY @40 + ANstashEdwinTalk7-1
+IF ~~ THEN REPLY @205 + ANstashEdwinTalk7-2
+IF ~~ THEN REPLY @206 + ANstashEdwinTalk7-2
 END
 
-IF ~~ BEGIN ANstashEdwinTalk7
+IF ~~ BEGIN ANstashEdwinTalk7-1
   SAY @41
 = @42
+IF ~~ THEN REPLY @43 + ANstashEdwinTalk8.1
+IF ~~ THEN REPLY @44 + ANstashEdwinTalk8.2
+END
+
+IF ~~ BEGIN ANstashEdwinTalk7-2
+  SAY @207
 IF ~~ THEN REPLY @43 + ANstashEdwinTalk8.1
 IF ~~ THEN REPLY @44 + ANstashEdwinTalk8.2
 END
@@ -441,7 +424,7 @@ END
 
 IF ~~ BEGIN ANstashEdwinHurp5
   SAY @60
-IF ~~ THEN DO ~ActionOverride(Player1,SetDialog("PLAYER1"))~ EXTERN ANHurp ANstashEdwinHurp6
+IF ~~ THEN EXTERN ANHurp ANstashEdwinHurp6
 END
 
 IF ~~ BEGIN ANstashEdwinHurp13
@@ -481,8 +464,8 @@ END
 IF ~Global("ANStashRenalJOB","GLOBAL",9)~ BEGIN ANstashEdwinBank
   SAY @103 
 IF ~~ THEN DO ~SetGlobal("ANStashEdwinBankTalk","AN0720",1)~ REPLY @104 EXIT
+IF ~~ THEN DO ~SetGlobal("ANStashEdwinBankTalk","AN0720",1)~ REPLY @208 EXIT
 END
-
 
 IF ~~ BEGIN ANStashEdwinFinalTalk1
   SAY @145
@@ -503,9 +486,8 @@ END
 
 
 CHAIN  
-IF ~Global("ANStashRenalJOB","GLOBAL",5) InParty("Edwin") InMyArea("Edwin") !Dead("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN PLAYER1 ANstashEdwinTalk9
-@48 DO ~SetGlobal("ANStashRenalJOB","GLOBAL",6)~
-== EDWINJ @49 
+IF ~Global("ANStashRenalJOB","GLOBAL",5) InParty("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN EDWINJ ANstashEdwinTalk9
+@49 DO ~SetGlobal("ANStashRenalJOB","GLOBAL",6)~
 = @50
 EXIT
 
@@ -519,12 +501,16 @@ END
 
 IF ~~ BEGIN ANstashEdwinHurp2
   SAY @55
-IF ~~ THEN DO ~ActionOverride(Player1,SetDialog("PLAYER1"))~ EXTERN PLAYER1 ANstashEdwinHurp2.1
+IF ~~ THEN REPLY @56 GOTO ANstashEdwinHurp3
+IF ~~ THEN REPLY @209 GOTO ANstashEdwinHurp3
+IF ~~ THEN REPLY @210 GOTO ANstashEdwinHurp3
 END
 
 IF ~~ BEGIN ANstashEdwinHurp3
   SAY @57
-IF ~~ THEN DO ~ActionOverride(Player1,SetDialog("PLAYER1"))~ EXTERN PLAYER1 ANstashEdwinHurp3.1
+IF ~~ THEN REPLY @58 GOTO ANstashEdwinHurp4
+IF ~~ THEN REPLY @211 GOTO ANstashEdwinHurp4
+IF ~~ THEN REPLY @212 GOTO ANstashEdwinHurp4
 END
 
 IF ~~ BEGIN ANstashEdwinHurp4
@@ -532,34 +518,62 @@ IF ~~ BEGIN ANstashEdwinHurp4
 IF ~~ THEN EXTERN EDWINJ ANstashEdwinHurp5
 END
 
+
 IF ~~ BEGIN ANstashEdwinHurp6
   SAY @61
-IF ~~ THEN DO ~ActionOverride(Player1,SetDialog("PLAYER1"))~ EXTERN PLAYER1 ANstashEdwinHurp6.1
+IF ~~ THEN REPLY @62 GOTO ANstashEdwinHurp7
+IF ~~ THEN DO ~GiveItem("ANgross1",Player1)~ REPLY @213 GOTO ANstashEdwinHurp8
+IF ~~ THEN DO ~GiveItem("ANgross1",Player1)~ REPLY @64 GOTO ANstashEdwinHurp8
+IF ~~ THEN REPLY @66 GOTO ANstashEdwinHurp9-1
+IF ~~ THEN REPLY @214 GOTO ANstashEdwinHurp9-1
 END
 
 IF ~~ BEGIN ANstashEdwinHurp7
   SAY @63
-IF ~~ THEN DO ~ActionOverride(Player1,SetDialog("PLAYER1"))~ EXTERN PLAYER1 ANstashEdwinHurp7.1
+IF ~~ THEN DO ~GiveItem("ANgross1",Player1)~ REPLY @213 GOTO ANstashEdwinHurp8  
+IF ~~ THEN DO ~GiveItem("ANgross1",Player1)~ REPLY @64 GOTO ANstashEdwinHurp8
 END
 
 IF ~~ BEGIN ANstashEdwinHurp8
   SAY @65
-IF ~~ THEN DO ~GiveItem("ANgross1",Player1)~ EXTERN PLAYER1 ANstashEdwinHurp8.1
+IF ~~ THEN REPLY @66 GOTO ANstashEdwinHurp9
+IF ~~ THEN REPLY @214 GOTO ANstashEdwinHurp9
 END
 
 IF ~~ BEGIN ANstashEdwinHurp9
   SAY @67
-IF ~~ THEN DO ~ActionOverride(Player1,SetDialog("PLAYER1"))~ EXTERN PLAYER1 ANstashEdwinHurp9.1
+IF ~~ THEN DO ~GiveItem("ANgross2",Player1)~ GOTO ANstashEdwinHurp10
+END
+
+IF ~~ BEGIN ANstashEdwinHurp9-1
+  SAY @67
+=@69  
+IF ~~ THEN DO ~GiveItem("ANgross2",Player1)~ REPLY @62 GOTO ANstashEdwinHurp7-1
+IF ~~ THEN DO ~GiveItem("ANgross2",Player1)~ REPLY @213 GOTO ANstashEdwinHurp8-1
+IF ~~ THEN DO ~GiveItem("ANgross2",Player1)~ REPLY @64 GOTO ANstashEdwinHurp8-1
+END
+
+IF ~~ BEGIN ANstashEdwinHurp7-1
+  SAY @63
+IF ~~ THEN REPLY @213 GOTO ANstashEdwinHurp8-1
+IF ~~ THEN REPLY @64 GOTO ANstashEdwinHurp8-1
+END
+
+IF ~~ BEGIN ANstashEdwinHurp8-1
+  SAY @65
+IF ~~ THEN DO ~GiveItem("ANgross1",Player1)~ REPLY @70 GOTO ANstashEdwinHurp11
 END
 
 IF ~~ BEGIN ANstashEdwinHurp10
   SAY @69
-IF ~~ THEN DO ~GiveItem("ANgross2",Player1)~ EXTERN PLAYER1 ANstashEdwinHurp10.1
+IF ~~ THEN REPLY @70 GOTO ANstashEdwinHurp11
 END
 
 IF ~~ BEGIN ANstashEdwinHurp11
   SAY @71
-IF ~~ THEN DO ~ActionOverride(Player1,SetDialog("PLAYER1"))~ EXTERN PLAYER1 ANstashEdwinHurp11.1
+IF ~~ THEN REPLY @72 GOTO ANstashEdwinHurp12
+IF ~~ THEN REPLY @215 GOTO ANstashEdwinHurp12
+IF ~~ THEN REPLY @216 GOTO ANstashEdwinHurp12
 END
 
 IF ~~ BEGIN ANstashEdwinHurp12
@@ -608,18 +622,21 @@ EXTERN ANHurp ANstashEdwinHurp2
 
 
 CHAIN
-IF ~Global("ANStashRenalJOB","GLOBAL",7) Global("ANStashEdwinGross","GLOBAL",1)~ THEN PLAYER1 ANStashEdwinGross1
+IF ~Global("ANStashRenalJOB","GLOBAL",7) Global("ANStashEdwinGross","GLOBAL",1)~ THEN EDWINJ ANStashEdwinGross1
 @92 DO ~SetGlobal("ANStashEdwinGross","GLOBAL",2) SetGlobal("ANStashRenalJOB","GLOBAL",9)~
-== EDWINJ @93
-== PLAYER1 @94
-== EDWINJ @95
+=@93
+END
+IF ~~ THEN REPLY @94 EXTERN EDWINJ ANStashEdwinGross1_1
+
+CHAIN EDWINJ ANStashEdwinGross1_1
+@95
 == JAHEIRAJ IF ~InParty("Jaheira") InMyArea("Jaheira") !Dead("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN @96
 == AERIEJ IF ~InParty("Aerie") InMyArea("Aerie") !Dead("Aerie") !StateCheck("Aerie",CD_STATE_NOTVALID)~ THEN @97
 == KORGANJ IF ~InParty("Korgan") InMyArea("Korgan") !Dead("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN @98
 == VALYGARJ IF ~InParty("Valygar") InMyArea("Valygar") !Dead("Valygar") !StateCheck("Valygar",CD_STATE_NOTVALID)~ THEN @99
 == VICONIJ IF ~InParty("Viconia") InMyArea("Viconia") !Dead("Viconia") !StateCheck("Viconia",CD_STATE_NOTVALID)~ THEN @100
-== PLAYER1 @101
-EXIT
+END
+IF ~~ THEN REPLY @101 EXIT
 
 
 APPEND ANclerk1
@@ -635,7 +652,7 @@ SAY @106
 IF ~~ THEN + ANstashBank1
 END
 
-
+// First, the summer month (Flamerule, number 7), then the autumn (Nightal, number 12), then the winter (Uktar, number 11). Answer: 71211
 IF ~~ BEGIN ANstashBank1
 SAY @107
 = @108
@@ -788,20 +805,37 @@ IF ~~ THEN REPLY @144 EXTERN EDWINJ ANStashEdwinFinalTalk2
 CHAIN
 IF ~Global("ANStashRenalJOB","GLOBAL",12) Global("ANStashEdwinGraveTalk","AR0800",1)~ THEN PLAYER1 ANStashGraveTalk
 @148 DO ~SetGlobal("ANStashEdwinGraveTalk","AR0800",2) SetGlobal("ANStashRenalJOB","GLOBAL",13)~
-= @149
-== EDWINJ @150
-== PLAYER1 @151
-== EDWINJ @152
-== PLAYER1 @153
+END
+IF ~~ THEN REPLY @149 EXTERN EDWINJ ANStashGraveTalk_1
+
+CHAIN EDWINJ ANStashGraveTalk_1
+@150
+END
+IF ~~ THEN REPLY @151 EXTERN EDWINJ ANStashGraveTalk_2
+
+CHAIN EDWINJ ANStashGraveTalk_2
+@152
 == ANOMENJ IF ~InParty("Anomen") InMyArea("Anomen") !Dead("Anomen") !StateCheck("Anomen",CD_STATE_NOTVALID)~ THEN @154
 == EDWINJ IF ~InParty("Minsc") InMyArea("Minsc") !Dead("Minsc") !StateCheck("Minsc",CD_STATE_NOTVALID)~ THEN @155
 == MINSCJ IF ~InParty("Minsc") InMyArea("Minsc") !Dead("Minsc") !StateCheck("Minsc",CD_STATE_NOTVALID)~ THEN @156
 == JAHEIRAJ IF ~InParty("Jaheira") InMyArea("Jaheira") !Dead("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN @157
-== IF_FILE_EXISTS WILSONJ IF ~InParty("Wilson") InMyArea("Wilson") !Dead("Wilson") !StateCheck("Wilson",CD_STATE_NOTVALID)~ THEN @158
-== PLAYER1 IF ~InParty("Wilson") InMyArea("Wilson") !Dead("Wilson") !StateCheck("Wilson",CD_STATE_NOTVALID)~ @164
-== EDWINJ @159
-== PLAYER1 @160
-== EDWINJ @161
-== PLAYER1 @162
-= @163 DO ~AddJournalEntry(@1006,QUEST)~
-EXIT
+END
+IF ~OR(2) !InParty("Wilson") StateCheck("Wilson",CD_STATE_NOTVALID)~ THEN EXTERN EDWINJ ANStashGraveTalk_3
+IF ~InParty("Wilson") !StateCheck("Wilson",CD_STATE_NOTVALID)~ THEN REPLY @164 EXTERN IF_FILE_EXISTS WILSONJ ANStashGraveTalk_2WIlson
+
+APPEND IF_FILE_EXISTS WILSONJ
+IF ~~ BEGIN ANStashGraveTalk_2WIlson
+  SAY @158 
+IF ~~ THEN EXTERN EDWINJ ANStashGraveTalk_3
+END
+END
+
+CHAIN EDWINJ ANStashGraveTalk_3
+@159
+END
+IF ~~ THEN DO ~AddJournalEntry(@1006,QUEST)~ REPLY @160 EXTERN EDWINJ ANStashGraveTalk_4
+
+CHAIN EDWINJ ANStashGraveTalk_4
+@161
+END
+IF ~~ THEN REPLY @162 EXIT

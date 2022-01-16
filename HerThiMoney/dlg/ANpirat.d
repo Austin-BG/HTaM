@@ -3,16 +3,28 @@ BEGIN ANsailor
 CHAIN
 IF ~Global("ANpiratQuest","GLOBAL",1)~ THEN ANsailor ANsailorTalk
 @0 DO ~ActionOverride(Player1,SetDialog("PLAYER1")) SetGlobal("ANpiratQuest","GLOBAL",2)~
-== PLAYER1 @2
-== ANsailor @3
+END
+IF ~~ THEN REPLY @2 EXTERN ANsailor ANsailorTalk_1
+
+CHAIN ANsailor ANsailorTalk_1
+@3
 = @4
-== PLAYER1 @5
-== ANsailor @6
-== PLAYER1 @7
-== ANsailor @8
+END
+IF ~~ THEN REPLY @5 EXTERN ANsailor ANsailorTalk_2
+
+CHAIN ANsailor ANsailorTalk_2
+@6
+END
+IF ~~ THEN REPLY @7 EXTERN ANsailor ANsailorTalk_3
+
+CHAIN ANsailor ANsailorTalk_3
+@8
 = @9
-== PLAYER1 @10
-== ANsailor @11
+END
+IF ~~ THEN REPLY @10 EXTERN ANsailor ANsailorTalk_4
+
+CHAIN ANsailor ANsailorTalk_4
+@11
 = @12 DO ~EscapeArea() AddJournalEntry(@1066,QUEST)~
 EXIT
 
@@ -141,8 +153,11 @@ END
 CHAIN
 IF ~Global("ANpiratQuest","GLOBAL",2)~ THEN ANlorna ANLornaTalk
 @13 DO ~ActionOverride(Player1,SetDialog("PLAYER1")) SetGlobal("ANpiratQuest","GLOBAL",3)~
-== PLAYER1 @14
-== ANlorna @15
+END
+IF ~~ THEN REPLY @14 EXTERN ANlorna ANLornaTalk_1
+
+CHAIN ANlorna ANLornaTalk_1
+@15
 == HAERDAJ IF ~InParty("HaerDalis") InMyArea("HaerDalis") !StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN @210
 == NALIAJ IF ~InParty("Nalia") InMyArea("Nalia") !StateCheck("Nalia",CD_STATE_NOTVALID) OR(2) !InParty("HaerDalis") StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN @210
 == VALYGARJ IF ~InParty("Valygar") InMyArea("Valygar")  !StateCheck("Valygar",CD_STATE_NOTVALID) OR(2) !InParty("Nalia") StateCheck("Nalia",CD_STATE_NOTVALID) OR(2) !InParty("HaerDalis") StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN @210
@@ -150,20 +165,32 @@ IF ~Global("ANpiratQuest","GLOBAL",2)~ THEN ANlorna ANLornaTalk
 == ANlorna IF ~InParty("Anomen") InMyArea("Anomen") !StateCheck("Anomen",CD_STATE_NOTVALID) !Alignment("Anomen",CHAOTIC_NEUTRAL)~ THEN @212
 == ANOMENJ IF ~InParty("Anomen") InMyArea("Anomen") !StateCheck("Anomen",CD_STATE_NOTVALID) !Alignment("Anomen",CHAOTIC_NEUTRAL)~ THEN @213
 == ANlorna IF ~InParty("Anomen") InMyArea("Anomen") !StateCheck("Anomen",CD_STATE_NOTVALID) !Alignment("Anomen",CHAOTIC_NEUTRAL)~ THEN @214
-== PLAYER1 @16
-== ANlorna @17
-== PLAYER1 @18
-== ANlorna @19
-== PLAYER1 @20
-== ANlorna @21
+END
+IF ~~ THEN REPLY @16 EXTERN ANlorna ANLornaTalk_2
+
+CHAIN ANlorna ANLornaTalk_2
+@17
+END
+IF ~~ THEN REPLY @18 EXTERN ANlorna ANLornaTalk_3
+
+CHAIN ANlorna ANLornaTalk_3
+@19
+END
+IF ~~ THEN REPLY @20 EXTERN ANlorna ANLornaTalk_4
+
+CHAIN ANlorna ANLornaTalk_4
+@21
 == KORGANJ IF ~InParty("Korgan") InMyArea("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN @215
 == IF_FILE_EXISTS O#TiaxJ IF ~InParty("O#Tiax") InMyArea("O#Tiax") !StateCheck("O#Tiax",CD_STATE_NOTVALID)~ THEN @219
 == IF_FILE_EXISTS 7XTIAXJ IF ~InParty("7XTIAX") InMyArea("7XTIAX") !StateCheck("7XTIAX",CD_STATE_NOTVALID)~ THEN @219
-== ANlorna IF ~InParty("O#Tiax") InMyArea("O#Tiax") !StateCheck("O#Tiax",CD_STATE_NOTVALID)~ THEN @220
-== ANlorna IF ~InParty("7XTIAX") InMyArea("7XTIAX") !StateCheck("7XTIAX",CD_STATE_NOTVALID)~ THEN @220
-== PLAYER1 IF ~InParty("O#Tiax") InMyArea("O#Tiax") !StateCheck("O#Tiax",CD_STATE_NOTVALID)~ THEN @221
-== PLAYER1 IF ~InParty("7XTIAX") InMyArea("7XTIAX") !StateCheck("7XTIAX",CD_STATE_NOTVALID)~ THEN @221
-== ANlorna @22
+== ANlorna IF ~OR(2) InParty("O#Tiax") InParty("7XTIAX") OR(2) InMyArea("O#Tiax") InMyArea("7XTIAX") OR(2) !StateCheck("O#Tiax",CD_STATE_NOTVALID) !StateCheck("7XTIAX",CD_STATE_NOTVALID)~ THEN @220
+END
+IF ~OR(3) !InParty("O#Tiax") !InMyArea("O#Tiax") StateCheck("O#Tiax",CD_STATE_NOTVALID) OR(3) !InParty("7XTIAX") !InMyArea("7XTIAX") StateCheck("7XTIAX",CD_STATE_NOTVALID)~ THEN EXTERN ANlorna ANLornaTalk_5
+IF ~OR(2) InParty("O#Tiax") InParty("7XTIAX") OR(2) InMyArea("O#Tiax") InMyArea("7XTIAX") OR(2) !StateCheck("O#Tiax",CD_STATE_NOTVALID) !StateCheck("7XTIAX",CD_STATE_NOTVALID)~ THEN REPLY @221 EXTERN ANlorna ANLornaTalk_5
+
+
+CHAIN ANlorna ANLornaTalk_5
+@22
 END
 IF ~~ THEN REPLY @23 EXTERN ANlorna ANLornaTalk1
 IF ~~ THEN REPLY @24 EXTERN ANlorna ANLornaTalkEnd
@@ -171,16 +198,25 @@ IF ~~ THEN REPLY @24 EXTERN ANlorna ANLornaTalkEnd
 CHAIN
 IF ~Global("ANpiratQuest","GLOBAL",3)~ THEN ANlorna ANLornaTalk2
 @28 DO ~SetGlobal("ANpiratQuest","GLOBAL",4)~
-== PLAYER1 @29
-== ANlorna @30
-== PLAYER1 @31
-== ANlorna @32
-== PLAYER1 @33
+END
+IF ~~ THEN REPLY @29 EXTERN ANlorna ANLornaTalk2_1
+
+CHAIN ANlorna ANLornaTalk2_1
+@30
+END
+IF ~~ THEN REPLY @31 EXTERN ANlorna ANLornaTalk2_2
+
+CHAIN ANlorna ANLornaTalk2_2
+@32
+=@33
 == ANOMENJ IF ~InParty("Anomen") InMyArea("Anomen") !StateCheck("Anomen",CD_STATE_NOTVALID)~ THEN @216
 == KORGANJ IF ~InParty("Korgan") InMyArea("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN @217
 == EDWINJ IF ~InParty("Edwin") InMyArea("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN @218
-== PLAYER1 @34
-== ANlorna @35
+END
+IF ~~ THEN REPLY @34 EXTERN ANlorna ANLornaTalk2_3
+
+CHAIN ANlorna ANLornaTalk2_3
+@35
 END
 IF ~PartyGoldGT(99)~ THEN REPLY @36 DO ~TakePartyGold(100)~ EXTERN ANlorna ANLornaTalk3
 IF ~~ THEN REPLY @37 EXTERN ANlorna ANLornaTalk4
@@ -191,14 +227,23 @@ BEGIN ANscelet
 CHAIN
 IF ~Global("ANpiratQuest","GLOBAL",6)~ THEN ANscelet ANsceletTalk1
 @49 DO ~SetGlobal("ANpiratQuest","GLOBAL",7)~
-== PLAYER1 @50
-== ANscelet @51
-== PLAYER1 @52
-== ANscelet @53
-== PLAYER1 @54
-== ANscelet @55 DO ~ChangeEnemyAlly(Myself,ENEMY) Enemy()~
-== PLAYER1 @56
-EXIT
+END
+IF ~~ THEN REPLY @50 EXTERN ANscelet ANsceletTalk1_1
+
+CHAIN ANscelet ANsceletTalk1_1 
+@51
+END
+IF ~~ THEN REPLY @52 EXTERN ANscelet ANsceletTalk1_2
+
+CHAIN ANscelet ANsceletTalk1_2
+@53
+END
+IF ~~ THEN REPLY @54 EXTERN ANscelet ANsceletTalk1_3
+
+CHAIN ANscelet ANsceletTalk1_3
+@55 DO ~ChangeEnemyAlly(Myself,ENEMY) Enemy()~
+END
+IF ~~ THEN REPLY @56 EXIT
 
 BEGIN ANdragon
 
@@ -295,19 +340,39 @@ IF ~Global("ANOdrikTalk","AN1616",1)~ THEN ANdragon ANdragonTalk1
 == KELDORJ IF ~InParty("Keldorn") InMyArea("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID)~ THEN @200
 == ANOMENJ IF ~InParty("Anomen") InMyArea("Anomen") !StateCheck("Anomen",CD_STATE_NOTVALID)~ THEN @204
 == NALIAJ IF ~InParty("Nalia") InMyArea("Nalia") !StateCheck("Nalia",CD_STATE_NOTVALID) OR(2) !InParty("Anomen") StateCheck("Anomen",CD_STATE_NOTVALID)~ THEN @204
-== PLAYER1 @76
-== ANdragon @77
-== PLAYER1 @78
-== ANdragon @79
-== PLAYER1 @80
-== ANdragon @81 
-== PLAYER1 @82
+END
+IF ~~ THEN REPLY @76 EXTERN ANdragon ANdragonTalk1_1
+
+CHAIN ANdragon ANdragonTalk1_1
+@77
 == EDWINJ IF ~InParty("Edwin") InMyArea("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN @198
 == ANdragon IF ~InParty("Edwin") InMyArea("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN @199
-== PLAYER1 @83
-== ANdragon @84
-== PLAYER1 @85
-== ANdragon @86
+END
+IF ~~ THEN REPLY @78 EXTERN ANdragon ANdragonTalk1_2
+
+CHAIN ANdragon ANdragonTalk1_2
+@79
+END
+IF ~~ THEN REPLY @80 EXTERN ANdragon ANdragonTalk1_3
+
+CHAIN ANdragon ANdragonTalk1_3
+@81
+END
+IF ~~ THEN REPLY @82 EXTERN ANdragon ANdragonTalk1_4
+IF ~~ THEN REPLY @83 EXTERN ANdragon ANdragonTalk1_5
+
+CHAIN ANdragon ANdragonTalk1_4
+@222
+END
+IF ~~ THEN REPLY @83 EXTERN ANdragon ANdragonTalk1_5
+
+CHAIN ANdragon ANdragonTalk1_5
+@84
+END
+IF ~~ THEN REPLY @85 EXTERN ANdragon ANdragonTalk1_6
+
+CHAIN ANdragon ANdragonTalk1_6
+@86
 EXIT
 
 
@@ -406,19 +471,39 @@ IF ~Global("ANOdrikTalk1","AN1616",1)~ THEN ANvivern ANvivernTalk1
 == KELDORJ IF ~InParty("Keldorn") InMyArea("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID)~ THEN @206
 == ANOMENJ IF ~InParty("Anomen") InMyArea("Anomen") !StateCheck("Anomen",CD_STATE_NOTVALID)~ THEN @204
 == NALIAJ IF ~InParty("Nalia") InMyArea("Nalia") !StateCheck("Nalia",CD_STATE_NOTVALID) OR(2) !InParty("Anomen") StateCheck("Anomen",CD_STATE_NOTVALID)~ THEN @204
-== PLAYER1 @76
-== ANvivern @77
-== PLAYER1 @78
-== ANvivern @79
-== PLAYER1 @80
-== ANvivern @81 
-== PLAYER1 @82
+END
+IF ~~ THEN REPLY @76 EXTERN ANvivern ANvivernTalk1_1
+
+CHAIN ANvivern ANvivernTalk1_1
+@77
 == EDWINJ IF ~InParty("Edwin") InMyArea("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN @205
 == ANvivern IF ~InParty("Edwin") InMyArea("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN @199
-== PLAYER1 @83
-== ANvivern @84
-== PLAYER1 @85
-== ANvivern @86
+END
+IF ~~ THEN REPLY @78 EXTERN ANvivern ANvivernTalk1_2
+
+CHAIN ANvivern ANvivernTalk1_2
+@79
+END
+IF ~~ THEN REPLY @80 EXTERN ANvivern ANvivernTalk1_3
+
+CHAIN ANvivern ANvivernTalk1_3
+@81 
+END
+IF ~~ THEN REPLY @82 EXTERN ANvivern ANvivernTalk1_4
+IF ~~ THEN REPLY @83 EXTERN ANvivern ANvivernTalk1_5
+
+CHAIN ANvivern ANvivernTalk1_4
+@223 
+END
+IF ~~ THEN REPLY @83 EXTERN ANvivern ANvivernTalk1_5
+
+CHAIN ANvivern ANvivernTalk1_5
+@84
+END
+IF ~~ THEN REPLY @85 EXTERN ANvivern ANvivernTalk1_6
+
+CHAIN ANvivern ANvivernTalk1_6
+@86
 EXIT
 
 APPEND PLAYER1
@@ -575,14 +660,30 @@ END
 CHAIN
 IF WEIGHT #-10 ~AreaCheck("AN0720") OR(2) Global("ANpiratQuest","GLOBAL",7) Global("ANpiratQuest","GLOBAL",8)~ THEN ANOwni ANOwniPiratQuestFinal
 @116 DO ~ActionOverride(Player1,SetDialog("PLAYER1")) SetGlobal("ANpiratQuest","GLOBAL",9)~
-== PLAYER1 @117
-== ANOwni @118
-== PLAYER1 @119
-== ANOwni @120
-== PLAYER1 @121
-== ANOwni @122 
-== PLAYER1 @123
-== ANOwni @124
+END
+IF ~~ THEN REPLY @117 EXTERN ANOwni ANOwniPiratQuestFinal_1
+IF ~~ THEN REPLY @225 EXTERN ANOwni ANOwniPiratQuestFinal_1
+
+
+CHAIN ANOwni ANOwniPiratQuestFinal_1
+@118
+END
+IF ~~ THEN REPLY @119 EXTERN ANOwni ANOwniPiratQuestFinal_2
+IF ~~ THEN REPLY @226 EXTERN ANOwni ANOwniPiratQuestFinal_2
+
+CHAIN ANOwni ANOwniPiratQuestFinal_2
+@120
+END
+IF ~~ THEN REPLY @121 EXTERN ANOwni ANOwniPiratQuestFinal_3
+IF ~~ THEN REPLY @224 EXTERN ANOwni ANOwniPiratQuestFinal_3
+
+CHAIN ANOwni ANOwniPiratQuestFinal_3
+@122
+END
+IF ~~ THEN REPLY @123 EXTERN ANOwni ANOwniPiratQuestFinal_4
+
+CHAIN ANOwni ANOwniPiratQuestFinal_4
+@124
 EXIT
 
 BEGIN ANsahua1
@@ -652,8 +753,11 @@ EXIT
 CHAIN
 IF ~Global("ANsahuagin","AN1620",3)~ THEN ANsahua1 ANsahuaginTalk1
 @155 DO ~SetGlobal("ANsahuagin","AN1620",4)~
-== PLAYER1 @156
-== ANsahua1 @157
+END
+IF ~~ THEN REPLY @156 EXTERN ANsahua1 ANsahuaginTalk1-1
+
+CHAIN ANsahua1 ANsahuaginTalk1-1
+@157
 == ANsahua2 @158
 END
 IF ~~ THEN REPLY @159 EXTERN ANsahua1 ANsahuaginTalk1_1
@@ -671,14 +775,16 @@ EXIT
 CHAIN
 IF ~Global("ANsahuagin","AN1620",6)~ THEN ANsahua1 ANsahuaginTalkFinal
 @182 DO ~SetGlobal("ANsahuagin","AN1620",7)~
-== PLAYER1 @183
-== ANsahua1 @184
+END
+IF ~~ THEN REPLY @183 EXTERN ANsahua1 ANsahuaginTalkFinal_1
+
+CHAIN ANsahua1 ANsahuaginTalkFinal_1
+@184
 == ANsahua2 @185
 == IF_FILE_EXISTS O#TiaxJ IF ~InParty("O#Tiax") InMyArea("O#Tiax") !StateCheck("O#Tiax",CD_STATE_NOTVALID)~ THEN @191
 == IF_FILE_EXISTS 7XTIAXJ IF ~InParty("7XTIAX") InMyArea("7XTIAX") !StateCheck("7XTIAX",CD_STATE_NOTVALID)~ THEN @191
 == ANsahua2 IF ~InParty("O#Tiax") InMyArea("O#Tiax") !StateCheck("O#Tiax",CD_STATE_NOTVALID)~ THEN @192
 == ANsahua2 IF ~InParty("7XTIAX") InMyArea("7XTIAX") !StateCheck("7XTIAX",CD_STATE_NOTVALID)~ THEN @192
-== PLAYER1 @186
 == KORGANJ IF ~InParty("Korgan") InMyArea("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN @187
 == JAHEIRAJ IF ~InParty("Jaheira") InMyArea("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID) InParty("Korgan") InMyArea("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN @189
 == NALIAJ IF ~InParty("Nalia") InMyArea("Nalia") !StateCheck("Nalia",CD_STATE_NOTVALID) InParty("Korgan") InMyArea("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID) OR(2) !InParty("Jaheira") StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN @189
@@ -688,8 +794,9 @@ IF ~Global("ANsahuagin","AN1620",6)~ THEN ANsahua1 ANsahuaginTalkFinal
 == IF_FILE_EXISTS NEERAJ IF ~InParty("Neera") InMyArea("Neera") !StateCheck("Neera",CD_STATE_NOTVALID)~ THEN @194
 == ANOMENJ IF ~InParty("Anomen") InMyArea("Anomen") !StateCheck("Anomen",CD_STATE_NOTVALID)~ THEN @195
 == KELDORJ IF ~InParty("Keldorn") InMyArea("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID) OR(2) !InParty("Anomen") StateCheck("Anomen",CD_STATE_NOTVALID)~ THEN @195
-== PLAYER1 @193 DO ~ActionOverride("ANsahua1",EscapeArea()) ActionOverride("ANsahua2",EscapeArea()) AddexperienceParty(5000)~
-EXIT
+END
+IF ~~ THEN REPLY @186 DO ~ActionOverride("ANsahua1",EscapeArea()) ActionOverride("ANsahua2",EscapeArea()) AddexperienceParty(5000)~ EXIT
+
 
 APPEND JAHEIRAJ 
 

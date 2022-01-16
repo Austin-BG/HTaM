@@ -83,13 +83,22 @@ IF ~~ THEN JAHEIRAJ ANyantJaheiraBank
 == JAHEIRAJ @3
 == ANyant @4 
 == JAHEIRAJ @5
-== PLAYER1 @6
 == KORGANJ IF ~InParty("Korgan") InMyArea("Korgan") !Dead("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN @12
-== JAHEIRAJ @7
-== PLAYER1 @8
-== JAHEIRAJ @9
-== PLAYER1 @10
-== JAHEIRAJ @11
+END
+IF ~~ THEN REPLY @6 EXTERN JAHEIRAJ ANyantJaheiraBank_1
+
+CHAIN JAHEIRAJ ANyantJaheiraBank_1 
+@7
+END
+IF ~~ THEN REPLY @8 EXTERN JAHEIRAJ ANyantJaheiraBank_2
+
+CHAIN JAHEIRAJ ANyantJaheiraBank_2
+@9
+END
+IF ~~ THEN REPLY @10 EXTERN JAHEIRAJ ANyantJaheiraBank_3
+
+CHAIN JAHEIRAJ ANyantJaheiraBank_3
+@11
 EXIT
 
 // Esra
@@ -100,7 +109,7 @@ IF ~AreaCheck("AN0720") Global("AnOwniBankTalk","GLOBAL",0) Global("AnEsraFirstB
 IF ~~ THEN DO ~SetGlobal("AnEsraFirstBankTalk","LOCALS",1)~ EXIT
 END
 
-IF ~!Global("AnOwniBankTalk","GLOBAL",4) !Global("AnOwniBankTalk","GLOBAL",8) Global("AnEsraFirstBankTalk","LOCALS",1) !Global("AnOwniBankTalkThink","GLOBAL",2) !Global("AnOwniBankTalk","GLOBAL",3) !Global("AnOwniBankTalk","GLOBAL",9)~ THEN BEGIN ANesraBankTalkThink
+IF ~!Global("AnOwniBankTalk","GLOBAL",4) !Dead("ANowni") !Global("AnOwniBankTalk","GLOBAL",8) Global("AnEsraFirstBankTalk","LOCALS",1) !Global("AnOwniBankTalkThink","GLOBAL",2) !Global("AnOwniBankTalk","GLOBAL",3) !Global("AnOwniBankTalk","GLOBAL",9)~ THEN BEGIN ANesraBankTalkThink
   SAY @168
 IF ~~ THEN EXIT
 END
@@ -169,17 +178,17 @@ END
 
 IF ~Global("AnOwniBankTalkPay","GLOBAL",1000) Global("AnOwniDeadBank","GLOBAL",1) OR(2) Global("ANdruidDead","GLOBAL",1) Global("ANdruidDead","GLOBAL",2)~ THEN BEGIN ANesraBankTalk1000
   SAY @147
-IF ~~ THEN DO ~SetGlobal("ANdruidDead","GLOBAL",3) GiveGoldForce(1000) AddexperienceParty(2000) AddJournalEntry(@1027,QUEST_DONE)~ EXIT
+IF ~~ THEN DO ~SetGlobal("ANdruidDead","GLOBAL",3) GiveGoldForce(1000) AddexperienceParty(2000) AddJournalEntry(@1027,QUEST_DONE) EscapeArea()~ EXIT
 END
 
 IF ~Global("AnOwniBankTalkPay","GLOBAL",1200) Global("AnOwniDeadBank","GLOBAL",1) OR(2) Global("ANdruidDead","GLOBAL",1) Global("ANdruidDead","GLOBAL",2)~ THEN BEGIN ANesraBankTalk1200
   SAY @147
-IF ~~ THEN DO ~SetGlobal("ANdruidDead","GLOBAL",3) GiveGoldForce(1200) AddexperienceParty(2000) AddJournalEntry(@1027,QUEST_DONE)~ EXIT
+IF ~~ THEN DO ~SetGlobal("ANdruidDead","GLOBAL",3) GiveGoldForce(1200) AddexperienceParty(2000) AddJournalEntry(@1027,QUEST_DONE) EscapeArea()~ EXIT
 END
 
 IF ~Global("AnOwniBankTalkPay","GLOBAL",1500) Global("AnOwniDeadBank","GLOBAL",1) OR(2) Global("ANdruidDead","GLOBAL",1) Global("ANdruidDead","GLOBAL",2)~ THEN BEGIN ANesraBankTalk1500
   SAY @147
-IF ~~ THEN DO ~SetGlobal("ANdruidDead","GLOBAL",3) GiveGoldForce(1500) AddexperienceParty(2000) AddJournalEntry(@1027,QUEST_DONE)~ EXIT
+IF ~~ THEN DO ~SetGlobal("ANdruidDead","GLOBAL",3) GiveGoldForce(1500) AddexperienceParty(2000) AddJournalEntry(@1027,QUEST_DONE) EscapeArea()~ EXIT
 END
 
 IF ~Global("AnOwniBankTalkPay","GLOBAL",1000) Global("ANallGroupDead","GLOBAL",1) OR(2) Global("ANdruidDead","GLOBAL",1) Global("ANdruidDead","GLOBAL",2)~ THEN BEGIN ANesraBank1Talk1000
@@ -382,6 +391,7 @@ END
 IF ~~ THEN BEGIN ANOwniBankTalk1.1
   SAY @27
 IF ~~ THEN REPLY @28 + ANOwniBankTalk1.2
+IF ~~ THEN REPLY @262 + ANOwniBankTalk1.2
 END
 
 IF ~~ THEN BEGIN ANOwniBankTalk1.2
@@ -402,8 +412,10 @@ END
 
 IF ~~ THEN BEGIN ANOwniBankTalk1.5
   SAY @34
-IF ~~ THEN DO ~SetGlobal("AnOwniBankTalkDruids","LOCALS",1) SetGlobal("AnOwniBankTalkAboutDruids","LOCALS",1) ActionOverride(Player1,SetDialog("PLAYER1"))~ REPLY @35 + ANOwniBankTalk1.6
+IF ~~ THEN DO ~SetGlobal("AnOwniBankTalkAboutDruids","AN0720",1)~ REPLY @35 + ANOwniBankTalk1.6
+IF ~~ THEN DO ~SetGlobal("AnOwniBankTalkAboutDruids","AN0720",1)~ REPLY @263 + ANOwniBankTalk1.6
 IF ~~ THEN REPLY @36 + ANOwniBankTalk1.7
+IF ~~ THEN REPLY @264 + ANOwniBankTalk1.7
 END
 
 IF ~~ THEN BEGIN ANOwniBankTalk1.8
@@ -447,28 +459,23 @@ END
 
 IF ~~ THEN BEGIN ANOwniBankTalkThink1
   SAY @81
-IF ~~ THEN DO ~SetGlobal("AnOwniBankTalkThink","GLOBAL",1) AddJournalEntry(@1030,QUEST) SetGlobalTimer("AnOwniBankThinkTimer","GLOBAL",TEN_HOURS)~ EXIT
+IF ~~ THEN DO ~SetGlobal("AnOwniBankTalkThink","GLOBAL",1) AddJournalEntry(@1030,QUEST) SetGlobalTimer("AnOwniBankBattleTimer","GLOBAL",TWENTY_HOURS)~ EXIT
 END
 
-IF ~Global("AnOwniBankTalkThink","GLOBAL",1) !Global("AnOwniBankTalk","GLOBAL",3) !Global("AnOwniBankTalk","GLOBAL",4) !GlobalTimerExpired("AnOwniBankThinkTimer","GLOBAL")~ THEN BEGIN ANOwniBankTalkThink2
+IF ~Global("AnOwniBankTalkThink","GLOBAL",1) !Global("AnOwniBankTalk","GLOBAL",3) !Global("AnOwniBankTalk","GLOBAL",4) !GlobalTimerExpired("AnOwniBankBattleTimer","GLOBAL")~ THEN BEGIN ANOwniBankTalkThink2
   SAY @82
-IF ~~ THEN REPLY @70 + ANOwniBankTalk1.8
-IF ~~ THEN REPLY @71 + ANOwniBankTalk1.9
+IF ~~ THEN DO ~SetGlobal("AnOwniBankTalkThink","GLOBAL",2) SetGlobal("AnOwniBankTalkPay","GLOBAL",1000) AddJournalEntry(@1031,QUEST)~ REPLY @268 + ANOwniBankTalk1.8.1  
+IF ~~ THEN DO ~SetGlobal("AnOwniBankTalkThink","GLOBAL",2)~ REPLY @70 + ANOwniBankTalk1.8
+IF ~~ THEN DO ~SetGlobal("AnOwniBankTalkThink","GLOBAL",2)~ REPLY @269 + ANOwniBankTalk1.9
 END
-
-IF ~Global("AnOwniBankTalkThink","GLOBAL",1) GlobalTimerExpired("AnOwniBankThinkTimer","GLOBAL")~ THEN BEGIN ANOwniBankTalkThink3
-  SAY @83
-IF ~~ THEN DO ~SetGlobal("AnOwniBankTalkThink","GLOBAL",2) AddJournalEntry(@1033,QUEST_DONE)~ EXIT
-END
-
 
 IF ~Global("AnOwniBankTalk","GLOBAL",4) GlobalTimerExpired("AnOwniBankBattleTimer","GLOBAL")~ THEN BEGIN ANOwniBankBattleSkip
   SAY @83
-IF ~~ THEN DO ~SetGlobal("AnOwniBankTalk","GLOBAL",9)~ EXIT
+IF ~~ THEN DO ~SetGlobal("AnOwniBankTalk","GLOBAL",9) AddJournalEntry(@1033,QUEST_DONE)~ EXIT
 END
 
 
-IF ~OR(3) Global("AnOwniBankTalkThink","GLOBAL",2) Global("AnOwniBankTalk","GLOBAL",3) Global("AnOwniBankTalk","GLOBAL",9)~ THEN BEGIN ANOwniBankTalkThink4
+IF ~!Global("AnOwniBankTalk","GLOBAL",8) OR(3) GlobalTimerExpired("AnOwniBankBattleTimer","GLOBAL") Global("AnOwniBankTalk","GLOBAL",3) Global("AnOwniBankTalk","GLOBAL",9)~ THEN BEGIN ANOwniBankTalkThink4
   SAY @84
 IF ~~ THEN EXIT
 END
@@ -476,7 +483,7 @@ END
 IF ~~ THEN BEGIN ANOwniBankTalkTactics1
   SAY @111
 =@114  
-IF ~~ THEN DO ~ChangeEnemyAlly("ANOwni",GOODBUTBLUE) ChangeEnemyAlly("ANjalut",GOODBUTBLUE) ChangeEnemyAlly("ANyant",GOODBUTBLUE) ChangeEnemyAlly("ANJock",GOODBUTBLUE) SetGlobal("AnOwniBankTalk","GLOBAL",6)~ EXIT
+IF ~~ THEN DO ~SetGlobal("AnOwniBankTalk","GLOBAL",6)~ EXIT
 END
 
 IF ~Global("AnOwniBankTalk","GLOBAL",2)~ THEN BEGIN ANOwniBankTalk2
@@ -570,42 +577,91 @@ END
 CHAIN 
 IF ~AreaCheck("AN0720") Global("AnOwniBankTalk","GLOBAL",1) Global("AnOwniBankTalkThink","GLOBAL",0)~ THEN ANOwni ANOwniBankTalk1.7
 @38 DO ~ActionOverride(Player1,SetDialog("PLAYER1"))~
-== PLAYER1 @39 
-== ANOwni @40
+END
+IF ~~ THEN REPLY @39 EXTERN ANOwni ANOwniBankTalk1.7_1
+IF ~~ THEN REPLY @265 EXTERN ANOwni ANOwniBankTalk1.7_1
+
+CHAIN ANOwni ANOwniBankTalk1.7_1
+@40
 =@41
 =@42
-== PLAYER1 @43
-== ANOwni @44
+END
+IF ~~ THEN REPLY @43 EXTERN ANOwni ANOwniBankTalk1.7_2
+
+CHAIN ANOwni ANOwniBankTalk1.7_2
+@44
 =@45
 == VICONIJ IF ~InParty("Viconia") InMyArea("Viconia") !StateCheck("Viconia",CD_STATE_NOTVALID)~ THEN @46
 == VALYGARJ IF ~InParty("Valygar") InMyArea("Valygar") !StateCheck("Valygar",CD_STATE_NOTVALID) OR(3) !InParty("Viconia") !InMyArea("Viconia") StateCheck("Viconia",CD_STATE_NOTVALID)~ THEN @46
 == KORGANJ IF ~InParty("Korgan") InMyArea("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID) OR(3) !InParty("Viconia") !InMyArea("Viconia") StateCheck("Viconia",CD_STATE_NOTVALID) OR(4) !InParty("Valygar") !InMyArea("Valygar") Dead("Valygar") StateCheck("Valygar",CD_STATE_NOTVALID)~ THEN @46
-== PLAYER1 IF ~OR(3) !InParty("Korgan") !InMyArea("Korgan") StateCheck("Korgan",CD_STATE_NOTVALID) OR(3) !InParty("Viconia") !InMyArea("Viconia") StateCheck("Viconia",CD_STATE_NOTVALID) OR(3) !InParty("Valygar") !InMyArea("Valygar") StateCheck("Valygar",CD_STATE_NOTVALID)~ THEN @46
-== ANOwni @47
-== EDWINJ IF ~IsValidForPartyDialog("Edwin")~ THEN @48
-== PLAYER1 IF ~!IsValidForPartyDialog("Edwin")~ THEN @48
-== ANOwni @49
-== PLAYER1 @50
-== ANOwni @51
+END
+IF ~OR(3) !InParty("Korgan") !InMyArea("Korgan") StateCheck("Korgan",CD_STATE_NOTVALID) OR(3) !InParty("Viconia") !InMyArea("Viconia") StateCheck("Viconia",CD_STATE_NOTVALID) OR(3) !InParty("Valygar") !InMyArea("Valygar") StateCheck("Valygar",CD_STATE_NOTVALID)~ THEN REPLY @46 EXTERN ANOwni ANOwniBankTalk1.7_3
+IF ~OR(3) InParty("Korgan") InParty("Viconia") InParty("Valygar") OR(3) !StateCheck("Korgan",CD_STATE_NOTVALID) !StateCheck("Viconia",CD_STATE_NOTVALID) !StateCheck("Valygar",CD_STATE_NOTVALID)~ THEN EXTERN ANOwni ANOwniBankTalk1.7_3
+
+APPEND EDWINJ
+IF ~~ THEN BEGIN ANOwniBankTalk1.7_3Edwin
+  SAY @48
+IF ~~ THEN EXTERN ANOwni ANOwniBankTalk1.7_4
+END 
+END
+
+
+CHAIN ANOwni ANOwniBankTalk1.7_3
+@47
+END
+IF ~OR(2) !InParty("Edwin") StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN REPLY @48 EXTERN ANOwni ANOwniBankTalk1.7_4 
+IF ~InParty("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN EXTERN EDWINJ ANOwniBankTalk1.7_3Edwin
+
+CHAIN ANOwni ANOwniBankTalk1.7_4
+@49
+END
+IF ~~ THEN REPLY @50 EXTERN ANOwni ANOwniBankTalk1.7_5
+
+CHAIN ANOwni ANOwniBankTalk1.7_5
+@51
 == MAZZYJ IF ~InParty("Mazzy") InMyArea("Mazzy") !StateCheck("Mazzy",CD_STATE_NOTVALID)~ THEN @52
 == VALYGARJ IF ~InParty("Valygar") InMyArea("Valygar") !StateCheck("Valygar",CD_STATE_NOTVALID) OR(3) !InParty("Mazzy") !InMyArea("Mazzy") StateCheck("Mazzy",CD_STATE_NOTVALID)~ THEN @52
 == NALIAJ IF ~InParty("Nalia") InMyArea("Nalia") !StateCheck("Nalia",CD_STATE_NOTVALID) OR(3) !InParty("Mazzy") !InMyArea("Mazzy") StateCheck("Mazzy",CD_STATE_NOTVALID) OR(3) !InParty("Valygar") !InMyArea("Valygar") StateCheck("Valygar",CD_STATE_NOTVALID)~ THEN @52
-== PLAYER1 IF ~OR(3) !InParty("Nalia") !InMyArea("Nalia") StateCheck("Nalia",CD_STATE_NOTVALID) OR(3) !InParty("Mazzy") !InMyArea("Mazzy") StateCheck("Mazzy",CD_STATE_NOTVALID) OR(3) !InParty("Valygar") !InMyArea("Valygar") StateCheck("Valygar",CD_STATE_NOTVALID)~ THEN @52
-== ANOwni @53
-== ANOMENJ IF ~IsValidForPartyDialog("Anomen")~ THEN @54
-== EDWINJ IF ~IsValidForPartyDialog("Edwin") !IsValidForPartyDialog("Anomen")~ THEN @54
-== PLAYER1 IF ~!IsValidForPartyDialog("Anomen") !IsValidForPartyDialog("Edwin")~ THEN @54
-== ANOwni @55
-== AERIEJ IF ~InParty("Aerie") InMyArea("Aerie") !Dead("Aerie") !StateCheck("Aerie",CD_STATE_NOTVALID)~ THEN @56
-== PLAYER1 IF ~OR(4) !InParty("Aerie") !InMyArea("Aerie") Dead("Aerie") StateCheck("Aerie",CD_STATE_NOTVALID)~ THEN @56
-== ANOwni @57
+END
+IF ~OR(3) !InParty("Nalia") !InMyArea("Nalia") StateCheck("Nalia",CD_STATE_NOTVALID) OR(3) !InParty("Mazzy") !InMyArea("Mazzy") StateCheck("Mazzy",CD_STATE_NOTVALID) OR(3) !InParty("Valygar") !InMyArea("Valygar") StateCheck("Valygar",CD_STATE_NOTVALID)~ THEN REPLY @52 EXTERN ANOwni ANOwniBankTalk1.7_6
+IF ~OR(3) InParty("Nalia") InParty("Mazzy") InParty("Valygar") OR(3) !StateCheck("Nalia",CD_STATE_NOTVALID) !StateCheck("Mazzy",CD_STATE_NOTVALID) !StateCheck("Valygar",CD_STATE_NOTVALID)~ THEN EXTERN ANOwni ANOwniBankTalk1.7_6
+
+CHAIN ANOwni ANOwniBankTalk1.7_6
+@53
+== ANOMENJ IF ~InParty("Anomen") !StateCheck("Anomen",CD_STATE_NOTVALID)~ THEN @54
+== EDWINJ IF ~InParty("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID) OR(2) !InParty("Anomen") StateCheck("Anomen",CD_STATE_NOTVALID)~ THEN @54
+END
+IF ~OR(2) !InParty("Anomen") StateCheck("Anomen",CD_STATE_NOTVALID) OR(2) !InParty("Edwin") StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN REPLY @54 EXTERN ANOwni ANOwniBankTalk1.7_7
+IF ~OR(2) InParty("Anomen") InParty("Edwin") OR(2) !StateCheck("Anomen",CD_STATE_NOTVALID) !StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN EXTERN ANOwni ANOwniBankTalk1.7_7
+
+CHAIN ANOwni ANOwniBankTalk1.7_7
+@55
+END
+IF ~~ THEN REPLY @56 EXTERN ANOwni ANOwniBankTalk1.7_8
+
+APPEND EDWINJ
+IF ~~ THEN BEGIN ANOwniBankTalk1.7_8Edwin
+  SAY @59
+IF ~~ THEN EXTERN ANOwni ANOwniBankTalk1.7_9
+END 
+END
+
+CHAIN ANOwni ANOwniBankTalk1.7_8
+@57
 = @58
-== EDWINJ IF ~InParty("Edwin") InMyArea("Edwin") !Dead("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN @59
-== PLAYER1 IF ~OR(4) !InParty("Edwin") !InMyArea("Edwin") Dead("Edwin") StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN @59
-== ANOwni @60
+END
+IF ~OR(2) !InParty("Edwin") StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN REPLY @59 EXTERN ANOwni ANOwniBankTalk1.7_9
+IF ~InParty("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN EXTERN EDWINJ ANOwniBankTalk1.7_8Edwin
+
+CHAIN ANOwni ANOwniBankTalk1.7_9
+@60
 = @61
-== PLAYER1 @62
-== ANOwni @63
+END
+IF ~~ THEN REPLY @62 EXTERN ANOwni ANOwniBankTalk1.7_10
+IF ~~ THEN REPLY @266 EXTERN ANOwni ANOwniBankTalk1.7_10
+
+CHAIN ANOwni ANOwniBankTalk1.7_10
+@63
 = @64
 = @65
 = @66
@@ -614,53 +670,110 @@ IF ~AreaCheck("AN0720") Global("AnOwniBankTalk","GLOBAL",1) Global("AnOwniBankTa
 = @69
 END
 IF ~~ THEN REPLY @70 + ANOwniBankTalk1.8
-IF ~~ THEN REPLY @71 + ANOwniBankTalk1.9
+IF ~~ THEN DO ~SetGlobal("AnOwniBankTalkPay","GLOBAL",1000) AddJournalEntry(@1031,QUEST)~ REPLY @268 + ANOwniBankTalk1.8.1
+IF ~~ THEN REPLY @71 + ANOwniBankTalk1.9What
+IF ~~ THEN REPLY @72 + ANOwniBankTalk1.10
+
+CHAIN ANOwni ANOwniBankTalk1.9What
+@270
+END
+IF ~~ THEN REPLY @70 + ANOwniBankTalk1.8
+IF ~~ THEN DO ~SetGlobal("AnOwniBankTalkPay","GLOBAL",1000) AddJournalEntry(@1031,QUEST)~ REPLY @268 + ANOwniBankTalk1.8.1
+IF ~~ THEN REPLY @269 + ANOwniBankTalk1.9
 IF ~~ THEN REPLY @72 + ANOwniBankTalk1.10
 
 
 CHAIN 
 IF ~AreaCheck("AN0720") Global("AnOwniBankTalk","GLOBAL",5) !GlobalTimerExpired("AnOwniBankBattleTimer","GLOBAL") OR(2) TimeOfDay(NIGHT) TimeOfDay(DUSK)~ THEN ANOwni ANOwniBankTalkTactics
-@113 DO ~ActionOverride(Player1,SetDialog("PLAYER1")) SetGlobal("AnOwniBankTalk","GLOBAL",6)~
+@113 DO ~SetGlobal("AnOwniBankTalk","GLOBAL",6)~
 =@89
-== PLAYER1 @90
-== ANOwni @91
+END
+IF ~~ THEN REPLY @90 EXTERN ANOwni ANOwniBankTalkTactics_1
+IF ~~ THEN REPLY @267 EXTERN ANOwni ANOwniBankTalkTactics_1
+
+CHAIN ANOwni ANOwniBankTalkTactics_1
+@91
 =@92
-== MAZZYJ IF ~InParty("Mazzy") InMyArea("Mazzy") !Dead("Mazzy") !StateCheck("Mazzy",CD_STATE_NOTVALID)~ THEN @93
-== VALYGARJ IF ~InParty("Valygar") InMyArea("Valygar") !Dead("Valygar") !StateCheck("Valygar",CD_STATE_NOTVALID) OR(4) !InParty("Mazzy") !InMyArea("Mazzy") Dead("Mazzy") StateCheck("Mazzy",CD_STATE_NOTVALID)~ THEN @93
-== NALIAJ IF ~InParty("Nalia") InMyArea("Nalia") !Dead("Nalia") !StateCheck("Nalia",CD_STATE_NOTVALID) OR(4) !InParty("Mazzy") !InMyArea("Mazzy") Dead("Mazzy") StateCheck("Mazzy",CD_STATE_NOTVALID) OR(4) !InParty("Valygar") !InMyArea("Valygar") Dead("Valygar") StateCheck("Valygar",CD_STATE_NOTVALID)~ THEN @93
-== PLAYER1 IF ~OR(4) !InParty("Nalia") !InMyArea("Nalia") Dead("Nalia") StateCheck("Nalia",CD_STATE_NOTVALID) OR(4) !InParty("Mazzy") !InMyArea("Mazzy") Dead("Mazzy") StateCheck("Mazzy",CD_STATE_NOTVALID) OR(4) !InParty("Valygar") !InMyArea("Valygar") Dead("Valygar") StateCheck("Valygar",CD_STATE_NOTVALID)~ THEN @93
-== ANOwni @94
-== PLAYER1 @95
-== JANJ IF ~IsValidForPartyDialog("Jan")~ THEN @225
-== PLAYER1 IF ~IsValidForPartyDialog("Jan")~ THEN @226
-== JANJ IF ~IsValidForPartyDialog("Jan")~ THEN @227
-== PLAYER1 IF ~IsValidForPartyDialog("Jan")~ THEN @228
-== ANOwni @96
-== PLAYER1 @97
-== ANOwni @98
+END
+IF ~~ THEN REPLY @93 EXTERN ANOwni ANOwniBankTalkTactics_2
+
+CHAIN ANOwni ANOwniBankTalkTactics_2
+@94
+== MINSCJ IF ~InParty("Minsc") !StateCheck("Minsc",CD_STATE_NOTVALID)~ THEN @95
+END
+IF ~OR(2) !InParty("Jan") StateCheck("Jan",CD_STATE_NOTVALID)~ THEN EXTERN ANOwni ANOwniBankTalkTactics_3
+IF ~InParty("Jan") !StateCheck("Jan",CD_STATE_NOTVALID)~ THEN EXTERN JANJ ANOwniBankTalkTactics_2Jan
+
+APPEND JANJ 
+IF ~~ THEN BEGIN ANOwniBankTalkTactics_2Jan
+  SAY @225
+IF ~~ THEN REPLY @226 GOTO ANOwniBankTalkTactics_2Jan1
+END 
+
+IF ~~ THEN BEGIN ANOwniBankTalkTactics_2Jan1
+  SAY @227
+IF ~~ THEN REPLY @228 EXTERN ANOwni ANOwniBankTalkTactics_3
+END 
+END
+
+CHAIN ANOwni ANOwniBankTalkTactics_3
+@96
+END
+IF ~~ THEN REPLY @97 EXTERN ANOwni ANOwniBankTalkTactics_4
+
+CHAIN ANOwni ANOwniBankTalkTactics_4
+@98
 =@99
-== PLAYER1 @100
-== ANOwni @101
+END
+IF ~~ THEN REPLY @100 EXTERN ANOwni ANOwniBankTalkTactics_5
+
+CHAIN ANOwni ANOwniBankTalkTactics_5
+@101
 == YOSHJ IF ~IsValidForPartyDialog("Yoshimo")~ THEN @218
 == ANOwni IF ~IsValidForPartyDialog("Yoshimo")~ THEN @219
 == KORGANJ IF ~IsValidForPartyDialog("Korgan") IsValidForPartyDialog("Yoshimo")~ THEN @224
 == KORGANJ IF ~IsValidForPartyDialog("Korgan") !IsValidForPartyDialog("Yoshimo")~ THEN @220
 == ANOwni IF ~IsValidForPartyDialog("Korgan")~ THEN @221
 == KORGANJ IF ~IsValidForPartyDialog("Korgan")~ THEN @222
-== PLAYER1 IF ~IsValidForPartyDialog("Korgan")~ THEN @223
-== PLAYER1 IF ~Global("AnOwniBankTalkDruids","LOCALS",0)~ THEN @102
-== ANOwni IF ~Global("AnOwniBankTalkDruids","LOCALS",0)~ THEN @103
-== JAHEIRAJ IF ~!Global("AnOwniBankTalkAboutDruids","LOCALS",2) IsValidForPartyDialog("Jaheira")~ THEN @212
-== ANOwni IF ~!Global("AnOwniBankTalkAboutDruids","LOCALS",2) IsValidForPartyDialog("Jaheira")~ THEN @213
-== JAHEIRAJ IF ~!Global("AnOwniBankTalkAboutDruids","LOCALS",2) IsValidForPartyDialog("Jaheira")~ THEN @214
-== CERNDJ IF ~!Global("AnOwniBankTalkAboutDruids","LOCALS",2) IsValidForPartyDialog("Cernd") !IsValidForPartyDialog("Jaheira")~ THEN @212
-== ANOwni IF ~!Global("AnOwniBankTalkAboutDruids","LOCALS",2) IsValidForPartyDialog("Cernd") !IsValidForPartyDialog("Jaheira")~ THEN @213
-== CERNDJ IF ~!Global("AnOwniBankTalkAboutDruids","LOCALS",2) IsValidForPartyDialog("Cernd") !IsValidForPartyDialog("Jaheira")~ THEN @214
-== PLAYER1 IF ~!Global("AnOwniBankTalkAboutDruids","LOCALS",2) !IsValidForPartyDialog("Cernd") !IsValidForPartyDialog("Jaheira") Class(Player1,DRUID_ALL)~ THEN @212
-== ANOwni IF ~!Global("AnOwniBankTalkAboutDruids","LOCALS",2) !IsValidForPartyDialog("Cernd") !IsValidForPartyDialog("Jaheira") Class(Player1,DRUID_ALL)~ THEN @213
-== PLAYER1 IF ~!Global("AnOwniBankTalkAboutDruids","LOCALS",2) !IsValidForPartyDialog("Cernd") !IsValidForPartyDialog("Jaheira") Class(Player1,DRUID_ALL)~ THEN @214
-== ANOwni IF ~!Global("AnOwniBankTalkAboutDruids","LOCALS",2) OR(3) IsValidForPartyDialog("Cernd") IsValidForPartyDialog("Jaheira") Class(Player1,DRUID_ALL)~ THEN @215
-== ANOwni @104
+END
+IF ~!IsValidForPartyDialog("Korgan") !Global("AnOwniBankTalkAboutDruids","AN0720",0)~ THEN EXTERN ANOwni ANOwniBankTalkTactics_7
+IF ~!IsValidForPartyDialog("Korgan") Global("AnOwniBankTalkAboutDruids","AN0720",0)~ THEN DO ~SetGlobal("AnOwniBankTalkAboutDruids","AN0720",1)~ REPLY @102 EXTERN ANOwni ANOwniBankTalkTactics_6
+IF ~IsValidForPartyDialog("Korgan")~ THEN REPLY @223 EXTERN KORGANJ ANOwniBankTalkTactics_5Korgan
+
+APPEND KORGANJ
+IF ~~ THEN BEGIN ANOwniBankTalkTactics_5Korgan
+  SAY @256
+IF ~!Global("AnOwniBankTalkAboutDruids","AN0720",0)~ THEN EXTERN ANOwni ANOwniBankTalkTactics_7 
+IF ~Global("AnOwniBankTalkAboutDruids","AN0720",0)~ THEN DO ~SetGlobal("AnOwniBankTalkAboutDruids","AN0720",1)~ REPLY @102 EXTERN ANOwni ANOwniBankTalkTactics_6
+END 
+END
+
+CHAIN ANOwni ANOwniBankTalkTactics_6
+@103
+== IF_FILE_EXISTS 7XFALDJ IF ~InParty("7XFALD") InMyArea("7XFALD") !StateCheck("7XFALD",CD_STATE_NOTVALID)~ THEN @255
+== JAHEIRAJ IF ~IsValidForPartyDialog("Jaheira")~ THEN @212
+== ANOwni IF ~IsValidForPartyDialog("Jaheira")~ THEN @213
+== JAHEIRAJ IF ~IsValidForPartyDialog("Jaheira")~ THEN @214
+== CERNDJ IF ~IsValidForPartyDialog("Cernd") !IsValidForPartyDialog("Jaheira")~ THEN @212
+== ANOwni IF ~IsValidForPartyDialog("Cernd") !IsValidForPartyDialog("Jaheira")~ THEN @213
+== CERNDJ IF ~IsValidForPartyDialog("Cernd") !IsValidForPartyDialog("Jaheira")~ THEN @214
+END
+IF ~!IsValidForPartyDialog("Cernd") !IsValidForPartyDialog("Jaheira") !Class(Player1,DRUID_ALL)~ THEN EXTERN ANOwni ANOwniBankTalkTactics_7
+IF ~!IsValidForPartyDialog("Cernd") !IsValidForPartyDialog("Jaheira") Class(Player1,DRUID_ALL)~ THEN REPLY @212 EXTERN ANOwni ANOwniBankTalkTactics_7_1
+IF ~OR(2) IsValidForPartyDialog("Cernd") IsValidForPartyDialog("Jaheira")~ THEN REPLY @212 EXTERN ANOwni ANOwniBankTalkTactics_7_1
+
+CHAIN ANOwni ANOwniBankTalkTactics_7_1
+@213
+END
+IF ~~ THEN REPLY @214 EXTERN ANOwni ANOwniBankTalkTactics_7_2
+
+CHAIN ANOwni ANOwniBankTalkTactics_7_2
+@215
+END
+IF ~~ THEN EXTERN ANOwni ANOwniBankTalkTactics_7
+
+CHAIN ANOwni ANOwniBankTalkTactics_7
+@104
 END
 IF ~~ THEN DO ~GiveItemCreate("BULL03",Player1,20,0,0)~ REPLY @105 + ANOwniBankTalkTactics1
 IF ~~ THEN DO ~GiveItemCreate("DART04",Player1,20,0,0)~ REPLY @106 + ANOwniBankTalkTactics1
@@ -672,10 +785,13 @@ IF ~~ THEN DO ~GiveItemCreate("SCRL62",Player1,1,0,0)~ REPLY @110 + ANOwniBankTa
 // Victory
 CHAIN 
 IF ~AreaCheck("AN0721") Global("ANdruidDead","GLOBAL",1) !Global("Player1OwniRevive","GLOBAL",2) !Global("Player1OwniRevive","GLOBAL",3)~ THEN ANOwni ANOwniBankTalkFinal
-@115 DO ~ActionOverride(Player1,SetDialog("PLAYER1")) SetGlobal("AnOwniBankTalk","GLOBAL",8) SetGlobal("ANdruidDead","GLOBAL",2)~
+@115 DO ~SetGlobal("AnOwniBankTalk","GLOBAL",8) SetGlobal("ANdruidDead","GLOBAL",2) 
+ChangeEnemyAlly("ANOwni",NEUTRAL) 
+ChangeEnemyAlly("ANjalut",NEUTRAL) 
+ChangeEnemyAlly("ANJock",NEUTRAL)
+ChangeEnemyAlly("ANyant",NEUTRAL)~
 == ANOwni IF ~OR(4) Dead("ANJock") Dead("ANyant") Dead("ANesra") Dead("ANjalut")~ THEN @118 DO ~SetGlobal("SPRITE_IS_DEADANesra","GLOBAL",0) SetGlobal("SPRITE_IS_DEADANyant","GLOBAL",0) SetGlobal("SPRITE_IS_DEADANjalut","GLOBAL",0) SetGlobal("SPRITE_IS_DEADANJock","GLOBAL",0)~
-== ANOwni @116 DO ~AddJournalEntry(@1034,QUEST) GiveGoldForce(600) EscapeArea()~
-== PLAYER1 @117 DO ~ActionOverride("ANjalut",EscapeArea()) ActionOverride("ANesra",EscapeArea()) ActionOverride("ANyant",EscapeArea()) ActionOverride("ANJock",EscapeArea()) RealSetGlobalTimer("ANbankdruidlootTimer","AN0721",20)~
+== ANOwni @116 DO ~AddJournalEntry(@1034,QUEST) GiveGoldForce(600) ActionOverride("ANjalut",EscapeArea()) ActionOverride("ANesra",EscapeArea()) ActionOverride("ANyant",EscapeArea()) ActionOverride("ANJock",EscapeArea()) RealSetGlobalTimer("ANbankdruidlootTimer","AN0721",20) EscapeArea()~
 == KORGANJ IF ~InParty("Korgan") InMyArea("Korgan") !Dead("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN @119
 == JAHEIRAJ IF ~InParty("Jaheira") InMyArea("Jaheira") !Dead("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID) InParty("Korgan") InMyArea("Korgan") !Dead("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN @120
 == KORGANJ IF ~InParty("Korgan") InMyArea("Korgan") !Dead("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID) InParty("Jaheira") InMyArea("Jaheira") !Dead("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN @121
@@ -684,8 +800,10 @@ IF ~AreaCheck("AN0721") Global("ANdruidDead","GLOBAL",1) !Global("Player1OwniRev
 == CERNDJ IF ~InParty("Cernd") InMyArea("Cernd") !Dead("Cernd") !StateCheck("Cernd",CD_STATE_NOTVALID)~ THEN @124
 == VALYGARJ IF ~InParty("Valygar") InMyArea("Valygar") !Dead("Valygar") !StateCheck("Valygar",CD_STATE_NOTVALID) OR(4) !InParty("Cernd") !InMyArea("Cernd") Dead("Cernd") StateCheck("Cernd",CD_STATE_NOTVALID)~ THEN @124
 == NALIAJ IF ~InParty("Nalia") InMyArea("Nalia") !Dead("Nalia") !StateCheck("Nalia",CD_STATE_NOTVALID) OR(4) !InParty("Cernd") !InMyArea("Cernd") Dead("Cernd") StateCheck("Cernd",CD_STATE_NOTVALID) OR(4) !InParty("Valygar") !InMyArea("Valygar") Dead("Valygar") StateCheck("Valygar",CD_STATE_NOTVALID)~ THEN @124
-== PLAYER1 IF ~OR(4) !InParty("Nalia") !InMyArea("Nalia") Dead("Nalia") StateCheck("Nalia",CD_STATE_NOTVALID) OR(4) !InParty("Mazzy") !InMyArea("Mazzy") Dead("Mazzy") StateCheck("Mazzy",CD_STATE_NOTVALID) OR(4) !InParty("Valygar") !InMyArea("Valygar") Dead("Valygar") StateCheck("Valygar",CD_STATE_NOTVALID)~ THEN @124
-EXIT
+END
+IF ~OR(2) !InParty("Nalia") StateCheck("Nalia",CD_STATE_NOTVALID) OR(2) !InParty("Mazzy") StateCheck("Mazzy",CD_STATE_NOTVALID) OR(2) !InParty("Valygar") StateCheck("Valygar",CD_STATE_NOTVALID)~ THEN REPLY @124 EXIT
+IF ~OR(3) InParty("Nalia") InParty("Mazzy") InParty("Valygar") OR(3) !StateCheck("Mazzy",CD_STATE_NOTVALID) !StateCheck("Valygar",CD_STATE_NOTVALID) !StateCheck("Nalia",CD_STATE_NOTVALID)~ THEN EXIT
+
 
 CHAIN 
 IF ~Global("ANdruidDead","GLOBAL",2) Global("AnOwniBankTalk","GLOBAL",8) Global("AnOwniBankTalkPay","GLOBAL",1000)~ THEN ANOwni ANOwniBankTalkFinal_400
@@ -694,7 +812,6 @@ IF ~Global("ANdruidDead","GLOBAL",2) Global("AnOwniBankTalk","GLOBAL",8) Global(
 == ANOwni IF ~Global("Player1OwniRevive","GLOBAL",4)~ THEN @140 DO ~GiveGoldForce(900)~
 == ANOwni @127
 == ANOwni @1281
-== PLAYER1 @128 
 EXIT
 
 CHAIN 
@@ -703,7 +820,6 @@ IF ~Global("ANdruidDead","GLOBAL",2) Global("AnOwniBankTalk","GLOBAL",8) Global(
 =@126 DO ~SetGlobal("ANdruidDead","GLOBAL",3) GiveGoldForce(600) AddexperienceParty(8000) AddJournalEntry(@1035,QUEST_DONE)~
 == ANOwni IF ~Global("Player1OwniRevive","GLOBAL",4)~ THEN @140 DO ~GiveGoldForce(900)~
 =@127
-== PLAYER1 @128 
 EXIT
 
 CHAIN 
@@ -712,37 +828,63 @@ IF ~Global("ANdruidDead","GLOBAL",2) Global("AnOwniBankTalk","GLOBAL",8) Global(
 =@126 DO ~SetGlobal("ANdruidDead","GLOBAL",3) GiveGoldForce(900) AddexperienceParty(8000) AddJournalEntry(@1035,QUEST_DONE)~
 == ANOwni IF ~Global("Player1OwniRevive","GLOBAL",4)~ THEN @140 DO ~GiveGoldForce(900)~
 =@127
-== PLAYER1 @128 
 EXIT
 
 // Owni dead
 // Yantina
 CHAIN 
-IF ~AreaCheck("AN0721") Global("Player1OwniRevive","GLOBAL",1) Dead("ANdruid1")~ THEN ANyant ANyantOwniDead
-@129 
-== ANyant IF ~Class(Player1,CLERIC_ALL)~ THEN @130 
-== PLAYER1 IF ~Class(Player1,CLERIC_ALL)~ THEN @135 DO ~SetGlobal("Player1OwniRevive","GLOBAL",2)~ 
-== JAHEIRAJ IF ~!Class(Player1,CLERIC_ALL) InParty("Jaheira") InMyArea("Jaheira") !Dead("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN @145
-== ANyant IF ~!Class(Player1,CLERIC_ALL) InParty("Jaheira") InMyArea("Jaheira") !Dead("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN @146
-== ANyant IF ~!Class(Player1,CLERIC_ALL)~ THEN @142 DO ~AddJournalEntry(@1036,QUEST) EscapeArea() SetGlobal("AnOwniDeadBank","GLOBAL",1)~
+IF ~AreaCheck("AN0721") Global("Player1OwniRevive","GLOBAL",1) Dead("ANdruid1") Class(Player1,CLERIC_ALL)~ THEN ANyant ANyantOwniDeadCleric
+@129 DO ~ChangeEnemyAlly("ANjalut",NEUTRAL) 
+ChangeEnemyAlly("ANJock",NEUTRAL)
+ChangeEnemyAlly("ANyant",NEUTRAL)~
+== ANyant @130 
+END
+IF ~~ THEN REPLY @135 DO ~SetGlobal("Player1OwniRevive","GLOBAL",2)~ EXIT
+
+CHAIN 
+IF ~AreaCheck("AN0721") Global("Player1OwniRevive","GLOBAL",1) Dead("ANdruid1") !Class(Player1,CLERIC_ALL)~ THEN ANyant ANyantOwniDeadNoCleric
+@129 DO ~ChangeEnemyAlly("ANjalut",NEUTRAL) 
+ChangeEnemyAlly("ANJock",NEUTRAL)
+ChangeEnemyAlly("ANyant",NEUTRAL)~
+== JAHEIRAJ IF ~!Class(Player1,CLERIC_ALL) InParty("Jaheira") InMyArea("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN @145
+== ANyant IF ~InParty("Jaheira") InMyArea("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN @146
+== ANyant IF ~~ THEN @142 DO ~AddJournalEntry(@1036,QUEST) SetGlobal("AnOwniDeadBank","GLOBAL",1) ActionOverride("ANjalut",EscapeArea()) ActionOverride("ANesra",EscapeArea()) ActionOverride("ANyant",EscapeArea()) ActionOverride("ANJock",EscapeArea()) EscapeArea()~
 EXIT
 
 // Jalut
 CHAIN 
-IF ~AreaCheck("AN0721") Global("Player1OwniRevive","GLOBAL",1) Dead("ANdruid1")~ THEN ANjalut ANjalutOwniDead
-@131 
-== ANjalut IF ~Class(Player1,CLERIC_ALL)~ THEN @132
-== PLAYER1 IF ~Class(Player1,CLERIC_ALL)~ THEN @135 DO ~SetGlobal("Player1OwniRevive","GLOBAL",2)~ 
-== ANjalut IF ~!Class(Player1,CLERIC_ALL)~ THEN @143 DO ~AddJournalEntry(@1036,QUEST) EscapeArea() SetGlobal("AnOwniDeadBank","GLOBAL",1)~
+IF ~AreaCheck("AN0721") Global("Player1OwniRevive","GLOBAL",1) Dead("ANdruid1") Class(Player1,CLERIC_ALL)~ THEN ANjalut ANjalutOwniDeadCleric
+@131 DO ~ChangeEnemyAlly("ANjalut",NEUTRAL) 
+ChangeEnemyAlly("ANJock",NEUTRAL)
+ChangeEnemyAlly("ANyant",NEUTRAL)~
+=@132
+END
+IF ~~ THEN REPLY @135 DO ~SetGlobal("Player1OwniRevive","GLOBAL",2)~ EXIT
+
+CHAIN 
+IF ~AreaCheck("AN0721") Global("Player1OwniRevive","GLOBAL",1) Dead("ANdruid1") !Class(Player1,CLERIC_ALL)~ THEN ANjalut ANjalutOwniDeadNoCleric
+@131 DO ~ChangeEnemyAlly("ANjalut",NEUTRAL) 
+ChangeEnemyAlly("ANJock",NEUTRAL)
+ChangeEnemyAlly("ANyant",NEUTRAL)~
+== ANjalut @143 DO ~AddJournalEntry(@1036,QUEST) SetGlobal("AnOwniDeadBank","GLOBAL",1) ActionOverride("ANjalut",EscapeArea()) ActionOverride("ANesra",EscapeArea()) ActionOverride("ANyant",EscapeArea()) ActionOverride("ANJock",EscapeArea()) EscapeArea()~
 EXIT
 
 // Jock
 CHAIN 
-IF ~AreaCheck("AN0721") Global("Player1OwniRevive","GLOBAL",1) Dead("ANdruid1")~ THEN ANJock ANJockOwniDead
-@133 
-== ANJock IF ~Class(Player1,CLERIC_ALL)~ THEN @134
-== PLAYER1 IF ~Class(Player1,CLERIC_ALL)~ THEN @135 DO ~SetGlobal("Player1OwniRevive","GLOBAL",2)~ 
-== ANJock IF ~!Class(Player1,CLERIC_ALL)~ THEN @144 DO ~AddJournalEntry(@1037,QUEST) EscapeArea() SetGlobal("AnOwniDeadBank","GLOBAL",1)~
+IF ~AreaCheck("AN0721") Global("Player1OwniRevive","GLOBAL",1) Dead("ANdruid1")~ THEN ANJock ANJockOwniDeadCleric
+@133 DO ~ChangeEnemyAlly("ANjalut",NEUTRAL) 
+ChangeEnemyAlly("ANJock",NEUTRAL)
+ChangeEnemyAlly("ANyant",NEUTRAL)~
+=@134
+END
+IF ~~ THEN REPLY @135 DO ~SetGlobal("Player1OwniRevive","GLOBAL",2)~ EXIT 
+
+CHAIN 
+IF ~AreaCheck("AN0721") Global("Player1OwniRevive","GLOBAL",1) Dead("ANdruid1")~ THEN ANJock ANJockOwniDeadNoCleric
+@133 DO ~ChangeEnemyAlly("ANjalut",NEUTRAL) 
+ChangeEnemyAlly("ANJock",NEUTRAL)
+ChangeEnemyAlly("ANyant",NEUTRAL)~
+=@144 DO ~AddJournalEntry(@1037,QUEST) SetGlobal("AnOwniDeadBank","GLOBAL",1) ActionOverride("ANjalut",EscapeArea()) ActionOverride("ANesra",EscapeArea()) ActionOverride("ANyant",EscapeArea()) ActionOverride("ANJock",EscapeArea()) EscapeArea()~
 EXIT
 
 
@@ -758,8 +900,8 @@ EXIT
 
 // Druids
 CHAIN 
-IF ~AreaCheck("AN0720") Global("AnOwniBankTalk","GLOBAL",1) Global("AnOwniBankTalkThink","GLOBAL",0) Global("AnOwniBankTalkAboutDruids","LOCALS",1)~ THEN ANOwni ANOwniBankTalk1.6
-@37 DO ~SetGlobal("AnOwniBankTalkAboutDruids","LOCALS",2)~
+IF ~~ THEN ANOwni ANOwniBankTalk1.6
+@37 DO ~SetGlobal("AnOwniBankTalkAboutDruids","AN0720",1)~
 == IF_FILE_EXISTS 7XFALDJ IF ~InParty("7XFALD") InMyArea("7XFALD") !StateCheck("7XFALD",CD_STATE_NOTVALID)~ THEN @255
 == JAHEIRAJ IF ~IsValidForPartyDialog("Jaheira")~ THEN @212
 == ANOwni IF ~IsValidForPartyDialog("Jaheira")~ THEN @213
@@ -767,14 +909,15 @@ IF ~AreaCheck("AN0720") Global("AnOwniBankTalk","GLOBAL",1) Global("AnOwniBankTa
 == CERNDJ IF ~IsValidForPartyDialog("Cernd") !IsValidForPartyDialog("Jaheira")~ THEN @212
 == ANOwni IF ~IsValidForPartyDialog("Cernd") !IsValidForPartyDialog("Jaheira")~ THEN @213
 == CERNDJ IF ~IsValidForPartyDialog("Cernd") !IsValidForPartyDialog("Jaheira")~ THEN @214
-== PLAYER1 IF ~!IsValidForPartyDialog("Cernd") !IsValidForPartyDialog("Jaheira") Class(Player1,DRUID_ALL)~ THEN @212
-== ANOwni IF ~!IsValidForPartyDialog("Cernd") !IsValidForPartyDialog("Jaheira") Class(Player1,DRUID_ALL)~ THEN @213
-== PLAYER1 IF ~!IsValidForPartyDialog("Cernd") !IsValidForPartyDialog("Jaheira") Class(Player1,DRUID_ALL)~ THEN @214
-== ANOwni IF ~OR(3) IsValidForPartyDialog("Cernd") IsValidForPartyDialog("Jaheira") Class(Player1,DRUID_ALL)~ THEN @215
-EXTERN ANOwni ANOwniBankTalk1.7
+END
+IF ~!IsValidForPartyDialog("Cernd") !IsValidForPartyDialog("Jaheira") !Class(Player1,DRUID_ALL)~ THEN EXTERN ANOwni ANOwniBankTalk1.7
+IF ~!IsValidForPartyDialog("Cernd") !IsValidForPartyDialog("Jaheira") Class(Player1,DRUID_ALL)~ THEN REPLY @212 EXTERN ANOwni ANOwniBankTalk1.6_1
+IF ~OR(2) IsValidForPartyDialog("Cernd") IsValidForPartyDialog("Jaheira")~ THEN EXTERN ANOwni ANOwniBankTalk1.6_1
 
-
-
+CHAIN ANOwni ANOwniBankTalk1.6_1
+@215
+END
+IF ~~ THEN EXTERN ANOwni ANOwniBankTalk1.7
 
 //Оуни
 // Дополнения, для квеста "Пиратское наследие"
@@ -783,14 +926,28 @@ IF ~Global("ANpiratOwni","AN0720",1) !AreaCheck("AR0808") !AreaCheck("AR0809") G
 @239 DO ~SetGlobal("ANpiratOwni","AN0720",2)~
 =@240
 =@241
-== PLAYER1 @242
-== ANOwni @243
-== PLAYER1 @244
-== ANOwni @245
+END
+IF ~~ THEN REPLY @242 EXTERN ANOwni ANpiratOwniDialog_1
+IF ~~ THEN REPLY @257 EXTERN ANOwni ANpiratOwniDialog_1
+IF ~~ THEN REPLY @258 EXTERN ANOwni ANpiratOwniDialog_1
+
+CHAIN ANOwni ANpiratOwniDialog_1
+@243
+END
+IF ~~ THEN REPLY @244 EXTERN ANOwni ANpiratOwniDialog_2
+IF ~~ THEN REPLY @259 EXTERN ANOwni ANpiratOwniDialog_2
+IF ~~ THEN REPLY @260 EXTERN ANOwni ANpiratOwniDialog_2
+
+CHAIN ANOwni ANpiratOwniDialog_2
+@245
 =@246
 =@247
-== PLAYER1 @248
-== ANOwni @249
+END
+IF ~~ THEN REPLY @248 EXTERN ANOwni ANpiratOwniDialog_3
+IF ~~ THEN REPLY @261 EXTERN ANOwni ANpiratOwniDialog_3
+
+CHAIN ANOwni ANpiratOwniDialog_3
+@249
 END
 IF ~~ THEN DO ~AddJournalEntry(@1065,QUEST) SetGlobal("ANpiratOwni","AN0720",4) SetGlobal("ANpiratQuest","GLOBAL",1)~ REPLY @250 GOTO ANpiratOwniDialogYes
 IF ~~ THEN DO ~SetGlobal("ANpiratOwni","AN0720",3)~ REPLY @251 GOTO ANpiratOwniDialogNo

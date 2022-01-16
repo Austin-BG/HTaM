@@ -88,26 +88,70 @@ CHAIN
 IF ~Global("ANsirene","GLOBAL",2) Global("ANsireneTalk","AR0700",1)~ THEN PLAYER1 SireneLorioTalk
 @3 DO ~SetGlobal("ANsirene","GLOBAL",3)~
 == ANlorio @4
-== PLAYER1 IF ~Global("ANTrollLorio","GLOBAL",2)~ THEN @5
-== PLAYER1 IF ~!Global("ANTrollLorio","GLOBAL",2)~ THEN @6
-== ANlorio IF ~Global("ANTrollLorio","GLOBAL",2)~ THEN @7
-== ANlorio IF ~!Global("ANTrollLorio","GLOBAL",2)~ THEN @8
-== ANlorio @9
-== PLAYER1 @10
-== ANlorio @11
+END
+IF ~Global("ANTrollLorio","GLOBAL",2)~ THEN REPLY @5 EXTERN ANlorio SireneLorioTalk_1
+IF ~!Global("ANTrollLorio","GLOBAL",2)~ THEN REPLY @6 EXTERN ANlorio SireneLorioTalk_2
+
+CHAIN ANlorio SireneLorioTalk_1
+@7
+EXTERN ANlorio SireneLorioTalk_3
+
+CHAIN ANlorio SireneLorioTalk_2
+@8
+EXTERN ANlorio SireneLorioTalk_3
+
+CHAIN ANlorio SireneLorioTalk_3
+@9
+END
+IF ~~ THEN REPLY @10 EXTERN ANlorio SireneLorioTalk_4
+
+CHAIN ANlorio SireneLorioTalk_4
+@11
 = @12
-== PLAYER1 IF ~OR(2) !InParty("Jan") StateCheck("Jan",CD_STATE_NOTVALID)~ THEN @13
-== JANJ IF ~InParty("Jan") InMyArea("Jan") !Dead("Jan") !StateCheck("Jan",CD_STATE_NOTVALID)~ THEN @193
-== CERNDJ IF ~InParty("Cernd") InMyArea("Cernd") !StateCheck("Cernd",CD_STATE_NOTVALID) InParty("Jan") InMyArea("Jan") !Dead("Jan") !StateCheck("Jan",CD_STATE_NOTVALID)~ THEN @194
-== PLAYER1 IF ~InParty("Jan") InMyArea("Jan") !Dead("Jan") !StateCheck("Jan",CD_STATE_NOTVALID) OR(2) !InParty("Cernd") StateCheck("Cernd",CD_STATE_NOTVALID)~ THEN @194
-== JANJ IF ~InParty("Jan") InMyArea("Jan") !Dead("Jan") !StateCheck("Jan",CD_STATE_NOTVALID)~ THEN @195
-== ANlorio @14
+END
+IF ~OR(2) !InParty("Jan") StateCheck("Jan",CD_STATE_NOTVALID)~ THEN EXTERN ANlorio SireneLorioTalk_5
+IF ~InParty("Jan") !StateCheck("Jan",CD_STATE_NOTVALID)~ THEN EXTERN JANJ SireneLorioTalk_4Jan
+
+APPEND JANJ
+IF ~~ BEGIN SireneLorioTalk_4Jan
+  SAY @193
+IF ~OR(2) !InParty("Cernd") StateCheck("Cernd",CD_STATE_NOTVALID)~ THEN REPLY @194 GOTO SireneLorioTalk_4Jan1
+IF ~InParty("Cernd") !StateCheck("Cernd",CD_STATE_NOTVALID)~ THEN EXTERN CERNDJ SireneLorioTalk_4Cernd
+END
+
+IF ~~ BEGIN SireneLorioTalk_4Jan1
+  SAY @195
+IF ~~ THEN EXTERN ANlorio SireneLorioTalk_5
+END
+END
+
+APPEND CERNDJ
+IF ~~ BEGIN SireneLorioTalk_4Cernd
+  SAY @194
+IF ~~ THEN EXTERN JANJ SireneLorioTalk_4Jan1
+END
+END
+
+CHAIN ANlorio SireneLorioTalk_5
+@14
 = @15
-== PLAYER1 IF ~Global("ANCragmoonTalk","GLOBAL",0) Global("TalkedToCragmoon","GLOBAL",0)~ THEN @16
-== PLAYER1 IF ~OR(2) !Global("ANCragmoonTalk","GLOBAL",0) !Global("TalkedToCragmoon","GLOBAL",0)~ THEN @17
-== ANlorio IF ~Global("ANCragmoonTalk","GLOBAL",0) Global("TalkedToCragmoon","GLOBAL",0)~ THEN @18
-== ANlorio IF ~OR(2) !Global("ANCragmoonTalk","GLOBAL",0) !Global("TalkedToCragmoon","GLOBAL",0)~ THEN @19
-== ANlorio @20 DO ~AddJournalEntry(@1083,QUEST) EscapeArea()~
+END
+IF ~Global("ANCragmoonTalk","GLOBAL",0) Global("TalkedToCragmoon","GLOBAL",0)~ THEN REPLY @16 EXTERN ANlorio SireneLorioTalk_6
+IF ~OR(2) !Global("ANCragmoonTalk","GLOBAL",0) !Global("TalkedToCragmoon","GLOBAL",0)~ THEN REPLY @17 EXTERN ANlorio SireneLorioTalk_7
+
+
+CHAIN ANlorio SireneLorioTalk_6
+@18
+END
+IF ~~ THEN EXTERN ANlorio SireneLorioTalk_8
+
+CHAIN ANlorio SireneLorioTalk_7
+@19
+END
+IF ~~ THEN EXTERN ANlorio SireneLorioTalk_8
+
+CHAIN ANlorio SireneLorioTalk_8
+@20 DO ~AddJournalEntry(@1083,QUEST) EscapeArea()~
 == IF_FILE_EXISTS 7XGarJ IF ~InParty("7XGAR") InMyArea("7XGAR") !StateCheck("7XGAR",CD_STATE_NOTVALID)~ THEN @201
 == HAERDAJ IF ~InParty("HaerDalis") InMyArea("HaerDalis") !StateCheck("HaerDalis",CD_STATE_NOTVALID) OR(2) !InParty("7XGAR") StateCheck("7XGAR",CD_STATE_NOTVALID)~ THEN @201
 EXIT
@@ -191,7 +235,6 @@ END
 CHAIN
 IF WEIGHT #-20 ~Global("ANlorioPrison","GLOBAL",5)~ THEN ANlorio ANLorioPrisonFreedom
 @177 DO ~SetGlobal("ANlorioPrison","GLOBAL",6) AddJournalEntry(@1097,QUEST) EscapeArea()~
-== PLAYER1 @178
 == IF_FILE_EXISTS 7XGarJ IF ~InParty("7XGAR") InMyArea("7XGAR") !StateCheck("7XGAR",CD_STATE_NOTVALID)~ THEN @202
 == HAERDAJ IF ~InParty("HaerDalis") InMyArea("HaerDalis") !StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN @203
 == IF_FILE_EXISTS O#TiaxJ IF ~InParty("O#Tiax") InMyArea("O#Tiax") !StateCheck("O#Tiax",CD_STATE_NOTVALID)~ THEN @204
@@ -286,33 +329,65 @@ END
 CHAIN
 IF WEIGHT #-5 ~Global("ANsirene","GLOBAL",11) !Global("ANModBad","GLOBAL",1)~ THEN MURCRAG ANCragmoonTwoTalkMod
 @58 DO ~SetGlobal("ANsirene","GLOBAL",12)~
-== PLAYER1 @59
-== MURCRAG @60
-== PLAYER1 @61
-== MURCRAG @62
+END
+IF ~~ THEN REPLY @59 EXTERN MURCRAG ANCragmoonTwoTalkMod_1
+
+CHAIN MURCRAG ANCragmoonTwoTalkMod_1
+@60
+END
+IF ~~ THEN REPLY @61 EXTERN MURCRAG ANCragmoonTwoTalkMod_2
+
+CHAIN MURCRAG ANCragmoonTwoTalkMod_2
+@62
 = @63
 == VALYGARJ IF ~InParty("Valygar") InMyArea("Valygar") !StateCheck("Valygar",CD_STATE_NOTVALID)~ THEN @64
-== PLAYER1 IF ~OR(2) !InParty("Valygar") StateCheck("Valygar",CD_STATE_NOTVALID)~ THEN @64
-== MURCRAG @65
-== PLAYER1 @66
-== MURCRAG @67
+END
+IF ~OR(2) !InParty("Valygar") StateCheck("Valygar",CD_STATE_NOTVALID)~ THEN REPLY @64 EXTERN MURCRAG ANCragmoonTwoTalkMod_3
+IF ~InParty("Valygar") InMyArea("Valygar") !StateCheck("Valygar",CD_STATE_NOTVALID)~ THEN EXTERN VALYGARJ ANCragmoonTwoTalkMod_2Valy
+
+APPEND VALYGARJ
+IF ~~ BEGIN ANCragmoonTwoTalkMod_2Valy
+  SAY @64
+IF ~~ THEN EXTERN MURCRAG ANCragmoonTwoTalkMod_3
+END
+END
+
+CHAIN MURCRAG ANCragmoonTwoTalkMod_3
+@65
+END
+IF ~~ THEN REPLY @66 EXTERN MURCRAG ANCragmoonTwoTalkMod_4
+
+CHAIN MURCRAG ANCragmoonTwoTalkMod_4
+@67
 == AERIEJ IF ~InParty("Aerie") InMyArea("Aerie") !StateCheck("Aerie",CD_STATE_NOTVALID)~ THEN @80
 == MURCRAG IF ~InParty("Aerie") InMyArea("Aerie") !StateCheck("Aerie",CD_STATE_NOTVALID)~ THEN @81
-== PLAYER1 @68
-== MURCRAG @69
+END
+IF ~~ THEN REPLY @68 EXTERN MURCRAG ANCragmoonTwoTalkMod_5
+
+CHAIN MURCRAG ANCragmoonTwoTalkMod_5
+@69
 = @70
-== PLAYER1 @71
-== MURCRAG @72
+END
+IF ~~ THEN REPLY @71 EXTERN MURCRAG ANCragmoonTwoTalkMod_6
+
+CHAIN MURCRAG ANCragmoonTwoTalkMod_6
+@72
 == EDWINJ IF ~InParty("Edwin") InMyArea("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN @196
 == EDWINJ IF ~InParty("Edwin") InMyArea("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN @197
 == MURCRAG IF ~InParty("Edwin") InMyArea("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN @198
 == MINSCJ IF ~InParty("Minsc") InMyArea("Minsc") !StateCheck("Minsc",CD_STATE_NOTVALID)~ THEN @199
-== PLAYER1 @73
-== MURCRAG @74
+END
+IF ~~ THEN REPLY @73 EXTERN MURCRAG ANCragmoonTwoTalkMod_7
+
+CHAIN MURCRAG ANCragmoonTwoTalkMod_7
+@74
 == IF_FILE_EXISTS O#TiaxJ IF ~InParty("O#Tiax") InMyArea("O#Tiax") !StateCheck("O#Tiax",CD_STATE_NOTVALID)~ THEN @79
 == IF_FILE_EXISTS 7XTIAXJ IF ~InParty("7XTIAX") InMyArea("7XTIAX") !StateCheck("7XTIAX",CD_STATE_NOTVALID)~ THEN @79
-== PLAYER1 @75
-== MURCRAG @76
+END
+IF ~~ THEN REPLY @75 EXTERN MURCRAG ANCragmoonTwoTalkMod_8
+
+CHAIN MURCRAG ANCragmoonTwoTalkMod_8
+@76
 == VALYGARJ IF ~InParty("Valygar") InMyArea("Valygar") !StateCheck("Valygar",CD_STATE_NOTVALID)~ THEN @77
 == AERIEJ IF ~InParty("Aerie") InMyArea("Aerie") !StateCheck("Aerie",CD_STATE_NOTVALID)~ THEN @78
 == ANOMENJ IF ~InParty("Anomen") InMyArea("Anomen") !StateCheck("Anomen",CD_STATE_NOTVALID)~ THEN @82
@@ -327,31 +402,59 @@ IF ~~ THEN DO ~SetGlobal("ANsirene","GLOBAL",20) AddJournalEntry(@1087,QUEST)~ R
 CHAIN
 IF WEIGHT #-5 ~Global("ANsirene","GLOBAL",11) Global("ANModBad","GLOBAL",1)~ THEN MURCRAG ANCragmoonTwoTalknoMod
 @89 DO ~ActionOverride(Player1,SetDialog("PLAYER1")) SetGlobal("ANsirene","GLOBAL",12)~
-== PLAYER1 @90
-== MURCRAG @91
-== PLAYER1 IF ~!Class(Player1,THIEF_ALL)~ THEN @92
-== PLAYER1 IF ~Class(Player1,THIEF_ALL)~ THEN @93
-== MURCRAG @94
-== PLAYER1 @95
-== MURCRAG @62
+END
+IF ~~ THEN REPLY @90 EXTERN MURCRAG ANCragmoonTwoTalknoMod_1
+
+CHAIN MURCRAG ANCragmoonTwoTalknoMod_1
+@91
+END
+IF ~!Class(Player1,THIEF_ALL)~ THEN REPLY @92 EXTERN MURCRAG ANCragmoonTwoTalknoMod_2
+IF ~Class(Player1,THIEF_ALL)~ THEN REPLY @93 EXTERN MURCRAG ANCragmoonTwoTalknoMod_2
+
+
+CHAIN MURCRAG ANCragmoonTwoTalknoMod_2
+@94
+END
+IF ~~ THEN REPLY @95 EXTERN MURCRAG ANCragmoonTwoTalknoMod_3
+
+CHAIN MURCRAG ANCragmoonTwoTalknoMod_3
+@62
 =@63
-== PLAYER1 @96
-== MURCRAG @97
-== PLAYER1 @98
-== MURCRAG @99
+END
+IF ~~ THEN REPLY @96 EXTERN MURCRAG ANCragmoonTwoTalknoMod_4
+
+CHAIN MURCRAG ANCragmoonTwoTalknoMod_4
+@97
+END
+IF ~~ THEN REPLY @98 EXTERN MURCRAG ANCragmoonTwoTalknoMod_5
+
+CHAIN MURCRAG ANCragmoonTwoTalknoMod_5
+@99
 == AERIEJ IF ~InParty("Aerie") InMyArea("Aerie") !StateCheck("Aerie",CD_STATE_NOTVALID)~ THEN @80
 == MURCRAG IF ~InParty("Aerie") InMyArea("Aerie") !StateCheck("Aerie",CD_STATE_NOTVALID)~ THEN @81
-== PLAYER1 @68
-== MURCRAG @69
+END
+IF ~~ THEN REPLY @68 EXTERN MURCRAG ANCragmoonTwoTalknoMod_6
+
+CHAIN MURCRAG ANCragmoonTwoTalknoMod_6
+@69
 = @70
-== PLAYER1 @71
-== MURCRAG @72
-== PLAYER1 @73
-== MURCRAG @74
+END
+IF ~~ THEN REPLY @71 EXTERN MURCRAG ANCragmoonTwoTalknoMod_7
+
+CHAIN MURCRAG ANCragmoonTwoTalknoMod_7
+@72
+END
+IF ~~ THEN REPLY @73 EXTERN MURCRAG ANCragmoonTwoTalknoMod_8
+
+CHAIN MURCRAG ANCragmoonTwoTalknoMod_8
+@74
 == IF_FILE_EXISTS O#TiaxJ IF ~InParty("O#Tiax") InMyArea("O#Tiax") !StateCheck("O#Tiax",CD_STATE_NOTVALID)~ THEN @79
 == IF_FILE_EXISTS 7XTIAXJ IF ~InParty("7XTIAX") InMyArea("7XTIAX") !StateCheck("7XTIAX",CD_STATE_NOTVALID)~ THEN @79
-== PLAYER1 @75
-== MURCRAG @76
+END
+IF ~~ THEN REPLY @75 EXTERN MURCRAG ANCragmoonTwoTalknoMod_9
+
+CHAIN MURCRAG ANCragmoonTwoTalknoMod_9
+@76
 == VALYGARJ IF ~InParty("Valygar") InMyArea("Valygar") !StateCheck("Valygar",CD_STATE_NOTVALID)~ THEN @77
 == AERIEJ IF ~InParty("Aerie") InMyArea("Aerie") !StateCheck("Aerie",CD_STATE_NOTVALID)~ THEN @78
 == ANOMENJ IF ~InParty("Anomen") InMyArea("Anomen") !StateCheck("Anomen",CD_STATE_NOTVALID)~ THEN @82
@@ -453,8 +556,11 @@ EXIT
 CHAIN
 IF ~Global("ANsirene","GLOBAL",34)~ THEN ANsirene ANsirene1FinalTalk2
 @144 DO ~SetGlobal("ANsirene","GLOBAL",35) AddJournalEntry(@1092,QUEST)~
-== PLAYER1 @145
-== ANsirene @146 DO ~GiveItemCreate("AMUL11",Player1,1,0,0) EscapeArea()~
+END
+IF ~~ THEN REPLY @145 EXTERN ANsirene ANsirene1FinalTalk2_1
+
+CHAIN ANsirene ANsirene1FinalTalk2_1
+@146 DO ~GiveItemCreate("AMUL11",Player1,1,0,0) EscapeArea()~
 == QUAYLE @147 DO ~EscapeArea()~
 EXIT
 
@@ -479,8 +585,11 @@ IF ~Global("ANsirene","GLOBAL",63)~ THEN ANsirene ANsirene2FinalTalk2
 == ANsirene @155
 == ANlorio @156
 == ANsirene @157
-== PLAYER1 @158
-== ANlorio @159 DO ~GiveItemCreate("SW1H42",Player1,1,0,0)~
+END
+IF ~~ THEN REPLY @158 EXTERN ANlorio ANsirene2FinalTalk2_1
+
+CHAIN ANlorio ANsirene2FinalTalk2_1
+@159 DO ~GiveItemCreate("SW1H42",Player1,1,0,0)~
 == ANsirene IF ~InParty("Aerie") InMyArea("Aerie") !StateCheck("Aerie",CD_STATE_NOTVALID)~ THEN @160 DO ~GiveItemCreate("AMUL11","Aerie",1,0,0)~
 == AERIEJ IF ~InParty("Aerie") InMyArea("Aerie") !StateCheck("Aerie",CD_STATE_NOTVALID)~ THEN @161
 == ANsirene @162 DO ~AddJournalEntry(@1093,QUEST_DONE) EscapeArea()~

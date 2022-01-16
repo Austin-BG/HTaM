@@ -141,7 +141,7 @@ IF ~~ THEN REPLY @39 EXTERN AERIEJ ANagnesWitchTalkKill
 
 // Успех, Агнес жива
 CHAIN IF WEIGHT #-99 ~Global("AN_AgnesWitch","AR2600",8)~ THEN AERIEJ ANagnesWitchTalkEnd1
-@57 DO ~SetGlobal("AN_AgnesWitch","AR2600",9)~
+@57 DO ~SetGlobal("AN_AgnesWitch","AR2600",9) AddexperienceParty(4000)~
 == ANagness @58 DO ~EscapeArea()~
 == AERIEJ @59
 =@60
@@ -149,9 +149,12 @@ EXIT
 
 // Успех, Агнес мертва
 CHAIN IF WEIGHT #-99 ~Global("AN_AgnesWitch","AR2600",11)~ THEN AERIEJ ANagnesWitchTalkEnd2
-@47 DO ~SetGlobal("AN_AgnesWitch","AR2600",12)~
-== PLAYER1 @48
-== AERIEJ @49
+@47 DO ~SetGlobal("AN_AgnesWitch","AR2600",12) AddexperienceParty(4000)~
+END
+IF ~~ THEN REPLY @48 EXTERN AERIEJ ANagnesWitchTalkEnd2_1
+
+CHAIN AERIEJ ANagnesWitchTalkEnd2_1
+@49
 =@50
 =@51
 EXIT

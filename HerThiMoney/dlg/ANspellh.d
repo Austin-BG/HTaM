@@ -136,12 +136,12 @@ INTERJECT_COPY_TRANS3 PPSTAT01 24 ANanswerALL24
 == JAHEIRAJ IF ~InParty("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID) InParty("7Xkaga") !StateCheck("7Xkaga",CD_STATE_NOTVALID)~ THEN @99
 == MINSCJ IF ~InParty("Minsc") !StateCheck("Minsc",CD_STATE_NOTVALID) InParty("7Xkaga") !StateCheck("7Xkaga",CD_STATE_NOTVALID)~ THEN @100
 == IF_FILE_EXISTS 7XkagaJ IF ~InParty("7Xkaga") !StateCheck("7Xkaga",CD_STATE_NOTVALID) OR(3) InParty("Korgan") InParty("Jaheira") InParty("Minsc") OR(3) !StateCheck("Korgan",CD_STATE_NOTVALID) !StateCheck("Jaheira",CD_STATE_NOTVALID) !StateCheck("Minsc",CD_STATE_NOTVALID)~ THEN @101
-== PLAYER1 IF ~InParty("7Xkaga") !StateCheck("7Xkaga",CD_STATE_NOTVALID) OR(3) InParty("Korgan") InParty("Jaheira") InParty("Minsc") OR(3) !StateCheck("Korgan",CD_STATE_NOTVALID) !StateCheck("Jaheira",CD_STATE_NOTVALID) !StateCheck("Minsc",CD_STATE_NOTVALID)~ THEN @102
+== IMOEN2J IF ~InParty("Imoen2") !StateCheck("Imoen2",CD_STATE_NOTVALID) InParty("7Xkaga") !StateCheck("7Xkaga",CD_STATE_NOTVALID) OR(3) InParty("Korgan") InParty("Jaheira") InParty("Minsc") OR(3) !StateCheck("Korgan",CD_STATE_NOTVALID) !StateCheck("Jaheira",CD_STATE_NOTVALID) !StateCheck("Minsc",CD_STATE_NOTVALID)~ THEN @102
 == IF_FILE_EXISTS 7XXZARJ IF ~InParty("7XXZAR") !StateCheck("7XXZAR",CD_STATE_NOTVALID)~ THEN @103 DO ~ActionOverride(Player1,SetDialog("PLAYER1"))~
 == KELDORJ IF ~InParty("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID) InParty("7XXZAR") !StateCheck("7XXZAR",CD_STATE_NOTVALID)~ THEN @104
 == IF_FILE_EXISTS 7XXZARJ IF ~InParty("7XXZAR") !StateCheck("7XXZAR",CD_STATE_NOTVALID) InParty("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID)~ THEN @105
 == KELDORJ IF ~InParty("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID) InParty("7XXZAR") !StateCheck("7XXZAR",CD_STATE_NOTVALID)~ THEN @106
-== PLAYER1 IF ~InParty("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID) InParty("7XXZAR") !StateCheck("7XXZAR",CD_STATE_NOTVALID)~ THEN @107
+== IMOEN2J IF ~InParty("Imoen2") !StateCheck("Imoen2",CD_STATE_NOTVALID)InParty("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID) InParty("7XXZAR") !StateCheck("7XXZAR",CD_STATE_NOTVALID)~ THEN @107
 END
 
 INTERJECT_COPY_TRANS3 PPSTAT01 27 ANanswerALL27

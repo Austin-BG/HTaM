@@ -282,7 +282,7 @@ IF WEIGHT #-1 ~
 == CERNDJ IF ~InParty("Cernd") InMyArea("Cernd") !Dead("Cernd") !StateCheck("Cernd",CD_STATE_NOTVALID) !InParty("Jaheira") !InParty("Valygar")~ THEN @145
 EXIT
 
-EXTEND_TOP HPRELATE 24 
+EXTEND_BOTTOM HPRELATE 24 
 IF ~Global("ANkazabookDestroy","GLOBAL",1) PartyHasItem("BOOK89") Global("ANkazabookOrden","LOCALS",0)~ THEN DO ~SetGlobal("ANkazabookOrden","LOCALS",1)~ REPLY @135 + ANKazaBookOrden
 END
 
@@ -302,46 +302,17 @@ EXIT
 // Бантеры при дожде
 APPEND_EARLY MINSCJ
 
-IF 
-~Global ("ANMyrain", "GLOBAL", 2) !Global("ShadowWork","GLOBAL",0)~ THEN BEGIN minscrain1
+IF ~Global ("ANMyrain", "GLOBAL", 2) !Global("ShadowWork","GLOBAL",0)~ THEN BEGIN minscrain1
 SAY @146 
-
-IF ~ OR(3)
-!InParty("Korgan")
-Dead("Korgan")
-StateCheck("Korgan",STATE_SLEEPING)~ 
-THEN DO ~SetGlobal ("ANMyrain", "GLOBAL", 3)~ EXIT
-  
-IF
-~InParty("Korgan")
-!Dead("Korgan")
-!StateCheck("Korgan",STATE_SLEEPING)~ 
-THEN 
-DO ~SetGlobal ("ANMyrain", "GLOBAL", 3)~ EXTERN ~KORGANJ~ minsckorganrain1 
-
-IF 
-~!InParty("Korgan")
-InParty("Jaheira")
-!Dead("Jaheira")
-!StateCheck("Jaheira",STATE_SLEEPING)~ 
-THEN 
-DO ~SetGlobal ("ANMyrain", "GLOBAL", 3)~ EXTERN ~JAHEIRAJ~ minscjaheirarain 
+IF ~OR(3)!InParty("Korgan")Dead("Korgan")StateCheck("Korgan",STATE_SLEEPING)~ THEN DO ~StartRainNow() SetGlobal("ANMyrain","GLOBAL",3)~ EXIT
+IF ~InParty("Korgan")!Dead("Korgan")!StateCheck("Korgan",STATE_SLEEPING)~ THEN DO ~StartRainNow() SetGlobal("ANMyrain","GLOBAL",3)~ EXTERN ~KORGANJ~ minsckorganrain1 
+IF ~!InParty("Korgan")InParty("Jaheira")!Dead("Jaheira")!StateCheck("Jaheira",STATE_SLEEPING)~ THEN DO ~StartRainNow() SetGlobal("ANMyrain","GLOBAL",3)~ EXTERN ~JAHEIRAJ~ minscjaheirarain 
 END
 
 IF ~~ THEN BEGIN minsckorganrain2 
 SAY @148
-IF ~OR(3)
-!InParty("Jaheira")
-Dead("Jaheira")
-StateCheck("Jaheira",STATE_SLEEPING)~ 
-THEN EXIT
-  
-IF 
-~InParty("Jaheira")
-!Dead("Jaheira")
-!StateCheck("Jaheira",STATE_SLEEPING)~ 
-THEN 
-EXTERN ~JAHEIRAJ~ minsckorganjaheirarain3 
+IF ~OR(3)!InParty("Jaheira")Dead("Jaheira")StateCheck("Jaheira",STATE_SLEEPING)~ THEN EXIT
+IF ~InParty("Jaheira")!Dead("Jaheira")!StateCheck("Jaheira",STATE_SLEEPING)~ THEN EXTERN ~JAHEIRAJ~ minsckorganjaheirarain3 
 END
 
 END
@@ -389,12 +360,23 @@ END
 CHAIN
 IF ~AreaType(FOREST) Race(Player1,ELF) !Global("AerieRomanceActive","GLOBAL",2) Global("ANAeriePlayer1ElfTalk","GLOBAL",2)~ THEN AERIEJ ANAeriePlayer1Elf_Next
 @153 DO ~SetGlobal("ANAeriePlayer1ElfTalk","GLOBAL",3)~
-== PLAYER1 @154
-== AERIEJ @155
-== PLAYER1 @156
-== AERIEJ @157
-== PLAYER1 @158
-== AERIEJ @159
+END
+IF ~~ THEN REPLY @154 EXTERN AERIEJ ANAeriePlayer1Elf_Next1
+
+CHAIN AERIEJ ANAeriePlayer1Elf_Next1
+@155
+END
+IF ~~ THEN REPLY @156 EXTERN AERIEJ ANAeriePlayer1Elf_Next2
+IF ~~ THEN REPLY @169 EXTERN AERIEJ ANAeriePlayer1Elf_Next2
+
+CHAIN AERIEJ ANAeriePlayer1Elf_Next2
+@157
+END
+IF ~~ THEN REPLY @158 EXTERN AERIEJ ANAeriePlayer1Elf_Next3
+IF ~~ THEN REPLY @170 EXTERN AERIEJ ANAeriePlayer1Elf_Next3
+
+CHAIN AERIEJ ANAeriePlayer1Elf_Next3
+@159
 EXIT
 
 // Диалог с Эльханом

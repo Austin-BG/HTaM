@@ -9,13 +9,13 @@ IF ~GlobalTimerExpired("KorganContract","GLOBAL") Global("KorMentionedContract",
   SAY @36
 =@0  
 = @1   
-IF ~~ THEN DO ~SetGlobal("KorMentionedContract","LOCALS",2)~ EXTERN PLAYER1 ANkorganBank1
+IF ~~ THEN DO ~SetGlobal("KorMentionedContract","LOCALS",2)~ REPLY @3 GOTO ANkorganBank2
 END
 
 IF ~~ THEN BEGIN ANkorganBank
   SAY @0
 = @1   
-IF ~~ THEN DO ~ActionOverride(Player1,SetDialog("PLAYER1"))~ EXTERN PLAYER1 ANkorganBank1
+IF ~~ THEN DO ~ActionOverride(Player1,SetDialog("PLAYER1"))~ REPLY @3 GOTO ANkorganBank2
 END
 
 IF ~~ THEN BEGIN ANkorganBank2
@@ -29,13 +29,18 @@ END
 
 IF ~~ THEN BEGIN ANkorganBank2.1
   SAY @10 
-IF ~~ THEN DO ~ActionOverride(Player1,SetDialog("PLAYER1"))~ EXTERN PLAYER1 ANkorganBankEnd
+IF ~~ THEN DO ~ActionOverride("Korgan",ChangeAIScript("",DEFAULT)) 
+ActionOverride("Korgan",SetLeavePartyDialogueFile()) 
+ActionOverride("Korgan",LeaveParty())
+ActionOverride("Korgan",EscapeArea())~ REPLY @11 EXIT
+IF ~~ THEN REPLY @6 + ANkorganBank2.2
+IF ~~ THEN REPLY @9 + ANkorganBank2.5
 END
 
 IF ~~ THEN BEGIN ANkorganBank2.2
   SAY @12 
-IF ~!IsValidForPartyDialog("Minsc")~ THEN REPLY @13 + ANkorganBank2.2.1
 IF ~!IsValidForPartyDialog("Minsc")~ THEN REPLY @14 + ANkorganBank2.2.2
+IF ~!IsValidForPartyDialog("Minsc")~ THEN REPLY @13 + ANkorganBank2.2.1
 IF ~IsValidForPartyDialog("Minsc") Global("ANkorganMinscCreditTalk","GLOBAL",0)~ THEN EXTERN MINSCJ ANkorganBankMinsc
 END
 
@@ -67,8 +72,8 @@ END
 
 IF ~~ THEN BEGIN ANkorganBankMinsc1
   SAY @137
-IF ~~ THEN REPLY @13 + ANkorganBank2.2.1
 IF ~~ THEN REPLY @14 + ANkorganBank2.2.2
+IF ~~ THEN REPLY @13 + ANkorganBank2.2.1
 END
 
 IF ~~ THEN BEGIN ANkorganBankJaheira1
@@ -92,23 +97,6 @@ IF ~~ THEN EXTERN KORGANJ ANkorganBankJaheira1
 END
 END
 
-APPEND PLAYER1
-
-IF ~~ THEN BEGIN ANkorganBank1
-  SAY @3 
-IF ~~ THEN EXTERN KORGANJ ANkorganBank2
-END 
-
-IF ~~ THEN BEGIN ANkorganBankEnd
-  SAY @11 
-IF ~~ THEN 
-DO ~ActionOverride("Korgan",ChangeAIScript("",DEFAULT)) 
-ActionOverride("Korgan",SetLeavePartyDialogueFile()) 
-ActionOverride("Korgan",LeaveParty())
-ActionOverride("Korgan",EscapeArea())~ EXIT
-END 
-
-END
 
 BEGIN ANyant
 BEGIN ANJock
@@ -122,23 +110,23 @@ END
 
 CHAIN 
 IF ~Global("ANcollectorOwniDead","GLOBAL",1)~ THEN ANjalut ANOwniJalutDeadTalk
-@104 DO ~SetGlobal("ANcollectorOwniDead","GLOBAL",2) SetGlobal("ANDwarfCreditNoEscape","AN0060",1) GiveItemCreate("ANveksl",Player1,1,0,0) SetGlobal("ANDwarfCreditPay","GLOBAL",3) AddJournalEntry(@1021,QUEST_DONE)~
+@104 DO ~SetGlobal("ANcollectorOwniDead","GLOBAL",2) SetGlobal("ANDwarfCreditNoEscape","AN0060",1) GiveItemCreate("ANveksl",Player1,1,0,0) SetGlobal("ANDwarfCreditPay","GLOBAL",3) AddJournalEntry(@1021,QUEST_DONE) ChangeEnemyAlly("ANjalut",NEUTRAL) ChangeEnemyAlly("ANyant",NEUTRAL) ChangeEnemyAlly("ANJock",NEUTRAL) ChangeEnemyAlly("ANesra",NEUTRAL)~
 EXIT
 
 CHAIN 
 IF ~Global("ANcollectorOwniDead","GLOBAL",1)~ THEN ANJock ANOwniJockDeadTalk
-@127 DO ~SetGlobal("ANcollectorOwniDead","GLOBAL",2) SetGlobal("ANDwarfCreditNoEscape","AN0060",1) GiveItemCreate("ANveksl",Player1,1,0,0) SetGlobal("ANDwarfCreditPay","GLOBAL",3) AddJournalEntry(@1021,QUEST_DONE)~
+@127 DO ~SetGlobal("ANcollectorOwniDead","GLOBAL",2) SetGlobal("ANDwarfCreditNoEscape","AN0060",1) GiveItemCreate("ANveksl",Player1,1,0,0) SetGlobal("ANDwarfCreditPay","GLOBAL",3) AddJournalEntry(@1021,QUEST_DONE) ChangeEnemyAlly("ANjalut",NEUTRAL) ChangeEnemyAlly("ANyant",NEUTRAL) ChangeEnemyAlly("ANJock",NEUTRAL) ChangeEnemyAlly("ANesra",NEUTRAL)~
 EXIT
 
 CHAIN 
 IF ~Global("ANcollectorOwniDead","GLOBAL",1)~ THEN ANesra ANOwniEsraDeadTalk
-@129 DO ~SetGlobal("ANcollectorOwniDead","GLOBAL",2) SetGlobal("ANDwarfCreditNoEscape","AN0060",1) GiveItemCreate("ANveksl",Player1,1,0,0) SetGlobal("ANDwarfCreditPay","GLOBAL",3) AddJournalEntry(@1021,QUEST_DONE)~
+@129 DO ~SetGlobal("ANcollectorOwniDead","GLOBAL",2) SetGlobal("ANDwarfCreditNoEscape","AN0060",1) GiveItemCreate("ANveksl",Player1,1,0,0) SetGlobal("ANDwarfCreditPay","GLOBAL",3) AddJournalEntry(@1021,QUEST_DONE) ChangeEnemyAlly("ANjalut",NEUTRAL) ChangeEnemyAlly("ANyant",NEUTRAL) ChangeEnemyAlly("ANJock",NEUTRAL) ChangeEnemyAlly("ANesra",NEUTRAL)~
 EXIT
 
 CHAIN 
 IF ~Global("ANcollectorOwniDead","GLOBAL",1)~ THEN ANyant ANOwniYantDeadTalk
 @128
-=@129 DO ~SetGlobal("ANcollectorOwniDead","GLOBAL",2) SetGlobal("ANDwarfCreditNoEscape","AN0060",1) GiveItemCreate("ANveksl",Player1,1,0,0) SetGlobal("ANDwarfCreditPay","GLOBAL",3) AddJournalEntry(@1021,QUEST_DONE)~
+=@129 DO ~SetGlobal("ANcollectorOwniDead","GLOBAL",2) SetGlobal("ANDwarfCreditNoEscape","AN0060",1) GiveItemCreate("ANveksl",Player1,1,0,0) SetGlobal("ANDwarfCreditPay","GLOBAL",3) AddJournalEntry(@1021,QUEST_DONE) ChangeEnemyAlly("ANjalut",NEUTRAL) ChangeEnemyAlly("ANyant",NEUTRAL) ChangeEnemyAlly("ANJock",NEUTRAL) ChangeEnemyAlly("ANesra",NEUTRAL)~
 EXIT
 
 BEGIN ANcoll1
@@ -164,14 +152,23 @@ IF ~Global("ANowniFirstTalk","AN0060",1) Global("ANDwarfCreditPayPart","GLOBAL",
 THEN ANOwni ANOwniTalk1
 @20 DO ~ActionOverride(Player1,SetDialog("Player1")) SetGlobal("ANowniFirstTalk","AN0060",2) SetGlobal("ANDwarfCreditEncounter","GLOBAL",1)~
 == KORGANJ @21
-== PLAYER1 @22
-=@23
+END
+IF ~~ THEN REPLY @22 EXTERN KORGANJ ANOwniTalk1_1
+
+CHAIN KORGANJ ANOwniTalk1_1
+@23
 == ANOwni @24
 = @83
-== PLAYER1 @25
-== ANOwni @26
-== PLAYER1 @27
-== ANOwni @28
+END
+IF ~~ THEN REPLY @25 EXTERN ANOwni ANOwniTalk1_2
+
+CHAIN ANOwni ANOwniTalk1_2
+@26
+END
+IF ~~ THEN REPLY @27 EXTERN ANOwni ANOwniTalk1_3
+
+CHAIN ANOwni ANOwniTalk1_3
+@28
 END
 IF ~~ THEN DO ~ActionOverride(Player1,SetDialog("Player1"))~ REPLY @30 + ANOwniTalk2
 IF ~~ THEN DO ~SetGlobal("ANDwarfCreditNoPay","GLOBAL",2) ActionOverride(Player1,SetDialog("Player1"))~ REPLY @29 + ANOwniBattle
@@ -179,28 +176,37 @@ IF ~~ THEN DO ~SetGlobal("ANDwarfCreditNoPay","GLOBAL",2) ActionOverride(Player1
 CHAIN 
 IF ~~ THEN ANOwni ANOwniTalk2
 @35
-== PLAYER1 @36 DO ~SetGlobal("ANOwniCharnameName","AN0060",1)~
-== ANOwni @37
+END
+IF ~~ THEN DO ~SetGlobal("ANOwniCharnameName","AN0060",1)~ REPLY @36 EXTERN ANOwni ANOwniTalk2_1
+
+CHAIN ANOwni ANOwniTalk2_1
+@37
 = @38
 == KORGANJ @39
-== PLAYER1 @40
-== KORGANJ @41
+END
+IF ~~ THEN REPLY @40 EXTERN KORGANJ ANOwniTalk2_2
+
+CHAIN KORGANJ ANOwniTalk2_2
+@41
 == ANOwni @42
 END
-IF ~PartyGoldGT(4999)~ THEN DO ~SetGlobal("ANDwarfCreditPay","GLOBAL",2)~ REPLY @43 + ANOwniPayAll1
-IF ~PartyGoldGT(999)~ THEN DO ~SetGlobal("ANDwarfCreditPay","GLOBAL",2)~ REPLY @44 + ANOwniPayPart1
-IF ~~ THEN REPLY @48 + ANOwniBattle2
-IF ~~ THEN REPLY @50 + ANOwniBattle2
+IF ~PartyGoldGT(4999)~ THEN DO ~SetGlobal("ANDwarfCreditPay","GLOBAL",2)~ REPLY @43 EXTERN ANOwni ANOwniPayAll1
+IF ~PartyGoldGT(999)~ THEN DO ~SetGlobal("ANDwarfCreditPay","GLOBAL",2)~ REPLY @44 EXTERN ANOwni ANOwniPayPart1
+IF ~~ THEN REPLY @48 EXTERN ANOwni ANOwniBattle2
+IF ~~ THEN REPLY @50 EXTERN ANOwni ANOwniBattle2
 
 
 // Драка (до ранения)
 CHAIN 
 IF ~~ THEN ANOwni ANOwniBattle
 @31
-== PLAYER1 @32
-== ANOwni @33 DO ~ChangeEnemyAlly(Myself,EVILCUTOFF) Enemy()~
-== PLAYER1 @34 
-EXIT
+END
+IF ~~ THEN REPLY @32 EXTERN ANOwni ANOwniBattle_1
+
+CHAIN ANOwni ANOwniBattle_1
+@33 DO ~ChangeEnemyAlly(Myself,EVILCUTOFF) Enemy()~
+END
+IF ~~ THEN REPLY @34 EXIT
 
 CHAIN 
 IF ~~ THEN ANOwni ANOwniBattle2
@@ -218,53 +224,89 @@ EXIT
 CHAIN 
 IF ~~ THEN ANOwni ANOwniPayPart1
 @45
-== PLAYER1 @46
-== ANOwni @52
-== PLAYER1 @53
-== ANOwni @55
-== PLAYER1 @56
-== ANOwni @57
-== PLAYER1 @58
-== ANOwni @59
+END
+IF ~~ THEN REPLY @46 EXTERN ANOwni ANOwniPayPart1_1
+
+CHAIN ANOwni ANOwniPayPart1_1
+@52
+END
+IF ~~ THEN REPLY @53 EXTERN ANOwni ANOwniPayPart1_2
+IF ~~ THEN REPLY @141 EXTERN ANOwni ANOwniPayPart1_2
+
+CHAIN ANOwni ANOwniPayPart1_2
+@55
+END
+IF ~~ THEN REPLY @56 EXTERN ANOwni ANOwniPayPart1_3
+IF ~~ THEN REPLY @142 EXTERN ANOwni ANOwniPayPart1_3
+
+CHAIN ANOwni ANOwniPayPart1_3
+@57
+END
+IF ~~ THEN REPLY @58 EXTERN ANOwni ANOwniPayPart1_4
+
+CHAIN ANOwni ANOwniPayPart1_4
+@59
 == JAHEIRAJ IF ~InParty("Jaheira") InMyArea("Jaheira") !Dead("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN @60
 == ANOwni @61
 = @62
-== PLAYER1 IF ~InParty("HaerDalis") InMyArea("HaerDalis") !Dead("HaerDalis") !StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN @63
-== HAERDAJ IF ~InParty("HaerDalis") InMyArea("HaerDalis") !Dead("HaerDalis") !StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN @64
-= @65
-== PLAYER1 IF ~InParty("HaerDalis") InMyArea("HaerDalis") !Dead("HaerDalis") !StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN @66
-== ANOwni @67
+END
+IF ~OR(2) !InParty("HaerDalis") StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN EXTERN ANOwni ANOwniPayPart1_5
+IF ~InParty("HaerDalis") !StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN REPLY @63 EXTERN HAERDAJ ANOwniPayPart1_4Haerd
+
+APPEND HAERDAJ 
+IF ~~ THEN BEGIN ANOwniPayPart1_4Haerd
+  SAY @64
+=@65  
+IF ~~ THEN REPLY @66 EXTERN ANOwni ANOwniPayPart1_5
+END
+END
+
+CHAIN ANOwni ANOwniPayPart1_5
+@67
 END
 IF ~~ THEN REPLY @68 + ANOwniPayFriend_1
+IF ~~ THEN REPLY @143 + ANOwniPayFriend_1
 IF ~~ THEN REPLY @69 + ANOwniPayPart2
 
 CHAIN 
 IF ~~ THEN ANOwni ANOwniPayPart2
 @70
-== PLAYER1 @71
-= @54 DO ~TakePartyGold(1000) SetGlobal("ANDwarfCreditPayPart","GLOBAL",1) SetGlobal("ANDwarfCreditPayPart1","AN0060",1) AddJournalEntry(@1017,QUEST)~ 
-== ANOwni @51 DO ~EscapeArea() ActionOverride("ANjalut",EscapeArea()) ActionOverride("ANesra",EscapeArea()) ActionOverride("ANyant",EscapeArea()) ActionOverride("ANJock",EscapeArea()) SetGlobal("ANDwarfCreditNoEscape","AN0060",1) SetGlobal("ANOwniExists","AN0060",2) SetGlobal("ANDwarfCreditPayPartExist","GLOBAL",1)~
+END
+IF ~~ THEN REPLY @54 DO ~TakePartyGold(1000) SetGlobal("ANDwarfCreditPayPart","GLOBAL",1) SetGlobal("ANDwarfCreditPayPart1","AN0060",1) AddJournalEntry(@1017,QUEST)~ EXTERN ANOwni ANOwniPayPart2_1
+
+CHAIN ANOwni ANOwniPayPart2_1
+@51 DO ~EscapeArea() ActionOverride("ANjalut",EscapeArea()) ActionOverride("ANesra",EscapeArea()) ActionOverride("ANyant",EscapeArea()) ActionOverride("ANJock",EscapeArea()) SetGlobal("ANDwarfCreditNoEscape","AN0060",1) SetGlobal("ANOwniExists","AN0060",2) SetGlobal("ANDwarfCreditPayPartExist","GLOBAL",1)~
 EXIT
 
 CHAIN 
 IF ~~ THEN ANOwni ANOwniPayPart2_week2
 @108
-== PLAYER1 @54 DO ~TakePartyGold(1000) IncrementGlobal("ANDwarfCreditPayPart","GLOBAL",1) SetGlobal("ANDwarfCreditPayPart2","AN0060",1) SetGlobal("ANDwarfCreditNoEscape","AN0060",0)~ 
-== ANOwni @109 DO ~EscapeArea() ActionOverride("ANjalut",EscapeArea()) ActionOverride("ANesra",EscapeArea()) ActionOverride("ANyant",EscapeArea()) ActionOverride("ANJock",EscapeArea()) SetGlobal("ANDwarfCreditNoEscape","AN0060",1) SetGlobal("ANOwniExists","AN0060",4) SetGlobal("ANCreditPayPartTalk","GLOBAL",0)~
+END
+IF ~~ THEN DO ~TakePartyGold(1000) IncrementGlobal("ANDwarfCreditPayPart","GLOBAL",1) SetGlobal("ANDwarfCreditPayPart2","AN0060",1) SetGlobal("ANDwarfCreditNoEscape","AN0060",0)~ REPLY @54 EXTERN ANOwni ANOwniPayPart2_week2_1
+
+CHAIN ANOwni ANOwniPayPart2_week2_1
+@109 DO ~EscapeArea() ActionOverride("ANjalut",EscapeArea()) ActionOverride("ANesra",EscapeArea()) ActionOverride("ANyant",EscapeArea()) ActionOverride("ANJock",EscapeArea()) SetGlobal("ANDwarfCreditNoEscape","AN0060",1) SetGlobal("ANOwniExists","AN0060",4) SetGlobal("ANCreditPayPartTalk","GLOBAL",0)~
 EXIT
 
 CHAIN 
 IF ~~ THEN ANOwni ANOwniPayPart2_week3
 @110
-== PLAYER1 @54 DO ~TakePartyGold(1000) IncrementGlobal("ANDwarfCreditPayPart","GLOBAL",1) SetGlobal("ANDwarfCreditPayPart3","AN0060",1) SetGlobal("ANDwarfCreditNoEscape","AN0060",0)~ 
-== ANOwni @109 DO ~EscapeArea() ActionOverride("ANjalut",EscapeArea()) ActionOverride("ANesra",EscapeArea()) ActionOverride("ANyant",EscapeArea()) ActionOverride("ANJock",EscapeArea()) SetGlobal("ANDwarfCreditNoEscape","AN0060",1) SetGlobal("ANOwniExists","AN0060",6) SetGlobal("ANCreditPayPartTalk","GLOBAL",0)~
+END
+IF ~~ THEN DO ~TakePartyGold(1000) IncrementGlobal("ANDwarfCreditPayPart","GLOBAL",1) SetGlobal("ANDwarfCreditPayPart3","AN0060",1) SetGlobal("ANDwarfCreditNoEscape","AN0060",0)~ REPLY @54 EXTERN ANOwni ANOwniPayPart2_week3_1
+
+CHAIN ANOwni ANOwniPayPart2_week3_1
+@109 DO ~EscapeArea() ActionOverride("ANjalut",EscapeArea()) ActionOverride("ANesra",EscapeArea()) ActionOverride("ANyant",EscapeArea()) ActionOverride("ANJock",EscapeArea()) SetGlobal("ANDwarfCreditNoEscape","AN0060",1) SetGlobal("ANOwniExists","AN0060",6) SetGlobal("ANCreditPayPartTalk","GLOBAL",0)~
 EXIT
 
 CHAIN 
 IF ~~ THEN ANOwni ANOwniPayPart2_week4
 @110
-== PLAYER1 @54 DO ~TakePartyGold(1000) IncrementGlobal("ANDwarfCreditPayPart","GLOBAL",1) SetGlobal("ANDwarfCreditPayPart4","AN0060",1) SetGlobal("ANDwarfCreditNoEscape","AN0060",0)~ 
-== ANOwni @109 DO ~EscapeArea() ActionOverride("ANjalut",EscapeArea()) ActionOverride("ANesra",EscapeArea()) ActionOverride("ANyant",EscapeArea()) ActionOverride("ANJock",EscapeArea()) SetGlobal("ANDwarfCreditNoEscape","AN0060",1) SetGlobal("ANOwniExists","AN0060",8) SetGlobal("ANCreditPayPartTalk","GLOBAL",0)~
+END
+IF ~~ THEN DO ~TakePartyGold(1000) IncrementGlobal("ANDwarfCreditPayPart","GLOBAL",1) SetGlobal("ANDwarfCreditPayPart4","AN0060",1) SetGlobal("ANDwarfCreditNoEscape","AN0060",0)~ REPLY @54 EXTERN ANOwni ANOwniPayPart2_week4_1
+
+
+CHAIN ANOwni ANOwniPayPart2_week4_1
+@109 DO ~EscapeArea() ActionOverride("ANjalut",EscapeArea()) ActionOverride("ANesra",EscapeArea()) ActionOverride("ANyant",EscapeArea()) ActionOverride("ANJock",EscapeArea()) SetGlobal("ANDwarfCreditNoEscape","AN0060",1) SetGlobal("ANOwniExists","AN0060",8) SetGlobal("ANCreditPayPartTalk","GLOBAL",0)~
 EXIT
 
 CHAIN 
@@ -307,8 +349,11 @@ IF ~~ THEN DO ~SetGlobal("ANCreditPayPartTalk","GLOBAL",1)~ REPLY @50 + ANOwniBa
 CHAIN 
 IF ~~ THEN ANOwni ANOwniPayFriend_3
 @74
-== PLAYER1 @75
-== ANOwni @76
+END
+IF ~~ THEN REPLY @75 EXTERN ANOwni ANOwniPayFriend_3_1
+
+CHAIN ANOwni ANOwniPayFriend_3_1
+@76
 == KORGANJ @77
 END
 IF ~~ THEN DO ~SetGlobal("ANOwniPayFriend","GLOBAL",1) AddJournalEntry(@1018,QUEST)~ REPLY @78 + ANOwniPayFriend1
@@ -317,69 +362,94 @@ IF ~~ THEN DO ~SetGlobal("ANOwniPayFriend","GLOBAL",1) AddJournalEntry(@1018,QUE
 CHAIN 
 IF ~~ THEN ANOwni ANOwniPayFriend1
 @125
-== PLAYER1 @126 
-EXIT
+END
+IF ~~ THEN REPLY @126 EXIT
 
 CHAIN 
 IF ~~ THEN ANOwni ANOwniPayFriend2
 @80
 = @125
-== PLAYER1 @126 
-EXIT
+END
+IF ~~ THEN REPLY @126 EXIT
 
 
 // Выплата полностью
 CHAIN 
 IF ~~ THEN ANOwni ANOwniPayAll1
 @52
-== PLAYER1 @53
-== ANOwni @55
-== PLAYER1 @56
-== ANOwni @57
-== PLAYER1 @58
-== ANOwni @59
+END
+IF ~~ THEN REPLY @53 EXTERN ANOwni ANOwniPayAll1_1
+IF ~~ THEN REPLY @141 EXTERN ANOwni ANOwniPayAll1_1
+
+CHAIN ANOwni ANOwniPayAll1_1
+@55
+END
+IF ~~ THEN REPLY @56 EXTERN ANOwni ANOwniPayAll1_2
+IF ~~ THEN REPLY @142 EXTERN ANOwni ANOwniPayAll1_2
+
+CHAIN ANOwni ANOwniPayAll1_2
+@57
+END
+IF ~~ THEN REPLY @58 EXTERN ANOwni ANOwniPayAll1_3
+
+CHAIN ANOwni ANOwniPayAll1_3
+@59
 == JAHEIRAJ IF ~InParty("Jaheira") InMyArea("Jaheira") !Dead("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN @60
 == ANOwni @61
 = @62
-== PLAYER1 IF ~InParty("HaerDalis") InMyArea("HaerDalis") !Dead("HaerDalis") !StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN @63
-== HAERDAJ IF ~InParty("HaerDalis") InMyArea("HaerDalis") !Dead("HaerDalis") !StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN @64
-= @65
-== PLAYER1 IF ~InParty("HaerDalis") InMyArea("HaerDalis") !Dead("HaerDalis") !StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN @66
-== ANOwni @67
 END
-IF ~~ THEN DO ~ChangeEnemyAlly("ANOwni",GOODBUTBLUE) ChangeEnemyAlly("ANjalut",GOODBUTBLUE) ChangeEnemyAlly("ANyant",GOODBUTBLUE) ChangeEnemyAlly("ANJock",GOODBUTBLUE) ChangeEnemyAlly("ANesra",GOODBUTBLUE)~ REPLY @68 + ANOwniPayFriend_1
+IF ~OR(2) !InParty("HaerDalis") StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN EXTERN ANOwni ANOwniPayAll1_4
+IF ~InParty("HaerDalis") !StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN REPLY @63 EXTERN HAERDAJ ANOwniPayAll1_3Haerd
+
+APPEND HAERDAJ 
+IF ~~ THEN BEGIN ANOwniPayAll1_3Haerd
+  SAY @64
+=@65  
+IF ~~ THEN REPLY @66 EXTERN ANOwni ANOwniPayAll1_4
+END
+END
+
+CHAIN ANOwni ANOwniPayAll1_4
+@67
+END
+IF ~~ THEN DO ~ChangeEnemyAlly("ANOwni",CONTROLLED) ChangeEnemyAlly("ANjalut",CONTROLLED) ChangeEnemyAlly("ANyant",CONTROLLED) ChangeEnemyAlly("ANJock",CONTROLLED) ChangeEnemyAlly("ANesra",CONTROLLED)~ REPLY @68 + ANOwniPayFriend_1
+IF ~~ THEN DO ~ChangeEnemyAlly("ANOwni",CONTROLLED) ChangeEnemyAlly("ANjalut",CONTROLLED) ChangeEnemyAlly("ANyant",CONTROLLED) ChangeEnemyAlly("ANJock",CONTROLLED) ChangeEnemyAlly("ANesra",CONTROLLED)~ REPLY @143 + ANOwniPayFriend_1
 IF ~~ THEN REPLY @69 + ANOwniPayAll2
 
 CHAIN 
 IF ~~ THEN ANOwni ANOwniPayAll2
 @70
-== PLAYER1 @71 DO ~TakePartyGold(5000) GiveItemCreate("ANveksl",Player1,1,0,0) SetGlobal("ANDwarfCreditPay","GLOBAL",3) SetGlobal("ANDwarfCreditNoEscape","AN0060",1) AddJournalEntry(@1016,QUEST_DONE)~ 
-== ANOwni @47 DO ~EscapeArea() ActionOverride("ANjalut",EscapeArea()) ActionOverride("ANesra",EscapeArea()) ActionOverride("ANyant",EscapeArea()) ActionOverride("ANJock",EscapeArea())~
+END
+IF ~~ THEN DO ~TakePartyGold(5000) GiveItemCreate("ANveksl",Player1,1,0,0) SetGlobal("ANDwarfCreditPay","GLOBAL",3) SetGlobal("ANDwarfCreditNoEscape","AN0060",1) AddJournalEntry(@1016,QUEST_DONE)~ REPLY @71 EXTERN ANOwni ANOwniPayAll2_1
+
+CHAIN ANOwni ANOwniPayAll2_1
+@47 DO ~EscapeArea() ActionOverride("ANjalut",EscapeArea()) ActionOverride("ANesra",EscapeArea()) ActionOverride("ANyant",EscapeArea()) ActionOverride("ANJock",EscapeArea())~
 EXIT
 
 CHAIN 
 IF ~~ THEN ANOwni ANOwniPayAll3_1
 @47 DO ~TakePartyGold(4000)~
-== PLAYER1 @81 DO ~GiveItemCreate("ANveksl",Player1,1,0,0) SetGlobal("ANDwarfCreditPay","GLOBAL",3) AddJournalEntry(@1022,QUEST_DONE) ActionOverride("ANOwni",EscapeArea()) ActionOverride("ANjalut",EscapeArea()) ActionOverride("ANesra",EscapeArea()) ActionOverride("ANyant",EscapeArea()) ActionOverride("ANJock",EscapeArea())~ 
-EXIT
+END
+IF ~~ THEN DO ~GiveItemCreate("ANveksl",Player1,1,0,0) SetGlobal("ANDwarfCreditPay","GLOBAL",3) AddJournalEntry(@1022,QUEST_DONE) ActionOverride("ANOwni",EscapeArea()) ActionOverride("ANjalut",EscapeArea()) ActionOverride("ANesra",EscapeArea()) ActionOverride("ANyant",EscapeArea()) ActionOverride("ANJock",EscapeArea())~ REPLY @81 EXIT
+
 
 CHAIN 
 IF ~~ THEN ANOwni ANOwniPayAll3_2
 @47 DO ~TakePartyGold(3000)~
-== PLAYER1 @81 DO ~GiveItemCreate("ANveksl",Player1,1,0,0) SetGlobal("ANDwarfCreditPay","GLOBAL",3) AddJournalEntry(@1022,QUEST_DONE) ActionOverride("ANOwni",EscapeArea()) ActionOverride("ANjalut",EscapeArea()) ActionOverride("ANesra",EscapeArea()) ActionOverride("ANyant",EscapeArea()) ActionOverride("ANJock",EscapeArea())~ 
-EXIT
+END
+IF ~~ THEN DO ~GiveItemCreate("ANveksl",Player1,1,0,0) SetGlobal("ANDwarfCreditPay","GLOBAL",3) AddJournalEntry(@1022,QUEST_DONE) ActionOverride("ANOwni",EscapeArea()) ActionOverride("ANjalut",EscapeArea()) ActionOverride("ANesra",EscapeArea()) ActionOverride("ANyant",EscapeArea()) ActionOverride("ANJock",EscapeArea())~ REPLY @81 EXIT
 
 CHAIN 
 IF ~~ THEN ANOwni ANOwniPayAll3_3
 @47 DO ~TakePartyGold(2000)~
-== PLAYER1 @81 DO ~GiveItemCreate("ANveksl",Player1,1,0,0) SetGlobal("ANDwarfCreditPay","GLOBAL",3) AddJournalEntry(@1022,QUEST_DONE) ActionOverride("ANOwni",EscapeArea()) ActionOverride("ANjalut",EscapeArea()) ActionOverride("ANesra",EscapeArea()) ActionOverride("ANyant",EscapeArea()) ActionOverride("ANJock",EscapeArea())~ 
-EXIT
+END
+IF ~~ THEN DO ~GiveItemCreate("ANveksl",Player1,1,0,0) SetGlobal("ANDwarfCreditPay","GLOBAL",3) AddJournalEntry(@1022,QUEST_DONE) ActionOverride("ANOwni",EscapeArea()) ActionOverride("ANjalut",EscapeArea()) ActionOverride("ANesra",EscapeArea()) ActionOverride("ANyant",EscapeArea()) ActionOverride("ANJock",EscapeArea())~ REPLY @81 EXIT
 
 CHAIN 
 IF ~~ THEN ANOwni ANOwniPayAll3
 @47 DO ~TakePartyGold(1000)~
-== PLAYER1 @81 DO ~GiveItemCreate("ANveksl",Player1,1,0,0) SetGlobal("ANDwarfCreditPay","GLOBAL",3) AddJournalEntry(@1022,QUEST_DONE) ActionOverride("ANOwni",EscapeArea()) ActionOverride("ANjalut",EscapeArea()) ActionOverride("ANesra",EscapeArea()) ActionOverride("ANyant",EscapeArea()) ActionOverride("ANJock",EscapeArea())~ 
-EXIT
+END
+IF ~~ THEN DO ~GiveItemCreate("ANveksl",Player1,1,0,0) SetGlobal("ANDwarfCreditPay","GLOBAL",3) AddJournalEntry(@1022,QUEST_DONE) ActionOverride("ANOwni",EscapeArea()) ActionOverride("ANjalut",EscapeArea()) ActionOverride("ANesra",EscapeArea()) ActionOverride("ANyant",EscapeArea()) ActionOverride("ANJock",EscapeArea())~ REPLY @81 EXIT
 
 
 // Остановка драки при серьёзном ранении
@@ -393,22 +463,43 @@ IF ~~ THEN DO ~SetGlobal("ANownyStop","GLOBAL",2)~ REPLY @86 + ANOwniStop1
 CHAIN 
 IF ~~ THEN ANOwni ANOwniStop1
 @52 DO ~ClearAllActions()~
-== PLAYER1 @53
-== ANOwni @55
-== PLAYER1 @56
-== ANOwni @57
-== PLAYER1 @58
-== ANOwni @59
+END
+IF ~~ THEN REPLY @53 EXTERN ANOwni ANOwniStop1_1
+IF ~~ THEN REPLY @141 EXTERN ANOwni ANOwniStop1_1
+
+CHAIN ANOwni ANOwniStop1_1
+@55
+END
+IF ~~ THEN REPLY @56 EXTERN ANOwni ANOwniStop1_2
+IF ~~ THEN REPLY @142 EXTERN ANOwni ANOwniStop1_2
+
+CHAIN ANOwni ANOwniStop1_2
+@57
+END
+IF ~~ THEN REPLY @58 EXTERN ANOwni ANOwniStop1_3
+
+CHAIN ANOwni ANOwniStop1_3
+@59
 == JAHEIRAJ IF ~InParty("Jaheira") InMyArea("Jaheira") !Dead("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN @60
 == ANOwni @61
 = @62
-== PLAYER1 IF ~InParty("HaerDalis") InMyArea("HaerDalis") !Dead("HaerDalis") !StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN @63
-== HAERDAJ IF ~InParty("HaerDalis") InMyArea("HaerDalis") !Dead("HaerDalis") !StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN @64
-= @65
-== PLAYER1 IF ~InParty("HaerDalis") InMyArea("HaerDalis") !Dead("HaerDalis") !StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN @66
-== ANOwni @67
 END
-IF ~~ THEN DO ~ChangeEnemyAlly("ANOwni",GOODBUTBLUE) ChangeEnemyAlly("ANjalut",GOODBUTBLUE) ChangeEnemyAlly("ANyant",GOODBUTBLUE) ChangeEnemyAlly("ANJock",GOODBUTBLUE) ChangeEnemyAlly("ANesra",GOODBUTBLUE)~ REPLY @68 + ANOwniPayFriend_1
+IF ~OR(2) !InParty("HaerDalis") StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN EXTERN ANOwni ANOwniStop1_4
+IF ~InParty("HaerDalis") !StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN REPLY @63 EXTERN HAERDAJ ANOwniStop1_3Haerd
+
+APPEND HAERDAJ 
+IF ~~ THEN BEGIN ANOwniStop1_3Haerd
+  SAY @64
+=@65  
+IF ~~ THEN REPLY @66 EXTERN ANOwni ANOwniStop1_4
+END
+END
+
+CHAIN ANOwni ANOwniStop1_4
+@67
+END
+IF ~~ THEN DO ~ChangeEnemyAlly("ANOwni",CONTROLLED) ChangeEnemyAlly("ANjalut",CONTROLLED) ChangeEnemyAlly("ANyant",CONTROLLED) ChangeEnemyAlly("ANJock",CONTROLLED) ChangeEnemyAlly("ANesra",CONTROLLED)~ REPLY @68 + ANOwniPayFriend_1
+IF ~~ THEN DO ~ChangeEnemyAlly("ANOwni",CONTROLLED) ChangeEnemyAlly("ANjalut",CONTROLLED) ChangeEnemyAlly("ANyant",CONTROLLED) ChangeEnemyAlly("ANJock",CONTROLLED) ChangeEnemyAlly("ANesra",CONTROLLED)~ REPLY @143 + ANOwniPayFriend_1
 IF ~~ THEN REPLY @87 EXIT
 
 
@@ -427,16 +518,21 @@ IF ~Global("ANOwniPayFriend","GLOBAL",2) Global("ANcollectorDead","GLOBAL",0)~ T
 == ANcoll1 @97
 = @98 DO ~ChangeEnemyAlly("ANcoll1",ENEMY) ChangeEnemyAlly("ANcoll2",ENEMY) ChangeEnemyAlly("ANcoll3",ENEMY) ChangeEnemyAlly("ANcoll4",ENEMY) ActionOverride("ANcoll1",Enemy())  ActionOverride("ANcoll2",Enemy())  ActionOverride("ANcoll3",Enemy()) ActionOverride("ANcoll4",Enemy())~
 = @99 DO ~ActionOverride("ANcoll2",ApplySpell(Myself,WIZARD_STONE_SKIN)) ActionOverride("ANcoll2",ForceSpell(Player1,CLERIC_FLAME_STRIKE))~
-== PLAYER1 @100
+== ANOwni @100
 EXIT
 
 
 // Победа над Сборщиком
 CHAIN 
 IF ~Global("ANcollectorDead","GLOBAL",1)~ THEN ANOwni ANOwniTalkCollectorDead
-@101 DO ~AddexperienceParty(8000) SetGlobal("ANcollectorDead","GLOBAL",2) ActionOverride(Player1,SetDialog("Player1")) ChangeEnemyAlly("ANOwni",GOODBUTBLUE) ChangeEnemyAlly("ANjalut",GOODBUTBLUE) ChangeEnemyAlly("ANyant",GOODBUTBLUE) ChangeEnemyAlly("ANJock",GOODBUTBLUE) ChangeEnemyAlly("ANesra",GOODBUTBLUE) GiveItem("ANveksl",Player1) SetGlobal("ANDwarfCreditNoEscape","AN0060",1)~
+@101 DO ~AddexperienceParty(8000) SetGlobal("ANcollectorDead","GLOBAL",2) ActionOverride(Player1,SetDialog("Player1")) ChangeEnemyAlly("ANOwni",NEUTRAL) ChangeEnemyAlly("ANjalut",NEUTRAL) ChangeEnemyAlly("ANyant",NEUTRAL) ChangeEnemyAlly("ANJock",NEUTRAL) ChangeEnemyAlly("ANesra",NEUTRAL) GiveItem("ANveksl",Player1) SetGlobal("ANDwarfCreditNoEscape","AN0060",1)~
 == ANOwni IF ~!Global("ANOwniCharnameName","AN0060",1)~ THEN @102
-== PLAYER1 IF ~!Global("ANOwniCharnameName","AN0060",1)~ THEN @36
+END
+IF ~Global("ANOwniCharnameName","AN0060",1)~ THEN EXTERN ANOwni ANOwniTalkCollectorDead_1
+IF ~!Global("ANOwniCharnameName","AN0060",1)~ THEN REPLY @36 EXTERN ANOwni ANOwniTalkCollectorDead_1
+
+CHAIN ANOwni ANOwniTalkCollectorDead_1
+@110
 == ANOwni IF ~!Dead("ANJock") !Dead("ANyant") !Dead("ANesra") !Dead("ANjalut")~ THEN @103 DO ~SetGlobal("ANDwarfCreditPay","GLOBAL",3) GiveItemCreate("ANveksl",Player1,1,0,0) EscapeArea()~
 == ANOwni IF ~OR(4) Dead("ANJock") Dead("ANyant") Dead("ANesra") Dead("ANjalut")~ THEN @105 DO ~SetGlobal("ANDwarfCreditPay","GLOBAL",3) SetGlobal("ANDwarfOwniGroupRevive","AN0600",1) GiveItemCreate("ANveksl",Player1,1,0,0) AddJournalEntry(@1019,QUEST_DONE)~
 EXIT
@@ -448,7 +544,12 @@ IF ~Global("ANDwarfCreditPay","GLOBAL",3)~ THEN PLAYER1 ANkorganPayFinal
 @111 DO ~SetGlobal("ANDwarfCreditPay","GLOBAL",4)~
 == KORGANJ @112
 = @113
-== PLAYER1 @114
+END
+IF ~~ THEN REPLY @114 EXTERN KORGANJ ANkorganPayFinal_1
+IF ~~ THEN REPLY @139 EXTERN KORGANJ ANkorganPayFinal_2
+
+CHAIN KORGANJ ANkorganPayFinal_1
+@138
 == NALIAJ IF ~InParty("Nalia") InMyArea("Nalia") !Dead("Nalia") !StateCheck("Nalia",CD_STATE_NOTVALID)~ THEN @115
 == KORGANJ IF ~InParty("Nalia") InMyArea("Nalia") !Dead("Nalia") !StateCheck("Nalia",CD_STATE_NOTVALID)~ THEN @124
 == JANJ IF ~InParty("Jan") InMyArea("Jan") !Dead("Jan") !StateCheck("Jan",CD_STATE_NOTVALID)~ THEN @116
@@ -469,15 +570,38 @@ IF ~Global("ANDwarfCreditPay","GLOBAL",3)~ THEN PLAYER1 ANkorganPayFinal
 == JAHEIRAJ IF ~InParty("Jaheira") InMyArea("Jaheira") !Dead("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID) !InParty("Nalia") !InParty("Anomen") !InParty("Valygar")~ THEN @121
 == KELDORJ IF ~InParty("Keldorn") InMyArea("Keldorn") !Dead("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID)~ THEN @122
 == MINSCJ IF ~InParty("Minsc") InMyArea("Minsc") !Dead("Minsc") !StateCheck("Minsc",CD_STATE_NOTVALID) !InParty("Keldorn")~ THEN @122
-== PLAYER1 @123
+EXIT
+
+CHAIN KORGANJ ANkorganPayFinal_2
+@140
+== NALIAJ IF ~InParty("Nalia") InMyArea("Nalia") !Dead("Nalia") !StateCheck("Nalia",CD_STATE_NOTVALID)~ THEN @115
+== KORGANJ IF ~InParty("Nalia") InMyArea("Nalia") !Dead("Nalia") !StateCheck("Nalia",CD_STATE_NOTVALID)~ THEN @124
+== JANJ IF ~InParty("Jan") InMyArea("Jan") !Dead("Jan") !StateCheck("Jan",CD_STATE_NOTVALID)~ THEN @116
+== KORGANJ IF ~InParty("Jan") InMyArea("Jan") !Dead("Jan") !StateCheck("Jan",CD_STATE_NOTVALID)~ THEN @117
+== JAHEIRAJ IF ~InParty("Jaheira") InMyArea("Jaheira") !Dead("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID) !InParty("Nalia")~ THEN @115
+== MAZZYJ IF ~InParty("Mazzy") InMyArea("Mazzy") !Dead("Mazzy") !StateCheck("Mazzy",CD_STATE_NOTVALID) !InParty("Nalia") !InParty("Jaheira")~ THEN @115
+== KORGANJ IF ~InParty("Jaheira") InMyArea("Jaheira") !Dead("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID) !InParty("Nalia")~ THEN @118
+== KORGANJ IF ~InParty("Mazzy") InMyArea("Mazzy") !Dead("Mazzy") !StateCheck("Mazzy",CD_STATE_NOTVALID) !InParty("Nalia") !InParty("Jaheira")~ THEN @118
+== NALIAJ IF ~InParty("Nalia") InMyArea("Nalia") !Dead("Nalia") !StateCheck("Nalia",CD_STATE_NOTVALID)~ THEN @119
+== KORGANJ IF ~InParty("Nalia") InMyArea("Nalia") !Dead("Nalia") !StateCheck("Nalia",CD_STATE_NOTVALID)~ THEN @120
+== JAHEIRAJ IF ~InParty("Jaheira") InMyArea("Jaheira") !Dead("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID) !InParty("Nalia")~ THEN @119
+== KORGANJ IF ~InParty("Jaheira") InMyArea("Jaheira") !Dead("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID) !InParty("Nalia")~ THEN @120
+== MAZZYJ IF ~InParty("Mazzy") InMyArea("Mazzy") !Dead("Mazzy") !StateCheck("Mazzy",CD_STATE_NOTVALID) !InParty("Nalia") !InParty("Jaheira")~ THEN @119
+== VALYGARJ IF ~InParty("Valygar") InMyArea("Valygar") !Dead("Valygar") !StateCheck("Valygar",CD_STATE_NOTVALID) InParty("Nalia") InMyArea("Nalia") !Dead("Nalia") !StateCheck("Nalia",CD_STATE_NOTVALID)~ THEN @121
+== VALYGARJ IF ~InParty("Valygar") InMyArea("Valygar") !Dead("Valygar") !StateCheck("Valygar",CD_STATE_NOTVALID) InParty("Jaheira") InMyArea("Jaheira") !Dead("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID) !InParty("Nalia")~ THEN @121
+== ANOMENJ IF ~InParty("Anomen") InMyArea("Anomen") !Dead("Anomen") !StateCheck("Anomen",CD_STATE_NOTVALID) InParty("Nalia") InMyArea("Nalia") !Dead("Nalia") !StateCheck("Nalia",CD_STATE_NOTVALID)~ THEN @121
+== ANOMENJ IF ~InParty("Anomen") InMyArea("Anomen") !Dead("Anomen") !StateCheck("Anomen",CD_STATE_NOTVALID) InParty("Jaheira") InMyArea("Jaheira") !Dead("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID) !InParty("Nalia")~ THEN @121
+== JAHEIRAJ IF ~InParty("Jaheira") InMyArea("Jaheira") !Dead("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID) !InParty("Nalia") !InParty("Anomen") !InParty("Valygar")~ THEN @121
+== KELDORJ IF ~InParty("Keldorn") InMyArea("Keldorn") !Dead("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID)~ THEN @122
+== MINSCJ IF ~InParty("Minsc") InMyArea("Minsc") !Dead("Minsc") !StateCheck("Minsc",CD_STATE_NOTVALID) !InParty("Keldorn")~ THEN @122
 EXIT
 
 CHAIN 
 IF ~Dead("ANOwni") !Global("ANOwniPayFriend","GLOBAL",2) Global("ANKorganVeksel","AN0060",1)~ THEN KORGANJ ANKorganVekselTalk
 @130 DO ~SetGlobal("ANKorganVeksel","AN0060",2) SetGlobal("ANDwarfCreditNoEscape","AN0060",1)~
 = @131 DO ~GiveItemCreate("ANveksl",Player1,1,0,0) AddJournalEntry(@1024,QUEST)~
-== PLAYER1 @132
-EXIT
+END
+IF ~~ THEN REPLY @132 EXIT
 
 CHAIN 
 IF ~Dead("ANOwni") !Global("ANOwniPayFriend","GLOBAL",2) Global("ANowniDeadvekselNoKorgan","AN0060",1)~ THEN PLAYER1 ANowniDeadvekselTalkPlayer1

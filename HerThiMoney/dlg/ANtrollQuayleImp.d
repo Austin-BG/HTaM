@@ -109,44 +109,68 @@ IF ~Global("ANQuayleTroll","GLOBAL",3) !Global("ANQuayleTrollOtkaz","GLOBAL",1) 
 @32
 == 7XQUAYJ @33
 == AERIEJ @34
-== PLAYER1 @35
-== AERIEJ @36
+END
+IF ~~ THEN REPLY @35 EXTERN AERIEJ ANQuayleImpTalkFirst2_1
+
+CHAIN AERIEJ ANQuayleImpTalkFirst2_1
+@36
 == 7XQUAYJ @37
 == AERIEJ @38
 == MINSCJ IF ~InParty("Minsc") InMyArea("Minsc") !StateCheck("Minsc",CD_STATE_NOTVALID)~ THEN @39
-== PLAYER1 @40
-== 7XQUAYJ @41
+END
+IF ~~ THEN REPLY @40 EXTERN 7XQUAYJ ANQuayleImpTalkFirst2_2
+
+CHAIN 7XQUAYJ ANQuayleImpTalkFirst2_2
+@41
 == AERIEJ @42
 == 7XQUAYJ @43 DO ~SetGlobal("ANQuayleTroll","GLOBAL",4)~
-== PLAYER1 @44
-EXIT
+END
+IF ~~ THEN REPLY @44 EXIT
 
 CHAIN
 IF ~Global("ANQuayleTroll","GLOBAL",5) InParty("7XQUAY")~ THEN PLAYER1 ANTrollCallTalkQuayleImp
 @46
 == 7XQUAYJ @47
-== PLAYER1 @48
-== AERIEJ @49
-== PLAYER1 @50
-= @51
+END
+IF ~~ THEN REPLY @48 EXTERN AERIEJ ANTrollCallTalkQuayleImp_1
+
+CHAIN AERIEJ ANTrollCallTalkQuayleImp_1
+@49
+END
+IF ~~ THEN REPLY @50 EXTERN 7XQUAYJ ANTrollCallTalkQuayleImp_2
+
+CHAIN 7XQUAYJ ANTrollCallTalkQuayleImp_2
+@51
 == YOSHJ IF ~InParty("Yoshimo") InMyArea("Yoshimo") !StateCheck("Yoshimo",CD_STATE_NOTVALID)~ THEN @52
 == JANJ IF ~InParty("Jan") InMyArea("Jan") !StateCheck("Jan",CD_STATE_NOTVALID) OR(2) !InParty("Yoshimo") StateCheck("Yoshimo",CD_STATE_NOTVALID)~ THEN @52
-== PLAYER1 @53
+== 7XQUAYJ @53
 == MINSCJ IF ~InParty("Minsc") InMyArea("Minsc") !StateCheck("Minsc",CD_STATE_NOTVALID)~ THEN @54
-== PLAYER1 @55
-== 7XQUAYJ @56
+END
+IF ~~ THEN REPLY @55 EXTERN 7XQUAYJ ANTrollCallTalkQuayleImp_3
+
+CHAIN 7XQUAYJ ANTrollCallTalkQuayleImp_3
+@56
 == VALYGARJ IF ~InParty("Valygar") InMyArea("Valygar") !StateCheck("Valygar",CD_STATE_NOTVALID)~ THEN @57
-== NALIAJ IF ~InParty("Nalia") InMyArea("Nalia") !StateCheck("Nalia",CD_STATE_NOTVALID)~ THEN @58
-== PLAYER1 IF ~OR(3) !InParty("Nalia") !InMyArea("Nalia") StateCheck("Nalia",CD_STATE_NOTVALID)~ THEN @58
-== PLAYER1 @59
-== 7XQUAYJ @60
+END
+IF ~OR(2) !InParty("Nalia") StateCheck("Nalia",CD_STATE_NOTVALID)~ THEN REPLY @59 EXTERN 7XQUAYJ ANTrollCallTalkQuayleImp_4
+IF ~InParty("Nalia") !StateCheck("Nalia",CD_STATE_NOTVALID)~ THEN EXTERN NALIAJ ANTrollCallTalkQuayleImp_3Nalia
+
+APPEND NALIAJ
+IF ~~ THEN BEGIN ANTrollCallTalkQuayleImp_3Nalia
+  SAY @58
+IF ~~ THEN REPLY @59 EXTERN 7XQUAYJ ANTrollCallTalkQuayleImp_4
+END
+END
+
+CHAIN 7XQUAYJ ANTrollCallTalkQuayleImp_4
+@60
 == YOSHJ IF ~InParty("Yoshimo") !StateCheck("Yoshimo",CD_STATE_NOTVALID)~ THEN @61
 == JANJ IF ~InParty("Jan") !StateCheck("Jan",CD_STATE_NOTVALID) OR(2) !InParty("Yoshimo") StateCheck("Yoshimo",CD_STATE_NOTVALID)~ THEN @61
 == NALIAJ IF ~InParty("Nalia") !StateCheck("Nalia",CD_STATE_NOTVALID) OR(2) !InParty("Jan") StateCheck("Jan",CD_STATE_NOTVALID) OR(2) !InParty("Yoshimo") StateCheck("Yoshimo",CD_STATE_NOTVALID)~ THEN @61
-== PLAYER1 IF ~OR(2) !InParty("Nalia") StateCheck("Nalia",CD_STATE_NOTVALID) OR(2) !InParty("Yoshimo") StateCheck("Yoshimo",CD_STATE_NOTVALID) OR(2) !InParty("Jan") StateCheck("Jan",CD_STATE_NOTVALID)~ THEN @61
 == IF_FILE_EXISTS O#TiaxJ IF ~InParty("O#Tiax") InMyArea("O#Tiax") !StateCheck("O#Tiax",CD_STATE_NOTVALID)~ THEN @65
 == IF_FILE_EXISTS 7XTIAXJ IF ~InParty("7XTIAX") InMyArea("7XTIAX") !StateCheck("7XTIAX",CD_STATE_NOTVALID)~ THEN @65
-== 7XQUAYJ @62
+== 7XQUAYJ @62 DO ~AddJournalEntry(@1070,QUEST) SetGlobal("ANQuayleTroll","GLOBAL",6) SetGlobal("ANTroll","GLOBAL",1)~
 == AERIEJ @63
-== PLAYER1 @64 DO ~AddJournalEntry(@1070,QUEST) SetGlobal("ANQuayleTroll","GLOBAL",6) SetGlobal("ANTroll","GLOBAL",1)~
+END
+IF ~~ THEN REPLY @64 EXIT
 EXIT

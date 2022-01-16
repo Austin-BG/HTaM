@@ -1,7 +1,7 @@
 // Смерть Фиркраага - реакции NPC
 
 CHAIN  
-IF ~Global("AN_Firkraag_DeadTalk","AR1203",2)~ 
+IF WEIGHT #-2 ~Global("AN_Firkraag_DeadTalk","AR1203",2)~ 
 THEN PLAYER1 ANThaxllDeadTalkALL
 @0 DO ~SetGlobal("AN_Firkraag_DeadTalk","AR1203",3)~
 == ANOMENJ IF ~InParty("Anomen") InMyArea("Anomen") !Dead("Anomen") !StateCheck("Anomen",CD_STATE_NOTVALID) Alignment("Anomen",CHAOTIC_NEUTRAL)~ THEN @1

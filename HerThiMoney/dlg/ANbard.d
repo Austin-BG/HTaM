@@ -13,8 +13,12 @@ THEN ANbard ANbardFirkraagTalk1
 == NALIAJ IF ~Global("ANbardTalkTrademeet","GLOBAL",2) InParty("Nalia") InMyArea("Nalia") !StateCheck("Nalia",CD_STATE_NOTVALID)~ THEN @44
 == ANOMENJ IF ~Global("ANbardTalkTrademeet","GLOBAL",2) InParty("Anomen") InMyArea("Anomen") !StateCheck("Anomen",CD_STATE_NOTVALID) OR(2) !InParty("Nalia") StateCheck("Nalia",CD_STATE_NOTVALID)~ THEN @44
 == HAERDAJ IF ~Global("ANbardTalkTrademeet","GLOBAL",2) InParty("HaerDalis") InMyArea("HaerDalis") !StateCheck("HaerDalis",CD_STATE_NOTVALID) OR(2) !InParty("Nalia") StateCheck("Nalia",CD_STATE_NOTVALID) OR(2) !InParty("Anomen") StateCheck("Anomen",CD_STATE_NOTVALID)~ THEN @44
-== PLAYER1 IF ~Global("ANbardTalkTrademeet","GLOBAL",2) OR(2) !InParty("Nalia") StateCheck("Nalia",CD_STATE_NOTVALID) OR(2) !InParty("Anomen") StateCheck("Anomen",CD_STATE_NOTVALID) OR(2) !InParty("HaerDalis") StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN @44
-== ANbard @1
+END
+IF ~Global("ANbardTalkTrademeet","GLOBAL",2) OR(2) !InParty("Nalia") StateCheck("Nalia",CD_STATE_NOTVALID) OR(2) !InParty("Anomen") !StateCheck("Anomen",CD_STATE_NOTVALID) OR(2) !InParty("HaerDalis") StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN REPLY @44 EXTERN ANbard ANbardFirkraagTalk1_1
+IF ~Global("ANbardTalkTrademeet","GLOBAL",2) OR(3) InParty("Nalia") InParty("Anomen") InParty("HaerDalis") OR(3) !StateCheck("Nalia",CD_STATE_NOTVALID) !StateCheck("Anomen",CD_STATE_NOTVALID) !StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN EXTERN ANbard ANbardFirkraagTalk1_1
+
+CHAIN ANbard ANbardFirkraagTalk1_1
+@1
 = @2
 = @3
 == UHINN01 @4
@@ -51,8 +55,12 @@ THEN ANbard ANbardTrademeetTalk1
 == NALIAJ IF ~Global("ANbardTalkFirkraag","GLOBAL",2) InParty("Nalia") InMyArea("Nalia") !StateCheck("Nalia",CD_STATE_NOTVALID)~ THEN @44
 == ANOMENJ IF ~Global("ANbardTalkFirkraag","GLOBAL",2) InParty("Anomen") InMyArea("Anomen") !StateCheck("Anomen",CD_STATE_NOTVALID) OR(2) !InParty("Nalia") StateCheck("Nalia",CD_STATE_NOTVALID)~ THEN @44
 == HAERDAJ IF ~Global("ANbardTalkFirkraag","GLOBAL",2) InParty("HaerDalis") InMyArea("HaerDalis") !StateCheck("HaerDalis",CD_STATE_NOTVALID) OR(2) !InParty("Nalia") StateCheck("Nalia",CD_STATE_NOTVALID) OR(2) !InParty("Anomen") StateCheck("Anomen",CD_STATE_NOTVALID)~ THEN @44
-== PLAYER1 IF ~Global("ANbardTalkFirkraag","GLOBAL",2) !InParty("Nalia") !InParty("Anomen") !InParty("HaerDalis")~ THEN @44
-== ANbard @22
+END
+IF ~Global("ANbardTalkFirkraag","GLOBAL",2) OR(2) !InParty("Nalia") StateCheck("Nalia",CD_STATE_NOTVALID) OR(2) !InParty("Anomen") !StateCheck("Anomen",CD_STATE_NOTVALID) OR(2) !InParty("HaerDalis") StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN REPLY @44 EXTERN ANbard ANbardTrademeetTalk1_1
+IF ~Global("ANbardTalkFirkraag","GLOBAL",2) OR(3) InParty("Nalia") InParty("Anomen") InParty("HaerDalis") OR(3) !StateCheck("Nalia",CD_STATE_NOTVALID) !StateCheck("Anomen",CD_STATE_NOTVALID) !StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN EXTERN ANbard ANbardTrademeetTalk1_1
+
+CHAIN ANbard ANbardTrademeetTalk1_1
+@22
 == DRUNK2 @23
 == COPCUST3 @24
 == MTOWN6 @25

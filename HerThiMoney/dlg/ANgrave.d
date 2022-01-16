@@ -70,3 +70,16 @@ IF ~AreaCheck("AR0800") Global("ANParisGraveTalk","GLOBAL",4) Dead("Ankiller")~ 
 == ANParis @27
 =@28 DO ~AddJournalEntry(@1039,QUEST_DONE) GiveGoldForce(500) AddexperienceParty(600)~
 EXIT
+
+// Диалог с Бодхи (на ее стороне)
+INTERJECT_COPY_TRANS3 BODHI 43 ANKeldornVicBODHI43
+== KELDORJ IF ~InParty("Keldorn") InMyArea("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID)~ THEN @33
+== VICONIJ IF ~InParty("Viconia") InMyArea("Viconia") !StateCheck("Viconia",CD_STATE_NOTVALID) OR(3) !InParty("Keldorn") !InMyArea("Keldorn") StateCheck("Keldorn",CD_STATE_NOTVALID)~ THEN @33
+== VICONIJ IF ~InParty("Viconia") InMyArea("Viconia") !StateCheck("Viconia",CD_STATE_NOTVALID) InParty("Keldorn") InMyArea("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID)~ THEN @34
+END
+
+INTERJECT_COPY_TRANS3 BODHI 72 ANBODHI72
+== VALYGARJ IF ~InParty("Valygar") InMyArea("Valygar") !StateCheck("Valygar",CD_STATE_NOTVALID)~ THEN @35
+== KORGANJ IF ~InParty("Korgan") InMyArea("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN @36
+== KELDORJ IF ~InParty("Keldorn") InMyArea("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID)~ THEN @37
+END

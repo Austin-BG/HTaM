@@ -75,8 +75,19 @@ END
 
 INTERJECT_COPY_TRANS3 AMBAR01 17 ANAMBAR01-17
 == JAHEI25J IF ~InParty("Jaheira") InMyArea("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN @35
-== IF_FILE_EXISTS 7XQUA25J IF ~InParty("7XQUAY") InMyArea("7XQUAY") !StateCheck("7XQUAY",CD_STATE_NOTVALID)~ THEN @38
 == KORGA25J IF ~InParty("Korgan") InMyArea("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN @36
-== IF_FILE_EXISTS 7XTIA25J IF ~InParty("7XTIAX") InMyArea("7XTIAX") !StateCheck("7XTIAX",CD_STATE_NOTVALID)~ THEN @39
 == VICON25J IF ~InParty("Viconia") InMyArea("Viconia") !StateCheck("Viconia",CD_STATE_NOTVALID)~ THEN @37
+END
+
+INTERJECT_COPY_TRANS3 AMCLER01 2 ANAMCLER01-2
+== KELDO25J IF ~InParty("Keldorn") InMyArea("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID)~ THEN @38
+== JAHEI25J IF ~InParty("Jaheira") InMyArea("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN @39
+END
+
+INTERJECT_COPY_TRANS AMCLER01 3 ANAMCLER01-3
+== KORGA25J IF ~InParty("Korgan") InMyArea("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN @40
+END
+
+INTERJECT_COPY_TRANS BALTH 16 ANnaliaBALTH-16
+== NALIA25J IF ~InParty("Nalia") InMyArea("Nalia") !StateCheck("Nalia",CD_STATE_NOTVALID)~ THEN @41
 END

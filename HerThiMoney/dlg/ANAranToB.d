@@ -4,24 +4,41 @@ CHAIN
 IF ~Global("AranLoveToB","GLOBAL",1) Global("AranRomanceActive","GLOBAL",2)~ THEN ANTony ANtonyToBTalk
 @0 DO ~SetGlobal("AranLoveToB","GLOBAL",2)~
 == PLAYER1 @1
-=@2
-== ANTony @3
-== PLAYER1 @4 DO ~GiveItemCreate("ANlet3",Player1,1,0,0) GiveItemCreate("SCRL07",Player1,1,0,0)~
+END
+IF ~~ THEN REPLY @2 EXTERN ANTony ANtonyToBTalk_1
+
+CHAIN ANTony ANtonyToBTalk_1
+@3
+=@4 DO ~GiveItemCreate("ANlet3",Player1,1,0,0) GiveItemCreate("SCRL07",Player1,1,0,0)~
 =@5
 =@6
-=@7
-== ANTony @8
-== PLAYER1 IF ~Global("PlayerThiefGuild","GLOBAL",1) !Global("PGFailed","GLOBAL",1)~ THEN @9
-== ANTony IF ~Global("PlayerThiefGuild","GLOBAL",1) !Global("PGFailed","GLOBAL",1)~ THEN @10
-== PLAYER1 IF ~OR(2) !Global("PlayerThiefGuild","GLOBAL",1) Global("PGFailed","GLOBAL",1)~ THEN @59
-== ANTony IF ~OR(2) !Global("PlayerThiefGuild","GLOBAL",1) Global("PGFailed","GLOBAL",1)~ THEN @60
+END
+IF ~~ THEN REPLY @7 EXTERN ANTony ANtonyToBTalk_2
+
+CHAIN ANTony ANtonyToBTalk_2
+@8
+END
+IF ~Global("PlayerThiefGuild","GLOBAL",1) !Global("PGFailed","GLOBAL",1)~ THEN REPLY @9 EXTERN ANTony ANtonyToBTalk_3
+IF ~OR(2) !Global("PlayerThiefGuild","GLOBAL",1) Global("PGFailed","GLOBAL",1)~ THEN REPLY @59 EXTERN ANTony ANtonyToBTalk_4
+
+CHAIN ANTony ANtonyToBTalk_3
+@10
 == IF_FILE_EXISTS O#TIA25J IF ~InParty("O#Tiax") InMyArea("O#Tiax") !StateCheck("O#Tiax",CD_STATE_NOTVALID)~ THEN @61
 == IF_FILE_EXISTS 7XTIA25J IF ~InParty("7XTIAX") InMyArea("7XTIAX") !StateCheck("7XTIAX",CD_STATE_NOTVALID)~ THEN @61
-== PLAYER1 @11
-== ANTony @12 DO ~RealSetGlobalTimer("ANAranLetterToBTimer","GLOBAL",5) EscapeArea()~
+END
+IF ~~ THEN REPLY @11 EXTERN ANTony ANtonyToBTalk_5
+
+CHAIN ANTony ANtonyToBTalk_4
+@60
+== IF_FILE_EXISTS O#TIA25J IF ~InParty("O#Tiax") InMyArea("O#Tiax") !StateCheck("O#Tiax",CD_STATE_NOTVALID)~ THEN @61
+== IF_FILE_EXISTS 7XTIA25J IF ~InParty("7XTIAX") InMyArea("7XTIAX") !StateCheck("7XTIAX",CD_STATE_NOTVALID)~ THEN @61
+END
+IF ~~ THEN REPLY @11 EXTERN ANTony ANtonyToBTalk_5
+
+CHAIN ANTony ANtonyToBTalk_5
+@12 DO ~RealSetGlobalTimer("ANAranLetterToBTimer","GLOBAL",5) EscapeArea()~
 =@13
 EXIT
-
 
 APPEND PLAYER1
 
@@ -220,21 +237,45 @@ IF ~~ THEN GOTO 25
 END
 END
 
-CHAIN
-IF WEIGHT #-70 ~Global("AranWilsonToB","GLOBAL",2) Global("AranRomanceActive","GLOBAL",2)~ THEN IF_FILE_EXISTS WILSO25J ANAranToBTalkWilson
-@62 DO ~SetGlobal("AranWilsonToB","GLOBAL",3)~
-== PLAYER1 @63
-== WILSO25J @64
-== PLAYER1 @65
-== WILSO25J @66
-== PLAYER1 @67
-== WILSO25J @68
-== PLAYER1 @69
-== KORGA25J IF ~InParty("Korgan") InMyArea("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN @70
-== WILSO25J IF ~InParty("Korgan") InMyArea("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN @71
-== PLAYER1 @72
-== WILSO25J @73
-EXIT
+APPEND IF_FILE_EXISTS WILSO25J
+IF WEIGHT #-70 ~Global("AranWilsonToB","GLOBAL",2) Global("AranRomanceActive","GLOBAL",2)~ BEGIN ANAranToBTalkWilson
+  SAY @62 
+IF ~~ THEN DO ~SetGlobal("AranWilsonToB","GLOBAL",3)~ REPLY @63 GOTO ANAranToBTalkWilson1
+END
+
+IF ~~ BEGIN ANAranToBTalkWilson1
+  SAY @64 
+IF ~~ THEN REPLY @65 GOTO ANAranToBTalkWilson2
+END
+
+IF ~~ BEGIN ANAranToBTalkWilson2
+  SAY @66 
+IF ~~ THEN REPLY @67 GOTO ANAranToBTalkWilson3
+END
+
+IF ~~ BEGIN ANAranToBTalkWilson3
+  SAY @68 
+IF ~OR(3) !InParty("Korgan") !InMyArea("Korgan") StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN REPLY @69 GOTO ANAranToBTalkWilson4
+IF ~InParty("Korgan") InMyArea("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN REPLY @69 EXTERN KORGA25J ANAranToBTalkWilson4Korgan
+END
+
+IF ~~ BEGIN ANAranToBTalkWilson4
+  SAY @71 
+IF ~~ THEN REPLY @72 GOTO ANAranToBTalkWilson5
+END
+
+IF ~~ BEGIN ANAranToBTalkWilson5
+  SAY @73 
+IF ~~ THEN EXIT
+END
+END
+
+APPEND KORGA25J
+IF ~~ BEGIN ANAranToBTalkWilson4Korgan
+  SAY @70 
+IF ~~ THEN EXTERN IF_FILE_EXISTS WILSO25J ANAranToBTalkWilson4
+END
+END
 
 APPEND PLAYER1
 
@@ -259,11 +300,6 @@ END
 IF ~~ BEGIN ANAranFinalToBTalk5
   SAY @97
 IF ~~ THEN EXTERN ARAN ANAranFinalToBTalk6
-END
-
-IF ~~ BEGIN ANAranFinalToBTalk9
-  SAY @122
-IF ~~ THEN EXIT
 END
 
 END
@@ -359,7 +395,7 @@ IF ~~ BEGIN ANAranFinalToBTalk8_1
 =@119
 =@120 
 =@121
-IF ~~ THEN DO ~CreateVisualEffect("SPPORTAL",[1999.1218]) DestroySelf()~ EXTERN PLAYER1 ANAranFinalToBTalk9
+IF ~~ THEN DO ~CreateVisualEffect("SPPORTAL",[1999.1218]) DestroySelf()~ REPLY @122 EXIT
 END
 
 IF ~~ BEGIN ANAranFinalToBTalk8_2
@@ -368,7 +404,7 @@ IF ~~ BEGIN ANAranFinalToBTalk8_2
 =@119
 =@120 
 =@121
-IF ~~ THEN DO ~CreateVisualEffect("SPPORTAL",[1999.1218]) DestroySelf()~ EXTERN PLAYER1 ANAranFinalToBTalk9
+IF ~~ THEN DO ~CreateVisualEffect("SPPORTAL",[1999.1218]) DestroySelf()~ REPLY @122 EXIT
 END
 
 END

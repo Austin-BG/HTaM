@@ -427,7 +427,7 @@ IF ~~ BEGIN ANAranTalkLeenaOut
   SAY @162
 IF ~~ THEN REPLY @163 GOTO ANAranTalkLeenaOut1
 IF ~~ THEN REPLY @167 GOTO ANAranTalkLeenaOut2
-IF ~~ THEN REPLY @170 EXTERN PLAYER1 ANAranTalkLeenaOut3
+IF ~~ THEN REPLY @171 EXTERN PLAYER1 ANAranTalkLeenaOut3
 END
 
 IF ~~ BEGIN ANAranTalkLeenaOut1
@@ -547,19 +547,19 @@ END
 IF ~~ BEGIN ANAranBodhiHeartTalk_1
   SAY @304
 =@305  
-IF ~~ THEN EXTERN PLAYER1 ANAranBodhiHeartTalkEnd
+IF ~~ THEN REPLY @309 EXTERN ARAN ANAranBodhiHeartTalkEnd1
 END
 
 IF ~~ BEGIN ANAranBodhiHeartTalk_2
   SAY @306
 =@307  
-IF ~~ THEN EXTERN PLAYER1 ANAranBodhiHeartTalkEnd
+IF ~~ THEN REPLY @309 EXTERN ARAN ANAranBodhiHeartTalkEnd1
 END
 
 IF ~~ BEGIN ANAranBodhiHeartTalk_3
   SAY @308
 =@305  
-IF ~~ THEN EXTERN PLAYER1 ANAranBodhiHeartTalkEnd
+IF ~~ THEN REPLY @309 EXTERN ARAN ANAranBodhiHeartTalkEnd1
 END
 
 IF ~~ BEGIN ANAranBodhiHeartTalkEnd1
@@ -789,7 +789,7 @@ IF ~~ THEN DO ~ChangeEnemyAlly("ANleena",ENEMY) Kill(Player1)~ EXIT
 END
 
 IF ~~ BEGIN ANAranTalkLeenaOut3
-  SAY @171
+  SAY @170
 IF ~~ THEN EXTERN ARAN ANAranTalkLeenaOut3Finish
 END
 
@@ -814,23 +814,23 @@ IF ~~ THEN EXIT
 END
 
 IF ~~ BEGIN ANAranAnomenTalk2_1
-  SAY @241
+  SAY @240
 IF ~~ THEN EXTERN ANOMENJ ANAranAnomenTalk2_1_1
 END
 
 IF ~~ BEGIN ANAranAnomenTalk2_2
-  SAY @244
+  SAY @243
 IF ~Alignment("Anomen",CHAOTIC_NEUTRAL)~ THEN EXTERN ANOMENJ ANAranAnomenTalk2_2_CN
 IF ~!Alignment("Anomen",CHAOTIC_NEUTRAL)~ THEN EXTERN ANOMENJ ANAranAnomenTalk2_2_LG
 END
 
 IF ~~ BEGIN ANAranRasaadTalk2_1
-  SAY @261
+  SAY @260
 IF ~~ THEN EXTERN IF_FILE_EXISTS RASAADJ ANAranRasaadTalk2_1_1
 END
 
 IF ~~ BEGIN ANAranRasaadTalk2_2
-  SAY @264
+  SAY @263
 IF ~~ THEN EXTERN IF_FILE_EXISTS RASAADJ ANAranRasaadTalk2_2_1
 END
 
@@ -839,12 +839,6 @@ IF ~Global("ANAranBodhiHeart","GLOBAL",1) PartyHasItem("MISCBP")~ BEGIN ANBodhiH
  =@287 
 IF ~~ THEN EXIT
 END
-
-IF ~~ BEGIN ANAranBodhiHeartTalkEnd
-  SAY @309
-IF ~~ THEN EXTERN ARAN ANAranBodhiHeartTalkEnd1
-END
-
 
 IF ~~ BEGIN AnaranFlirt2
   SAY @320
@@ -1038,11 +1032,17 @@ CHAIN
 IF ~Global("AranLove","GLOBAL",7)~ THEN ARAN ANAranTalk2
 @14 DO ~SetGlobal("AranLove","GLOBAL",8)~
 = @15
-== PLAYER1 @16
-== ARAN @17
+END
+IF ~~ THEN REPLY @16 EXTERN ARAN ANAranTalk2_1
+
+CHAIN ARAN ANAranTalk2_1
+@17
 =@18
-== PLAYER1 @19
-== ARAN @20
+END
+IF ~~ THEN REPLY @19 EXTERN ARAN ANAranTalk2_2
+
+CHAIN ARAN ANAranTalk2_2
+@20
 EXIT
 
 
@@ -1086,24 +1086,32 @@ IF ~~ THEN REPLY @60 EXTERN ARAN ANAranTalk4_4
 CHAIN
 IF ~Global("AranLove","GLOBAL",16) !Global("AranLoveCold","AR0307",2)~ THEN PLAYER1 ANAranTalk7.1
 @92 DO ~SetGlobal("AranLove","GLOBAL",17)~
-= @93
-== ARAN @94 DO ~AddJournalEntry(@1042,QUEST)~
-EXIT
+END
+IF ~~ THEN REPLY @93 EXTERN ARAN ANAranTalk7.1_1
+
+APPEND ARAN
+IF ~~ BEGIN ANAranTalk7.1_1
+ SAY @94 
+IF ~~ THEN DO ~AddJournalEntry(@1042,QUEST)~ EXIT
+END
+END
 
 CHAIN
 IF ~Global("AranLove","GLOBAL",16) Global("AranLoveNoSleep","GLOBAL",2)~ THEN PLAYER1 ANAranTalk7.3
 @728 DO ~SetGlobal("AranLove","GLOBAL",17) SetGlobal("AranLoveNoSleep","GLOBAL",3)~
-= @93
-== ARAN @94 DO ~AddJournalEntry(@1042,QUEST)~
-EXIT
+END
+IF ~~ THEN REPLY @93 EXTERN ARAN ANAranTalk7.1_1
 
 CHAIN
 IF WEIGHT #-4 ~Global("AranLove","GLOBAL",18) PartyHasItem("ANlet1")~ THEN ARAN ANAranTalk8
 @109 DO ~ActionOverride(Player1,SetDialog("PLAYER1")) SetGlobal("AranLove","GLOBAL",20)~
 =@125
 == PLAYER1 @124
-=@110
-== ARAN @111 DO ~AddJournalEntry(@1045,QUEST_DONE) TakePartyItem("ANlet1") AddexperienceParty(1000)~
+END
+IF ~~ THEN REPLY @110 EXTERN ARAN ANAranTalk8_1
+
+CHAIN ARAN ANAranTalk8_1
+@111 DO ~AddJournalEntry(@1045,QUEST_DONE) TakePartyItem("ANlet1") AddexperienceParty(1000)~
 =@112
 == PLAYER1 @113
 == ARAN @114
@@ -1141,12 +1149,18 @@ CHAIN
 IF WEIGHT #-30 ~PartyHasItem("MISCBP") Global("AranRomanceActive","GLOBAL",2) OR(2) Global("ANAranBodhiHeart","GLOBAL",0) Global("ANAranBodhiHeart","GLOBAL",1)~ THEN ARAN ANAranBodhiHeartTalk
 @288 DO ~SetGlobal("ANAranBodhiHeart","GLOBAL",2)~
 == PLAYER1 @289
-=@290
-== ARAN @291
+END
+IF ~~ THEN REPLY @290 EXTERN ARAN ANAranBodhiHeartTalk1
+
+CHAIN ARAN ANAranBodhiHeartTalk1
+@291
 =@292
-== PLAYER1 IF ~!Race(Player1,ELF)~ THEN @293
-== PLAYER1 IF ~Race(Player1,ELF)~ THEN @294
-== ARAN @295
+END
+IF ~!Race(Player1,ELF)~ THEN REPLY @293 EXTERN ARAN ANAranBodhiHeartTalk2
+IF ~Race(Player1,ELF)~ THEN REPLY @294 EXTERN ARAN ANAranBodhiHeartTalk2
+
+CHAIN ARAN ANAranBodhiHeartTalk2
+@295
 =@296
 =@297
 == PLAYER1 @298
@@ -1288,8 +1302,8 @@ IF WEIGHT #-10 ~Global("AranLove","GLOBAL",22) Global("AranAnomenTalk2","GLOBAL"
   SAY @237
 =@238
 =@239  
-IF ~~ THEN DO ~SetGlobal("AranAnomenTalk2","GLOBAL",1)~ REPLY @240 EXTERN PLAYER1 ANAranAnomenTalk2_1
-IF ~~ THEN DO ~SetGlobal("AranAnomenTalk2","GLOBAL",1)~ REPLY @243 EXTERN PLAYER1 ANAranAnomenTalk2_2
+IF ~~ THEN DO ~SetGlobal("AranAnomenTalk2","GLOBAL",1)~ REPLY @241 EXTERN PLAYER1 ANAranAnomenTalk2_1
+IF ~~ THEN DO ~SetGlobal("AranAnomenTalk2","GLOBAL",1)~ REPLY @244 EXTERN PLAYER1 ANAranAnomenTalk2_2
 END
 
 IF ~~ BEGIN ANAranAnomenTalk2_1_1
@@ -1302,27 +1316,38 @@ END
 CHAIN ANOMENJ ANAranAnomenTalk2_2_CN
 @245 DO ~SetGlobal("AranAnomenTalk2","GLOBAL",2) SetGlobal("AnomenRomanceActive","GLOBAL",3)~
 =@246
-== PLAYER1 @247
-== ANOMENJ @248
-== PLAYER1 @249
-== ANOMENJ @250
+END
+IF ~~ THEN REPLY @247 EXTERN ANOMENJ ANAranAnomenTalk2_2_CN1
+
+CHAIN ANOMENJ ANAranAnomenTalk2_2_CN1
+@248
+END
+IF ~~ THEN REPLY @249 EXTERN ANOMENJ ANAranAnomenTalk2_2_CN2
+
+CHAIN ANOMENJ ANAranAnomenTalk2_2_CN2
+@250
 EXIT
 
 CHAIN ANOMENJ ANAranAnomenTalk2_2_LG
 @251 DO ~SetGlobal("AranAnomenTalk2","GLOBAL",2) SetGlobal("AnomenRomanceActive","GLOBAL",3)~
-== PLAYER1 @252
-== ANOMENJ @253
+END
+IF ~~ THEN REPLY @252 EXTERN ANOMENJ ANAranAnomenTalk2_2_LG1
+
+CHAIN ANOMENJ ANAranAnomenTalk2_2_LG1
+@253
 EXIT
 
 CHAIN
 IF WEIGHT #-10 ~Global("AranRomanceActive","GLOBAL",2) Global("AranAnomenTalk2","GLOBAL",1) Global("AnomenRomanceActive","GLOBAL",2)~ THEN ANOMENJ ANAranAnomenTalk2Again
 @254 DO ~SetGlobal("AranAnomenTalk2","GLOBAL",2)~
-== PLAYER1 @255
-== ANOMENJ @256
-== PLAYER1 @257
 END
-IF ~Alignment("Anomen",CHAOTIC_NEUTRAL)~ THEN EXTERN ANOMENJ ANAranAnomenTalk2_2_CN
-IF ~!Alignment("Anomen",CHAOTIC_NEUTRAL)~ THEN EXTERN ANOMENJ ANAranAnomenTalk2_2_LG
+IF ~~ THEN REPLY @255 EXTERN ANOMENJ ANAranAnomenTalk2Again1
+
+CHAIN ANOMENJ ANAranAnomenTalk2Again1 
+@256
+END
+IF ~Alignment("Anomen",CHAOTIC_NEUTRAL)~ THEN REPLY @257 EXTERN ANOMENJ ANAranAnomenTalk2_2_CN
+IF ~!Alignment("Anomen",CHAOTIC_NEUTRAL)~ THEN REPLY @257 EXTERN ANOMENJ ANAranAnomenTalk2_2_LG
 
 // Расаад
 APPEND IF_FILE_EXISTS RASAADJ
@@ -1347,8 +1372,8 @@ END
 IF WEIGHT #-10 ~Global("AranLove","GLOBAL",22) Global("AranRasaadTalk2","GLOBAL",0) Global("RasaadRomanceActive","GLOBAL",2)~ BEGIN ANAranRasaadTalk2
   SAY @258
 =@259
-IF ~~ THEN DO ~SetGlobal("AranRasaadTalk2","GLOBAL",1)~ REPLY @260 EXTERN PLAYER1 ANAranRasaadTalk2_1
-IF ~~ THEN DO ~SetGlobal("AranRasaadTalk2","GLOBAL",1)~ REPLY @263 EXTERN PLAYER1 ANAranRasaadTalk2_2
+IF ~~ THEN DO ~SetGlobal("AranRasaadTalk2","GLOBAL",1)~ REPLY @261 EXTERN PLAYER1 ANAranRasaadTalk2_1
+IF ~~ THEN DO ~SetGlobal("AranRasaadTalk2","GLOBAL",1)~ REPLY @264 EXTERN PLAYER1 ANAranRasaadTalk2_2
 END
 
 IF ~~ BEGIN ANAranRasaadTalk2_1_1
@@ -1360,21 +1385,36 @@ END
 
 CHAIN IF_FILE_EXISTS RASAADJ ANAranRasaadTalk2_2_1
 @265 DO ~SetGlobal("AranRasaadTalk2","GLOBAL",2) SetGlobal("RasaadRomanceActive","GLOBAL",3)~
-== PLAYER1 @266
-== IF_FILE_EXISTS RASAADJ @267
-== PLAYER1 @268
-== IF_FILE_EXISTS RASAADJ @269
-== PLAYER1 @270
-== IF_FILE_EXISTS RASAADJ @271
+END
+IF ~~ THEN REPLY @266 EXTERN RASAADJ ANAranRasaadTalk2_2_1-1
+
+
+CHAIN IF_FILE_EXISTS RASAADJ ANAranRasaadTalk2_2_1-1
+@267
+END
+IF ~~ THEN REPLY @268 EXTERN RASAADJ ANAranRasaadTalk2_2_1-2
+
+
+CHAIN IF_FILE_EXISTS RASAADJ ANAranRasaadTalk2_2_1-2
+@269
+END
+IF ~~ THEN REPLY @270 EXTERN RASAADJ ANAranRasaadTalk2_2_1-3
+
+CHAIN IF_FILE_EXISTS RASAADJ ANAranRasaadTalk2_2_1-3
+@271
 EXIT
 
 CHAIN
 IF WEIGHT #-10 ~Global("AranRomanceActive","GLOBAL",2) Global("AranRasaadTalk2","GLOBAL",1) Global("RasaadRomanceActive","GLOBAL",2)~ THEN IF_FILE_EXISTS RASAADJ ANAranRasaadTalk2Again
 @272 DO ~SetGlobal("AranRasaadTalk2","GLOBAL",2)~
-== PLAYER1 @273
-== IF_FILE_EXISTS RASAADJ @274
-== PLAYER1 @275
-EXTERN RASAADJ ANAranRasaadTalk2_2_1
+END
+IF ~~ THEN REPLY @273 EXTERN RASAADJ ANAranRasaadTalk2Again1
+
+
+CHAIN IF_FILE_EXISTS RASAADJ ANAranRasaadTalk2Again1
+@274
+END
+IF ~~ THEN REPLY @275 EXTERN RASAADJ ANAranRasaadTalk2_2_1
 
 
 // Джахейра
@@ -1587,10 +1627,16 @@ END
 CHAIN
 IF WEIGHT #-10 ~Global("AranRomanceActive","GLOBAL",2) Global("AranDornTalk1","GLOBAL",0) Global("DornRomanceActive","GLOBAL",2)~ THEN IF_FILE_EXISTS DORNJ ANAranDornTalk1
 @689 DO ~SetGlobal("AranDornTalk1","GLOBAL",1) SetGlobal("DornRomanceActive","GLOBAL",3)~
-== PLAYER1 @690
-== IF_FILE_EXISTS DORNJ @691
-== PLAYER1 @692
-== IF_FILE_EXISTS DORNJ @693
+END
+IF ~~ THEN REPLY @690 GOTO ANAranDornTalk1_1
+
+CHAIN  IF_FILE_EXISTS DORNJ ANAranDornTalk1_1
+@691
+END
+IF ~~ THEN REPLY @692 GOTO ANAranDornTalk1_2
+
+CHAIN IF_FILE_EXISTS DORNJ ANAranDornTalk1_2
+@693
 == VICONIJ IF ~InParty("Viconia") InMyArea("Viconia") !StateCheck("Viconia",CD_STATE_NOTVALID)~ THEN @867
 == IF_FILE_EXISTS DORNJ IF ~InParty("Viconia") InMyArea("Viconia") !StateCheck("Viconia",CD_STATE_NOTVALID)~ THEN @868
 == IMOEN2J IF ~InParty("Imoen2") InMyArea("Imoen2") !StateCheck("Imoen2",CD_STATE_NOTVALID) OR(3) !InParty("Viconia") !InMyArea("Viconia") StateCheck("Viconia",CD_STATE_NOTVALID)~ THEN @867
@@ -1824,7 +1870,7 @@ IF ~~ BEGIN ANleena1Talk1
   SAY @133
 =@134  
 IF ~Kit(Player1,ASSASIN)~ THEN REPLY @135 GOTO ANleena1Talk1_1
-IF ~~ THEN REPLY @137 EXTERN PLAYER1 ANleena1Talk1_2
+IF ~~ THEN REPLY @137 GOTO ANleena1Talk1_2
 IF ~OR(3) !InParty("Viconia") !InMyArea("Viconia") StateCheck("Viconia",CD_STATE_NOTVALID) OR(3) !InParty("Yoshimo") !InMyArea("Yoshimo") StateCheck("Yoshimo",CD_STATE_NOTVALID)~ THEN REPLY @186 EXTERN PLAYER1 ANleena1Talk1_3
 IF ~InParty("Yoshimo") InMyArea("Yoshimo") !StateCheck("Yoshimo",CD_STATE_NOTVALID) OR(3) !InParty("Viconia") !InMyArea("Viconia") StateCheck("Viconia",CD_STATE_NOTVALID)~ THEN REPLY @186 EXTERN YOSHJ ANleenaYoshimoTalk
 IF ~InParty("Viconia") InMyArea("Viconia") !StateCheck("Viconia",CD_STATE_NOTVALID)~ THEN REPLY @186 EXTERN VICONIJ ANleenaViconiaTalk
@@ -1878,13 +1924,23 @@ IF ~Global("AranLove","GLOBAL",27) Global("ANleenaOut","GLOBAL",0)~ THEN ANleena
 EXIT
 
 CHAIN
-IF ~Global("AranLove","GLOBAL",26)~ THEN PLAYER1 ANleena1Talk1_2
-@138 DO ~SetGlobal("AranLove","GLOBAL",27)~
-== ANleena @139
-== PLAYER1 @140 
-== ANleena @141
-== PLAYER1 @142
-== ANleena @143
+IF ~Global("AranLove","GLOBAL",26)~ THEN ANleena ANleena1Talk1_2
+@897 DO ~SetGlobal("AranLove","GLOBAL",27)~
+END
+IF ~~ THEN REPLY @138 EXTERN ANleena ANleena1Talk1_2-1
+
+CHAIN ANleena ANleena1Talk1_2-1
+@139
+END
+IF ~~ THEN REPLY @140 EXTERN ANleena ANleena1Talk1_2-2
+
+CHAIN ANleena ANleena1Talk1_2-2
+@141
+END
+IF ~~ THEN REPLY @142 EXTERN ANleena ANleena1Talk1_2-3
+
+CHAIN ANleena ANleena1Talk1_2-3
+@143
 == YOSHJ IF ~InParty("Yoshimo") InMyArea("Yoshimo") !StateCheck("Yoshimo",CD_STATE_NOTVALID)~ THEN @683
 == EDWINJ IF ~InParty("Edwin") InMyArea("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID) OR(2) !InParty("Yoshimo") StateCheck("Yoshimo",CD_STATE_NOTVALID)~ THEN @683
 == VICONIJ IF ~InParty("Viconia") InMyArea("Viconia") !StateCheck("Viconia",CD_STATE_NOTVALID) OR(2) !InParty("Yoshimo") StateCheck("Yoshimo",CD_STATE_NOTVALID) OR(2) !InParty("Edwin") StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN @683
@@ -1892,8 +1948,11 @@ IF ~Global("AranLove","GLOBAL",26)~ THEN PLAYER1 ANleena1Talk1_2
 == IF_FILE_EXISTS O#TiaxJ IF ~InParty("O#Tiax") InMyArea("O#Tiax") !StateCheck("O#Tiax",CD_STATE_NOTVALID)~ THEN @685
 == IF_FILE_EXISTS 7XBRANJ IF ~InParty("7XBRAN") InMyArea("7XBRAN") !StateCheck("7XBRAN",CD_STATE_NOTVALID)~ THEN @684
 == IF_FILE_EXISTS 7XTIAXJ IF ~InParty("7XTIAX") InMyArea("7XTIAX") !StateCheck("7XTIAX",CD_STATE_NOTVALID)~ THEN @685
-== PLAYER1 @144
-== ANleena @145
+END
+IF ~~ THEN REPLY @142 EXTERN ANleena ANleena1Talk1_2-4
+
+CHAIN ANleena ANleena1Talk1_2-4
+@145
 END
 IF ~~ THEN REPLY @146 EXTERN ANleena ANleena1Talk1_2_1
 IF ~~ THEN REPLY @148 EXTERN ANleena ANleena1Talk1_2_2
@@ -1911,17 +1970,27 @@ IF ~Global("LeenaGuildExists","AR0307",1)~ THEN ANleena ANleena1TalkGuild
 == ANOMENJ IF ~InParty("Anomen") InMyArea("Anomen") !StateCheck("Anomen",CD_STATE_NOTVALID) !Alignment("Anomen",CHAOTIC_NEUTRAL)~ THEN @687
 == ANOMENJ IF ~InParty("Anomen") InMyArea("Anomen") !StateCheck("Anomen",CD_STATE_NOTVALID) Alignment("Anomen",CHAOTIC_NEUTRAL)~ THEN @688
 == CERNDJ IF ~InParty("Cernd") InMyArea("Cernd") !StateCheck("Cernd",CD_STATE_NOTVALID)~ THEN @695
-== IF_FILE_EXISTS NEERAJ IF ~InParty("Neera") InMyArea("Neera") !StateCheck("Neera",CD_STATE_NOTVALID)~ THEN @706
-== PLAYER1 IF ~OR(5) InParty("Aerie") InParty("Jaheira") InParty("Anomen") InParty("Cernd") InParty("Neera")~ @696
 == IF_FILE_EXISTS 7XGarJ IF ~InParty("7XGAR") InMyArea("7XGAR") !StateCheck("7XGAR",CD_STATE_NOTVALID)~ THEN @882
 == IF_FILE_EXISTS 7XCoranJ IF ~InParty("7XCORAN") InMyArea("7XCORAN") !StateCheck("7XCORAN",CD_STATE_NOTVALID)~ THEN @883
 == IF_FILE_EXISTS O#CORANJ IF ~InParty("O#Coran") InMyArea("O#Coran") !StateCheck("O#Coran",CD_STATE_NOTVALID)~ THEN @883
+== IF_FILE_EXISTS NEERAJ IF ~InParty("Neera") InMyArea("Neera") !StateCheck("Neera",CD_STATE_NOTVALID)~ THEN @706
 == MAZZYJ IF ~InParty("Mazzy") InMyArea("Mazzy") !StateCheck("Mazzy",CD_STATE_NOTVALID)~ THEN @694
 =@703
 == KELDORJ IF ~InParty("Keldorn") InMyArea("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID)~ THEN @702
-== PLAYER1 IF ~OR(2) InParty("Mazzy") InParty("Keldorn")~ @705
-== VICONIJ IF ~InParty("Viconia") InMyArea("Viconia") !StateCheck("Viconia",CD_STATE_NOTVALID) OR(7) InParty("Aerie") InParty("Jaheira") InParty("Anomen") InParty("Cernd") InParty("Mazzy") InParty("Keldorn") InParty("Neera")~ @697
-EXIT
+END
+IF ~!StateCheck("Keldorn",CD_STATE_NOTVALID) !StateCheck("Mazzy",CD_STATE_NOTVALID) !StateCheck("O#Coran",CD_STATE_NOTVALID) !StateCheck("7XCORAN",CD_STATE_NOTVALID) !StateCheck("7XGAR",CD_STATE_NOTVALID) !StateCheck("Aerie",CD_STATE_NOTVALID) !StateCheck("Jaheira",CD_STATE_NOTVALID) !StateCheck("Anomen",CD_STATE_NOTVALID) !StateCheck("Cernd",CD_STATE_NOTVALID) !StateCheck("Neera",CD_STATE_NOTVALID) OR(3) !InParty("Viconia") !InMyArea("Viconia") StateCheck("Viconia",CD_STATE_NOTVALID)~ THEN REPLY @696 EXIT
+IF ~!StateCheck("Keldorn",CD_STATE_NOTVALID) !StateCheck("Mazzy",CD_STATE_NOTVALID) !StateCheck("O#Coran",CD_STATE_NOTVALID) !StateCheck("7XCORAN",CD_STATE_NOTVALID) !StateCheck("7XGAR",CD_STATE_NOTVALID) !StateCheck("Aerie",CD_STATE_NOTVALID) !StateCheck("Jaheira",CD_STATE_NOTVALID) !StateCheck("Anomen",CD_STATE_NOTVALID) !StateCheck("Cernd",CD_STATE_NOTVALID) !StateCheck("Neera",CD_STATE_NOTVALID) InParty("Viconia") InMyArea("Viconia") !StateCheck("Viconia",CD_STATE_NOTVALID)~ THEN REPLY @696 EXTERN VICONIJ ANleena1TalkGuild1
+IF ~OR(5) InParty("Aerie") InParty("Jaheira") InParty("Anomen") InParty("Cernd") InParty("Neera") OR(3) !InParty("Viconia") !InMyArea("Viconia") StateCheck("Viconia",CD_STATE_NOTVALID)~ THEN REPLY @696 EXIT
+IF ~OR(2) InParty("Mazzy") InParty("Keldorn") OR(3) !InParty("Viconia") !InMyArea("Viconia") StateCheck("Viconia",CD_STATE_NOTVALID)~ THEN REPLY @705 EXIT
+IF ~OR(5) InParty("Aerie") InParty("Jaheira") InParty("Anomen") InParty("Cernd") InParty("Neera") InParty("Viconia") InMyArea("Viconia") !StateCheck("Viconia",CD_STATE_NOTVALID)~ THEN REPLY @696 EXTERN VICONIJ ANleena1TalkGuild1
+IF ~OR(2) InParty("Mazzy") InParty("Keldorn") InParty("Viconia") InMyArea("Viconia") !StateCheck("Viconia",CD_STATE_NOTVALID)~ THEN REPLY @705 EXTERN VICONIJ  ANleena1TalkGuild1
+
+APPEND VICONIJ 
+IF ~~ BEGIN ANleena1TalkGuild1
+  SAY @697
+IF ~~ THEN EXIT
+END
+END
 
 // Ренал
 APPEND RENAL
@@ -2072,22 +2141,22 @@ END
 
 IF ~~ BEGIN ANLampBernardTalk1
   SAY @549
-IF ~~ THEN EXTERN PLAYER1 ANLampBernardTalk1_1
+IF ~~ THEN REPLY @550 EXTERN PLAYER1 ANLampBernardTalk5
 END
 
 IF ~~ BEGIN ANLampBernardTalk2
   SAY @551
-IF ~~ THEN EXTERN PLAYER1 ANLampBernardTalk2_1
+IF ~~ THEN REPLY @552 EXTERN PLAYER1 ANLampBernardTalk5
 END
 
 IF ~~ BEGIN ANLampBernardTalk3
   SAY @553
-IF ~~ THEN EXTERN PLAYER1 ANLampBernardTalk3_1
+IF ~~ THEN REPLY @554 EXTERN PLAYER1 ANLampBernardTalk5
 END
 
 IF ~~ BEGIN ANLampBernardTalk4
   SAY @555
-IF ~~ THEN EXTERN PLAYER1 ANLampBernardTalk4_1
+IF ~~ THEN REPLY @556 EXTERN PLAYER1 ANLampBernardTalk5
 END
 
 IF ~~ BEGIN ANLampBernardTalk5_1_1
@@ -2131,50 +2200,25 @@ END
 
 APPEND PLAYER1
 
-IF ~~ BEGIN ANLampBernardTalk1_1
-  SAY @550
-IF ~~ THEN GOTO ANLampBernardTalk5
-END
-
-IF ~~ BEGIN ANLampBernardTalk2_1
-  SAY @552
-IF ~~ THEN GOTO ANLampBernardTalk5
-END
-
-IF ~~ BEGIN ANLampBernardTalk3_1
-  SAY @554
-IF ~~ THEN GOTO ANLampBernardTalk5
-END
-
-IF ~~ BEGIN ANLampBernardTalk4_1
-  SAY @556
-IF ~~ THEN GOTO ANLampBernardTalk5
-END
-
 IF ~~ BEGIN ANLampBernardTalk5
   SAY @557
-IF ~Kit(Player1,ASSASIN)~ THEN REPLY @558 GOTO ANLampBernardTalk5_1
+IF ~Kit(Player1,ASSASIN)~ THEN REPLY @559 GOTO ANLampBernardTalk5_1
 IF ~Kit(Player1,SWASHBUCKLER)~ THEN REPLY @561 EXTERN BERNARD ANLampBernardTalk5_2
-IF ~CheckStatGT(Player1,14,CHR) Gender(Player1,MALE)~ THEN REPLY @896 GOTO ANLampBernardTalk5_3
+IF ~CheckStatGT(Player1,14,CHR) Gender(Player1,MALE)~ THEN REPLY @564 GOTO ANLampBernardTalk5_3
 IF ~CheckStatGT(Player1,14,CHR) Gender(Player1,FEMALE)~ THEN REPLY @563 GOTO ANLampBernardTalk5_3
-IF ~CheckStatGT(Player1,14,INT)~ THEN REPLY @573 GOTO ANLampBernardTalk5_4
+IF ~CheckStatGT(Player1,14,INT)~ THEN REPLY @566 EXTERN BERNARD ANLampBernardTalk5_4_1
 IF ~PartyGoldGT(99)~ THEN DO ~TakePartyGold(100)~ REPLY @568 EXTERN BERNARD ANLampBernardTalk5_5   
 IF ~PartyGoldLT(100)~ THEN REPLY @574 EXTERN BERNARD ANLampBernardTalk5_6
 END
 
 IF ~~ BEGIN ANLampBernardTalk5_1
-  SAY @559
+  SAY @558
 IF ~~ THEN EXTERN BERNARD ANLampBernardTalk5_1_1
 END
 
 IF ~~ BEGIN ANLampBernardTalk5_3
-  SAY @564
+  SAY @896
 IF ~~ THEN EXTERN BERNARD ANLampBernardTalk5_3_1
-END
-
-IF ~~ BEGIN ANLampBernardTalk5_4
-  SAY @566
-IF ~~ THEN EXTERN BERNARD ANLampBernardTalk5_4_1
 END
 
 END
@@ -2292,33 +2336,85 @@ IF WEIGHT #-3 ~Dead("ANbasil")~ THEN ANAzora ANLampAzoraNoStone1
 @600
 =@601 
 =@602 
-== PLAYER1 @603
-== ANAzora @604
-== IMOEN2J IF ~InParty("Imoen2") InMyArea("Imoen2") !StateCheck("Imoen2",CD_STATE_NOTVALID)~ THEN @605
-== PLAYER1 IF ~OR(3) !InParty("Imoen2") !InMyArea("Imoen2") StateCheck("Imoen2",CD_STATE_NOTVALID)~ THEN @605
-== ANAzora @606
-== JAHEIRAJ IF ~InParty("Jaheira") InMyArea("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN @607
-== PLAYER1 IF ~OR(2) !InParty("Jaheira") StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN @607
-== ANAzora @608
 END
+IF ~~ THEN REPLY @603 EXTERN ANAzora ANLampAzoraNoStone1_1
+
+APPEND IMOEN2J
+IF ~~ BEGIN ANLampAzoraNoStone1_1Imoen
+  SAY @605
+IF ~~ THEN EXTERN ANAzora ANLampAzoraNoStone1_2
+END
+END
+
+APPEND JAHEIRAJ
+IF ~~ BEGIN ANLampAzoraNoStone1_2Jaheira
+  SAY @607
+IF ~~ THEN EXTERN ANAzora ANLampAzoraNoStone1_3
+END
+END
+
+CHAIN ANAzora ANLampAzoraNoStone1_1
+@604
+END
+IF ~OR(3) !InParty("Imoen2") !InMyArea("Imoen2") StateCheck("Imoen2",CD_STATE_NOTVALID)~ THEN REPLY @605 EXTERN ANAzora ANLampAzoraNoStone1_2
+IF ~InParty("Imoen2") InMyArea("Imoen2") !StateCheck("Imoen2",CD_STATE_NOTVALID)~ THEN EXTERN IMOEN2J ANLampAzoraNoStone1_1Imoen
+
+CHAIN ANAzora ANLampAzoraNoStone1_2
+@606
+END
+IF ~OR(3) !InParty("Jaheira") !InMyArea("Jaheira") StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN REPLY @607 EXTERN ANAzora ANLampAzoraNoStone1_3
+IF ~InParty("Jaheira") InMyArea("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN EXTERN JAHEIRAJ ANLampAzoraNoStone1_2Jaheira
+
+APPEND ANAzora 
+IF ~~ BEGIN ANLampAzoraNoStone1_3
+  SAY @608
 IF ~~ THEN REPLY @609 GOTO ANLampAzoraNoStone2_1
 IF ~~ THEN REPLY @610 GOTO ANLampAzoraNoStone2
 IF ~~ THEN REPLY @611 GOTO ANLampAzoraNoStone2
+END
+END
+
+APPEND IF_FILE_EXISTS NEERAJ
+IF ~~ BEGIN ANLampAzoraNoStone2-1Neera
+  SAY @607
+IF ~~ THEN EXTERN ANAzora ANLampAzoraNoStone2-1
+END
+END
+
+APPEND NALIAJ
+IF ~~ BEGIN ANLampAzoraNoStone2-1Nalia
+  SAY @616
+IF ~~ THEN EXTERN ANAzora ANLampAzoraNoStone2-2
+END
+END
 
 CHAIN
 IF WEIGHT #-2 ~Global("ANAranLamp","GLOBAL",8) Dead("ANbasil")~ THEN ANAzora ANLampAzoraNoStone2
 @613
-== IF_FILE_EXISTS NEERAJ IF ~InParty("Neera") InMyArea("Neera") !StateCheck("Neera",CD_STATE_NOTVALID)~ THEN @614
-== PLAYER1 IF ~OR(3) !InParty("Neera") !InMyArea("Neera") StateCheck("Neera",CD_STATE_NOTVALID)~ THEN @614
-== ANAzora @615
-== NALIAJ IF ~InParty("Nalia") InMyArea("Nalia") !StateCheck("Nalia",CD_STATE_NOTVALID)~ THEN @616
-== PLAYER1 IF ~OR(2) !InParty("Nalia") StateCheck("Nalia",CD_STATE_NOTVALID)~ THEN @616
-== ANAzora @617
-== PLAYER1 @618
-== ANAzora @619
+END
+IF ~OR(3) !InParty("Neera") !InMyArea("Neera") StateCheck("Neera",CD_STATE_NOTVALID)~ THEN REPLY @614 EXTERN ANAzora ANLampAzoraNoStone2-1
+IF ~InParty("Neera") InMyArea("Neera") !StateCheck("Neera",CD_STATE_NOTVALID)~ THEN EXTERN IF_FILE_EXISTS NEERAJ ANLampAzoraNoStone2-1Neera
+
+CHAIN ANAzora ANLampAzoraNoStone2-1
+@615
+END
+IF ~OR(3) !InParty("Nalia") !InMyArea("Nalia") StateCheck("Nalia",CD_STATE_NOTVALID)~ THEN REPLY @616 EXTERN ANAzora ANLampAzoraNoStone2-2
+IF ~InParty("Nalia") InMyArea("Nalia") !StateCheck("Nalia",CD_STATE_NOTVALID)~ THEN EXTERN NALIAJ ANLampAzoraNoStone2-1Nalia
+
+CHAIN ANAzora ANLampAzoraNoStone2-2
+@617
+END
+IF ~~ THEN REPLY @618 EXTERN ANAzora ANLampAzoraNoStone2-3
+
+
+CHAIN ANAzora ANLampAzoraNoStone2-3
+@619
 == ANOMENJ IF ~InParty("Anomen") InMyArea("Anomen") !StateCheck("Anomen",CD_STATE_NOTVALID)~ THEN @673
-== PLAYER1 @620
-== ANAzora @621 DO ~GiveItemCreate("ANLamp",Player1,1,0,0)~
+END
+IF ~~ THEN REPLY @620 EXTERN ANAzora ANLampAzoraNoStone2-4
+
+CHAIN ANAzora ANLampAzoraNoStone2-4
+@621 DO ~GiveItemCreate("ANLamp",Player1,1,0,0)~
 == AERIEJ IF ~InParty("Aerie") InMyArea("Aerie") !StateCheck("Aerie",CD_STATE_NOTVALID)~ THEN @674
 == KORGANJ IF ~InParty("Korgan") InMyArea("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN @677
 == KELDORJ IF ~InParty("Keldorn") InMyArea("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID)~ THEN @675
@@ -2338,8 +2434,6 @@ IF WEIGHT #-2 ~Global("ANAranLamp","GLOBAL",8) Dead("ANbasil")~ THEN ANAzora ANL
 END
 IF ~~ THEN REPLY @622 GOTO ANLampAzoraNoStone3
 IF ~~ THEN REPLY @623 GOTO ANLampAzoraNoStone4
-
-
 
 
 CHAIN
@@ -2363,20 +2457,36 @@ IF ~Global("ANAranLamp","GLOBAL",7) AreaCheck("AR0404") Global("ANAranLampRenal"
 == IF_FILE_EXISTS 7XGarJ IF ~InParty("7XGAR") InMyArea("7XGAR") !StateCheck("7XGAR",CD_STATE_NOTVALID)~ THEN @884
 == IF_FILE_EXISTS 7XCoranJ IF ~InParty("7XCORAN") InMyArea("7XCORAN") !StateCheck("7XCORAN",CD_STATE_NOTVALID)~ THEN @885
 == IF_FILE_EXISTS O#CORANJ IF ~InParty("O#Coran") InMyArea("O#Coran") !StateCheck("O#Coran",CD_STATE_NOTVALID)~ THEN @885
-== EDWINJ IF ~InParty("Edwin") InMyArea("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN @665
-== JAHEIRAJ IF ~InParty("Jaheira") InMyArea("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID) InParty("Edwin") InMyArea("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN @666
-== PLAYER1 IF ~InParty("Edwin") InMyArea("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID) OR(2) !InParty("Jaheira") StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN @666
-== EDWINJ IF ~InParty("Edwin") InMyArea("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN @667
-EXIT
+END
+IF ~OR(3) !InParty("Edwin") !InMyArea("Edwin") StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN EXIT
+IF ~InParty("Edwin") InMyArea("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN EXTERN EDWINJ ANAranLampBothInStone1Edwin
+
+APPEND EDWINJ
+IF ~~ BEGIN ANAranLampBothInStone1Edwin
+  SAY @665
+IF ~OR(3) !InParty("Jaheira") !InMyArea("Jaheira") StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN REPLY @666 GOTO ANAranLampBothInStone1Edwin1
+IF ~InParty("Jaheira") InMyArea("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID) InParty("Edwin") InMyArea("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN EXTERN JAHEIRAJ ANAranLampBothInStone1Jah
+END
+
+IF ~~ BEGIN ANAranLampBothInStone1Edwin1
+  SAY @667
+IF ~~ THEN EXIT
+END
+END
+
+APPEND JAHEIRAJ
+IF ~~ BEGIN ANAranLampBothInStone1Jah
+  SAY @666
+IF ~~ THEN EXTERN EDWINJ ANAranLampBothInStone1Edwin1
+END
+END
 
 CHAIN
 IF ~Global("ANAranLampPartyTalk","AR0404",1) AreaCheck("AR0404")~ THEN PLAYER1 ANAranLampJoviStoneOrDead
 @578 DO ~SetGlobal("ANAranLampPartyTalk","AR0404",2)~
-== EDWINJ IF ~InParty("Edwin") InMyArea("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN @665
-== JAHEIRAJ IF ~InParty("Jaheira") InMyArea("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID) InParty("Edwin") InMyArea("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN @666
-== PLAYER1 IF ~InParty("Edwin") InMyArea("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID) OR(2) !InParty("Jaheira") StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN @666
-== EDWINJ IF ~InParty("Edwin") InMyArea("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN @667
-EXIT
+END
+IF ~OR(3) !InParty("Edwin") !InMyArea("Edwin") StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN EXIT
+IF ~InParty("Edwin") InMyArea("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN EXTERN EDWINJ ANAranLampBothInStone1Edwin
 
 APPEND ARAN
 
@@ -2437,29 +2547,44 @@ CHAIN
 IF ~Global("AranLampFinish","AR0307",1) Global("ANAranLamp","GLOBAL",10)~ THEN ARAN ANaranLampFinishTalk1
 @644 DO ~SetGlobal("ANAranLamp","GLOBAL",13)~
 =@645
-== PLAYER1 @646
-== ARAN @647
+END
+IF ~~ THEN REPLY @646 EXTERN ARAN ANaranLampFinishTalk1_1
+
+APPEND ARAN 
+IF ~~ BEGIN ANaranLampFinishTalk1_1
+SAY @647
 =@648
-EXIT
+IF ~~ THEN EXIT
+END
+
+IF ~~ BEGIN ANaranLampFinishTalk1_2
+SAY @654
+IF ~~ THEN EXIT
+END
+
+IF ~~ BEGIN ANaranLampFinishTalk1_3
+SAY @659
+=@660
+=@661
+IF ~~ THEN EXIT
+END
+END
 
 CHAIN
 IF ~Global("AranLampFinish","AR0307",1) Global("ANAranLamp","GLOBAL",10)~ THEN PLAYER1 ANaranLampFinishTalk2
 @650 DO ~SetGlobal("ANAranLamp","GLOBAL",13)~
 == ARAN @651
 =@652
-== PLAYER1 @653
-== ARAN @654
-EXIT
+END
+IF ~~ THEN REPLY @653 EXTERN ARAN ANaranLampFinishTalk1_2
+
 
 CHAIN
 IF ~Global("AranLampFinish","AR0307",1) Global("ANAranLamp","GLOBAL",10)~ THEN ARAN ANaranLampFinishTalk3
 @656 DO ~SetGlobal("ANAranLamp","GLOBAL",11)~
 =@657
-== PLAYER1 @658
-== ARAN @659
-=@660
-=@661
-EXIT
+END
+IF ~~ THEN REPLY @658 EXTERN ARAN ANaranLampFinishTalk1_3
 
 
 // Эпизод 8
@@ -2468,7 +2593,7 @@ APPEND PLAYER1
 IF ~Global("ANAranTethyr","GLOBAL",1)~ BEGIN ANAranTethyrPlayer1Talk1
   SAY @821
 IF ~!InParty("Edwin") !InParty("Korgan") !InParty("Aerie") !InParty("Jan")~ THEN DO ~SetGlobal("ANAranTethyr","GLOBAL",2)~ EXIT
-IF ~OR (4) InParty("Edwin") InParty("Korgan") InParty("Aerie") InParty("Jan") OR(4) !StateCheck("Edwin",CD_STATE_NOTVALID) !StateCheck("Korgan",CD_STATE_NOTVALID) !StateCheck("Aerie",CD_STATE_NOTVALID) !StateCheck("Jan",CD_STATE_NOTVALID)~ THEN DO ~SetGlobal("ANAranTethyr","GLOBAL",2)~ EXTERN PLAYER1 ANAranTethyrPlayer1Talk1_1 
+IF ~OR (4) InParty("Edwin") InParty("Korgan") InParty("Aerie") InParty("Jan") OR(4) !StateCheck("Edwin",CD_STATE_NOTVALID) !StateCheck("Korgan",CD_STATE_NOTVALID) !StateCheck("Aerie",CD_STATE_NOTVALID) !StateCheck("Jan",CD_STATE_NOTVALID)~ THEN DO ~SetGlobal("ANAranTethyr","GLOBAL",2)~ REPLY @839 EXTERN PLAYER1 ANAranTethyrPlayer1Talk1_1 
 END
 
 IF ~~ BEGIN ANAranTethyrAltar1_1
@@ -2476,11 +2601,11 @@ IF ~~ BEGIN ANAranTethyrAltar1_1
 IF ~~ THEN REPLY @763 EXTERN ANAltar ANAranTethyrAltar_2
 IF ~~ THEN REPLY @764 EXTERN ANAltar ANAranTethyrAltar_2
 IF ~~ THEN REPLY @765 EXTERN ANAltar ANAranTethyrAltar_2
-IF ~~ THEN REPLY @762 GOTO ANAranTethyrAltar_End
+IF ~~ THEN REPLY @766 GOTO ANAranTethyrAltar_End
 END
 
 IF ~~ BEGIN ANAranTethyrAltar_End
-  SAY @766
+  SAY @762
 IF ~~ THEN EXTERN ANAltar ANAranTethyrAltar_End1
 END
 
@@ -2523,8 +2648,7 @@ END
 
 IF ~Global("ANAranTethyr","GLOBAL",201)~ BEGIN ANAranTethyrGorion
   SAY @795
-=@796  
-IF ~~ THEN DO ~SetGlobal("ANAranTethyr","GLOBAL",202)~ EXTERN ANgori ANAranTethyrGorion1
+IF ~~ THEN DO ~SetGlobal("ANAranTethyr","GLOBAL",202)~ REPLY @796 EXTERN ANgori ANAranTethyrGorion1
 END
 
 IF ~~ BEGIN ANAranTethyrGorion3
@@ -2663,33 +2787,56 @@ END
 CHAIN
 IF ~Global("ANAranTethyr","GLOBAL",10) Global("TonySpawnTethyr","AN1204",1)~ THEN ANTony ANAranTethyrTony1Talk
 @778 DO ~SetGlobal("TonySpawnTethyr","AN1204",2) SetGlobal("ANAranTethyr","GLOBAL",20)~
-== PLAYER1 @779
-== ANTony @780
+END
+IF ~~ THEN REPLY @779 EXTERN ANTony ANAranTethyrTony1Talk_1
+
+CHAIN ANTony ANAranTethyrTony1Talk_1
+@780
 =@781
 =@782
-== PLAYER1 @783
-=@784
-== ANTony @785
-== PLAYER1 @786
-=@787 DO ~ActionOverride("ANTony",EscapeArea())~
-EXIT
+=@783
+END
+IF ~~ THEN REPLY @784 EXTERN ANTony ANAranTethyrTony1Talk_2
+
+CHAIN ANTony ANAranTethyrTony1Talk_2
+@785
+END
+IF ~~ THEN REPLY @786 EXTERN ANTony ANAranTethyrTony1Talk_3
+
+APPEND ANTony
+IF ~~ BEGIN ANAranTethyrTony1Talk_3
+  SAY @787
+=@811  
+IF ~~ THEN DO ~ActionOverride("ANTony",EscapeArea())~ EXIT
+END
+
+IF ~~ BEGIN ANAranTethyrTony2Talk_3
+  SAY @787
+=@811
+IF ~~ THEN DO ~ActionOverride("ANTony",EscapeArea())~ EXIT
+END
+END
 
 CHAIN
 IF ~Global("ANAranTethyr","GLOBAL",205) Global("TonySpawnTethyr1","AN1204",1)~ THEN ANTony ANAranTethyrTony2Talk
 @801 DO ~SetGlobal("TonySpawnTethyr1","AN1204",2) SetGlobal("ANAranTethyr","GLOBAL",20)~
-== PLAYER1 @802
-== ANTony @803
+END
+IF ~~ THEN REPLY @802 EXTERN ANTony ANAranTethyrTony2Talk_1
+
+CHAIN ANTony ANAranTethyrTony2Talk_1
+@803
 =@804
 =@805
-== PLAYER1 @806
+=@806
 =@782
 =@807
-=@808
-== ANTony @809
-== PLAYER1 @810
-=@787
-== ANTony @811 DO ~ActionOverride("ANTony",EscapeArea())~
-EXIT
+END
+IF ~~ THEN REPLY @808 EXTERN ANTony ANAranTethyrTony2Talk_2
+
+CHAIN ANTony ANAranTethyrTony2Talk_2
+@809
+END
+IF ~~ THEN REPLY @810 EXTERN ANTony ANAranTethyrTony2Talk_3
 
 CHAIN
 IF ~Global("ANAranTethyr","GLOBAL",22) NumInPartyGT(1)~ THEN PLAYER1 ANAranTethyrFinishTalk1
@@ -2705,31 +2852,65 @@ EXTERN PLAYER1 ANAranTethyrFinishTalk2
 CHAIN
 IF ~Global("ANAranTethyr","GLOBAL",23) NumInPartyGT(1)~ THEN PLAYER1 ANAranTethyrFinishTalk2
 @818 DO ~SetGlobal("ANAranTethyr","GLOBAL",24)~
-= @819
-=@820
-== IF_FILE_EXISTS O#TiaxJ IF ~InParty("O#Tiax") InMyArea("O#Tiax") !StateCheck("O#Tiax",CD_STATE_NOTVALID)~ THEN @858
-== IF_FILE_EXISTS 7XTIAXJ IF ~InParty("7XTIAX") InMyArea("7XTIAX") !StateCheck("7XTIAX",CD_STATE_NOTVALID)~ THEN @858
-== PLAYER1 IF ~InParty("O#Tiax") InMyArea("O#Tiax") !StateCheck("O#Tiax",CD_STATE_NOTVALID)~ THEN @859
-== PLAYER1 IF ~InParty("7XTIAX") InMyArea("7XTIAX") !StateCheck("7XTIAX",CD_STATE_NOTVALID)~ THEN @859
-== ANOMENJ IF ~InParty("Anomen") InMyArea("Anomen") !StateCheck("Anomen",CD_STATE_NOTVALID) !Global("ANaltarDead","GLOBAL",1)~ THEN @860
-== ANOMENJ IF ~InParty("Anomen") InMyArea("Anomen") !StateCheck("Anomen",CD_STATE_NOTVALID) Global("ANaltarDead","GLOBAL",1)~ THEN @861
-== KELDORJ IF ~InParty("Keldorn") InMyArea("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID) !Global("ANaltarDead","GLOBAL",1) OR(2) !InParty("Anomen") StateCheck("Anomen",CD_STATE_NOTVALID)~ THEN @860
-== KELDORJ IF ~InParty("Keldorn") InMyArea("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID) Global("ANaltarDead","GLOBAL",1) OR(2) !InParty("Anomen") StateCheck("Anomen",CD_STATE_NOTVALID)~ THEN @861
-== AERIEJ IF ~InParty("Aerie") InMyArea("Aerie") !StateCheck("Aerie",CD_STATE_NOTVALID)~ THEN @862
-== AERIEJ IF ~InParty("Aerie") InMyArea("Aerie") !StateCheck("Aerie",CD_STATE_NOTVALID)~ THEN @870
-== PLAYER1 IF ~InParty("Aerie") InMyArea("Aerie") !StateCheck("Aerie",CD_STATE_NOTVALID)~ THEN @871
-== MAZZYJ IF ~InParty("Mazzy") InMyArea("Mazzy") !StateCheck("Mazzy",CD_STATE_NOTVALID)~ THEN @863
-== JAHEIRAJ IF ~InParty("Jaheira") InMyArea("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID) OR(2) !InParty("Mazzy") StateCheck("Mazzy",CD_STATE_NOTVALID)~ THEN @863
-== KORGANJ IF ~InParty("Korgan") InMyArea("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN @864
-== HAERDAJ IF ~InParty("HaerDalis") InMyArea("HaerDalis") !StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN @869
-== EDWINJ IF ~InParty("Edwin") InMyArea("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN @873
-== NALIAJ IF ~InParty("Nalia") InMyArea("Nalia") !StateCheck("Nalia",CD_STATE_NOTVALID)~ THEN @872
-== IMOEN2J IF ~InParty("Imoen2") InMyArea("Imoen2") !StateCheck("Imoen2",CD_STATE_NOTVALID)~ THEN @865
-== PLAYER1 IF ~InParty("Imoen2") InMyArea("Imoen2") !StateCheck("Imoen2",CD_STATE_NOTVALID)~ THEN @866
-== IF_FILE_EXISTS 7XGarJ IF ~InParty("7XGAR") InMyArea("7XGAR") !StateCheck("7XGAR",CD_STATE_NOTVALID)~ THEN @886
-== PLAYER1 IF ~InParty("7XGAR") InMyArea("7XGAR") !StateCheck("7XGAR",CD_STATE_NOTVALID)~ THEN @887
-== IF_FILE_EXISTS 7XGarJ IF ~InParty("7XGAR") InMyArea("7XGAR") !StateCheck("7XGAR",CD_STATE_NOTVALID)~ THEN @888
-== PLAYER1 IF ~InParty("7XGAR") InMyArea("7XGAR") !StateCheck("7XGAR",CD_STATE_NOTVALID)~ THEN @889
+=@819
+END
+IF ~OR(2) !InParty("7XGAR") StateCheck("7XGAR",CD_STATE_NOTVALID) OR(2) !InParty("Imoen2") StateCheck("Imoen2",CD_STATE_NOTVALID) OR(2) !InParty("7XTIAX") StateCheck("7XTIAX",CD_STATE_NOTVALID) OR(2) !InParty("O#Tiax") StateCheck("O#Tiax",CD_STATE_NOTVALID)~ THEN REPLY @820 EXTERN PLAYER1 ANAranTethyrFinishTalk2all
+IF ~InParty("7XGAR") !StateCheck("7XGAR",CD_STATE_NOTVALID) OR(2) !InParty("Imoen2") StateCheck("Imoen2",CD_STATE_NOTVALID) OR(2) !InParty("7XTIAX") StateCheck("7XTIAX",CD_STATE_NOTVALID) OR(2) !InParty("O#Tiax") StateCheck("O#Tiax",CD_STATE_NOTVALID)~ THEN REPLY @820 EXTERN IF_FILE_EXISTS 7XGarJ ANAranTethyrFinishTalk2Garrick
+IF ~InParty("Imoen2") !StateCheck("Imoen2",CD_STATE_NOTVALID) OR(2) !InParty("7XTIAX") StateCheck("7XTIAX",CD_STATE_NOTVALID) OR(2) !InParty("O#Tiax") StateCheck("O#Tiax",CD_STATE_NOTVALID)~ THEN REPLY @820 EXTERN IMOEN2J ANAranTethyrFinishTalk2Imoen
+IF ~InParty("O#Tiax") !StateCheck("O#Tiax",CD_STATE_NOTVALID)~ THEN REPLY @820 EXTERN IF_FILE_EXISTS O#TiaxJ ANAranTethyrFinishTalk2Tiax
+IF ~InParty("7XTIAX") !StateCheck("7XTIAX",CD_STATE_NOTVALID)~ THEN REPLY @820 EXTERN IF_FILE_EXISTS 7XTIAXJ ANAranTethyrFinishTalk2Tiax
+
+APPEND IF_FILE_EXISTS O#TiaxJ
+IF ~~ BEGIN ANAranTethyrFinishTalk2Tiax
+  SAY @858
+IF ~OR(2) !InParty("7XGAR") StateCheck("7XGAR",CD_STATE_NOTVALID) OR(2) !InParty("Imoen2") StateCheck("Imoen2",CD_STATE_NOTVALID)~ THEN REPLY @859 EXTERN PLAYER1 ANAranTethyrFinishTalk2all
+IF ~InParty("7XGAR") !StateCheck("7XGAR",CD_STATE_NOTVALID) OR(2) !InParty("Imoen2") StateCheck("Imoen2",CD_STATE_NOTVALID)~ THEN REPLY @859 EXTERN IF_FILE_EXISTS 7XGarJ ANAranTethyrFinishTalk2Garrick
+IF ~InParty("Imoen2") !StateCheck("Imoen2",CD_STATE_NOTVALID)~ THEN REPLY @859 EXTERN IMOEN2J ANAranTethyrFinishTalk2Imoen
+END
+END
+
+APPEND IF_FILE_EXISTS 7XTIAXJ
+IF ~~ BEGIN ANAranTethyrFinishTalk2Tiax
+  SAY @858
+IF ~OR(2) !InParty("7XGAR") StateCheck("7XGAR",CD_STATE_NOTVALID) OR(2) !InParty("Imoen2") StateCheck("Imoen2",CD_STATE_NOTVALID)~ THEN REPLY @859 EXTERN PLAYER1 ANAranTethyrFinishTalk2all
+IF ~InParty("7XGAR") !StateCheck("7XGAR",CD_STATE_NOTVALID) OR(2) !InParty("Imoen2") StateCheck("Imoen2",CD_STATE_NOTVALID)~ THEN REPLY @859 EXTERN IF_FILE_EXISTS 7XGarJ ANAranTethyrFinishTalk2Garrick
+IF ~InParty("Imoen2") !StateCheck("Imoen2",CD_STATE_NOTVALID)~ THEN REPLY @859 EXTERN IMOEN2J ANAranTethyrFinishTalk2Imoen
+END
+END
+
+APPEND IF_FILE_EXISTS 7XGarJ
+IF ~~ BEGIN ANAranTethyrFinishTalk2Garrick
+  SAY @886
+IF ~~ THEN REPLY @887 GOTO ANAranTethyrFinishTalk2Garrick1
+END
+
+IF ~~ BEGIN ANAranTethyrFinishTalk2Garrick1
+  SAY @888
+IF ~~ THEN REPLY @889 EXTERN PLAYER1 ANAranTethyrFinishTalk2all
+END
+END
+
+APPEND IMOEN2J
+IF ~~ BEGIN ANAranTethyrFinishTalk2Imoen
+  SAY @865
+IF ~OR(2) !InParty("7XGAR") StateCheck("7XGAR",CD_STATE_NOTVALID)~ THEN REPLY @866 EXTERN PLAYER1 ANAranTethyrFinishTalk2all
+IF ~InParty("7XGAR") !StateCheck("7XGAR",CD_STATE_NOTVALID)~ THEN REPLY @866 EXTERN IF_FILE_EXISTS 7XGarJ ANAranTethyrFinishTalk2Garrick
+END
+END
+
+CHAIN PLAYER1 ANAranTethyrFinishTalk2all
+@870
+== ANOMENJ IF ~InParty("Anomen") !StateCheck("Anomen",CD_STATE_NOTVALID) !Global("ANaltarDead","GLOBAL",1)~ THEN @860
+== ANOMENJ IF ~InParty("Anomen") !StateCheck("Anomen",CD_STATE_NOTVALID) Global("ANaltarDead","GLOBAL",1)~ THEN @861
+== KELDORJ IF ~InParty("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID) !Global("ANaltarDead","GLOBAL",1) OR(2) !InParty("Anomen") StateCheck("Anomen",CD_STATE_NOTVALID)~ THEN @860
+== KELDORJ IF ~InParty("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID) Global("ANaltarDead","GLOBAL",1) OR(2) !InParty("Anomen") StateCheck("Anomen",CD_STATE_NOTVALID)~ THEN @861
+== AERIEJ IF ~InParty("Aerie") !StateCheck("Aerie",CD_STATE_NOTVALID)~ THEN @862
+== MAZZYJ IF ~InParty("Mazzy") !StateCheck("Mazzy",CD_STATE_NOTVALID)~ THEN @863
+== JAHEIRAJ IF ~InParty("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID) OR(2) !InParty("Mazzy") StateCheck("Mazzy",CD_STATE_NOTVALID)~ THEN @863
+== KORGANJ IF ~InParty("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN @864
+== HAERDAJ IF ~InParty("HaerDalis") !StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN @869
+== EDWINJ IF ~InParty("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN @873
+== NALIAJ IF ~InParty("Nalia") !StateCheck("Nalia",CD_STATE_NOTVALID)~ THEN @872
 EXIT
 
 CHAIN
@@ -2739,14 +2920,14 @@ EXIT
 
 CHAIN
 IF ~~ THEN PLAYER1 ANAranTethyrPlayer1Talk1_1
-@839
+@871
 == AERIEJ IF ~InParty("Aerie") InMyArea("Aerie") !StateCheck("Aerie",CD_STATE_NOTVALID)~ THEN @830
 == EDWINJ IF ~InParty("Edwin") InMyArea("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID) InParty("Aerie") InMyArea("Aerie") !StateCheck("Aerie",CD_STATE_NOTVALID)~ THEN @831
 == EDWINJ IF ~InParty("Edwin") InMyArea("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID) OR(3) !InParty("Aerie") !InMyArea("Aerie") StateCheck("Aerie",CD_STATE_NOTVALID)~ THEN @832
 == KORGANJ IF ~InParty("Korgan") InMyArea("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN @833
 == JANJ IF ~InParty("Jan") InMyArea("Jan") !StateCheck("Jan",CD_STATE_NOTVALID)~ THEN @834
 == JANJ IF ~InParty("Jan") InMyArea("Jan") !StateCheck("Jan",CD_STATE_NOTVALID)~ THEN @835
-== PLAYER1 IF ~InParty("Jan") InMyArea("Jan") !StateCheck("Jan",CD_STATE_NOTVALID)~ THEN @836
+== KELDORJ IF ~InParty("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID) InParty("Jan") !StateCheck("Jan",CD_STATE_NOTVALID)~ THEN @836
 == ANOMENJ IF ~InParty("Anomen") InMyArea("Anomen") !StateCheck("Anomen",CD_STATE_NOTVALID) InParty("Jan") InMyArea("Jan") !StateCheck("Jan",CD_STATE_NOTVALID)~ THEN @837
 == JANJ IF ~InParty("Anomen") InMyArea("Anomen") !StateCheck("Anomen",CD_STATE_NOTVALID) InParty("Jan") InMyArea("Jan") !StateCheck("Jan",CD_STATE_NOTVALID)~ THEN @838
 == VALYGARJ IF ~InParty("Valygar") InMyArea("Valygar") !StateCheck("Valygar",CD_STATE_NOTVALID) OR(3) !InParty("Anomen") !InMyArea("Anomen") StateCheck("Anomen",CD_STATE_NOTVALID)~ THEN @837
