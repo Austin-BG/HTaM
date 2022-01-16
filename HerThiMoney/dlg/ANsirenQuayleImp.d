@@ -41,7 +41,7 @@ IF ~Global("ANsirene","GLOBAL",63)~ THEN ANsirene ANsirene2FinalTalk2QuayleImp
 END
 IF ~~ THEN REPLY @158 EXTERN ANsirene ANsirene2FinalTalk2QuayleImp_1
 
-CHAIN ANlorio ANsirene2FinalTalk2QuayleImp_1
+CHAIN ANsirene ANsirene2FinalTalk2QuayleImp_1
 @159 DO ~GiveItemCreate("SW1H42",Player1,1,0,0)~
 == ANsirene IF ~InParty("Aerie") InMyArea("Aerie") !StateCheck("Aerie",CD_STATE_NOTVALID)~ THEN @160 DO ~GiveItemCreate("AMUL11","Aerie",1,0,0)~
 == AERIEJ IF ~InParty("Aerie") InMyArea("Aerie") !StateCheck("Aerie",CD_STATE_NOTVALID)~ THEN @161
