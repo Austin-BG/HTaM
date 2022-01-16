@@ -227,7 +227,7 @@
 @161 = ~My people already told me what happened. This is rather unpleasant... I know Leena, and I have never thought that she would betray me and lead her brother astray... or was it vice versa? This is something I need to figure out.~
 @162 = ~I don't think you should have spared her life. Of course we are going to find her. But what you did was reckless.~
 @163 = ~Listen. She mentioned having a son. Alas, sometimes evil people make you follow their orders using your children to blackmail you. I just couldn't... I'm sorry. Have I disappointed you?~
-@164 = ~(Aran is silent for a moment). I understand your feelings better than you think. You have no children while I have my Sime. And now when I think about her... forget about this, <CHARNAME>. My boys will take care of the traitor. And I am grateful to you for averting this menace. Although if that... If Leena managed to kill you, she would have to find another way to get close to me. After you... no, I could never.~
+@164 = ~(Aran is silent for a moment). I understand your feelings better than you think. You have no children, and I know what it is like to worry about your child. And now when I think about her... forget about this, <CHARNAME>. My boys will take care of the traitor. And I am grateful to you for averting this menace. Although if that... If Leena managed to kill you, she would have to find another way to get close to me. After you... no, I could never.~
 @165 = ~(He embraces you on the spur of the moment)~
 @166 = ~Now we must part for a while, <CHARNAME>. Rest, my friend. You have deserved a reward, while I, as you see, acquired more trouble.~
 @167 = ~This miserable traitor has a child... listen, Aran... I am leaving a trail of dead bodies behind me all the way from Candlekeep, and I am growing tired of it. Don't know why now, of all time, but I couldn't make myself kill this woman. They most likely blackmailed her, using her child. Are you disappointed in me?~
@@ -595,28 +595,28 @@ You are different flight, dear birds!'~
 @554 = ~Then one of us will be left out - hopefully not me. Although you know it's the smartest thing to do. ~
 @555 = ~Don't threaten me! You don't even know what you're talking about. ~
 @556 = ~What if I know? ~
-@557 = ~(You can see that Bernard definitely wants to put a price on himself, he's not even hiding it very much. You've got to get him to tell you the truth somehow) ~
-@558 = ~(You take out your dagger and play with it, showing the wonders of your dexterity) ~
-@559 = ~Bernard, listen, you shouldn't piss me off when I've got this thing out. It seems to me, buddy, that you are covering up one of ours who escaped without answering some questions, and the Shadow Thieves don't like that. So shall we continue the conversation in a peaceful manner, or...? ~
+@557 = ~*You can see that Bernard definitely wants to put a price on himself, he's not even hiding it very much. You've got to get him to tell you the truth somehow*~
+@558 = ~*You take out your dagger and play with it, showing the wonders of your dexterity*~
+@559 = ~Bernard, listen, you shouldn't piss me off. It seems to me, buddy, that you are covering up one of ours who escaped without answering some questions, and the Shadow Thieves don't like that. So shall we continue the conversation in a peaceful manner, or...? ~
 @560 = ~To the Abyss with you... Okay, listen. ~
 @561 = ~My weapon has pierced many... many... and many. I like you, Bernard, you are doing a good deed by welcoming adventurers to your tavern, and I will be sorry to harm you. But business is business. Nothing personal.~
 @562 = ~You really have to throw threats, eh? That's a shame... Eh. Okay listen... ~
-@563 = ~(You lean on the counter and look Bernard in the eyes, smiling charmingly)~
+@563 = ~*You lean on the counter and look Bernard in the eyes, smiling charmingly*~
 @564 = ~I could tell you a story myself. Here, listen. Once upon a time, there was one innkeeper who was very well fed and contented with life. He would have lived happily ever after, but one day, he accidentally pissed off the Shadow Thieves. That was the end of his tale. I don't know about you, but my heart breaks for that outcome.~
 @565 = ~Well, as for my heart, your gaze penetrates into its very depths, I can't help it. Okay listen...~
-@566 = ~So, Bernard, yesterday some very determined people sent by Lady Rilin came to see you and demanded to know if her daughter Azora had appeared at the Copper Coronet. And they were unlikely to be willing to pay for their story. You blurted out something to them to discourage them, but what was it? Let's get this story straight. ~
+@566 = ~*Letting Bernard understand that you already know a lot and there is no point in denying it* So, Bernard, yesterday some very determined people sent by Lady Rilin came to see you and demanded to know if her daughter Azora had appeared at the Copper Coronet. And they were unlikely to be willing to pay for their story. You blurted out something to them to discourage them, but what was it? Let's get this story straight. ~
 @567 = ~I knew you were looking for that couple too. The guy is from the Shadow Thieves, right? Okay listen... ~
 @568 = ~I'm tired of this gimmick. Here's 100 gold for you - and lay out what is happening here. ~
 @569 = ~That’s right. Okay listen. ~
 @570 = ~A couple showed up here last night... right, it's not uncommon, but one was a noble girl - it was immediately obvious. She was kind of upset, even scared, and the guy was comforting her. I brought them hot wine and then led them to the entrance to the sewer... just think - such a girl and into the sewer! She paid me well, said that if they look for her here, I should lie as if I overheard them agreeing to flee to Trademeet. ~
 @571 = ~In the morning, armed men did show up and bombarded me with questions. They were not very kind, and most importantly, I did not receive a dime from them. But they believed me, praise Timor. ~
 @572 = ~I wouldn't say anything to you either, because I was paid to remain silent. But, firstly, you are good at persuasion, and secondly... you know, I would like you to find this girl and bring her back to her mother. Look in the sewers to see if you can find them. I got a feeling I'm gonna be in trouble if the deception gets out. Anyway, if you can, do something. She didn't look happy. ~
-@573 = ~(Letting Bernard understand that you already know a lot and there is no point in denying it) ~
+//@573 = ~*Letting Bernard understand that you already know a lot and there is no point in denying it*~
 @574 = ~I have no money. ~
 @575 = ~Well then I have nothing to say, buddy. Sorry.~ 
-@576 = ~(You find a magic lamp near a petrified couple - the hapless lovers fell prey to a basilisk, which, apparently, they themselves summoned with the lamp for some reason. Such creatures are not found in these places. I have the lamp now, and Aran's task is done.) ~
+@576 = ~*You find a magic lamp near a petrified couple - the hapless lovers fell prey to a basilisk, which, apparently, they themselves summoned with the lamp for some reason. Such creatures are not found in these places. I have the lamp now, and Aran's task is done.*~
 @577 = ~That's it. ~
-@578 = ~(You are holding Abu Hazab's magic lamp in your hands, and you can directly physically feel how powerful magic is hidden in it. Better not even risk using it. Be that as it may, you now have the lamp, and Aran's task is completed) ~
+@578 = ~*You are holding Abu Hazab's magic lamp in your hands, and you can directly physically feel how powerful magic is hidden in it. Better not even risk using it. Be that as it may, you now have the lamp, and Aran's task is completed*~
 @583 = ~Ah... what... ugh, <CHARNAME>! They tracked me down! (Looks around) ~
 @584 = ~Azora? Where is Azora? Never mind. I knew it wouldn't end well. For you, too, by the way. ~
 @585 = ~Azora... so did she...? Never mind. I knew it wouldn't end well. For you, too, by the way. ~
@@ -646,7 +646,7 @@ You are different flight, dear birds!'~
 @609 = ~You're just a silly spoiled girl! Because of you, the Shadow Thief framed his guild. I should leave you to the basilisk. ~
 @610 = ~An idiotic fantasy. Okay, tell me more. ~
 @611 = ~Love really does make your head spin. What happened then? ~
-@612 = ~(Her eyes fill with tears) No, don't say that! ~
+@612 = ~*Her eyes fill with tears* No, don't say that! ~
 @613 = ~Jovi said he'd do anything for me. If it worked out, he'd put a time and place in a note to meet me. And so he did: his friend secretly handed me a letter... at one o'clock in the morning at the Copper Coronet... ~
 @614 = ~So Jovi wanted you to trudge through the city at night to a poor neighborhood? ~
 @615 = ~No, his friend walked me out! Actually, I have an invisibility cloak in case of danger, very handy. I mean, everything went according to plan, but when I found myself in the poor neighborhood, and then in this tavern, I felt uncomfortable. ~
@@ -660,7 +660,7 @@ You are different flight, dear birds!'~
 @623 = ~Jovi? Perhaps we should try to restore him. I'm curious what he has to say. ~
 @624 = ~No, please! I... I don't love him anymore. But I do not want such a fate for him! Please. ~
 @625 = ~His fate would have been unenviable anyway. Come on, Azora. We have nothing else to do here. ~
-@626 = ~(Sobs) Okay. Take my cloak in gratitude for my salvation. I don’t want anything to remind of this story. I... I will try not to be such a fool again, I promise. Let's go. ~
+@626 = ~*Sobs* Okay. Take my cloak in gratitude for my salvation. I don’t want anything to remind of this story. I... I will try not to be such a fool again, I promise. Let's go. ~
 @627 = ~Okay, I'll wait. I won't budge without you. ~
 @628 = ~Ah... what... ugh, <CHARNAME>! You've tracked down yet! (Looks around) Azora! My love, a lovely girl, accustomed to expensive toys... who ruined my life for one of them! ~
 @629 = ~What are you talking about? I agreed to run away with you! ~
@@ -677,26 +677,26 @@ You are different flight, dear birds!'~
 @640 = ~I will order the statue of Jovi to be delivered to the guild and placed in a prominent place - as a warning to others. So it's all worked out. ~
 
 // Conversation with Aran after the quest
-@641 = ~(Aran peers into your face) ~ [aransong]
+@641 = ~*Aran peers into your face*~ [aransong]
 @642 = ~<CHARNAME>... Is it just me, or are you paler than usual? Are you feeling well? ~
 @643 = ~You're right, Aran... I'm a little unwell. But... (You pull Aran close with a gentle kiss and gaze into his eyes) Here... with you... I can just forget about it, like everything else. ~
 @644 = ~No, darling, that won't do. Come on, make yourself comfortable... I will treat you to tea - it has a spicy taste and mesmerizing aroma, and it is wonderfully relaxing. This tea, from Shou Lung, I brew for myself and drink alone when I want to forget my surroundings for a while. But now, I'm happy to change this habit - there are two of us today. ~
-@645 = ~(Few people get the opportunity to feel the care of the Shadow Master, but you know all its hidden depth. Aran looks after you as if you were made of precious fragile glass, and it seems that you have been transported to another plane of the Multiverse) ~
+@645 = ~*Few people get the opportunity to feel the care of the Shadow Master, but you know all its hidden depth. Aran looks after you as if you were made of precious fragile glass, and it seems that you have been transported to another plane of the Multiverse*~
 @646 = ~Aran... You are so gentle with me... why? .. ~
 @647 = ~Because, <CHARNAME>, it's you. Because you are who you are. Only you awaken in me these feelings, ones I'd hidden so deeply and long forgotten. And it makes me feel good. ~
-@648 = ~(He kisses you on the cheek): Thank you, darling... ~
+@648 = ~*He kisses you on the cheek*: Thank you, darling... ~
 @649 = ~I'm fine, Aran, this unpleasant story just got on my nerves a little. ~
-@650 = ~(You take his hand and stroke it gently, slowly) ~
-@651 = ~(Aran looks at you carefully, then runs his fingertips over your face like a blind man) ~
+@650 = ~*You take his hand and stroke it gently, slowly*~
+@651 = ~*Aran looks at you carefully, then runs his fingertips over your face like a blind man*~
 @652 = ~And yet you're tired. Not from this assignment, no. GNot from this assignment, no. Not from everything that's been weighing on you. You are fragile, <CHARNAME>, although you have an iron rod in you if even Irenicus failed to break you. But if the blow is even stronger? What is left then? ~
 @653 = ~The essence of the offspring of Bhaal? ~
 @654 = ~Your nature is extremely difficult to understand... but I believe that you, the you that now trembles at my touch, will never be destroyed by anything, no matter what your father's blood does to you. Now... I'm ready to give you rest, oblivion, consolation, call it what you want. We can relax with a cup of Shou Lung tea or make love... Whatever you want. You and I still have time... ~
-@655 = ~Well now! That's a good thought... (You wrap your arms around Aran's neck). Can you tell that I've recently visited the sewers? Of course, I cleaned myself up and rested a little before meeting you, Aran... I've been looking forward to this. ~
-@656 = ~(Aran willingly shares your enthusiasm...) ~
+@655 = ~Well now! That's a good thought... *You wrap your arms around Aran's neck* Can you tell that I've recently visited the sewers? Of course, I cleaned myself up and rested a little before meeting you, Aran... I've been looking forward to this. ~
+@656 = ~*Aran willingly shares your enthusiasm...*~
 @657 = ~Bright... passionate... how lucky I am to have you, <CHARNAME>! Yes... but this clasp is not easy to open. It’s no more difficult, however, than breaking a cunning lock on a rich chest... but its precious contents are nothing compared to the treasures this lacing hides... ~
 @658 = ~What about your defense mechanisms, Aran? ~
-@659 = ~(Laughs) Oh, I have no formidable traps or complex locks for you! And yet... ~
-@660 = ~(He picks you up, throws you on the bed, and immediately rushes after you) ~
+@659 = ~*Laughs* Oh, I have no formidable traps or complex locks for you! And yet... ~
+@660 = ~*He picks you up, throws you on the bed, and immediately rushes after you*~
 @661 = ~We'll both have to work hard to learn more of each other's secrets. Shall we? ~
 
 // Group reactions (Jovi and Azora)
@@ -940,8 +940,8 @@ Aran"~
 @867 = ~You're a charmer, Dorn. You know your way around a woman. ~
 @868 = ~I didn't ask you! Fuck off!~
 @869 = ~Oh <CHARNAME>! You had to suffer in the name of love, and in the most direct and cruel sense! I'm very sorry, but it's not for nothing that I thought you were the true heroine of the ballad. ~
-@870 = ~How are you now, are you all right? Is there anything I can do to help? ~
-@871 = ~Thanks Aerie, it's okay now. ~
+@870 = ~*Looking at the faces of those around you, you see genuine excitement.*~
+@871 = ~*You look around your companions.*~
 @872 = ~<CHARNAME>, I'm afraid to imagine what you've been through. And endured... I don't think Aran has ever had a more loyal person around. I hope he appreciates your loyalty the way it deserves. ~
 @873 = ~Who was that mage, <CHARNAME>? You say he called himself Altar? Hmm-hmmmm... I think I've heard of a wizard with that name. Self-taught, but talented, I must admit. Did you find any magical books or writings on his corpse? It would be interesting to examine them... ~
 
@@ -970,3 +970,6 @@ Aran"~
 @894 = ~Good luck <CHARNAME>. I trust you will not fail.~
 @895 = ~Ah, <CHARNAME>... Your victory over the vampire is the stuff of legends around here. It was a good job, and it's good that you are with us, buddy. But did you want something? ~
 @896 = ~(You gaze into Bernard's eyes, as if trying to subdue his will)~
+
+// NEW (v.4)
+@897 = ~Ahh!~

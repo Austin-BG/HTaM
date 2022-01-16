@@ -145,7 +145,7 @@
 // Group reactions
 @130 = ~Dirty half-orc!! How dare you speak to Tiax the the Magnificent without bowing or even calling beforehand?!~ [TIAXm]
 @131 = ~Cyric did not choose Tiax as the ruler of the world to run and collect debts from the peasants! This will be done by Tiax's servants. ~ [PPTIAX18]
-@132 = ~Let's get straight to the "serious" business, half-orc, so we can decide if it's worth doing this at all. ~
+@132 = ~Let's get straight to the "more serious matter" , half-orc, so we can decide if it's worth doing this at all. ~
 @133 = ~I don't think it's a good idea to mess with debt collectors, <CHARNAME>. They beat the last coins out of the poor and take advantage of their helpless position. ~
 @134 = ~People get into debt on their own, Nalia, no one forces them. ~
 @135 = ~F-for those who are desperate, borrowing is at least some way out. It's better than starving to death ... ~
@@ -174,7 +174,7 @@
 @152 = ~I'm listening. ~
 @153 = ~One of our clients turned out to be a dishonest crook. He deceived us by introducing himself as another person and took a huge loan. We are working on it no, of course, and we will get all of that money back. But it's not an easy matter to resolve. The borrower was actually a pirate named One-Eyed Fayaz. He left Athkatla for a small island called Brynnlaw - the pirates use it as a base. ~
 @154 = ~Do you want me to take care of this Fayaz? ~
-@155 = ~Yes. Fayaz owes the bank three thousand. I will give you his promissary note. You will keep half of what he owes for yourself. I will add that you do not need to sail there, but it is worth bearing in mind the possibility if you happen to go on a sea voyage. ~
+@155 = ~Fayaz owes the bank three thousand. I will give you his promissary note. You will keep half of what he owes for yourself. I will add that you do not need to sail there, but it is worth bearing in mind the possibility if you happen to go on a sea voyage. ~
 @156 = ~I see. You yourself have very little chance of reclaiming the debt, and you'll have a much better chance of being paid if you hire a wandering mercenary. Enough to take a smaller loss by paying them. ~
 @157 = ~Yes, you've got it right. You are not directly connected with us, so you will have a better chance than we would on the island. Take your time, think it over, and let me know what you decide. ~
 @158 = ~I have no idea where this Brynnlaw is, and I doubt I will ever go there. But I sure could use a grand and a half. I'm in, give me the note. ~
@@ -212,3 +212,32 @@
 
 // Group reactions (add-ons)
 @188 = ~Are we really working for these baboons? *sigh* If I'm so smart, what am I doing here?~ [QUAYL14]
+
+// NEW (v.4)
+@189 = ~So this Collector is more successful than you and your entire team. Can't you defeat him without someone else's help?~
+@190 = ~Apparently he's a smart guy, this Collector.~
+@191 = ~More serious matter? If the reward is worth it, I'm in! Tell me more! ~
+@192 = ~You're in a suspicious rush. I feel like you're not saying something, half-orc.~
+@193 = ~You just get paid your salary, or what? Do you want to do with someone else's work?~
+@194 = ~I don't want to beat up and intimidate people, so do your own work. ~
+@195 = ~Everyone is watching me again, then?! Looks like I'm becoming a local star! I'm so sick of this!~
+@196 = ~Let's get down to business, boy! Enough idle chatter!~
+@197 = ~Rumors about us don't lie. I am Nightbringer of Shar and I will destroy anyone who gets in my way! Tell me, how many thugs are protecting this bastard?~
+@198 = ~That's true, half-orc. Before you is Anomen, I am a knight of the Order and participated in the campaign against the Hillgnasher giants. So I'm not afraid of some kind of collector. How many minions does he have?~
+@199 = ~You're lying, half-orc. If this happened, he would be immediately captured by the Cowled Wizards.~
+@200 = ~Well, yes, and the Cowled Wizards were apparently on their lunch break at that time, weren't they?~
+@201 = ~I'll find them and return the money to the bank. ~
+@202 = ~I'll find them and return the money to you. ~
+@203 = ~Gods, why do I always get the wackiest quests? See you later, woman.~
+@204 = ~I hope you've already ordered your coffin, boy. You will need it! ~
+@205 = ~You can do without such lengthy greetings. Let's get down to business! ~
+@206 = ~I am pleased to hear such polite words, venerable Shahbaz. How can I help you? ~
+@207 = ~So I can make good money? We now speak the same language! ~
+@208 = ~I'm getting tired of long conversations. What do you want? ~
+@209 = ~Should I kill him? Or is it enough to just take his money? ~
+@210 = ~What exactly is required of me? ~
+@211 = ~It's clear. A traveler like me can help you save money by doing everything, ahem, unofficially. ~
+@212 = ~And you decided to throw all the dirty work onto someone else. Hopefully it'll be worth it at least!~
+@213 = ~Yes. I have news on that Fayaz case, but not very good news. ~
+@214 = ~Fayaz died drinking in the tavern. So the money could not be returned. Sorry.~
+@215 = ~Wow! Honestly, I didn't expect you to succeed, there were too few chances. So let's forget about it. Thanks for trying to help. ~

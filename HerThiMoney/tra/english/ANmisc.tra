@@ -1,11 +1,11 @@
 // Renfeld
 @0 = ~Seriously, are we really going to drag this drunkard back to Athkatla? Do we really have nothing more important to do? Just say the word, and I've got a spell I'd love to test on him. (It's the only profit I can imagine from this situation.)~
 @1 = ~Nooo! Have mercy!~
-@2 = ~My uncle Scratchy got in a similar situation when he was young - didn't I tell you this story? He really wanted to impress one lass - Augustine was her name, I think. Her turnip soup was so good that even a duke ordered it - and he was an elf! Turns out, everyone is equal before turnip soup. Of course, Augustine was surrounded by suitors. Uncle Scratchy wanted to outshine them all. But it didn't end like he imagined. It was always like that with him.~
-@3 = ~So... Where was I? Ah yes, uncle Scratchy wanted to win Augustine's heart. He asked his two friends to play bandits and attack her. Uncle Scratchy would wait for the right moment and "rescue" her from "villains". Not a very original idea, but if it didn't work, why would it be so common?~
-@4 = ~After dark, uncle Scratchy hid in the bushes near the road Augustine took every day to go home after work. But he got the date wrong. His friends were peacefully sleeping at home. But, it so happens that Augustine was robbed that day by real bandits! Scratchy mistook them with his friends and bravely rushed them.~
-@5 = ~Well, my uncle got a beating, and Augustine ran away. She never knew that she was saved by my Uncle Scratchy. In the end, she got engaged to some minstel and left the village. My poor uncle was devastated: not by the loss of his love, but her turnip stew. It was second to none...~
-@6 = ~Why am I telling you all this? My uncle was beaten just as hard as this guy! Hey, did he pass out? He missed the ending!~
+@2 = ~I was reminded of a story that happened to my Uncle Scratchy when I was young - didn't I tell you this story? He really wanted to impress one lass - Augustine was her name, I think. Her turnip soup was so good that even a duke ordered it - and he was an elf! Turns out, everyone is equal before turnip soup. Of course, Augustine was surrounded by suitors. Uncle Scratchy wanted to outshine them all. But it didn't end like he imagined.~
+@3 = ~He asked his two friends to play bandits and attack her. Uncle Scratchy would wait for the right moment and "rescue" her from "villains". Not a very original idea, but if it didn't work, why would it be so common?~
+@4 = ~The plan was good, but while they thought about it and practiced it, Augustine had already become engaged to a minstrel and left the village. But the uncle was most sad not for her, but for the stew that she cooked. Although later it turned out that she had left her recipe book at home, and Uncle Scratchy decided to try to cook such a stew himself. But that's another story, also very instructive....~
+@5 = ~So the moral of the Augustine story is that sometimes it's better to plan less and hurry. Like now, for example...~
+@6 = ~Hey, did this guy pass out? He missed the ending!~
 @7 = ~*Moan*~
 
 // Dialogue with Edwin
@@ -160,3 +160,12 @@
 @166 = ~I prefer less attention. It's more safe and quiet.~
 @167 = ~I can't argue with you there. But we should benefit from our situation while it lasts.~
 @168 = ~(Especially me.) Fine, let's go already.~ [EDWIN21]
+
+// NEW (v.4)
+@169 = ~You have a kind and bright soul, Aerie. ~
+@170 = ~It's good that after all the hardships you've faced, you haven't lost your faith in the gods.~
+@171 = ~That doesn't sound very convincing, <CHARNAME>. This woman is clearly telling only a third of the whole truth. Maybe even less.~
+@172 = ~I can't believe I'm saying this, but you're right, paladin. Everything around here is saturated with lies.~
+@173 = ~You can't just knock on the door and walk in. We'll have to fight the entire Shadow Thieves Guild. That would be suicide!~
+@174 = ~Are we supposed to do all the dirty work for you, woman?~
+@175 = ~I'm glad to destroy that bastard Aran, of course, but so far even the Order hasn't been ready to launch such an attack, we've been waiting for a better moment.~

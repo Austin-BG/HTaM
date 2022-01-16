@@ -32,7 +32,7 @@
 @30 = ~Maybe Minsc is not a genius, but unlike you, villain, I fight for the good!~
 
 // Adalon death - NPC reactions
-@31 = ~(Adalon's body lies in front of you - she is beautiful even in death. Perhaps, she was the last silver dragon on Faerun...)~
+@31 = ~*Adalon's body lies in front of you - she is beautiful even in death. Perhaps, she was the last silver dragon on Faerun...*~
 @32 = ~Pfft. Ust Natha drow are weak, if they feared that pathetic lizard.~
 @33 = ~<CHARNAME>, the death of the only good creature around will definitely harm the local balance. Now the forces of evil will take the offensive and plunge these lands into chaos.~
 @34 = ~I agree with Jaheira. That was a mistake, <CHARNAME>.~
@@ -51,8 +51,22 @@
 
 // House De'Vir refugees - Viconia reaction
 @45 = ~So this is what became of the once-proud House De'Vir... You are naive, Veldrin, if you thought I would mourn their fate. The past can't be changed, and these Drow are paying the price for their weakness.~
-@46 = ~(quietly) I may have some pity for them. But only a little. They may be my distant relatives, but by now I have more in common with you than with them.~
-@47 = ~(quietly) Don't speak with them, <CHARNAME>. One of them might recognize me, and we can't allow ourselves to be discovered. These weaklings will die and nothing can change that.~
+@46 = ~*quietly* I may have some pity for them. But only a little. They may be my distant relatives, but by now I have more in common with you than with them.~
+@47 = ~*quietly* Don't speak with them, <CHARNAME>. One of them might recognize me, and we can't allow ourselves to be discovered. These weaklings will die and nothing can change that.~
 
-// Elhan interjections
+// Elhan 
 @48 = ~So, now even forest elves are indebted to me for their rescue? Our partnership brings more and more benefits, even better than I expected. When half of the Faerun owes you, it opens up so many... possibilities!~
+
+// NEW (v.4)
+@49 = ~I don't think it took a lot of prowess to kill halfling hillbillies!~
+@50 = ~Say another word and you'll see that I can kill more than just halflings!~
+@51 = ~*quietly* I can't get used to the rudeness of these drow. This goes against my noble upbringing and tact.~
+@52 = ~So we're going to fight the mind flayers? Ye big hamster guy has nothing to worry about, you have nothing to steal, har har!!~
+@53 = ~So we're going to fight the mind flayers? Fine! I've wanted to chop their heads off for a long time!~
+@54 = ~Boo advises you to ignore your rudeness, Korgan. I will listen to him, he is very smart.~
+@55 = ~Shut up, you pathetic worms!~
+@56 = ~This is real family drama! It turns out that I'm also lucky that my <PRO_BROTHERSISTER> has a softer personality.~
+@57 = ~This is unexpected. You took a big risk by staying here, Solafein.~
+@58 = ~What a tragic story. Love destroyed and turned into hate... And now your beloved is sending assassins to you.~
+@59 = ~Drow do not forgive weakness and the worship of good gods. You're lucky no one revealed your true nature.~
+@60 = ~I immediately sensed that your rudeness was just a screen to hide your nobility.~

@@ -108,7 +108,7 @@
 @92 = ~The bad news is, this bastard hasn't been idle. He's hired six soldiers, Tethyrian mercenaries. He's paid them in advance, and he's almost certainly promised a share from the vault. ~
 @93 = ~That is bad news. Do you know who they are?~
 @94 = ~The thieves said that they seemed to be trained in the Tethyrian militia, and that they have the right bearing and discipline, but I would not rely on this information alone. We do know for sure that they are all archers, so we'll have to close the distance to them, and as quickly as possible. We should wait until they all get out of the basement and then attack. ~
-@95 = ~Well, it's a good plan. It's good that you thought of everything. ~
+@95 = ~Boo says it's a good plan!~
 @96 = ~One more thing. None of them can leave the bank alive. We cannot accept their surrender. ~
 @97 = ~I understand... If a captured druid puts two and two together, they might tell the wrong people about exactly who turned him in. Then, your thief partners would have a serious problem with their superiors. And so would you.~
 @98 = ~*A faint shadow of a smile softens Owney's face a little - apparently the priest liked your answer* That's right. I see you know how to use your head. But you were wrong about one thing.~ 
@@ -132,7 +132,7 @@
 // Defeat Druids
 @115 = ~*Owney pats you on the shoulder approvingly* Nice work, <CHARNAME>! Now it's just a matter of reporting to our superiors and calling the guards. You should leave before they get here, but there's a couple of minutes to search the bodies. ~
 @116 = ~Here, as agreed, your six hundred gold, the rest we'll have in a week. See you in the morning. And take care of yourself, <PRO_BROTHERSISTER>. ~
-@117 = ~You too. ~
+//@117 = ~You too. ~
 @118 = ~I will revive my fallen comrades, of course. That's my responsibility. ~
 @119 = ~'Tis been too long since I've had such fun! How I love crushing the skulls of these tree-lovers! ~ [KORGAN29]
 @120 = ~Not all druids are like that, Korgan. The shadow druids are confused and embittered. ~
@@ -296,3 +296,20 @@
 
 // Additions (group reactions)
 @255 = ~This is very strange. Usually, Shadow Druids do not come so close to the city unless absolutely necessary and do not intervene in such adventures. Something is wrong here. ~
+
+// NEW (v.4)
+@256 = ~*Korgan growls, but removes the axe*~
+@257 = ~So I can make good money? Now we speak the same language! How much will I get? ~
+@258 = ~I don't have to kill him, just take his money?~
+@259 = ~Who is this pirate? Is he dangerous?~
+@260 = ~Got it. Where exactly can I find it?~
+@261 = ~So you decided to throw all the work on someone else. But it will at least be beneficial to me. Thank you. ~
+@262 = ~Again? However, as I see it, things are going well for you. No more running around the streets looking for debtors.~
+@263 = ~Sounds like bullshit. Are you sure you haven't had too much to drink this morning? Why did the druids need your bank?~
+@264 = ~Why are you so sure about that?~
+@265 = ~I still don't understand what's going on here.~
+@266 = ~Why are you having all this trouble? You could lose your job if something goes wrong and management finds out you set it up.~
+@267 = ~What if there are too many and we can't handle them?~
+@268 = ~Okay, I agree! For 1000 coins we will do it.~
+@269 = ~No, I don't want to participate in this.~
+@270 = ~Then we'll try to make do with our own strength, though then we'll have a hard time and some of us might die.~

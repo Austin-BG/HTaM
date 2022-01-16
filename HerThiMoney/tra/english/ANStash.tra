@@ -22,8 +22,8 @@
 @17 = ~If you had a standing thief in your group, you wouldn't have missed a very curious scroll we found. ~
 @18 = ~You and your people were two steps away from the scroll and did not see it. Sloppy work, in my opinion. ~
 @19 = ~What scroll? Is it somehow connected to the stash? ~
-@20 = ~I have no idea. Maybe. Here, take a look yourself. (Hands you the scroll) ~
-@21 = ~*Scanning scroll* How did you even know about the cache? ~
+@20 = ~I have no idea. Maybe. Here, take a look yourself. *Hands you the scroll*~
+@21 = ~How did you even know about the cache? ~
 @22 = ~From an informant, of course. Where else. Of those you killed. ~
 @23 = ~Is that so? ~
 @24 = ~We don't really like rats, you know. This guy betrayed Mae'Var, who once raised him from the mud. He would have betrayed us too. And the fact that it fell to you to get rid of him is good. Let us wash our hands. ~
@@ -37,9 +37,9 @@
 @31 = ~*Give the scroll to Edwin* Do you know anything about this? ~
 @32 = ~*Thoughtfully* I've heard about the cache from Mae'Var himself. He even bragged about it. But as to where it is, I have no idea. This is the first time I've seen this scroll. It looks like a cipher. ~ [EDWIN28]
 @33 = ~So, there must be some hidden numbers... But which ones?~
-@34 = ~It's probably all hidden in the scroll. ~
+@34 = ~It's probably all hidden in the scroll. (I immediately understood this, but they have to explain everything. How smart I am!)~
 @35 = ~What about the letters on it? Some kind of FKB... ~
-@36 = ~I've seen these letters somewhere... wait, I remember. Some little bastard handed me something recently. Hold on, where was it... *rummages in the pockets of his robes* Here! *Hands you some pamphlets*~
+@36 = ~I've seen these letters somewhere... wait, I remember. Some little bastard handed me something recently. Hold on, where was it... *rummages in the pockets of his robes* Here! *Hands you some booklets*~
 @37 = ~*Take them and see.*~
 @38 = ~*You are looking closely at the booklets... The cheap paper depicts a bank building with the words 'First Calimport. We have opened in Athkatla!' Below in the corner of the page are the letters FKB*~
 @39 = ~First Calimport is a branch of the bank on the Waukeen Promenade. They recently bought the building for themselves. ~
@@ -51,7 +51,7 @@
 @45 = ~We need to go now, <CHARNAME>. Before Batch gets to him. ~
 @46 = ~Because he probably knows something about the bank. For Gods' sake, start using your head already! ~
 @47 = ~He's probably hiding like a cockroach somewhere in the Slums area. You should start your search there. ~
-@48 = ~We're here. Where now? ~
+//@48 = 
 @49 = ~We'll have to look around a row of houses here in the Slums. (Again this endless row of shacks and the stench of their inhabitants... why did I ever get into this!?) ~
 @50 = ~He rents part of a house near the tavern. I can't say where, precisely - I don't know. It's like his rainy day refuge. Mae'Var knew about it, and so did I. ~
 
@@ -154,7 +154,7 @@
 @140 = ~No, that's not what I'm here for, thanks. ~
 
 // Edwin After Bank
-@141 = ~It worked! I can't even believe it! ~
+@141 = ~*You did what the Shadow Thieves Guild couldn't!*~
 @142 = ~Now what? Give some of the stones to Renal or... ~
 @143 = ~No. Renal won't get anything from here! ~
 @144 = ~Yes, we have to give up some. We had a deal. ~
@@ -177,8 +177,8 @@
 @159 = ~Pf! (Oh, the things one must do when getting mixed up with such half-wits!) ~ [EDWIN30]
 @160 = ~*You and Edwin have been digging for a while...*~
 @161 = ~*Shaking the dirt off his robes* Why all this? To trick Batch's people?~
-@162 = ~Bingo. We "found" a cache here. *Throw an old bag and a handful of coins into the resulting shallow hole.*~
-@163 = ~Now let's go see Renal. ~
+@162 = ~Bingo. We "found" a cache here. *Throw an old bag and a handful of coins into the resulting shallow hole.* Now let's go see Renal.~
+//@163 = ~Now let's go see Renal. ~
 @164 = ~Here, Wilson can help us dig too! We'll be done in no time! ~
 
 // Renal - final
@@ -208,3 +208,31 @@
 @188 = ~Bad luck. Well... since there is no money, there is no reward. That was the deal, <CHARNAME>. But at least this stash issue has been cleared up. ~
 @189 = ~We did what we could. ~
 @190 = ~All right, good luck. ~
+
+// NEW (v.4)
+@191 = ~This place was full of papers. We are not accountants to delve into every piece of paper. Okay, so what is that scroll?~
+@192 = ~We deliberately didn't check everything there. Didn't want to do all the dirty work for you.~
+@193 = ~Anyway, you missed a very interesting scroll.~
+@194 = ~Enough talk, let's get down to business. What scroll did you find?~
+@195 = ~Since you're asking me, it means you didn't manage to decipher it yourself.~
+@196 = ~Why didn't you decipher it yourself then, if you're so smart? Of course, this task is more difficult than stealing wallets!~
+@197 = ~So we have to do all the work for you, and you will follow us to take the booty? So?~
+@198 = ~So how do we solve this riddle? You are the brain of the operation, help!~
+@199 = ~Damn that Mae'Var! Even after death, he continues to powder our brains with his riddles.~
+@200 = ~Calm down. You just need to study the scroll carefully - for sure the answer is hidden in it (I immediately understood this, and they have to explain. How smart I am!) ~
+@201 = ~Finally you admit that I'm in charge, even though it was obvious. In general, we need to study the scroll carefully - for sure the answer is hidden in it. (I immediately understood this, but they have to explain. How smart I am!)~
+@202 = ~What are those letters? "FKB". Is that a code word?~
+@203 = ~Have you been carrying them around for so long? I didn't know you collected booklets.~
+@204 = ~And how will these papers help us?! Okay, let me take a look.~
+@205 = ~Why did Mae'Var write the name of the bank on the scroll? Strange.~
+@206 = ~Bank advertising? And what does this have to do with our situation?~
+@207 = ~We should find out more about Mae'Var's contacts to the bank, since he mentioned it in the scroll. The Guild's treasurer was absent at the time of the attack. That worm has since gone to ground, but I think I know where.~
+@208 = ~Let's talk to a regular clerk instead of a senior one. He will obviously ask more questions.~
+@209 = ~Answer me, scoundrel: where is Mae'Var's stash?~
+@210 = ~Tell us where Mae'Var hid the money and we won't hurt you.~
+@211 = ~How could the treasurer not know where the money was kept?~
+@212 = ~Stop lying, you bastard! Otherwise, you will meet my blade!~
+@213 = ~Where are the paperwork you kept for him? Do you still keep them?~
+@214 = ~He sent someone to the bank, right? Isn't it you? Why?~
+@215 = ~Why did that thug make things so complicated? Something is not clean here.~
+@216 = ~Something tells me you're lying.~

@@ -50,5 +50,9 @@
 @35 = ~So Melissan brought Balthazar here? And for what purpose, I wonder? She's clearly not saying something, <CHARNAME>.~
 @36 = ~Eat Me Ogre!! Yet another son of Bhaal?? How did he manage to have so many children? Did he do nothing else with his life? What a stud!~
 @37 = ~I'm starting to respect that Bhaal! You can't throw a rock without hitting one of his childs. Such fertility!~
-@38 = ~My wonder brain tells me that this Melissan is keeping quiet about a lot, since she hasn't said anything about her role in the rise of Balthazar. No need to thank me. I know you would never have guessed yourself!~
-@39 = ~Bah! Tiax will have a thousand times more childs than this pathetic Bhaal! And those who are not childs of Tiax will be forced to pay a heavy tax!~
+
+// NEW (v.4)
+@38 = ~This priest has good intentions, but in our cruel world, kindness often comes at a heavy price. We must help him, <CHARNAME>, before it's too late.~
+@39 = ~I'm afraid their conversation won't end well.~
+@40 = ~It will be fun to watch these two saints smash each other's heads! Har!~
+@41 = ~You speak as if you don't have Bhaal's blood in you, but it's not.~

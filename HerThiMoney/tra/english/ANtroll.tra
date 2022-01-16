@@ -208,9 +208,9 @@
 @182 = ~How's it going?~
 
 // By the ruins
-@183 = ~(Sartorius leads you to the rocks near Athkatla, and then leaves. In the distance you can see the ruins of the mansion - it looks like they are very old. The wind is howling around. The troll must be somewhere nearby, we must prepare ...)~
+@183 = ~*Sartorius leads you to the rocks near Athkatla, and then leaves. In the distance you can see the ruins of the mansion - it looks like they are very old. The wind is howling around. The troll must be somewhere nearby, you must prepare...*~
 @184 = ~<CHARNAME> what is this place? Did the scientist deceive us? Maybe he deliberately led us into a trap?~
-@185 = ~There is only one way to find out. But get ready, the troll might be around.~
+@185 = ~There is only one way to find out if we're on the right track - but get ready, the troll might be around.~
 @186 = ~You don't have to be afraid of Kid, he won't hurt anyone.~
 @187 = ~Aerie, that's how it used to be. But he could run wild and get hungry, so you have to be prepared for anything.~
 @188 = ~I wonder who owned that cliff mansion over there? Perhaps there's something of value there?~
@@ -276,3 +276,16 @@
 @236 = ~Talk to Sidge about it. I don't have time to do such small things. ~
 @237 = ~Talk to Sidge about it. He probably knows.~
 @238 = ~Talk to Sidge about it. ~
+
+// NEW (v.4)
+@239 = ~Did you escape the circus? Everyone is looking for you there, let's go, I'll take you home! ~
+@240 = ~*Troll tries to say something, but can't say a word*~
+@241 = ~Do you live here alone? Or do you have a family? ~
+@242 = ~*Troll looks at you sadly*~
+@243 = ~What's your name? Where are you from? ~
+@244 = ~*Troll turns away. Looks like he's tired of this "conversation"*~
+@245 = ~Hey you stupid troll, stop being silent! Tiax the Magnificent orders you to answer the question!!~
+@246 = ~<CHARNAME>, this is no longer funny. You can see that he can't talk, why keep asking?~
+@247 = ~<CHARNAME>, I can definitely say this troll can't speak. (I've never seen anything stupider in my life. Maybe I should join the troll? <CHARNAME> is obviously dumber than him.)~
+@248 = ~This troll is unable or unwilling to answer you, <CHARNAME>.~
+@249 = ~*You look around the cage and around it*~

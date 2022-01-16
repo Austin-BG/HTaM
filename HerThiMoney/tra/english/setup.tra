@@ -264,6 +264,10 @@ Whose footsteps, like a black trail, scatter the gem.~
 @155 = ~Gie~
 @156 = ~Lania~
 
+@157 = ~Component 5. Unlocked original dialogs of all NPC (by Tipun & Austin)~
+
+@158 = ~Miranda~
+
 @999 = ~Mae’Var’s Stash
 
 Renal has commissioned us to search for Mae’Var’s Stash. First you need to talk to his assistant named Batch. He should be somewhere near the entrance to the guild... ~
@@ -727,6 +731,14 @@ According to Renal, Gie often dates a girl named Lania. She may know something a
 @1114 = ~Beshaba's Curse
 
 We found Lania and learned the whole truth. The story is over. ~
+
+@1115 = ~Difficult loan
+
+We managed to help Miranda by miraculously persuading their bank director to approve a loan in her name.~
+
+@1116 = ~Difficult loan
+
+We were unable to help Miranda get a loan from the bank. She will have to look for other ways to get money.~
 
 @10000000 = ~~
 @10000001 = ~Statue: %z_strref%~

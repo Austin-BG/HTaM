@@ -61,7 +61,7 @@
 @53 = ~Guards do not divulge names.~
 @54 = ~If it's Fayaz, then he is dead. You don't need to guard this treasure any more.~
 @55 = ~Only the master can remove me from my post. Until I am defeated, you will not pass.~
-@56 = ~Well, then, it's just a matter of time! (Attack the Guard)~
+@56 = ~Well, then, it's just a matter of time! *Attack the guard*~
 
 // Odrik (Dragon) 
 @57 = ~Oh, <PRO_RACE>! How lovely! I rarely see living creatures. Mama usually brings me dead ones.~
@@ -135,7 +135,7 @@
 @119 = ~Well, yes, there is. Fayaz died, drank himself to death in a tavern. But, I managed to find his cache.~
 @120 = ~That's great. To tell the truth, I didn't expect anything at all on this case. It's great that you took care of it.~
 @121 = ~Overall, yes... but the collection business is not for me.  I don't think I'll be doing this again.~
-@122 = ~Rumor has it that Calimport wants to separate the debt collectors from the bank so they don't get their hands dirty. It won't reach our branch soon, of course, but hopefully the rumors turn out to be true.~
+@122 = ~Rumor has it that Calimport wants to separate the debt collectors from the bank so they don't get their hands dirty. It won't reach our branch soon, of course, but perphaps the rumors turn out to be true.~
 @123 = ~That's nice. Well, I should be going.~
 @124 = ~Come and see us anytime. You are always welcome here.~
 
@@ -246,3 +246,10 @@
 @219 = ~Don't be sad, tailed girl! When Tiax the Wise rules the world, he will make you his concubine! You will have the unprecedented honor to wash his feet every morning. And he will also issue a decree, according to which he will forbid all sailors to drink! That way they can better serve their master, hmm-hmm.~ [PPTIAX18]
 @220 = ~Are you kidding me, midget? I'm not amused!~
 @221 = ~No, he's not kidding. Unfortunately.~
+
+// NEW (v.4)
+@222 = ~Time will tell if I'm right or wrong. Dragons have enough time, we live a long time.~
+@223 = ~Time will tell if I'm right or wrong. Viverns have enough time, we live a long time.~
+@224 = ~I even enjoyed collecting debt.~
+@225 = ~Yes. I have news on that Fayaz case, but not very good news. ~
+@226 = ~Fayaz died drinking in the tavern. So the money could not be returned. Sorry.~
