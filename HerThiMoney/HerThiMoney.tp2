@@ -2,7 +2,7 @@
 BACKUP ~HerThiMoney/backup~
 
 AUTHOR ~Austin, Scheele, Alisia & Arcanecoast Team~
-VERSION 3.6.2
+VERSION 4.0
 
 AUTO_TRA ~HerThiMoney/tra/%s~
 
@@ -99,9 +99,6 @@ BEGIN %new_dialog%
 BEGIN %new_script%
 >>>>>>>>
 
-// Патчим файл player1, чтобы добавить диалоги всем NPC после превращения игрока в Убийцу (ранее говорил только кто-то один), подключаем функцию
-LAM AN_PLAYER1DLG_PATCH
-
 LAF HANDLE_AUDIO STR_VAR audio_path = "HerThiMoney/audio/1" oggdec_path = "HerThiMoney/audio" END
 
 APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
@@ -196,7 +193,8 @@ EXTEND_TOP ~AR0400.bcs~ ~HerThiMoney/scripts/AR0400_1.baf~ EVALUATE_BUFFER
 EXTEND_TOP ~AR0500.bcs~ ~HerThiMoney/scripts/AR0500_1.baf~ EVALUATE_BUFFER
 EXTEND_TOP ~ar2102.bcs~ ~HerThiMoney/scripts/ar2102.baf~ EVALUATE_BUFFER
 EXTEND_TOP ~ar1402.bcs~ ~HerThiMoney/scripts/ar1402.baf~ EVALUATE_BUFFER
-EXTEND_TOP ~ar1203.bcs~ ~HerThiMoney/scripts/ar1203.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~ar1203.bcs~ ~HerThiMoney/scripts/ar1203.baf~
+EXTEND_TOP ~ar2807.bcs~ ~HerThiMoney/scripts/ar2807.baf~
 EXTEND_TOP ~ar1404.bcs~ ~HerThiMoney/scripts/ar1404.baf~ EVALUATE_BUFFER
 EXTEND_TOP ~ar1105.bcs~ ~HerThiMoney/scripts/ar1105.baf~ EVALUATE_BUFFER
 EXTEND_TOP ~AR0406.bcs~ ~HerThiMoney/scripts/AR0406.baf~ EVALUATE_BUFFER
@@ -312,6 +310,11 @@ COMPILE ~HerThiMoney/dlg/ANslums.d~
 COMPILE ~HerThiMoney/dlg/ANgover.d~
 COMPILE ~HerThiMoney/dlg/ANbrinnl.d~
 
+// Hubelpot crossmod quest (if Hubelpot mod installed)
+ACTION_IF FILE_EXISTS_IN_GAME ~sc#hub.cre~ BEGIN
+COMPILE ~HerThiMoney/dlg/ANslumsHubelpot.d~ USING ~HerThiMoney/tra/%LANGUAGE%/ANslums.tra~ 
+END
+
 
 // Обрабатываем файл перед компилированием, чтобы устранить ошибки при установке на не-ЕЕ версию игры
 OUTER_SPRINT ~tilde~ "~"
@@ -329,6 +332,7 @@ COMPILE ~HerThiMoney/dlg/ANtob.d~ EVALUATE_BUFFER
 COMPILE ~HerThiMoney/dlg/ANbridge.d~ EVALUATE_BUFFER
 COMPILE ~HerThiMoney/dlg/ANunderd.d~
 COMPILE ~HerThiMoney/dlg/ANplanar.d~
+COMPILE ~HerThiMoney/dlg/ANsuldan.d~
 COMPILE ~HerThiMoney/dlg/ANtradmt.d~
 
 ACTION_IF EE_GAME BEGIN
@@ -406,6 +410,10 @@ ACTION_IF EE_GAME BEGIN
 END 
 
 AT_INTERACTIVE_EXIT ~VIEW HerThiMoney/readme/%LANGUAGE%/readme.pdf~
+
+
+
+
 
 //
 //
@@ -581,7 +589,7 @@ END
 
 ACTION_IF EE_GAME BEGIN
    // If a EE-version is installed, change the journal entries to adapt it 
-  ADD_JOURNAL @1000 @1001 @1002 @1003 @1004 @1005 @1006 @1007 @1008 @1009 @1010 @1011 @1012 @1013 @1014 @1015 @1016 @1017 @1018 @1019 @1020 @1021 @1022 @1023 @1024 @1027 @1028 @1029 @1030 @1031 @1032 @1033 @1034 @1035 @1036 @1037 @1065 @1066 @1067 @1068 @1069 @1099 @1100 @1101 @1102 @1103 @1104 @1105 USING ~%MOD_FOLDER%/tra/%LANGUAGE%/setup.tra~ 
+  ADD_JOURNAL @1000 @1001 @1002 @1003 @1004 @1005 @1006 @1007 @1008 @1009 @1010 @1011 @1012 @1013 @1014 @1015 @1016 @1017 @1018 @1019 @1020 @1021 @1022 @1023 @1024 @1027 @1028 @1029 @1030 @1031 @1032 @1033 @1034 @1035 @1036 @1037 @1065 @1066 @1067 @1068 @1069 @1099 @1100 @1101 @1102 @1103 @1104 @1105 @1115 @1116 USING ~%MOD_FOLDER%/tra/%LANGUAGE%/setup.tra~ 
 END 
 
 COPY ~HerThiMoney/are/2~ ~override~
@@ -894,6 +902,10 @@ SAY NAME2 @108
 COPY ~HerThiMoney/cre/ANscelet.cre~ ~override/ANscelet.cre~
 SAY NAME1 @112
 SAY NAME2 @112
+
+COPY ~HerThiMoney/cre/ANmiran.cre~ ~override/ANmiran.cre~
+SAY NAME1 @158
+SAY NAME2 @158
 
 ACTION_IF (EE_GAME OR MOD_IS_INSTALLED ~INFINITYANIMATIONS.TP2~ ~0~) BEGIN
 COPY ~HerThiMoney/cre/ANdragon.cre~ ~override/ANdragon.cre~
@@ -1799,3 +1811,25 @@ COPY_EXISTING ~WAUKSQU.cre~ ~override\WAUKSQU.cre~
 WRITE_ASCII 0x280 ~ANbelka~ (32)
 
 AT_INTERACTIVE_EXIT ~VIEW HerThiMoney/readme/%LANGUAGE%/readme.pdf~
+
+
+
+
+//
+//
+//
+//
+/////////////////////////////////////////////
+// Component 5. Unlocked original dialogs of all NPC (by Tipun & Austin) ////////////////////////////////
+/////////////////////////////////////////////
+//
+//
+//
+//
+//
+BEGIN @157 DESIGNATED 40
+
+// Патчим файл player1, чтобы добавить диалоги всем NPC после превращения игрока в Убийцу (ранее говорил только кто-то один), подключаем функцию
+LAM AN_PLAYER1DLG_PATCH
+
+COMPILE ~HerThiMoney/dlg/ANtwick.d~
