@@ -22,7 +22,7 @@ IF
 Global("ANStashRenalJOB","GLOBAL",7)
 Global("ANStashEdwinGross","GLOBAL",0)
 InParty("Edwin")
-!Dead("Edwin")
+!StateCheck("Edwin",CD_STATE_NOTVALID)
 CombatCounter(0)
 THEN
 RESPONSE #100
@@ -33,7 +33,7 @@ END
 IF
 Global("ANStashRenalJOB","GLOBAL",4)
 InParty("Edwin") 
-!Dead("Edwin")
+!StateCheck("Edwin",CD_STATE_NOTVALID)
 THEN
 	RESPONSE #100
 SetGlobal("ANStashRenalJOB","GLOBAL",5)	
@@ -42,23 +42,24 @@ END
 
 IF
 Global("ANStashRenalJOB","GLOBAL",5)
+InParty("Edwin")
+!StateCheck("Edwin",CD_STATE_NOTVALID)
 CombatCounter(0)
 THEN
 	RESPONSE #100
-ActionOverride(Player1,StartDialog("Player1",Myself))
+ActionOverride("Edwin",StartDialogNoSet("Player1"))
 END
 
 
 IF
 Global("ANStashRenalJOB","GLOBAL",7)
 Global("ANStashEdwinGross","GLOBAL",1)
-InParty("Edwin")
-!Dead("Edwin")
+InParty("Edwin") 
 !StateCheck("Edwin",CD_STATE_NOTVALID)
 CombatCounter(0)
 THEN
 RESPONSE #100
-ActionOverride(Player1,StartDialog("Player1",Myself))
+ActionOverride("Edwin",StartDialogNoSet("Player1"))
 END
 
 

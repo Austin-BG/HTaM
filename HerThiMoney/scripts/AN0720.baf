@@ -113,3 +113,42 @@ THEN
 	RESPONSE #100
 ActionOverride("ANesra",StartDialogueNoSet(Player1))
 END
+
+
+// Miranda quest
+IF
+Global("ANMirandaExists","AN0720",0) 
+THEN
+	RESPONSE #100
+SetGlobal("ANMirandaExists","AN0720",1) 
+CreateCreature("ANmiran",[687.469],0)
+END
+
+IF 
+Global("ANMirandaCredit","GLOBAL",2)
+
+THEN
+  RESPONSE #100
+ClearAllActions() 
+ActionOverride("ANmiran",DestroySelf())
+SmallWait(4)
+StorePartyLocations()
+FadeFromColor([20.0],0)
+ActionOverride(Player1,LeaveAreaLUA("AN0721","",[627.847],8))
+ActionOverride(Player2,LeaveAreaLUA("AN0721","",[537.994],8))
+ActionOverride(Player3,LeaveAreaLUA("AN0721","",[704.1018],8))
+ActionOverride(Player4,LeaveAreaLUA("AN0721","",[677.1027],8))
+ActionOverride(Player5,LeaveAreaLUA("AN0721","",[572.1026],8))
+ActionOverride(Player6,LeaveAreaLUA("AN0721","",[672.1049],8))
+END
+
+IF
+!Exists("ANmiran")
+OR(2)
+Global("ANMirandaCredit","GLOBAL",5) 
+Global("ANMirandaCredit","GLOBAL",98) 
+THEN
+	RESPONSE #100
+CreateCreature("ANmiran",[687.469],0)	
+ActionOverride("ANmiran",StartDialogueNoSet(Player1))
+END

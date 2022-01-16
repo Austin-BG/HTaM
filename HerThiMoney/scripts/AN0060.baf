@@ -258,13 +258,16 @@ Global("ANDwarfCreditPayPart3","AN0060",1)
 Global("ANDwarfCreditPayPart4","AN0060",1)
 Global("ANDwarfCreditPay","GLOBAL",3)
 Global("ANDwarfCreditPay","GLOBAL",4)
+Global("ANlocationExitAN0060","AN0060",0)
 THEN
 	RESPONSE #100
 %an_travel%	
+SetGlobal("ANlocationExitAN0060","AN0060",1)
 END
 
 IF 
 AreaCheck("AN0060")
+Global("ANlocationEnterAN0060","AN0060",0)
 !Global("ANshakal","GLOBAL",8)
 OR(4)
 Global("ANDwarfCreditNoEscape","AN0060",0)
@@ -274,13 +277,16 @@ Global("ANDwarfCreditNoEscape","AN0060",4)
 THEN
   RESPONSE #100
 %an_no_travel%
+SetGlobal("ANlocationEnterAN0060","AN0060",1)
 END
 
 IF
 AreaCheck("AN0060")
 Global("ANDwarfCreditNoPay","GLOBAL",2)
 Dead("ANOwni") 
+Global("ANlocationExitAN0060","AN0060",0)
 THEN
 	RESPONSE #100
 %an_travel%	
+SetGlobal("ANlocationExitAN0060","AN0060",1)
 END

@@ -3,6 +3,7 @@ Global("ANTroll","GLOBAL",3)
 
 THEN
   RESPONSE #100
+ClearAllActions()  
 SetGlobal("ANTroll","GLOBAL",4)  
 StartCutSceneMode() 
 CutSceneId(Player1)   

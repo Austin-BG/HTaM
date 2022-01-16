@@ -27,14 +27,6 @@ Global("ANnaliaviconia1","GLOBAL",1)
 THEN
 RESPONSE #100
 SetGlobal("ANnaliaviconia1","GLOBAL",2)
-END
-
-IF
-InParty(Myself)
-See("Viconia")
-Global("ANnaliaviconia1","GLOBAL",2)
-THEN
-RESPONSE #100
 Interact("Viconia")
 END
 

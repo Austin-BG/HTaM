@@ -33,7 +33,9 @@ END
 IF 
 AreaCheck("AR0700")
 Global("ANBankGuardExists1","AR0700",0)
+OR(2)
 Global("AnOwniBankTalk","GLOBAL",8)
+GlobalTimerExpired("AnOwniBankBattleTimer","GLOBAL")
 
 THEN
   RESPONSE #100
@@ -78,6 +80,7 @@ END
 IF 
 Global("AnOwniBankTalk","GLOBAL",4)
 !TimeOfDay(DAY)
+!GlobalTimerExpired("AnOwniBankBattleTimer","GLOBAL")
 
 THEN
   RESPONSE #100

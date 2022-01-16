@@ -30,7 +30,9 @@ Global("ANcollectorDead","GLOBAL",2)
 Global("ANjalutBankExists0","AN0721",0)
 OR(2)
 Global("ANDwarfCreditPay","GLOBAL",3)
-Global("ANDwarfCreditPay","GLOBAL",4)	
+Global("ANDwarfCreditPay","GLOBAL",4)
+!Global("ANdruidDead","GLOBAL",2)
+!Global("ANdruidDead","GLOBAL",3)	
 THEN
 	RESPONSE #100
 SetGlobal("ANjalutBankExists0","AN0721",1)	
@@ -50,6 +52,8 @@ Global("ANjockBankExists0","AN0721",0)
 OR(2)
 Global("ANDwarfCreditPay","GLOBAL",3)
 Global("ANDwarfCreditPay","GLOBAL",4)	
+!Global("ANdruidDead","GLOBAL",2)
+!Global("ANdruidDead","GLOBAL",3)	
 THEN
 	RESPONSE #100
 SetGlobal("ANjockBankExists0","AN0721",1)	
@@ -97,6 +101,11 @@ CreateCreature("ANjalut",[823.1058],7)
 CreateCreature("ANJock",[861.928],7)
 CreateCreature("ANowni",[541.875],13)
 CreateCreature("ANyant",[447.915],12)
+SmallWait(2)
+ChangeEnemyAlly("ANOwni",CONTROLLED) 
+ChangeEnemyAlly("ANjalut",CONTROLLED) 
+ChangeEnemyAlly("ANJock",CONTROLLED)
+ChangeEnemyAlly("ANyant",CONTROLLED)
 Wait(1)
 DisplayStringHead("ANowni",@59)
 Wait(2)
@@ -135,6 +144,11 @@ ActionOverride("ANjalut",JumpToPoint([823.1058]))
 ActionOverride("ANJock",JumpToPoint([861.928]))
 CreateCreature("ANowni",[541.875],13)
 CreateCreature("ANyant",[447.915],12)
+SmallWait(2)
+ChangeEnemyAlly("ANOwni",CONTROLLED) 
+ChangeEnemyAlly("ANjalut",CONTROLLED) 
+ChangeEnemyAlly("ANJock",CONTROLLED)
+ChangeEnemyAlly("ANyant",CONTROLLED)
 Wait(1)
 DisplayStringHead("ANowni",@59)
 Wait(2)
@@ -183,6 +197,8 @@ IF
 Global("AnOwniBankTalk","GLOBAL",8)
 Global("ANdruidDead","GLOBAL",3)
 Global("ANOwniBankExists3","AN0721",0)
+!Exists("ANjalut")
+!Exists("ANJock")
 THEN
 	RESPONSE #100
 SetGlobal("ANOwniBankExists3","AN0721",1)	
@@ -194,9 +210,11 @@ END
 IF
 Global("ANdruidDead","GLOBAL",3)
 Global("ANallGroupDead","GLOBAL",1)
+Global("ANallGroupDeadLoot","AN0721",0)
 THEN
 	RESPONSE #100
 %baf_string2%
+SetGlobal("ANallGroupDeadLoot","AN0721",1)
 END
 
 
@@ -239,6 +257,8 @@ Global("AnOwniDeadBank","GLOBAL",1)
 Global("ANOwniDeadBankExists1","AN0721",0)
 !Dead("ANjalut")
 !Dead("ANJock")
+!Exists("ANjalut")
+!Exists("ANJock")
 THEN
 	RESPONSE #100
 SetGlobal("ANOwniDeadBankExists1","AN0721",1)	
@@ -251,6 +271,7 @@ Global("AnOwniDeadBank","GLOBAL",1)
 Global("ANOwniDeadBankExists2","AN0721",0)
 Dead("ANjalut")
 !Dead("ANJock")
+!Exists("ANJock")
 THEN
 	RESPONSE #100
 SetGlobal("ANOwniDeadBankExists2","AN0721",1)	
@@ -262,6 +283,7 @@ Global("AnOwniDeadBank","GLOBAL",1)
 Global("ANOwniDeadBankExists3","AN0721",0)
 !Dead("ANjalut")
 Dead("ANJock")
+!Exists("ANJock")
 THEN
 	RESPONSE #100
 SetGlobal("ANOwniDeadBankExists3","AN0721",1)	
@@ -309,4 +331,42 @@ THEN
 	RESPONSE #100
 SetGlobal("ANshahbazExists","AN0721",1)	
 CreateCreature("ANshahba",[1324.950],4)
+END
+
+
+// Miranda quest
+IF
+Global("ANMirandaCredit","GLOBAL",2)
+THEN
+	RESPONSE #100
+SetGlobal("ANMirandaCredit","GLOBAL",3)
+CreateCreature("ANmiran",[711.811],0)
+MoveViewPoint([690.797],VERY_FAST)
+ActionOverride(Player1,FaceObject("ANdirt"))
+ActionOverride("ANmiran",FaceObject("ANdirt"))
+ActionOverride("ANdirt",FaceObject(Player1))
+Wait(2)
+ActionOverride("ANdirt",StartDialogueNoSet(Player1))
+END
+
+IF 
+Global("ANMirandaCredit","GLOBAL",4)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANMirandaCredit","GLOBAL",5) 
+ClearAllActions() 
+RestorePartyLocations()
+FadeFromColor([20.0],0)
+END
+
+IF 
+Global("ANMirandaCredit","GLOBAL",97)
+
+THEN
+  RESPONSE #100
+SetGlobal("ANMirandaCredit","GLOBAL",98) 
+ClearAllActions() 
+RestorePartyLocations()
+FadeFromColor([20.0],0)
 END

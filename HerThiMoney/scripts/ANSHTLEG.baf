@@ -1,11 +1,22 @@
 IF
     Global("ANsimoncernd","GLOBAL",0)
+	OR(3) !InParty("Hubelpot") !InMyArea("Hubelpot") StateCheck("Hubelpot",CD_STATE_NOTVALID)
+	InParty("Cernd") InMyArea("Cernd") !StateCheck("Cernd",CD_STATE_NOTVALID)
 	See("Cernd")
 THEN
 	RESPONSE #100
-	ActionOverride(Player1,SetDialog("PLAYER1"))
 	StartDialogNoSet("Cernd")
 END
+
+IF
+    Global("ANsimoncernd","GLOBAL",0)
+	InParty("Hubelpot") InMyArea("Hubelpot") !StateCheck("Hubelpot",CD_STATE_NOTVALID)
+	See("Hubelpot")
+THEN
+	RESPONSE #100
+	StartDialogNoSet("Hubelpot")
+END
+
 
 
 

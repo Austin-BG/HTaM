@@ -1,0 +1,29 @@
+// Nizidramanii'yt is dead
+
+IF
+	Dead("FIRKRA02")
+	Global("AN_Nizidr_DeadTalk","AR2807",0)
+THEN
+	RESPONSE #100
+	SetGlobal("AN_Nizidr_DeadTalk","AR2807",1)
+    RealSetGlobalTimer("ANNizidrDeadTalkTimer","GLOBAL",3)
+	Continue() 
+END
+
+IF
+    RealGlobalTimerExpired("ANNizidrDeadTalkTimer","GLOBAL")
+	Global("AN_Nizidr_DeadTalk","AR2807",1)
+THEN
+	RESPONSE #100
+	SetGlobal("AN_Nizidr_DeadTalk","AR2807",2)
+	Continue()
+END
+
+IF
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!ActuallyInCombat()
+	Global("AN_Nizidr_DeadTalk","AR2807",2)
+THEN
+	RESPONSE #100
+ActionOverride(Player1,StartDialog("Player1",Myself))
+END

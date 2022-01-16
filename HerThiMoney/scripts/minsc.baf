@@ -25,7 +25,6 @@ AreaType(OUTDOOR)
 AreaType(CITY)
 THEN
 RESPONSE #20
-Weather (RAIN)
 SetGlobal ("ANMyrain", "GLOBAL", 1)
 RealSetGlobalTimer("Myrain","GLOBAL",40)
 END
@@ -41,20 +40,6 @@ AreaType(OUTDOOR)
 AreaType(CITY)
 THEN
 RESPONSE #100
-SetGlobal ("ANMyrain", "GLOBAL", 2)
-END
-
-IF
-Global ("ANMyrain", "GLOBAL",2)
-See(Player1)
-InParty(Myself)
-!Dead("Minsc")
-!StateCheck(Myself,CD_STATE_NOTVALID)
-!StateCheck(Player1,CD_STATE_NOTVALID)
-AreaType(OUTDOOR)
-AreaType(CITY)
-THEN
-RESPONSE #100
+SetGlobal ("ANMyrain","GLOBAL",2)
 StartDialog("MINSCJ",Player1)
-Weather (RAIN)
 END
