@@ -14,7 +14,6 @@ Component 1. «Interjections & Mini-quests» (by Austin & Arcanecoast Team):
 - extended solution to the quest about Kaza book, if the group has Keldorn, Edwin or both together (in this case, there will be a dispute between them)
 - expansion of some standard quests. For example, to Umar Hills, the quest with the extraction of a gem from a chicken can now be solved in many ways - from using your ranger or druid skills to attracting NPC druids and NPC rangers
 - after completing quests in Trademeet and defeating Firkraag, in taverns, you may meet a storyteller telling about it (but be prepared that in his stories everything will be presented a little differently from what it really was)
-- unlocked dialogs of all NPC after the first transformation of a player into a Slayer in Spellhold (previously only one group member spoke, although the game developers wrote dialogs for everyone)
 - after installing statues in Trademeet, the names of specific NPC companions will now be written on them, and not a general non-specific phrase
 - Keldorn and Cernd's reaction to each other's family quests (if someone's quest is completed before the other and both are in a group)
 - and other
@@ -39,6 +38,9 @@ Component 4. «The Missing Troll Case» (by Alisia & Austin):
 
 Adds two new interconnected detective-focused quests to SoA. The story begins after the player solves a problem with the Waukeen Promenade circus. Expect a messenger from the circus with a problem report.
 This component has one new area.
+
+Component 5. "Unlocked original NPC reactions"(by Tipun & Austin): 
+There were situations in the game when only one of all the NPCs spoke, although the developers provided replicas for each. After installing this component, all NPCs in the party will speak.
 
 
 Compatibility:
@@ -84,6 +86,9 @@ Additional phrases of Branwen from this mod in new locations and in new situatio
 5) Jastey’s «Imoen 4 Ever» mod 
 https://www.gibberlings3.net/mods/other/imoen4ever/
 Compatibility (if installed Imoen4Ever mod, then some of the lines will be changed so as to remove references to the abduction of Imoen)
+6) BobTokyo and SConrad' "The Hubelpot the Vegetable Merchant NPC" mod
+http://www.shsforums.net/forum/156-hubelpot/ 
+Additional mini-quest for Hubelpot in the Slums
 
 
 CREDITS:
