@@ -39,7 +39,7 @@ IF ~Global("ANsirene","GLOBAL",63)~ THEN ANsirene ANsirene2FinalTalk2QuayleImp
 == ANlorio @156
 == ANsirene @157
 END
-IF ~~ THEN REPLY @158 EXTERN ANsirene ANsirene2FinalTalk2QuayleImp_1
+IF ~~ THEN REPLY @158 EXTERN ANlorio ANsirene2FinalTalk2QuayleImp_1
 
 CHAIN ANlorio ANsirene2FinalTalk2QuayleImp_1
 @159 DO ~GiveItemCreate("SW1H42",Player1,1,0,0)~
