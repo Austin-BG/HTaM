@@ -1,0 +1,1836 @@
+///////////////////////////////////
+BACKUP ~HerThiMoney/backup~
+
+AUTHOR ~Austin, Scheele, Alisia & Arcanecoast Team~
+VERSION 4.1
+
+AUTO_TRA ~HerThiMoney/tra/%s~
+
+ALWAYS
+
+OUTER_SET IS_INIANIM = (FILE_EXISTS_IN_GAME ~5000.ini~) ? 1 : 0
+
+ACTION_IF NOT VARIABLE_IS_SET bg2_chapter THEN BEGIN // check to make this happen only once per install
+
+ACTION_IF (GAME_IS ~eet~) BEGIN // Check for EET and change chapter variables if it is detected
+OUTER_SET bg2_chapter = 12
+END ELSE BEGIN
+  OUTER_SET bg2_chapter = 0
+END
+OUTER_FOR (i=1; i<=10; i=i+1) BEGIN
+  OUTER_SET bg2_chapter = bg2_chapter + 1
+  OUTER_SPRINT name_source ~bg2_chapter_%i%~
+  OUTER_SET EVAL ~%name_source%~ = bg2_chapter
+END
+
+END
+
+     // convert strings to UTF-8 for BGEE/BG2EE
+	
+ACTION_DEFINE_ARRAY 9xnoconvert BEGIN END
+ACTION_DEFINE_ARRAY 9xreload BEGIN setup END
+
+  LAF HANDLE_CHARSETS
+    INT_VAR
+      infer_charsets = 1
+    STR_VAR
+      tra_path = EVAL ~%MOD_FOLDER%/tra~
+      noconvert_array = 9xnoconvert
+      reload_array = 9xreload
+END 
+
+INCLUDE ~HerThiMoney/lib/functions.tph~
+// Для статуй в Трейдмите
+OUTER_SPRINT ~percent~ "%"
+OUTER_SPRINT ~tilde~   "~"
+
+OUTER_SET EE_GAME = 0
+ACTION_IF GAME_IS "bg2ee eet" BEGIN
+	OUTER_SET EE_GAME = 1
+END
+
+
+END
+
+// Translations
+
+LANGUAGE ~Russian~
+         ~Russian~
+         ~HerThiMoney/tra/Russian/setup.TRA~
+LANGUAGE ~English~
+         ~English~
+         ~HerThiMoney/tra/English/setup.TRA~
+		 
+//
+//
+//
+//
+//
+/////////////////////////////////////////////////////////
+// Component 1. Interjections & Mini-quests /////////////////////////////////////
+/////////////////////////////////////////////////////////
+//
+//
+//
+//
+//
+
+BEGIN @0 DESIGNATED 0
+
+INCLUDE ~HerThiMoney/lib/trademeet_statue.tph~
+
+//это есть в ЕЕ, но нет в оригинальной игре
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~dir.ids~ BEGIN
+COPY "%MOD_FOLDER%/lib/dir.ids" override
+COPY_EXISTING "action.ids" override
+    REPLACE_TEXTUALLY "Face\*)" "Face*DIR)"
+    REPLACE_TEXTUALLY "Direction\*)" "Direction*DIR)"
+    BUT_ONLY
+END
+
+
+// Для добавления расширения квеста в Холмах Умар
+
+<<<<<<<< new_dlg.d
+BEGIN %new_dialog%
+>>>>>>>>
+
+<<<<<<<<new_script.d
+BEGIN %new_script%
+>>>>>>>>
+
+LAF HANDLE_AUDIO STR_VAR audio_path = "HerThiMoney/audio/1" oggdec_path = "HerThiMoney/audio" END
+
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
+
+COPY ~HerThiMoney/cre/ANSHTLEG.cre~ ~override/ANSHTLEG.cre~
+SAY NAME1 @2
+SAY NAME2 @2
+
+COPY ~HerThiMoney/cre/ANbard1.cre~ ~override/ANbard1.cre~
+SAY NAME1 @35
+SAY NAME2 @35
+
+COPY ~HerThiMoney/cre/ANwomn1.cre~ ~override/ANwomn1.cre~
+SAY NAME1 @36
+SAY NAME2 @36
+
+COPY ~HerThiMoney/cre/ANboy1.cre~ ~override/ANboy1.cre~
+SAY NAME1 @37
+SAY NAME2 @37
+
+COPY ~HerThiMoney/cre/ANbeggar.cre~ ~override/ANbeggar.cre~
+SAY NAME1 @51
+SAY NAME2 @52
+
+COPY ~HerThiMoney/cre/ANurgrl.cre~ ~override/ANurgrl.cre~
+SAY NAME1 @53
+SAY NAME2 @53
+
+COPY ~HerThiMoney/cre/ANParis.cre~ ~override/ANParis.cre~
+SAY NAME1 @66
+SAY NAME2 @66
+
+COPY ~HerThiMoney/cre/ANsharlt.cre~ ~override/ANsharlt.cre~
+SAY NAME1 @67
+SAY NAME2 @67
+
+COPY ~HerThiMoney/cre/ANkiller.cre~ ~override/ANkiller.cre~
+SAY NAME1 @68
+SAY NAME2 @68
+
+COPY ~HerThiMoney/cre/ANagness.cre~ ~override/ANagness.cre~
+SAY NAME1 @136
+SAY NAME2 @136
+
+COPY ~HerThiMoney/items/ANkazab.itm~ ~Override/ANkazab.itm~
+SAY NAME1 @49
+SAY NAME2 @49
+SAY UNIDENTIFIED_DESC @49
+SAY DESC @50
+PATCH_IF NOT GAME_IS ~bg2ee eet~
+    BEGIN
+    LPF DELETE_ITEM_EQEFFECT INT_VAR opcode_to_delete=319 END
+	WRITE_LONG 0x1e 0xf7fbffed // evil, lawful, mage, human
+	WRITE_BYTE 0x29 0b11111111 // none
+	WRITE_BYTE 0x2b 0b11111111 // none
+	WRITE_BYTE 0x2d 0b11111111 // none
+	WRITE_BYTE 0x2f 0b01111111 // conjurer
+	WRITE_BYTE 0x26 10 // Str
+	WRITE_BYTE 0x2a 18 // Int
+	WRITE_BYTE 0x2c 10 // dex
+	WRITE_BYTE 0x2e 10 // wiz
+	WRITE_BYTE 0x30 16 // con
+	WRITE_BYTE 0x32 10 // chr    
+END
+
+COPY ~HerThiMoney/items/ANkazas.itm~ ~Override/ANkazas.itm~
+SAY NAME1 @49
+SAY NAME2 @49
+SAY UNIDENTIFIED_DESC @49
+SAY DESC @50
+PATCH_IF NOT GAME_IS ~bg2ee eet~
+    BEGIN
+    LPF DELETE_ITEM_EQEFFECT INT_VAR opcode_to_delete=319 END
+	WRITE_LONG 0x1e 0xf7fbffed // evil, lawful, mage, human
+	WRITE_BYTE 0x29 0b11111111 // none
+	WRITE_BYTE 0x2b 0b11111111 // none
+	WRITE_BYTE 0x2d 0b11111111 // none
+	WRITE_BYTE 0x2f 0b01111111 // conjurer
+	WRITE_BYTE 0x26 10 // Str
+	WRITE_BYTE 0x2a 18 // Int
+	WRITE_BYTE 0x2c 10 // dex
+	WRITE_BYTE 0x2e 10 // wiz
+	WRITE_BYTE 0x30 16 // con
+	WRITE_BYTE 0x32 10 // chr
+END
+
+EXTEND_TOP ~Player1.bcs~ ~HerThiMoney/scripts/addp1dlg.baf~ 
+
+// Добавляем скрипты локаций
+EXTEND_TOP ~AR0602.bcs~ ~HerThiMoney/scripts/AR0602.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~AR0400.bcs~ ~HerThiMoney/scripts/AR0400_1.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~AR0500.bcs~ ~HerThiMoney/scripts/AR0500_1.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~ar2102.bcs~ ~HerThiMoney/scripts/ar2102.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~ar1402.bcs~ ~HerThiMoney/scripts/ar1402.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~ar1203.bcs~ ~HerThiMoney/scripts/ar1203.baf~
+EXTEND_TOP ~ar2807.bcs~ ~HerThiMoney/scripts/ar2807.baf~
+EXTEND_TOP ~ar1404.bcs~ ~HerThiMoney/scripts/ar1404.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~ar1105.bcs~ ~HerThiMoney/scripts/ar1105.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~AR0406.bcs~ ~HerThiMoney/scripts/AR0406.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~AR1000.bcs~ ~HerThiMoney/scripts/AR1000_1.baf~ 
+EXTEND_TOP ~AR2600.bcs~ ~HerThiMoney/scripts/AR2600.baf~ 
+
+ACTION_IF EE_GAME BEGIN
+OUTER_SPRINT ~baf_string_wait~ ~AdvanceTime(ONE_HOUR) ~
+END
+ELSE BEGIN
+OUTER_SPRINT ~baf_string_wait~ ~DayNight(NOON)~
+END
+EXTEND_TOP ~AR1100.bcs~ ~HerThiMoney/scripts/AR1100.baf~  EVALUATE_BUFFER
+
+// Добавляем скрипт локации с личем Кангакссом
+COPY_EXISTING ~ar0331.are~ ~override~
+	SPRINT ~scrp~ ~%SOURCE_RES%~ //сохранение в переменную имени локации
+	READ_ASCII 0x94 are_script (8) NULL //сохранение в переменную имени скрипта локации
+	PATCH_IF ( ~%are_script%~ STR_EQ ~~ ) OR // если имя скрипта пустое
+	         ( ~%are_script%~ STR_EQ ~None~ ) BEGIN //или None
+		WRITE_EVALUATED_ASCII 0x94 ~%scrp%~ (8) // то записывается в имя скрипта имя локации
+		SPRINT are_script ~%scrp%~ // сохранение в переменную нового имени скрипта
+	END
+	BUT_ONLY_IF_IT_CHANGES
+
+//если baf файл имеет такое же имя
+ACTION_IF FILE_EXISTS_IN_GAME ~%are_script%.bcs~ BEGIN
+	EXTEND_TOP ~%are_script%.bcs~ ~%MOD_FOLDER%/scripts/ar0331.baf~ EVALUATE_BUFFER //если скрипт существует, добавляем сверху или снизу
+END ELSE BEGIN
+	COMPILE ~%MOD_FOLDER%/scripts/ar0331.baf~ EVALUATE_BUFFER //если не существует, то создаем новый
+END
+
+// Добавляем скрипт статуи для главного героя в Трейдмите
+EXTEND_BOTTOM ~anstat01.bcs~ ~%MOD_FOLDER%/scripts/addP1Statue.baf~
+
+// Расширяем скрипт Гаррика, чтобы он высказался о своей статуе
+ACTION_IF FILE_EXISTS_IN_GAME ~7XGarJ.dlg~
+BEGIN
+EXTEND_TOP ~7XGARR.bcs~ ~%MOD_FOLDER%/scripts/garrick1.baf~
+END
+
+// Для добавления расширения квеста в Холмах Умар
+COPY_EXISTING ~GEMCH01.CRE~ ~override~
+	SPRINT ~new_dialog~ ~%SOURCE_RES%~
+	READ_ASCII 0x2cc dlg (8) NULL
+	PATCH_IF ( ~%dlg%~ STR_CMP ~~ ) AND ( FILE_EXISTS_IN_GAME ~%dlg%.dlg~ ) BEGIN
+		SPRINT EVAL ~%new_dialog%_DLG~ ~%dlg%~ //если диалог существует и прописан в cre-файле, назначаем его в переменную
+	END ELSE BEGIN
+		WRITE_EVALUATED_ASCII 0x2cc ~%new_dialog%~ (8) //если диалог пустой, прописываем в cre-файл диалог
+		SPRINT EVAL ~%new_dialog%_DLG~ ~%new_dialog%~  //и назначаем его в переменную
+		PATCH_IF ( NOT FILE_EXISTS_IN_GAME ~%new_dialog%.dlg~) BEGIN
+			INNER_ACTION BEGIN
+				COMPILE ~new_dlg.d~ EVALUATE_BUFFER // если такого диалога нет в игре, создаем его
+			END
+		END
+	END
+	BUT_ONLY_IF_IT_CHANGES
+COPY_EXISTING ~GEMCH02.CRE~ ~override~
+	SPRINT ~new_dialog~ ~%SOURCE_RES%~
+	READ_ASCII 0x2cc dlg (8) NULL
+	PATCH_IF ( ~%dlg%~ STR_CMP ~~ ) AND ( FILE_EXISTS_IN_GAME ~%dlg%.dlg~ ) BEGIN
+		SPRINT EVAL ~%new_dialog%_DLG~ ~%dlg%~ //если диалог существует и прописан в cre-файле, назначаем его в переменную
+	END ELSE BEGIN
+		WRITE_EVALUATED_ASCII 0x2cc ~%new_dialog%~ (8) //если диалог пустой, прописываем в cre-файл диалог
+		SPRINT EVAL ~%new_dialog%_DLG~ ~%new_dialog%~  //и назначаем его в переменную
+		PATCH_IF ( NOT FILE_EXISTS_IN_GAME ~%new_dialog%.dlg~) BEGIN
+			INNER_ACTION BEGIN
+				COMPILE ~new_dlg.d~ EVALUATE_BUFFER // если такого диалога нет в игре, создаем его
+			END
+		END
+	END
+	BUT_ONLY_IF_IT_CHANGES
+
+COMPILE ~HerThiMoney/dlg/ANdunge.d~
+COMPILE ~HerThiMoney/dlg/ANguild.d~
+
+OUTER_SPRINT ~tilde~ "~"
+ACTION_IF EE_GAME BEGIN
+OUTER_SPRINT ~dlg_string1~ ~== NEERAJ IF %tilde%InParty("Neera") InMyArea("Neera") !Dead("Neera") !StateCheck("Neera",CD_STATE_NOTVALID)%tilde% THEN @0~
+OUTER_SPRINT ~dlg_string2~ ~== WILSONJ IF %tilde%InParty("Wilson") InMyArea("Wilson") !Dead("Wilson") !StateCheck("Wilson",CD_STATE_NOTVALID)%tilde% THEN @1~
+END
+ELSE BEGIN
+OUTER_SPRINT ~dlg_string1~ ~~
+OUTER_SPRINT ~dlg_string2~ ~~
+END
+COPY ~%MOD_FOLDER%/dlg/ANspellh.d~ ~%MOD_FOLDER%/dlg~ EVALUATE_BUFFER
+// И теперь компилируем
+COMPILE ~%MOD_FOLDER%/dlg/ANspellh.d~ EVALUATE_BUFFER
+
+OUTER_SPRINT ~tilde~ "~"
+ACTION_IF EE_GAME BEGIN
+OUTER_SPRINT ~dlg_string3~ ~== DORNJ IF %tilde%InParty("Dorn") InMyArea("Dorn") !Dead("Dorn") !StateCheck("Dorn",CD_STATE_NOTVALID)%tilde% THEN @26~
+END
+ELSE BEGIN
+OUTER_SPRINT ~dlg_string3~ ~~
+END
+COPY ~%MOD_FOLDER%/dlg/ANmisc.d~ ~%MOD_FOLDER%/dlg~ EVALUATE_BUFFER
+// И теперь компилируем
+COMPILE ~HerThiMoney/dlg/ANmisc.d~ EVALUATE_BUFFER
+
+ACTION_FOR_EACH state IN 0 3 6 10 16 27 33 39 45 BEGIN
+COMPILE ~HerThiMoney/dlg/ANmisc2.d~ EVALUATE_BUFFER USING ~HerThiMoney/tra/%LANGUAGE%/ANmisc.tra~ 
+END
+
+ACTION_IF EE_GAME BEGIN
+COMPILE ~HerThiMoney/dlg/ANmiscEE.d~ 
+END
+
+COMPILE ~HerThiMoney/dlg/ANdocks.d~
+COMPILE ~HerThiMoney/dlg/ANgrave.d~
+COMPILE ~HerThiMoney/dlg/ANcoron.d~
+COMPILE ~HerThiMoney/dlg/ANslums.d~
+COMPILE ~HerThiMoney/dlg/ANgover.d~
+COMPILE ~HerThiMoney/dlg/ANbrinnl.d~
+
+// Hubelpot crossmod quest (if Hubelpot mod installed)
+ACTION_IF FILE_EXISTS_IN_GAME ~sc#hub.cre~ BEGIN
+COMPILE ~HerThiMoney/dlg/ANslumsHubelpot.d~ USING ~HerThiMoney/tra/%LANGUAGE%/ANslums.tra~ 
+END
+
+
+// Обрабатываем файл перед компилированием, чтобы устранить ошибки при установке на не-ЕЕ версию игры
+OUTER_SPRINT ~tilde~ "~"
+ACTION_IF EE_GAME BEGIN
+OUTER_SPRINT ~dlg_string4~ ~== NEERA25J IF %tilde%InParty("Neera") InMyArea("Neera") !StateCheck("Neera",CD_STATE_NOTVALID)%tilde% THEN @32~
+END
+ELSE BEGIN
+OUTER_SPRINT ~dlg_string4~ ~~
+END
+COPY ~%MOD_FOLDER%/dlg/ANtob.d~ ~%MOD_FOLDER%/dlg~ EVALUATE_BUFFER
+// И теперь компилируем
+COMPILE ~HerThiMoney/dlg/ANtob.d~ EVALUATE_BUFFER
+
+
+COMPILE ~HerThiMoney/dlg/ANbridge.d~ EVALUATE_BUFFER
+COMPILE ~HerThiMoney/dlg/ANunderd.d~
+COMPILE ~HerThiMoney/dlg/ANplanar.d~
+COMPILE ~HerThiMoney/dlg/ANsuldan.d~
+COMPILE ~HerThiMoney/dlg/ANtradmt.d~
+
+ACTION_IF EE_GAME BEGIN
+COMPILE ~HerThiMoney/dlg/ANtradEE.d~ USING ~HerThiMoney/tra/%LANGUAGE%/ANtradmt.tra~ 
+END
+
+// Обрабатываем файл перед компилированием, чтобы устранить ошибки при установке на не-ЕЕ версию игры
+OUTER_SPRINT ~tilde~ "~"
+ACTION_IF EE_GAME BEGIN
+OUTER_SPRINT ~dlg_string24~ ~== NEERAJ IF %tilde%InParty("Neera") InMyArea("Neera") !Dead("Neera") !StateCheck("Neera",CD_STATE_NOTVALID)%tilde% THEN @40~
+OUTER_SPRINT ~dlg_string25~ ~== WILSONJ IF %tilde%InParty("Wilson") InMyArea("Wilson") !Dead("Wilson") !StateCheck("Wilson",CD_STATE_NOTVALID)%tilde% THEN @57 DO %ActionOverride(Player1,SetDialog("PLAYER1"))%~
+END
+ELSE BEGIN
+OUTER_SPRINT ~dlg_string24~ ~~
+OUTER_SPRINT ~dlg_string25~ ~~
+END
+COPY ~%MOD_FOLDER%/dlg/ANumarh.d~ ~%MOD_FOLDER%/dlg~ EVALUATE_BUFFER
+// И теперь компилируем
+COMPILE ~HerThiMoney/dlg/ANumarh.d~ EVALUATE_BUFFER
+
+COMPILE ~HerThiMoney/dlg/ANwinspr.d~
+
+// Если установлен мод All Things Mazzy, добавляем кросс-модные реплики
+ACTION_IF 
+FILE_EXISTS_IN_GAME ~_bC6HARP.bcs~ BEGIN
+COMPILE ~HerThiMoney/dlg/ANwsprM.d~ USING ~HerThiMoney/tra/%LANGUAGE%/ANwinspr.tra~ 
+END
+
+COMPILE ~HerThiMoney/dlg/ANbard.d~
+COMPILE ~HerThiMoney/dlg/ANkeep.d~
+
+ACTION_FOR_EACH state IN 1 2 4 5 10 19 BEGIN
+	COMPILE ~HerThiMoney/dlg/ANkeep1.d~ EVALUATE_BUFFER USING ~HerThiMoney/tra/%LANGUAGE%/ANkeep.tra~ 
+END
+
+COMPILE ~HerThiMoney/dlg/ANsilfa.d~
+
+COMPILE ~HerThiMoney/scripts/ANSHTLEG.baf~ EVALUATE_BUFFER
+COMPILE ~HerThiMoney/scripts/ANbard1.baf~ EVALUATE_BUFFER
+COMPILE ~HerThiMoney/scripts/ANParis.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~minsc.bcs~ ~HerThiMoney/scripts/minsc.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~jaheira.bcs~ ~HerThiMoney/scripts/jaheira1.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~nalia.bcs~ ~HerThiMoney/scripts/nalia.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~edwin.bcs~ ~HerThiMoney/scripts/edwin1.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~mazzy.bcs~ ~HerThiMoney/scripts/mazzy.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~anomen.bcs~ ~HerThiMoney/scripts/anomen1.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~aerie.bcs~ ~HerThiMoney/scripts/aerie.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~viconia.bcs~ ~HerThiMoney/scripts/viconia.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~cernd.bcs~ ~HerThiMoney/scripts/cernd.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~keldorn.bcs~ ~HerThiMoney/scripts/keldorn.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~jan.bcs~ ~HerThiMoney/scripts/jan.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~neera.bcs~ ~HerThiMoney/scripts/neera.baf~ EVALUATE_BUFFER
+
+// Добавление реплик Эдвину (сложная ситуация - добавление новой реплики между двумя другими, которые комментируют другие NPC), другими средствами не решить без багов
+OUTER_SPRINT ~ANedwinjoin1~ @1 //переменнаЯ может быть любой
+LAF FC_APPEND_TO_DLGS
+	INT_VAR
+		state_to_patch = 44 //номер State, куда это надо добавить
+	STR_VAR
+		dlg = "EDWIN" // имя dlg файла
+		str = EVAL ~%ANedwinjoin1%~ // реплика персонажа (переменная может быть любой)
+END
+
+LAF FC_APPEND_TO_DLGS
+	INT_VAR
+		state_to_patch = 26 //номер State, куда это надо добавить
+	STR_VAR
+		dlg = "EDWIN" // имя dlg файла
+		str = EVAL ~%ANedwinjoin1%~ // реплика персонажа (переменная может быть любой)
+END
+
+ACTION_IF EE_GAME BEGIN
+   // If a EE-version is installed, change the journal entries to adapt it 
+  ADD_JOURNAL @1025 @1026 @1038 @1039 USING ~%MOD_FOLDER%/tra/%LANGUAGE%/setup.tra~ 
+END 
+
+AT_INTERACTIVE_EXIT ~VIEW HerThiMoney/readme/%LANGUAGE%/readme.pdf~
+
+
+
+
+
+//
+//
+//
+//
+/////////////////////////////////////////////
+// Component 2. First Calimport Bank ////////////////////////////////
+/////////////////////////////////////////////
+//
+//
+//
+//
+//
+
+BEGIN @9 DESIGNATED 10
+LAF HANDLE_AUDIO STR_VAR audio_path = "HerThiMoney/audio/2" oggdec_path = "HerThiMoney/audio" END
+LAF HANDLE_AUDIO STR_VAR audio_path = "HerThiMoney/audio/1" oggdec_path = "HerThiMoney/audio" END
+
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
+
+/*ACTION_IF GAME_IS ~tob bgt~ BEGIN
+COPY ~HerThiMoney/audio/BPC2.MUS~ ~Music\BPC2.MUS~
+COPY ~HerThiMoney/audio/BPC2~ ~Music\BPC2~
+ADD_MUSIC ~BPC2~ ~Music\BPC2.mus~
+
+COPY ~HerThiMoney/audio/BPC3.MUS~ ~Music\BPC3.MUS~
+COPY ~HerThiMoney/audio/BPC3~ ~Music\BPC3~
+ADD_MUSIC ~BPC3~ ~Music\BPC3.mus~
+END
+*/
+
+ACTION_IF GAME_IS ~tob bgt~ BEGIN
+COPY ~Setup-HerThiMoney.exe~ ~weidu.exe~
+ACTION_FOR_EACH file IN AM1002B1 AM1002B4 AM1002B3 AM1002C AM1002 AM1002A1 AM1002A2 AM1002A3 AM1002A4 AM1002A5 AM1002A6 AM1002A7 AM1002A8 AM1002A9 AM0041 AM0041N AM1600A1 AM1600A2 AM1600A3 AM1600A4 AM1600A5 AM1600A6 AM1600A7 AM1600B1 AM1600B2 AM1100O1 AM1100O2 AM1100O3 AM1100O4 AM1100O5 AM1100O6 AM1100O78 AM1401 BEGIN
+ACTION_IF ( NOT FILE_EXISTS ~override/%file%.wav~ ) AND ( FILE_EXISTS_IN_GAME ~%file%.wav~ ) BEGIN
+AT_NOW ~weidu --out "override" --biff-get-rest "%file%.wav"~
+END
+END
+END
+
+//это есть в ЕЕ, но нет в оригинальной игре
+APPEND ~gtimes.ids~ ~150 THIRTY_MINUTES~ UNLESS ~THIRTY_MINUTES~
+APPEND ~gtimes.ids~ ~50400 SEVEN_DAYS~ UNLESS ~SEVEN_DAYS~
+APPEND ~gtimes.ids~ ~7200 ONE_DAY~ UNLESS ~ONE_DAY~
+APPEND ~gtimes.ids~ ~600 TWO_HOURS~ UNLESS ~TWO_HOURS~
+APPEND ~gtimes.ids~ ~6000 TWENTY_HOURS~ UNLESS ~TWENTY_HOURS~
+APPEND ~gtimes.ids~ ~3000 TEN_HOURS~ UNLESS ~TEN_HOURS~
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~dir.ids~ BEGIN
+COPY "%MOD_FOLDER%/lib/dir.ids" override
+COPY_EXISTING "action.ids" override
+    REPLACE_TEXTUALLY "Face\*)" "Face*DIR)"
+    REPLACE_TEXTUALLY "Direction\*)" "Direction*DIR)"
+    BUT_ONLY
+END
+
+// Добавляем случайную встречу с коллекторами
+APPEND ~MASTAREA.2da~ ~AN0060 value~ UNLESS ~AN0060~
+
+COPY_EXISTING ~AR0046.are~ ~override/AN0060.are~
+	READ_LONG 0xbc songoff
+	WRITE_LONG songoff + 0x0c 104 //Battle song
+	WRITE_ASCII 0x94 ~AN0060~ (8) //скрипт локации
+		LPF fj_are_structure
+		INT_VAR
+			fj_loc_x          = 255
+			fj_loc_y          = 700
+			fj_orientation    = 10
+		STR_VAR
+			fj_structure_type = entrance
+			fj_name           = EntryWMP
+	END
+	
+PATCH_IF NOT EE_GAME BEGIN
+		LPF fj_are_structure
+			INT_VAR
+				fj_type           = 1
+				fj_box_left       = 1
+				fj_box_top        = 530
+				fj_box_right      = 285
+				fj_box_bottom     = 959
+				fj_cursor_idx     = 34
+				fj_loc_x          = 350
+				fj_loc_y          = 640
+				fj_vertex_0       =   1 + ( 530 << 16)
+				fj_vertex_1       =  40 + ( 530 << 16)
+				fj_vertex_2       =  40 + ( 925 << 16)
+				fj_vertex_3       = 285 + ( 925 << 16)
+				fj_vertex_4       = 285 + ( 959 << 16)
+				fj_vertex_5       =   1 + ( 959 << 16)
+			STR_VAR
+				fj_structure_type = region
+				fj_name           = ANRegionLeft
+		END
+		LPF fj_are_structure
+			INT_VAR
+				fj_type           = 1
+				fj_box_left       = 800
+				fj_box_top        = 1
+				fj_box_right      = 1279
+				fj_box_bottom     = 240
+				fj_cursor_idx     = 34
+				fj_loc_x          = 350
+				fj_loc_y          = 640
+				fj_vertex_0       =  800 + (   1 << 16)
+				fj_vertex_1       = 1279 + (   1 << 16)
+				fj_vertex_2       = 1279 + ( 240 << 16)
+				fj_vertex_3       = 1230 + ( 240 << 16)
+				fj_vertex_4       = 1230 + (  40 << 16)
+				fj_vertex_5       =  800 + (  40 << 16)
+			STR_VAR
+				fj_structure_type = region
+				fj_name           = ANRegionRight
+		END
+	END	
+
+ACTION_IF EE_GAME BEGIN
+	OUTER_SPRINT ~an_no_travel~ ~AddAreaFlag(NOTRAVEL)~
+	OUTER_SPRINT ~an_travel~    ~RemoveAreaFlag(NOTRAVEL)~
+END ELSE BEGIN
+	OUTER_SPRINT ~an_no_travel~ ~TriggerActivation("ANRegionLeft",TRUE) TriggerActivation("ANRegionRight",TRUE)~
+	OUTER_SPRINT ~an_travel~    ~TriggerActivation("ANRegionLeft",FALSE) TriggerActivation("ANRegionRight",FALSE)~
+END
+
+// Добавляем скрипт локации для случайной встречи
+COMPILE ~HerThiMoney/scripts/AN0060.baf~ EVALUATE_BUFFER
+
+ACTION_IF ( EE_GAME ) BEGIN // Переменная уже установлена в Always
+	OUTER_SPRINT ~enc_script~ ~encounter_ee~      //имя baf для EE присваивается переменной
+END ELSE BEGIN
+	OUTER_SPRINT ~enc_script~ ~encounter_vanilla~ //имя baf для оригинала присваивается переменной
+	ACTION_FOR_EACH area IN AR0041 AR0045 AR0046 BEGIN
+		ACTION_IF FILE_EXISTS_IN_GAME ~%area%.bcs~ BEGIN
+			EXTEND_TOP ~%area%.bcs~ ~%MOD_FOLDER%/scripts/encounter_vanilla2.baf~ //имя baf для оригинала дл¤ рандомных локаций
+		END
+	END
+END
+
+ACTION_FOR_EACH area IN AR0020 AR0300 AR0400 AR0500 AR0700 AR0800 AR0900 AR1000 L#ND01 L#NI01 BEGIN //сюда можно добавить локации из модов. Типа Южной окраины. Если они установлены, туда тоже добавит
+	ACTION_IF FILE_EXISTS_IN_GAME ~%area%.bcs~ BEGIN
+		EXTEND_TOP ~%area%.bcs~ ~%MOD_FOLDER%/scripts/%enc_script%.baf~
+	END
+END
+
+// Скрипт клерка Ури для диалога о счете
+
+<<<<<<<< ANclerk2.baf
+>>>>>>>>
+COMPILE ~ANclerk2.baf~
+
+<<<<<<<<new_script.d
+BEGIN %new_script%
+>>>>>>>>
+
+
+//Установка переменной "bank_gld_give" для ACTION в D файле в зависимости от версии игры
+//переменная EE_GAME уже есть в ALWAYS
+ACTION_IF EE_GAME BEGIN
+	OUTER_SPRINT ~bank_gld_give~ ~GiveObjectGoldGlobal("ANBankMoney","GLOBAL",LastTalkedToBy) SetGlobal("ANBankMoney","GLOBAL",0) SetGlobal("ANBankMoney_Percent","GLOBAL",0) SetGlobal("ANBankTimerMoney","GLOBAL",0)~
+END ELSE BEGIN
+	OUTER_SPRINT ~bank_gld_give~ ~SetGlobal("ANBankMoneyGiveAllMoney","GLOBAL",1)~
+	//добавляем сверху в скрипт клерка выдачу всех денег. Для ЕЕ это не нужно.
+	EXTEND_TOP   ~ANclerk2.bcs~ ~HerThiMoney/scripts/ANclerk2_noee.baf~
+END
+
+//Добавляем сверху в скрипт клерка установку токена для отображения при запросе, какое количество денег сейчас на счету
+EXTEND_TOP ~ANclerk2.bcs~ ~HerThiMoney/scripts/ANclerk2.baf~
+
+//добавляем сверху в baldur и baldur25 увеличение денег на счету каждые две недели 
+ACTION_FOR_EACH script IN baldur baldur25 BEGIN
+	EXTEND_TOP ~%script%.bcs~ ~HerThiMoney/scripts/ANbank_baldur.baf~
+END
+
+ACTION_IF EE_GAME BEGIN
+   // If a EE-version is installed, change the journal entries to adapt it 
+  ADD_JOURNAL @1000 @1001 @1002 @1003 @1004 @1005 @1006 @1007 @1008 @1009 @1010 @1011 @1012 @1013 @1014 @1015 @1016 @1017 @1018 @1019 @1020 @1021 @1022 @1023 @1024 @1027 @1028 @1029 @1030 @1031 @1032 @1033 @1034 @1035 @1036 @1037 @1065 @1066 @1067 @1068 @1069 @1099 @1100 @1101 @1102 @1103 @1104 @1105 @1115 @1116 USING ~%MOD_FOLDER%/tra/%LANGUAGE%/setup.tra~ 
+END 
+
+COPY ~HerThiMoney/are/2~ ~override~
+
+ACTION_IF EE_GAME BEGIN
+	ACTION_FOR_EACH tis_name_all IN AN0720 AN0721 AN1614 AN1616 AN1620 BEGIN //список нужных тис-файлов
+		LAF FC_COPY_TIS_PVRZ // We use a function that finds free pvrz indices
+			STR_VAR
+				tis_pvrz_path = EVAL "%MOD_FOLDER%/tis/ee/2" //путь к папке с tis/pvrz для EE
+				path_to_vanilla_tis = EVAL "%MOD_FOLDER%\tis\OldBG2\2"
+				tis_name = EVAL "%tis_name_all%" //имя tis без расширения
+		END
+	END
+END ELSE BEGIN
+	COPY ~%MOD_FOLDER%\tis\OldBG2\2~ ~override~
+END
+
+
+// Добавляем вход на новую локацию банка
+COPY_EXISTING ~AR0700.are~ ~override~
+ADD_MAP_NOTE #4027 #3615 ~gray~ @3
+LPF fj_are_structure
+INT_VAR
+fj_type = 2
+//коробка полигона
+fj_box_left = 3711 //минимальная координата X (из fj_vertex_XXXXX)
+fj_box_top = 3692 //минимальная координата Y (из fj_vertex_XXXXX)
+fj_box_right = 3750 //максимальная координата X (из fj_vertex_XXXXX)
+fj_box_bottom = 3812 //максимальная координата Y (из fj_vertex_XXXXX)
+//курсор
+fj_cursor_idx = 28
+//вершины полигона
+fj_vertex_0 = 3711 + ( 3812 << 16 ) // здесь ( x_coordinate + ( y_coordinate << 16 ) )
+fj_vertex_1 = 3711 + ( 3727 << 16 )
+fj_vertex_2 = 3750 + ( 3692 << 16 )
+fj_vertex_3 = 3750 + ( 3778 << 16 )
+STR_VAR
+fj_structure_type = region
+fj_name = TranAN0720
+fj_destination_area = AN0720
+fj_destination_name = Exit0700
+END
+
+LPF fj_are_structure // entrance
+INT_VAR
+fj_loc_x = 3696
+fj_loc_y = 3758
+fj_orientation = 6 // NW
+STR_VAR
+fj_structure_type = entrance
+fj_name = ExitAN0720
+END
+
+ACTION_IF EE_GAME BEGIN
+COPY ~HerThiMoney\portraits\EE\2~ ~override~
+END ELSE BEGIN
+COPY ~HerThiMoney\portraits\Vanilla\2~ ~override~
+END
+
+// Добавляем вход на новую локацию заброшенного дома в Бриннлоу
+COPY_EXISTING ~AR1600.are~ ~override~
+	LPF fj_are_structure
+		INT_VAR
+			fj_type = 2
+			fj_box_left         = 1705
+			fj_box_top          = 617
+			fj_box_right        = 1738
+			fj_box_bottom       = 689
+			fj_cursor_idx       = 30
+			fj_flags            = 1796 //Party required, deactivated, cannot be passed by NPC, use activation point
+			fj_loc_x            = 1625
+			fj_loc_y            = 740
+			fj_alt_x            = 1730
+			fj_alt_y            = 700
+			fj_vertex_0         = 1707 + ( 617 << 16 )
+			fj_vertex_1         = 1737 + ( 630 << 16 )
+			fj_vertex_2         = 1738 + ( 689 << 16 )
+			fj_vertex_3         = 1705 + ( 674 << 16 )
+		STR_VAR
+			fj_structure_type   = region
+			fj_name             = ToAN1614
+			fj_destination_area = AN1614
+			fj_destination_name = Exit1600 //имя entrance на новой локации
+	END
+	LPF fj_are_structure
+		INT_VAR
+			fj_loc_x            = 1698
+			fj_loc_y            = 713
+			fj_orientation      = 2
+		STR_VAR
+			fj_structure_type   = entrance
+			fj_name             = ExitAN1614 //имя entrance на этой локации
+	END
+
+COPY ~HerThiMoney/items/ANcode1.itm~ ~Override/ANcode1.itm~
+SAY NAME1 @12
+SAY NAME2 @12
+SAY UNIDENTIFIED_DESC @12
+SAY DESC @13
+
+COPY ~HerThiMoney/items/ANgross1.itm~ ~Override/ANgross1.itm~
+SAY NAME1 @20
+SAY NAME2 @20
+SAY UNIDENTIFIED_DESC @20
+SAY DESC @21
+
+COPY ~HerThiMoney/items/ANgross2.itm~ ~Override/ANgross2.itm~
+SAY NAME1 @22
+SAY NAME2 @22
+SAY UNIDENTIFIED_DESC @22
+SAY DESC @23
+
+COPY ~HerThiMoney/items/ANgemM.itm~ ~Override/ANgemM.itm~
+SAY NAME1 @14
+SAY NAME2 @14
+SAY UNIDENTIFIED_DESC @14
+SAY DESC @15
+
+COPY ~HerThiMoney/items/ANgemMF.itm~ ~Override/ANgemMF.itm~
+SAY NAME1 @18
+SAY NAME2 @18
+SAY UNIDENTIFIED_DESC @18
+SAY DESC @19
+
+COPY ~HerThiMoney/items/ANlistM.itm~ ~Override/ANlistM.itm~
+SAY NAME1 @16
+SAY NAME2 @16
+SAY UNIDENTIFIED_DESC @16
+SAY DESC @17
+
+COPY ~HerThiMoney/items/ANbukl.itm~ ~Override/ANbukl.itm~
+SAY NAME1 @24
+SAY NAME2 @24
+SAY UNIDENTIFIED_DESC @24
+SAY DESC @25
+
+COPY ~HerThiMoney/items/ANsfkey.itm~ ~Override/ANsfkey.itm~
+SAY NAME1 @28
+SAY NAME2 @28
+SAY UNIDENTIFIED_DESC @28
+SAY DESC @29
+
+COPY ~HerThiMoney/items/Anbook1.itm~ ~Override/Anbook1.itm~
+SAY NAME1 @32
+SAY NAME2 @32
+SAY UNIDENTIFIED_DESC @32
+SAY DESC @33
+
+COPY ~HerThiMoney/items/Anbook2.itm~ ~Override/Anbook2.itm~
+SAY NAME1 @30
+SAY NAME2 @30
+SAY UNIDENTIFIED_DESC @30
+SAY DESC @31
+
+COPY ~HerThiMoney/items/ANveksl.itm~ ~Override/ANveksl.itm~
+SAY NAME1 @47
+SAY NAME2 @47
+SAY UNIDENTIFIED_DESC @47
+SAY DESC @48
+
+COPY ~HerThiMoney/items/ANscroll.itm~ ~Override/ANscroll.itm~
+SAY NAME1 @109
+SAY NAME2 @109
+SAY UNIDENTIFIED_DESC @109
+SAY DESC @110
+ 
+COMPILE ~HerThiMoney/dlg/ANbank.d~ EVALUATE_BUFFER
+COMPILE ~HerThiMoney/dlg/ANStash.d~ 
+COMPILE ~HerThiMoney/dlg/ANkorgan.d~ 
+
+
+// Добавляем переменную, чтобы работало и на старой версии игры (не-ЕЕ)
+OUTER_SPRINT ~tilde~ "~"
+ACTION_IF EE_GAME BEGIN
+OUTER_SPRINT ~dlg_string100~ ~== ANOwni @1281~
+END
+ELSE BEGIN
+OUTER_SPRINT ~dlg_string100~ ~~
+END
+COPY ~%MOD_FOLDER%/dlg/ANheist.d~ ~%MOD_FOLDER%/dlg~ EVALUATE_BUFFER
+// И теперь компилируем
+COMPILE ~HerThiMoney/dlg/ANheist.d~ EVALUATE_BUFFER
+
+
+// Добавляем квест про пиратов с разными вариантами для EE-версии и классической версии
+ACTION_IF EE_GAME BEGIN
+OUTER_SPRINT ~chest_dlg_string~ ~SetGlobal("ANPiratChestClick","AN1620",0)~
+END
+ELSE BEGIN
+OUTER_SPRINT ~chest_dlg_string~ ~SetGlobal("ANPiratChestClick","AN1620",0) ActionOverride(Player1,JumpToPoint([1405.1640]))~
+END
+COPY ~%MOD_FOLDER%/dlg/ANpirat.d~ ~%MOD_FOLDER%/dlg~ EVALUATE_BUFFER
+// И теперь компилируем
+COMPILE ~HerThiMoney/dlg/ANpirat.d~ EVALUATE_BUFFER
+
+ACTION_IF EE_GAME BEGIN
+OUTER_SPRINT ~chest_string~ ~OR(2) Clicked([PC]) Clicked([ANYONE])~
+END
+ELSE BEGIN
+OUTER_SPRINT ~chest_string~ ~Range(Player1,1)~
+END
+COPY ~%MOD_FOLDER%/scripts/ANchest1.baf~ ~%MOD_FOLDER%/scripts~ EVALUATE_BUFFER
+// И теперь компилируем
+COMPILE ~HerThiMoney/scripts/ANchest1.baf~ EVALUATE_BUFFER
+
+COPY ~HerThiMoney/cre/ANCLERK1.cre~ ~override/ANCLERK1.cre~
+SAY NAME1 @4
+SAY NAME2 @4
+
+COPY ~HerThiMoney/cre/ANCLERK2.cre~ ~override/ANCLERK2.cre~
+SAY NAME1 @5
+SAY NAME2 @5
+
+COPY ~HerThiMoney/cre/ANHALF1.cre~ ~override/ANHALF1.cre~
+SAY NAME1 @6
+SAY NAME2 @6
+
+COPY ~HerThiMoney/cre/ANBANKG.cre~ ~override/ANBANKG.cre~
+SAY NAME1 @7
+SAY NAME2 @7
+
+COPY ~HerThiMoney/cre/ANBANKG1.cre~ ~override/ANBANKG1.cre~
+SAY NAME1 @7
+SAY NAME2 @7
+
+COPY ~HerThiMoney/cre/ANBANKG2.cre~ ~override/ANBANKG2.cre~
+SAY NAME1 @7
+SAY NAME2 @7
+
+COPY ~HerThiMoney/cre/ANButch.cre~ ~override/ANButch.cre~
+SAY NAME1 @10
+SAY NAME2 @10
+
+COPY ~HerThiMoney/cre/ANHurp.cre~ ~override/ANHurp.cre~
+SAY NAME1 @11
+SAY NAME2 @11
+
+COPY ~HerThiMoney/cre/ANdirt.cre~ ~override/ANdirt.cre~
+SAY NAME1 @26
+SAY NAME2 @26
+
+COPY ~HerThiMoney/cre/ANbcat.cre~ ~override/ANbcat.cre~
+SAY NAME1 @27
+SAY NAME2 @27
+
+COPY ~HerThiMoney/cre/ANprom.cre~ ~override/ANprom.cre~
+SAY NAME1 @34
+SAY NAME2 @34
+
+COPY ~HerThiMoney/cre/ANOwni.cre~ ~override/ANOwni.cre~
+SAY NAME1 @38
+SAY NAME2 @38
+
+COPY ~HerThiMoney/cre/ANjalut.cre~ ~override/ANjalut.cre~
+SAY NAME1 @39
+SAY NAME2 @39
+
+COPY ~HerThiMoney/cre/ANesra.cre~ ~override/ANesra.cre~
+SAY NAME1 @40
+SAY NAME2 @40
+
+COPY ~HerThiMoney/cre/ANJock.cre~ ~override/ANJock.cre~
+SAY NAME1 @41
+SAY NAME2 @41
+
+COPY ~HerThiMoney/cre/ANyant.cre~ ~override/ANyant.cre~
+SAY NAME1 @42
+SAY NAME2 @42
+
+COPY ~HerThiMoney/cre/ANcoll1.cre~ ~override/ANcoll1.cre~
+SAY NAME1 @43
+SAY NAME2 @43
+
+COPY ~HerThiMoney/cre/ANcoll2.cre~ ~override/ANcoll2.cre~
+SAY NAME1 @44
+SAY NAME2 @44
+
+COPY ~HerThiMoney/cre/ANcoll3.cre~ ~override/ANcoll3.cre~
+SAY NAME1 @45
+SAY NAME2 @45
+
+COPY ~HerThiMoney/cre/ANcoll4.cre~ ~override/ANcoll4.cre~
+SAY NAME1 @46
+SAY NAME2 @46
+
+COPY ~HerThiMoney/cre/ANdruid1.cre~ ~override/ANdruid1.cre~
+SAY NAME1 @54
+SAY NAME2 @54
+
+COPY ~HerThiMoney/cre/ANdruid2.cre~ ~override/ANdruid2.cre~
+SAY NAME1 @55
+SAY NAME2 @55
+
+COPY ~HerThiMoney/cre/ANarch1.cre~ ~override/ANarch1.cre~
+SAY NAME1 @56
+SAY NAME2 @56
+
+COPY ~HerThiMoney/cre/ANwolf1.cre~ ~override/ANwolf1.cre~
+SAY NAME1 @60
+SAY NAME2 @60
+
+COPY ~HerThiMoney/cre/ANsailor.cre~ ~override/ANsailor.cre~
+SAY NAME1 @107
+SAY NAME2 @107
+
+COPY ~HerThiMoney/cre/ANLorna.cre~ ~override/ANLorna.cre~
+SAY NAME1 @108
+SAY NAME2 @108
+
+COPY ~HerThiMoney/cre/ANscelet.cre~ ~override/ANscelet.cre~
+SAY NAME1 @112
+SAY NAME2 @112
+
+COPY ~HerThiMoney/cre/ANmiran.cre~ ~override/ANmiran.cre~
+SAY NAME1 @158
+SAY NAME2 @158
+
+ACTION_IF (EE_GAME OR MOD_IS_INSTALLED ~INFINITYANIMATIONS.TP2~ ~0~) BEGIN
+COPY ~HerThiMoney/cre/ANdragon.cre~ ~override/ANdragon.cre~
+SAY NAME1 @111
+SAY NAME2 @111
+PATCH_IF !EE_GAME BEGIN
+ WRITE_SHORT 0x28 (IDS_OF_SYMBOL (~animate~ ~FEYR~)) 
+END
+
+COPY ~HerThiMoney/cre/ANmonstr.cre~ ~override/ANmonstr.cre~
+SAY NAME1 @115
+SAY NAME2 @115
+PATCH_IF !EE_GAME BEGIN
+ WRITE_SHORT 0x28 (IDS_OF_SYMBOL (~animate~ ~REMORHAZ~))
+END
+
+END 
+
+ACTION_IF EE_GAME BEGIN
+
+ACTION_IF IS_INIANIM BEGIN
+
+APPEND ~EXTANIM.2DA~
+~57939 0 1 1 0 0 0 47 0 0 NONE NONE NONE 8 10 MREM NONE 0 0 NONE~
+
+APPEND ~EXTANIM.2DA~
+~57996 0 1 1 0 0 0 47 0 0 NONE NONE NONE 9 5 MWD2 NONE 0 0 NONE~
+
+APPEND ~EXTSPEED.2DA~
+~57939	9~
+
+APPEND ~EXTSPEED.2DA~
+~57996  9~
+
+END
+COPY ~%MOD_FOLDER%\MREM.2da~ ~override\MREM.2da~
+COPY ~%MOD_FOLDER%\MWD2.2da~ ~override\MWD2.2da~
+
+END
+
+ELSE BEGIN
+COPY ~HerThiMoney/cre/ANvivern.cre~ ~override/ANvivern.cre~
+SAY NAME1 @111
+SAY NAME2 @111
+
+COPY ~HerThiMoney/cre/ANotyugh.cre~ ~override/ANotyugh.cre~
+END
+
+COPY ~HerThiMoney/cre/ANsahua1.cre~ ~override/ANsahua1.cre~
+SAY NAME1 @113
+SAY NAME2 @113
+COPY ~HerThiMoney/cre/ANsahua2.cre~ ~override/ANsahua2.cre~
+SAY NAME1 @114
+SAY NAME2 @114
+
+COMPILE ~HerThiMoney/scripts/ANOwni.baf~ 
+COMPILE ~HerThiMoney/scripts/ANOwni2.baf~ 
+EXTEND_TOP ~Player1.bcs~ ~HerThiMoney/scripts/addp1dlg.baf~
+COMPILE ~HerThiMoney/scripts/ANprom.baf~ 
+EXTEND_TOP ~AR0602.bcs~ ~HerThiMoney/scripts/AR0602.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~AR0700.bcs~ ~HerThiMoney/scripts/AR0700.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~AR0400.bcs~ ~HerThiMoney/scripts/AR0400_2.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~AR0800.bcs~ ~HerThiMoney/scripts/AR0800.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~AR1600.bcs~ ~HerThiMoney/scripts/AR1600.baf~
+COMPILE ~HerThiMoney/scripts/ANBANKG.baf~ 
+COMPILE ~HerThiMoney/scripts/ANBANKG1.baf~ 
+COMPILE ~HerThiMoney/scripts/ANBANKG2.baf~ 
+COMPILE ~HerThiMoney/scripts/ANBANKG3.baf~ 
+COMPILE ~HerThiMoney/scripts/ANtrap1.baf~ 
+COMPILE ~HerThiMoney/scripts/ANsailor.baf~ 
+COMPILE ~HerThiMoney/scripts/ANlorna.baf~ 
+COMPILE ~HerThiMoney/scripts/AN0720.baf~ EVALUATE_BUFFER
+COMPILE ~HerThiMoney/scripts/ANladder.baf~ 
+COMPILE ~HerThiMoney/scripts/ANdoor1.baf~ 
+COMPILE ~HerThiMoney/scripts/AN1614.baf~ 
+COMPILE ~HerThiMoney/scripts/ANsahua1.baf~ 
+COMPILE ~HerThiMoney/scripts/ANsahua2.baf~ 
+EXTEND_TOP ~AR0808.bcs~ ~HerThiMoney/scripts/AR0808.baf~ 
+EXTEND_TOP ~AR0809.bcs~ ~HerThiMoney/scripts/AR0809_2.baf~ 
+
+ACTION_IF (EE_GAME OR MOD_IS_INSTALLED ~INFINITYANIMATIONS.TP2~ ~0~) BEGIN
+COMPILE ~HerThiMoney/scripts/AN1616(EE)/AN1616.baf~
+COMPILE ~HerThiMoney/scripts/AN1620(EE)/AN1620.baf~
+COMPILE ~HerThiMoney/scripts/ANdragon.baf~ 
+COMPILE ~HerThiMoney/scripts/ANmonstr.baf~ 
+COPY ~HerThiMoney/spl/~ ~override~
+
+ACTION_IF NOT (FILE_EXISTS_IN_GAME ~mwd2a1.bam~) BEGIN // Если в игре нет анимации маленького дракона
+COPY ~HerThiMoney/bam/dragon_young~ ~override~
+END
+
+ACTION_IF NOT (FILE_EXISTS_IN_GAME ~MREMA1.bam~) BEGIN // Если в игре нет анимации Ремораза
+COPY ~HerThiMoney/bam/remorhaz~ ~override~
+END
+
+
+ACTION_IF NOT (FILE_EXISTS_IN_GAME ~baby01a.wav~) BEGIN
+COPY ~HerThiMoney/audio/Dragon~ ~override~
+END
+
+ACTION_IF NOT (FILE_EXISTS_IN_GAME ~remor01.wav~) BEGIN
+COPY ~HerThiMoney/audio/Monstr~ ~override~
+END
+
+END 
+ELSE BEGIN
+COMPILE ~HerThiMoney/scripts/AN1616(vanilla)/AN1616.baf~
+COMPILE ~HerThiMoney/scripts/AN1620(vanilla)/AN1620.baf~
+COMPILE ~HerThiMoney/scripts/ANvivern.baf~ 
+END
+
+
+// Добавляем переменную, чтобы работало и на старой версии игры (не-ЕЕ)
+OUTER_SPRINT ~tilde~ "~"
+ACTION_IF EE_GAME BEGIN
+OUTER_SPRINT ~baf_string1~ ~MoveContainerContents("","Chest1")~
+OUTER_SPRINT ~baf_string2~ ~DestroyGroundPiles()~
+END
+ELSE BEGIN
+OUTER_SPRINT ~baf_string1~ ~~
+OUTER_SPRINT ~baf_string2~ ~~
+END
+COPY ~%MOD_FOLDER%/scripts/AN0721.baf~ ~%MOD_FOLDER%/scripts~ EVALUATE_BUFFER
+// И теперь компилируем
+COMPILE ~HerThiMoney/scripts/AN0721.baf~ EVALUATE_BUFFER
+
+EXTEND_TOP ~edwin.bcs~ ~HerThiMoney/scripts/edwin2.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~korgan.bcs~ ~HerThiMoney/scripts/korgan2.baf~ EVALUATE_BUFFER
+
+// Добавляем скрипт локации входа в ѓильдию
+COPY_EXISTING ~AR0305.are~ ~override~
+	SPRINT ~scrp~ ~%SOURCE_RES%~ //сохранение в переменную имени локации
+	READ_ASCII 0x94 are_script (8) NULL //сохранение в переменную имени скрипта локации
+	PATCH_IF ( ~%are_script%~ STR_EQ ~~ ) OR // если имя скрипта пустое
+	         ( ~%are_script%~ STR_EQ ~None~ ) BEGIN //или None
+		WRITE_EVALUATED_ASCII 0x94 ~%scrp%~ (8) // то записывается в имя скрипта имя локации
+		SPRINT are_script ~%scrp%~ // сохранение в переменную нового имени скрипта
+	END
+	BUT_ONLY_IF_IT_CHANGES
+
+//если baf файл имеет такое же имя
+ACTION_IF FILE_EXISTS_IN_GAME ~%are_script%.bcs~ BEGIN
+	EXTEND_TOP ~%are_script%.bcs~ ~%MOD_FOLDER%/scripts/AR0305.baf~ EVALUATE_BUFFER //если скрипт существует, добавляем сверху или снизу
+END ELSE BEGIN
+	COMPILE ~%MOD_FOLDER%/scripts/AR0305.baf~ EVALUATE_BUFFER //если не существует, то создаем новый
+END
+// Если есть переменные внутри baf, не забыть EVALUATE_BUFFER
+
+
+// Добавляем скрипт локации убежища Ренала
+COPY_EXISTING ~AR0306.are~ ~override~
+	SPRINT ~scrp~ ~%SOURCE_RES%~ //сохранение в переменную имени локации
+	READ_ASCII 0x94 are_script (8) NULL //сохранение в переменную имени скрипта локации
+	PATCH_IF ( ~%are_script%~ STR_EQ ~~ ) OR // если имя скрипта пустое
+	         ( ~%are_script%~ STR_EQ ~None~ ) BEGIN //или None
+		WRITE_EVALUATED_ASCII 0x94 ~%scrp%~ (8) // то записывается в имя скрипта имя локации
+		SPRINT are_script ~%scrp%~ // сохранение в переменную нового имени скрипта
+	END
+	BUT_ONLY_IF_IT_CHANGES
+
+//…сли baf файл имеет такое же имя
+ACTION_IF FILE_EXISTS_IN_GAME ~%are_script%.bcs~ BEGIN
+	EXTEND_TOP ~%are_script%.bcs~ ~%MOD_FOLDER%/scripts/AR0306.baf~ EVALUATE_BUFFER //если скрипт существует, добавляем сверху или снизу
+END ELSE BEGIN
+	COMPILE ~%MOD_FOLDER%/scripts/AR0306.baf~ EVALUATE_BUFFER //если не существует, то создаем новый
+END
+// Если есть переменные внутри baf, не забыть EVALUATE_BUFFER
+
+// Добавляем обычную боевую музыку в новые локации, если это "ванильная" версия игры
+ACTION_IF GAME_IS ~tob bgt~ BEGIN
+COPY_EXISTING ~AN0721.are~ ~override~
+	READ_LONG 0xbc songoff
+	WRITE_LONG songoff + 0x0c 50 //Battle song
+
+COPY_EXISTING ~AN1620.are~ ~override~
+	READ_LONG 0xbc songoff
+	WRITE_LONG songoff + 0x0c 58 //Battle song
+
+COPY_EXISTING ~AN0060.are~ ~override~
+	READ_LONG 0xbc songoff
+	WRITE_LONG songoff + 0x0c 59 //Battle song
+	
+END
+
+
+// Если установлен мод "BG1NPCBG2" от Smiling Imp - добавляем возможность обмена валюты в банке
+ACTION_IF 
+FILE_EXISTS_IN_GAME ~PLATNUM.itm~ 
+BEGIN
+COMPILE ~HerThiMoney/dlg/ANbank2.d~
+END
+
+
+// Quest Chain (alternate)
+COPY ~HerThiMoney/cre/ANshakal.cre~ ~override/ANshakal.cre~
+SAY NAME1 @142
+SAY NAME2 @142
+
+COPY ~HerThiMoney/cre/ANcaytig.cre~ ~override/ANcaytig.cre~
+SAY NAME1 @143
+SAY NAME2 @143
+
+COPY ~HerThiMoney/cre/ANlorens.cre~ ~override/ANlorens.cre~
+SAY NAME1 @144
+SAY NAME2 @144
+
+COPY ~HerThiMoney/cre/ANsheila.cre~ ~override/ANsheila.cre~
+SAY NAME1 @145
+SAY NAME2 @145
+
+COPY ~HerThiMoney/cre/ANorc1.cre~ ~override/ANorc1.cre~
+SAY NAME1 @146
+SAY NAME2 @146
+
+COPY ~HerThiMoney/cre/ANorc2.cre~ ~override/ANorc2.cre~
+SAY NAME1 @147
+SAY NAME2 @147
+
+COPY ~HerThiMoney/cre/ANmess1.cre~ ~override/ANmess1.cre~
+SAY NAME1 @148
+SAY NAME2 @148
+
+COPY ~HerThiMoney/cre/ANshahba.cre~ ~override/ANshahba.cre~
+SAY NAME1 @149
+SAY NAME2 @149
+
+COPY ~HerThiMoney/cre/ANband1.cre~ ~override/ANband1.cre~
+COPY ~HerThiMoney/cre/ANband2.cre~ ~override/ANband2.cre~
+
+COMPILE ~HerThiMoney/dlg/ANchain.d~
+
+COMPILE ~HerThiMoney/scripts/ANshahba.baf~
+
+EXTEND_TOP ~baldur.bcs~ ~%MOD_FOLDER%/scripts/baldur2_1.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~AR0400.bcs~ ~HerThiMoney/scripts/AR0400_2_1.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~AR0500.bcs~ ~HerThiMoney/scripts/AR0500_2_1.baf~ 
+EXTEND_TOP ~AR0800.bcs~ ~HerThiMoney/scripts/AR0800_2_1.baf~ 
+EXTEND_TOP ~AR0406.bcs~ ~HerThiMoney/scripts/AR0406_2_1.baf~ 
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdoffscr.cre~ BEGIN
+COPY "%MOD_FOLDER%/cre/bdoffscr.cre" override
+COPY "%MOD_FOLDER%/spl/bdoffscr.spl" override
+END
+
+AT_INTERACTIVE_EXIT ~VIEW HerThiMoney/readme/%LANGUAGE%/readme.pdf~
+
+//
+//
+//
+//
+//
+/////////////////////////////////////////////////////////
+// Component 3. "Shadow-Covered Love & Mysterios" /////////////////////////////////////
+/////////////////////////////////////////////////////////
+//
+//
+//
+//
+//
+
+BEGIN @72 DESIGNATED 20
+
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
+
+//это есть в ЕЕ, но нет в оригинальной игре
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~dir.ids~ BEGIN
+COPY "%MOD_FOLDER%/lib/dir.ids" override
+COPY_EXISTING "action.ids" override
+    REPLACE_TEXTUALLY "Face\*)" "Face*DIR)"
+    REPLACE_TEXTUALLY "Direction\*)" "Direction*DIR)"
+    BUT_ONLY
+END
+
+// Добавляем диалог Вилсону
+
+ACTION_IF EE_GAME BEGIN
+
+<<<<<<<< wilson_dialog.d
+BEGIN %wilson_dialog%
+>>>>>>>>
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~BWILSON.dlg~ BEGIN
+	OUTER_SPRINT ~wilson_dialog~ ~BWILSON~
+	COMPILE ~wilson_dialog.d~ EVALUATE_BUFFER
+END
+
+<<<<<<<< wilson25_dialog.d
+BEGIN %wilson25_dialog%
+>>>>>>>>
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~WILSO25J.dlg~ BEGIN
+	OUTER_SPRINT ~wilson25_dialog~ ~WILSO25J~
+	COMPILE ~wilson25_dialog.d~ EVALUATE_BUFFER
+END
+
+APPEND ~interdia.2da~ ~WILSON BWILSON BWILSO25~
+               UNLESS ~WILSON~
+
+COPY_EXISTING ~pdialog.2da~ ~override~
+  REPLACE_TEXTUALLY ~^[ %TAB%]*WILSON[ %TAB%].+$~
+                    ~WILSON                 WILSONP                WILSONJ                WILSOND                WILSO25P               WILSO25J               WILSO25D               WILSON25~
+BUT_ONLY
+
+
+//TOB Script
+ACTION_IF NOT (FILE_EXISTS_IN_GAME ~Wilson25.bcs~) THEN BEGIN
+  COMPILE ~HerThiMoney/scripts/wilson25.baf~
+END
+ELSE BEGIN 
+EXTEND_TOP ~wilson25.bcs~ ~HerThiMoney/scripts/wilson25.baf~ 
+END
+
+COPY_EXISTING ~Wilson13.cre~ ~override~ // Wilson version summoned by Fate Spirit in new ToB game (this version will NOT be summoned in EET if Wilson was with the party in SoA)
+  WRITE_EVALUATED_ASCII DIALOG          ~WILSON25~ #8
+  WRITE_EVALUATED_ASCII SCRIPT_OVERRIDE ~WILSON25~ #8
+
+END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdoffscr.cre~ BEGIN
+COPY "%MOD_FOLDER%/cre/bdoffscr.cre" override
+COPY "%MOD_FOLDER%/spl/bdoffscr.spl" override
+END
+
+// Добавляем скрипт локации убежища Ренала
+COPY_EXISTING ~AR0306.are~ ~override~
+	SPRINT ~scrp~ ~%SOURCE_RES%~ //сохранение в переменную имени локации
+	READ_ASCII 0x94 are_script (8) NULL //сохранение в переменную имени скрипта локации
+	PATCH_IF ( ~%are_script%~ STR_EQ ~~ ) OR // если имя скрипта пустое
+	         ( ~%are_script%~ STR_EQ ~None~ ) BEGIN //или None
+		WRITE_EVALUATED_ASCII 0x94 ~%scrp%~ (8) // то записывается в имя скрипта имя локации
+		SPRINT are_script ~%scrp%~ // сохранение в переменную нового имени скрипта
+	END
+	BUT_ONLY_IF_IT_CHANGES
+
+//Если baf файл имеет такое же имя
+ACTION_IF FILE_EXISTS_IN_GAME ~%are_script%.bcs~ BEGIN
+	EXTEND_TOP ~%are_script%.bcs~ ~%MOD_FOLDER%/scripts/AR0306-3/AR0306.baf~ EVALUATE_BUFFER //если скрипт существует, добавляем сверху или снизу
+END ELSE BEGIN
+	COMPILE ~%MOD_FOLDER%/scripts/AR0306-3/AR0306.baf~ EVALUATE_BUFFER //если не существует, то создаем новый
+END
+// Если есть переменные внутри baf, не забыть EVALUATE_BUFFER
+
+
+// Добавляем код мультидиалога между любыми членами группы (Player2-Player6)
+ACTION_CLEAR_ARRAY ~PDIALOG_ARRAY~
+ACTION_CLEAR_ARRAY ~NOPDIALOG_ARRAY~
+
+ACTION_DEFINE_ASSOCIATIVE_ARRAY NOPDIALOG_ARRAY BEGIN
+	~WILSON~ => ~~
+	~Z_MODDY~ => ~~
+	~C#GREY~ => ~~
+	~HAIASS~ => ~~	
+		//здесь по типу Вилсона добавляем модовских NPC-зверей, чтобы они в диалоге не участвовали. Типа: ~script_name~ => ~~
+END
+
+OUTER_SET arr_cnt = 0
+COPY_EXISTING ~pdialog.2da~ ~override~
+	COUNT_2DA_ROWS 4 rows
+	PATCH_IF ( rows > 0 ) BEGIN
+		FOR ( i = 0 ; i < rows ; ++i ) BEGIN
+			READ_2DA_ENTRY i 0 4 dv
+			READ_2DA_ENTRY i 2 4 jdia
+			TO_UPPER ~dv~
+			PATCH_IF ( FILE_EXISTS_IN_GAME ~%jdia%.dlg~ ) BEGIN
+				PATCH_IF ( NOT VARIABLE_IS_SET $PDIALOG_ARRAY( ~%dv%~ ) ) AND ( NOT VARIABLE_IS_SET $NOPDIALOG_ARRAY( ~%dv%~ ) ) BEGIN
+					DEFINE_ASSOCIATIVE_ARRAY PDIALOG_ARRAY BEGIN ~%dv%~ => ~%jdia%~ END
+					SET arr_cnt = arr_cnt + 1
+				END
+			END
+		END
+	END
+	BUT_ONLY_IF_IT_CHANGES
+
+OUTER_SPRINT ~replies_player2~ ~~
+OUTER_SPRINT ~replies_player3~ ~~
+OUTER_SPRINT ~replies_player4~ ~~
+OUTER_SPRINT ~replies_player5~ ~~
+OUTER_SPRINT ~replies_player6~ ~~
+
+OUTER_SPRINT ~tilde~ "~"
+
+ACTION_IF ( arr_cnt > 0 ) BEGIN
+	ACTION_PHP_EACH PDIALOG_ARRAY AS dv => jdia BEGIN
+		OUTER_SPRINT ~replies_player2~ ~%replies_player2%== "%jdia%" IF %tilde%IsValidForPartyDialog(Player2) Name("%dv%",Player2)%tilde% THEN @813%LNL%~
+		OUTER_SPRINT ~replies_player3~ ~%replies_player3%== "%jdia%" IF %tilde%IsValidForPartyDialog(Player3) Name("%dv%",Player3)%tilde% THEN @814%LNL%~
+		OUTER_SPRINT ~replies_player4~ ~%replies_player4%== "%jdia%" IF %tilde%IsValidForPartyDialog(Player4) Name("%dv%",Player4)%tilde% THEN @815%LNL%~
+		OUTER_SPRINT ~replies_player5~ ~%replies_player5%== "%jdia%" IF %tilde%IsValidForPartyDialog(Player5) Name("%dv%",Player5)%tilde% THEN @816%LNL%~
+		OUTER_SPRINT ~replies_player6~ ~%replies_player6%== "%jdia%" IF %tilde%IsValidForPartyDialog(Player6) Name("%dv%",Player6)%tilde% THEN @817%LNL%~
+	END
+END
+//@813 - @817 - в tra файле диалога, не в setup
+
+COPY ~HerThiMoney/cre/ANtony1.cre~ ~override/ANtony1.cre~
+SAY NAME1 @73
+SAY NAME2 @73
+
+COPY ~HerThiMoney/cre/ANspym1.cre~ ~override/ANspym1.cre~
+SAY NAME1 @76
+SAY NAME2 @76
+
+COPY ~HerThiMoney/cre/ANleena1.cre~ ~override/ANleena1.cre~
+SAY NAME1 @82
+SAY NAME2 @83
+
+COPY ~HerThiMoney/cre/ANleena2.cre~ ~override/ANleena2.cre~
+SAY NAME1 @82
+SAY NAME2 @82
+
+COPY ~HerThiMoney/cre/ANporin.cre~ ~override/ANporin.cre~
+SAY NAME1 @90
+SAY NAME2 @90
+
+COPY ~HerThiMoney/cre/ANjovi1.cre~ ~override/ANjovi1.cre~
+SAY NAME1 @91
+SAY NAME2 @91
+
+COPY ~HerThiMoney/cre/ANazora1.cre~ ~override/ANazora1.cre~
+SAY NAME1 @92
+SAY NAME2 @92
+
+COPY ~HerThiMoney/cre/ANazora2.cre~ ~override/ANazora2.cre~
+SAY NAME1 @92
+SAY NAME2 @92
+
+COPY ~HerThiMoney/cre/ANbasil.cre~ ~override/ANbasil.cre~
+SAY NAME1 @97
+SAY NAME2 @97
+
+COPY ~HerThiMoney/cre/ANaltar1.cre~ ~override/ANaltar1.cre~
+SAY NAME1 @101
+SAY NAME2 @101
+
+COPY ~HerThiMoney/cre/ANaltar2.cre~ ~override/ANaltar2.cre~
+SAY NAME1 @102
+SAY NAME2 @102
+
+COPY ~HerThiMoney/cre/ANaltar3.cre~ ~override/ANaltar3.cre~
+SAY NAME1 @102
+SAY NAME2 @102
+
+COPY ~HerThiMoney/cre/ANaltar4.cre~ ~override/ANaltar4.cre~
+SAY NAME1 @102
+SAY NAME2 @102
+
+COPY ~HerThiMoney/cre/ANaltar5.cre~ ~override/ANaltar5.cre~
+SAY NAME1 @102
+SAY NAME2 @102
+
+COPY ~HerThiMoney/cre/ANFATESP.cre~ ~override/ANFATESP.cre~
+
+COPY ~HerThiMoney/cre/ANmess2.cre~ ~override/ANmess2.cre~
+SAY NAME1 @151
+SAY NAME2 @151
+
+COPY ~HerThiMoney/cre/ANgori.cre~ ~override/ANgori.cre~
+SAY NAME1 @105
+SAY NAME2 @105
+
+COPY ~HerThiMoney/cre/ANwoman1.cre~ ~override/ANwoman1.cre~
+SAY NAME1 @152
+SAY NAME2 @152
+
+COPY ~HerThiMoney/cre/ANbesha1.cre~ ~override/ANbesha1.cre~
+SAY NAME1 @153
+SAY NAME2 @153
+
+COPY ~HerThiMoney/cre/ANpalad1.cre~ ~override/ANpalad1.cre~
+SAY NAME1 @154
+SAY NAME2 @154
+
+COPY ~HerThiMoney/cre/ANgie1.cre~ ~override/ANgie1.cre~
+SAY NAME1 @155
+SAY NAME2 @155
+
+COPY ~HerThiMoney/cre/ANlania.cre~ ~override/ANlania.cre~
+SAY NAME1 @156
+SAY NAME2 @156
+
+COPY ~HerThiMoney/items/ANlet1.itm~ ~Override/ANlet1.itm~
+SAY NAME1 @78
+SAY NAME2 @78
+SAY UNIDENTIFIED_DESC @78
+SAY DESC @79
+
+COPY ~HerThiMoney/items/ANlet2.itm~ ~Override/ANlet2.itm~
+SAY NAME1 @80
+SAY NAME2 @80
+SAY UNIDENTIFIED_DESC @80
+SAY DESC @81
+
+COPY ~HerThiMoney/items/ANlet3.itm~ ~Override/ANlet3.itm~
+SAY NAME1 @87
+SAY NAME2 @87
+SAY UNIDENTIFIED_DESC @87
+SAY DESC @88
+
+COPY ~HerThiMoney/items/ANLamp.itm~ ~Override/ANLamp.itm~
+SAY NAME1 @94
+SAY NAME2 @94
+SAY UNIDENTIFIED_DESC @94
+SAY DESC @95
+
+ACTION_IF NOT (FILE_EXISTS_IN_GAME ~OHHIOIL.bam~) BEGIN // Если в игре нет картинки лампы
+ACTION_IF EE_GAME BEGIN	
+COPY ~HerThiMoney/bam/lamp/ee~ ~override~
+END ELSE BEGIN
+COPY ~HerThiMoney/bam/lamp/vanilla~ ~override~
+END
+END
+
+EXTEND_TOP ~AR0307.bcs~ ~%MOD_FOLDER%/scripts/AR0307.baf~
+EXTEND_TOP ~AR0022.bcs~ ~%MOD_FOLDER%/scripts/AR0022.baf~
+EXTEND_TOP ~AR0511.bcs~ ~%MOD_FOLDER%/scripts/AR0511.baf~
+EXTEND_TOP ~AR0300.bcs~ ~%MOD_FOLDER%/scripts/AR0300_3.baf~
+EXTEND_TOP ~AR0803.bcs~ ~%MOD_FOLDER%/scripts/AR0803.baf~
+EXTEND_TOP ~AR5500.bcs~ ~%MOD_FOLDER%/scripts/AR5500.baf~
+EXTEND_TOP ~AR0404.bcs~ ~%MOD_FOLDER%/scripts/AR0404.baf~
+EXTEND_TOP ~AR0809.bcs~ ~HerThiMoney/scripts/AR0809_3.baf~ 
+
+EXTEND_TOP ~baldur.bcs~ ~%MOD_FOLDER%/scripts/baldur3.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~baldur25.bcs~ ~%MOD_FOLDER%/scripts/baldur25.baf~
+EXTEND_TOP ~jaheira.bcs~ ~HerThiMoney/scripts/jaheira3.baf~
+EXTEND_TOP ~anomen.bcs~ ~HerThiMoney/scripts/anomen3.baf~
+EXTEND_TOP ~dorn.bcs~ ~HerThiMoney/scripts/dorn3.baf~
+EXTEND_TOP ~rasaad.bcs~ ~HerThiMoney/scripts/rasaad3.baf~
+EXTEND_TOP ~rasa25.bcs~ ~HerThiMoney/scripts/rasaad3.baf~
+EXTEND_TOP ~keldorn.bcs~ ~HerThiMoney/scripts/keldorn3.baf~
+EXTEND_TOP ~viconia.bcs~ ~HerThiMoney/scripts/viconia3.baf~
+EXTEND_TOP ~aerie.bcs~ ~HerThiMoney/scripts/aerie3.baf~
+EXTEND_TOP ~AERI25.bcs~ ~HerThiMoney/scripts/aerie3.baf~
+EXTEND_TOP ~HAERDALI.bcs~ ~HerThiMoney/scripts/haerdalis3.baf~
+EXTEND_TOP ~sarev25.bcs~ ~HerThiMoney/scripts/sarevok3.baf~
+EXTEND_TOP ~MINS25.bcs~ ~HerThiMoney/scripts/minsc3.baf~
+EXTEND_TOP ~minsc.bcs~ ~HerThiMoney/scripts/minsc3.baf~
+EXTEND_TOP ~YOSHIMO.bcs~ ~HerThiMoney/scripts/yoshimo3.baf~
+EXTEND_TOP ~mazzy.bcs~ ~HerThiMoney/scripts/mazzy3.baf~
+EXTEND_TOP ~nalia.bcs~ ~HerThiMoney/scripts/nalia3.baf~
+EXTEND_TOP ~AR2500.bcs~ ~HerThiMoney/scripts/AR2500.baf~ 
+EXTEND_TOP ~AR4500.bcs~ ~HerThiMoney/scripts/AR4500_3.baf~ 
+EXTEND_TOP ~AR0900.bcs~ ~HerThiMoney/scripts/AR0900_3.baf~ 
+EXTEND_TOP ~AR0902.bcs~ ~HerThiMoney/scripts/AR0902_3.baf~ 
+EXTEND_TOP ~AR0313.bcs~ ~HerThiMoney/scripts/AR0313.baf~
+
+EXTEND_TOP ~Player1.bcs~ ~HerThiMoney/scripts/addp1dlg.baf~
+
+ACTION_IF FILE_EXISTS_IN_GAME ~7XGarJ.dlg~
+BEGIN
+EXTEND_TOP ~7XGARR.bcs~ ~%MOD_FOLDER%/scripts/garrick3.baf~
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~7XCoranJ.dlg~
+BEGIN
+EXTEND_TOP ~7XCoran.bcs~ ~%MOD_FOLDER%/scripts/coran3.baf~
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~O#CORANJ.dlg~
+BEGIN
+EXTEND_TOP ~O#CoranS.bcs~ ~%MOD_FOLDER%/scripts/coran3.baf~
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~7XGar25J.dlg~
+BEGIN
+EXTEND_TOP ~7XGar25.bcs~ ~%MOD_FOLDER%/scripts/garrick25_3.baf~
+END
+
+COMPILE ~HerThiMoney/scripts/ANaran.baf~ EVALUATE_BUFFER USING ~%MOD_FOLDER%/tra/%LANGUAGE%/ANAranSoA.tra~ 
+
+COMPILE ~HerThiMoney/scripts/ANleena.baf~
+COMPILE ~HerThiMoney/scripts/AN1204.baf~
+COMPILE ~HerThiMoney/scripts/AN0012.baf~
+COMPILE ~HerThiMoney/scripts/ANfatesp.baf~
+COMPILE ~HerThiMoney/scripts/ANbesha1.baf~
+
+// Добавляем скрипт локации входа в ѓильдию
+COPY_EXISTING ~AR0305.are~ ~override~
+	SPRINT ~scrp~ ~%SOURCE_RES%~ //сохранение в переменную имени локации
+	READ_ASCII 0x94 are_script (8) NULL //сохранение в переменную имени скрипта локации
+	PATCH_IF ( ~%are_script%~ STR_EQ ~~ ) OR // если имя скрипта пустое
+	         ( ~%are_script%~ STR_EQ ~None~ ) BEGIN //или None
+		WRITE_EVALUATED_ASCII 0x94 ~%scrp%~ (8) // то записывается в имя скрипта имя локации
+		SPRINT are_script ~%scrp%~ // сохранение в переменную нового имени скрипта
+	END
+	BUT_ONLY_IF_IT_CHANGES
+
+//если baf файл имеет такое же имя
+ACTION_IF FILE_EXISTS_IN_GAME ~%are_script%.bcs~ BEGIN
+	EXTEND_TOP ~%are_script%.bcs~ ~%MOD_FOLDER%/scripts/AR0305-3/AR0305.baf~ EVALUATE_BUFFER //если скрипт существует, добавляем сверху или снизу
+END ELSE BEGIN
+	COMPILE ~%MOD_FOLDER%/scripts/AR0305-3/AR0305.baf~ EVALUATE_BUFFER //если не существует, то создаем новый
+END
+
+COMPILE ~HerThiMoney/dlg/ANAranSoA.d~ EVALUATE_BUFFER
+COMPILE ~HerThiMoney/dlg/ANAranToB.d~ 
+COMPILE ~HerThiMoney/dlg/ANbeshaba.d~ 
+
+
+ACTION_IF EE_GAME BEGIN
+   // If a EE-version is installed, change the journal entries to adapt it 
+  ADD_JOURNAL @1040 @1041 @1042 @1043 @1044 @1045 @1046 @1047 @1048 @1049 @1050 @1051 @1052 @1053 @1054 @1055 @1056 @1057 @1058 @1059 @1060 @1061 @1062 @1063 @1064 @1107 @1108 @1109 @1110 @1111 @1112 @1113 @1114 USING ~%MOD_FOLDER%/tra/%LANGUAGE%/setup.tra~ 
+END 
+
+APPEND ~gtimes.ids~ ~21600 THREE_DAYS~ UNLESS ~THREE_DAYS~
+APPEND ~gtimes.ids~ ~7200 ONE_DAY~ UNLESS ~ONE_DAY~
+APPEND ~gtimes.ids~ ~50400 SEVEN_DAYS~ UNLESS ~SEVEN_DAYS~
+
+// Устанавливаем портрет для Арана
+ACTION_IF EE_GAME BEGIN		
+INCLUDE ~%MOD_FOLDER%/lib/standardEE.tph~		
+	OUTER_SET s9total=0
+	OUTER_SET rows_cnt_1=0
+	COPY - ~%MOD_FOLDER%/lib/portrait.tbl~  ~%MOD_FOLDER%/lib/portrait.tbl~
+		COUNT_2DA_ROWS 1 "rows_cnt_1"
+			FOR( cntg=0; cntg<"%rows_cnt_1%"; cntg+=1 ) BEGIN
+				READ_2DA_ENTRY cntg  0 2 "Crename"
+				READ_2DA_ENTRY cntg  1 2 "Filename"
+				INNER_ACTION BEGIN
+					ACTION_IF FILE_EXISTS_IN_GAME ~%Crename%.cre~ THEN BEGIN
+						OUTER_SET s9total+=1
+						LAUNCH_ACTION_MACRO ~Addpic~ 
+					END
+				END
+END
+END
+ELSE BEGIN
+INCLUDE ~%MOD_FOLDER%/lib/standardold.tph~	
+	OUTER_SET s9total=0
+	OUTER_SET rows_cnt_1=0
+	COPY - ~%MOD_FOLDER%/lib/portrait.tbl~  ~%MOD_FOLDER%/lib/portrait.tbl~
+		COUNT_2DA_ROWS 1 "rows_cnt_1"
+			FOR( cntg=0; cntg<"%rows_cnt_1%"; cntg+=1 ) BEGIN
+				READ_2DA_ENTRY cntg  0 2 "Crename"
+				READ_2DA_ENTRY cntg  1 2 "Filename"
+				INNER_ACTION BEGIN
+					ACTION_IF FILE_EXISTS_IN_GAME ~%Crename%.cre~ THEN BEGIN
+						OUTER_SET s9total+=1
+						LAUNCH_ACTION_MACRO ~Addpic~ 
+					END
+				END
+END
+END	
+
+// Эпилог для романа
+EXTEND_TOP ~ar6200.bcs~ ~%MOD_FOLDER%\Scripts\AR6200.baf~
+
+COPY ~%MOD_FOLDER%\AranEp.2da~ ~override\AranEp.2da~
+
+        REPLACE_TEXTUALLY ~PORTRAIT~ ~ARANl~ 
+
+        REPLACE 99999 @86		
+
+// Музыка		
+LAF HANDLE_AUDIO STR_VAR audio_path = "HerThiMoney/audio/3" oggdec_path = "HerThiMoney/audio" END
+LAF HANDLE_AUDIO STR_VAR audio_path = "HerThiMoney/audio/1" oggdec_path = "HerThiMoney/audio" END
+
+// Локации
+COPY ~HerThiMoney/are/3~ ~override~
+
+ACTION_IF EE_GAME BEGIN
+	ACTION_FOR_EACH tis_name_all IN AN1204 AN0012 BEGIN //список нужных тис-файлов
+		LAF FC_COPY_TIS_PVRZ // We use a function that finds free pvrz indices
+			STR_VAR
+				tis_pvrz_path = EVAL "%MOD_FOLDER%/tis/ee/3" //путь к папке с tis/pvrz для EE
+				path_to_vanilla_tis = EVAL "%MOD_FOLDER%\tis\OldBG2\3"
+				tis_name = EVAL "%tis_name_all%" //имя tis без расширения
+		END
+	END
+END ELSE BEGIN
+	COPY ~%MOD_FOLDER%\tis\OldBG2\3~ ~override~
+END
+
+COPY_EXISTING ~ARAN.CRE~ ~override~
+WRITE_LONG 0x10c "-1"
+
+COMPILE ~HerThiMoney/scripts/ANguards.baf~
+
+COPY_EXISTING ~ar0307.are~ ~override~
+	READ_LONG  0x54 actor_off
+	READ_SHORT 0x58 actor_num
+	PATCH_IF ( actor_num > 0 ) BEGIN
+		FOR ( i = 0 ; i < actor_num ; ++i ) BEGIN
+			SET offset = actor_off + i * 0x110
+			READ_SHORT offset + 0x20 x_pos
+			READ_SHORT offset + 0x22 y_pos
+			PATCH_IF ( ( x_pos = 4429 AND y_pos = 2155 ) OR
+			           ( x_pos = 4802 AND y_pos = 2227 ) ) BEGIN
+				WRITE_ASCII offset + 0x78 ~ANguards~ (8)
+			END
+		END
+	END
+	BUT_ONLY_IF_IT_CHANGES
+
+AT_INTERACTIVE_EXIT ~VIEW HerThiMoney/readme/%LANGUAGE%/readme.pdf~
+
+
+//
+//
+//
+//
+//
+/////////////////////////////////////////////////////////
+// Component 4. "The Case of the Missing Troll" /////////////////////////////////////
+/////////////////////////////////////////////////////////
+//
+//
+//
+//
+//
+
+
+BEGIN @116 DESIGNATED 30
+
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
+APPEND ~gtimes.ids~ ~7200 ONE_DAY~ UNLESS ~ONE_DAY~
+APPEND ~gtimes.ids~ ~50400 SEVEN_DAYS~ UNLESS ~SEVEN_DAYS~
+
+//это есть в ЕЕ, но нет в оригинальной игре
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~dir.ids~ BEGIN
+COPY "%MOD_FOLDER%/lib/dir.ids" override
+COPY_EXISTING "action.ids" override
+    REPLACE_TEXTUALLY "Face\*)" "Face*DIR)"
+    REPLACE_TEXTUALLY "Direction\*)" "Direction*DIR)"
+    BUT_ONLY
+END
+
+ACTION_IF EE_GAME BEGIN
+   // If a EE-version is installed, change the journal entries to adapt it 
+  ADD_JOURNAL @1070 @1071 @1072 @1073 @1074 @1075 @1076 @1077 @1078 @1079 @1080 @1081 @1082 @1083 @1084 @1085 @1086 @1087 @1088 @1089 @1090 @1091 @1092 @1093 @1094 @1095 @1096 @1097 @1098 USING ~%MOD_FOLDER%/tra/%LANGUAGE%/setup.tra~ 
+END 
+
+LAF HANDLE_AUDIO STR_VAR audio_path = "HerThiMoney/audio/1" oggdec_path = "HerThiMoney/audio" END
+
+EXTEND_TOP ~AR0700.bcs~ ~HerThiMoney/scripts/AR0700_4.baf~
+EXTEND_TOP ~AR0300.bcs~ ~HerThiMoney/scripts/AR0300_4.baf~
+EXTEND_TOP ~AR0319.bcs~ ~HerThiMoney/scripts/AR0319.baf~
+EXTEND_TOP ~baldur.bcs~ ~%MOD_FOLDER%/scripts/baldur4.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~AR0607.bcs~ ~%MOD_FOLDER%/scripts/AR0607.baf~
+EXTEND_TOP ~AR1002.bcs~ ~%MOD_FOLDER%/scripts/AR1002.baf~
+EXTEND_TOP ~AR0500.bcs~ ~HerThiMoney/scripts/AR0500_4.baf~ 
+EXTEND_TOP ~AR0334.bcs~ ~HerThiMoney/scripts/AR0334_4.baf~ 
+EXTEND_TOP ~AR1005.bcs~ ~HerThiMoney/scripts/AR1005.baf~ 
+EXTEND_TOP ~AR1000.bcs~ ~HerThiMoney/scripts/AR1000_4.baf~ 
+
+ACTION_IF 
+FILE_EXISTS_IN_GAME ~7XQUAYJ.dlg~
+BEGIN
+EXTEND_TOP ~baldur.bcs~ ~%MOD_FOLDER%/scripts/baldur4_quayle_in_party.baf~ EVALUATE_BUFFER
+END
+
+COMPILE ~HerThiMoney/scripts/AN0715.baf~
+COMPILE ~HerThiMoney/scripts/ANtroll.baf~
+COMPILE ~HerThiMoney/scripts/ANlorio.baf~
+
+COPY ~HerThiMoney/cre/ANtroll.cre~ ~override/ANtroll.cre~
+SAY NAME1 @117
+SAY NAME2 @117
+LPF ADD_CRE_EFFECT INT_VAR opcode=206 target=1 power=2 parameter1="-1" timing=9 STR_VAR resource="sppr209" END
+LPF ADD_CRE_EFFECT INT_VAR opcode=206 target=1 power=2 parameter1="-1" timing=9 STR_VAR resource="spwi208" END
+
+COPY ~HerThiMoney/cre/ANmess.cre~ ~override/ANmess.cre~
+SAY NAME1 @118
+SAY NAME2 @118
+
+COPY ~HerThiMoney/cre/ANlorio.cre~ ~override/ANlorio.cre~
+SAY NAME1 @119
+SAY NAME2 @119
+
+COPY ~HerThiMoney/cre/ANsartor.cre~ ~override/ANsartor.cre~
+SAY NAME1 @121
+SAY NAME2 @121
+
+COPY ~HerThiMoney/cre/ANlion1.cre~ ~override/ANlion1.cre~
+
+COPY ~HerThiMoney/cre/ANgirl1.cre~ ~override/ANgirl1.cre~
+SAY NAME1 @128
+SAY NAME2 @128
+
+COPY ~HerThiMoney/cre/ANsirene.cre~ ~override/ANsirene.cre~
+SAY NAME1 @132
+SAY NAME2 @132
+
+COPY ~HerThiMoney/items/ANhead.itm~ ~Override/ANhead.itm~
+SAY NAME1 @122
+SAY NAME2 @122
+SAY UNIDENTIFIED_DESC @122
+SAY DESC @123
+
+COPY ~HerThiMoney/items/ANverev.itm~ ~Override/ANverev.itm~
+SAY NAME1 @124
+SAY NAME2 @124
+SAY UNIDENTIFIED_DESC @124
+SAY DESC @125
+
+COPY ~HerThiMoney/items/ANcook.itm~ ~Override/ANcook.itm~
+SAY NAME1 @126
+SAY NAME2 @126
+SAY UNIDENTIFIED_DESC @126
+SAY DESC @127
+
+COPY ~HerThiMoney/items/ANscrll2.itm~ ~Override/ANscrll2.itm~
+SAY NAME1 @133
+SAY NAME2 @133
+SAY UNIDENTIFIED_DESC @133
+SAY DESC @134
+
+ACTION_IF EE_GAME BEGIN
+COPY ~HerThiMoney/bam//cook/ee/ANcook.bam~ ~Override/ANcook.bam~
+END
+ELSE BEGIN
+COPY ~HerThiMoney/bam//cook/vanilla/ANcook.bam~ ~Override/ANcook.bam~
+END
+
+COMPILE ~HerThiMoney/dlg/ANtroll.d~ EVALUATE_BUFFER
+COMPILE ~HerThiMoney/dlg/ANsiren.d~
+
+// Cross-mod (Smiling Imp's Quayle)
+ACTION_IF 
+FILE_EXISTS_IN_GAME ~7XQUAYJ.dlg~
+BEGIN
+COMPILE ~HerThiMoney/dlg/ANtrollQuayleImp.d~ USING ~HerThiMoney/tra/%LANGUAGE%/ANtroll.tra~
+COMPILE ~HerThiMoney/dlg/ANtrollQuayleImp2.d~ USING ~HerThiMoney/tra/%LANGUAGE%/ANtroll.tra~
+COMPILE ~HerThiMoney/dlg/ANsirenQuayleImp.d~ USING ~HerThiMoney/tra/%LANGUAGE%/ANsiren.tra~
+END
+
+
+// Создаем Аэри-невидимку (для диалога с Квэйлом на случай, если она не в группе - иначе диалог часто прерывается)
+ACTION_IF EE_GAME BEGIN
+COPY_EXISTING ~AERIE12.CRE~ ~override/anaerie.cre~ //используем существующий файл (портрет и имя уже прописаны)
+	FOR ( i = 0xa4 ; i < 0x234 ; i = i + 0x4 ) BEGIN WRITE_LONG i "-1" END //удаляем все звуки на всякий случай
+	WRITE_ASCII 0x248 ~anaerie~ (40) //удаляем все скрипты и в override прописываем anaerie
+	WRITE_ASCII 0x280 ~anaerie~ (32) //script_name
+	WRITE_ASCII 0x2cc ~anaerie~ (8)  //dialog
+	WRITE_BYTE 0x12 THIS + 128 // Убираем отображение имени при нажатии TAB
+	REMOVE_CRE_ITEMS //удаляем все предметы на всякий случай
+	LPF ADD_CRE_EFFECT INT_VAR opcode=315 target=1 parameter2=1 timing=9 END //убираем анимацию
+	LPF ADD_CRE_EFFECT INT_VAR opcode=287 target=1 timing=9 END //убираем круг под ногами
+END ELSE BEGIN
+COPY_EXISTING ~AERIE12.CRE~ ~override/anaerie.cre~ //используем существующий файл (портрет и имя уже прописаны)
+	FOR ( i = 0xa4 ; i < 0x234 ; i = i + 0x4 ) BEGIN WRITE_LONG i "-1" END //удаляем все звуки на всякий случай
+	WRITE_ASCII 0x248 ~anaerie~ (40) //удаляем все скрипты и в override прописываем anaerie
+	WRITE_ASCII 0x280 ~anaerie~ (32) //script_name
+	WRITE_ASCII 0x2cc ~anaerie~ (8)  //dialog
+	REMOVE_CRE_ITEMS //удаляем все предметы на всякий случай
+	LPF ADD_CRE_EFFECT INT_VAR opcode=315 target=1 parameter2=1 timing=9 END //убираем анимацию
+	LPF ADD_CRE_EFFECT INT_VAR opcode=287 target=1 timing=9 END //убираем круг под ногами
+END
+	
+// Отключаем уход Сиджа с локации Гильдии Воров
+COPY_EXISTING ~SIDGE.bcs~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SET start_offset = BUFFER_LENGTH - 1 //назначаем смещение начала поиска
+		SET reverse = 1 //указываем, что поиск должен производится с конца файла в начало
+		WHILE ( start_offset >= 0 ) BEGIN //цикл закончится, когда переменная start_offset будет меньше 0
+			LPF GET_SCRIPT_BLOCK //ищем строку Global("TalkedToRenal","GLOBAL",1)
+				INT_VAR start_offset reverse
+				STR_VAR search_regexp = "^.*TalkedToRenal.*,.*,1"
+				RET script_block start_offset end_offset
+			END
+			SET startx = start_offset //сохраняем значение start_offset, которое выдала функция в промежуточную переменную
+			PATCH_IF ( start_offset >= 0 ) BEGIN //если строка Global("TalkedToRenal","GLOBAL",1) найдена ->
+				LPF GET_SCRIPT_BLOCK // -> проверяем, что найденный блок скрипта содержит строку EscapeArea()
+					INT_VAR start_offset reverse = 0 //тут reverse = 0 указывает, что надо искать с начала выбранного блока вниз
+					STR_VAR search_regexp = ~EscapeArea()~
+					RET start_offset end_offset
+				END
+				PATCH_IF ( start_offset >= 0 ) BEGIN //если найдена строка EscapeArea(), удаляем блок скрипта, содержащий оба условия
+					DELETE_BYTES start_offset ( end_offset - start_offset )
+				END
+			END
+			SET start_offset = startx - 1 //возвращаем переменной start_offset сохраненное промежуточное значение (отнимаем 1 для защиты от того, чтобы не вылезло за пределы размера файла после удаления байтов)
+			SET reverse = 1 //т.к. reverse в процессе проверки может изменится на 0, снова указываем, что искать надо снизу вверх
+		END
+	END
+	BUT_ONLY_IF_IT_CHANGES
+	
+// Локация
+COPY ~HerThiMoney/are/4~ ~override~
+
+ACTION_IF EE_GAME BEGIN
+	ACTION_FOR_EACH tis_name_all IN AN0715 BEGIN //список нужных тис-файлов
+		LAF FC_COPY_TIS_PVRZ // We use a function that finds free pvrz indices
+			STR_VAR
+				tis_pvrz_path = EVAL "%MOD_FOLDER%/tis/ee/4" //путь к папке с tis/pvrz для EE
+				path_to_vanilla_tis = EVAL "%MOD_FOLDER%\tis\OldBG2\4"
+				tis_name = EVAL "%tis_name_all%" //имя tis без расширения
+		END
+	END
+END ELSE BEGIN
+	COPY ~%MOD_FOLDER%\tis\OldBG2\4~ ~override~
+END	
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdoffscr.cre~ BEGIN
+COPY "%MOD_FOLDER%/cre/bdoffscr.cre" ~override~
+COPY "%MOD_FOLDER%/spl/bdoffscr.spl" ~override~
+END
+
+ACTION_IF GAME_IS ~tob bgt~ BEGIN
+COPY ~Setup-HerThiMoney.exe~ ~weidu.exe~
+ACTION_FOR_EACH file IN AM1200 AM1200N BEGIN
+ACTION_IF ( NOT FILE_EXISTS ~override/%file%.wav~ ) AND ( FILE_EXISTS_IN_GAME ~%file%.wav~ ) BEGIN
+AT_NOW ~weidu --out "override" --biff-get-rest "%file%.wav"~
+END
+END
+END
+
+COPY_EXISTING ~WAUKSQU.cre~ ~override\WAUKSQU.cre~
+WRITE_ASCII 0x280 ~ANbelka~ (32)
+
+AT_INTERACTIVE_EXIT ~VIEW HerThiMoney/readme/%LANGUAGE%/readme.pdf~
+
+
+
+
+//
+//
+//
+//
+/////////////////////////////////////////////
+// Component 5. Unlocked original dialogs of all NPC (by Tipun & Austin) ////////////////////////////////
+/////////////////////////////////////////////
+//
+//
+//
+//
+//
+BEGIN @157 DESIGNATED 40
+
+// Патчим файл player1, чтобы добавить диалоги всем NPC после превращения игрока в Убийцу (ранее говорил только кто-то один), подключаем функцию
+LAM AN_PLAYER1DLG_PATCH
+
+COMPILE ~HerThiMoney/dlg/ANtwick.d~
