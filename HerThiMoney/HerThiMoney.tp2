@@ -2,7 +2,7 @@
 BACKUP ~HerThiMoney/backup~
 
 AUTHOR ~Austin, Scheele, Alisia & Arcanecoast Team~
-VERSION 4.1
+VERSION 4.2
 
 AUTO_TRA ~HerThiMoney/tra/%s~
 
@@ -816,6 +816,14 @@ SAY NAME1 @7
 SAY NAME2 @7
 
 COPY ~HerThiMoney/cre/ANBANKG2.cre~ ~override/ANBANKG2.cre~
+SAY NAME1 @7
+SAY NAME2 @7
+
+COPY ~HerThiMoney/cre/ANBANKG3.cre~ ~override/ANBANKG3.cre~
+SAY NAME1 @7
+SAY NAME2 @7
+
+COPY ~HerThiMoney/cre/ANBANKG4.cre~ ~override/ANBANKG4.cre~
 SAY NAME1 @7
 SAY NAME2 @7
 
@@ -1723,7 +1731,6 @@ ACTION_IF
 FILE_EXISTS_IN_GAME ~7XQUAYJ.dlg~
 BEGIN
 COMPILE ~HerThiMoney/dlg/ANtrollQuayleImp.d~ USING ~HerThiMoney/tra/%LANGUAGE%/ANtroll.tra~
-COMPILE ~HerThiMoney/dlg/ANtrollQuayleImp2.d~ USING ~HerThiMoney/tra/%LANGUAGE%/ANtroll.tra~
 COMPILE ~HerThiMoney/dlg/ANsirenQuayleImp.d~ USING ~HerThiMoney/tra/%LANGUAGE%/ANsiren.tra~
 END
 
