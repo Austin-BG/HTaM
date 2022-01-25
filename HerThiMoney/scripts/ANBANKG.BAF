@@ -1,63 +1,58 @@
 IF
-	AreaCheck("AR0700")
+	AreaCheck("AR0700")  // Waukeen's Promenade
 	Range([PC],15)
 	CombatCounter(0)
-	Global("ANbankNight","LOCALS",0) 
+	Global("ANbankNight","LOCALS",0)
 	OR(2)
 		TimeLT(8)
 		TimeGT(19)
 THEN
 	RESPONSE #100
-SetGlobal("ANbankNight","LOCALS",1)   
-StartDialogNoSet([PC]) 
-Continue()     
+		SetGlobal("ANbankNight","LOCALS",1)
+		StartDialogNoSet([PC])
 END
 
 IF
-	OR(2)
-		TimeLT(8)
-		TimeGT(19)
-	Global("ANbankNight","LOCALS",1)  
-THEN
-	RESPONSE #100
-ActionOverride(Player1,MoveToPoint([3325.3548]))    
-ActionOverride(Player2,MoveToPoint([3325.3548]))  
-ActionOverride(Player3,MoveToPoint([3325.3548]))  
-ActionOverride(Player4,MoveToPoint([3325.3548]))  
-ActionOverride(Player5,MoveToPoint([3325.3548]))  
-ActionOverride(Player6,MoveToPoint([3325.3548]))  
-Continue()
-END
-
-IF
-	AreaCheck("AR0700")
+	AreaCheck("AR0700")  // Waukeen's Promenade
 	!See([PC])
 	OR(2)
 		TimeLT(8)
 		TimeGT(19)
-	Global("ANbankNight","LOCALS",1)  
+	Global("ANbankNight","LOCALS",1)
 THEN
 	RESPONSE #100
-SetGlobal("ANbankNight","LOCALS",0)   
-Continue()      
+		SetGlobal("ANbankNight","LOCALS",0)
 END
 
 IF
-  !See([EVILCUTOFF])
+	!See([EVILCUTOFF])
+	Global("ANbankGuardPlace","LOCALS",1)
 THEN
-  RESPONSE #100
-  MoveToPoint([3709.3789])
+	RESPONSE #100
+		JumpToPoint([3709.3789])
+		SetGlobal("ANbankGuardPlace","LOCALS",0)
 END
 
-
 IF
-	AreaCheck("AR0700")
+	AreaCheck("AR0700")  // Waukeen's Promenade
 	See([PC])
 	Global("ANbankNightIN","GLOBAL",1)
+	Global("ANbankGuardPlace","LOCALS",0)
 THEN
 	RESPONSE #100
-EquipMostDamagingMelee()
-Enemy()  
-AttackReevaluate(NearestEnemyOf(),30)
-Continue() 
+		Enemy()
+		GlobalShout(3015)		
+		SetGlobal("ANbankGuardPlace","LOCALS",1)
+END
+
+IF
+	!Allegiance(Myself,ENEMY)
+	OR(2)
+		Global("ANbankStealeIN","GLOBAL",3)
+		GlobalGT("ANbankNightIN","GLOBAL",0)
+		AreaCheck("AR0700")
+THEN
+	RESPONSE #100
+		GlobalShout(3015)
+		Enemy()
 END

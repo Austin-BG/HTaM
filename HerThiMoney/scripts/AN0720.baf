@@ -116,14 +116,6 @@ END
 
 
 // Miranda quest
-IF
-Global("ANMirandaExists","AN0720",0) 
-THEN
-	RESPONSE #100
-SetGlobal("ANMirandaExists","AN0720",1) 
-CreateCreature("ANmiran",[687.469],0)
-END
-
 IF 
 Global("ANMirandaCredit","GLOBAL",2)
 

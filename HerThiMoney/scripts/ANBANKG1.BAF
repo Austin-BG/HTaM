@@ -1,19 +1,31 @@
 IF
-  !See([EVILCUTOFF])
-THEN
-  RESPONSE #100
-MoveToPoint([3600.3766])
-END
-
-
-IF
-	AreaCheck("AR0700")
-	See([PC])
-	Global("ANbankNightIN","GLOBAL",1)
+	!See([EVILCUTOFF])
+	Global("ANbankGuardPlace","LOCALS",1)
 THEN
 	RESPONSE #100
-EquipMostDamagingMelee()
-Enemy()  
-AttackReevaluate(NearestEnemyOf(),30)
-Continue() 
+		JumpToPoint([3600.3766])
+		SetGlobal("ANbankGuardPlace","LOCALS",0)
+END
+
+IF
+	AreaCheck("AR0700")  // Waukeen's Promenade
+	Global("ANbankNightIN","GLOBAL",1)
+	Global("ANbankGuardPlace","LOCALS",0)
+THEN
+	RESPONSE #100
+		Enemy()
+		GlobalShout(3015)
+		SetGlobal("ANbankGuardPlace","LOCALS",1)
+END
+
+IF
+	!Allegiance(Myself,ENEMY)
+	OR(2)
+		Global("ANbankStealeIN","GLOBAL",3)
+		GlobalGT("ANbankNightIN","GLOBAL",0)
+		AreaCheck("AR0700")
+THEN
+	RESPONSE #100
+		GlobalShout(3015)
+		Enemy()
 END
