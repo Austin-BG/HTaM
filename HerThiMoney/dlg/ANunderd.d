@@ -235,3 +235,11 @@ END
 INTERJECT_COPY_TRANS UDPHAE01 30 ANimoenUDPHAE01-30
 == IMOEN2J IF ~InParty("Imoen2") InMyArea("Imoen2") !StateCheck("Imoen2",CD_STATE_NOTVALID)~ THEN @56
 END
+
+// Генерал Совалидаас 
+INTERJECT_COPY_TRANS3 C6GENER 2 ANallC6GENER-2
+== MINSCJ IF ~InParty("Minsc") !StateCheck("Minsc",CD_STATE_NOTVALID)~ THEN @61
+== EDWINJ IF ~InParty("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN @62
+== KORGANJ IF ~InParty("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN @63
+== C6GENER IF ~OR(3) InParty("Minsc") InParty("Edwin") InParty("Korgan") OR(3) !StateCheck("Minsc",CD_STATE_NOTVALID) !StateCheck("Edwin",CD_STATE_NOTVALID) !StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN @64
+END

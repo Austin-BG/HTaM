@@ -533,7 +533,7 @@ IF ~!Global("ANOwniCharnameName","AN0060",1)~ THEN REPLY @36 EXTERN ANOwni ANOwn
 
 CHAIN ANOwni ANOwniTalkCollectorDead_1
 @110
-== ANOwni IF ~!Dead("ANJock") !Dead("ANyant") !Dead("ANesra") !Dead("ANjalut")~ THEN @103 DO ~SetGlobal("ANDwarfCreditPay","GLOBAL",3) GiveItemCreate("ANveksl",Player1,1,0,0) EscapeArea()~
+== ANOwni IF ~!Dead("ANJock") !Dead("ANyant") !Dead("ANesra") !Dead("ANjalut")~ THEN @103 DO ~SetGlobal("ANDwarfCreditPay","GLOBAL",3) GiveItemCreate("ANveksl",Player1,1,0,0) AddJournalEntry(@1019,QUEST_DONE) EscapeArea()~
 == ANOwni IF ~OR(4) Dead("ANJock") Dead("ANyant") Dead("ANesra") Dead("ANjalut")~ THEN @105 DO ~SetGlobal("ANDwarfCreditPay","GLOBAL",3) SetGlobal("ANDwarfOwniGroupRevive","AN0600",1) GiveItemCreate("ANveksl",Player1,1,0,0) AddJournalEntry(@1019,QUEST_DONE)~
 EXIT
 

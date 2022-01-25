@@ -453,9 +453,14 @@ END
 // Bank Guard
 BEGIN ANBANKG
 
-IF ~OR(2) TimeLT(8) TimeGT(19) Global("ANbankNight","LOCALS",1)~ THEN BEGIN ANBANKG_1
+IF ~OR(2) TimeLT(8) TimeGT(19) Global("ANbankNight","LOCALS",1) CombatCounter(0)~ THEN BEGIN ANBANKG_1
   SAY @10
-  IF ~~ THEN EXIT
+  IF ~~ THEN DO ~ActionOverride(Player1,JumpToPoint([3325.3548]))
+		ActionOverride(Player2,JumpToPoint([3325.3548]))
+		ActionOverride(Player3,JumpToPoint([3325.3548]))
+		ActionOverride(Player4,JumpToPoint([3325.3548]))
+		ActionOverride(Player5,JumpToPoint([3325.3548]))
+		ActionOverride(Player6,JumpToPoint([3325.3548]))~ EXIT
 END
 
 IF ~TimeGT(7) TimeLT(20)~ THEN BEGIN ANBANKG_2
