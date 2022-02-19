@@ -133,7 +133,7 @@ CHAIN ANshakal ANshakalFirstTalk1_4
 @19
 END
 IF ~OR(3) !InParty("7XSHAR") !InMyArea("7XSHAR") StateCheck("7XSHAR",CD_STATE_NOTVALID) OR(3) !InParty("Anomen") !InMyArea("Anomen") StateCheck("Anomen",CD_STATE_NOTVALID)~ THEN REPLY @20 EXTERN ANshakal ANshakalFirstTalk1_5
-IF ~InParty("Anomen") !InMyArea("Anomen") StateCheck("Anomen",CD_STATE_NOTVALID) OR(3) !InParty("7XSHAR") !InMyArea("7XSHAR") StateCheck("7XSHAR",CD_STATE_NOTVALID)~ THEN REPLY @20 EXTERN ANOMENJ ANshakalFirstTalk1_5Anomen
+IF ~InParty("Anomen") InMyArea("Anomen") !StateCheck("Anomen",CD_STATE_NOTVALID) OR(3) !InParty("7XSHAR") !InMyArea("7XSHAR") StateCheck("7XSHAR",CD_STATE_NOTVALID)~ THEN REPLY @20 EXTERN ANOMENJ ANshakalFirstTalk1_5Anomen
 IF ~InParty("7XSHAR") InMyArea("7XSHAR") !StateCheck("7XSHAR",CD_STATE_NOTVALID)~ THEN EXTERN IF_FILE_EXISTS 7XsharJ ANshakalFirstTalk1_5SharTeel
 
 APPEND IF_FILE_EXISTS 7XsharJ
