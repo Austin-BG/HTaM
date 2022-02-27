@@ -14,28 +14,31 @@ COPY_EXISTING_REGEXP GLOB ~.*\.cre~ ~override~
 	END
 	BUT_ONLY_IF_IT_CHANGES
 
-COPY_EXISTING ~pdialog.2da~ ~override~
-	COUNT_2DA_ROWS 4 rws
-	FOR ( i = 0 ; i < rws ; ++i ) BEGIN
-		READ_2DA_ENTRY i 0 4 name
-		TO_UPPER ~name~
-		PATCH_IF ( ~%name%~ STR_CMP ~POST_DIALOG_FILE~ ) BEGIN
-			PATCH_IF !( VARIABLE_IS_SET $NPC_PDIALOG(~%name%~) ) BEGIN
-				PATCH_IF ( VARIABLE_IS_SET $NPC_ALL_L(~%name%~) ) BEGIN
-					SET idx = $NPC_ALL_L(~%name%~)
-					DEFINE_ASSOCIATIVE_ARRAY NPC_PDIALOG BEGIN
-						~%name%~, ~%statue_num%~ => ~%idx%~
+ACTION_FOR_EACH file IN BGDIALOG BDDIALOG PDIALOG BEGIN
+	COPY_EXISTING ~%file%.2da~ ~override~
+		COUNT_2DA_ROWS 4 rws
+		FOR ( i = 0 ; i < rws ; ++i ) BEGIN
+			READ_2DA_ENTRY i 0 4 name
+			TO_UPPER ~name~
+			PATCH_IF ( ~%name%~ STR_CMP ~POST_DIALOG_FILE~ ) BEGIN
+				PATCH_IF !( VARIABLE_IS_SET $NPC_PDIALOG(~%name%~) ) BEGIN
+					PATCH_IF ( VARIABLE_IS_SET $NPC_ALL_L(~%name%~) ) BEGIN
+						SET idx = $NPC_ALL_L(~%name%~)
+						DEFINE_ASSOCIATIVE_ARRAY NPC_PDIALOG BEGIN
+							~%name%~, ~%statue_num%~ => ~%idx%~
+						END
+					END ELSE BEGIN
+						DEFINE_ASSOCIATIVE_ARRAY NPC_PDIALOG BEGIN
+							~%name%~, ~%statue_num%~ => ~%strrx%~
+						END
 					END
-				END ELSE BEGIN
-					DEFINE_ASSOCIATIVE_ARRAY NPC_PDIALOG BEGIN
-						~%name%~, ~%statue_num%~ => ~%strrx%~
-					END
+					SET statue_num = statue_num + 1
 				END
-				SET statue_num = statue_num + 1
 			END
 		END
-	END
-	BUT_ONLY_IF_IT_CHANGES
+		IF_EXISTS
+		BUT_ONLY_IF_IT_CHANGES
+END
 ACTION_CLEAR_ARRAY NPC_ALL_L
 
 COPY_EXISTING ~statue01.cre~ ~override/anstat02.cre~
