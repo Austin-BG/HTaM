@@ -111,7 +111,23 @@ EXTEND_BOTTOM MAZZYJ 197
 IF ~!IsValidForPartyDialog("Minsc") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialog("Korgan") IsValidForPartyDialog("Aerie")~ THEN EXTERN AERIEJ 183
 END
 
-ADD_TRANS_TRIGGER MAZZYJ 268 ~Global("AN_KorganTalk","AR0307",0)~
+ALTER_TRANS 
+MAZZYJ 
+BEGIN 197 END 
+BEGIN 3 END
+BEGIN "TRIGGER" ~IsValidForPartyDialogue("KORGAN")
+!IsValidForPartyDialogue("MINSC")
+!IsValidForPartyDialogue("ANOMEN")
+Global("AN_KorganTalk","AR0307",0)~ END
+
+EXTEND_BOTTOM ANOMENJ 274 
+IF ~IsValidForPartyDialog("Korgan") !IsValidForPartyDialog("Nalia") ~ THEN EXTERN KORGANJ 141
+IF ~IsValidForPartyDialogue("Nalia")~ THEN EXTERN NALIAJ 284
+END
+
+EXTEND_BOTTOM NALIAJ 284
+IF ~IsValidForPartyDialog("Korgan")~ THEN EXTERN KORGANJ 141
+END
 
 // Бодхи
 EXTEND_BOTTOM YOSHJ 77 
