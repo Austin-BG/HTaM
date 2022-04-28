@@ -68,6 +68,7 @@ END
 
 INTERJECT_COPY_TRANS VALYGAR 44 ANvalyganomen
 == ANOMENJ IF ~InParty("Anomen") InMyArea("Anomen") !Dead("Anomen") !StateCheck("Anomen",CD_STATE_NOTVALID)~ THEN @27
+== VALYGAR @171
 END
 
 // Реплики Сернда при квесте Келдорна
@@ -162,9 +163,9 @@ END
 
 // В диалоге с Келлором после похищения Налии Изайей
 INTERJECT_COPY_TRANS3 KHELLOR 10 ANkhellorTalkAll29
-== KORGANJ IF ~InParty("Korgan") InMyArea("Korgan") !Dead("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN @107
-== IF_FILE_EXISTS DORNJ IF ~InParty("Dorn") InMyArea("Dorn") !Dead("Dorn") !StateCheck("Dorn",CD_STATE_NOTVALID)~ THEN @108
-== EDWINJ IF ~InParty("Edwin") InMyArea("Edwin") !Dead("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID) !InParty("Dorn")~ THEN @108
+== KORGANJ IF ~InParty("Korgan") InMyArea("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN @107
+== IF_FILE_EXISTS DORNJ IF ~InParty("Dorn") InMyArea("Dorn") !StateCheck("Dorn",CD_STATE_NOTVALID)~ THEN @108
+== EDWINJ IF ~InParty("Edwin") InMyArea("Edwin") !Dead("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID) OR(2) !InParty("Dorn") StateCheck("Dorn",CD_STATE_NOTVALID)~ THEN @108
 == VICONIJ IF ~InParty("Viconia") InMyArea("Viconia") !Dead("Viconia") !StateCheck("Viconia",CD_STATE_NOTVALID) !InParty("Dorn") !InParty("Edwin")~ THEN @108
 == AERIEJ IF ~InParty("Aerie") InMyArea("Aerie") !Dead("Aerie") !StateCheck("Aerie",CD_STATE_NOTVALID) OR(4) InParty("Edwin") InParty("Dorn") InParty("Viconia") InParty("Korgan")~ THEN @109
 == KORGANJ IF ~InParty("Korgan") InMyArea("Korgan") !Dead("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID) InParty("Aerie") InMyArea("Aerie") !Dead("Aerie") !StateCheck("Aerie",CD_STATE_NOTVALID)~ THEN @110
@@ -336,7 +337,7 @@ SAY @150
 IF ~~ THEN EXIT
 END
 
-IF ~Global ("ANMyrain", "GLOBAL", 2) !InParty("Minsc") !Global("ShadowWork","GLOBAL",0)~ THEN BEGIN jaheirarain
+IF ~Global("ANMyrain", "GLOBAL", 2) !InParty("Minsc") !Global("ShadowWork","GLOBAL",0)~ THEN BEGIN jaheirarain
 SAY @150
 IF ~~ THEN DO ~SetGlobal ("ANMyrain", "GLOBAL", 3)~ EXIT
 END
