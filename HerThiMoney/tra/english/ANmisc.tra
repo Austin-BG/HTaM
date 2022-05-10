@@ -164,8 +164,6 @@
 // NEW (v.4)
 @169 = ~You have a kind and bright soul, Aerie. ~
 @170 = ~It's good that after all the hardships you've faced, you haven't lost your faith in the gods.~
-@171 = ~That doesn't sound very convincing, <CHARNAME>. This woman is clearly telling only a third of the whole truth. Maybe even less.~
-@172 = ~I can't believe I'm saying this, but you're right, paladin. Everything around here is saturated with lies.~
-@173 = ~You can't just knock on the door and walk in. We'll have to fight the entire Shadow Thieves Guild. That would be suicide!~
-@174 = ~Are we supposed to do all the dirty work for you, woman?~
-@175 = ~I'm glad to destroy that bastard Aran, of course, but so far even the Order hasn't been ready to launch such an attack, we've been waiting for a better moment.~
+
+//NEW (v.4.2.4)
+@171 = ~Not everyone who flies from the law is a criminal. Although I don't expect you to trust me when we first meet.~
