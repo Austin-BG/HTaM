@@ -338,7 +338,7 @@ END
 BEGIN ANcaytig
 IF ~Global("ANshakal","GLOBAL",6)~ THEN BEGIN ANColDeadTalk
 SAY @127 
-IF ~~ THEN DO ~SetGlobal("ANshakal","GLOBAL",7) AddJournalEntry(@1104,QUEST_DONE) EscapeArea()~ EXIT
+IF ~~ THEN DO ~SetGlobal("ANshakal","GLOBAL",7) AddJournalEntry(@1104,QUEST_DONE) ActionOverride("ANorc1",EscapeArea()) ActionOverride("ANorc2",EscapeArea()) EscapeArea()~ EXIT
 END
 
 BEGIN ANorc1
@@ -452,7 +452,7 @@ APPEND PLAYER1
 
 IF ~Global("ANshakal","GLOBAL",6)~ THEN BEGIN ANColDeadTalk
 SAY @128 
-IF ~~ THEN DO ~SetGlobal("ANshakal","GLOBAL",7) AddJournalEntry(@1104,QUEST_DONE)~ EXIT
+IF ~~ THEN DO ~SetGlobal("ANshakal","GLOBAL",7) AddJournalEntry(@1104,QUEST_DONE) ActionOverride("ANorc1",EscapeArea()) ActionOverride("ANorc2",EscapeArea())~ EXIT
 END
 
 END
