@@ -25,7 +25,7 @@ THEN
 	RESPONSE #100
 		SetGlobal("ThiefSpawn0","GLOBAL",2)
 		CreateCreatureObject("ANmess2",Player1,0,0,0)  
-		ActionOverride("ANmess2",Dialog(Player1))
+		ActionOverride("ANmess2",StartDialogNoSet(Player1))
 END
 
 IF
@@ -43,22 +43,19 @@ END
 // Tony 0
 IF
 	GlobalTimerExpired("ANAranLetter0Timer","GLOBAL")
+    Global("BeshabaCurse","GLOBAL",15) // Beshaba quest finished	
 	AreaType(OUTDOOR)
 	CombatCounter(0)
 	Global("BodhiJob","GLOBAL",0)
 	!HasItemEquiped("BELT05", Player1)
-	Global("AranLovePrologue","GLOBAL",1) 
+	Global("AranLovePrologue","GLOBAL",2) 
 	Global("TonySpawn0","GLOBAL",0)
 	Global("Chapter","GLOBAL",%bg2_chapter_3%)
 THEN
 	RESPONSE #100
+		CreateCreatureObject("ANtony1",Player1,0,0,0)  
 		SetGlobal("TonySpawn0","GLOBAL",1)
-		SetGlobal("AranLovePrologue","GLOBAL",2)
-		CreateCreatureObject("bdoffscr",Player1,0,0,0)  
-		ApplySpellRES("bdoffscr","bdoffscr")  // No such index
-		SmallWait(1)
-		CreateCreatureObject("ANtony1","bdoffscr",0,0,0)  
-		ActionOverride("ANtony",Dialog(Player1))
+		ActionOverride("ANtony",StartDialogNoSet(Player1))
 END
 
 IF
@@ -77,17 +74,15 @@ IF
 	AreaType(OUTDOOR)
 	CombatCounter(0)
 	Global("BodhiJob","GLOBAL",0)
-	!HasItemEquiped("BELT05", Player1)
+	!HasItemEquiped("BELT05",Player1)
 	Global("TonySpawn1","GLOBAL",0)
 	Global("Chapter","GLOBAL",%bg2_chapter_3%)
 THEN
 	RESPONSE #100
+		ClearAllActions()
+		CreateCreatureObject("ANtony1",Player1,0,0,0)  // Tony
 		SetGlobal("TonySpawn1","GLOBAL",1)
-		CreateCreatureObject("bdoffscr",Player1,0,0,0)  
-		ApplySpellRES("bdoffscr","bdoffscr")  // No such index
-		SmallWait(1)
-		CreateCreatureObject("ANtony1","bdoffscr",0,0,0)  
-		ActionOverride("ANtony",Dialog(Player1))
+		ActionOverride("ANtony",StartDialogueNoSet(Player1))
 END
 
 IF
@@ -114,11 +109,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("TonySpawn2","GLOBAL",1)
-		CreateCreatureObject("bdoffscr",Player1,0,0,0)  
-		ApplySpellRES("bdoffscr","bdoffscr")  // No such index
-		SmallWait(1)
-		CreateCreatureObject("ANtony1","bdoffscr",0,0,0)  
-		ActionOverride("ANtony",Dialog(Player1))
+        CreateCreatureObject("ANtony1",Player1,0,0,0)  
+		ActionOverride("ANtony",StartDialogNoSet(Player1))
 END
 
 IF
@@ -145,11 +137,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("TonySpawn3","GLOBAL",1)
-		CreateCreatureObject("bdoffscr",Player1,0,0,0)  
-		ApplySpellRES("bdoffscr","bdoffscr")  // No such index
-		SmallWait(1)
-		CreateCreatureObject("ANtony1","bdoffscr",0,0,0)  
-		ActionOverride("ANtony",Dialog(Player1))
+        CreateCreatureObject("ANtony1",Player1,0,0,0)  
+		ActionOverride("ANtony",StartDialogNoSet(Player1))
 END
 
 IF
@@ -193,11 +182,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("TonySpawn4","GLOBAL",1)
-		CreateCreatureObject("bdoffscr",Player1,0,0,0)  
-		ApplySpellRES("bdoffscr","bdoffscr")  // No such index
-		SmallWait(1)
-		CreateCreatureObject("ANtony1","bdoffscr",0,0,0)  
-		ActionOverride("ANtony",Dialog(Player1))
+        CreateCreatureObject("ANtony1",Player1,0,0,0)   
+		ActionOverride("ANtony",StartDialogNoSet(Player1))
 END
 
 IF
@@ -229,11 +215,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("TonySpawn5","GLOBAL",1)
-		CreateCreatureObject("bdoffscr",Player1,0,0,0)  
-		ApplySpellRES("bdoffscr","bdoffscr")  // No such index
-		SmallWait(1)
-		CreateCreatureObject("ANtony1","bdoffscr",0,0,0)  
-		ActionOverride("ANtony",Dialog(Player1))
+        CreateCreatureObject("ANtony1",Player1,0,0,0)  
+		ActionOverride("ANtony",StartDialogNoSet(Player1))
 END
 
 
@@ -247,11 +230,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("TonySpawnAlternate","GLOBAL",2)
-		CreateCreatureObject("bdoffscr",Player1,0,0,0)  
-		ApplySpellRES("bdoffscr","bdoffscr")  // No such index
-		SmallWait(1)
-		CreateCreatureObject("ANtony1","bdoffscr",0,0,0)  
-		ActionOverride("ANtony",Dialog(Player1))
+        CreateCreatureObject("ANtony1",Player1,0,0,0)  
+		ActionOverride("ANtony",StartDialogNoSet(Player1))
 END
 
 // Lamp
@@ -362,10 +342,7 @@ THEN
         Wait(5)			
 		FadeFromColor([70.0],0)
 		Wait(1)	
-		CreateCreatureObject("bdoffscr",Player1,0,0,0)  
-		ApplySpellRES("bdoffscr","bdoffscr")  // No such index
-		SmallWait(1)
-		CreateCreatureObject("ANtony1","bdoffscr",0,0,0) 
+        CreateCreatureObject("ANtony1",Player1,0,0,0)  
         ActionOverride(Player1,SetDialog("PLAYER1"))
         ActionOverride("ANtony",StartDialogNoSet("Player1"))	
 END
@@ -409,9 +386,6 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("TonySpawnMALE","GLOBAL",1)
-		CreateCreatureObject("bdoffscr",Player1,0,0,0)  
-		ApplySpellRES("bdoffscr","bdoffscr")  // No such index
-		SmallWait(1)
-		CreateCreatureObject("ANtony1","bdoffscr",0,0,0)  
-		ActionOverride("ANtony",Dialog(Player1))
+        CreateCreatureObject("ANtony1","Player1",0,0,0)  
+		ActionOverride("ANtony",StartDialogNoSet(Player1))
 END

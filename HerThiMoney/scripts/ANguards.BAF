@@ -12,9 +12,10 @@ END
 
 IF
 	!IsActive(Myself)
-	OR(5)
+	OR(6)
 	Global("ANAranSex","GLOBAL",2)
 	Global("AranLove","GLOBAL",21)
+	Global("AranLove","GLOBAL",22)
 	Global("AranLove","GLOBAL",38)
 	Global("AranLove","GLOBAL",999)
 	Global("ANAranLamp","GLOBAL",12)

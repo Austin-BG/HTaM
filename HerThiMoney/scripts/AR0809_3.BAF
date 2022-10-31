@@ -4,9 +4,10 @@ Gender(Player1,MALE)
 	OR(2)
 	Global("PGFailed","GLOBAL",1)
 	Global("PlayerThiefGuild","GLOBAL",1)
-Global("ANAranLetterMALETimerSet","ar0809",0)	
+	Global("ANAranLetterMALETimerSet","AR0809",0)
+	
 THEN
 	RESPONSE #100
-	SetGlobal("ANAranLetterMALETimerSet","ar0809",1)
+	SetGlobal("ANAranLetterMALETimerSet","AR0809",1)
 	SetGlobalTimer("ANAranLetterMALETimer","GLOBAL",ONE_DAY)
 END

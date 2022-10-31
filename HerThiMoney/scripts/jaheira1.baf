@@ -1,43 +1,36 @@
 IF 
-Global("ANMyrain", "GLOBAL",0)
+Global("ANMyrainJaheira","GLOBAL",0)
 !Global("ShadowWork","GLOBAL",0)
 InParty(Myself)
-!Dead("Jaheira")
+!StateCheck(Myself,CD_STATE_NOTVALID)
 AreaType(OUTDOOR)
 AreaType(CITY)
+OR(2)
+!InParty("Minsc")
+StateCheck(Myself,CD_STATE_NOTVALID)
+!Global("ANMyrainMinsc","GLOBAL",3)
 THEN
 RESPONSE #20
-Weather (RAIN)
-SetGlobal ("ANMyrain", "GLOBAL", 1)
-RealSetGlobalTimer("Myrain","GLOBAL",20)
+SetGlobal("ANMyrainJaheira","GLOBAL",1)
+RealSetGlobalTimer("Myrain","GLOBAL",40)
 END
 
 IF
 RealGlobalTimerExpired("Myrain","GLOBAL")
-Global ("ANMyrain", "GLOBAL",1)
+Global("ANMyrainJaheira", "GLOBAL",1)
 See(Player1)
-!InParty("Minsc")
 InParty(Myself)
-!Dead("Jaheira")
 !StateCheck(Myself,CD_STATE_NOTVALID)
 !StateCheck(Player1,CD_STATE_NOTVALID)
 AreaType(OUTDOOR)
 AreaType(CITY)
+OR(2)
+!InParty("Minsc")
+StateCheck(Myself,CD_STATE_NOTVALID)
+!Global("ANMyrainMinsc","GLOBAL",3)
 THEN
 RESPONSE #100
-SetGlobal ("ANMyrain", "GLOBAL", 2)
-END
-
-IF
-Global ("ANMyrain", "GLOBAL",2)
-See(Player1)
-InParty(Myself)
-!Dead("Jaheira")
-CombatCounter(0)
-AreaType(OUTDOOR)
-AreaType(CITY)
-THEN
-RESPONSE #100
-StartDialog("JAHEIRAJ",Player1)
-Weather (RAIN)
+SetGlobal("ANMyrainJaheira","GLOBAL",2)
+StartRainNow()
+StartDialogNoSet(Player1)
 END

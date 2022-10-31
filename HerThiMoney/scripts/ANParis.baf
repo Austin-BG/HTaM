@@ -22,18 +22,11 @@ END
 IF 
 Global("ANParisGraveTalk","GLOBAL",2)
 AreaCheck("AR0800")
+Global("ANsharltGraveTalk","AR0800",0)
 See(Player1)
 
 THEN
   RESPONSE #100
-StartDialogNoSet(Player1)
-END
-
-IF 
-Global("ANParisGraveFinalTalk","AR0800",1)
-THEN
-  RESPONSE #100
-SetGlobal("ANParisGraveFinalTalk","AR0800",2)  
 StartDialogNoSet(Player1)
 END
 

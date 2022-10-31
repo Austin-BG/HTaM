@@ -1,5 +1,5 @@
 IF 
-Global("AranJob","GLOBAL",2)
+GlobalGT("AranJob","GLOBAL",0)
 Global("AranLove","GLOBAL",0)
 Global("AranLovePrologue","GLOBAL",0) 
 Global("RenalJob","GLOBAL",4)
@@ -18,7 +18,7 @@ Global("BeshabaCurse","GLOBAL",15) // Beshaba quest finished
 
 THEN
   RESPONSE #100
-SetGlobal("AranLovePrologue","GLOBAL",1) 
+SetGlobal("AranLovePrologue","GLOBAL",2) 
 SetGlobalTimer("ANAranLetter0Timer","GLOBAL",ONE_DAY)
 END
 

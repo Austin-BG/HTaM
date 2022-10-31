@@ -14,13 +14,10 @@ IF
 	Global("Chapter","GLOBAL",%bg2_chapter_3%)
 THEN
        RESPONSE #100
-		ActionOverride(Player1,SetDialog("PLAYER1"))
-		CreateCreatureObject("bdoffscr",Player1,0,0,0)  
-		ApplySpellRES("bdoffscr","bdoffscr")  
-		SmallWait(1)
-		CreateCreatureObject("ANmess","bdoffscr",0,0,0) 
-		SetGlobal("ANQuayleTroll","GLOBAL",1)
-		SetGlobal("ANTrollEscape","GLOBAL",1)		
+	   	ClearAllActions()	
+		CreateCreatureObject("ANmess",Player1,0,0,0) 
+		SetGlobal("ANQuayleTroll","GLOBAL",1)		
+		SetGlobal("ANTrollEscape","GLOBAL",1)
 		ActionOverride("ANmess",StartDialogNoSet(Player1))
 END
 

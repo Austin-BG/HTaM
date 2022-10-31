@@ -13,15 +13,11 @@ THEN
   RESPONSE #100
         SetGlobal("ANleenaGuild","GLOBAL",2)
 		StartCutSceneMode()
-		CreateCreatureObject("bdoffscr",Player1,0,0,0)  
-		ApplySpellRES("bdoffscr","bdoffscr")  // No such index
-		SmallWait(5)
-		CreateCreatureObject("ANtony1","bdoffscr",0,0,0)  
 		Wait(1)
 		DisplayStringHead(Player1,@84)
 		Wait(3)
-		ActionOverride("ANleena1",DestroySelf())
-		ActionOverride("ANtony1",DestroySelf())
+		ActionOverride("ANleena",DestroySelf())		
+        SmallWait(5)
 		FadeFromColor([70.0],0)
 		ActionOverride(Player1,LeaveAreaLUA("AR0307","",[4480.2026],1))
         ActionOverride(Player2,LeaveAreaLUA("AR0307","",[4482.2027],1))
@@ -35,6 +31,7 @@ END
 
 IF 
 Dead("ANleena")
+!Global("ANleenaDead","GLOBAL",1)  
 THEN
   RESPONSE #100
 SetGlobal("AranLove","GLOBAL",27) 
