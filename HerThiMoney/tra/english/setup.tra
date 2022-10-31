@@ -730,7 +730,7 @@ According to Renal, Gie often dates a girl named Lania. She may know something a
 
 @1114 = ~Beshaba's Curse
 
-We found Lania and learned the whole truth. The story is over. ~
+We found Lania and asked her about Gie. It remains to tell everything to Renal or directly to Aran.~
 
 @1115 = ~Difficult loan
 
@@ -739,6 +739,14 @@ We managed to help Miranda by miraculously persuading their bank director to app
 @1116 = ~Difficult loan
 
 We were unable to help Miranda get a loan from the bank. She will have to look for other ways to get money.~
+
+@1117 = ~Nothing comes without a price
+
+The debts are returned and the Jackal will transfer them to the bank. We refused to help the Jackal any further, enough of what has already been done.~
+
+@1118 = ~Beshaba's Curse
+
+We removed Beshaba's curse and learned the whole truth. The story is over.~
 
 @10000000 = ~~
 @10000001 = ~Statue: %z_strref%~

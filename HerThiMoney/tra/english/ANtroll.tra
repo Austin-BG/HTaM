@@ -289,3 +289,6 @@
 @247 = ~<CHARNAME>, I can definitely say this troll can't speak. (I've never seen anything stupider in my life. Maybe I should join the troll? <CHARNAME> is obviously dumber than him.)~
 @248 = ~This troll is unable or unwilling to answer you, <CHARNAME>.~
 @249 = ~*You look around the cage and around it*~
+
+// NEW (v.4.3)
+@250 = ~*Quayle leaves as you stand by the cage, thinking*~

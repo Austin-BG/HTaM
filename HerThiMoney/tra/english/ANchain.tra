@@ -241,3 +241,13 @@
 @213 = ~Yes. I have news on that Fayaz case, but not very good news. ~
 @214 = ~Fayaz died drinking in the tavern. So the money could not be returned. Sorry.~
 @215 = ~Wow! Honestly, I didn't expect you to succeed, there were too few chances. So let's forget about it. Thanks for trying to help. ~
+
+// NEW (v.4.3)
+@216 = ~Don't count on me. Money has been collected from debtors, but I don’t want to participate in this anymore. Figure it out yourself.~
+@217 = ~*Shadow crosses Jackal's face* You're missing out on a big deal, you know. And you lose the opportunity to attract great employers.~
+@218 = ~I don't care. I've had enough.~
+@219 = ~Sorry. But it's up to you.~
+@220 = ~*You don't care much about the "charm" of a half-orc* Well, whatever you say, Jackal. Is she a good fighter?~
+@221 = ~*You find the Jackal's sister interesting... for a half-orc, of course.* Well, whatever you say, Jackal. Is she a good fighter?~
+@222 = ~*You line up the half-orc troop given to you* Hi, I'm <CHARNAME>. Okay, guys, let's move forward, since this is the case. Follow me - and listen to my commands!~
+@223 = ~*You line up the half-orc troop given to you* Heya, brothers! Come on, let's kick the asses of those presumptuous guys. Keep up!~
