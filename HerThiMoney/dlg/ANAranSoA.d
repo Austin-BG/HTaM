@@ -203,14 +203,14 @@ IF ~~ BEGIN ANAranPrologueTalk7_1
   SAY @460
 IF ~~ THEN REPLY @461 GOTO ANAranPrologueTalk8_1
 IF ~~ THEN REPLY @462 GOTO ANAranPrologueTalk8_2 
-IF ~~ THEN REPLY @463 GOTO ANAranPrologueTalk8_2 
+IF ~~ THEN REPLY @463 GOTO ANAranPrologueTalk8_3 
 END
 
 IF ~~ BEGIN ANAranPrologueTalk7_2
   SAY @459
 IF ~~ THEN REPLY @461 GOTO ANAranPrologueTalk8_1
 IF ~~ THEN REPLY @462 GOTO ANAranPrologueTalk8_2 
-IF ~~ THEN REPLY @463 GOTO ANAranPrologueTalk8_2 
+IF ~~ THEN REPLY @463 GOTO ANAranPrologueTalk8_3 
 END
 
 IF ~~ BEGIN ANAranPrologueTalk8_1
@@ -1061,18 +1061,33 @@ IF ~~ THEN REPLY @28 EXTERN ARAN ANAranTalk3_2
 CHAIN
 IF ~Global("AranLove","GLOBAL",10)~ THEN ARAN ANAranTalk4
 @31 DO ~SetGlobal("AranLove","GLOBAL",11)~
-== PLAYER1 @32
-== ARAN @33
+END
+IF ~~ THEN REPLY @32 EXTERN ARAN ANAranTalk4-1
+
+CHAIN ARAN ANAranTalk4-1
+@33
 =@34
-== PLAYER1 @35
-== ARAN @36
-== PLAYER1 @37
-== ARAN @38
-== PLAYER1 @39
-== ARAN @40
+END
+IF ~~ THEN REPLY @35 EXTERN ARAN ANAranTalk4-2
+
+CHAIN ARAN ANAranTalk4-2
+@36
+END
+IF ~~ THEN REPLY @37 EXTERN ARAN ANAranTalk4-3
+
+CHAIN ARAN ANAranTalk4-3 
+@38
+END
+IF ~~ THEN REPLY @39 EXTERN ARAN ANAranTalk4-4
+
+CHAIN ARAN ANAranTalk4-4
+@40
 =@41
-== PLAYER1 @42
-== ARAN @43
+END
+IF ~~ THEN REPLY @42 EXTERN ARAN ANAranTalk4-5
+
+CHAIN ARAN ANAranTalk4-5
+@43
 =@44
 =@45
 =@46
@@ -1147,7 +1162,7 @@ IF ~~ THEN REPLY @214 EXTERN ARAN ANAranTalk13No
 
 CHAIN
 IF WEIGHT #-30 ~PartyHasItem("MISCBP") Global("AranRomanceActive","GLOBAL",2) OR(2) Global("ANAranBodhiHeart","GLOBAL",0) Global("ANAranBodhiHeart","GLOBAL",1)~ THEN ARAN ANAranBodhiHeartTalk
-@288 DO ~SetGlobal("ANAranBodhiHeart","GLOBAL",2)~
+@288 DO ~SetGlobal("ANAranBodhiHeart","GLOBAL",2) TakePartyItem("MISCBP")~
 == PLAYER1 @289
 END
 IF ~~ THEN REPLY @290 EXTERN ARAN ANAranBodhiHeartTalk1
@@ -1949,7 +1964,7 @@ CHAIN ANleena ANleena1Talk1_2-3
 == IF_FILE_EXISTS 7XBRANJ IF ~InParty("7XBRAN") InMyArea("7XBRAN") !StateCheck("7XBRAN",CD_STATE_NOTVALID)~ THEN @684
 == IF_FILE_EXISTS 7XTIAXJ IF ~InParty("7XTIAX") InMyArea("7XTIAX") !StateCheck("7XTIAX",CD_STATE_NOTVALID)~ THEN @685
 END
-IF ~~ THEN REPLY @142 EXTERN ANleena ANleena1Talk1_2-4
+IF ~~ THEN REPLY @144 EXTERN ANleena ANleena1Talk1_2-4
 
 CHAIN ANleena ANleena1Talk1_2-4
 @145
@@ -1978,12 +1993,10 @@ IF ~Global("LeenaGuildExists","AR0307",1)~ THEN ANleena ANleena1TalkGuild
 =@703
 == KELDORJ IF ~InParty("Keldorn") InMyArea("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID)~ THEN @702
 END
-IF ~!StateCheck("Keldorn",CD_STATE_NOTVALID) !StateCheck("Mazzy",CD_STATE_NOTVALID) !StateCheck("O#Coran",CD_STATE_NOTVALID) !StateCheck("7XCORAN",CD_STATE_NOTVALID) !StateCheck("7XGAR",CD_STATE_NOTVALID) !StateCheck("Aerie",CD_STATE_NOTVALID) !StateCheck("Jaheira",CD_STATE_NOTVALID) !StateCheck("Anomen",CD_STATE_NOTVALID) !StateCheck("Cernd",CD_STATE_NOTVALID) !StateCheck("Neera",CD_STATE_NOTVALID) OR(3) !InParty("Viconia") !InMyArea("Viconia") StateCheck("Viconia",CD_STATE_NOTVALID)~ THEN REPLY @696 EXIT
-IF ~!StateCheck("Keldorn",CD_STATE_NOTVALID) !StateCheck("Mazzy",CD_STATE_NOTVALID) !StateCheck("O#Coran",CD_STATE_NOTVALID) !StateCheck("7XCORAN",CD_STATE_NOTVALID) !StateCheck("7XGAR",CD_STATE_NOTVALID) !StateCheck("Aerie",CD_STATE_NOTVALID) !StateCheck("Jaheira",CD_STATE_NOTVALID) !StateCheck("Anomen",CD_STATE_NOTVALID) !StateCheck("Cernd",CD_STATE_NOTVALID) !StateCheck("Neera",CD_STATE_NOTVALID) InParty("Viconia") InMyArea("Viconia") !StateCheck("Viconia",CD_STATE_NOTVALID)~ THEN REPLY @696 EXTERN VICONIJ ANleena1TalkGuild1
-IF ~OR(5) InParty("Aerie") InParty("Jaheira") InParty("Anomen") InParty("Cernd") InParty("Neera") OR(3) !InParty("Viconia") !InMyArea("Viconia") StateCheck("Viconia",CD_STATE_NOTVALID)~ THEN REPLY @696 EXIT
-IF ~OR(2) InParty("Mazzy") InParty("Keldorn") OR(3) !InParty("Viconia") !InMyArea("Viconia") StateCheck("Viconia",CD_STATE_NOTVALID)~ THEN REPLY @705 EXIT
-IF ~OR(5) InParty("Aerie") InParty("Jaheira") InParty("Anomen") InParty("Cernd") InParty("Neera") InParty("Viconia") InMyArea("Viconia") !StateCheck("Viconia",CD_STATE_NOTVALID)~ THEN REPLY @696 EXTERN VICONIJ ANleena1TalkGuild1
-IF ~OR(2) InParty("Mazzy") InParty("Keldorn") InParty("Viconia") InMyArea("Viconia") !StateCheck("Viconia",CD_STATE_NOTVALID)~ THEN REPLY @705 EXTERN VICONIJ  ANleena1TalkGuild1
+IF ~OR(3) !InParty("Viconia") !InMyArea("Viconia") StateCheck("Viconia",CD_STATE_NOTVALID)~ THEN REPLY @696 EXIT
+IF ~OR(2) InParty("Mazzy") InParty("Keldorn") OR(2) !StateCheck("Keldorn",CD_STATE_NOTVALID) !StateCheck("Mazzy",CD_STATE_NOTVALID) OR(3) !InParty("Viconia") !InMyArea("Viconia") StateCheck("Viconia",CD_STATE_NOTVALID)~ THEN REPLY @705 EXIT
+IF ~InParty("Viconia") InMyArea("Viconia") !StateCheck("Viconia",CD_STATE_NOTVALID)~ THEN REPLY @696 EXTERN VICONIJ ANleena1TalkGuild1
+IF ~OR(2) InParty("Mazzy") InParty("Keldorn") OR(2) !StateCheck("Keldorn",CD_STATE_NOTVALID) !StateCheck("Mazzy",CD_STATE_NOTVALID) InParty("Viconia") InMyArea("Viconia") !StateCheck("Viconia",CD_STATE_NOTVALID)~ THEN REPLY @705 EXTERN VICONIJ  ANleena1TalkGuild1
 
 APPEND VICONIJ 
 IF ~~ BEGIN ANleena1TalkGuild1
@@ -2225,7 +2238,7 @@ END
 
 BEGIN ANJovi
 
-IF ~Global("ANAranLampRenal","GLOBAL",2) OR(2) Global("ANAranLamp","GLOBAL",6) Global("ANAranLamp","GLOBAL",7) !Global("ANAzoraStoneEscape","GLOBAL",0)~ BEGIN ANLampBothStoneJoviNoAzora
+IF ~Global("ANAranLampRenal","GLOBAL",2) OR(2) Global("ANAranLamp","GLOBAL",6) Global("ANAranLamp","GLOBAL",7) !Global("ANAzoraStoneEscape","GLOBAL",0)~ BEGIN ANLampBothStoneJoviAzoraEscape
   SAY @583
 =@584  
 IF ~~ THEN REPLY @586 GOTO ANLampBothStoneJovi1
@@ -2515,7 +2528,7 @@ IF ~!Global("TonySpawnAlternate","GLOBAL",0)~ THEN DO ~TakePartyItem("ANLamp") A
 IF ~Global("TonySpawnAlternate","GLOBAL",0)~ THEN DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) SetGlobal("ANAranLamp","GLOBAL",10) GiveGoldForce(3000) AddexperienceParty(8000)~ GOTO ANaranLampFinishTalk
 END
 
-IF WEIGHT #-22 ~Global("AranLampFinish","AR0307",1) Global("ANjoviRevive","GLOBAL",3) Dead("ANAzora") PartyHasItem("ANLamp") !Global("ANAranLamp","GLOBAL",10)~ BEGIN ANAranLampEndJoviAzoraStone
+IF WEIGHT #-22 ~Global("AranLampFinish","AR0307",1) Dead("ANAzora") PartyHasItem("ANLamp") !Global("ANAranLamp","GLOBAL",10)~ BEGIN ANAranLampEndjoviRevive
   SAY @637
 =@638
 =@595 
@@ -2534,14 +2547,15 @@ END
 END
 
 CHAIN
-IF WEIGHT #-22 ~Global("AranLampFinish","AR0307",1) Global("ANAranLamp","GLOBAL",8) !Dead("ANAzora") Global("ANjoviRevive","GLOBAL",0) PartyHasItem("ANLamp") !Global("ANAranLamp","GLOBAL",10)~ THEN ARAN ANAranLampEndJoviAzoraStone
-@637
+IF WEIGHT #-22 ~Global("AranLampFinish","AR0307",1) Global("ANAranLamp","GLOBAL",8) !Dead("ANAzora") PartyHasItem("ANLamp") !Global("ANAranLamp","GLOBAL",10)~ THEN ARAN ANAranLampJoviStoneAzLive
+@637 DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) SetGlobal("ANAranLamp","GLOBAL",10) GiveGoldForce(3000) AddexperienceParty(8000)~
 =@639
 == ARAN IF ~Global("ANjoviNoStone","GLOBAL",0)~ THEN @640
-=@595 DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) SetGlobal("ANAranLamp","GLOBAL",10) GiveGoldForce(3000) AddexperienceParty(8000)~
+=@595
 END
 IF ~Gender(Player1,MALE)~ THEN EXIT
 IF ~Gender(Player1,FEMALE)~ THEN EXTERN ARAN ANaranLampFinishTalk
+
 
 CHAIN
 IF ~Global("AranLampFinish","AR0307",1) Global("ANAranLamp","GLOBAL",10)~ THEN ARAN ANaranLampFinishTalk1

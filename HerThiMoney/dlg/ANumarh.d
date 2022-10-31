@@ -190,7 +190,7 @@ END
 
 IF ~Global("ANChikenrangerdruid","AR1100",5)~ THEN BEGIN ANchiken2talk3.3.1_END
   SAY @78
-IF ~~ THEN DO ~SetGlobal("ANChikenrangerdruid","AR1100",6) SetGlobal("KnowsAboutGem","GLOBAL",2) EraseJournalEntry(9918) GiveItemCreate("MISC6Z",Player1,0,0,0) ActionOverride("gemfar01",EscapeArea()) ActionOverride("gemfar02",EscapeArea()) ActionOverride("gemch02",MoveToPoint([3062.1915]))~ SOLVED_JOURNAL #19286 EXIT
+IF ~~ THEN DO ~SetGlobal("ANChikenrangerdruid","AR1100",6) SetGlobal("KnowsAboutGem","GLOBAL",2) EraseJournalEntry(9918) GiveItemCreate("MISC6Z",Player1,0,0,0) ActionOverride("gemfar01",EscapeArea()) ActionOverride("gemfar02",EscapeArea()) ActionOverride("gemch02",EscapeArea())~ SOLVED_JOURNAL #19286 EXIT
 END
 
 APPEND VALYGARJ
@@ -216,7 +216,7 @@ END
 
 IF ~~ THEN BEGIN ANchiken2cernd1
   SAY @28 
-IF ~~ THEN DO ~SetGlobal("KnowsAboutGem","GLOBAL",2) EraseJournalEntry(9918) GiveItemCreate("MISC6Z",Player1,0,0,0) ActionOverride("gemfar01",EscapeArea()) ActionOverride("gemfar02",EscapeArea())~ SOLVED_JOURNAL #19286 EXIT 
+IF ~~ THEN DO ~SetGlobal("KnowsAboutGem","GLOBAL",2) EraseJournalEntry(9918) GiveItemCreate("MISC6Z",Player1,0,0,0) ActionOverride("gemfar01",EscapeArea()) ActionOverride("gemfar02",EscapeArea()) ActionOverride("gemch02",EscapeArea())~ SOLVED_JOURNAL #19286 EXIT 
 END
 
 END
@@ -232,7 +232,7 @@ IF ~~ THEN BEGIN ANchiken2minsc1
   SAY @34
  = @35 
  = @36 
-IF ~~ THEN DO ~SetGlobal("KnowsAboutGem","GLOBAL",2) EraseJournalEntry(9918) GiveItemCreate("MISC6Z",Player1,0,0,0) ActionOverride("gemfar01",EscapeArea()) ActionOverride("gemfar02",EscapeArea())~ SOLVED_JOURNAL #19286  EXIT 
+IF ~~ THEN DO ~SetGlobal("KnowsAboutGem","GLOBAL",2) EraseJournalEntry(9918) GiveItemCreate("MISC6Z",Player1,0,0,0) ActionOverride("gemfar01",EscapeArea()) ActionOverride("gemfar02",EscapeArea()) ActionOverride("gemch02",EscapeArea())~ SOLVED_JOURNAL #19286  EXIT 
 END
 
 END

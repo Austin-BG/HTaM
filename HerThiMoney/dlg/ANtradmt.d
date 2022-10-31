@@ -17,32 +17,32 @@ INTERJECT_COPY_TRANS3 TRCUT07 4 ANFountainALL4
 END
 
 CHAIN  
-IF ~Global("AN_Statues_Player1_Talk","GLOBAL",1)~ THEN PLAYER1 AN_Statues_Player1 
+IF WEIGHT #-99 ~AreaCheck("AR2000") Global("AN_Statues_Player1_Talk","GLOBAL",1)~ THEN PLAYER1 AN_Statues_Player1 
 @12 DO ~SetGlobal("AN_Statues_Player1_Talk","GLOBAL",2)~
 == JAHEIRAJ IF ~InParty("Jaheira") InMyArea("Jaheira") !Dead("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN @13
 EXIT
 
 CHAIN  
-IF ~Global("AN_Statues_Viconia_Talk","GLOBAL",1) Global("AN_INPARTYSTATUE_VICONIA","GLOBAL",1)~ THEN VICONIJ AN_Statues_Viconia 
+IF WEIGHT #-99 ~AreaCheck("AR2000") Global("AN_Statues_Viconia_Talk","GLOBAL",1) Global("AN_INPARTYSTATUE_VICONIA","GLOBAL",1)~ THEN VICONIJ AN_Statues_Viconia 
 @14 DO ~SetGlobal("AN_Statues_Viconia_Talk","GLOBAL",2)~
 EXIT
 
 CHAIN  
-IF ~Global("AN_Statues_Cernd_Talk","GLOBAL",1) Global("AN_INPARTYSTATUE_CERND","GLOBAL",1)~ THEN CERNDJ AN_Statues_Cernd
+IF WEIGHT #-99 ~AreaCheck("AR2000") Global("AN_Statues_Cernd_Talk","GLOBAL",1) Global("AN_INPARTYSTATUE_CERND","GLOBAL",1)~ THEN CERNDJ AN_Statues_Cernd
 @15 DO ~SetGlobal("AN_Statues_Cernd_Talk","GLOBAL",2)~
 EXIT
 
 CHAIN  
-IF ~Global("AN_Statues_Edwin_Talk","GLOBAL",1) Global("AN_INPARTYSTATUE_EDWIN","GLOBAL",1)~ THEN EDWINJ AN_Statues_Edwin
+IF WEIGHT #-99 ~AreaCheck("AR2000") Global("AN_Statues_Edwin_Talk","GLOBAL",1) Global("AN_INPARTYSTATUE_EDWIN","GLOBAL",1)~ THEN EDWINJ AN_Statues_Edwin
 @16 DO ~SetGlobal("AN_Statues_Edwin_Talk","GLOBAL",2)~
 EXIT
 
 CHAIN  
-IF ~Global("AN_Statues_Jan_Talk","GLOBAL",1) Global("AN_INPARTYSTATUE_JAN","GLOBAL",1)~ THEN JANJ AN_Statues_Jan
+IF WEIGHT #-99 ~AreaCheck("AR2000") Global("AN_Statues_Jan_Talk","GLOBAL",1) Global("AN_INPARTYSTATUE_JAN","GLOBAL",1)~ THEN JANJ AN_Statues_Jan
 @17 DO ~SetGlobal("AN_Statues_Jan_Talk","GLOBAL",2)~
 EXIT
 
 CHAIN  
-IF ~Global("AN_Statues_Garrick_Talk","GLOBAL",1) Global("AN_INPARTYSTATUE_7XGAR","GLOBAL",1)~ THEN IF_FILE_EXISTS 7XGarJ AN_Statues_Garrick
+IF WEIGHT #-99 ~AreaCheck("AR2000") Global("AN_Statues_Garrick_Talk","GLOBAL",1) Global("AN_INPARTYSTATUE_7XGAR","GLOBAL",1)~ THEN IF_FILE_EXISTS 7XGarJ AN_Statues_Garrick
 @20 DO ~SetGlobal("AN_Statues_Garrick_Talk","GLOBAL",2)~
 EXIT

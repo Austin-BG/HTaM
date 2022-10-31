@@ -327,12 +327,17 @@ END
 
 IF ~~ BEGIN ANbeshabaGieRenal_2
   SAY @89
-IF ~~ THEN EXTERN PLAYER1 ANbeshabaGieRenal_4
+IF ~~ THEN REPLY @92 GOTO ANbeshabaGieRenal_2_1
 END
 
 IF ~~ BEGIN ANbeshabaGieRenal_3
   SAY @91
-IF ~~ THEN EXTERN PLAYER1 ANbeshabaGieRenal_4
+IF ~~ THEN REPLY @92 GOTO ANbeshabaGieRenal_2_1
+END
+
+IF ~~ BEGIN ANbeshabaGieRenal_2_1
+  SAY @93
+IF ~~ THEN REPLY @94 EXTERN ANgie1 ANbeshabaGieRenal_2_2
 END
 
 END
@@ -344,15 +349,14 @@ IF ~Global("BeshabaCurse","GLOBAL",6)~ BEGIN ANbeshabaGieRenal
 IF ~~ THEN EXTERN RENAL ANbeshabaGieRenal_1
 END
 
-CHAIN PLAYER1 ANbeshabaGieRenal_4
-@92
-== RENAL @93
-== PLAYER1 @94
-== ANgie1 @95
-END
+
+IF ~~ BEGIN ANbeshabaGieRenal_2_2
+SAY @95
 IF ~~ THEN REPLY @96 EXTERN RENAL ANbeshabaGieRenal_5
 IF ~~ THEN REPLY @97 EXTERN RENAL ANbeshabaGieRenal_5
 IF ~~ THEN REPLY @98 EXTERN RENAL ANbeshabaGieRenal_5
+END
+
 
 CHAIN RENAL ANbeshabaGieRenal_5
 @99
@@ -444,7 +448,7 @@ IF ~OR(3) Race(Player1,HUMAN) Race(Player1,ELF) Race(Player1,HALF_ELF) OR(2) Cla
 END
 
 IF ~~ BEGIN ANBeshabaAranTalk7Romance
-  SAY @135
+  SAY @136
 IF ~~ THEN REPLY @140 GOTO ANBeshabaAranTalk7Romance1
 IF ~~ THEN REPLY @137 GOTO ANBeshabaAranTalk7
 IF ~~ THEN REPLY @138 GOTO ANBeshabaAranTalk7
@@ -550,8 +554,8 @@ END
 IF ~~ BEGIN ANBeshabaLaniaTalk6
   SAY @174
 =@175
-IF ~~ THEN DO ~SetGlobal("BeshabaCurse","GLOBAL",11) EscapeArea()~ REPLY @176 GOTO ANBeshabaLaniaTalk7
-IF ~~ THEN REPLY @178 GOTO ANBeshabaLaniaTalk8
+IF ~~ THEN DO ~SetGlobal("BeshabaCurse","GLOBAL",11) AddJournalEntry(@1114,QUEST) EscapeArea()~ REPLY @176 GOTO ANBeshabaLaniaTalk7
+IF ~~ THEN DO ~AddJournalEntry(@1114,QUEST)~ REPLY @178 GOTO ANBeshabaLaniaTalk8
 END
 
 IF ~~ BEGIN ANBeshabaLaniaTalk7
@@ -578,11 +582,13 @@ END
 APPEND RENAL
 IF WEIGHT #-99 ~OR(2) Global("BeshabaCurse","GLOBAL",11) Global("BeshabaCurse","GLOBAL",15) Global("BeshabaCurseRenalFinal","AR0306",0)~ BEGIN ANBeshabaRenalFinalTalk1
   SAY @184
+=@204
 IF ~~ THEN DO ~SetGlobal("BeshabaCurseRenalFinal","AR0306",1)~ EXIT
 END
 
 IF WEIGHT #-99 ~OR(2) Global("BeshabaCurse","GLOBAL",12) Global("BeshabaCurse","GLOBAL",15) Global("BeshabaCurseRenalFinal","AR0306",0)~ BEGIN ANBeshabaRenalFinalTalk2
   SAY @185
+=@204  
 IF ~~ THEN DO ~SetGlobal("BeshabaCurseRenalFinal","AR0306",1)~ EXIT
 END
 END
@@ -590,7 +596,7 @@ END
 APPEND ARAN
 IF WEIGHT #-99 ~OR(2) Global("BeshabaCurse","GLOBAL",11) Global("BeshabaCurse","GLOBAL",12)~ BEGIN ANBeshabaAranFinalTalk
   SAY @186
-IF ~~ THEN DO ~SetGlobal("BeshabaCurse","GLOBAL",15) AddJournalEntry(@1114,QUEST_DONE) GiveGoldForce(3000) AddexperienceParty(2000)~ GOTO ANBeshabaAranFinalTalk1
+IF ~~ THEN DO ~SetGlobal("BeshabaCurse","GLOBAL",15) AddJournalEntry(@1118,QUEST_DONE) GiveGoldForce(3000) AddexperienceParty(2000)~ GOTO ANBeshabaAranFinalTalk1
 END
 
 IF ~~ BEGIN ANBeshabaAranFinalTalk1

@@ -301,31 +301,31 @@ EXIT
 
 
 // Бантеры при дожде
-APPEND_EARLY MINSCJ
+APPEND MINSCJ
 
-IF ~Global ("ANMyrain", "GLOBAL", 2) !Global("ShadowWork","GLOBAL",0)~ THEN BEGIN minscrain1
+IF WEIGHT #-70 ~Global("ANMyrainMinsc","GLOBAL",2)~ THEN BEGIN minscrain1
 SAY @146 
-IF ~OR(3)!InParty("Korgan")Dead("Korgan")StateCheck("Korgan",STATE_SLEEPING)~ THEN DO ~StartRainNow() SetGlobal("ANMyrain","GLOBAL",3)~ EXIT
-IF ~InParty("Korgan")!Dead("Korgan")!StateCheck("Korgan",STATE_SLEEPING)~ THEN DO ~StartRainNow() SetGlobal("ANMyrain","GLOBAL",3)~ EXTERN ~KORGANJ~ minsckorganrain1 
-IF ~!InParty("Korgan")InParty("Jaheira")!Dead("Jaheira")!StateCheck("Jaheira",STATE_SLEEPING)~ THEN DO ~StartRainNow() SetGlobal("ANMyrain","GLOBAL",3)~ EXTERN ~JAHEIRAJ~ minscjaheirarain 
+IF ~OR(2)!InParty("Korgan")StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN DO ~SetGlobal("ANMyrainMinsc","GLOBAL",3)~ EXIT
+IF ~InParty("Korgan") !StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN DO ~SetGlobal("ANMyrainMinsc","GLOBAL",3)~ EXTERN ~KORGANJ~ minsckorganrain1 
+IF ~!InParty("Korgan")InParty("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN DO ~SetGlobal("ANMyrainMinsc","GLOBAL",3)~ EXTERN ~JAHEIRAJ~ minscjaheirarain 
 END
 
 IF ~~ THEN BEGIN minsckorganrain2 
 SAY @148
-IF ~OR(3)!InParty("Jaheira")Dead("Jaheira")StateCheck("Jaheira",STATE_SLEEPING)~ THEN EXIT
-IF ~InParty("Jaheira")!Dead("Jaheira")!StateCheck("Jaheira",STATE_SLEEPING)~ THEN EXTERN ~JAHEIRAJ~ minsckorganjaheirarain3 
+IF ~OR(2)!InParty("Jaheira") StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN EXIT
+IF ~InParty("Jaheira")!StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN EXTERN ~JAHEIRAJ~ minsckorganjaheirarain3 
 END
 
 END
 
-APPEND_EARLY KORGANJ
+APPEND KORGANJ
 IF ~~ THEN BEGIN minsckorganrain1
   SAY @147
 IF ~~ THEN EXTERN ~MINSCJ~ minsckorganrain2 
 END
 END
 
-APPEND_EARLY JAHEIRAJ
+APPEND JAHEIRAJ
 IF ~~ THEN BEGIN minsckorganjaheirarain3 
 SAY @149
 = @150
@@ -337,9 +337,9 @@ SAY @150
 IF ~~ THEN EXIT
 END
 
-IF ~Global("ANMyrain", "GLOBAL", 2) !InParty("Minsc") !Global("ShadowWork","GLOBAL",0)~ THEN BEGIN jaheirarain
+IF WEIGHT #-50 ~Global("ANMyrainJaheira","GLOBAL",2)~ THEN BEGIN jaheirarain
 SAY @150
-IF ~~ THEN DO ~SetGlobal ("ANMyrain", "GLOBAL", 3)~ EXIT
+IF ~~ THEN DO ~SetGlobal("ANMyrainJaheira","GLOBAL",3)~ EXIT
 END
 END
 

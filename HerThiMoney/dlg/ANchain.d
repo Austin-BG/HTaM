@@ -380,11 +380,27 @@ CHAIN ANshakal ANShakalAfterTalk_1
 =@96
 END
 IF ~~ THEN REPLY @97 EXTERN ANshakal ANShakalAfterTalk_2
+IF ~~ THEN REPLY @216 EXTERN ANshakal ANShakalAfterTalk_2End
+
+APPEND ANshakal
+IF ~~ THEN BEGIN ANShakalAfterTalk_2End
+SAY @217
+IF ~~ THEN DO ~SetGlobal("ANshakal","GLOBAL",99) AddJournalEntry(@1117,QUEST_DONE) ActionOverride("ANcaytig",EscapeArea()) ActionOverride("ANorc1",EscapeArea()) ActionOverride("ANorc2",EscapeArea()) EscapeArea()~ REPLY @218 GOTO ANShakalAfterTalk_2End1
+IF ~~ THEN REPLY @97 GOTO ANShakalAfterTalk_2
+END
+
+IF ~~ THEN BEGIN ANShakalAfterTalk_2End1
+SAY @219
+IF ~~ THEN EXIT
+END
+END
 
 CHAIN ANshakal ANShakalAfterTalk_2
 @98
 END
 IF ~~ THEN REPLY @99 EXTERN ANshakal ANShakalAfterTalk_3
+IF ~~ THEN REPLY @220 EXTERN ANshakal ANShakalAfterTalk_3
+IF ~OR(2) RACE(Player1,HALFORC) RACE(Player1,ORC)~ THEN REPLY @221 EXTERN ANshakal ANShakalAfterTalk_3
 
 CHAIN ANshakal ANShakalAfterTalk_3
 @100
@@ -397,7 +413,9 @@ CHAIN ANshakal ANShakalAfterTalk1
 @104
 =@106
 END
-++ @107 EXTERN ANcaytig ANShakalAfterTalk1_1
+IF ~~ THEN REPLY @107 EXTERN ANcaytig ANShakalAfterTalk1_1
+IF ~~ THEN DO ~ActionOverride("ANcaytig",EscapeArea())~ REPLY @222 EXTERN ANorc1 ANShakalAfterTalk1_2
+IF ~OR(2) RACE(Player1,HALFORC) RACE(Player1,ORC)~ THEN DO ~ActionOverride("ANcaytig",EscapeArea())~ REPLY @223 EXTERN ANorc1 ANShakalAfterTalk1_2
 
 CHAIN ANcaytig ANShakalAfterTalk1_1
 @108 DO ~EscapeArea()~
@@ -414,6 +432,8 @@ CHAIN ANshakal ANShakalAfterTalk2
 @105
 =@106
 END
+++ @222 EXTERN ANcaytig ANShakalAfterTalk2_1
+++ @223 EXTERN ANcaytig ANShakalAfterTalk2_1
 ++ @107 EXTERN ANcaytig ANShakalAfterTalk2_1
 
 CHAIN ANcaytig ANShakalAfterTalk2_1

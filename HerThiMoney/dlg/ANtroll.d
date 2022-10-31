@@ -252,7 +252,11 @@ CHAIN QUAYLE ANTrollCallTalk_3_2
 == QUAYLE @66 DO ~AddJournalEntry(@1070,QUEST) SetGlobal("ANTroll","GLOBAL",1)~
 == ANAERIE IF ~!InParty("Aerie")~ THEN @67
 END
-IF ~~ THEN REPLY @64 EXIT
+IF ~~ THEN REPLY @64 EXTERN QUAYLE ANTrollCallTalkEND
+
+CHAIN QUAYLE ANTrollCallTalkEND
+@250
+EXIT
 
 EXTEND_TOP THUMB 0 
 IF ~Global("ANTroll","GLOBAL",1) Global("ANTrollThumb","LOCALS",0)~ THEN DO ~SetGlobal("ANTrollLorio","GLOBAL",1) SetGlobal("ANTrollThumb","LOCALS",1)~ REPLY @72 GOTO ANtrollThumbTalk
