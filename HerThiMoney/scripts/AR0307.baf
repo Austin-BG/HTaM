@@ -68,6 +68,26 @@ ActionOverride(Player1,SetDialog("PLAYER1"))
 ActionOverride("Aran",StartDialogNoSet("Player1"))
 END
 
+IF 
+Global("AranLovePrologue","GLOBAL",5)
+InActiveArea("Aran")
+!NumInPartyGT(1)
+
+THEN
+  RESPONSE #100
+SetGlobal("AranLovePrologue","GLOBAL",6)
+ClearAllActions()   
+StartCutSceneMode()
+CutSceneId(Player1)  
+Wait(1)
+FadeFromColor([60.0],0)
+ActionOverride(Player1,LeaveAreaLUA("AR0307","",[4480.2026],5))
+Wait(1)
+EndCutSceneMode()
+ActionOverride(Player1,SetDialog("PLAYER1"))
+ActionOverride("Aran",StartDialogNoSet("Player1"))
+END
+
 
 IF 
 Global("AranLove","GLOBAL",4)
