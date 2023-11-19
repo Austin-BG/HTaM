@@ -218,8 +218,8 @@ END
 
 IF ~Global("AN_KazaBook_Edwin_Talk","GLOBAL",1)~ THEN BEGIN ANkazabookEdwinFinal 
   SAY @133
-IF ~~ THEN DO ~SetGlobal("ANkazabookRead","GLOBAL",2) SetGlobal("AN_KazaBook_Edwin_Talk","GLOBAL",2) GiveItemCreate("ANkazab","Edwin",1,0,0) AddexperienceParty(500)~ REPLY @139 + ANkazabookEdwinFinal1 
-IF ~~ THEN DO ~SetGlobal("ANkazabookRead","GLOBAL",2) SetGlobal("AN_KazaBook_Edwin_Talk","GLOBAL",2) GiveItemCreate("ANkazas",Player1,1,0,0) AddexperienceParty(500)~ REPLY @140 + ANkazabookEdwinFinal2 
+IF ~~ THEN DO ~SetGlobal("ANkazabookRead","GLOBAL",2) SetGlobal("AN_KazaBook_Edwin_Talk","GLOBAL",2) DestroyItem("BOOK89") GiveItemCreate("ANkazab","Edwin",1,0,0) AddexperienceParty(500)~ REPLY @139 + ANkazabookEdwinFinal1 
+IF ~~ THEN DO ~SetGlobal("ANkazabookRead","GLOBAL",2) SetGlobal("AN_KazaBook_Edwin_Talk","GLOBAL",2) DestroyItem("BOOK89") GiveItemCreate("ANkazas",Player1,1,0,0) AddexperienceParty(500)~ REPLY @140 + ANkazabookEdwinFinal2 
 END
 
 IF ~~ THEN BEGIN ANkazabookEdwinFinal1 

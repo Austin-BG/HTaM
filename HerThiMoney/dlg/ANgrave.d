@@ -29,7 +29,7 @@ END
 
 IF ~~ THEN BEGIN ANParisTalk2
   SAY @16
-IF ~~ THEN DO ~AddJournalEntry(@1038,QUEST) SetGlobal("ANParisGraveTalk","GLOBAL",1) SetGlobal("ANParisFirstTalk","AR1000",3) EscapeArea()~ EXIT
+IF ~~ THEN DO ~EscapeArea()~ EXIT
 END 
 
 
@@ -44,24 +44,24 @@ IF ~AreaCheck("AR1000") Global("ANParisFirstTalk","AR1000",2)~ THEN ANParis ANPa
 == NALIAJ IF ~InParty("Nalia") InMyArea("Nalia") !StateCheck("Nalia",CD_STATE_NOTVALID)~ THEN @32
 == ANParis @12
 END
-IF ~~ THEN REPLY @14 EXTERN ANParis ANParisTalk2
+IF ~~ THEN DO ~AddJournalEntry(@1038,QUEST) SetGlobal("ANParisGraveTalk","GLOBAL",1) SetGlobal("ANParisFirstTalk","AR1000",3)~ REPLY @14 EXTERN ANParis ANParisTalk2
 IF ~~ THEN DO ~SetGlobal("ANParisFirstTalk","AR1000",8)~ REPLY @13 EXTERN ANParis ANParisTalkNo
 
 CHAIN 
-IF ~AreaCheck("AR0800") Global("ANParisGraveTalk","GLOBAL",2) Global("ANsharltGraveTalk","AR0800",0)~ THEN ANParis ANParisGraveTalk1
-@17 DO ~SetGlobal("ANsharltGraveTalk","AR0800",1)~
+IF WEIGHT #-99 ~Global("ANParisGraveTalk","GLOBAL",2)~ THEN ANParis ANParisGraveTalk1
+@17 DO ~SetGlobal("ANParisGraveTalk","GLOBAL",3)~
 EXIT
 
 CHAIN 
-IF ~AreaCheck("AR0800") Global("ANParisGraveTalk","GLOBAL",2) Global("ANsharltGraveTalk","AR0800",2)~ THEN ANsharlt ANsharltGraveTalk1
+IF ~Global("ANParisGraveTalk","GLOBAL",4)~ THEN ANsharlt ANsharltGraveTalk1
 @18
-== ANParis @19 DO ~SetGlobal("ANParisGraveTalk","GLOBAL",3)~
+== ANParis @19 DO ~SetGlobal("ANParisGraveTalk","GLOBAL",5)~
 EXIT
 
 CHAIN 
-IF ~AreaCheck("AR0800") Global("ANParisGraveTalk","GLOBAL",4) Dead("Ankiller") Global("ANParisGraveFinalTalk","AR0800",1)~ THEN ANParis ANParisGraveTalk2
+IF ~Global("ANParisGraveTalk","GLOBAL",7) Dead("Ankiller")~ THEN ANParis ANParisGraveTalk2
 @20
-== ANsharlt @21 DO ~SetGlobal("ANParisGraveTalk","GLOBAL",5)~
+== ANsharlt @21 DO ~SetGlobal("ANParisGraveTalk","GLOBAL",8)~
 == ANParis @22 
 == ANsharlt @23
 == ANParis @24 
@@ -71,8 +71,8 @@ IF ~AreaCheck("AR0800") Global("ANParisGraveTalk","GLOBAL",4) Dead("Ankiller") G
 == JAHEIRAJ IF ~InParty("Jaheira") InMyArea("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID) OR(2) !InParty("Nalia") StateCheck("Nalia",CD_STATE_NOTVALID)~ THEN @29
 == VALYGARJ IF ~InParty("Valygar") InMyArea("Valygar")  !StateCheck("Valygar",CD_STATE_NOTVALID) OR(2) !InParty("Nalia") StateCheck("Nalia",CD_STATE_NOTVALID) OR(2) !InParty("Jaheira") StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN @29
 == EDWINJ IF ~InParty("Edwin") InMyArea("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID) OR(2) !InParty("Valygar") StateCheck("Valygar",CD_STATE_NOTVALID) OR(2) !InParty("Nalia") StateCheck("Nalia",CD_STATE_NOTVALID) OR(2) !InParty("Jaheira") StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN @29
-== ANParis @27
-=@28 DO ~AddJournalEntry(@1039,QUEST_DONE) GiveGoldForce(500) ActionOverride("ANsharlt",EscapeArea()) AddexperienceParty(600) EscapeArea()~
+== ANParis @27 DO ~AddJournalEntry(@1039,QUEST_DONE) GiveGoldForce(500) ActionOverride("ANsharlt",EscapeArea()) AddexperienceParty(600)~
+=@28 DO ~EscapeArea()~
 EXIT
 
 // Диалог с Бодхи (на ее стороне)
