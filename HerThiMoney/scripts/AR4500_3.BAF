@@ -8,7 +8,7 @@ Global("ANfinalAranTalk","AR4500",0)
 	
 THEN
 	RESPONSE #100
-	CreateCreature("ANFATESP",[1986.1040],S) 
+	CreateCreature("ANFATESP",[1986.1040],8) 
 	SetGlobal("ANfinalAranTalk","AR4500",1)
 END
 
@@ -20,7 +20,7 @@ THEN
 	CreateVisualEffect("SPPORTAL",[1999.1218])
 	Wait(2)
 	FadeFromColor([60.0],0)
-	CreateCreature("Aran",[1999.1218],S) 
+	CreateCreature("Aran",[1999.1218],8) 
 	SetGlobal("ANfinalAranTalk","AR4500",4)
 	SmallWait(4)
 	ActionOverride("Aran",StartDialogNoSet(Player1))

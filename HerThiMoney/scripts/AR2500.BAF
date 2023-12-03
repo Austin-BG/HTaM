@@ -40,8 +40,8 @@ Global("ANAranTethyr","GLOBAL",3)
 THEN
 	RESPONSE #100
 SetGlobal("ANAranTethyr","GLOBAL",4)
-ActionOverride(Player1,LeaveAreaLUAPanic("AN1204","",[456.397],N)) 
-ActionOverride(Player1,LeaveAreaLUA("AN1204","",[456.397],N))
+ActionOverride(Player1,LeaveAreaLUAPanic("AN1204","",[456.397],0)) 
+ActionOverride(Player1,LeaveAreaLUA("AN1204","",[456.397],0))
 END
 
 IF
