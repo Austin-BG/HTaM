@@ -1,9 +1,11 @@
 IF 
 Global("ANTroll","GLOBAL",1)
+Global("ANTrollSet","AR0300",0)
 OnCreation()
 THEN
   RESPONSE #100
 ActionOverride(Player1,SetDialog("PLAYER1"))
+SetGlobal("ANTrollSet","AR0300",1)
 Continue()
 END
 
