@@ -194,8 +194,8 @@ END
 IF ~~ THEN BEGIN ANlorensTalkBridge1
 SAY @45
 =@46 
-IF ~~ THEN DO ~SetGlobal("ANlorens","GLOBAL",2) EscapeArea()~ REPLY @47 GOTO ANlorensTalkBridge2
-IF ~~ THEN DO ~SetGlobal("ANlorens","GLOBAL",2) EscapeArea()~ REPLY @48 GOTO ANlorensTalkBridge2
+IF ~~ THEN DO ~SetGlobal("ANlorens","GLOBAL",2)~ REPLY @47 GOTO ANlorensTalkBridge2
+IF ~~ THEN DO ~SetGlobal("ANlorens","GLOBAL",2)~ REPLY @48 GOTO ANlorensTalkBridge2
 IF ~~ THEN REPLY @49 EXIT
 END
 
@@ -338,7 +338,10 @@ END
 BEGIN ANcaytig
 IF ~Global("ANshakal","GLOBAL",6)~ THEN BEGIN ANColDeadTalk
 SAY @127 
-IF ~~ THEN DO ~SetGlobal("ANshakal","GLOBAL",7) AddJournalEntry(@1104,QUEST_DONE) ActionOverride("ANorc1",EscapeArea()) ActionOverride("ANorc2",EscapeArea()) EscapeArea()~ EXIT
+IF ~~ THEN DO ~ChangeEnemyAlly("ANcaytig",NEUTRAL) 
+ChangeEnemyAlly("ANorc1",NEUTRAL) 
+ChangeEnemyAlly("ANorc2",NEUTRAL) 
+SetGlobal("ANshakal","GLOBAL",7) AddJournalEntry(@1104,QUEST_DONE) ActionOverride("ANorc1",EscapeArea()) ActionOverride("ANorc2",EscapeArea()) EscapeArea()~ EXIT
 END
 
 BEGIN ANorc1
@@ -413,9 +416,9 @@ CHAIN ANshakal ANShakalAfterTalk1
 @104
 =@106
 END
-IF ~~ THEN REPLY @107 EXTERN ANcaytig ANShakalAfterTalk1_1
 IF ~~ THEN DO ~ActionOverride("ANcaytig",EscapeArea())~ REPLY @222 EXTERN ANorc1 ANShakalAfterTalk1_2
 IF ~OR(2) RACE(Player1,HALFORC) RACE(Player1,ORC)~ THEN DO ~ActionOverride("ANcaytig",EscapeArea())~ REPLY @223 EXTERN ANorc1 ANShakalAfterTalk1_2
+IF ~~ THEN REPLY @107 EXTERN ANcaytig ANShakalAfterTalk1_1
 
 CHAIN ANcaytig ANShakalAfterTalk1_1
 @108 DO ~EscapeArea()~
@@ -432,20 +435,10 @@ CHAIN ANshakal ANShakalAfterTalk2
 @105
 =@106
 END
-++ @222 EXTERN ANcaytig ANShakalAfterTalk2_1
-++ @223 EXTERN ANcaytig ANShakalAfterTalk2_1
-++ @107 EXTERN ANcaytig ANShakalAfterTalk2_1
+IF ~~ THEN DO ~ActionOverride("ANcaytig",EscapeArea())~ REPLY @222 EXTERN ANorc1 ANShakalAfterTalk1_2
+IF ~OR(2) RACE(Player1,HALFORC) RACE(Player1,ORC)~ THEN DO ~ActionOverride("ANcaytig",EscapeArea())~ REPLY @223 EXTERN ANorc1 ANShakalAfterTalk1_2
+IF ~~ THEN REPLY @107 EXTERN ANcaytig ANShakalAfterTalk1_1
 
-CHAIN ANcaytig ANShakalAfterTalk2_1
-@108 DO ~EscapeArea()~
-END
-++ @109 EXTERN ANorc1 ANShakalAfterTalk2_2
-
-CHAIN ANorc1 ANShakalAfterTalk2_2
-@110 DO ~SetGlobal("ANshakal","GLOBAL",2) EscapeArea()~
-== ANorc2 @110 DO ~EscapeArea()~
-END
-++ @111 EXIT
 
 // Встреча со Сборщиком
 CHAIN 
@@ -472,7 +465,10 @@ APPEND PLAYER1
 
 IF ~Global("ANshakal","GLOBAL",6)~ THEN BEGIN ANColDeadTalk
 SAY @128 
-IF ~~ THEN DO ~SetGlobal("ANshakal","GLOBAL",7) AddJournalEntry(@1104,QUEST_DONE) ActionOverride("ANorc1",EscapeArea()) ActionOverride("ANorc2",EscapeArea())~ EXIT
+IF ~~ THEN DO ~ChangeEnemyAlly("ANcaytig",NEUTRAL) 
+ChangeEnemyAlly("ANorc1",NEUTRAL) 
+ChangeEnemyAlly("ANorc2",NEUTRAL) 
+SetGlobal("ANshakal","GLOBAL",7) AddJournalEntry(@1104,QUEST_DONE) ActionOverride("ANorc1",EscapeArea()) ActionOverride("ANorc2",EscapeArea())~ EXIT
 END
 
 END
@@ -480,7 +476,7 @@ END
 BEGIN ANmess1
 IF ~Global("ANshakal","GLOBAL",10)~ THEN BEGIN ANbankcurier
 SAY @148
-IF ~~ THEN DO ~AddJournalEntry(@1106,QUEST) SetGlobal("ANshakal","GLOBAL",11) EscapeArea()~ EXIT
+IF ~~ THEN DO ~SetGlobal("ANshakal","GLOBAL",11) AddJournalEntry(@1106,QUEST) EscapeArea()~ EXIT
 END
 
 BEGIN ANshahba
