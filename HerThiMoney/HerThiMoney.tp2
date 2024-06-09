@@ -2,7 +2,7 @@
 BACKUP ~HerThiMoney/backup~
 
 AUTHOR ~Austin, Scheele, Alisia & Arcanecoast Team~
-VERSION 4.3.3
+VERSION 4.4
 
 AUTO_TRA ~HerThiMoney/tra/%s~
 
@@ -1148,7 +1148,12 @@ COMPILE ~HerThiMoney/dlg/ANchain.d~
 
 COMPILE ~HerThiMoney/scripts/ANshahba.baf~
 
-EXTEND_TOP ~baldur.bcs~ ~%MOD_FOLDER%/scripts/baldur2_1.baf~ EVALUATE_BUFFER
+ACTION_FOR_EACH area IN AR0020 AR0300 AR0400 AR0500 AR0700 AR0800 AR0900 AR1000 L#ND01 L#NI01 BEGIN //сюда можно добавить локации из модов. Типа Южной окраины. Если они установлены, туда тоже добавит
+	ACTION_IF FILE_EXISTS_IN_GAME ~%area%.bcs~ BEGIN
+		EXTEND_TOP ~%area%.bcs~ ~%MOD_FOLDER%/scripts/baldur2_1.baf~ EVALUATE_BUFFER
+	END
+END
+
 EXTEND_TOP ~AR0400.bcs~ ~HerThiMoney/scripts/AR0400_2_1.baf~ EVALUATE_BUFFER
 EXTEND_TOP ~AR0500.bcs~ ~HerThiMoney/scripts/AR0500_2_1.baf~ 
 EXTEND_TOP ~AR0800.bcs~ ~HerThiMoney/scripts/AR0800_2_1.baf~ 
@@ -1432,8 +1437,19 @@ EXTEND_TOP ~AR5500.bcs~ ~%MOD_FOLDER%/scripts/AR5500.baf~
 EXTEND_TOP ~AR0404.bcs~ ~%MOD_FOLDER%/scripts/AR0404.baf~
 EXTEND_TOP ~AR0809.bcs~ ~HerThiMoney/scripts/AR0809_3.baf~ 
 
-EXTEND_TOP ~baldur.bcs~ ~%MOD_FOLDER%/scripts/baldur3.baf~ EVALUATE_BUFFER
-EXTEND_TOP ~baldur25.bcs~ ~%MOD_FOLDER%/scripts/baldur25.baf~
+ACTION_FOR_EACH area IN AR0020 AR0300 AR0400 AR0500 AR0700 AR0800 AR0900 AR1000 L#ND01 L#NI01 BEGIN //сюда можно добавить локации из модов. Типа Южной окраины. Если они установлены, туда тоже добавит
+	ACTION_IF FILE_EXISTS_IN_GAME ~%area%.bcs~ BEGIN
+		EXTEND_TOP ~%area%.bcs~ ~%MOD_FOLDER%/scripts/baldur3.baf~ EVALUATE_BUFFER
+	END
+END
+
+
+ACTION_FOR_EACH area IN AR5500 AR6000 AR6100 AR6400 BEGIN //сюда можно добавить локации из модов. Типа Южной окраины. Если они установлены, туда тоже добавит
+	ACTION_IF FILE_EXISTS_IN_GAME ~%area%.bcs~ BEGIN
+		EXTEND_TOP ~%area%.bcs~ ~%MOD_FOLDER%/scripts/baldur25.baf~ EVALUATE_BUFFER
+	END
+END
+
 EXTEND_TOP ~jaheira.bcs~ ~HerThiMoney/scripts/jaheira3.baf~
 EXTEND_TOP ~anomen.bcs~ ~HerThiMoney/scripts/anomen3.baf~
 EXTEND_TOP ~dorn.bcs~ ~HerThiMoney/scripts/dorn3.baf~
@@ -1507,6 +1523,13 @@ END
 COMPILE ~HerThiMoney/dlg/ANAranSoA.d~ EVALUATE_BUFFER
 COMPILE ~HerThiMoney/dlg/ANAranToB.d~ 
 COMPILE ~HerThiMoney/dlg/ANbeshaba.d~ 
+
+// Меняем диалог Латана, если установлен мод Expanded Thief Stronghold
+ACTION_IF 
+FILE_EXISTS_IN_GAME ~tskamuzu.sto~ 
+BEGIN
+COMPILE ~HerThiMoney/dlg/ANAranSoaETSFIX.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/ANAranSoA.tra~ 
+END
 
 
 ACTION_IF EE_GAME BEGIN
@@ -1647,7 +1670,13 @@ LAF HANDLE_AUDIO STR_VAR audio_path = "HerThiMoney/audio/1" oggdec_path = "HerTh
 EXTEND_TOP ~AR0700.bcs~ ~HerThiMoney/scripts/AR0700_4.baf~
 EXTEND_TOP ~AR0300.bcs~ ~HerThiMoney/scripts/AR0300_4.baf~
 EXTEND_TOP ~AR0319.bcs~ ~HerThiMoney/scripts/AR0319.baf~
-EXTEND_TOP ~baldur.bcs~ ~%MOD_FOLDER%/scripts/baldur4.baf~ EVALUATE_BUFFER
+
+ACTION_FOR_EACH area IN AR0020 AR0300 AR0400 AR0500 AR0700 AR0800 AR0900 AR1000 L#ND01 L#NI01 BEGIN //сюда можно добавить локации из модов. Типа Южной окраины. Если они установлены, туда тоже добавит
+	ACTION_IF FILE_EXISTS_IN_GAME ~%area%.bcs~ BEGIN
+		EXTEND_TOP ~%area%.bcs~ ~%MOD_FOLDER%/scripts/baldur4.baf~ EVALUATE_BUFFER
+	END
+END
+
 EXTEND_TOP ~AR0607.bcs~ ~%MOD_FOLDER%/scripts/AR0607.baf~
 EXTEND_TOP ~AR1002.bcs~ ~%MOD_FOLDER%/scripts/AR1002.baf~
 EXTEND_TOP ~AR0500.bcs~ ~HerThiMoney/scripts/AR0500_4.baf~ 
@@ -1655,10 +1684,11 @@ EXTEND_TOP ~AR0334.bcs~ ~HerThiMoney/scripts/AR0334_4.baf~
 EXTEND_TOP ~AR1005.bcs~ ~HerThiMoney/scripts/AR1005.baf~ 
 EXTEND_TOP ~AR1000.bcs~ ~HerThiMoney/scripts/AR1000_4.baf~ 
 
-ACTION_IF 
-FILE_EXISTS_IN_GAME ~7XQUAYJ.dlg~
+ACTION_FOR_EACH area IN AR0020 AR0300 AR0400 AR0500 AR0700 AR0800 AR0900 AR1000 L#ND01 L#NI01 BEGIN //сюда можно добавить локации из модов. Типа Южной окраины. Если они установлены, туда тоже добавит
+ACTION_IF  (FILE_EXISTS_IN_GAME ~7XQUAYJ.dlg~) AND (FILE_EXISTS_IN_GAME ~%area%.bcs~)
 BEGIN
-EXTEND_TOP ~baldur.bcs~ ~%MOD_FOLDER%/scripts/baldur4_quayle_in_party.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~%area%.bcs~ ~%MOD_FOLDER%/scripts/baldur4_quayle_in_party.baf~ EVALUATE_BUFFER
+END
 END
 
 COMPILE ~HerThiMoney/scripts/AN0715.baf~
