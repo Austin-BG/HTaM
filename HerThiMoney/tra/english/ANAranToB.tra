@@ -3,23 +3,23 @@
 
 // Letter
 @0 = ~Ah, Madam <CHARNAME>, I barely found you! How glad I am to see you in good health, you have no idea! ~
-@1 = ~(You yourself are amazed at the intense joy that gripped you at the sight of little messenger Aran Linvail. Everything that happened in Athkatla seems so far away in the crucible of the merciless struggle in which you are drawn. But the appearance of Tony again makes the past makes the past present again, vivid and alive. And at the same time you're overcome with anxiety...) ~
+@1 = ~*You yourself are amazed at the intense joy that gripped you at the sight of little messenger Aran Linvail. Everything that happened in Athkatla seems so far away in the crucible of the merciless struggle in which you are drawn. But the appearance of Tony again makes the past makes the past present again, vivid and alive. And at the same time you're overcome with anxiety...*~
 @2 = ~Tony! Hello! Is everything okay with Aran? ~
 @3 = ~Oh, don't worry! Our Master is alive and well, and he sent me to make sure that the same can be said about you. He also told me to give you this ... ~
-@4 = ~(You accept a packet from Tony that contains a letter and a scroll. With quite understandable excitement, you unfold the letter ...) ~
+@4 = ~*You accept a packet from Tony that contains a letter and a scroll. With quite understandable excitement, you unfold the letter ...*~
 @5 = ~“My <CHARNAME>!
 I was greatly disturbed by the news of this mess involving your late parent's heirs. And primarily, of course, because of the fact that you are once again in no small amount of danger. I never considered myself very sensitive, but now I am not ashamed to admit that your absence feels like a void that cannot be filled. Nevertheless, Athkatla is in full swing, as always, there is no place for boredom and idleness, and a lot of things require my attention and personal intervention. I would be happy to share with you both concerns and power, even if it is incommensurable with the right to which your divine origin gives you. But, my love, besides gold and power, I want to give you something that you will not find, even if you become a goddess. I don't think I need to say much - if, like me, you remember everything that happened between us, then you know it yourself.
 Please take care of yourself. Triumph over your enemies, as you always have. I believe in you. And I love you. Your Aran"~ [aransong]
-@6 = ~(You lean into the halfling and kiss him on the cheek, not afraid to sound sentimental) ~
+@6 = ~*You lean into the halfling and kiss him on the cheek, not afraid to sound sentimental*~
 @7 = ~Thank you, Tony. You are a glorious messenger, bringing good tidings. Go back quickly, it's dangerous here. Tell Aran that his words have warmed my soul. And that our feelings are mutual. ~
 @8 = ~By all means, Madam <CHARNAME>! ~
 @9 = ~How is my guild doing? ~
 @10 = ~Don't worry. Old Bloodscalp has everything under control. But the Master says that it's a little too small for you, and when you return, a great future awaits you. ~
 @11 = ~Aran has no doubts about my return ... ~
-@12 = ~(Tony reaches for your ear to whisper) He's really looking forward to your return. And I'm sure you can handle what's coming at you right now. You'll do your best, won't you? Come back to us! ~
-@13 = ~(Blows you a kiss and runs away) ~
-@14 = ~(You reread the letter for the umpteenth time, clutching the piece of paper as if to feel the warmth of Aran's fingers touching the page. You are overwhelmed by a desperate desire to be with him right now, to look into his eyes full of irony and understated tenderness, to feel the caress of his touch...) ~
-@15 = ~(You ask fate why she treated you so, by forcibly throwing you into this seething maelstrom of divine passions, just at the time when you so want love ... and shadow. You are a Shadow thief, but you are also a demigod, gaining more and more strength. The combination is strange, almost ridiculous. How will it all end?) ~
+@12 = ~*Tony reaches for your ear to whisper* He's really looking forward to your return. And I'm sure you can handle what's coming at you right now. You'll do your best, won't you? Come back to us! ~
+@13 = ~*Blows you a kiss and runs away*~
+@14 = ~*You reread the letter for the umpteenth time, clutching the piece of paper as if to feel the warmth of Aran's fingers touching the page. You are overwhelmed by a desperate desire to be with him right now, to look into his eyes full of irony and understated tenderness, to feel the caress of his touch...*~
+@15 = ~*You ask fate why she treated you so, by forcibly throwing you into this seething maelstrom of divine passions, just at the time when you so want love ... and shadow. You are a Shadow thief, but you are also a demigod, gaining more and more strength. The combination is strange, almost ridiculous. How will it all end?*~
 
 // Group reactions (part 1)
 @16 = ~<CHARNAME> ... S-sorry ... I didn't mean to disturb you ... ~
@@ -42,18 +42,18 @@ Please take care of yourself. Triumph over your enemies, as you always have. I b
 @33 = ~Yes, Rasaad, I miss him. I love him very much. ~
 @34 = ~Now I can see that your feelings are serious ... and soften your heart. I couldn't give you what he gives. ~
 @35 = ~I'm sorry, Rasaad, I'm really sorry ... ~
-@36 = ~(He gently puts a finger to your lips) Nothing to regret, <CHARNAME>. YYou and I are both following the paths we were meant to follow. I'll only pray that I don't accidentally turn off the right path. ~
+@36 = ~*He gently puts a finger to your lips* Nothing to regret, <CHARNAME>. You and I are both following the paths we were meant to follow. I'll only pray that I don't accidentally turn off the right path. ~
 @37 = ~<CHARNAME>, Boo tells me that our dear leader is saddened. ~
 @38 = ~So silence your rodent. ~
 @39 = ~Boo is very observant. ~
 @40 = ~And now Boo says we've got off on the wrong foot. And... yes, Boo, let's get out of here. ~
 @41 = ~Yes, yes. He is also convinced that the reason for sadness lies in the piece of paper that you hold in front of you. You know, <CHARNAME>, if it makes it easier for you, then Minsc and Boo can cry a little with you. Although rangers and hamsters don't cry ... ~
-@42 = ~(Smiling) There's no need start, Minsc... you're very sweet. And Boo, of course, too. ~
+@42 = ~*Smiling* There's no need start, Minsc... you're very sweet. And Boo, of course, too. ~
 @43 = ~Oh, and now Minsc and Boo want to smile with you. Boo... what? Oh, he says the separation won't be long unless you want it yourself. Boo is so smart! ~
 @44 = ~What's the matter with you, sister? ~
 @45 = ~Could you put off showing your brotherly feelings for later?? ~
 @46 = ~With me? Nothing like that. I just think that if you and I had a different father, life would be better. ~
-@47 = ~(Shrugging) Oh, yes. ~
+@47 = ~*Shrugging* Oh, yes. ~
 @48 = ~But certainly not more interesting. You don't think that if you hadn't been Bhaal's daughter, you wouldn't have been kidnapped by Irenicus, you wouldn't have got to Atkhatla and you wouldn't have met Aran Linvail...? You see? Even on a path full of losses, there are precious things to find. ~
 @49 = ~Now I can see that your feelings are serious ... and soften your heart. Do not be sad, the clouds will dispel, and I believe that you will be happy. ~
 @50 = ~Hey <CHARNAME>! You've turned sour, friend. ~
@@ -61,7 +61,7 @@ Please take care of yourself. Triumph over your enemies, as you always have. I b
 @52 = ~I think Korgan, each of us can turn sour for a while. Even you. ~
 @53 = ~Yes, I can leave. I don't understand anything about women's tears anyway. ~
 @54 = ~Why be sad for no good reason? By the way, I've got some left in my flask, would you like some? ~
-@55 = ~(You and Korgan take a sip of something fiery, then another one... you feel the sadness subside and the world brightens with new colors.) ~
+@55 = ~*You and Korgan take a sip of something fiery, then another one... you feel the sadness subside and the world brightens with new colors.*~
 @56 = ~That's much better! Now it's nice to look at you, girl. So now, <CHARNAME>, you know who to contact if you need anything. ~
 
 // Spirit of Gorion

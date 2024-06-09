@@ -123,9 +123,9 @@
 @109 = ~He also said that we share access to the account. Could you please check if everything is in order and if I can withdraw money from our account? He can't... can't come get it himself. ~
 @110 = ~The account holder's name is Khalid, and I am his wife, Jaheira. ~
 @111 = ~Okay, my lady, I will check it out now. Of course, if the account was opened in another branch, you can still withdraw money from us. But we need to make sure that the account is active and that you have the authority to use it. Wait just a couple of minutes, I'll check with the director and look for the paperwork. ~
-@112 = ~(The clerk goes downstairs and disappears for a long time. You sit down and wait ...) ~
+@112 = ~*The clerk goes downstairs and disappears for a long time. You sit down and wait ...*~
 @113 = ~<CHARNAME>, I apologize for the delay, but it's for all of us. Khalid won't need the money, but we could really use it. ~
-@114 = ~(The clerk returns. His face is serpromissory notes and puzzled.) ~
+@114 = ~*The clerk returns. His face is serpromissory notes and puzzled.*~
 @115 = ~My lady Jaheira, I'm sorry to disappoint you. Unfortunately, you have no right to access his funds. When opening an account, he did not indicate other persons who have access to the account. So only Mr. Khalid can withdraw money personally. ~
 @116 = ~But I'm his wife! I should be listed there, check again! Khalid said that we have a shared account. ~
 @117 = ~Yes, we have already checked everything, and we can see that you are indeed married to the account holder. But it is not enough... The owner has to indicate you on a special list of authorized persons on form P-69. For some reason, he did not fill out that form.~
@@ -147,30 +147,30 @@
 @133 = ~May I ask about your services? ~
 @134 = ~We would like to pay off the balance of the dwarf Korgan's debt. ~
 @135 = ~Hello, Mr. Korgan. ~
-@136 = ~(growls irritably and doesn't answer) ~
+@136 = ~*growls irritably and doesn't answer*~
 @137 = ~Mmm. Okay, the debt is completely closed and we will call off the debt collectors. We'd love to see you again in our bank! ~
 @139 = ~I'm not coming back here again! Go to hell, merchant! ~
 @140 = ~There is one thing you can help me with... for your own benefit. ~
 @141 = ~You have my full attention, <PRO_SIRMAAM>! ~
-@142 = ~(You hand Korgan's promissory note to the clerk) Do you recognize it? Some of us don't want to deal with it anymore. And we want the record of that debt... "disappear." You know what I mean, Uri? ~
-@143 = ~(Glances over the promissory note) Of course, <PRO_SIRMAAM>, I understand. But what you're asking me... (at this point Uri lowers his voice significantly) is professional misconduct. I have no idea what would make me do such a thing!~
+@142 = ~*You hand Korgan's promissory note to the clerk* Do you recognize it? Some of us don't want to deal with it anymore. And we want the record of that debt... "disappear." You know what I mean, Uri? ~
+@143 = ~*Glances over the promissory note* Of course, <PRO_SIRMAAM>, I understand. But what you're asking me... (at this point Uri lowers his voice significantly) is professional misconduct. I have no idea what would make me do such a thing!~
 @144 = ~Well, for example, a thousand gold coins. A fifth of the debt. ~
 @145 = ~How about nine hundred coins, huh? ~
 @146 = ~Nine hundred is enough. ~
 @147 = ~I'm afraid nine hundred won't be enough. Let's round up to a thousand, and we can start solving this problem. ~
 @148 = ~Well... go ahead, let's have a thousand. ~
 @149 = ~Hmm ... Sir, I will consider it my duty to assist you in this difficult matter. Especially since I made the entry in the ledger myself. I myself handed the gold to the dwarf lord. (Uri nods at Korgan) ~
-@150 = ~(Frowns and nods) Right. That's the mongrel. ~
+@150 = ~*Frowns and nods* Right. That's the mongrel. ~
 @151 = ~Pardon my friend, he's in a bad mood today. So what do we do next? ~
 @152 = ~The gold can't be transferred here. Meet me tonight, near the South Colonnade on the Waukeen Promenade. We will make the exchange there, <PRO_SIRMAAM>. ~
 @153 = ~I understand, there are a lot of guards here. Well, alright. We will see you tonight. ~
 @154 = ~Until tonight, <PRO_SIRMAAM>. ~
 @155 = ~Here is a page of the debt book with a record of Korgan's debt.~
-@156 = ~(Holding out money) The promised gold. ~
+@156 = ~*Holding out money* The promised gold. ~
 @157 = ~I changed my mind. Forget it, this deal never happened. ~ ~ I changed my mind. Forget it, this deal never happened. ~
 @158 = ~Nice doing business with you, <PRO_SIRMAAM>. Hope to see you at the bank again soon. ~
 @159 = ~Yes, <PRO_SIRMAAM>. As you wish. I'll leave it in its place and forget this conversation. ~
-@160 = ~(Burning page) Definitely. Good evening, Uri. ~
+@160 = ~*Burning page* Definitely. Good evening, Uri. ~
 @161 = ~Good evening, <PRO_SIRMAAM>. ~
 @162 = ~You're right, surfacer, a thousand coins is a lot of money. So it's time for me to finally get the hell out of this filthy city! So long! (Korgan leaves hurriedly)~
 @163 = ~What's the news, Uri? ~
@@ -205,10 +205,10 @@
 @215 = ~Artist? No, why do we need an artist? The flyers have already been drawn and printed. ~
 @216 = ~Flyers?? What kind of flyers? ~
 @217 = ~The ones you'll be handing out. That's your responsibility as the face of our advertising campaign. We need to distribute this packet to the varpromissory notes residents of the city - start with the Government and Bridge districts. ~
-@218 = ~(The manager passes a stack of bank flyers to Imoen. She picks it up, dumbfounded.) ~
+@218 = ~*The manager passes a stack of bank flyers to Imoen. She picks it up, dumbfounded.*~
 @219 = ~I'm supposed to hand out flyers?! You said I'd be the face of the bank and the whole town would recognize me. And that I'm prettier than the other candidates and that's why I'm lucky! ~
 @220 = ~That's right! The whole town will be interested in our bank if they see such a pretty girl! That's the job. It's written about it in detail in the contract. Here, look - clause 2.6... ~
-@221 = ~Oh, Imoen... (puts her hand to her face and shakes her head) ~
+@221 = ~Oh, Imoen... *puts hand to your face and shakes your head*~
 @222 = ~Yeah, silly girl finally got her dream job! ~
 @223 = ~Never sign something without reading it properly, Imoen. ~
 @224 = ~Yeah... I was just dreaming, you know. ~
@@ -216,7 +216,7 @@
 @226 = ~Yeah. ~
 @227 = ~Imoen, you don't have to do this. The contract means nothing, forget about it. ~
 @228 = ~Spit on it, throw it away and that's it. ~
-@229 = ~(Whispering) <CHARNAME>, here's an idea. Let's go to the town crier. I'll take care of the rest, you'll see. ~
+@229 = ~*Whispering* <CHARNAME>, here's an idea. Let's go to the town crier. I'll take care of the rest, you'll see. ~
 @230 = ~Yes, advertising is important! I know that for sure. One time, Uncle Gerhard had a batch of turnips. It was already starting to deteriorate, so it was hard to sell. My uncle thought for a long time how to lure people - and he came up with it. ~
 @231 = ~He began to spread rumors everywhere that his turnip was grown on a special secret fertilizer, and that anyone who eats them will attract women with their smell alone! People came running to him like cats for milk! Everything was sold out in a day. Though the smell of the turnip wasn't very good, I'll tell you that. And if anyone was attracted to it, it was flies. But after buying, no one dared to admit that they were fooled - because all the neighbors would have called them a sucker. So no one made any claims. So, competent advertising is the key to success!~
 @232 = ~Hmm, an interesting method. But I'm afraid this will not work for a bank ... Although ... ~
@@ -231,15 +231,15 @@
 @241 = ~You're standing outside all day anyway, talking to people, right? Surely it wouldn't be hard for you to take these flyers and hand them out to everyone? And we'll pay you for it... let's say 100 coins. ~
 @242 = ~Hmm ... 100 coins? I make that much a week. Why not. If there's nothing illegal or objectionable on the flyers, give them to me. ~
 @243 = ~Here (hands over a stack of leaflets to the town crier). Thank you! ~
-@244 = ~(Whispering) <CHARNAME>, let's pay him a little for this, and then we'll get the payment from the bank - and we'll win. We'll make more money than we lose. ~
+@244 = ~*Whispering* <CHARNAME>, let's pay him a little for this, and then we'll get the payment from the bank - and we'll win. We'll make more money than we lose. ~
 @245 = ~You've got some business acumen, girl! Maybe I should take you on as a trading partner. ~
 @246 = ~Thanks Jan, but I must refuse - I hate the smell of turnips. ~
 @247 = ~So where's your hundred coins? Don't have that amount with you? Why then are you wasting my time? Come back when you have it. ~
 @248 = ~Back? Is everything with you? Then give money and what should be given out there. ~
 @249 = ~Neera, wait! At least read the contract before signing! ~
-@250 = ~Oh, Imoen... (puts her hand to her face and shakes her head) ~
+@250 = ~Oh, Neera... (puts hand to your face and shakes your head) ~
 @251 = ~Never sign something without reading it properly, Neera. ~
-@252 = ~(The manager passes a stack of bank flyers to Neera. She picks it up, dumbfounded.) ~
+@252 = ~*The manager passes a stack of bank flyers to Neera. She picks it up, dumbfounded.*~
 @253 = ~Neera, you don't have to do this. The contract means nothing, forget about it. ~
 
 // Guard
@@ -247,7 +247,7 @@
 @255 = ~My wife is cheating on me! Every morning she says she'll leave me, but when I come home in the evening, she's still there! ~
 
 // Cat
-@500 = ~(The fat cat looks down on you. It's immediately obvpromissory notes that this is the branch director's favorite cat. He probably eats better than you!) ~
+@500 = ~*The fat cat looks down on you. It's immediately obvpromissory notes that this is the branch director's favorite cat. He probably eats better than you!*~
 
 // NEW (v.4)
 @501 = ~This is exactly what you need! Sign up soon, don't waste time reading! ~

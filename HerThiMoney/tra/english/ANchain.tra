@@ -1,14 +1,14 @@
 // Jackal
-@0 = ~(As you walk through the streets of the city, you are suddenly hailed softly from a nearby dark alley. Peering, you notice there is a group of dirty half-orcs with clubs, dressed in badly worn leather armor) ~
-@1 = ~(The strong, stocky half-orc who called out to you is apparently the leader. He looks cleaner than the others, wearing chain mail and armed with a long sword and shield, which is not at all typical for an orc. He steps forward to greet you) ~
+@0 = ~*As you walk through the streets of the city, you are suddenly hailed softly from a nearby dark alley. Peering, you notice there is a group of dirty half-orcs with clubs, dressed in badly worn leather armor*~
+@1 = ~*The strong, stocky half-orc who called out to you is apparently the leader. He looks cleaner than the others, wearing chain mail and armed with a long sword and shield, which is not at all typical for an orc. He steps forward to greet you*~
 @2 = ~My name is Jackal, <PRO_SIRMAAM>, and I'm a debt collector for a bank. I have a profitable business offer for you, if you will listen to me. ~
 @3 = ~How do you know me? ~
 @4 = ~Your name is not well-known in Athkatla... yet. But I know that you came here from the north, from Baldur's Gate. I also know that you need money fast. I have something to offer you. ~
 @5 = ~So you've been following me! I don't like this at all. You'll have to explain yourself, orc. ~
-@6 = ~(Jackal raises his hand in warning) Wait, listen first! There are many eyes watching you here: thieves, a bank, and many others. I was assigned to follow you and I followed my orders. But as you can see, I came out of the shadows voluntarily. These are troubled times for everyone, and in them I see opportunity. Opportunity to rise up and get rich. ~
+@6 = ~*Jackal raises his hand in warning* Wait, listen first! There are many eyes watching you here: thieves, a bank, and many others. I was assigned to follow you and I followed my orders. But as you can see, I came out of the shadows voluntarily. These are troubled times for everyone, and in them I see opportunity. Opportunity to rise up and get rich. ~
 @7 = ~The conversation is over. I will give you and your scum only one opportunity to clear this street. ~
 @8 = ~Well, half-orc, you've got an uncommon knack for words. Tell us more. ~
-@9 = ~(You see frustration and anger on the Jackal's face, followed by feigned humility) Yes, <PRO_SIRMAAM>, as you wish. We're leaving.~
+@9 = ~*You see frustration and anger on the Jackal's face, followed by feigned humility* Yes, <PRO_SIRMAAM>, as you wish. We're leaving.~
 @10 = ~Help me collect debts quickly, and we'll both profit from it. You can keep everything that you collect.~
 @11 = ~Collecting debt? Why would I get my hands dirty with this? Do you think I have nothing better to do than chase debtors around Athkatla!?~
 @12 = ~Of course, we'd normally do it ourselves, <PRO_SIRMAAM>, but now we need speed more than ever. These debts must be collected as soon as possible! After that, we will have a chance to turn this around, and I will be able, I swear, to offer you a much more serious matter! ~
@@ -16,24 +16,24 @@
 @14 = ~I'll explain, if you please. The one who gives us orders, Mr. Shahbaz, is the head of security of the bank that I work for. We deal here with debtors and much more.  Anyway, we are doing well, but there's someone in the way... someone called The Collector. Like us, he's a debt collector, but we've got no idea where he came from. He started bringing it... a lot... and quickly rose up the ranks. Praise to Gruumsh, his assignment to guard the vault failed, or he would have been out of our reach! ~
 @15 = ~So he rubbed your noses in his success, this Collector? ~
 @16 = ~Yes, <PRO_SIRMAAM>, but only for now. Despite his successes, he hasn't gotten strong enough yet. There is an opportunity to hit him now, and it will benefit both of us, <PRO_SIRMAAM>! ~
-@17 = ~(With difficulty calming himself, the half-orc continues his dialogue) Forgive me, <PRO_SIRMAAM>. When we have collected our debts and proven our worthiness to Master Shahbaz, I shall finally have the opportunity to deal with the Collector! But right now we need to collect the debts quickly. ~ ~ (With difficulty calming himself, the half-orc continues his dialogue) Forgive me, madam. When we have collected our debts and proven our worthiness to Master Shahbaz, I shall finally have the opportunity to deal with the Collector! But right now we need to collect the debts quickly. ~
+@17 = ~*With difficulty calming himself, the half-orc continues his dialogue* Forgive me, <PRO_SIRMAAM>. When we have collected our debts and proven our worthiness to Master Shahbaz, I shall finally have the opportunity to deal with the Collector! But right now we need to collect the debts quickly. ~ ~*With difficulty calming himself, the half-orc continues his dialogue* Forgive me, madam. When we have collected our debts and proven our worthiness to Master Shahbaz, I shall finally have the opportunity to deal with the Collector! But right now we need to collect the debts quickly. ~
 @18 = ~Why don't you finish off the Collector yourself? ~
 @19 = ~It's not that easy. He is a mighty warrior, and his men are experienced fighters. But if we go up against him with you, that bastard won't stand a chance. Rumors about you say that you've fought far more powerful enemies! ~
 @20 = ~The rumors about us don't lie. How many men does he have? ~
 @21 = ~Five, <PRO_SIRMAAM>. Amongst them there is a spellcaster who is good with magic. He burned the spy I sent him. To make it easier for you to get closer, we retrieved a couple of elixirs that will protect you from fire.~
 @22 = ~So, the Cowled Wizards didn't detain him? ~
 @23 = ~No, <PRO_SIRMAAM>, the Collector's got it covered. He has enough money for more than one license. ~
-@24 = ~(Chuckle) Well, apparently, this Collector is a trickster.  It's doubtful you can beat him, what's-your-name. He'll probably put you in a cell! My answer is no. Get out!~
+@24 = ~*Chuckle* Well, apparently, this Collector is a trickster.  It's doubtful you can beat him, what's-your-name. He'll probably put you in a cell! My answer is no. Get out!~
 @25 = ~You know, Jackal, I don't want to do business with scum like you, this conversation is over. Now I want you and your guys to leave this street. And no sudden movements! ~
 @26 = ~This Collector seems to be quite dangerous. What will I get if we can defeat him? ~
-@27 = ~Yes, <PRO_SIRMAAM>! (The Jackal glares at you then makes a sign to his fighters, and they all, in complete silence, vanish between the houses) ~
-@28 = ~(Jackal responds instantly, without the slightest hesitation) All of their equipment, his and his people's, <PRO_SIRMAAM>, and a thousand coins on top of that. ~
+@27 = ~Yes, <PRO_SIRMAAM>! *The Jackal glares at you then makes a sign to his fighters, and they all, in complete silence, vanish between the houses*~
+@28 = ~*Jackal responds instantly, without the slightest hesitation* All of their equipment, his and his people's, <PRO_SIRMAAM>, and a thousand coins on top of that. ~
 @29 = ~Hmm. Where did you learn to speak so well? You've been around people for a long time, haven't you? ~
 @30 = ~Well... I really need the money. I guess we can make a deal. ~
 @31 = ~It's not a bad offer... but the risk is too great. I won't take the job. ~
 @32 = ~It's not for me. I won't go up against someone who hasn't done me any harm. ~
 @33 = ~You're right, <PRO_SIRMAAM>, I've spent a lot of time with people and learned a lot from them. But what is your answer to my proposal? ~
-@34 = ~A pity. It would be a profitable venture for you, <PRO_SIRMAAM>. But I will not detain you any longer. (Turning around, the Jackal commands his fighters and they all silently leave the street.) ~
+@34 = ~A pity. It would be a profitable venture for you, <PRO_SIRMAAM>. But I will not detain you any longer. *Turning around, the Jackal commands his fighters and they all silently leave the street.*~
 @35 = ~Good, <PRO_SIRMAAM>. We have several debtors, and we can handle many of them ourselves. But we won't be able to handle two of them in time, and this is where we need help. ~
 @36 = ~The first is Lawrence the elf. He lives in the Bridge District somewhere near the temple of Helm. He owes the bank 500 gold, and it looks like he's not planning to give it back, the bastard. It's up to you to decide how to deal with him, as long as he pays the debt. ~
 @37 = ~The other one's name is Kors. Usually poor people ask for a loan when they have no other choice, but this one is a special case, a real scoundrel. He should have been chased out of the bank, not lent money. And they gave him 200 coins! He must've really worked on the clerk's sense of pity, but now it's up to us to clean it up. ~
@@ -62,17 +62,17 @@
 @58 = ~I don't like this. But, since you're going to do everything, I'll just turn away and try not to think about it. ~
 @59 = ~Okay, do it quickly! ~
 @60 = ~Here you go. Here's the full amount owed. Now I suggest you get out of here before someone sees you. You'll never see me again. I'm getting out of this town. There were so many valuables in the crypt that I can leave without looking back! ~
-@61 = ~(Lawrence steps aside and struggles to push back the lid of a crypt. Then he climbs inside and disappears from sight.) ~
+@61 = ~*Lawrence steps aside and struggles to push back the lid of a crypt. Then he climbs inside and disappears from sight.*~
 
 // Sheila
-@62 = ~(The woman looks at you sadly, but is silent) ~
+@62 = ~*The woman looks at you sadly, but is silent*~
 @63 = ~Is your name Sheila? Was your husband's name Kors?~
 @64 = ~So what if it's true? What do you want? ~
 @65 = ~Your husband owes the bank 200 coins. The debt must be repaid. ~
 @66 = ~I'd gladly give everything I have if Kors would come back alive... But unfortunately, you're late. He's dead. ~
 @67 = ~He did take a loan from the bank... Recently he was lucky enough to get a job as a garbage man, but the job only paid pennies. And he really wanted to get us out of the Slums and move somewhere quieter. So he went to the bank. I don't know how he got approved for that kind of money. Probably because he had a job of some kind. ~
 @68 = ~But on the way home he was attacked... Robbed and killed! I found out about it only the next day - from the guards who found him in the ditch... They called me to identify the body... ~
-@69 = ~And now I have no money, no husband, but two little children who are starving to death!!! (crying) ~
+@69 = ~And now I have no money, no husband, but two little children who are starving to death!!! *crying*~
 @70 = ~Calm down now, tears cannot cure grief. Didn't the guards find the attackers?~
 @71 = ~Stop whining, woman! Didn't the guards find the attackers?~
 @72 = ~Of course not! Someone gets killed every day in the Slums, but the guards haven't helped yet. They're afraid to come here at night themselves. ~
@@ -80,7 +80,7 @@
 @74 = ~I'll try to do find them, but I promise nothing. ~
 
 // Bandit
-@75 = ~(This man is barely on his feet - apparently he's recently been at the bottle. There is another man lying on the floor nearby, but he is already passed out and snoring) ~
+@75 = ~*This man is barely on his feet - apparently he's recently been at the bottle. There is another man lying on the floor nearby, but he is already passed out and snoring*~
 @76 = ~*hiccups* Alright, what do you want? ~
 @77 = ~My good man, what are you celebrating? ~
 @78 = ~We celebrate what we want! We've just got a little business under our belts, alright? ~
@@ -88,7 +88,7 @@
 @80 = ~Right! Are you ... a wizard, or what? G-Guessing for sure *hiccups*! ~
 @81 = ~Give me that money, right now! It's not yours! ~
 @82 = ~W-What ?? J-just try, we'll rip out your throat! Hey Ronnie, get up!! Someone is trying to rob us! ~
-@83 = ~(The sleeping man does not respond and continues to snore) ~
+@83 = ~*The sleeping man does not respond and continues to snore*~
 @84 = ~Ronnie! Get up ... ~
 @85 = ~Okay, I'll take care of this myself! You're gonna get it now, *hiccups*! ~
 @86 = ~*He tries to swing his fist at you but can't make his fingers form a fist. Staring dumbly at his hand, he stands and sways*~
@@ -99,7 +99,7 @@
 @89 = ~Sheila, here's the money that was stolen from your husband that day. Unfortunately, 20 coins are missing, the bandits had time to spend it. But take the rest and try to move somewhere with the kids, like Kors wanted.~
 @90 = ~I... don't know what to say, or how to thank you... Thank you. I will always remember you. I'm on my way to see my children. ~
 @91 = ~Sheila, here are the 200 coins your husband got back then but never got around to giving it to you. Take it, and try to move somewhere with the kids, like Kors wanted. And I'll settle the matter with the bank, the debt will be written off. ~
-@92 = ~(Leave) ~
+@92 = ~*Leave*~
 
 // Jackal
 @93 = ~How was it? ~
@@ -132,12 +132,12 @@
 @118 = ~I see this Jackal lived up to his nickname and hesitated to come himself. He sent his sister and some guards instead! *The Collector's wolf gaze falls on you* And you, I suppose, are their mercenary? You shouldn't have gotten involved... ~
 @119 = ~*You order the half-orcs to pick targets and prepare for battle. Caityga slowly raises the bow, her rough fingers preparing to pull the string.*~
 @120 = ~<CHARNAME>, he is from another plane, I can tell it right away. And he's very dangerous. ~
-@121 = ~Grrrr! (Wilson growls menacingly at the Collector) ~
-@122 = ~(Whispering) <CHARNAME>, do you really think messing with these types is a good idea? ~
+@121 = ~Grrrr! *Wilson growls menacingly at the Collector* ~
+@122 = ~*Whispering* <CHARNAME>, do you really think messing with these types is a good idea? ~
 @123 = ~Hey Collector, what if we try to negotiate? ~
 @124 = ~*A metallic note slips into the Collector's harsh laughter at your suggestion* You're on fire today! That's a good joke. ~ [GGMAL04]
-@125 = ~Now be nice and get off this street. Soon these half-orc freaks will be kicked out of the bank, I'll make sure of it! "Try to negotiate"! Ha! ~
-@126 = ~(A battle begins, you and the half-orcs against the Collector and his men) ~
+@125 = ~Now be nice and get off this street. Soon these half-orc freaks will be kicked out of the bank, I'll make sure of it! "Try to negotiate"! Ha!~
+@126 = ~*A battle begins, you and the half-orcs against the Collector and his men*~
 @127 = ~Victory! We're leaving. Let's return to the Jackal. ~
 @128 = ~*Victory! Caityga is dead - and it looks like the Jackal won't mourn her*~
 @129 = ~*The half-orc is clearly nervous, although he doesn't show it*~
@@ -162,7 +162,7 @@
 @146 = ~This will be a battle worthy of Sir Garrick's poetry! If you do not understand yet, Mr. Collector, we are talking about me. It is a pity that you will not hear the ballad about your death. I promise it will be beautiful and bring us a lot of extra coins. ~
 
 // Additions (Jackal)
-@147 = ~It won't be that hard. The Collector has grown too bold, forgetting caution. Recently, he came by to laugh at us! He told me that he would lock me in a cage with naught but bones to eat! That he would kill all my brothers in front of me! Rr-agh! (The Jackal interrupts his narration with a growl, completely baring his yellow fangs. His eyes burn with fierce, animal malice towards the Collector) ~
+@147 = ~It won't be that hard. The Collector has grown too bold, forgetting caution. Recently, he came by to laugh at us! He told me that he would lock me in a cage with naught but bones to eat! That he would kill all my brothers in front of me! Rr-agh! *The Jackal interrupts his narration with a growl, completely baring his yellow fangs. His eyes burn with fierce, animal malice towards the Collector* ~
 
 // Courier
 @148 = ~Oh <PRO_LADYLORD> <CHARNAME>, it's you! It took a long time to find you... Phew! I work as a courier at the First Calimport Bank, and I was sent to invite you to a meeting with the head of security, Mr. Shahbaz. He wanted to see you personally. Why? He will tell you, I'm sure, I don't know anything about the details. That's it, I've got to run! ~
@@ -180,7 +180,7 @@
 @158 = ~I have no idea where this Brynnlaw is, and I doubt I will ever go there. But I sure could use a grand and a half. I'm in, give me the note. ~
 @159 = ~No, it's too dangerous to get into a pirate's den. I will not take this job. ~
 @160 = ~You're right, I need some time to think about your offer. ~
-@161 = ~Excellent, here! (hands you the note) May the gods grant you good luck in business. I'll wait for news from you. ~
+@161 = ~Excellent, here! *hands you the note* May the gods grant you good luck in business. I'll wait for news from you. ~
 @162 = ~Well, that's your choice. If you change your mind, you can always find me here. But I won't keep you, may the gods be favorable to you. ~
 @163 = ~Well, it never hurts to think twice. Fayaz doesn't know you and isn't expecting visitors from the bank, so you'll easily catch him off guard. A running thief has one road, and those who chase him have a thousand... ~
 @164 = ~But I won't keep you. Come as you will, and may the gods guide you on the path of wealth and prosperity. ~
@@ -197,15 +197,15 @@
 @175 = ~Look who's here!~
 
 // Sheila (chapter 6)
-@176 = ~(You see a barely dressed woman with dark bags under her eyes. As you walk past, you suddenly realize that you've seen her somewhere before. She looks at you distantly, as if through a fog.) ~
+@176 = ~*You see a barely dressed woman with dark bags under her eyes. As you walk past, you suddenly realize that you've seen her somewhere before. She looks at you distantly, as if through a fog.*~
 @177 = ~What do you want? Do you want to spend the night with me? 15 coins! ~
-@178 = ~Wait a minute ... It's you! (The woman's gaze clears, and her eyes fill with sadness) ~
+@178 = ~Wait a minute ... It's you! *The woman's gaze clears, and her eyes fill with sadness*~
 @179 = ~We've met before. My name is Sheila. Remember, you came up and tried to take money from me for my husband's debts? But I had nothing to pay with, because my husband was robbed and killed, and I was left with two children in my arms. ~
 @180 = ~I couldn't find an honest job, and I had to feed the children with something. So I started selling the last thing I had left - my body. ~
 @181 = ~Why do you care? You wouldn't even remember who I am. Go, and leave me to my. ~
-@182 = ~(You feel a little prick of conscience - after all, you could have helped her in her time of need, but instead, you decided to pay off the debts to the bank) Sheila, take this. Here are 100 coins. Better late than never. ~
-@183 = ~(You feel a little prick of conscience - after all, you could have helped her in her time of need, but instead, you decided to pay off the debts to the bank) I would help now, but I myself have no money. Sorry. ~
-@184 = ~(You feel disgust for this street whore who can't figure out her own life and is always looking for someone else to lean on) Everyone gets what they deserve. Goodbye.~
+@182 = ~*You feel a little prick of conscience - after all, you could have helped her in her time of need, but instead, you decided to pay off the debts to the bank* Sheila, take this. Here are 100 coins. Better late than never. ~
+@183 = ~*You feel a little prick of conscience - after all, you could have helped her in her time of need, but instead, you decided to pay off the debts to the bank* I would help now, but I myself have no money. Sorry. ~
+@184 = ~*You feel disgust for this street whore who can't figure out her own life and is always looking for someone else to lean on* Everyone gets what they deserve. Goodbye.~
 @185 = ~...Oh. Thank you. One of my children has already died of consumption, but the second lives, and I live only for him. The money will be useful to us.~
 @186 = ~I guess so. Or the universe wanted to tell me something by giving me these sorrows. ~
 @187 = ~Goodbye. ~

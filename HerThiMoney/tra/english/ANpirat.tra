@@ -4,7 +4,7 @@
 @0 = ~Huh?~
 @1 = ~I'll trade you some gossip for a beer!~
 @2 = ~Ahoy, matey, do you by any chance know where to find One-Eyed Fayaz?~
-@3 = ~Huh? What do you want with him? (The drunken sailor struggles to focus on you and takes a long time to collect his thoughts)~
+@3 = ~Huh? What do you want with him? *The drunken sailor struggles to focus on you and takes a long time to collect his thoughts*~
 @4 = ~He's... well, he's... ah... dead!~
 @5 = ~Dead, you say? How did this happen?~
 @6 = ~Yes... dead. Three days ago, they buried him at sea... Hmm. You're not from around here, are you. Throw me some coin and I'll tell you everything.~
@@ -12,11 +12,11 @@
 @8 = ~About what? Ah... Fayaz. He made a big score somewhere and didn't leave the tavern for a week. Umberlee, I swear he bought up all the rum in there. The owner was constantly running downstairs for new bottles. And he treated us all! (The drunken sailor licks his lips with pleasure at the memory)~
 @9 = ~And then... Fayaz had a stroke... right there in the tavern. He fell face down. We rushed to him, but he already wasn't breathing. He was a good sailor... at least that can be said.~
 @10 = ~And his things? That is to say, his property?~
-@11 = ~(The sailor thinks for a long time, staggering on unsteady legs.) I don't know. Talk to his "wife" about it. Her name is Lorna. I saw her recently, at the pier. She might be able to tell you something.~
+@11 = ~*The sailor thinks for a long time, staggering on unsteady legs.* I don't know. Talk to his "wife" about it. Her name is Lorna. I saw her recently, at the pier. She might be able to tell you something.~
 @12 = ~Now if you'll excuse me, friend, I have to drink your gold... I mean my gold... Heh-heh!~
 
 // Lorna
-@13 = ~(The tiefling woman looks at you with hatred, her tail pounding on the ground)~
+@13 = ~*The tiefling woman looks at you with hatred, her tail pounding on the ground*~
 @14 = ~Are you Lorna?~
 @15 = ~That's me, who are you? One of those rats, coming to rob my house? Then you're a little late!~ ~That's me, who are you? One of those rats, coming to rob my house? Then you're a little late!~
 @16 = ~I am here about your husband's debt.~
@@ -24,29 +24,29 @@
 @18 = ~What happened to his property?~
 @19 = ~Property, you say!? Ha! The day he died, all of his friends - those he treated to countless drinks - his so-called "friends" came to our house and took everything they could. Those bastards... (sobs) Gods, let this whole place fall into the Abyss!~
 @20 = ~So with Fayaz dead, you lost your protection?~
-@21 = ~(All you hear in Lorna's reply is bitterness and anger) With his death, I lost everything!! And the last five years of living on this blasted i-island! He promised to stop drinking, he swore to me... And now I spent the last money on his funeral. ~
+@21 = ~*All you hear in Lorna's reply is bitterness and anger* With his death, I lost everything!! And the last five years of living on this blasted i-island! He promised to stop drinking, he swore to me... And now I spent the last money on his funeral. ~
 @22 = ~What do I do when all the money is out, wh-where do I go? I'd rather die than stay here! Every one of them has called me a devil spawn, these past three days!~
-@23 = ~(Try to calm her down) Hush, for gods sake. Shouting won't help matters. Your husband was a wealthy man, a skipper, he must have some assets left.~
+@23 = ~*Try to calm her down* Hush, for gods sake. Shouting won't help matters. Your husband was a wealthy man, a skipper, he must have some assets left.~
 @24 = ~I am sorry for your loss, but now I must go.~
 @25 = ~Like what? Tell me! His ship has a new captain, his goods are sold, and our house has been plundered.~
 @26 = ~To the Abyss with you! Hope Umberlee has soft featherbeds at the bottom for all of you!~
 @27 = ~Think hard, Lorna. There must be something left.~
-@28 = ~(Still sobbing, Lorna glances carefully at you) Oh-h, who did he owe? And h-how much?~
+@28 = ~*Still sobbing, Lorna glances carefully at you* Oh-h, who did he owe? And h-how much?~
 @29 = ~He owes the bank exactly three thousand, including interest. Here is his receipt. (you hand her the document)~
 @30 = ~No need, I can't read. But I feel that you're telling the truth. I have a proposal for you. I need to go to Amn, to Athkatla. Help me get off this island and I will give you a scroll that belonged to Fayaz. I think it might lead you to a cache... maybe. There's nothing else left.~
 @31 = ~Let's see the scroll.~
-@32 = ~(She holds it up to you, but does not let go)~
-@33 = ~(You see an old, half-torn parchment, with poetry scrawled carelessly on it. This undoubtedly looks like an encrypted message, but it may also be a fake. You look more closely at Lorna. Beneath a layer of feigned rudeness, domestic turmoil, disappointment, and crushed hopes, you see a still young and innocent nature in her face. She doesn't seem to be lying about the scroll.)~
+@32 = ~*She holds it up to you, but does not let go*~
+@33 = ~*You see an old, half-torn parchment, with poetry scrawled carelessly on it. This undoubtedly looks like an encrypted message, but it may also be a fake. You look more closely at Lorna. Beneath a layer of feigned rudeness, domestic turmoil, disappointment, and crushed hopes, you see a still young and innocent nature in her face. She doesn't seem to be lying about the scroll.*~
 @34 = ~Do you have any place to go in Athkatla?~
 @35 = ~Fayaz said it was a big city where no one cares who you are or where you're from, as long as you have money. I think I can find my place there. I only need a hundred gold from you. That's enough for me to get off the island and rent a house in Athkatla.~
 @36 = ~Okay, here. (Give her money and Fayaz's promissory note.)~
 @37 = ~I don't have that much right now.~
 @38 = ~No, I think this scroll is worthless. I'm not giving a single coin for it.~
-@39 = ~Thank you! I can't believe I'm finally getting out of here! Here, I hope you find what you are looking for (Gives you the scroll)~
+@39 = ~Thank you! I can't believe I'm finally getting out of here! Here, I hope you find what you are looking for *Gives you the scroll*~
 @40 = ~Okay... I understand. But I really really need this money to get off the island. Please come back if you manage to get enough.~
-@41 = ~You don't believe me, then!? But I'm telling you the honest truth. Forget it, we're done here! (Lorna walks away angrily)~
+@41 = ~You don't believe me, then!? But I'm telling you the honest truth. Forget it, we're done here! *Lorna walks away angrily*~
 @42 = ~So what?~
-@43 = ~Okay, here (Give her money and Fayaz's promissory note.)~
+@43 = ~Okay, here *Give her money and Fayaz's promissory note.*~
 @44 = ~Nothing, just wanted to say hello.~
 @45 = ~Good luck.~
 @46 = ~Where might the cache be, do you know?~
@@ -118,15 +118,15 @@
 @104 = ~on his thumb ...~
 @105 = ~When you put on the last ring, the skeleton's hand crumbles to dust. You can now open the chest.~
 @106 = ~When you put on the last ring, nothing happens. We must try again...~
-@107 = ~(Give up trying and leave)~
-@108 = ~(Try putting a fire opal ring on a skeleton's finger)~
-@109 = ~(Try putting an onyx ring on a skeleton's finger)~
-@110 = ~(Try putting a ruby ring on a skeleton's finger)~
-@111 = ~(Try putting a silver ring on the skeleton's finger)~
-@112 = ~(Try putting a gold ring on the skeleton's finger)~
-@113 = ~(Which of his fingers should I put a ring on?)~
-@114 = ~(The skeleton next to the chest has five rings: fire opal, onyx, ruby, silver, gold. You take them and examine the skeleton's hand more closely...)~
-@115 = ~(What's next?)~
+@107 = ~*Give up trying and leave*~
+@108 = ~*Try putting a fire opal ring on a skeleton's finger*~
+@109 = ~*Try putting an onyx ring on a skeleton's finger*~
+@110 = ~*Try putting a ruby ring on a skeleton's finger*~
+@111 = ~*Try putting a silver ring on the skeleton's finger*~
+@112 = ~*Try putting a gold ring on the skeleton's finger*~
+@113 = ~*Which of his fingers should I put a ring on?*~
+@114 = ~*The skeleton next to the chest has five rings: fire opal, onyx, ruby, silver, gold. You take them and examine the skeleton's hand more closely...*~
+@115 = ~*What's next?*~
 
 // Owney
 @116 = ~Nice to see you, <PRO_BROTHERSISTER>. I heard you left Athkatla in a hurry.~ ~Nice to see you, <PRO_BROTHERSISTER>. I heard you left Athkatla in a hurry.~
@@ -151,7 +151,7 @@
 @133 = ~Just a week. The whole first day I was kept in the port with questions and other nonsense, and the entire second day I spent on the Waukeen Promenade. I just wandered there with my mouth open~
 @134 = ~Pretty impressive, isn't it?~
 @135 = ~I don't understand what good can be found there, other than endless noise, hustle and bothersome hucksters? Well, never mind.~
-@136 = ~(Lorna smiles cheerfully) You said it! I found myself work in a bakery, where a nice old lady offered me a job. This old couple are struggling now, and desperately needed an extra pair of hands. They didn't even notice that I was a tiefling! And also, I bought myself a textbook - I want to learn to read and write. I have a lot to do now, I'm on my feet all day. Gods, how much better is all this than sitting in that rotten Brynnlaw and watching life pass me by!~
+@136 = ~*Lorna smiles cheerfully* You said it! I found myself work in a bakery, where a nice old lady offered me a job. This old couple are struggling now, and desperately needed an extra pair of hands. They didn't even notice that I was a tiefling! And also, I bought myself a textbook - I want to learn to read and write. I have a lot to do now, I'm on my feet all day. Gods, how much better is all this than sitting in that rotten Brynnlaw and watching life pass me by!~
 @137 = ~Don't say that. People in the market are trying to earn a piece of bread by honest labor, what's wrong with that? Yes, the shopping arcade is noisy, but you won't believe how happy I am to see all this fuss. Life is in full swing here, unlike a dump like Brynnlaw!~
 @138 = ~By the way, did you manage to find that treasure?~
 @139 = ~I couldn't find it.~ ~I couldn't find it.~
@@ -165,7 +165,7 @@
 @147 = ~It's good that the debt is settled. Sorry, I need to get back to work now.~
 @148 = ~Good luck! Hope to see you again!~
 @149 = ~I must go, too. Take care of yourself.~
-@150 = ~(Lorna leaves)~
+@150 = ~*Lorna leaves*~
 
 // Sahuagins
 @151 = ~Hey, look! A <PRO_RACE>!~
@@ -184,7 +184,7 @@
 @164 = ~Nice plan. We'll deal with that monster another time, it won't go anywhere.~
 @165 = ~Okay, then. Sorry, <PRO_RACE>, but it's time for you to die.~
 @166 = ~Why, you ask? Great Sekolah will be grateful to you, isn't that enough?~
-@167 = ~(lowering his voice) Shh, <PRO_HESHE> wants gold, just like all land creatures. Promise them mountains of gold.~
+@167 = ~*lowering his voice* Shh, <PRO_HESHE> wants gold, just like all land creatures. Promise them mountains of gold.~
 @168 = ~Yes, you will receive a rich reward if you agree. Many, many gold coins. In your world, they seem to have some value.~
 @169 = ~What do I need to do?~
 @170 = ~If you go further along this gorge, you will see some land hidden behind the rocks. Once it was covered with water and was sacred to our people - the first mortals were sacrificed there to Sekolah, everything was covered with their blood. Those were good times...~
