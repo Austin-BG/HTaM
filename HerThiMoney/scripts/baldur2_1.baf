@@ -2,13 +2,16 @@ IF
 	GlobalTimerExpired("ANShahbazTimer","GLOBAL")
     Global("ANshakal","GLOBAL",9)	
 	AreaType(OUTDOOR)
-	AreaType(CITY)
 	CombatCounter(0)
 THEN
        RESPONSE #100
+	    ClearAllActions()
+		StartCutSceneMode()
+		CutSceneId(Player1)  
 		CreateCreatureObject("ANmess1",Player1,0,0,0)  
 		SetGlobal("ANshakal","GLOBAL",10)
+		SmallWait(5)
+		EndCutSceneMode()
 		ActionOverride("ANmess1",StartDialogNoSet(Player1))
 END
-
 

@@ -23,8 +23,13 @@ IF
 	Global("ThiefSpawn0","GLOBAL",1)
 THEN
 	RESPONSE #100
-		SetGlobal("ThiefSpawn0","GLOBAL",2)
+	    ClearAllActions()
+		StartCutSceneMode()
+		CutSceneId(Player1)  		
 		CreateCreatureObject("ANmess2",Player1,0,0,0)  
+		SetGlobal("ThiefSpawn0","GLOBAL",2)
+		SmallWait(5)
+		EndCutSceneMode()
 		ActionOverride("ANmess2",StartDialogNoSet(Player1))
 END
 
@@ -53,8 +58,13 @@ IF
 	Global("Chapter","GLOBAL",%bg2_chapter_3%)
 THEN
 	RESPONSE #100
+		ClearAllActions()
+		StartCutSceneMode()
+		CutSceneId(Player1)  		
 		CreateCreatureObject("ANtony1",Player1,0,0,0)  
 		SetGlobal("TonySpawn0","GLOBAL",1)
+		SmallWait(5)
+		EndCutSceneMode()
 		ActionOverride("ANtony",StartDialogNoSet(Player1))
 END
 
@@ -80,8 +90,12 @@ IF
 THEN
 	RESPONSE #100
 		ClearAllActions()
+		StartCutSceneMode()
+		CutSceneId(Player1)  
 		CreateCreatureObject("ANtony1",Player1,0,0,0)  // Tony
 		SetGlobal("TonySpawn1","GLOBAL",1)
+		SmallWait(5)
+		EndCutSceneMode()
 		ActionOverride("ANtony",StartDialogueNoSet(Player1))
 END
 
@@ -108,8 +122,13 @@ IF
 	Global("Chapter","GLOBAL",%bg2_chapter_6%)
 THEN
 	RESPONSE #100
+		ClearAllActions()
+		StartCutSceneMode()
+		CutSceneId(Player1) 
+		CreateCreatureObject("ANtony1",Player1,0,0,0)  
 		SetGlobal("TonySpawn2","GLOBAL",1)
-        CreateCreatureObject("ANtony1",Player1,0,0,0)  
+		SmallWait(5)
+		EndCutSceneMode()
 		ActionOverride("ANtony",StartDialogNoSet(Player1))
 END
 
@@ -136,8 +155,13 @@ IF
 	Global("Chapter","GLOBAL",%bg2_chapter_6%)
 THEN
 	RESPONSE #100
-		SetGlobal("TonySpawn3","GLOBAL",1)
+		ClearAllActions()
+		StartCutSceneMode()
+		CutSceneId(Player1) 
         CreateCreatureObject("ANtony1",Player1,0,0,0)  
+		SetGlobal("TonySpawn3","GLOBAL",1)
+		SmallWait(5)
+		EndCutSceneMode()
 		ActionOverride("ANtony",StartDialogNoSet(Player1))
 END
 
@@ -181,8 +205,13 @@ IF
 	Global("Chapter","GLOBAL",%bg2_chapter_6%)	
 THEN
 	RESPONSE #100
+		ClearAllActions()
+		StartCutSceneMode()
+		CutSceneId(Player1) 
+        CreateCreatureObject("ANtony1",Player1,0,0,0)  
 		SetGlobal("TonySpawn4","GLOBAL",1)
-        CreateCreatureObject("ANtony1",Player1,0,0,0)   
+		SmallWait(5)
+		EndCutSceneMode()		
 		ActionOverride("ANtony",StartDialogNoSet(Player1))
 END
 
@@ -214,8 +243,13 @@ IF
 	Global("PlayerThiefGuild","GLOBAL",1)
 THEN
 	RESPONSE #100
-		SetGlobal("TonySpawn5","GLOBAL",1)
+		ClearAllActions()
+		StartCutSceneMode()
+		CutSceneId(Player1) 
         CreateCreatureObject("ANtony1",Player1,0,0,0)  
+		SetGlobal("TonySpawn5","GLOBAL",1)
+		SmallWait(5)
+		EndCutSceneMode()	
 		ActionOverride("ANtony",StartDialogNoSet(Player1))
 END
 
@@ -229,8 +263,13 @@ IF
 	Global("TonySpawnAlternate","GLOBAL",1)
 THEN
 	RESPONSE #100
-		SetGlobal("TonySpawnAlternate","GLOBAL",2)
-        CreateCreatureObject("ANtony1",Player1,0,0,0)  
+		ClearAllActions()
+		StartCutSceneMode()
+		CutSceneId(Player1) 
+        CreateCreatureObject("ANtony1",Player1,0,0,0) 
+		SetGlobal("TonySpawnAlternate","GLOBAL",2)		
+		SmallWait(5)
+		EndCutSceneMode()
 		ActionOverride("ANtony",StartDialogNoSet(Player1))
 END
 
@@ -347,35 +386,6 @@ THEN
         ActionOverride("ANtony",StartDialogNoSet("Player1"))	
 END
 
-// Romance Blocks
-IF
-	Global("AranRomanceActive","GLOBAL",2)
-	Global("AnomenRomanceActive","GLOBAL",1)
-	
-THEN
-	RESPONSE #100
-	SetGlobal("AnomenRomanceActive","GLOBAL",99)
-END
-
-IF
-	Global("AranRomanceActive","GLOBAL",2)
-	Global("RasaadRomanceActive","GLOBAL",1)
-	
-THEN
-	RESPONSE #100
-	SetGlobal("RasaadRomanceActive","GLOBAL",99)
-END
-
-IF
-	Global("AranRomanceActive","GLOBAL",2)
-	Global("DornRomanceActive","GLOBAL",1)
-	
-THEN
-	RESPONSE #100
-	SetGlobal("DornRomanceActive","GLOBAL",99)
-END
-
-
 // Tony 5 (MALE QUEST)
 IF
 	GlobalTimerExpired("ANAranLetterMALETimer","GLOBAL")
@@ -385,7 +395,12 @@ IF
 	Global("TonySpawnMALE","GLOBAL",0)
 THEN
 	RESPONSE #100
-		SetGlobal("TonySpawnMALE","GLOBAL",1)
+		ClearAllActions()
+		StartCutSceneMode()
+		CutSceneId(Player1) 
         CreateCreatureObject("ANtony1","Player1",0,0,0)  
+		SetGlobal("TonySpawnMALE","GLOBAL",1)
+		SmallWait(5)			
+		EndCutSceneMode()
 		ActionOverride("ANtony",StartDialogNoSet(Player1))
 END

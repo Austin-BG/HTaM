@@ -10,9 +10,9 @@ CreateCreature("ANorc1",[629.420],8)
 CreateCreature("ANcaytig",[565.510],8)
 CreateCreature("ANorc2",[537.435],8)
 Explore()
-ChangeEnemyAlly("ANcaytig",GOODBUTBLUE) 
-ChangeEnemyAlly("ANorc1",GOODBUTBLUE) 
-ChangeEnemyAlly("ANorc2",GOODBUTBLUE) 
+ChangeEnemyAlly("ANcaytig",CONTROLLED) 
+ChangeEnemyAlly("ANorc1",CONTROLLED) 
+ChangeEnemyAlly("ANorc2",CONTROLLED) 
 Continue()
 END
 

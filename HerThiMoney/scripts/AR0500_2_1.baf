@@ -24,7 +24,9 @@ Global("ANlorens","GLOBAL",2)
 
 THEN
   RESPONSE #100
-        SetGlobal("ANlorens","GLOBAL",3)
+        ClearAllActions()
+		ActionOverride("ANlorens",EscapeArea())
+		SetGlobal("ANlorens","GLOBAL",3)
 		StartCutSceneMode()
 		FadeFromColor([70.0],0)
 		ActionOverride(Player1,LeaveAreaLUA("AR0800","",[1936.1875],8))
@@ -35,7 +37,6 @@ THEN
         ActionOverride(Player6,LeaveAreaLUA("AR0800","",[1936.1875],8))
 		Wait(1)
 		EndCutSceneMode()
-        Continue() 
 END
 
 

@@ -36,13 +36,10 @@ CutSceneId(Player1)
 SetGlobal("ANshakalexists","AR0400",2)
 SetGlobal("ANshakalTalk","AR0400",1)
 Wait(1)
-CreateCreatureObject("bdoffscr",Player1,0,0,0)  
-ApplySpellRES("bdoffscr","bdoffscr") 
-SmallWait(1)
-CreateCreatureObject("ANshakal","bdoffscr",0,0,0)  
-CreateCreatureObject("ANcaytig","bdoffscr",0,0,0)
-CreateCreatureObject("ANorc1","bdoffscr",0,0,0)
-CreateCreatureObject("ANorc2","bdoffscr",0,0,0)
+CreateCreatureObject("ANshakal",Player1,0,0,0)  
+CreateCreatureObject("ANcaytig",Player1,0,0,0)
+CreateCreatureObject("ANorc1",Player1,0,0,0)
+CreateCreatureObject("ANorc2",Player1,0,0,0)
 ActionOverride("ANshakal",FaceObject([PC]))
 ActionOverride("ANcaytig",FaceObject([PC]))
 ActionOverride("ANorc1",FaceObject([PC]))
@@ -90,7 +87,8 @@ Global("ANshakal","GLOBAL",2)
 
 THEN
   RESPONSE #100
-        SetGlobal("ANshakal","GLOBAL",3)
+        ClearAllActions()
+		SetGlobal("ANshakal","GLOBAL",3)
 		StartCutSceneMode()
 		StorePartyLocations()
 		FadeFromColor([70.0],0)
@@ -102,7 +100,6 @@ THEN
         ActionOverride(Player6,LeaveAreaLUA("AN0060","",[341.608],8))
 		Wait(1)
 		EndCutSceneMode()
-        Continue() 
 END
 
 

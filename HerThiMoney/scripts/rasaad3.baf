@@ -61,3 +61,13 @@ THEN
        SmallWait(3)
        ActionOverride(Myself,Dialog(Player1))
 END
+
+// Romance Block
+IF
+	Global("AranRomanceActive","GLOBAL",2)
+	Global("RasaadRomanceActive","GLOBAL",1)
+	
+THEN
+	RESPONSE #100
+	SetGlobal("RasaadRomanceActive","GLOBAL",99)
+END

@@ -15,9 +15,13 @@ IF
 THEN
        RESPONSE #100
 	   	ClearAllActions()	
+		StartCutSceneMode()
+		CutSceneId(Player1)  
 		CreateCreatureObject("ANmess",Player1,0,0,0) 
 		SetGlobal("ANQuayleTroll","GLOBAL",1)		
 		SetGlobal("ANTrollEscape","GLOBAL",1)
+		SmallWait(5)
+		EndCutSceneMode()
 		ActionOverride("ANmess",StartDialogNoSet(Player1))
 END
 
