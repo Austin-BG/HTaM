@@ -1,5 +1,6 @@
 // Tony ToB
 IF
+    Global("AranRomanceActive","GLOBAL",2)
 	Global("AranLoveToB","GLOBAL",0) 
 	Global("TonySpawnTob1","AR5500",0)
 THEN
