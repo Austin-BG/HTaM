@@ -1,0 +1,11 @@
+// Nalia-Edwin Banter in Sahuagin City
+@0 = ~<CHARNAME>, ya que estamos atrapados en este lugar... ¿Qué tal si aceptas más consejos de tus compañeros? Considerar tu próximo movimiento con amigos nunca hace daño a nadie. No me gustó nunca ese capitán desde el principio, por cierto.~
+@1 = ~¿En serio, Nalia? ¿Sugieres debatir y discutir mientras nuestros enemigos nos acechan? Déjame contarte una historia de mi juventud sobre los peligros de un liderazgo débil.~
+@2 = ~Sucedió en las tierras de Thay, una vez más, se intentó invadir Rashemen. El pequeño ejército, formado en su mayoría por orcos, no estaba liderado por el el lider tharchion, que cayó enfermo, sino por sus dos hermanos menores. No lograron llegar a un consenso y todos sufrieron por ello, como de costumbre.~
+@3 = ~El ejército se quedó cerca de la frontera de Rashemen y nunca avanzó. El hermano menor saboteó las líneas de suministro, por lo que el hermano mediano sobornó a sus comandantes y lo arrestaron. La situación no mejoró. El hermano mediano pasaba días en reuniones interminables, incapaz de dar órdenes claras.~
+@4 = ~El ejército quedó reducido a la mitad durante una semana de paralización. Unos cincuenta orcos desertaron y otros tantos cayeron enfermos. El resto estaba rodeado por los Rashemies, que habían reunido a escondidas una fuerza considerable alrededor de nuestro campamento.~
+@5 = ~Estábamos aplastados, por supuesto. Ambos hermanos murieron, y yo sobreviví sólo por casualidad. Me tomó dos días de vagar por los bosques para encontrar a mis aliados. Este es el coste de un liderazgo débil y de una deliberación interminable. Por eso el éxito exige una mano firme y firme.~
+@6 = ~No estoy de acuerdo con tus conclusiones, Edwin, pero tu historia me ha dado que pensar.~
+
+// Sahuagin King talk
+@7 = ~(quietly) ¡Meterse con estos hombres-pez... Sajuaguines será una pérdida de tiempo! A menos que... Toleraré esta tonta decisión si algún poderoso artefacto sale de su tesoro como recompensa.~

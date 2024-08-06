@@ -1,0 +1,142 @@
+// "Shadow-Covered Love"
+// ToB part
+
+// Letter
+@0 = ~¡Ah, Señorita <CHARNAME>, apenas la encontré! No sabe cuánto me alegro de verla con buena salud~
+@1 = ~(Tú mismo te asombras de la intensa alegría que te embarga al ver al pequeño mensajero Aran Linvail. Todo lo ocurrido en Athkatla parece tan lejano en el crisol de la lucha despiadada en la que te ves envuelto. Pero la aparición de Tony vuelve a hacer el presente, el pasado, vívido y aún vivo. Y al mismo tiempo te invade la ansiedad...) ~
+@2 = ~¡Tony! ¡Hola! ¿Está todo bien con Aran? ~
+@3 = ~¡Oh, no te preocupes! Nuestro Maestro está vivo y bien, y me envió para asegurarme de que se pueda decir lo mismo de ti. También me dijo que te diera esto ... ~
+@4 = ~(Aceptas un paquete de Tony que contiene una carta y un pergamino. Con una emoción más que comprensible, desdoblas la carta ...) ~
+@5 = ~“Mi <CHARNAME>!
+La noticia de este lío con los descendientes de tus padres me ha perturbado mucho. Y principalmente, por supuesto, por el hecho de que vuelves a estar en no poco peligro. Nunca me consideré muy sensible, pero ahora no me avergüenza admitir que tu ausencia se siente como un vacío que no se puede llenar. Sin embargo, Athkatla está en pleno apogeo, como siempre, no hay lugar para el aburrimiento y la ociosidad, y muchas cosas requieren mi atención e intervención personal. Estaré encantado de compartir contigo tanto las preocupaciones como la autoridad que poseo, aunque sea incomparable con el derecho al que te da tu origen divino. Pero, amor mío, además de oro y poder, quiero darte algo que no encontrarás, aunque te conviertas en una diosa. No creo que necesite decir mucho - si, como yo, recuerdas todo lo que pasó entre nosotros, entonces tú misma lo sabes.
+Por favor, cuídate. Triunfa sobre tus enemigos, como siempre lo has hecho. Yo creo en ti. Y te quiero. Tu Aran"~ [aransong]
+@6 = ~(Te inclinas hacia el mediano y le besas en la mejilla, sin miedo a parecer sentimental) ~
+@7 = ~Gracias, Tony. Eres un mensajero glorioso, trayendo buenas noticias. Regresa rápido, es peligroso aquí. Dile a Aran que sus palabras han reconfortado mi alma. Y que nuestros sentimientos son mutuos. ~
+@8 = ~Por supuesto, señora <CHARNAME>! ~
+@9 = ~¿Cómo le va a mi gremio? ~
+@10 = ~No te preocupes. El viejo Renal Cabellorrojo tiene todo bajo control. Pero el Maestro dice que es un poco pequeño para ti, y cuando vuelvas, te aguarda un gran futuro. ~
+@11 = ~Aran no tiene dudas sobre mi retorno ... ~
+@12 = ~(Tony se acerca a tu oído para susurrarte) Está deseando que vuelvas. Y estoy seguro de que puedes manejar lo que se te viene encima ahora mismo. Lo harás lo mejor que puedas, ¿verdad? ¡Vuelve con nosotros! ~
+@13 = ~(Te sopla un beso y sale corriendo) ~
+@14 = ~(Relees la carta por enésima vez, agarrando el trozo de papel como si quisieras sentir el calor de los dedos de Aran tocando la página. Te invade un deseo desesperado de estar con él ahora mismo, de mirarle a los ojos llenos de ironía y ternura discreta, de sentir la caricia de su tacto...) ~
+@15 = ~(Le preguntas al destino por qué te ha tratado así, arrojándote a la fuerza a este hirviente torbellino de pasiones divinas, justo en el momento en que tanto deseas amor... y sombra. Eres un Ladrón de las Sombras, pero también una semidiós, cada vez más fuerte. La combinación es extraña, casi ridícula. ¿Cómo acabará todo?) ~
+
+// Group reactions (part 1)
+@16 = ~<CHARNAME> ... Lo siento... No quería molestarte... ~
+@17 = ~Aún así, estás en el camino, Aerie. ~
+@18 = ~¡Oh! Entonces no te molestaré. Lo siento de nuevo. ~
+@19 = ~Estás bien Aerie. ¿Te pasa algo? ~
+@20 = ~N-no, es que... tienes una cara tan triste que no he podido evitar querer animarte un poco. Creo que te entiendo. Estás pensando en él, ¿verdad? En el Maestro de las Sombras que dejaste en Atkhatla. Sabes que ... Puede que no entienda del todo tu elección, pero entiendo tus sentimientos. Conozco el sentimiento. El dolor de la separación y el insoportable anhelo de reunirte con los que amas... Pero, <CHARNAME>, estoy seguro de que te reunirás con él pronto. No podría ser de otra manera. Si quieres o no... bueno... Eres la hija de un dios después de todo. Estoy p-probablemente diciendo algo incorrecto ... ~
+@21 = ~Gracias Aerie. Eres una muy buena amiga. ~
+@22 = ~Ahora estás sonriendo. Me alegro tanto... Realmente quiero que seas feliz ~
+@23 = ~¿Qué está pasando aquí? Somos los afortunados, ¿no? Estás a punto de derramar una lágrima. ~
+@24 = ~Imoen, no me molestes, no estoy nada interesado en que me molesten en este momento. ~
+@25 = ~Si lo hacéis, sacaréis un pañuelo del bolsillo de alguien para limpiárme. ~
+@26 = ~¡Qué malintencionada puedes ser a veces! Bueno, siéntate aquí sola con una carta en tus brazos, si eso es lo que quieres hacer. ~
+@27 = ~Oh, como si necesitaras la ayuda de alguien para eso. Mira, cuando tenga mi propio gremio de ladrones, ¡no cooperaré con las Sombras! Seremos eternos rivales... si no sonríes ahora mismo. ¡Ahí, ahí, bien hecho! Muy bien. Y no dejes que te vuelva a ver así. O se lo diré a tu Aran, y apuesto a que odia a las chicas amargadas. ~
+@28 = ~<CHARNAME> ... ¿no te encuentras bien? ~
+@29 = ~Estaba bien hasta que mostraste tu preocupación. ~
+@30 = ~No es que no me sienta bien... es que me pesa el corazón. ~
+@31 = ~(Saddened) Ahora veo que mis temores no eran en vano: tu amor no te ha hecho más fuerte. Siento haberte importunado. ~
+@32 = ~¿Echas de menos a Arán? ~
+@33 = ~Sí, Rasaad, le echo de menos. Le quiero mucho. ~
+@34 = ~Ahora puedo ver que tus sentimientos son serios... y ablandar tu corazón. Yo no podría darte lo que él te da. ~
+@35 = ~Lo siento, Rasaad, lo siento mucho ... ~
+@36 = ~(Te pone suavemente un dedo en los labios) Nada de lo que arrepentirse, <CHARNAME>. Tú y yo estamos siguiendo los caminos que debemos seguir. Sólo rezaré para no desviarme accidentalmente del camino correcto. ~
+@37 = ~<CHARNAME>, Bubú me dice que nuestra querida líder está triste. ~
+@38 = ~Has silenciar a tu roedor. ~
+@39 = ~Bubú es muy observador. ~
+@40 = ~Y ahora Bubú dice que hemos empezado con mal pie. Y... sí, Bubú, salgamos de aquí. ~
+@41 = ~Sí, sí. También está convencido de que la razón de la tristeza está en el trozo de papel que tienes frente a ti. Sabe que, <CHARNAME>, si te resulta más fácil, Minsc y Bubú pueden llorar un poco contigo. Aunque los exploradores y los hámsters no lloran ... ~
+@42 = ~(Sonriendo) No hace falta que empieces, Minsc... eres muy dulce. Y Bubú, por supuesto, al igual que tu . ~
+@43 = ~Ah, y ahora Minsc y Bubú quieren sonreír contigo. Bubú... ¿qué? Oh, dice que la separación no será larga a menos que tú mismo lo quieras. ¡Bubú es tan inteligente! ~
+@44 = ~¿Qué pasa contigo, hermana? ~
+@45 = ~¿Podrías dejar tus sentimientos fraternales para más tarde? ~
+@46 = ~¿Conmigo? Nada de eso. Sólo creo que si tú y yo tuviéramos un padre diferente, la vida sería mejor. ~
+@47 = ~(Encogiéndose de hombros) Oh, si. ~
+@48 = ~Pero desde luego no más fascinante. ¿No crees que si no hubieras sido hija de Bhaal, no habrías sido secuestrada por Irenicus, no habrías llegado a Atkhatla y no habrías conocido a Aran Linvail...? ¿Lo ves? Incluso en un camino lleno de pérdidas, hay cosas preciosas que encontrar. ~
+@49 = ~Ahora puedo ver que tus sentimientos son serios ... y se ablanda tu corazón. No estés triste, las nubes se disiparán, y creo que serás feliz. ~
+@50 = ~¡Hey <CHARNAME>! Te has agriado, amiga. ~
+@51 = ~Te echaba de menos, Korgan.. ~
+@52 = ~Creo Korgan, que cada uno de nosotros puede volverse agrio por un tiempo. Incluso tú. ~
+@53 = ~Sí, ya me puedo largar. No entiendo nada de las lágrimas de las mujeres de todos modos. ~
+@54 = ~¿Por qué estar triste sin una buena razón? Por cierto, me queda un poco de alcohol en la petaca, ¿quieres un poco? ~
+@55 = ~(Korgan y tú tomáis un sorbo de algo ardiente, luego otro... sentís que la tristeza remite y el mundo se ilumina con nuevos colores.) ~
+@56 = ~¡Así estás mucho mejor! Ahora da gusto mirarte, chica. Así que ahora, <CHARNAME>, ya sabes a quién contactar si necesitas algo. ~
+
+// Spirit of Gorion
+@57 = ~Pensé que tú, dotado de una mente extraordinaria, abrazarías la sabiduría que encierran los muros de Candelero y utilizarías tus dones para hacer el bien, pero decidiste tomar otro camino. ~
+@58 = ~Te has asociado con un ladrón y un asesino, prefiriendo escuchar la lastimera voz de tu débil corazón cuando te arrojabas a los brazos de un villano. ¡Me das asco! ~
+
+// Additions (Letter from Aran)
+@59 = ~¿Cómo van las cosas en el gremio? ~
+@60 = ~Todo sigue como siempre: la vida está en pleno apogeo. El Maestro dice que te esperan muchas cosas interesantes cuando vuelvas. ~
+@61 = ~¡Habla más alto hombrecito, eres difícil de oír! ¡El omnisciente Tiax debe conocer todos los detalles! ~
+
+// Group reactions (part 2)
+@62 = ~Uf. Sniff-Sniff. ~
+@63 = ~¿Sí? ¿Qué pasa, Wilson? ¿Quieres preguntar algo? ~
+@64 = ~Grr..~
+@65 = ~Así que eso es... ¿También sufriste cuando te separaste de tu amada? ~
+@66 = ~Ooohhhh. ~
+@67 = ~Yo, más que nadie, entiendo cómo te sientes. Debe haber sido una osa muy hermosa ~
+@68 = ~Hrr-hrr. Rroa!! ~
+@69 = ~¿Con un pelaje brillante y grueso y unas patas elegantes? Creo que entiendo por qué la echas de menos. Aunque entre los humanos, no todo el mundo aprecia la vellosidad en las mujeres. ~
+@70 = ~¡Aquí los enanos somos buenos! ¡Y tampoco respetamos a las mujeres calvas! Cuanto más grueso es el pelo, más bonita es. ¡Wilson tiene razón!~
+@71 = ~Rrrrroaa! ~
+@72 = ~Eh. De todos modos, gracias por tu apoyo, Wilson. Eres un oso muy sensible. Cuando paremos, cuéntanos algo más. Me ayudará a distraerme de todas estas batallas interminables y la tristeza que siento por Aran. ~
+@73 = ~Grr. Sniff. ~
+
+// NEW (v.3.1)
+@74 = ~<CHARNAME>?... Estás tan triste... ¿Quieres que te entretenga con una canción? ~
+@75 = ~Ahora no tengo tiempo para canciones. ~
+@76 = ~Sí... lo entiendo... Supongo. Entonces no te molestaré por ahora. ~
+@77 = ~*Aprieta con gratitud la mano de Garrick* Gracias. Pero no hay necesidad de cantar ahora, vuestra simpatía y comprensión es suficiente para mí. ~
+@78 = ~Sabes... hemos pasado por tantas cosas juntos que realmente parece que he aprendido a entenderte. No te enfades tanto. Todo irá bien. ¡Sir Garrick dijo eso! ~
+
+// NEW (v.3.2)
+// The final
+@79 = ~*La ansiedad te atormenta cada vez más, convirtiéndose en excitación, casi en pánico. La meta está tan cerca... pero ¿cuál es tu verdadero objetivo? El sangriento camino hacia el trono de bhaal está llegando a su fin, pero ¿te das cuenta de lo que realmente anhela tu alma?* ~
+@80 = ~*La confusión sigue lastimando tu corazón, pero tus pensamientos se aclaran de repente y tus sentimientos se vuelven más definidos. Comprendes que ahora, en este momento, sólo quieres una cosa: ver a Aran. No sólo ver, sino tocar, oír su voz...* ~
+@81 = ~*El espíritu del destino puede ayudarte con esto. Un pensamiento loco se apodera de ti como una obsesión. Arán... si ahora le apartas de un asunto importante o le pillas por sorpresa, ¿se alegrará de conocerte? La idea es egoísta, pero si te quiere como dice, no hay nada que temer.* ~
+@82 = ~Esto es una locura. No quiero tentar al destino. ~
+@83 = ~*No quieres ahogar la voz de la prudencia que hay en ti. Esta decisión parece la correcta, pero deja un sentimiento de arrepentimiento en el alma* ~
+@84 = ~Sí, quiero. Quiero que Aran, mi hombre amado, esté aquí. ~
+@85 = ~*Ya no puede resistir más el impulso. ¿Por qué no?...* ~
+@86 = ~Llámame Aran Linvail, Maestro de los Ladrones de Sombras Amnianos. ~
+@87 = ~*Aran aparece frente a ti. Seguramente está alarmado, pero no le falla la compostura, está dispuesto a enfrentarse cara a cara con el posible peligro, agarrando la empuñadura de una afilada daga. Vuestros ojos se encuentran...* ~
+@88 = ~*No te das cuenta de cómo y dónde se esconden las armas de Aran... al cabo de un momento te aprieta tan dolorosamente entre sus brazos y te besa con fuerza* ~
+@89 = ~<CHARNAME> ... mi favorita <CHARNAME>.~ [aransong]
+@90 = ~¡Estás loco!¿Y si fuera una trampa?~
+@91 = ~Sé a ciencia cierta que no eres una ilusión, y todo lo demás se puede tratar. ~
+@92 = ~Aran, lo siento si te saqué del negocio. ~
+@93 = ~*Risas* Sólo un poco. No hace ninguna diferencia. ~
+@94 = ~¡No te preocupes! Soy real y estamos a salvo.~
+@95 = ~Es precisamente porque tú eres lo único que me preocupa, <CHARNAME>! Los peligros no son nada ante esta agitación. ~
+@96 = ~Y sin embargo, tengo que admitirlo... ¡tienes una forma realmente divina de pedir una cita! Estoy feliz de que lo hicieras. ~
+@97 = ~*Sientas a Aran a tu lado y empiezas a hablar. Las palabras brotan de ti a raudales, hablas de los últimos acontecimientos, de tus dudas y de la melancolía que a veces te invade. Aran te escucha atentamente, de vez en cuando te pasa la palma de la mano por la mejilla* ~
+@98 = ~Sólo un poco más. Pronto todos sabremos cómo terminará el viaje de la hija de Bhaal, iniciado entre los muros de la Ciudadela de Candelero. ~
+@99 = ~Me espere lo que me espere, haré todo lo posible por cumplir mi promesa y volver contigo, Aran. ~
+@100 = ~Gracias... mi <CHARNAME>. ~
+@101 = ~Me temo que no podré resistir la tentación de la autoridad divina. ~
+@102 = ~Puedo entenderte muy bien. ~
+@103 = ~Aran... Estoy tan confundida. Realmente no sé lo que quiero para mí misma.~
+@104 = ~Pero estoy seguro de que tu corazón te dará una solución en el momento decisivo. Sólo escúchalo.~
+@105 = ~¿Y si no voy a ninguna parte? Moriré, me iré para siempre.~
+@106 = ~Rezaré a los dioses para que eso no ocurra. ~
+@107 = ~Pero esto es lo que quiero decirte... Mis sentimientos no se debilitaron, pero me di cuenta de que era un error atarte con una promesa. Amor... fue gracias a ti que aprendí lo que esta palabra tan gastada realmente conlleva.~
+@108 = ~El amor aborrece la coacción. Quiero liberarte - eres libre de tomar cualquier decisión. Si no es lo que anhelo, no lo consideraré un engaño y... intentaré conciliar la decision .~
+@109 = ~¡Oh! ¿No se debilitaron realmente tus sentimientos?~
+@110 = ~Sí. Sólo que no quiero atar las alas de un pájarito como tú.~
+@111 = ~Gracias, Aran, pero esto no es necesario. Dije que volvería contigo, y lo haré. Sólo la muerte puede interponerse. ~
+@112 = ~*En lugar de responder, Aran te besa cariñosamente* ~
+@113 = ~Gracias... estas palabras me hicieron sentir mejor. ~
+@114 = ~Sí, ya me he dado cuenta de lo valiosa que es la libertad para ti. ~
+@115 = ~Ahora dime, mi Maestro, ¿cómo estás y qué haces? ~
+@116 = ~Nada realmente importante como para perder nuestro precioso tiempo hablando de ello. Mejor más adelante, por ahora... ~
+@117 = ~Nada realmente importante como para perder nuestro precioso tiempo hablando de ello. Diré una cosa: prometí vengarte ante el mago Altara, y lo hice. Él y todos sus secuaces están muertos. Te contaré los detalles más adelante, pero ahora... ~
+@118 = ~Mi querida <CHARNAME>... ¿quizás ya bastan las palabras?~
+@119 = ~*Vuestra inesperada cercanía os da placer con un toque de amargura: ambos sabéis que puede ser la última. Pero por eso la pasión es aún más fuerte, y la ternura más punzante. Dentro del extraño mundillo de la Bolsa Planar, creáis un mundo luminoso sólo para vosotros dos, aún más incomprensible y distante... Esta felicidad te ayuda a olvidar la gravedad de los últimos acontecimientos.* ~
+@120 = ~*Cuando llega el momento de separarte de Aran, sientes tu amor y tu gratitud hacia él. Apenas dices nada cuando os separáis....* ~
+@121 = ~Te amo, <CHARNAME>. ~
+@122 = ~Y yo te amo, Aran. ~

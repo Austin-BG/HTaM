@@ -1,0 +1,24 @@
+// Minsc, Imoen, Jaheira in the dungeon 
+@0 = ~Me pregunto por qué el mago lo mantuvo con vida. Después de todo, no habría obtenido ninguna información útil de él. Cada vez es más difícil entender sus intenciones. ~
+@1 = ~Jaheira, no intentes darle sentido, ¡este tipo está loco! ~
+@2 = ~¡Oye Minsc, aguanta, te sacaremos! ~
+@3 = ~¡Bubú dice que liberemos a Jaheira! Y Minsc está de acuerdo con él: ¡no abandonamos a nuestros amigos en apuros! ~
+@4 = ~Minsc, ¿puedes romper los barrotes de su jaula como hiciste con la tuya? ~
+@5 = ~No, no puedo, ¡estas barras son más fuertes! ¡Quizás están reforzadas por alguna magia! ¡Argh! ~
+@6 = ~¡Un momento! <CHARNAME>, Bubú dice que busquemos una llave - ¡vio al mago malvado entrar en la habitación detrás de nosotros! ¡Bubú es tan inteligente! ~
+@7 = ~Me temo que no funcionará. Este bastardo sabía que tenía habilidades mágicas y trabajó en mi celda por separado. Es más difícil de abrir que esa. ~
+@8 = ~Así que este pobre hombre era amigo del mago, le sirvió fielmente, ¡y luego el mago lo abandonó! ¡Bubú está indignado! ¡Los amigos no deberían ser tirados y olvidados como basura! ~
+@9 = ~¿Él... él quiere que lo matemos? <CHARNAME> ... ~
+@10 = ~Pobre hombre... Y no hay nada que podamos hacer para ayudarle... ~
+@11 = ~¡Me duele! ~
+
+// Minsc-Imoen Banter
+@12 = ~¡A Bubú no le gusta este olor! ¡Es el olor de los trasgos! ¿Cómo han llegado hasta aquí?~
+@13 = ~No sé, Minsc - no creo que el hechicero pusiera un montón de esas cosas en cada pasillo a propósito. La mazmorra fue atacada por alguien - deben haber roto las paredes durante el ataque, y los trasgos se arrastraron por los agujeros. ~
+@14 = ~Si alguien fue capaz de entrar aquí para atacar al mago, ¡entonces podemos salir de la misma manera! ¡No sé quién lanzó este ataque, pero sin duda nos ayudó! ~
+@15 = ~No creo que quisieran ayudarnos a propósito. Ni siquiera sabemos quién estaba detrás del ataque. ~
+
+// Jaheira's responses 
+@16 = ~¡Esperad, enanos! ¿Por qué le servís? ~
+@17 = ~¡Porque nos paga bien, tonta! ¿Qué otras razones necesitamos? ¡Ahora muérete! ~
+@18 = ~Así es. Las dríadas tienen un vínculo especial con sus árboles. Son inseparables de ellas. Mientras el árbol esté vivo, también lo estará su guardián. Pero es peligroso quedarse aquí. ¡Debemos ayudarlas! ~

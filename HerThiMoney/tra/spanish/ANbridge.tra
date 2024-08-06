@@ -1,0 +1,80 @@
+// Dialogue of Anomen with a whore
+@0 = ~¡Hola, apuesto caballero! ¿Nos conocemos mejor? ~
+@1 = ~¡Vete de aquí! ¡Soy un sacerdote de Helm, y no me profanaré comunicándome con alguien como tú! ~
+@2 = ~Pero ya has empezado, ¿verdad, gatita? ...¿qué has dicho? Ah, sí: «mancillarte con la comunicación». ¿Y bien? ¿Qué tal un poco de privacidad, mi caballero? Con mucho gusto te escucharé cuando estemos solos. ~
+@3 = ~No soy el tipo de hombre que utiliza los servicios de... mujeres caídas. Búscate a otro. ~
+@4 = ~Anomen, ¿por qué ser tan grosero? La chica sólo intenta ganarse la vida. Tenemos que ser más tolerantes con los que son menos afortunados que nosotros en la vida. ~
+@5 = ~¿«Menos afortunado»? ¿Quién es el afortunado? ¿Tú, un rufián? Mírate y luego mírame: ¿cuál de los dos tiene mejor aspecto? ~
+@6 = ~Soy joven y guapa, mis clientes están locos por mí. ¡Y gano más al día que toda tu pobre empresa en un mes! ¡Así que no te metas en conversaciones ajenas! ~
+@7 = ~¡Cállate! ¡Debería quemarte con magia! ~
+@8 = ~Neera, cálmate. Tú lo has dicho - debemos ser más tolerantes. ~
+@9 = ~Imoen, cálmate. Tú lo has dicho - debemos ser más tolerantes. ~
+@10 = ~Yo... tal vez fui demasiado grosero. Esa no es forma de que un caballero le hable a una mujer asi, incluso a una como tú. ~
+@11 = ~¿Entonces? ¿Quizá vengas a visitarme y a divertirte? Puedo hacer muchas cosas, te sorprenderías. ~
+@12 = ~Los estatutos de la Orden y de Helm me prohíben este tipo de recreaciónes. Realmente, no recuerdo cómo está redactada la cláusula en los estatutos... Pero estoy seguro de que estaba allí. Debería comprobarlo de nuevo. ~
+@13 = ~¡¡No!! ¡¡No debo caer en la tentación!! ¡<CHARNAME>! ¡Vamos!~
+
+// Andy (vagabond in the Bridge area)
+@14 = ~Eh señor, ¿puedes prestarme algo de oro? ¡Te prometo que te lo devolveré en cuanto salga!~ ~Eh señora, ¿puedes prestarme algo de oro? ¡Te prometo que te lo devolveré en cuanto salga!~
+@15 = ~Toma, coge un par de monedas.~
+@16 = ~Así que no soy el único, Señor. Si fuera tan sencillo ... ~ ~Así que no soy el único, Señora. Si fuera tan sencillo ... ~
+@17 = ~Así es como me despidieron. Me pagaban una miseria, no lo suficiente para alimentar a mi hijo. Fui a ver a mis jefes y les pedí un aumento, y el mismo día estaba en la calle. ~
+@18 = ~¿Y si todos los pobres os juntáis y os ponéis en huelga hasta que os suban el sueldo? Claro que sí, ¡cuando las calles estén cubiertas de basura y no haya nadie para servir a los ricos! ~
+@19 = ~No has estado aquí. La gente se dio cuenta. Y los que nos contrataron... también se dieron cuenta. Mira, si la gente se reúne, tiene que haber un líder que hable. Bueno, la primera vez que un tipo abre la boca, lo agarran y lo meten en la cárcel. Y si aparece otro líder, también lo meten en la cárcel.~
+@20 = ~Bueno, un tipo come en la cárcel de todos modos.~
+@21 = ~Sus hijos no. ¿Te gustaría estar dentro y que tus hijos se murieran de hambre?~
+@22 = ~Sí, es la miseria en todas los partes.~
+@23 = ~Y aquí hay otra cosa. ¿Has oído hablar de la lista negra?~
+@24 = ~¿Qué es esto?~
+@25 = ~Bueno, sólo tienes que abrir tu trampa sobre nosotros reuniéndonos, y verás. Toman tu retrato y lo envían a todas partes. Entonces no puedes conseguir trabajo en ningún lado. ¿Y si tienes hijos...?~
+@26 = ~Así que tomamos lo que podemos o nos morimos de hambre; y si hablamos, también nos morimos de hambre.~
+@27 = ~Algún día lo cambiaremos todo. Y los ricos lamentarán no haber oído nuestra voz a tiempo. Hay un ejército como nosotros, y no hay freno para él.~
+@28 = ~La gente está batiendo sus alas como pájaros en un ático. Van a romper sus alas en un viento polvoriento tratando de salir.~
+@29 = ~Esta gente quiere vivir decentemente y criar decentemente a sus hijos. Y cuando sean viejos, quieren sentarse en la puerta y ver ponerse el sol.~
+@30 = ~Sin embargo, la gente para la que trabajamos no nos considera humanos. ~
+@31 = ~Todo cambiará algún día. Cambiará... Dime, ¿cómo te llamas? Me olvidé de preguntar primero ~ ~ Todo cambiará algún día. Todo... Dime, ¿cuál es tu nombre? Olvidé preguntar primero. ~
+@32 = ~Andy. Rara vez me han preguntado eso, Señor. ~ ~Andy. Rara vez me han preguntado eso, Señora. ~
+@33 = ~Buena suerte, Andy. Tal vez nos volvamos a ver. ~
+@34 = ~Hola, Señor. Gracias por las monedas que me prestaste la última vez - gracias a ellas pude comprar algo de comida para mi hija. ~ ~Hola, Señora. Gracias por las monedas que me prestaste la última vez - gracias a ellas pude comprar algo de comida para mi hija. ~
+@35 = ~Solía pensar que rezar ayudaba. Rezaba una oración y todos sus problemas se pegaban a ella como moscas al papel. La oración deberia atenuar los problemas. Pero no funciono.~
+@36 = ~La oración nunca trajo carne. Se necesita trabajo para comprar un cerdo.~
+@37 = ~Sí. Y los dioses todopoderosos nunca subieron los salarios.~
+@38 = ~¿Por qué no buscas trabajo? La ciudad es grande, y probablemente necesite trabajadores. ~
+@39 = ~¡Lárgate, mendigo!~
+@40 = ~¿Cuál es tu nombre?~
+@41 = ~Las cosas cambiarán algún día. Deben cambiar... ~
+@42 = ~Gracias, Señor. Los corazones amables escasean en estos días. ~ ~Gracias, Señora. Los corazones amables escasean en estos días. ~
+@43 = ~Lo siento, no puedo, yo no tengo suficiente. ~ 
+@44 = ~No importa, Señor. Que seas más afortunado en la vida que yo. ~ ~No importa, Señora. Que seas más afortunado en la vida que yo. ~
+@45 = ~Desapruebo la caridad. Tenemos que educar a los ciudadanos en algo útil para que puedan cuidar de sí mismos. ~
+@46 = ~¡<CHARNAME>! ¿Cómo puedes dar la espalda a los desafortunados? Merecen nuestra ayuda. ~
+@47 = ~Esto es lo correcto, <CHARNAME>. ~
+@48 = ~Buena suerte, amigo. ~
+@49 = ~Siento molestarte, Señor. ~ ~Siento molestarte, Señora. ~
+@50 = ~¡La ciudad está llena de gente sin trabajo! Hasta el peor trabajo tiene mucha demanda. Para un trabajo que requiere tres obreros, vienen diez. Los jefes les consiguen hombres por lo que quieran pagar. ~
+@51 = ~Si no quieres el sueldo que te dan, maldita sea, hay mil hombres esperando ese trabajo.~
+@52 = ~Gracias, Señor. ~ ~Gracias, Señora. ~
+
+// Andy's daughter
+@53 = ~Mi amigo Billy presume todo el tiempo. Si no tiene cena, ¿sabes lo que hace? Anoche, dijo que tenían pollo para comer. Bueno, miré mientras comían y era masa frita como todo el mundo.~
+@54 = ~¡He oído que los nobles tienen agua caliente en sus casas! ~
+
+// Shank and Karbos
+@80 = ~Son tontos, ustedes dos ,ambos. ~
+@81 = ~¿Peleando por una mujer? ¡Uf! ¡Hay un montón de otras alrededor que estarán encantadas de hacer lo que quieras por un par de monedas! Y estos hombres, tan calzonazos, se peleaban como si todo estuviera cubierto de oro bajo la falda de esta chica. Corrían tras ella como perros tras una perra. ~
+@82 = ~¡¡Pah!! Korgan, tus modales son una pesadilla. ~
+@83 = ~¡Acostúmbrate, pequeña! ¡Pronto te enseñaré a hablar sin balbucear! ¡Ustedes, nobles chupapijas y mocosos, están acostumbrados a verter mierda en los oídos de los demás! ~
+@84 = ~No soy una niña pequeña. Y, mientras caminaba por los barrios bajos y hablaba con los pobres, escuchaba a todo el mundo. Pero tu discurso es demasiado, incluso para los barrios bajos. ~
+@85 = ~¡Pero lo digo sin tapujos! ¡Y no me importa lo que piensen los demas , especialmente cualquier necio noble! ~
+@86 = ~Este pobre hombre murió por una mujer. Para un poeta, no hay muerte más noble. Ya tengo un argumento para una canción triste. ~
+@87 = ~¡Oh, cántanosla luego, Haer'Dalis! ¡Cantas tan bien! ~
+@88 = ~Te la dedicaré a ti. Cuando la vieja noche cubra el cielo con un velo estrellado, búscame, y cantaré sólo para ti. ~
+@89 = ~Ooh... Yoo... ~
+@90 = ~No digas nada, mi Oriole. A veces las palabras sólo estorban - ocultando nuestros verdaderos sentimientos como un velo de niebla. ~
+@91 = ~¡Ja, no está mal, orejas puntiagudas! Sí que tienes boca, ¡a las chicas les encanta! ~
+@92 = ~Este chico tenía una madre, un padre... Lo criaron y cuidaron, y murió por una estúpida pasión por una chica que ya se ha olvidado de él en un minuto. ~
+@93 = ~Qué pena... Murio en vano, todo para nada. ~
+@94 = ~¡Burbuja! ¡¡Espera!! ~
+
+// NEW (v.4)
+@95 = ~¿Es mucho peor estar en la prision que aquí?~

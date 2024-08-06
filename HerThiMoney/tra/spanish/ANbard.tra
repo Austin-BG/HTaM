@@ -1,0 +1,53 @@
+// Storyteller
+
+// Firkraag
+@0 = ~Escuchad historias de grandes héroes. Gasta algo de dinero, viejos y jóvenes, reúnanse aqui ... ¡y disfrute de unas historias extraordinarias!~
+@1 = ~Érase una vez un malvado dragón llamado Firkraag con sus tres hijos, también dragones. Vagaban por los cielos escupiendo fuego hacia delante y hacia atrás. Aterrorizaban a la buena gente y hacían pasar muchas noches en vela a sus pobres hijos. Incluso las vacas, después de ver a tan viles bestias, dejaron de dar leche por miedo. Propagaron la muerte y la desesperación, y su astucia sólo pudo ser vencida por el propio Cyric.~
+@2 = ~Podían adoptar formas humanas y, de día, eran sacerdotes de iglesia que ayudaban a los necesitados. ¿Cómo se puede pensar que ese tipo de personas sean dragones disfrazados?~
+@3 = ~Pero estos villanos sobrestimaron su fuerza y desafiaron al hijo del dios muerto Bhaal, ¡el Héroe de Puerta de Baldur! El encontró su guarida en lo alto de las montañas ¡y destruyó a los cuatro sin ayuda! El heroe hizo con las escamas trofeos ,donde los coloco en casa tanto como alfombras y en la pared como decoracion.~ ~Pero estos villanos sobrestimaron su fuerza y desafiaron a la hija del dios muerto Bhaal, ¡La Héroina de Puerta de Baldur! ella encontró su guarida en lo alto de las montañas ¡y destruyó a los cuatro sin ayuda! La heroina hizo con las escamas trofeos ,donde los coloco en casa tanto como alfombras y en la pared como decoracion.~
+@4 = ~¡No puede ser! (susurro de admiración)~
+@5 = ~Desde entonces no se ha visto el mal en esa tierra. El templo contrató nuevos clérigos - más codiciosos e insolentes que antes. Pero al menos las vacas empezaron a dar leche de nuevo.~
+@6 = ~¡Qué historia tan increíble! ¿Es eso lo que ocurrió realmente?~
+@7 = ~Por el pecho derecho de Mystra - ¡cada palabra mía es cierta!~
+@8 = ~Increíble... Y algunos se atreven a decir que no hay más héroes en esta tierra!~
+@9 = ~¡Cuando sea mayor, yo también mataré a cuatro dragones!~
+@10 = ~¡Qué buena ocasión para beber! ! *Hic!*¡Vacíen sus jarras todos!~
+@11 = ~¡Ahora yo también quiero una alfombra de escamas de dragón! ¿Dónde puedo encontrar algo así a un precio razonable? ¡Mis amigos se pondrán verdes de envidia!~
+@12 = ~No fue así, pero si a la gente le gustan los cuentos de hadas, no me quejaré.~
+@13 = ~«¿Todo lo hizo el solo?" ¿Y ni una palabra sobre los amigos de el?~ ~«¿Todo lo hizo ella sola?" ¿Y ni una palabra sobre los amigos de ella?~
+@14 = ~Este grupo no habría tenido ni una sola oportunidad contra ese dragón sin mis habilidades mágicas. ¡Y se atrevió a excluirme de la historia, menudo fraude!~
+@15 = ~Y también estaba Bubú, el hámster espacial gigante en miniatura. Le dio el golpe final al draco. Esta hazaña merece su propia leyenda!~
+@16 = ~Y ahora debo irme, amigos míos. Gracias por prestarme sus oídos... y oro, ehem.~
+@17 = ~Nosotros también debemos irnos. Billy, nos vamos a casa.~
+@18 = ~De acuerdo, mamá.~
+@19 = ~¡Silencio! No le oigo!~
+@20 = ~Ese viejo superaba incluso a mi primo, que era un maestro de las mentiras. No como yo. Yo siempre cuento sólo historias verdaderas.~
+
+// Trademeet
+@21 = ~¡Escucha historias de grandes héroes! Con un poco de oro claro . Grandes y pequeños, reúnanse... ¡y escuchen historias extraordinarias!~
+@22 = ~Lejos, muy lejos al este de Athkatla se encuentra un pequeño pueblo llamado Caravasar. Sus habitantes trabajan duro de sol a sol para poder recoger los frutos de su trabajo y venderlos en el mercado de la ciudad. Para que ustedes, amigos, puedan tener un desayuno abundante.~
+@23 = ~Oh, qué buena gente!~
+@24 = ~Pero yo pensaba que  Caravasar era una ciudad comercial, no un pueblo...~
+@25 = ~¡Silencio! ¡Deja de interrumpir a este anciano! ¡Quiero oír lo que pasó después!~
+@26 = ~¡Un día, el pueblo fue asaltado por animales! ¡Sin motivo alguno!~
+@27 = ~¡Por todos los dioses!~
+@28 = ~¡Que horrible!~
+@29 = ~Sí, fue una época horrible. Caravasar estaba invadido por conejos, ardillas. ¡Estaban contaminando las calles y estorbando todo el tiempo! Era imposible mantener las botas limpias después de un paseo.~
+@30 = ~¡Qué asco! Me habría ido de ese lugar inmediatamente si viviera allí.~
+@31 = ~Pero el pueblo no perdió la esperanza, y pronto llegó la salvación. El héroe de Puerta de Baldur, un Hijo de Bhaal, llegó al pueblo. El se dio cuenta rápidamente de lo que había pasado. El bosque que rodeaba el pueblo había sido talado y los animalitos no tenían dónde vivir ni qué comer. Así que vinieron a la aldea para alimentarse en los graneros locales.~ ~Pero el pueblo no perdió la esperanza, y pronto llegó la salvación. La héroina de Puerta de Baldur, una Hija de Bhaal, llegó al pueblo. Ella se dio cuenta rápidamente de lo que había pasado. El bosque que rodeaba el pueblo había sido talado y los animalitos no tenían dónde vivir ni qué comer. Así que vinieron a la aldea para alimentarse en los graneros locales.~
+@32 = ~El problema se resolvió con la ayuda del hijo de Bhaal. El colocó cebos envenenados alrededor de los graneros, y pronto los animales dejaron de molestar a la gente y abandonaron la ciudad. Los que sobrevivieron, por supuesto.~ ~El problema se resolvió con la ayuda de la hija de Bhaal. Ella colocó cebos envenenados alrededor de los graneros, y pronto los animales dejaron de molestar a la gente y abandonaron la ciudad. Los que sobrevivieron, por supuesto.~
+@33 = ~¡Una sabia decisión!~
+@34 = ~¡Tomen eso, bestias!~
+@35 = ~¡Brindemos, un salud pára nuestros héroes!~
+@36 = ~Sí, claro, ¡bebamos! *¡Hic!* (Yo seguiría bebiendo, ¡pero de todas formas es una buena causa!)~
+@37 = ~¿Quizás debería pedirle a este héroe que se deshaga de las ratas de mi sótano? Se están comiendo todas mis provisiones, ¡y nadie ayuda!~
+@39 = ~Y ahora, es hora de que me vaya. ¡Gracias por sus monedas de oro! Hoy no dormiré con el estómago vacío.~
+@40 = ~Otra historia, y de nuevo, ¡está llena de mentiras!~
+@41 = ~Pero son mentiras muy imaginativas, me doy cuenta. Se necesita talento para mentir así.~
+@42 = ~Por culpa de gente como él hay tantos problemas. Enseña a la gente a erradicar a los animales, no a vivir en paz con la naturaleza.~
+@43 = ~¿Es eso cierto? ¿Alguien envenenó a las pobres ardillas y a los conejos? ¡Bubú está lleno de ira! ¡Tal villanía no debe quedar impune!~
+@44 = ~¡Otra vez ese cuentista! Preparándose para escupir más mentiras, estoy seguro.~
+
+// Garrick
+@45 = ~No está mal, pero te lo cuento mucho mejor en mi libro: no soy sólo un narrador, sino también un participante en acontecimientos gloriosos.~
+@46 = ~*Sonriendo* ¡Que fanfarrón eres!~

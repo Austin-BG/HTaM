@@ -1,0 +1,44 @@
+// Tirdir
+@0 = ~¡Menudos idiotas estaban hechos! Deberían haberlos matado y enterrado después, ¡así habría habido menos riesgo! Pero querían presumir, y este es el resultado: ¡su plan fracasó! ~
+@1 = ~¡Bubú y yo estamos indignados! ¡Castigaremos a estos malvados! ~
+@2 = ~Esto definitivamente no es obra de los Ladrones de las Sombras, <CHARNAME>. Simplemente los habrían matado y habrían dejado que el cadáver se pudriera en la calle. Secuestrar para pedir rescate no es tampoco su estilo. ~
+@3 = ~¿Quizá fue una pelea entre bandas y lo enterraron porque no quiso compartir el botín? ~
+@4 = ~¡No! ¡Estoy diciendo la verdad, lo juro! ~
+
+
+// Mini-quest "For Love"
+@5 = ~Hola Señor. ¿Puedo hablar con vosotros? ~ ~Hola Señora. ¿Puedo hablar con vosotros? ~
+@6 = ~Por supuesto. ~
+@7 = ~¡No! No tengo tiempo para hablar con todo el mundo. ~
+@8 = ~Lo siento, pero estoy en un asunto urgente. Molesta a otra persona. ~
+@9 = ~Es un poco personal. Voy a quedar con mi enamorada, pero me tiene confundido sobre dónde decidio quedar... ~
+@10 = ~¡El cementerio de noche! De todos los lugares posibles, ¿por qué eligió uno tan peligroso? Por más que lo intento, no puedo entender la razón de esto. ~
+@11 = ~Pero pase lo que pase, ¡iré a conocer a Charlize! Pasaría por el infierno, sólo por el bien de su fugaz sonrisa. ~
+@12 = ~Pero es inquietante ir a un cementerio solo por la noche. ¡Bandidos y excavadores de tumbas a menudo se reúnen allí! Señor, ¿puedo pedirte que vengas conmigo? ¿Por si acaso? ~ ~Pero es inquietante ir a un cementerio solo por la noche. ¡Bandidos y excavadores de tumbas a menudo se reúnen allí! Señora, ¿puedo pedirte que vengas conmigo? ¿Por si acaso? ~
+@13 = ~¡Sé un hombre! Ve tú mismo. ~
+@14 = ~Por supuesto, iré contigo. ~
+@15 = ~Oh... Está bien, lo siento... ~
+@16 = ~Gracias. Mi nombre es Paris. Nos encontraremos por la tarde en la entrada sur del cementerio. ~
+@17 = ~¡Gracias a los dioses que estás aquí! Qué espeluznante es esto... ¿de verdad mi Charlize viene aquí por la noche?~
+@18 = ~¡¡Que alguien me ayude!! ~ [PEASF09]
+@19 = ~Esa voz... ¡Es Charlize! ¡Debe haberle pasado algo! Se suponía que nos encontraríamos en la muralla con las cuatro estatuas. ¡Démonos prisa! ~
+@20 = ~¡Oh! ¿Te encuentras bien, mi amor? ~
+@21 = ~Te estaba esperando cuando este salvaje bruto me atacó de repente... Estaba tan asustada... ~
+@22 = ~Gracias, Señor. No hay palabras para expresar mi gratitud. Pero, querida Charlize, ¿por qué decidiste reunirte en este lugar tan peligroso? ~ ~Gracias, Señora. No hay palabras para expresar mi gratitud. Pero, querida Charlize, ¿por qué decidiste reunirte en este lugar tan peligroso? ~
+@23 = ~¿Qué quieres decir? París, tú mismo elegiste este lugar para nuestro encuentro. ¡Me enviaste una carta hace dos días y me pediste que viniera aquí! ~
+@24 = ~¿¡Qué!? Yo no escribí ninguna carta. ~
+@25 = ~¿Cómo? ~
+@26 = ~Era una trampa. Y... Este bruto sabía mi nombre. Pero, ¿quién lo contrató? ¿Y a quién he molestado? ~
+@27 = ~*suspiro* Lo siento, Señor. Esto es misterioso , por las molestias no significa que no serás recompensado por tu ayuda. ~
+@28 = ~Llevaré a Charlize a casa. Toma esto por las molestias. ¡Gracias de nuevo! ~
+@29 = ~Alguien lo pensó bien. Si Paris hubiera ido solo, ya estaría muerto. ~
+@30 = ~Sí, vagar entre las tumbas no es muy romántico. Los amantes a menudo hacen cosas locas, pero algo más parece estar pasando aquí. ~
+@31 = ~Qué gente más rara. Mejor en la cama que sobre losas de piedra, ¿eh? ~
+@32 = ~La gente rica suele buscar emociones, todo por aburrimiento de lo mundano. ~
+
+// NEW (v.4)
+@33 = ~Esto no suena muy convincente, <CHARNAME>. Esta mujer está diciendo claramente sólo un tercio de toda la verdad. Tal vez incluso menos.~
+@34 = ~No puedo creer que esté diciendo esto, pero tienes razón, paladín. Todo por aquí está saturado de mentiras.~
+@35 = ~No puedes simplemente llamar a la puerta y entrar. Tendriamos que luchar contra todo el Gremio de los Ladrones de las Sombras. ¡Eso sería un suicidio!~
+@36 = ~¿Se supone que tenemos que hacer todo el trabajo sucio por ti, mujer?~
+@37 = ~Me alegro de matar a ese bastardo de Aran, por supuesto, pero hasta ahora ni siquiera la Orden se ha estado preparando para lanzar un ataque así, hemos estado esperando un mejor momento para hacerlo.~

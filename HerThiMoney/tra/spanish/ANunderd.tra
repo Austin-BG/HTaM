@@ -1,0 +1,78 @@
+// Edwin banter (Illithids)
+@0 = ~<CHARNAME>, Ahora que estamos en la Infraoscuridad, debo advertirte: podemos encontrarnos con ilícidos, criaturas muy peligrosas. He leído mucho sobre ellos en las bibliotecas de Thay, e incluso me los he encontrado ocasionalmente en batalla. También se les llama «azotamentes» por su necesidad de consumir los cerebros de sus víctimas. (No es que fueran a obtener mucho sustento de esta tribu de primates.)~
+@1 = ~¿Cuánto sabes de ellos? ¿De dónde son?~
+@2 = ~Lo resolveré yo mismo.  Tenemos que ir.~ 
+@3 = ~Los ilícidos son la raza más avanzada de la Infraoscuridad. Originarios de los Planos Exteriores, reinaban sobre muchos mundos y tenían enormes ejércitos de esclavos controlados mentalmente.~
+@4 = ~¿Puedes hablarme de la guarida de los  ilícidos? ¿Cómo se comunican entre ellos?~
+@5 = ~¿Veneran a algún dios?~
+@6 = ~¿Qué hay de la procreación ilícidos?~
+@7 = ~Utilizan la telepatía para comunicarse entre ellos. Cada ciudad ilícidos está gobernada por un Cerebro Anciano que se alimenta de los cerebros de sus hermanos menores. Su cámara suele estar cerca de un criadero. El Cerebro Anciano puede leer la mente de todos sus sirvientes, algo muy cómodo, ¿no? Cualquier gobernante de superficie lo daría todo por una habilidad así.~
+@8 = ~También hay otros habitantes: esclavos de la Infraoscuridad o razas de la superficie que consiguieron capturar en los túneles y dominar su voluntad. A los Azotamentes les encanta enfrentar a los esclavos en batallas de gladiadores. Si nos capturan, casi seguro que estamos acabados. Debemos tener cuidado.~
+@9 = ~¿De qué te sirve esta información? Está bien, no creas que no puedo responder. Los ilícidos adoran a Ilsensine, el Gran Cerebro. No conciben la vida después de la muerte.En su lugar, la mente de un ilícido se convierte en una con el Cerebro de Anciano después de la muerte.~
+@10 = ~Bueno, si este es tu principal interés... bien. Los Azotamentess no tienen sexo. Cualquier ilicidos puede poner huevos en las cámaras especiales. Los renacuajos nacen de los huevos. Muchos de ellos mueren, algunos se convierten en alimento para el Cerebro Anciano. Cuando el renacuajo alcanza la madurez, se coloca sobre un esclavo, humano o elfo. Entonces se introduce en la cabeza de la víctima, se fusiona con su cuerpo y devora el cerebro. Con el tiempo, se transforma en un ilícido hecho y derecho.~
+@11 = ~¿Puede detenerse la transformación antes de que la víctima se convierta en un ilícido?~
+@12 = ~Sí, algunos libros que leí en Thay mencionaban casos de transformaciones incompletas, ya fueran ilícidos con la mente intacta o lo contrario, personas con el cerebro de un Azotamentes. Por eso los ilícidos desconfían mucho de sus propios hermanos que muestran cualquier rastro de comportamiento humano.~
+@13 = ~Entonces, ¿cuál es la mejor manera de tratar con ellos, si nos encontramos con alguno?~
+@14 = ~Gracias, Edwin. De hecho, estás muy bien informado.~
+@15 = ~Como siempre, muchas palabras pero ningún sentido en ellas. Sigamos adelante.~
+@16 = ~La táctica de combate habitual de los ilícidos es succionar el cerebro de su enemigo. Por lo tanto, los aventureros de mente simple -como tu amigo amante los roedores- morirán casi de inmediato, especialmente cuando estén rodeados por un grupo de destructores de mentes. Una persona de gran inteligencia - yo, por ejemplo - puede resistir por mucho más tiempo.~
+@17 = ~¡Eh, Minsc puede oírte!~
+@18 = ~Ejem. No dejes que te coman el cerebro. ¡Usa pociones potenciadoras del intelecto para resistirlos más tiempo! Ese es mi primer consejo.~
+@19 = ~En segundo lugar, intenta luchar contra un solo ilícido cada vez. No los ataques en grupo. Juntos, harán un corto trabajo con tu cerebro~
+@20 = ~En tercer lugar, si puedes invocar criaturas no muertas, ¡hazlo! Los esqueletos, por ejemplo, funcionarían. El arma principal de los Azotamentes es inútil contra criaturas sin mente, así que pueden resistir sus ataques.~
+@21 = ~Bueno, has dicho algo útil para variar. Ahora no me arrepiento de tenerte en el grupo~
+@22 = ~No te estoy sermoneando para mi propio placer. En este lugar debes estar tan preparado como yo, si todos queremos sobrevivir. Así que presta atención a mis advertencias. Ahora, debemos partir.~
+@23 = ~Pfft. (¿Qué estoy haciendo, viajando con ellos? Podría estar en casa leyendo tomos mágicos cerca del fuego en vez de corriendo por la Infraoscuridad con un puñado de idiotas)~
+@24 = ~Como quieras. Bien, vámonos. No podemos quedarnos en un lugar por mucho tiempo. Es demasiado peligroso.~
+@25 = ~(Sólo puedo esperar que estos imbéciles no me maten aquí.)~
+@26 = ~Sabes mucho para ser un ser de la superficie, mago.~
+@27 = ~Hasta tú puedes ser útil, por lo que parece.~
+@28 = ~Ah, sólo cubrimos lo básico. (Y dudo que recuerden ni siquiera eso.)~
+@29 = ~Eres una persona excepcional, lo entiendo. ¿Tienes algún consejo más práctico?~
+@30 = ~Quizá Minsc no sea un genio, pero a diferencia de ti, villano, ¡yo lucho por los bondadosos!~
+
+// Adalon death - NPC reactions
+@31 = ~*El cuerpo de Adalon yace frente a ti: es hermosa incluso en la muerte. Tal vez, ella fue la última dragón de plata en Faerun...*~
+@32 = ~Pfff. Ust Natha los drow son débiles, si temieran a ese lagarto patético.~
+@33 = ~<CHARNAME>, la muerte de la única criatura buena de los alrededores dañará definitivamente el equilibrio local. Ahora las fuerzas del mal tomarán la ofensiva y sumirán estas tierras en el caos.~
+@34 = ~Estoy de acuerdo con Jaheira. Esto fue un error, <CHARNAME>.~
+@35 = ~No eres la persona que creía que eras. Perdóname, pero... a partir de ahora hablaremos sólo cuando sea necesario.~
+@36 = ~Una decisión difícil que, creo, cambiará el destino de esta tierra. La presencia de Adalon contuvo la entropía sin sentido y sin éxito, y ahora los habitantes de la Infraoscuridad podrán sacar su caos a la superficie.~
+@37 = ~¿Por qué llorar por un lagarto? Hemos ganado, ¡y el botín es para los vencedores! Vamos a saquear su tesoro y no te olvides de recoger algunas escamas, ¡podrían servirte para alguna armadura!~
+@38 = ~Sí, he matado muchas cosas, pero un dragón plateado, ¡esta es la primera vez! Toda una historia para contar con una jarra de buena cerveza. ¡Seremos la envidia de todos!~
+@39 = ~Bubú no está contento con la muerte de la dragona. Ella tenía un gran corazón, no como los demás.~
+
+// Adalon interjections
+@40 = ~No necesito este disfraz. Pero para otros puede no ser suficiente. Aunque parezcan drow, pueden delatarnos si empiezan a lloriquear y a compadecerse de los débiles.~
+@41 = ~<CHARNAME>, ¿Qué estás haciendo? ¡Es una criatura buena y noble!~
+@42 = ~¡Detente, <CHARNAME>! ¡Si atacas a esta maravillosa criatura, no me quedaré al margen! ¡Nuestros caminos se separan aquí!~
+@43 = ~¡No te permitiré que la mates!~
+@44 = ~Colarse en la ciudad drow disfrazado, aprender sus secretos y salir con vida... ¡No hay nada mejor! (¡Ningún  thayino lo ha conseguido nunca!)~
+
+// House De'Vir refugees - Viconia reaction
+@45 = ~Así que esto es lo que fue de la otra orgullosa Casa De'Vir... Eres ingenuo, Veldrin, si pensaste que lloraría por su destino. El pasado no se puede cambiar, y estos Drow están pagando el precio de su debilidad.~
+@46 = ~*en voz baja* Puede que sienta algo de lástima por ellos. Pero sólo un poco. Puede que sean mis parientes lejanos, pero a estas alturas tengo más en común contigo que con ellos.~
+@47 = ~*Silenciosamente* No hables con ellos, <CHARNAME>. Uno de ellos podría reconocerme y no podemos permitir que nos descubran. Estos debiluchos morirán y nada puede cambiar eso.~
+
+// Elhan 
+@48 = ~¿Así que desde ahora hasta los elfos del bosque están en deuda conmigo por este rescate? Nuestra asociación trae cada vez más beneficios, incluso mejores de lo que esperaba. Cuando la mitad de Faerun está en deuda contigo, se abren tantas... ¡posibilidades!~
+
+// NEW (v.4)
+@49 = ~No creo que hiciera falta mucha destreza para matar a los mediocres medianos~
+@50 = ~¡Di otra palabra y verás que puedo matar algo más que simples medianos!~
+@51 = ~*Silencio* No puedo acostumbrarme a la rudeza de estos drow. Esto va en contra de mi noble educación y tacto.~
+@52 = ~¿Así que vamos a luchar contra los Azotamentes? El gran hamster no tiene nada de que preocuparse, tu no tienes nada que robar, ¡¡har har!!~
+@53 = ~¿Así que vamos a luchar contra los Azotamentes? ¡Bien! ¡Hace tiempo que quería cortarles la cabeza!~
+@54 = ~Bubú te aconseja que ignores tus groserías, Korgan. Escuchalo, es muy inteligente.~
+@55 = ~¡Callaos, gusanos patéticos!~
+@56 = ~¡Esto sí que es un drama familiar! Resulta que también tengo la suerte de que mi hermano tiene una personalidad más suave.~ ~¡Esto sí que es un drama familiar! Resulta que también tengo la suerte de que mi hermana tiene una personalidad más suave.~
+@57 = ~Esto es inesperado. Corriste un gran riesgo quedándote aquí, Solafein.~ 
+@58 = ~Qué historia tan trágica. El amor destruido y convertido en odio... Y ahora tu amada te envía asesinos.~
+@59 = ~Las drow no perdonan la debilidad y la adoración de dioses bondadosos. Tienes suerte de que nadie revelara tu verdadera naturaleza.~
+@60 = ~Inmediatamente percibí que tu rudeza era sólo una pantalla para ocultar tu nobleza.~
+
+//NEW (v.4.2)
+@61 = ~Bubú dice que esto no suena a hospitalidad.~
+@62 = ~¡Escucha, elfo! ¡Si quisiéramos hacerte daño, ya estarías muerto! (Aunque aquí hay todo un ejército de ellos... No estoy seguro de que incluso mi magia podría manejarlos a todos.)~
+@63 = ~¡Arrrr! ¿Quieres dejar de hablar? ¡Un elfo lucha con la boca cuando le faltan los puños!~
+@64 = ~Te aconsejo que elijas mejor tus palabras cuando estés frente a nosotros.~

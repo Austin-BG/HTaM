@@ -1,0 +1,24 @@
+// Dialog with Torgal
+@0 = ~¿Ha dicho este trol que sus parientes se llaman «Los Rompepiedras»? Ese sería un buen nombre para Bubú, si no tuviera ya un nombre. ~
+@1 = ~¡Bubú es lo suficientemente grande como para ser llamado El AplastaMontañas!~
+@2 = ~¡Ja, ja! ¡Podría aplastar estos "Rompepiedras" con mi dedo meñique! ~
+@3 = ~¿Te refieres a Bubú, si ese era su nombre? ¿O al verdadero "Rompepiedras" de allí? ~
+@4 = ~¡Cualquiera! ¡Todos los "Rompepiedras" juntos! ~
+@5 = ~¡Korgan, no puedes amenazar con aplastar a Bubú! Claro que era una broma, ¡pero Bubú! podría no entenderlo y puede enfadarse! ~
+@6 = ~¡No me lo puedo creer! ¿De qué estamos hablando? ~
+@7 = ~(Ohhh dioses. ¿Cómo he llegado a estar en compañía de idiotas tan habladores? ¡Incluso este trol parece ser más listo que ellos! Tal vez debería desertar a este lado...?) ~
+@8 = ~¡Minsc, hablemos más tarde! ¡Hay cosas más importantes que hacer ahora! ~
+@9 = ~¿Dónde viven esos "Rompepiedras"? ¡Seguramente la Noble Orden del Muy Radiante Corazón querrá castigarlos por su maldad!~
+@10 = ~Grrrr, ¡deja de hablar! ¡Todavía estoy aquí! ¡¡Torgal hambriento, Torgal te comera!! ~
+@11 = ~¿Rompepiedras? Interesante. Tendremos que averiguar más sobre esto cuando nos ocupamos de este Torgal.~
+
+
+// Responses for Nalia's quest
+@53 = ~¿Trolls? Deberías haberlo mencionado antes, chica. Nos encantaría ayudar, pero podríamos habernos preparado mejor para la batalla. ~
+@54 = ~Siento no habértelo dicho. Estaba desesperada por encontrar ayuda, y estaba dispuesta a hacer cualquier cosa para conseguirla. ~
+@55 = ~¿Por qué querrían los trolls atacar el castillo? Es extraño. Alguien debe estar controlándolos... A alguien muy poderoso, les deben obedecer. ~
+@56 = ~Sea quien sea, ¡es un hombre malvado si es la razón de que la gente del castillo esté muerta! ¡Así que tanto los trolls como su líder caerán con un golpe de mi bota! ~
+@57 = ~Recuerdo cuando mi tía Petunia tuvo problemas con un trol. Entró en su casa una noche como esos invasores tuyos, Nalia. Llegó sin avisar, la asustó y le rompió el taburete, y ni siquiera se limpió los pies a la entrada - y eso fue lo peor para la tía, que es una auténtica maniática de la limpieza. Resulta que tenía mucha hambre y su madre troll no le había enseñado a cocinar. Bueno, mi tía se apiadó de él y le dio de comer estofado de nabo. ¡No debería haberlo hecho! Volvió muchos días después y pidió más, ¡y asustó a todos los vecinos! ~
+@58 = ~¡Jan, estos trolls definitivamente no vinieron aquí por un guiso de nabos! ¡Son crueles y descerebrados! ~
+@59 = ~¿Criaturas serpiente? Deben ser los yuan-ti. Leí sobre ellos en Thay. Son cultistas con forma de serpiente que aparecieron tras la mezcla de la raza humana y la antigua raza de reptiles: los saurios. Adoran a una deidad serpiente. Criaturas viciosas y extremadamente inteligentes, incluso saben tender trampas. Hoy en día permanecen sobre todo en las selvas de Tashalar. Me pregunto de dónde vienen y por qué están aquí..~
+@60 = ~¿Por qué te atacarían? No tiene ningún sentido. No te ofendas, pero tu castillo es de poca utilidad para ellos. Pero ya que están aquí, ¡Moriran con el filo aplastante de mi hacha! ~

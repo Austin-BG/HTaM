@@ -1,0 +1,58 @@
+// Imoen-Anomen Banter
+@0 = ~Imoen... Dijiste la última vez que yo no era tan malo. Y pensé... apenas me conoces. No hablamos mucho.~
+@1 = ~Sí, al principio me parecías pedante, como todos los caballeros. Por eso no me interesaba socializar. Pero has cambiado últimamente. Te has vuelto... más tranquilo, o algo así. Menos patetismo.~
+@2 = ~Pero siento una especie de ansiedad e inseguridad en ti. Es como si estuvieras perdido.~
+@3 = ~Es amargo admitirlo, pero tienes razón. Antes, mi camino estaba claro. Entendía perfectamente lo que quería conseguir en la vida y quién quería ser. Pero después de romper con estos caballeros estúpidos, estoy tratando de averiguar para qué vivir ahora. O para quién...~
+@4 = ~Es como si... antes hubiera un faro delante de mí, a través del cual podía encontrar mi camino en cualquier oscuridad. Y ahora este fuego se ha apagado...~
+@5 = ~Anomen... No sabía que fuera tan difícil para ti. Es una pena que no hayamos hablado de corazón a corazón antes.Y lo más importante, ¡no te desanimes! ¿Sabes lo que solía decir mi padre adoptivo, el viejo Pedorretas? '¡Cree en lo mejor y seguro que llegará!'~
+@6 = ~Sí, claro... ¿Y si todo por lo que he pasado es sólo una prueba? ¿Y de hecho, mi papel principal aún está por delante?~
+@7 = ~Hace poco tuve un sueño extraño. Y tuve la sensación de que esto es una especie de señal... Pero puede que te parezca extraño.~
+@8 = ~En absoluto. ¡Me encanta escuchar los sueños de los demás y tratar de interpretarlos! ¡Venga, cuéntamelo!~
+@9 = ~Soñé con una selva en la que nunca había estado... plantas y flores extravagantes... el parloteo de miles de pájaros. Y un ciervo con una pupila azul, se paró sin miedo frente a mí. Luego sacudió los cuernos y se internó en la espesura, y yo le seguí. Caminé sin miedo, sin fatiga. Al contrario, me llené de tal fuerza y determinación que parece que podría haber caminado mil kilómetros sin descanso. Y la selva no terminaba... Por el camino, recogí frutas que vi por primera vez en mi vida, maduras y dulces, bebí agua de manantial, que sabía mejor que el vino...~
+@10 = ~Entonces me desperté. Pero por dentro tenía la extraña sensación de que me esperaba algo importante, algún gran logro.~
+@11 = ~Tal vez. Los sueños a menudo predicen el futuro. ¿Quizás este significó algo y te advirtió sobre algo?~
+@12 = ~Sólo el tiempo lo dirá.~
+
+// Marlow 1 (Edwin, Aerie, Jaheira)
+@13 = ~¿Qué nos importan tus problemas, esclavo? Estamos aquí decidiendo el destino del mundo, ¡no tenemos tiempo para ti! (Me pregunto qué le habrá pasado)~
+@14 = ~¡Si su hija puede morir, debemos ayudar a este pobre hombre, <CHARNAME>!~
+@15 = ~¿Ir a su casa? Esto podría ser otra trampa, <CHARNAME>. Tengamos cuidado.~
+
+// In Amkethran Tavern (Mazzy)
+@16 = ~Tú mismo has dicho que lucharán contra los drow y los azotamentes. No pareces ser uno de ellos, amigo, así que ¿de qué tienes miedo?~
+@17 = ~Uh. Bueno, no lo sé. Sólo estoy asustada~
+
+// Marlowe 2 (Valygar, Haer'Dalis, Imoen, Keldorn, Jaheira, Nalia, Korgan, Minsc, Aerie, Mazzy)
+@18 = ~<CHARNAME>, depende de ti, pero yo no recomendaría meterse con un liche a un forastero. Los liches son oponentes extremadamente peligrosos, casi inmortales.~
+@19 = ~¿Soy el único que piensa que este pajarito no está diciendo algo?~
+@20 = ~¡Todo lo que hago es por el bien de mi hija! ¡Ayuda, por favor!~
+@21 = ~¿Qué? <CHARNAME>, ¡este pobre hombre no nos ha hecho nada! ¿Cómo puedes decir eso? ¡El legado de Bhaal te está influenciando tanto! ¡parad!~
+@22 = ~<CHARNAME>, ¡no participaré en la matanza de inocentes! Si hablas en serio, ¡entonces tienes que matarme a mí también!~
+@23 = ~¡Este hombre es pobre y no nos ha hecho daño! ¡No me haré a un lado si lo atacas!~
+@24 = ~¡Minsc no mirará un asesinato así con calma! Detente, <CHARNAME>, ¿qué te está pasando?~
+@25 = ~¡Tiene razón! ¡El hombre está asustado, su hija está enferma! ¡Debemos ayudar, no agredirlo! Me voy, <CHARNAME>. ¡No quiero tener nada que ver contigo!~
+@26 = ~¡El hombre está asustado, su hija está enferma! ¡Debemos ayudar, no agredirlo! Me voy, <CHARNAME>. ¡No quiero tener nada que ver contigo!~
+@27 = ~¿De verdad no tiene nada? Apuesto a que escondió algo en la casa. ¡Robémosle y démosle una paliza para que se calle!~
+@28 = ~¡No vine contigo <CHARNAME> para hacer esto! El mundo ya está lleno de maldad, hay que combatirla, no atacar a la gente pobre.~
+@29 = ~¡Él no nos ha hecho nada malo, <CHARNAME>! ¿Por qué haces esto?~
+@30 = ~<CHARNAME>, no te abandonaré - debes estar siendo influenciado por Bhaal. ¡Pero resíste!~
+@3000 = ~¡No, por favor! ¡Ten piedad!~
+
+// Boy at the cemetery (Minsc, Nira, Haerdalis)
+@31 = ~Vaya, ¡mira este hámster espacial gigante! ¿Parece que tenga miedo de algo? Pues no. ¡Y tú tampoco deberías tenerlo! ¡Si hay criaturas malvadas allí, las haremos pedazos! ¡El bien debe venir acompañado con puños!~
+@32 = ~¡Muertos vivientes otra vez! <CHARNAME>, ¡no vayamos allí! Ya estamos luchando con alguien siempre...~
+@33 = ~Así que mis premoniciones no me engañaron. Sabía que este tipo ocultaba algo. ¿Por qué, de todos los habitantes de la ciudad, los espíritus empezaron a atormentar a su hija? Algo hizo para enfurecerlos.~
+
+// Sarevok (participation in the Imoen-Aerie banter at the birth of a child)
+@34 = ~Si alguien aquí me llama tío Sarevok, está muerto. Lo digo en serio.~
+
+// Zaki Rafeha
+@35 = ~¿Así que Melissan trajo a Balthazar aquí? ¿Y con qué propósito, me pregunto? Ella claramente nos está diciendo algo, <CHARNAME>.~
+@36 = ~¡¡Cómeme Ogro!! ¿Otro hijo de Bhaal? ¿Cómo se las arregló para tener tantos hijos? ¿No hizo otra cosa con su vida? ¡Qué semental!~
+@37 = ~¡Empiezo a respetar a ese Bhaal! No puedes tirar una piedra sin golpear a uno de sus hijos. ¡Qué gran fertilidad!~
+
+// NEW (v.4)
+@38 = ~Este sacerdote tiene buenas intenciones, pero en nuestro mundo cruel, la bondad suele tener un alto precio. Debemos ayudarlo, <CHARNAME>, antes de que sea demasiado tarde.~
+@39 = ~Me temo que la conversación no acabará bien.~
+@40 = ~¡Será divertido ver a estos dos santos romperse la cabeza! ¡Har!~
+@41 = ~Hablas como si no tuvieras sangre de Bhaal, pero no es así.~

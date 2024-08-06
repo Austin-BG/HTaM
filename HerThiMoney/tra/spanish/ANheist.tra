@@ -1,0 +1,315 @@
+// Quest "Trap for Druids"
+
+// Yantina
+@0 = ~Hola <CHARNAME>. ¿Podrías encontrar a Owney? Tiene algo importante que hablar contigo. ~
+@1 = ~Ya veo que no has cambiado mucho, Yantina. ~
+@2 = ~¿Jaheira? ¡Me sorprende ver una cara conocida!~
+@3 = ~Sin duda te desterramos por una razón. Ahora estás cobrando deudas con tu compañero. ~
+@4 = ~Agradezco a los dioses cada día que ya no estoy con los Arpistas. Escuchar sus interminables instrucciones día tras día... ¡nunca más! En cuanto a mi compañero, lo está haciendo bastante bien. Ahora tenemos un gran trabajo y estamos juntos. ¿Puedes decir lo mismo de ti, Jaheira? Probablemente sigas dándote patadas mientras haces interminables recados de tus superiores. ~
+@5 = ~*Jaheira guarda silencio un momento, reflexionando sobre lo que ha oído. Entonces, comienza a hablar, reprimiendo su ira con dificultad* ¡No tienes principios, y nunca los has tenido, miserable de dos caras! Sedujiste a un buen hombre, nos robaste, ¡y ahora te paras aquí y te burlas de mí! ~
+@6 = ~*Decides poner fin a esta discusión antes de que se convierta en una pelea y apartas con fuerza a Jaheira*~
+@7 = ~¡Quítame las manos de encima! Le diré lo que realmente pienso de ella— ~
+@8 = ~Ya has hecho bastante, Jaheira. Tenemos mejores cosas que hacer ahora, así que contrólate. ¿Dices que la desterraste? Lo hecho, hecho está, ¡déjalo atrás! ~
+@9 = ~¡No se puede confiar en ella para nada! ¡Nos ha traicionado! ~
+@10 = ~Eso es cosa del pasado. Hazme un favor y concéntrate en NUESTROS problemas.~
+@11 = ~*Calmándose lentamente y a regañadientes* Vale... Tienes razón. Sigamos adelante.. ~
+@12 = ~¡Vamos, chicas, peleen! ¡No arruines el espectáculo, <CHARNAME>, har har!~
+
+// Esra
+@13 = ~*En cuanto te ve, el Mediano corre feliz hacia ti* ¡Pies descalzos de Brandobaris, me alegro tanto de verte! Después de aquella terrible batalla, no pude pegar ojo. Y Jalut estuvo dando vueltas en la cama toda la noche; ¡al menos todo acabó bien! ~
+@14 = ~Oh, casi lo olvido. Owney me pidió que te dijera que lo encontraras. Tiene un asunto para ti, y parece importante. No ha sido él mismo en toda la mañana. ~ 
+
+// Jalut
+@15 = ~Owney quería hablar contigo, Hermano. Encuéntralo, está en algún lugar del banco. ~ ~Owney quería hablar contigo, Hermana. Encuéntralo, está en algún lugar del banco. ~
+@16 = ~*El orco ata tranquilamente la correa a su mayal. Sonríe cuando te ve* Sé que has hablado con Owney. Me alegro de que ahora estés con nosotros. El comandante rara vez habla tan bien de alguien como de ti. Creo que le gustas. ~ 
+@17 = ~¿Cómo va todo?~
+@18 = ~Aburrido.Pero será más divertido por la noche. ~
+@19 = ~Tengo que irme. Cuídate. ~
+@20 = ~Adios. ~
+
+// Jock
+@21 = ~Owney quiere hablar contigo. Ve con él.~
+@22 = ~*Te mira con desagrado mientras chupa un hueso de cordero* ¡Grr! ~
+
+// Yantina
+@23 = ~Bueno, ¿has llegado a un acuerdo con Owney? Me alegro de tenerte con nosotros. ~
+
+// Esra
+@24 = ~¿Estás a bordo? ¡Estupendo! ~
+
+// Owney
+@25 = ~*Owney parece pensativo*~
+@26 = ~¿Querías verme? ~
+@27 = ~Sí. Quería hablar contigo. Hay algo con lo que necesitamos tu ayuda. ~
+@28 = ~Escuchémoslo. ~
+@29 = ~Como puedes ver, nos han ascendido a vigilantes de las cámaras acorazadas. Nos dieron un aumento y un trabajo más limpio. Tuve que enviar a Jalut y Jock a vigilar el sótano, sin embargo. Dan demasiado miedo, ya ves, y eso pone nerviosos a los clientes. ¡Malditos calishitas! ~
+@30 = ~Vamos al grano. ~
+@31 = ~Bueno, para ser honesto, la gente tiene una razón para temerles. ~
+@32 = ~Sí, tienes razón, vamos al grano. ~ 
+@33 = ~¿Es así? Cuando Jalut y Jock rescataban colonos en el Norte, ¿por qué nadie les tenía miedo, eh? ¡Criaturas viciosas e hipócritas! ¡"Mirada desordenada"! *Incapaz de contenerse, Owney golpea su palma abierta con el puño*~
+@34 = ~Así que aquí está la cosa. Esta noche, los Druidas de las Sombras intentarán robarnos. Se colarán por el sótano, y tendrán la llave de la bóveda con ellos. Les tenderemos una emboscada y los mataremos a todos, con tu ayuda, si estás de acuerdo. ¿Alguna pregunta? ~
+@35 = ~¿Los Druidas de las Sombras? ¿Por qué querrían robar un banco?~
+@36 = ~Debo preguntar: ¿de dónde has sacado esta información? O tiene el don de la adivinación, o...~
+@37 = ~No tengo ni idea. Quizá necesiten el dinero para salvar el bosque de la tala, quizá necesiten curar a un dragón de la gonorrea, quién sabe. No importa. Lo principal es que lo están planeando. ~
+@38 = ~Los Druidas fuimos delatados por los Ladrones de las Sombras a cambio de una oportunidad para recuperar nuestros antiguos trabajos como cobradores de deudas. Nuestra promoción dejó un montón de puestos vacíos. ~
+@39 = ~¿Por qué querrían los Ladrones de las Sombra estos trabajos? ~
+@40 = ~*Owney duda visiblemente antes de continuar* Vale... Te lo diré directamente. ~
+@41 = ~Desde arriba se dio la orden de no contratar a nadie de Amn. Incluso nos enviaron un conserje de Calimshan, así que seguro que no nos dejaron contratar seguridad local. Puerto Cálim no quiere involucrarse con los Ladrones de las Sombras; aquí dependemos del Consejo de los Seis, y la sucursal se abrió totalmente con su permiso. Los ladrones quieren desesperadamente a algunos de los suyos dentro, aunque sea en puestos inferiores. ~
+@42 = ~A cambio de la información que recibí de ellos, accedí a recomendarlos a la administración como tethyrianos, igual que nosotros. *Owney sonríe irónicamente* Por supuesto, habrá que vigilarlos de cerca en el futuro, pero ese fue el trato. ~
+@43 = ~Dices que los ladrones delataron a los druidas... así que los druidas debieron acudir a ellos para que les ayudaran con el robo, ¿no? ~
+@44 = ~Exactamente. Los druidas obtuvieron la información que les envié a través de los ladrones. De hecho, su plan fue hecho con mi ayuda. Quieren entrar en el banco por el sótano, para lo cual alquilaron la casa de enfrente. Llevan tres días excavando desde allí. ~
+@45 = ~Están cavando con un ankheg. Lo trajeron a la ciudad como animal exótico y ya han cavado 30 metros con él. Estarán completamente terminados hoy. Van a romper la pared de piedra en el sótano, probablemente con las raíces de las plantas o algo así, y luego estarán dentro. ~
+@46 = ~¿Cómo se puedes saber si el túnel está listo? ~
+@47 = ~Es simple. Se llevaron al ankheg fuera de la ciudad. Deben haber dejado a esa cosa libre. Así que si ya no les es necesario, ya ha hecho su trabajo. ~
+@48 = ~Eso tiene sentido. ¿Qué hay de las defensas mágicas del edificio? ¿Eso no los detendrá? ~
+@49 = ~No, no lo harán. La protección del banco tiene tres niveles: hay runas que absorben la magia dirigida contra las paredes y los cimientos del edificio, y hay runas que distorsionan los hechizos espaciales. He oído hablar de un ladrón mago de Suldolphor que una vez intentó teletransportarse desde la calle al banco y acabó dentro de una pared. Terrible manera de morir... ~
+@50 = ~¿Y el tercer nivel? ~
+@51 = ~El tercer nivel tiene unas supuestas runas que bloquean el uso de la magia dentro del edificio. La verdad es que no existen realmente, es sólo un rumor que difundimos nosotros mismos para mayor protección. ~
+@52 = ~Espera, pero tú mismo acabas de decir que hay runas protegiendo las paredes del banco. Entonces, ¿cómo van a atravesarlas los druidas?~
+@53 = ~Interrumpí la runa de abajo. Los ladrones, a su vez, mintieron a los druidas que no había runas en el sótano. ~
+@54 = ~¿Cómo explicar la runa alterada a la dirección? Después de todo, eso sólo se podría hacer desde dentro. ~
+@55 = ~Les contaré una historia sobre un empleado mayor que conspiraba con ladrones. Un empleado estúpido y codicioso que quería llevarse todo lo que había en la bóveda de una vez. ~
+@56 = ~No lo entiendo. ¿Es realmente cómplice?~
+@57 = ~No, pero tiene una llave de repuesto de la bóveda. No se suponía que yo supiera de la segunda llave, pero Esra se las arregló para olfatearla. Hice que los ladrones avisaran a los druidas sobre este empleado, Gazir. Tiene un guardia del banco que lo escolta hasta su casa, pero eso no le servirá de nada. Los druidas lo interceptarán en el camino a casa, lo noquearán y tomarán la llave. ~
+@58 = ~Por la mañana, Jalut os explicará en qué lío se ha metido. Gazir es un cobarde, así que sin duda saldrá corriendo, y no parará hasta llegar a.... No sé, Rashemen, probablemente.~
+@59 = ~Entiendo. ¿Y el jefe de la guardia? Esto también lo sepultará. ¿Asumo que aspiras a convertirte en el nuevo jefe?~
+@60 = ~No es ni mucho menos el primer error que comete ese gordo bastardo en este puesto, pero los jefes nunca le perdonarán que se perdiera en un intento de robo. Aunque un novato como yo no puede ocupar su lugar. ~
+@61 = ~Un nuevo jefe de seguridad será enviado aquí desde Tezhyr. Conozco al candidato; es un antiguo aventurero. Deteniendo el robo, debería ser fácil para mí asegurarme el puesto como su mano derecha, y eso me permitirá cumplir mi parte del trato con los ladrones. ~
+@62 = ~Veo que lo has pensado todo. ~
+@63 = ~*Owney parece ansioso y muy cansado. De repente te das cuenta de lo difícil que le resultó confiar en ti. Al cabo de un momento, el sacerdote vuelve a hablarte en un tono más confidencial*~
+@64 = ~Escucha, <CHARNAME>, ya sabes cómo es. Tú también eres un aventurero, como lo fui yo. Pero eso es todo en el pasado ahora. Todos hemos decidido establecernos aquí en Athkatla y terminar nuestros viajes. ~
+@65 = ~Ser un aventurero... a veces significa soportar la pobreza, la suciedad, el hambre. Mi gente está cansada de esto. Jalut se tiró el lomo acarreando troncos para los cuatro cuando nos contrataron para ayudar a construir el campamento de asedio hace un año. Había continuos combates con los Orcos lejos hacia el Norte, y siempre había trabajo para nosotros. ~
+@66 = ~Durante el asalto, Jock recibió una flecha. Le dio justo en el cuello, en un lado y salió por el otro. Es un milagro que sobreviviera. Pensamos que tendríamos que dejarlo en el hielo. La herida que recibió nunca sanará del todo. Dos de nuestros hermanos nunca volverán de esa guerra. Pero al menos pudimos enterrarlos... lo que quedaba de ellos. ~
+@67 = ~Esra también quiere retirarse. Ella es un Mediana, está en su sangre para sentarse en un agujero acogedor y llenar sus estómagos. Ella tiene una familia en Puerta de Baldur. Ella les envía lo que puede, pero no ganamos casi nada. Aquí en Athkatla, vivimos durante tres semanas con lo que ella nos "procuró". ~
+@68 = ~Y para Jock, cree que ha encontrado su pareja aquí... (el sacerdote suspira) una mujer semiorca. Necesitarán dinero para su matrimonio. Sí, es hora de que todos nos establezcamos y sigamos con nuestras vidas. ~
+@69 = ~Terminemos con esto, <CHARNAME>. Confiamos en ti después de la batalla con el Recaudador. Ahora, eres plenamente consciente de nuestros asuntos. Te lo he contado todo, honesta y abiertamente, sin esconderme. Es hora de que tomes una decisión. ~
+@70 = ~Así que quieres matar a los druidas y ocupar un lugar acogedor en la guardia para ti y tus hermanos. Bueno, eso tiene sentido para mí, y creo que puedo ayudarte. Pero todo tiene un precio. ~
+@71 = ~¿Qué pasa si digo que no? ~
+@72 = ~Necesito tiempo para pensar en tu propuesta. ~
+@73 = ~Así que di tu precio. ~
+@74 = ~*La cara de Owney se congela momentáneamente* Yo... veo que estaba equivocado contigo. Considera que esta conversación nunca ocurrió. Aquí es donde nos separamos. ~
+@75 = ~Tienes hasta la noche, los druidas no nos esperarán. Necesitaré escuchar tu respuesta antes de eso. ~
+@76 = ~1,000 de oro. ~
+@77 = ~1,200 de oro. ~
+@78 = ~1,500 de oro. ~
+@79 = ~Yo no quiero estar en este negocio, pero no voy a interferir con vosotros tampoco. ~
+@80 = ~Bien. Te daré mi respuesta un poco más tarde. ~
+@81 = ~Venga, vamos. ~
+@82 = ~¿Qué has decidido, <CHARNAME>? ~
+@83 = ~Te ofrecí un trato, y ni siquiera tuviste el valor de rechazarlo, simplemente te largaste. No esperaba esto de ti. No tenemos nada más que hablar. ~
+@84 = ~No tenemos nada de qué hablar. ~
+@85 = ~Tranquilo. Sólo trabajo en un banco, no soy el dueño. No tengo tanto. Podemos estar de acuerdo con 1.000 de oro. ~
+@86 = ~Tranquilo. Sólo trabajo en un banco, no soy el dueño. No tengo tanto. Podemos estar de acuerdo con 1.200 de oro. ~
+@87 = ~No tenemos tanto por adelantado, hasta ahora sólo nos han pagado un pequeño anticipo. Podemos pagar 600 al terminar y el resto en una semana. También os dejaremos todo el equipo del druida, excepto la armadura y las armas del líder. ~
+@88 = ~Tenemos un trato. ~
+@89 = ~Ya he discutido con mis hombres lo que haremos, así que ahora necesito hablarlo contigo. Atacaremos primero, sin darles tiempo a recuperarse. Primero, tienes que matar al líder druida; lo reconocerás por la armadura de ankheg es de color verde. Lo más probable es que esté armado con una cimitarra. ~
+@90 = ~¿Qué más puedes decirnos sobre estos druidas? ~
+@91 = ~En realidad, sólo hay un druida y su aprendiz o ayudante; no tengo ni idea de cómo funciona la jerarquía de los druidas. También tienen un lobo. Siempre tienen a sus animales con ellos. Así que no me sorprendería que lo trajeran con ellos. ~
+@92 = ~La mala noticia es que este bastardo no ha estado ocioso. Ha contratado a seis soldados, mercenarios tethyrianos. Les ha pagado por adelantado, y es casi seguro que prometió una parte de la bóveda. ~
+@93 = ~Son malas noticias. ¿Sabes quiénes son?~
+@94 = ~Los ladrones dijeron que parecían haber sido entrenados en la milicia de Tezhyr, y que tienen el porte y la disciplina adecuados, pero yo no me fiaría sólo de esta información. Sí sabemos con certeza que son todos arqueros, así que tendremos que acortarles la distancia, y lo más rápido posible. Deberíamos esperar hasta que todos salgan del sótano y luego atacar. ~
+@95 = ~¡Bubú dice que es un buen plan!~
+@96 = ~Una cosa más. Ninguno de ellos puede salir vivo del banco. No podemos aceptar su rendición. ~
+@97 = ~Entiendo... Si un druida capturado suma dos y dos, podrían decirle a la gente equivocada exactamente quién los delató. Entonces, tus compañeros ladrones tendrían un serio problema con sus superiores. Y tú también.~
+@98 = ~*Una leve sombra de sonrisa suaviza un poco el rostro de Owney: al parecer, al sacerdote le ha gustado tu respuesta* Así es. Veo que sabes usar la cabeza. Pero te equivocaste en una cosa.~ 
+@99 = ~*El rostro del tezhyriano se retuerce con desprecio* No son mis socios. No puedes tratar con ladrones, son la escoria de la tierra. Cuando se trata de salvar su propio pellejo, se vuelven contra cualquiera, incluso contra el que hace un momento llamaban hermano. Planeo usarlos y luego tirarlos. ~
+@100 = ~He tratado con ellos antes y no puedo decir nada bueno de ellos. ~ 
+@101 = ~Como es de esperar. Harías mejor en mantenerte alejado de esos animales de dos patas. ~
+@102 = ~Me pregunto por qué los druidas quieren robar un banco. ~
+@103 = ~No tengo ni idea. Quizá necesiten el dinero para salvar el bosque de la tala, quizá necesiten curar a un dragón de la gonorrea, quién sabe. No importa. ~
+@104 = ~Así que, puedo ofrecerte algo de equipo para el combate, pero no cuentes con mucho. Tengo piedras de honda, dardos, flechas y virotes. También he conseguido dos pociones curativas importantes y un pergamino de magia de fuego. Elige. ~
+@105 = ~Necesito piedras para las hondas. ~
+@106 = ~Puede que esos dardos me resulten útiles. ~
+@107 = ~Necesito algunas flechas. ~ 
+@108 = ~Necesito algunos virotes. ~
+@109 = ~Tomaré las pociones curativas. ~
+@110 = ~El pergamino suena muy bien. ~
+@111 = ~Espera. ~
+@112 = ~Cuando oscurezca, ven a la entrada del banco. Nos encontraremos allí. No habrá guardias en la entrada, yo me encargaré de eso. Discutiremos los detalles dentro. ~
+@113 = ~¿Estáis preparados? Debemos bajar al piso inferior del banco. Están llegando, y deberían estar aquí en cualquier momento. ~
+@114 = ~Ahora, vámonos. Esra, quédate aquí y vigila la entrada del banco. No podemos dejarla sin vigilancia. Llámame si necesitas algo. ~
+
+// Defeat Druids
+@115 = ~*Owney te palmea el hombro con aprobación* ¡Buen trabajo, <CHARNAME>! Ahora sólo queda informar a nuestros superiores y llamar a los guardias. Deberías irte antes de que lleguen, pero hay un par de minutos para registrar los cuerpos. ~
+@116 = ~Toma, como acordamos, tus seiscientas monedas de oro, el resto lo tendremos en una semana. Nos vemos por la mañana. Y cuídate. ~
+//@117 = ~Tú también. ~
+@118 = ~Reviviré a mis camaradas caídos, por supuesto. Esa es mi responsabilidad. ~
+@119 = ~Hacía demasiado tiempo que no me divertía tanto. ¡Cómo me gusta aplastar los cráneos de estos amantes de los árboles! ~ [KORGAN29]
+@120 = ~No todos los druidas son así, Korgan. Los druidas de las sombras están confundidos y amargados. ~
+@121 = ~¡Olvídalo, todos me parecéis iguales! ~
+@122 = ~A diferencia de ellos, nosotros no intentamos destruir ciudades y civilizaciones. El mal no debe nublar la mente. ~
+@123 = ~¡Deja de jugar con mi cabeza, mujer! ¡Vete a besar un árbol! ¡Para mí, la alegría es cerveza y pelea! ~
+@124 = ~Lástima que tuviéramos que matarlos. Nunca descubrimos por qué organizaron este ataque. Bien, registremos los cuerpos rápidamente y salgamos antes de que lleguen los guardias. ~
+
+// Next morning
+@125 = ~*El clerigo saluda amistosamente* ¡Todo salió a la perfección! El jefe de seguridad fue llamado de vuelta a Puerto Calim, ¡sin duda para vigilar las letrinas de allí! Gazir desapareció... todo está según lo planeado. Todavía queda un agujero en el sótano por reparar, pero es pequeño, y lo tendremos arreglado rápidamente. ~
+@126 = ~Todos tenemos una gran bonificación, así que aquí está el resto de tu pago. (Te da la cantidad adeudada) En resumen, todo salió bien, y es todo gracias a ti. ~
+@127 = ~A partir de ahora, ¡siempre puedes contar con nosotros! Si alguna vez necesitas ayuda, ahí estaremos. Ahora si me disculpan, los negocios me esperan. ¡Ha sido un gran desastre toda esta mañana! ~
+@128 = ~Buena suerte, Owney. ~
+@1281 = ~Ah, una cosa más: han limpiado el piso de abajo después de la pelea, y han puesto algunas cosas en el cofre del centro de la sala. Si los empleados no lo han vaciado todavía, sírvete lo que quede. ~
+
+// Owney's Death and Resurrection
+@129 = ~*¡Llorando! ¡Owney! ¡No! ~
+@130 = ~*Yantina corre hacia ti con una súplica* ¡Eres un clerigo! Devuélvele la vida, ¡te pagaremos lo que sea! ~
+@131 = ~*El enorme orco gruñe de rabia y dolor* ¡Comandante! ¡No pude salvar a nadie! ~
+@132 = ~¡El Comandante y Yantina, estan muertos! ¡clerigo, por favor ayúdenos! ¡Te pagaremos, cueste lo que cueste! ~
+@133 = ~*Jjock parece solo y confuso, el desconcierto se congela en sus ojos* Todos muertos... Sólo quedo yo... ~
+@134 = ~¡Tú! ¡Tú un clérigo! ¡Levántalos a todos! ¡Yo pago, lo que quieras! ~
+@135 = ~Voy a intentarlo... ~
+@136 = ~Lo siento... Era un buen hombre. ~
+@137 = ~Oh... Parece que Siamorphe me vigila... Gracias, <CHARNAME>. Ahora te debo dos. ~
+@138 = ~Owney, ¡dame un abrazo! ¡Gracias a los dioses! ~
+@139 = ~¡Estás con nosotros otra vez! <CHARNAME>, ¡funcionó! ~
+@140 = ~Y aquí hay otros 900 de oro en la parte superior - para mi resurrección. Sé que estos hechizos son caros, y no quiero estar en deuda. ~
+@141 = ~¡Comandante, está vivo! ~
+@142 = ~Sólo estaba aquí por él... Y ahora que se acabó, no sé para qué vivir. Me marcho. Lo siento... ~
+@143 = ~Nos metimos en este negocio bancario para nada... Todo fue un desperdicio. Bien, te daré el dinero como prometí. Vuelve mañana. ~
+@144 = ~Ven mañana al banco y búscame. Te daré el dinero, como prometió el comandante. ~
+@145 = ~Lo siento, Yantina. Yo también he perdido a mi amante. Tú y yo hemos tenido nuestras diferencias, pero sé mejor que nadie cómo te sientes. ~
+@146 = ~Muchas gracias Jaheira... ~
+
+// Next morning, Owney is dead
+@147 = ~Aquí tienes. Gracias por tu ayuda. Aquí está toda la cantidad, como acordamos. Ahora si me disculpas, tengo que asistir al funeral de Owney. ~
+@148 = ~Este es el dinero que debemos. Ahora vete, nosotros también nos vamos pronto. ~
+@149 = ~Aquí tienes. Gracias por tu ayuda. Aquí está toda la cantidad, según lo acordado. Si me disculpas, tengo que asistir a los funerales de los demás y luego empacar mis cosas. No hay razón para que me quede aquí sin mis amigos. ~
+
+// Yantina
+@150 = ~¡Hola otra vez! ~
+@151 = ~Cuéntame algo de ti, Yantina. ~
+@152 = ~¿Por qué te has unido a este grupo? ~
+@153 = ~¿Te gusta trabajar en el banco? ~
+@154 = ~Sólo he venido a saludar. ~
+@155 = ~En realidad, Yantina no es mi verdadero nombre. No te diré cuál es. Los arpistas me llamaron Yantina, como una hermosa concha marina, por mi amor al mar. ~
+@156 = ~Ese apodo es lo único bueno que me dieron. Me expulsaron por 'robo y promiscuidad', o eso decían. ~
+@157 = ~Por Owney. Le quiero y espero que él también me quiera. Pero con el tipo de vida que llevamos, es difícil sentar la cabeza. ~
+@158 = ~Sé lo que quieres decir. Sin amor, no hay razón para vivir en este mundo. ~
+@159 = ~Definitivamente es mejor aquí que correr por las calles y luchar contra los evasores de deudas. ~
+@160 = ~No puedo discutirlo. ~
+@161 = ~Sé lo que quieres decir. A los arpistas les encanta juzgar a los demás, y tú no eres ni la primera ni la última. ~
+@162 = ~Vale, tengo que volver al trabajo. ¿O hay algo más que quieras preguntar? ~
+@163 = ~No, creo que me voy a ir ahora. ~
+@164 = ~¡Buena suerte! ~
+
+// Esra
+@165 = ~¡Hola, hola! ~
+@166 = ~Cuéntame algo de ti, Esra. ~
+@167 = ~¿Por qué te has unido a este grupo? ~
+@168 = ~<CHARNAME>, ocúpate de este asunto con Owney, es importante. ~
+@169 = ~Sólo he venido a saludar. ~ 
+@170 = ~Soy de Tezhyr, de una familia de ladrones. Por eso elegí el mismo oficio para mí. Mis padres no me enseñaron otra cosa, porque ellos mismos no sabían hacer otra cosa. ~
+@171 = ~Una vez me salvaron de la cárcel. Desde entonces estamos juntos, y no podría pedir unos mejores amigos. Y me necesitan: cuando no teníamos absolutamente nada que comer,y  yo era quien nos conseguía toda la comida que podía. ~
+@172 = ~Cada uno sobrevive como puede. Y es más fácil sobrevivir juntos. ~
+@173 = ~No me gustó golpear a la gente pobre por su últimas monedas de oro, así que aquí es mucho mejor. Aunque es un poco aburrido. ~
+@174 = ~Y hay menos riesgo para la vida aquí que en las calles. ~
+@175 = ~Es comprensible. No conocí a mis padres en absoluto, así que intenta no culpar a los tuyos, al menos estaban allí.~ 
+@176 = ~¿Hay algo más que quieras preguntar? ~
+@177 = ~No, creo que me iré ahora. ~
+@178 = ~¡Buena suerte! ~
+
+// Jalut
+@179 = ~hola! ~
+@180 = ~Cuéntanos algo sobre ti, Jalut. ~
+@181 = ~¿Por qué te has unido a este grupo?~
+@182 = ~¿Te gusta trabajar en el banco? ~
+@183 = ~Sólo he venido a saludar. ~
+@184 = ~Nada que contar. Habla con Owney, no soy bueno hablando. ~
+@185 = ~Nos conocemos desde Puerto Calim. Yo tenía contactos allí. Así es como conseguimos el trabajo de cobradores cuando llegamos a Athkatla. ~
+@186 = ~Esto es aburrido. No hay robos ni peleas. Pero el dinero se paga a tiempo. ~
+@187 = ~¿Otra cosa mas? ~
+@188 = ~Bueno, creo que me voy a ir ahora. ~
+@189 = ~adios. ~
+
+// Jock
+@190 = ~Háblame de ti, Jock. ~
+@191 = ~¿Por qué te has unido a este grupo? ~
+@192 = ~¿Te gusta trabajar en el banco? ~
+@193 = ~Sólo he venido a saludar. ~
+@194 = ~Tú y el comandante habláis. Yo no hablo. ~
+@195 = ~El Comandante me salvó. Hubo una pelea. Casi muero. El Comandante intervino y me rescató. Luego nos hicimos amigos. ~
+@196 = ~Hay dinero y comida. Es bueno esto. ~
+@197 = ~¿Qué cosa? ~
+@198 = ~Bien, creo que me iré ahora. ~
+@199 = ~Adelante. ~
+
+// Owney
+@200 = ~Hola, <CHARNAME>.~
+@201 = ~Háblame de ti, Owney. ~
+@202 = ~Eres un sacerdote, Owney. ¿A qué deidad sirves?~
+@203 = ~¿Te gusta trabajar en el banco? ~
+@204 = ~Sólo he venido a saludar. ~
+@205 = ~Soy de Tezhyr., el quinto hijo de una familia noble. Pero nos empobrecimos tanto que a mi padre no le quedó nada de valor, salvo nuestro apellido. Así que tuve que dejar mi tierra natal. ~
+@206 = ~Desde muy joven me acostumbré a sufrir. Tras la muerte de mi familia, me acogieron los sacerdotes de Lazhánder. Ellos me educaron, y así me convertí en sacerdote, aunque nunca tuve fe en su dios. Pero vivir en la pobreza me hizo buscar una vida mejor. Pasar mi vida en un monasterio no era mi camino.  ~
+@207 = ~Sirvo a Siamorphe, como en su día la sirvieron mis nobles antepasados. Siamorphe nos dice que los nobles tienen la obligación moral de gobernar a los demás, no en aras de sus ambiciones, sino de su pueblo, aunque las obligaciones contradigan nuestros deseos personales. Y aunque mi familia está empobrecida y gobierno a poca gente, me mantengo fiel a esta idea. ~
+@208 = ~Para ser sincero, ser cobrador fue lo peor que he hecho nunca. No lo llevé bien, y el Recaudador se me adelantó en todo momento. Pero tuve que seguir adelante cuando no había otra salida. Ahora, tenemos un trabajo normal, y no tenemos que ir en contra de nuestra conciencia, sacando dinero a golpes a nuestros vecinos. Así que sí, estamos contentos con todo. ~
+@209 = ~¿Hay algo más que quieras preguntar? ~
+@210 = ~Bueno, creo que me voy a ir ahora. ~
+@211 = ~Que los Dioses te guarden. ~
+@212 = ~Los druidas de las sombras se han apartado en gran medida del camino natural, encerrados en su odio a la civilización. ~
+@213 = ~¿Y el resto de los druidas aman la civilización? ~
+@214 = ~No. Pero los druidas corrientes creemos que la civilización y la naturaleza pueden llevarse bien si los mortales se dan cuenta por fin de que están cortando la rama del árbol en la que están sentados.  ~
+@215 = ~Ya veo. Pero por qué querían el dinero todavía no está claro. ~
+@216 = ~¿Querrías volver a tu tierra natal? Después de todo, tu familia tuvo una posición alta en la sociedad de allí. ~
+@217 = ~No, el pasado está en el pasado, no se puede rehacer el viejo terreno. Los títulos y el honor significan poco para mí ahora. Mis amigos son mi familia ahora, y este es nuestro hogar. No, no voy a volver a Tezhyr, nadie ni nada me espera allí. ~
+@218 = ~¿No te gustan los ladrones, sacerdote? Pero tienes a dos de ellos en tu grupo. Y uno de ellos parece especialmente... ejem... cercano a ti. ~
+@219 = ~No todos los ladrones son iguales, por supuesto. Hay excepciones. Pero tú no eres como ellos, te lo aseguro.  ~
+@220 = ~¡No le agradan los ladrones, pero tiene dos en su propia compañía! ¡Son todos iguales, sacerdotes santurrones! ¡Creéis que podéis sermonear a otros sobre cómo vivir mientras estáis hasta el cuello de inmundicia! ~
+@221 = ~¡Métete en tus asuntos, enano! Agradece que tus amigos te sacaron de deudas, o ya estarías muerto. No por nuestra mano, sino por la de otros. ~
+@222 = ~Un valiente, ¿eh? Serás un poco más humilde sin tu cabeza, me atrevo a decir. ¡Mi hacha dice que quieres conocerla mejor!~ [KORGAN23]
+@223 = ~¡Cálmate! No estamos aquí para pelear. Bueno, no entre nosotros. ~
+@224 = ~¡Vosotros, santurrones, sois todos iguales! ¡Creéis que podéis sermonear a los demás sobre cómo vivir mientras estáis hasta el cuello de inmundicia! ~
+@225 = ~Sabes, Owney, esto me recuerda una historia que le ocurrió a mi tío Scratchy en su juventud, cuando intentó vender maletas. Oh, no, espera un minuto... No creo que fuera el tío Scratchy, sino su primo. Y no eran maletas, eran relojes. Y no los vendía, los robaba y los desarmaba. Así que una noche, estaba sentado en una mesa, desmontando los relojes... Creo que eran de oro... De todos modos, de repente vio una sombra en la ventana, y supo de inmediato que algo andaba mal... ~
+@226 = ~Jan, cuéntalo más tarde. De lo contrario, estaremos escuchando hasta la mañana, y los druidas tendrán todo el tiempo que necesitan para robar el banco. ~
+@227 = ~Bueno, ¡y en el sitio más interesante! Muy bien, pero no te olvides de recordarme que termine la historia.  ~
+@228 = ~Oh, definitivamente. ~
+
+// Help in the battle with Bodhi
+@229 = ~Owney, debo luchar contra una poderosa vampira llamada Bodhi. ¿Pueden tú y tu gente ayudarme?~
+@230 = ~Nos has ayudado dos veces, <CHARNAME>, y estamos en deuda contigo. ¿Dónde se esconde este vampiro? ~
+@231 = ~En la zona del Cementerio, en las criptas inferiores. Para combatirlo, necesitas agua bendita y estacas. Traeremos de sobra. ~
+@232 = ~Bien. Mi gente ayudará, y yo también. Todos irán excepto Esra y Yantina. No puedo arriesgar sus vidas... Además tenemos que dejar a alguien en el banco por si acaso. ~
+@233 = ~Gracias Owney. Nos vemos abajo en las catacumbas.  ~
+@234 = ~¡Vamos, <CHARNAME>! ¡A estos vampiros no les queda mucho tiempo! ~
+@235 = ~¡Mostremos nuestra fuerza a estas viles criaturas! ~
+@236 = ~¡Muerte a los vampiros!~
+
+
+// Owney
+// Additions (for the "Pirate Legacy" quest)
+@237 = ~¿Alguna otra búsqueda? Me vendría bien un trabajo extra... ~
+@238 = ~Supongo que me haré cargo de la deuda de Fayaz... ~
+@239 = ~Se va a hacer un control de seguridad completo, todo el mundo está reforzando las cosas ahora. Shahbaz, el anterior jefe de seguridad, nos dio muchos problemas. Ahora hemos descubierto que había concedido docenas de préstamos junto con el empleado mayor fugado. Todos los deudores, una vez recibido el dinero, desaparecieron de inmediato. A uno lo encontraron más tarde fuera de la ciudad, asesinado y desnudo. Los otros se fueron a otra parte, después de darles un buen soborno, sin duda. ~
+@240 = ~Tengo uno de esos casos, pero es un callejón sin salida, y no tengo tiempo ni oportunidad de ocuparme de él. ~
+@241 = ~Pensé en darte todo lo que tenemos sobre el deudor y su pagaré. ¿Dijiste que necesitabas el dinero? Bueno, puedes sacudírselo si alguna vez te lo encuentras en tus muchos viajes. Debe 3.000  monedas de oro, una suma decente si me preguntas. ~
+@242 = ~¿Cuánto de eso me vas a ofrecer?~
+@243 = ~Cada moneda de oro. Nos has ayudado mucho, así que considéralo un favor amistoso de nuestra parte. ~ 
+@244 = ~¿Qué sabemos acerca del deudor? ~
+@245 = ~*Te entrega unos pergaminos* Todo está detallado aquí. El nombre del deudor es Fayaz, apodado "Tuerto". En el banco, se presentó como el capitán de un barco mercante que necesitaba dinero para reparaciones. Se comprobaron las reclamaciones de Fayaz y, he aquí, todo coincidía milagrosamente. Ni que decir tiene que estaba en la lona con el jefe de seguridad y el empleado principal. ~
+@246 = ~Con el oro, Crooked Fayaz, que resulta ser un pirata buscado, zarpó apresuradamente hacia la base pirata de Brynn Ley. Ahora se aloja allí, y se está bebiendo el dinero mientras hablamos. Va a ser difícil sacárselo, especialmente en su guarida... ~
+@247 = ~De todos modos, no corras riesgos innecesarios. Fayaz es peligroso. Espera a que esté solo y asegúrate de tener una vía de escape. ~
+@248 = ~Ahora lo entiendo. Muy inteligente, dándome el caso sin resolver. Si no consigo nada, da igual, pero si recupero el dinero, los rumores se extenderán por toda la costa. Dirán que el banco tiene un brazo largo, y que incluso han cobrado de piratas en su base. Ganas de cualquier manera. ~
+@249 = ~Ambos nos beneficiaremos si aceptas este caso. Probablemente hayas arriesgado tu cabeza por mucho menos. Aquí, tendrás la ventaja del primer golpe. Puedes pillar a Fayaz por sorpresa, y si consigues escapar después, no podrías pedir nada mejor. ¿Qué dices, <CHARNAME>, aceptas? ~
+@250 = ~Yo creo que sí. ~
+@251 = ~No, creo que nunca llegaré a Brynn Ley. Además, el riesgo es demasiado grande. ~
+@252 = ~Estupendo. Tienes todo el papelerío contigo. Esperaré las buenas noticias. ~
+@253 = ~Lo que tú digas. Quizá tengas razón; no hay que meterse en el avispero si no es absolutamente necesario. En cualquier caso, si cambias de opinión, la oferta sigue en pie.~ 
+@254 = ~*Te da los pergaminos* Mantenme informado. Si Fayaz regresa a Athkatla, te ayudaremos también. ¡Buena suerte! ~
+
+// Additions (group reactions)
+@255 = ~Esto es muy extraño. Normalmente, los Druidas de las Sombras no se acercan tanto a la ciudad a menos que sea absolutamente necesario y no intervienen en tales aventuras. Algo está mal aquí. ~
+
+// NEW (v.4)
+@256 = ~*Korgan gruñe, pero retira el hacha*~
+@257 = ~¿Para ganar oro? ¡Ahora hablamos el mismo idioma! ¿Cuánto voy a ganar? ~
+@258 = ~No tengo que matarle, ¿sólo coger su oro?~
+@259 = ~¿Quién es este pirata? ¿Es peligroso?~
+@260 = ~Lo tengo. ¿Dónde puedo encontrarlo exactamente?~
+@261 = ~Así que decidiste echarle todo el trabajo a otro. Pero al menos será beneficioso para mí. Gracias. ~
+@262 = ~¿Otra vez? Sin embargo, tal y como yo lo veo, las cosas te van bien. No más correr por las calles en busca de los deudores.~
+@263 = ~Parece una gilipollez. ¿Estás seguro de que no has bebido demasiado esta mañana? ¿Por qué los druidas necesitan tu banco?~
+@264 = ~¿Por qué estás tan seguro?~
+@265 = ~Todavía no entiendo lo que está pasando aquí.~
+@266 = ~¿Por qué tienes tantos problemas? Podrías perder tu trabajo si algo sale mal, si la administración descubre que tú lo organizaste.~
+@267 = ~¿Y si hay demasiados y no podemos con ellos?~
+@268 = ~¡Vale, estoy de acuerdo! Por 1000 monedas lo haremos.~
+@269 = ~No, no quiero participar en esto.~
+@270 = ~Entonces intentaremos arreglárnoslas con nuestras propias fuerzas, aunque entonces lo pasaremos mal y algunos de nosotros podríamos morir.~

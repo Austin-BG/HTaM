@@ -1,0 +1,96 @@
+// Death of the Shadow Dragon - NPC reactions
+@0 = ~(Mirando el cuerpo del poderoso Thaxl'ssillia, apenas puedes creer que este enorme monstruo cayera en tus manos.)~
+@1 = ~¡Sí! ¡Así es como Minsc castiga el mal! Pero no podríamos haberlo hecho sin la ayuda de Bubú, ¡él mismo estaba distrayendo a este dragón!~
+@2 = ~Lo hemos conseguido. Apenas puedo creerlo. Pero incluso con el dragón muerto, el mal permanece en el templo. Tenemos que terminar lo que empezamos.~
+@3 = ~Menos mal que hemos matado a este dragón, de lo contrario podría haber atacado el Valle de Imnes, y yo no podría haberlo hecho solo para proteger a los aldeanos.~
+@4 = ~Ahora tendremos algo que contar a nuestros parientes con una taza de zumo de nabos. El tío Rasca se habría sorprendido al saber que maté al dragón con estas manos. Yo diría, supongo, que soy un inventor. ¿Alguna vez he mentido o inventado algo? No, no hay nadie más sincero que yo en la familia Jansen.~
+@5 = ~¡Har har! Ha sido una batalla gloriosa. Registremos su cadáver y celebremos nuestra victoria en la taberna. ¡Incluso invitaré a todo el mundo para esta ocasión!~
+
+// Chickens
+@6 = ~*cacareando*~
+@7 = ~*cacareando* *cacareando* *cacareando*~
+@8 = ~(La gallina no se diferencia del resto.)~
+@9 = ~¡Hola gallina! Dime, ¿tu amo escondió algo valioso en ti?~
+@10 = ~(La gallina te ignora, sigue picoteando granos en el suelo.)~
+@11 = ~(La gallina se asusta con tu voz y huye.)~
+@12 = ~(La gallina te mira un momento antes de volver su atención al gusano que sobresale del suelo.)~
+@13 = ~¿Qué haces ahí? ¡Piérdete! ¡Deja en paz a mis gallinas!~
+@14 = ~(Decides asustar a la gallina. Intenta levantar el vuelo, pero algo tira de ella hacia el suelo. Tal vez el granjero escondió algo valioso.)~
+@15 = ~(Cuando sostienes la gallina en tus manos, puedes sentir algo grande traqueteando en su interior. Puede ser un tesoro escondido.)~
+@16 = ~(Recoge la gallina y sacúdelo.)~
+@17 = ~(Asustar a la gallina.)~
+@18 = ~(Deja en paz a la gallina.)~
+@19 = ~Conozco tu secreto, viejo... entrégame las gallinas, o si no.~
+@20 = ~¿Cuánto pides por estas gallinas? Quiero comprárlas.~
+@21 = ~Valygar, ¿puedes ayudarme a sacar el "tesoro" de la gallina?~
+@22 = ~Jaheira, ayúdame a sacar lo que se esconde dentro de la gallina.~
+@23 = ~Cernd, ¿sabes cómo sacar un objeto oculto de una gallina?~
+@24 = ~No. Una gallina  no es una especie de bolsa de la que puedas sacar algo. No quiero ser parte de tal estupidez.~
+@25 = ~<CHARNAME> ¿Qué clase de broma infantil es esta? ¿De verdad quieres robar a estos refugiados de esta manera? Si realmente necesitas lo que esconde la gallina, intenta negociar con su dueño.~
+@26 = ~Si algo extraño entra en un ser vivo, su cuerpo intentará deshacerse de ello. Pero, si hemos de creer la historia de ese hombre, el objeto oculto puede dañar a la gallina cuando se libere. Si quieres, puedo aliviar su dolor y acelerar el proceso.~
+@27 = ~Sí, hazlo.~
+@28 = ~(Cernd examina cuidadosamente las gallinas. Tras unos segundos, se acerca a una de ellas y se sienta a su lado. Saca la bolsa de su cinturón, espolvorea algunas bayas y da de comer al ave. La gallina se queda quieta un par de minutos y luego vuelve al rebaño. Deja una gema en el lugar donde estaba.)~
+@29 = ~No, puedo hacerlo sin tu ayuda.~
+@30 = ~Minsc, eres un explorador. Seguro que puedes sacar el tesoro de la gallina.~
+@31 = ~¿Algún villano está usando gallinas como lugar para dejar ciertas cosas  secretas? ¡Debemos ayudar a los pobres animales! Pero Minsc tiene miedo de hacer daño a la gallina, porque él es muy grande, y el pollo es tan pequeño... Bubú, ¿quieres decir algo?... ¡Gran idea! ¡Minsc y Bubú saben cómo salvar a este ave su tormento!~
+@32 = ~Vale, Minsc, adelante.~
+@33 = ~Buscaré otra forma de librar a la gallina del tesoro escondido.~
+@34 = ~(Minsc se quita a Bubú del hombro y lo pone en el suelo. Empieza a correr alrededor de las gallinas. Al cabo de un rato el hámster se detiene y empieza a acercarse sigilosamente a una de las aves...)~
+@35 = ~*Squeak!*~ [GAM_48]
+@36 = ~*¡Allí!* (El pollo se suelta y sale corriendo. En su lugar observas un brillo azulado. Agachado, recoges y limpias el objeto, que resulta ser una gema~
+
+// Lellin's death
+@37 = ~¿Qué ha sido eso?~
+@38 = ~He oído gritos. Vamos a ver.~
+@3800 = ~Algún tonto estaba gritando por allí. Probablemente otro provinciano borracho deambulaba por aquí. Nadie en su sano juicio vendría aquí. (Excepto para los suicidas, como nosotros, por supuesto...)~
+@39 = ~¡Bubú ha oído algo, por ahí!~
+@40 = ~<CHARNAME> ¡qué lugar tan terrible! Este lugar me tiene mal...~
+@41 = ~(Tienes en tus manos el diario del difunto Lellin. Hay espeluznantes manchas de sangre en las páginas, y el miedo impregna el aire circundante...)~
+@42 = ~Este enclenque se mató por ser un cobarde miedoso .~
+@43 = ~Eh, el tipo no está lejos... Eligió oponentes más allá de su fuerza.~
+@44 = ~No juzgues al tipo - esta fue probablemente su primera pelea.~
+@45 = ~Me di cuenta de lo fácil que fue llegar hasta aquí... probablemente siguiendo el rastro de Mazzy y su gente que nos despejaron el camino. Y este hombre es de su escuadrón.~
+@46 = ~¿Mazzy? ¿Es la chica que mencionó el alcalde?~
+@47 = ~Esa valiente Mazzy, ¡ya quiero conocerla!~
+@48 = ~<CHARNAME>, Es incluso más oscuro aquí que el sótano de Candelero... ya sabes, ¿donde los monjes solían enviarnos a recuperar los comestibles en conserva? ¿Recuerdas aquella vez que te asustaste y les dijiste a los monjes que había monstruos ahí abajo?~
+@49 = ~¡Ese era yo! Antes de que te enviaran, me escondí en el sótano e hice ruidos espeluznantes. Cuando los monjes lo comprobaron y no encontraron nada, te llamaron cobarde... ¡Guardé este secreto durante años y sólo ahora sabes toda la verdad!~
+@50 = ~Imoen, algún día se me ocurrirá cómo pagarte todos estos trucos. ¡Entonces lo lamentarás de verdad! Pero este no es el momento ni el lugar para bromas.~
+@51 = ~De acuerdo, vamos. ~
+@52 = ~Rara vez estoy de acuerdo contigo, pero ahora es una de esas veces.~
+@53 = ~¿Quizás ya es suficiente de esta chachara? Estas espantosas sombras podrían atacarnos en cualquier momento. Este bosque está abrumado por la oscuridad y parece pedir ayuda a gritos.~
+
+// Minister Lloyd 
+@54 = ~Qué horror!~
+@55 = ~También hay un maníaco desollando gente en Athkatla. ¿Es un nuevo culto de carniceros locos?~
+@56 = ~Ningún humano podría hacer algo así, ¡debe ser algún tipo de monstruo! ¡Nos ocuparemos de él muy pronto!~
+@57 = ~*Sniff-sniff...*~
+@58 = ~No temas, Wilson, los osos están a salvo aquí. Al contrario, con tu ayuda, ¡castigaremos a estos asesinos!~
+@59 = ~Con el debido respeto, señor, ¿cómo podrían los lobos voltear y despellejar  la piel de sus víctimas? Esta teoría es claramente errónea, los lobos simplemente se comerían los cuerpos.~
+@60 = ~Estoy de acuerdo con Jaheira. Los animales definitivamente no tienen nada que ver.~
+@61 = ~¿Cómo pueden los lobos volver del revés la piel de sus víctimas? No, los animales no tienen nada que ver.~
+
+// At Valygar's cabin
+@62 = ~Escuchad, druidas o quienquiera que seáis. No queremos problemas, pero representamos la ley aquí, así que atrás.~
+@63 = ~Nada personal, son sólo negocios.~
+@64 = ~No tenemos nada en contra de Valygar, pero será mejor que se rinda frente a la ley y el orden. Y que agradezca que fuimos nosotros quienes vinimos por él, y no unos bandidos que sólo se preocupan por el precio de su cabeza.~
+@65 = ~Sólo queremos hablar con Valygar. Y es posible que venga con nosotros voluntariamente. Es por su propio bien.~
+@66 = ~Te rastrearemos. ¡Ni lo intentes!~
+@67 = ~¡A por ellos!~
+
+// Chickens (supplements)
+@68 = ~(Intenta hacerte una idea de lo que le ha pasado a la gallina últimamente.)~
+@69 = ~(Ves a una criatura con cabeza de perro que se escabulle en la oscuridad. Se dirige detrás de la posada, donde se suele tirar la basura. Después de un rato, regresa, llevando algo potencialmente comestible, y huye hacia el río.)~
+@70 = ~(Huyes de tres tipos con palos que te atormentan desde siempre. Consigues llegar hasta tu amo sin que te golpeen. El maestro grita a los tipos y los ahuyenta.)~
+@71 = ~(En el mercado, se ven nuevos visitantes del pueblo. Tienen la mitad del tamaño de una persona normal. Uno de ellos lleva algo comestible asomando por la bolsa de su cinturón. Picas el saco, intentando tirarlo al suelo. El hombre se sacude bruscamente con un aullido, y la bolsa se abre de golpe, derramando nueces por todas partes. Una mujer pelirroja que está junto al hombre se ríe, le dice algo y te ahuyenta.)~
+@72 = ~(Por la noche, te despiertas con el sonido de los pasos de tu amo. Se acerca y te agarra fuertemente con una mano, sosteniendo una piedra azul en la otra. Sientes un fuerte ardor en la garganta y luego una pesadez en el cuerpo. El maestro se marcha y tardas mucho en dormirte.)~
+@73 = ~(Pide a la gallina que se aleje del granjero.)~
+@74 = ~(Después de las experiencias anteriores, la gallina no se fía de la gente y no obedece. Hay que hacerlo obediente.)~
+@75 = ~(El pollo confía plenamente en ti y cumplirá cualquier petición.)~
+@76 = ~(Ordenar a la gallina que «ponga» la gema en algún lugar alejado del granjero.)~
+@77 = ~(El pollo acepta tu pedido, y sólo queda esperar...)~
+@78 = ~(Alivias a la gallina de la joya y al granjero de su última posesión valiosa.)~
+@79 = ~(Cortar la piedra sin dañar a la gallina.)~
+@80 = ~(La gallina se ha ido detrás de los arbustos, tú la sigues. Reforzado con un hechizo de encantamiento, sacas un cuchillo y le haces una incisión en el abdomen. Sacando suavemente una gema, lanzas un hechizo curativo y no queda ni un solo rasguño en el pollo.)~
+@81 = ~(La gallina obedece y se aleja del granjero.)~
+@82 = ~(Inspeccionar a la gallina)~
+@83 = ~(Esta gallina  no es diferente del resto, pero algo te dice que eches un vistazo más de cerca.)~

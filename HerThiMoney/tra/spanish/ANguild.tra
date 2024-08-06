@@ -1,0 +1,39 @@
+// Dialogue with Aran
+@0 = ~Te lo advierto, Maestro de las Sombras. Si no nos ayudas, pronto sentirás mi ira... Y no querrás experimentar lo que un Mago Rojo enojado puede hacer. (Aún me duele la espalda de vez en cuando...)~
+@1 = ~Los drow tienen fama de causar dolor y sufrimiento, y se la tienen bien ganada.  Si no puedes proporcionarnos lo que se nos prometió y rápido, rivvil, te darás cuenta de por qué.~
+@2 = ~La única razón por la que tú y tus miserables ladrones aún respiráis es porque <CHARNAME> cree tontamente que necesitamos vuestra ayuda.  Crúzanos, y eso cambiará rápidamente.~
+@3 = ~Teníamos un acuerdo. ¿No crees que es hora de cumplirlo? ¿O piensas desmentir el viejo refrán sobre el honor entre ladrones?~
+@4 = ~Hemos cumplido nuestra parte del trato.  ¿No harán ustedes lo mismo?~
+@5 = ~Eso espero. El amigo de <CHARNAME> Imoen n-necesita nuestra ayuda, pero no podemos hacer nada sin la tuya.~
+@6 = ~¿De qué sirven estas baratijas mágicas cuando una chica está en peligro y ni siquiera sabemos dónde está?~
+@7 = ~Tenemos poco tiempo que perder. Nos dirás dónde podemos encontrar la amiga de <CHARNAME> o no?~
+@8 = ~Bueno, gracias por los regalos y todo eso, pero creo que a <CHARNAME> le gustaría saber dónde está Imoen ahora.~
+@9 = ~ Bubú te agradece los objetos, pero desea que Minsc te recuerde que debemos rescatar a Imoen.  ¡Y patear muchos traseros en el camino!~
+@10 = ~Mira, estoy seguro de que los artículos serán de gran ayuda para nosotros, pero un malvado mago tiene como rehén a la compañera de <CHARNAME>, y no parece que estemos cerca de encontrarla.~
+
+// Dialogue with Mitsu
+@11 = ~¡Minsc y Bubú no son ladrones, pequeña niña! ¡Minsc es una fuerza para derrotar al mal!~
+@12 = ~Me temo que se equivoca, mi señora.  Aunque sea un ladrón, prefiero ser más... independiente.~
+@13 = ~Una artimaña despreciable, abusando de la caridad de los demás.  Vil en todos los sentidos.~
+@14 = ~Bueno, yo tampoco creo mucho en ti, caballero, con toda tu superioridad moral y todo eso.  Haz que un paladín pase una semana en la cuneta, y al final del primer día estará robando carteras, apuesto.~
+@15 = ~Puedo asegurarte que un verdadero paladín nunca....~
+@16 = ~Lo siento, no tengo tiempo para discutir contigo.  Pero no intentes pelearte con ninguno de mis compañeros. La mayoría de ellos se inclinan más por las armas que por las palabras.~
+@17 = ~¡No seas tan tonta, niña! ¿Cómo puede ser ladrona alguien tan joven como tú?~
+@18 = ~«Ah caramba, lo siento señor, sólo estaba fingiendo y esas cosas.  ¡No te enfades conmigo!»~
+@19 = ~¡Minsc y Bubú no están enfadados! ¡Nunca nos enfadaríamos con un pequeño~
+@20 = ~«Bien, señor, ¿podría .....? Ah, me rindo, esto es demasiado fácil.~
+
+// Aerie's reaction to torture
+@21 = ~<CHARNAME>, ¡Esto es horrible! ¡Salgamos de aquí pronto!~
+
+//Dialogue with Edwin
+@22 = ~<CHARNAME>, ¿Realmente vamos a trabajar como asesinos a sueldo para este malvado mago? ~
+@23 = ~¿Quién está ladrando ahí? ¡Apártate, niña, cuando hablan los mayores! ~
+
+// Dialogue with Renal
+@24 = ~<CHARNAME>, ¿Por qué no matar a este villano? Recuerdas cómo torturó a un hombre delante de ti, ¿verdad? Es un monstruo, y el mundo sería un lugar mejor sin él. Y obtendremos una recompensa, también - vamos a matar dos pájaros de un tiro. ~
+
+// Dialogue with Aran
+@25 = ~¿Se supone que debemos enfrentarnos a todo un ejército de vampiros nosotros solos? ¿Tu gremio ni siquiera nos ayudará? ~
+@26 = ~¿Así que nosotros tenemos que hacer todo el trabajo sucio y peligroso y arriesgar nuestras vidas, y tú sólo esperas aquí? ~
+@27 = ~Bueno, al menos esta es una tarea noble. Todo este robo ha enfermado mi alma. ~
