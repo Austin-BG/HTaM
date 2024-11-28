@@ -13,7 +13,7 @@ END
 // Диалог с Эдвином о подземелье
 APPEND ~EDWINJ~
 
-IF ~Global("ANEdwinDungeonTalk","GLOBAL",2)~ BEGIN ANEdwinDungeon
+IF WEIGHT #-1 ~Global("ANEdwinDungeonTalk","GLOBAL",2)~ BEGIN ANEdwinDungeon
   SAY @8
   = @9
   + ~OR(2) Alignment(Player1,MASK_GOOD) Alignment(Player1,NEUTRAL)~ + @10 + ANED_1.1
