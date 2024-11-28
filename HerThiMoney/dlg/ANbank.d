@@ -35,7 +35,6 @@ IF ~Global("ANbankDepositOpened","GLOBAL",1) GlobalGT("ANBankMoney","GLOBAL",0)~
 IF ~Global("ANbankDepositOpened","GLOBAL",1) GlobalGT("ANBankMoney","GLOBAL",0)~ THEN REPLY @130 + ANclerk2-depositCheck
 IF ~~ THEN REPLY @34 + ANclerk2-bad
 IF ~~ THEN REPLY @29 + ANclerk2-Goodbye
-IF ~IsValidForPartyDialog("Jaheira") Global("ANKhalidDeposit","AN0720",0)~ THEN DO ~SetGlobal("ANKhalidDeposit","AN0720",1)~ EXTERN JAHEIRAJ ANclerk2-KhalidDeposit
 END
 
 IF ~~ THEN BEGIN ANclerk2-Nonews
@@ -290,9 +289,12 @@ END
 
 IF ~~ THEN BEGIN ANclerk2-Goodbye
   SAY @67
-IF ~~ THEN EXIT 
+IF ~OR(4) !InParty("Jaheira") !InMyArea("Jaheira") StateCheck("Jaheira",CD_STATE_NOTVALID) Global("ANKhalidDeposit","AN0720",1)
+OR(4) !InParty("O#Coran") !InMyArea("O#Coran") StateCheck("O#Coran",CD_STATE_NOTVALID) Global("ANCoranMoney","AN0720",1)~ THEN EXIT   
+IF ~InParty("Jaheira") InMyArea("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID) Global("ANKhalidDeposit","AN0720",0)~ THEN DO ~SetGlobal("ANKhalidDeposit","AN0720",1)~ EXTERN JAHEIRAJ ANclerk2-KhalidDeposit
+IF ~InParty("O#Coran") InMyArea("O#Coran") !StateCheck("O#Coran",CD_STATE_NOTVALID) Global("ANCoranMoney","AN0720",0)~ THEN DO ~SetGlobal("ANCoranMoney","AN0720",1)~ EXTERN IF_FILE_EXISTS O#CORANJ ANclerk2-KulyokCoranMoney
+IF ~InParty("7XCORAN") InMyArea("7XCORAN") !StateCheck("7XCORAN",CD_STATE_NOTVALID) Global("ANCoranMoney","AN0720",0)~ THEN DO ~SetGlobal("ANCoranMoney","AN0720",1)~ EXTERN IF_FILE_EXISTS 7XCoranJ ANclerk2-ImpCoranMoney
 END
-
 
 IF ~~ THEN BEGIN ANclerk2-Dwarf-veksel
   SAY @141
@@ -453,30 +455,30 @@ END
 // Bank Guard
 BEGIN ANBANKG
 
-IF ~OR(2) TimeLT(8) TimeGT(19) Global("ANbankNight","LOCALS",1) CombatCounter(0)~ THEN BEGIN ANBANKG_1
+IF ~!TimeOfDay(DAY) CombatCounter(0)~ THEN BEGIN ANBANKG_1
   SAY @10
-  IF ~~ THEN DO ~ActionOverride(Player1,JumpToPoint([3325.3548]))
-		ActionOverride(Player2,JumpToPoint([3325.3548]))
-		ActionOverride(Player3,JumpToPoint([3325.3548]))
-		ActionOverride(Player4,JumpToPoint([3325.3548]))
-		ActionOverride(Player5,JumpToPoint([3325.3548]))
-		ActionOverride(Player6,JumpToPoint([3325.3548]))~ EXIT
+  IF ~~ THEN EXIT
 END
 
-IF ~TimeGT(7) TimeLT(20)~ THEN BEGIN ANBANKG_2
+IF ~TimeOfDay(DAY)~ THEN BEGIN ANBANKG_2
   SAY @11
   IF ~~ THEN EXIT
 END
 
 BEGIN ANBANKG2
 
-IF ~!TimeOfDay(NIGHT) RandomNum(2,1)~ THEN BEGIN ANBANKG2Talk1
+IF ~TimeOfDay(DAY) RandomNum(2,1)~ THEN BEGIN ANBANKG2Talk1
   SAY @254
   IF ~~ THEN EXIT
 END
 
-IF ~!TimeOfDay(NIGHT) RandomNum(2,2)~ THEN BEGIN ANBANKG2Talk2
+IF ~TimeOfDay(DAY) RandomNum(2,2)~ THEN BEGIN ANBANKG2Talk2
   SAY @255
+  IF ~~ THEN EXIT
+END
+
+IF ~!TimeOfDay(DAY) CombatCounter(0)~ THEN BEGIN ANBANKG_1
+  SAY @10
   IF ~~ THEN EXIT
 END
 
@@ -1014,3 +1016,108 @@ END
 
 
 END
+
+CHAIN 
+IF ~~ THEN IF_FILE_EXISTS O#CORANJ ANclerk2-KulyokCoranMoney
+@577
+== ANclerk2 @578
+== O#CORANJ @579
+== ANclerk2 @580
+== O#CORANJ @581
+END
+IF ~~ THEN REPLY @582 EXTERN O#CORANJ ANclerk2-KulyokCoranMoney1
+IF ~~ THEN REPLY @583 EXTERN O#CORANJ ANclerk2-KulyokCoranMoney2
+
+CHAIN 
+IF ~~ THEN IF_FILE_EXISTS 7XCoranJ ANclerk2-ImpCoranMoney
+@577
+== ANclerk2 @578
+== 7XCoranJ @579
+== ANclerk2 @580
+== 7XCoranJ @581
+END
+IF ~~ THEN REPLY @582 EXTERN 7XCoranJ ANclerk2-ImpCoranMoney1
+IF ~~ THEN REPLY @583 EXTERN 7XCoranJ ANclerk2-ImpCoranMoney2
+
+APPEND IF_FILE_EXISTS O#CORANJ
+
+IF ~~ THEN BEGIN ANclerk2-KulyokCoranMoney1
+  SAY @584
+IF ~~ THEN REPLY @586 GOTO ANclerk2-KulyokCoranMoney1-1
+IF ~~ THEN REPLY @588 GOTO ANclerk2-KulyokCoranMoney1-1
+IF ~PartyGoldGT(499)~ THEN REPLY @589 GOTO ANclerk2-KulyokCoranMoney1-2
+END
+
+IF ~~ THEN BEGIN ANclerk2-KulyokCoranMoney2
+  SAY @585
+IF ~~ THEN REPLY @587 GOTO ANclerk2-KulyokCoranMoney2-1  
+IF ~~ THEN REPLY @586 GOTO ANclerk2-KulyokCoranMoney1-1
+IF ~~ THEN REPLY @588 GOTO ANclerk2-KulyokCoranMoney1-1
+IF ~PartyGoldGT(499)~ THEN REPLY @589 GOTO ANclerk2-KulyokCoranMoney1-2
+END
+
+IF ~~ THEN BEGIN ANclerk2-KulyokCoranMoney1-1
+  SAY @590
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN BEGIN ANclerk2-KulyokCoranMoney2-1
+  SAY @591
+IF ~~ THEN REPLY @586 GOTO ANclerk2-KulyokCoranMoney1-1
+IF ~~ THEN REPLY @588 GOTO ANclerk2-KulyokCoranMoney1-1
+IF ~PartyGoldGT(499)~ THEN REPLY @589 GOTO ANclerk2-KulyokCoranMoney1-2
+END
+
+IF ~~ THEN BEGIN ANclerk2-KulyokCoranMoney1-2
+  SAY @592
+IF ~~ THEN DO ~TakePartyGold(500) ReputationInc(1)~ REPLY @593 GOTO ANclerk2-KulyokCoranMoney1-1
+IF ~~ THEN REPLY @595 GOTO ANclerk2-KulyokCoranMoney1-1
+END
+
+END
+
+APPEND IF_FILE_EXISTS 7XCoranJ
+
+IF ~~ THEN BEGIN ANclerk2-ImpCoranMoney1
+  SAY @584
+IF ~~ THEN REPLY @586 GOTO ANclerk2-ImpCoranMoney1-1
+IF ~~ THEN REPLY @588 GOTO ANclerk2-ImpCoranMoney1-1
+IF ~PartyGoldGT(499)~ THEN REPLY @589 GOTO ANclerk2-ImpCoranMoney1-2
+END
+
+IF ~~ THEN BEGIN ANclerk2-ImpCoranMoney2
+  SAY @585
+IF ~~ THEN REPLY @587 GOTO ANclerk2-ImpCoranMoney2-1  
+IF ~~ THEN REPLY @586 GOTO ANclerk2-ImpCoranMoney1-1
+IF ~~ THEN REPLY @588 GOTO ANclerk2-ImpCoranMoney1-1
+IF ~PartyGoldGT(499)~ THEN REPLY @589 GOTO ANclerk2-ImpCoranMoney1-2
+END
+
+IF ~~ THEN BEGIN ANclerk2-ImpCoranMoney2-1  
+  SAY @591
+IF ~~ THEN REPLY @586 GOTO ANclerk2-ImpCoranMoney1-1
+IF ~~ THEN REPLY @588 GOTO ANclerk2-ImpCoranMoney1-1
+IF ~PartyGoldGT(499)~ THEN REPLY @589 GOTO ANclerk2-ImpCoranMoney1-2
+END
+
+IF ~~ THEN BEGIN ANclerk2-ImpCoranMoney1-1
+  SAY @590
+IF ~OR(3) !InParty("7XSAFA") !InMyArea("7XSAFA") StateCheck("7XSAFA",CD_STATE_NOTVALID)~ THEN EXIT
+IF ~InParty("7XSAFA") InMyArea("7XSAFA") !StateCheck("7XSAFA",CD_STATE_NOTVALID)~ THEN EXTERN 7XSafaJ ANclerk2-ImpCoranMoneySafa
+END
+
+IF ~~ THEN BEGIN ANclerk2-ImpCoranMoney1-2
+  SAY @592
+IF ~~ THEN DO ~TakePartyGold(500) ReputationInc(1)~ REPLY @593 GOTO ANclerk2-ImpCoranMoney1-1
+IF ~~ THEN REPLY @595 GOTO ANclerk2-ImpCoranMoney1-1
+END
+
+END
+
+CHAIN 
+IF ~~ THEN IF_FILE_EXISTS 7XSafaJ ANclerk2-ImpCoranMoneySafa
+@596
+== 7XCoranJ @597
+== 7XSafaJ @598
+== 7XCoranJ @599
+EXIT
