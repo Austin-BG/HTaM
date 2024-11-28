@@ -1,25 +1,26 @@
 // Main clerk + "BG1NPCBG2" mod by Smiling Imp
 
-@0 = ~Â¿Se puede cambiar monedas?~
-@1 = ~Desde luego, SeÃ±or. Podemos cambiar de oro a platino y viceversa a razÃ³n de diez monedas de oro por cada una de platino.~ ~Desde luego, SeÃ±ora. Podemos cambiar de oro a platino y viceversa a razÃ³n de diez monedas de oro por cada una de platino.~
-@2 = ~Me gustarÃ­a cambiar oro por platino.~
-@3 = ~Me gustarÃ­a cambiar platino por oro.~
-@4 = ~Para mÃ­ nada, gracias.~
-@5 = ~Muy bien. Â¿CuÃ¡nto te gustarÃ­a cambiar?~
-@6 = ~TomarÃ© diez mil monedas de platino.~
-@7 = ~TomarÃ© mil monedas de platino.~
-@8 = ~TomarÃ© cien monedas de platino.~
-@9 = ~TomarÃ© cincuenta monedas de platino.~
-@10 = ~TomarÃ© diez monedas de platino.~
-@11 = ~TomarÃ© cinco monedas de platino.~
-@12 = ~TomarÃ© una moneda de platino.~
-@13 = ~Me gustarÃ­a cambiar diez mil monedas de platino por oro.~
-@14 = ~Me gustarÃ­a cambiar mil monedas de platino por oro.~
-@15 = ~Me gustarÃ­a cambiar cien monedas de platino por oro.~
-@16 = ~Me gustarÃ­a cambiar cincuenta monedas de platino por oro.~
-@17 = ~Me gustarÃ­a cambiar diez monedas de platino por oro.~
-@18 = ~Me gustarÃ­a cambiar cinco monedas de platino por oro.~
-@19 = ~Me gustarÃ­a cambiar una moneda de platino por oro.~
-@20 = ~Un placer hacer negocios con usted seÃ±or.~ ~Un placer hacer negocios con usted seÃ±or.~ 
-@21 = ~Buen dia , SeÃ±or.~ ~Buen dia , SeÃ±ora.~  
+@0 = ~¿Se puede cambiar monedas?~
+@1 = ~Desde luego, Señor. Podemos cambiar de oro a platino y viceversa a razón de diez monedas de oro por cada una de platino.~ ~Desde luego, Señora. Podemos cambiar de oro a platino y viceversa a razón de diez monedas de oro por cada una de platino.~
+@2 = ~Me gustaría cambiar oro por platino.~
+@3 = ~Me gustaría cambiar platino por oro.~
+@4 = ~Para mí nada, gracias.~
+@5 = ~Muy bien. ¿Cuánto te gustaría cambiar?~
+@6 = ~Tomaré diez mil monedas de platino.~
+@7 = ~Tomaré mil monedas de platino.~
+@8 = ~Tomaré cien monedas de platino.~
+@9 = ~Tomaré cincuenta monedas de platino.~
+@10 = ~Tomaré diez monedas de platino.~
+@11 = ~Tomaré cinco monedas de platino.~
+@12 = ~Tomaré una moneda de platino.~
+@13 = ~Me gustaría cambiar diez mil monedas de platino por oro.~
+@14 = ~Me gustaría cambiar mil monedas de platino por oro.~
+@15 = ~Me gustaría cambiar cien monedas de platino por oro.~
+@16 = ~Me gustaría cambiar cincuenta monedas de platino por oro.~
+@17 = ~Me gustaría cambiar diez monedas de platino por oro.~
+@18 = ~Me gustaría cambiar cinco monedas de platino por oro.~
+@19 = ~Me gustaría cambiar una moneda de platino por oro.~
+@20 = ~Un placer hacer negocios con usted señor.~ ~Un placer hacer negocios con usted señor.~ 
+@21 = ~Buen dia , Señor.~ ~Buen dia , Señora.~  
+
 

@@ -1,20 +1,21 @@
 // Before sea travel
-@0 = ~Â¡Oh, <CHARNAME>, nunca he navegado en un barco antes! Â¡Esto va a ser una autÃ©ntica aventura!~
-@1 = ~Te lo advierto, Â¡los viajes por altamar me marean!~
-@2 = ~Â¡Odio el mar! Espero que este barco tenga suficiente ron para mantenerme borracho hasta que lleguemos~
+@0 = ~¡Oh, <CHARNAME>, nunca he navegado en un barco antes! ¡Esto va a ser una auténtica aventura!~
+@1 = ~Te lo advierto, ¡los viajes por altamar me marean!~
+@2 = ~¡Odio el mar! Espero que este barco tenga suficiente ron para mantenerme borracho hasta que lleguemos~
 @3 = ~Espero que nuestro viaje sea seguro. No me gusta nada el estado de este barco.~
 
 // After arriving to Brynnlaw
-@4 = ~Bah, y ya tenemos comitÃ© de bienvenida. QuÃ© bien.~
+@4 = ~Bah, y ya tenemos comité de bienvenida. Qué bien.~
 
 // Ginia
-@5 = ~Â¡Hacer que una chica venda su cuerpo a piratas asquerosos es algo que la Noble Orden del Muy Radiante CorazÃ³n castigarÃ­a en el acto! <CHARNAME>, nunca podremos deshacer el daÃ±o que se ha hecho a esta alma inocente, Â¡pero podemos ayudarla a escapar, y castigar a los responsables! Es nuestro deber hacerlo~
-@6 = ~Bah, un trabajo como cualquier otro. Conozco algunas rameras, y hay muchas mujeres buenas entre ellas. Muchas de ellas ganan mÃ¡s dinero que nosotros, Â¡asÃ­ que no tiene motivos para quejarse!~
-@7 = ~Â¡Deja de hablar, enano! Â¡No te atrevas a justificar esta indignidad!~
-@8 = ~Â¿QuÃ© harÃ¡s cuando escapes, chica? Â¿CÃ³mo conseguirÃ©is vuestras monedas de oro ? No dejarÃ¡s este trabajo cuando escapes de Chremy, recuerda mis palabras.~
-@9 = ~Esta chica es sÃ³lo una vÃ­ctima de las circunstancias. No es responsable de su destino. Debemos ayudarla.~
-@10 = ~Â¡Pobre chica! Â¡Tenemos que ayudarla, <CHARNAME>!~
-@11 = ~Â¡SÃ© de lo que hablo, sacerdote! Â¿Alguna vez has tratado con alguien de su clase? No lo creo. Cierra la boca y vuelve con tus caballeros de la Orden, si niegas el mundo real.~
+@5 = ~¡Hacer que una chica venda su cuerpo a piratas asquerosos es algo que la Noble Orden del Muy Radiante Corazón castigaría en el acto! <CHARNAME>, nunca podremos deshacer el daño que se ha hecho a esta alma inocente, ¡pero podemos ayudarla a escapar, y castigar a los responsables! Es nuestro deber hacerlo~
+@6 = ~Bah, un trabajo como cualquier otro. Conozco algunas rameras, y hay muchas mujeres buenas entre ellas. Muchas de ellas ganan más dinero que nosotros, ¡así que no tiene motivos para quejarse!~
+@7 = ~¡Deja de hablar, enano! ¡No te atrevas a justificar esta indignidad!~
+@8 = ~¿Qué harás cuando escapes, chica? ¿Cómo conseguiréis vuestras monedas de oro ? No dejarás este trabajo cuando escapes de Chremy, recuerda mis palabras.~
+@9 = ~Esta chica es sólo una víctima de las circunstancias. No es responsable de su destino. Debemos ayudarla.~
+@10 = ~¡Pobre chica! ¡Tenemos que ayudarla, <CHARNAME>!~
+@11 = ~¡Sé de lo que hablo, sacerdote! ¿Alguna vez has tratado con alguien de su clase? No lo creo. Cierra la boca y vuelve con tus caballeros de la Orden, si niegas el mundo real.~
 
 // Drunken Sailor
-@12 = ~Â¡Eres un cobarde! Â¡No puedes tomar nada de alcohol! Â¡PodrÃ­a beber mÃ¡s que cualquiera de estas ratas de altamar si tuviera la oportunidad!~
+@12 = ~¡Eres un cobarde! ¡No puedes tomar nada de alcohol! ¡Podría beber más que cualquiera de estas ratas de altamar si tuviera la oportunidad!~
+

@@ -1,8 +1,9 @@
 // Nizidramanii'yt's death - NPC reactions
-@0 = ~*Nizidramanii'yt atacÃ³ a un oponente Poderoso y pagÃ³ con su vida*~
-@1 = ~Â¿CuÃ¡ntos dragones hemos matado hasta ahora? Â¿Dos o tres? No puedo recordar, sucede muy a menudo.~
-@2 = ~Â¡Har! Â¿Y por quÃ© todo el mundo tiene tanto miedo de estos lagartos? Â¡Incluso un enano borracho es mucho mÃ¡s difÃ­cil de derrotar!~
-@3 = ~Este dragÃ³n no nos dejo otra opciÃ³n. Ã‰l era demasiado confiado y no querÃ­a negociar.~
-@4 = ~Â¡Era malvado, y Minsc y BubÃº nunca miraran con indiferencia a los malvados !~
-@5 = ~Cojamos la copa y apresurÃ©monos a ir con Irenicus. Ahora no hay tiempo para celebrar la victoria.~
-@6 = ~QuÃ© rara creaciÃ³n de la naturaleza. LÃ¡stima que tuvieras que matarlo. Pronto no quedarÃ¡n dragones en Faerun...~
+@0 = ~*Nizidramanii'yt atacó a un oponente Poderoso y pagó con su vida*~
+@1 = ~¿Cuántos dragones hemos matado hasta ahora? ¿Dos o tres? No puedo recordar, sucede muy a menudo.~
+@2 = ~¡Har! ¿Y por qué todo el mundo tiene tanto miedo de estos lagartos? ¡Incluso un enano borracho es mucho más difícil de derrotar!~
+@3 = ~Este dragón no nos dejo otra opción. Él era demasiado confiado y no quería negociar.~
+@4 = ~¡Era malvado, y Minsc y Bubú nunca miraran con indiferencia a los malvados !~
+@5 = ~Cojamos la copa y apresurémonos a ir con Irenicus. Ahora no hay tiempo para celebrar la victoria.~
+@6 = ~Qué rara creación de la naturaleza. Lástima que tuvieras que matarlo. Pronto no quedarán dragones en Faerun...~
+

@@ -1,10 +1,11 @@
 // In the Copper Coronet
-@0 = ~ Esto no es nada nuevo. Mucha gente estÃ¡ encantada de aceptar ayuda, pero no todo el mundo estÃ¡ dispuesto a ayudar a alguien a cambio. Cuando hagas el bien a alguien, no esperes gratitud ni reciprocidad: asÃ­ evitarÃ¡s que la gente te decepcione. ~
-@1 = ~ Â¿AsÃ­ que se supone que aceptamos ayudar sin siquiera saber quiÃ©n es nuestro oponente? Considera el riesgo, <CHARNAME> ... ~
-@2 = ~ La chica pide ayuda, Valygar. No tenemos derecho a rechazarla. La Orden no me perdonarÃ­a por esto. ~
-@3 = ~ Â¿Se supone que ahora debemos ayudar a todos los que nos encontremos a nuestro paso? Pronto recuperaremos gatos atrapados en Ã¡rboles para los niÃ±os de la calle. (Aunque, debo admitir, esta chica es hermosa y claramente de una familia noble.) ~
-@4 = ~ Necesitamos oro, y aquÃ­ podemos a la vez ayudar a la chica y ganar unas monedas de oro extra. Igual que mi primo Rintin cuando vendiÃ³ un gran lote de nabos al alcalde de un pueblo que sufrÃ­a una invasiÃ³n de ogros. La gente se morÃ­a de hambre allÃ­, asÃ­ que les hizo un gran descuento. Es cierto que luego resultÃ³ que los nabos estaban un poco podridos, y Ã©l sÃ³lo buscaba a quien vendÃ©rselos antes de que se deterioraran del todo. Pero a los aldeanos les seguÃ­an pareciendo Ãºtiles. Dieron de comer esos nabos a los ogros que ocupaban la aldea, que se envenenaron y murieron. La moraleja de la historia es que hay que ayudar al prÃ³jimo, y que los nabos son Ãºtiles aunque estÃ©n podridos. ~
-@5 = ~ Â¿'CompaÃ±Ã­a'? <CHARNAME>, Â¿Quieres decir que algunos de nuestros compaÃ±eros estÃ¡n ahÃ­ y nos estÃ¡n esperando? Â¡Minsc y BubÃº siempre estÃ¡n contentos de tener amigos!~
-@6 = ~ Ejem, querÃ­a decir otra cosa. ~
+@0 = ~ Esto no es nada nuevo. Mucha gente está encantada de aceptar ayuda, pero no todo el mundo está dispuesto a ayudar a alguien a cambio. Cuando hagas el bien a alguien, no esperes gratitud ni reciprocidad: así evitarás que la gente te decepcione. ~
+@1 = ~ ¿Así que se supone que aceptamos ayudar sin siquiera saber quién es nuestro oponente? Considera el riesgo, <CHARNAME> ... ~
+@2 = ~ La chica pide ayuda, Valygar. No tenemos derecho a rechazarla. La Orden no me perdonaría por esto. ~
+@3 = ~ ¿Se supone que ahora debemos ayudar a todos los que nos encontremos a nuestro paso? Pronto recuperaremos gatos atrapados en árboles para los niños de la calle. (Aunque, debo admitir, esta chica es hermosa y claramente de una familia noble.) ~
+@4 = ~ Necesitamos oro, y aquí podemos a la vez ayudar a la chica y ganar unas monedas de oro extra. Igual que mi primo Rintin cuando vendió un gran lote de nabos al alcalde de un pueblo que sufría una invasión de ogros. La gente se moría de hambre allí, así que les hizo un gran descuento. Es cierto que luego resultó que los nabos estaban un poco podridos, y él sólo buscaba a quien vendérselos antes de que se deterioraran del todo. Pero a los aldeanos les seguían pareciendo útiles. Dieron de comer esos nabos a los ogros que ocupaban la aldea, que se envenenaron y murieron. La moraleja de la historia es que hay que ayudar al prójimo, y que los nabos son útiles aunque estén podridos. ~
+@5 = ~ ¿'Compañía'? <CHARNAME>, ¿Quieres decir que algunos de nuestros compañeros están ahí y nos están esperando? ¡Minsc y Bubú siempre están contentos de tener amigos!~
+@6 = ~ Ejem, quería decir otra cosa. ~
 @7 = ~ Parece sospechoso que ofrezcas tantas piezas de oro y nos elijas a nosotros. Es como si nos hubieras estado esperando. ~
-@8 = ~ Eres libre de negarte. Pero, crÃ©ame, no escatimo en gastos para tareas importantes. No deberÃ­as ver todo como una conspiraciÃ³n. ~
+@8 = ~ Eres libre de negarte. Pero, créame, no escatimo en gastos para tareas importantes. No deberías ver todo como una conspiración. ~
+

@@ -7,7 +7,7 @@
 @2 = ~¡Tony! ¡Hola! ¿Está todo bien con Aran? ~
 @3 = ~¡Oh, no te preocupes! Nuestro Maestro está vivo y bien, y me envió para asegurarme de que se pueda decir lo mismo de ti. También me dijo que te diera esto ... ~
 @4 = ~(Aceptas un paquete de Tony que contiene una carta y un pergamino. Con una emoción más que comprensible, desdoblas la carta ...) ~
-@5 = ~“Mi <CHARNAME>!
+@5 = ~Mi <CHARNAME>!
 La noticia de este lío con los descendientes de tus padres me ha perturbado mucho. Y principalmente, por supuesto, por el hecho de que vuelves a estar en no poco peligro. Nunca me consideré muy sensible, pero ahora no me avergüenza admitir que tu ausencia se siente como un vacío que no se puede llenar. Sin embargo, Athkatla está en pleno apogeo, como siempre, no hay lugar para el aburrimiento y la ociosidad, y muchas cosas requieren mi atención e intervención personal. Estaré encantado de compartir contigo tanto las preocupaciones como la autoridad que poseo, aunque sea incomparable con el derecho al que te da tu origen divino. Pero, amor mío, además de oro y poder, quiero darte algo que no encontrarás, aunque te conviertas en una diosa. No creo que necesite decir mucho - si, como yo, recuerdas todo lo que pasó entre nosotros, entonces tú misma lo sabes.
 Por favor, cuídate. Triunfa sobre tus enemigos, como siempre lo has hecho. Yo creo en ti. Y te quiero. Tu Aran"~ [aransong]
 @6 = ~(Te inclinas hacia el mediano y le besas en la mejilla, sin miedo a parecer sentimental) ~
@@ -140,3 +140,4 @@ Por favor, cuídate. Triunfa sobre tus enemigos, como siempre lo has hecho. Yo cr
 @120 = ~*Cuando llega el momento de separarte de Aran, sientes tu amor y tu gratitud hacia él. Apenas dices nada cuando os separáis....* ~
 @121 = ~Te amo, <CHARNAME>. ~
 @122 = ~Y yo te amo, Aran. ~
+
