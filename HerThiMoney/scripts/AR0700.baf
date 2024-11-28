@@ -1,10 +1,21 @@
-IF 
-Global("ANbankExists","GLOBAL",0)
-
+IF
+TimeOfDay(DAY)
+	Global("OpenBankDoors","AR0700",0)
 THEN
-  RESPONSE #100
-SetGlobal("ANbankExists","GLOBAL",1)
-Continue()
+	RESPONSE #100
+		TriggerActivation("TranAN0720",TRUE)
+		SetGlobal("OpenBankDoors","AR0700",1)
+		Continue()
+END
+
+IF
+!TimeOfDay(DAY)
+	Global("OpenBankDoors","AR0700",1)
+THEN
+	RESPONSE #100
+		TriggerActivation("TranAN0720",FALSE)
+		SetGlobal("OpenBankDoors","AR0700",0)
+		Continue()
 END
 
 IF 

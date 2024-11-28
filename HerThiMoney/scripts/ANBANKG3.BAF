@@ -1,17 +1,23 @@
 IF
-	TimeGT(19)
-	TimeLT(DUSK_END)
-	Global("ANbankNightTimerIN","GLOBAL",0)
+!TimeOfDay(DAY)
+	Global("ANbankNightIN","GLOBAL",0)
 	!Allegiance(Myself,ENEMY)
 	Delay(5)
+	!Global("AnOwniBankTalk","GLOBAL",4)
+	!Global("AnOwniBankTalk","GLOBAL",5)
+	!Global("AnOwniBankTalk","GLOBAL",6)
+	!Global("AnOwniBankTalk","GLOBAL",7)
+	!Global("AnOwniBankTalk","GLOBAL",8)
 THEN
 	RESPONSE #100
 		SetGlobalTimer("ANbankNightTimerIN","GLOBAL",THIRTY_MINUTES)
 		DisplayStringHead(Myself,@150)  // Банк закрывается! Всем посетителям просьба покинуть помещение!
 		DisplayString(Myself,@150)  // Банк закрывается! Всем посетителям просьба покинуть помещение!
+		SetGlobal("ANbankNightIN","GLOBAL",1)
 END
 
 IF
+	!GlobalTimerNotExpired("ANbankNightTimerIN","GLOBAL")
 	!Allegiance(Myself,ENEMY)
 	OR(2)
 		Global("ANbankStealeIN","GLOBAL",3)
@@ -26,28 +32,31 @@ THEN
 END
 
 IF
-	OR(2)
-		TimeLT(8)
-		TimeGT(DUSK_START)
-	Global("ANbankNightTimerIN","GLOBAL",0)
+TimeOfDay(DAY)
+	!Global("ANbankNightIN","GLOBAL",0)
 THEN
 	RESPONSE #100
-		SetGlobal("ANbankNightTimerIN","GLOBAL",1)
+		SetGlobal("ANbankNightIN","GLOBAL",0)
 END
 
 IF
-	TimeGT(DAWN_END)
-	TimeLT(DUSK_START)
-	!Global("ANbankNightTimerIN","GLOBAL",0)
+	!Global("ANcollectorOwniDead","GLOBAL",2)
+	Global("ANcollectorDead","GLOBAL",2)
+	OR(2)
+		AreaCheck("AN0720")
+		AreaCheck("AN0721")
+	OR(2)
+		Global("ANDwarfCreditPay","GLOBAL",3)
+		Global("ANDwarfCreditPay","GLOBAL",4)
+	Exists(Myself)
 THEN
 	RESPONSE #100
-		SetGlobal("ANbankNightTimerIN","GLOBAL",0)
+		DestroySelf()
 END
 
 IF
 	!GlobalTimerNotExpired("ANbankNightTimerIN","GLOBAL")
-	!Global("ANbankNightTimerIN","GLOBAL",0)
-	Global("ANbankNightIN","GLOBAL",0)
+	Global("ANbankNightIN","GLOBAL",1)
 	!Global("AnOwniBankTalk","GLOBAL",4)
 	!Global("AnOwniBankTalk","GLOBAL",5)
 	!Global("AnOwniBankTalk","GLOBAL",6)
@@ -60,14 +69,14 @@ THEN
 	RESPONSE #100
 		DisplayStringHead(Myself,@8)  // В банке грабители! Убить!
 		DisplayString(Myself,@8)  // В банке грабители! Убить!
-		SetGlobal("ANbankNightIN","GLOBAL",1)
 		Enemy()
 		GlobalShout(3015)
+		SetGlobal("ANbankNightIN","GLOBAL",2)
 END
 
 IF
 	!GlobalTimerNotExpired("ANbankNightTimerIN","GLOBAL")
-	!Global("ANbankNightTimerIN","GLOBAL",0)
+	!Global("ANbankNightIN","GLOBAL",0)
 	Global("ANbankNightIN","GLOBAL",1)
 	!Global("AnOwniBankTalk","GLOBAL",4)
 	!Global("AnOwniBankTalk","GLOBAL",5)
@@ -93,7 +102,6 @@ THEN
 	RESPONSE #100
 		DisplayStringHead(Myself,@8)  // В банке грабители! Убить!
 		SetGlobal("ANbankStealeIN","GLOBAL",3)
-		Enemy()
 		GlobalShout(3015)
 END
 
