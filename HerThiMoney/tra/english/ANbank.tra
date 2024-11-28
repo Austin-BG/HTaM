@@ -36,7 +36,7 @@
 @22 = ~A different culture of communication ... a different view of the world, if you will, <PRO_SIRMAAM>. Most of the clerks here have been retrained to better meet Western standards. ~
 @23 = ~Very interesting. But I have other questions. ~
 @24 = ~What kind of retraining, Uri? ~
-@25 = ~Retraining ... (Uri turns pale as she utters this word). To improve their skills, some employees are sent to the Memnon Bank Archives. At the end of the course, they return to work, <PRO_SIRMAAM>. ~
+@25 = ~Retraining ... *Uri turns pale as she utters this word*. To improve their skills, some employees are sent to the Memnon Bank Archives. At the end of the course, they return to work, <PRO_SIRMAAM>. ~
 @26 = ~Tell me about it, it sounds interesting. ~
 @27 = ~Nothing really interesting there, <PRO_SIRMAAM>. The usual routine of learning. ~
 @28 = ~(Uri thinks for a long time.) I ... I will answer you, <PRO_SIRMAAM>, on the condition that you promise not to tell anyone what you hear. ~
@@ -52,7 +52,7 @@
 @38 = ~Ahem. How can I help? ~
 @39 = ~Actually, I wanted to ask about your services. ~
 @40 = ~Have it your way. I won't tell anyone what I heard.~
-@41 = ~If they find out about this, I will lose my job. But I trust you, <PRO_SIRMAAM>. I know you will not ruin a poor clerk. Well then ... (Uri looks around nervously, fearing prying ears, then begins his story.)~
+@41 = ~If they find out about this, I will lose my job. But I trust you, <PRO_SIRMAAM>. I know you will not ruin a poor clerk. Well then ... *Uri looks around nervously, fearing prying ears, then begins his story.*~
 @42 = ~Thank you, there is no need. I can't keep a secret.~
 @43 = ~A friend of mine got retrained about two years ago. We worked together then in Calimport, at the central bank. ~
 @44 = ~He had an aggravated ulcer. He covered it up, cited a cold, and didn't go to work three times while he visited the healers. He could easily have been fired for that. And unemployment that year, in Calimport, was just enormous, <PRO_SIRMAAM>. A lot of people starved to death. ~
@@ -153,13 +153,13 @@
 @140 = ~There is one thing you can help me with... for your own benefit. ~
 @141 = ~You have my full attention, <PRO_SIRMAAM>! ~
 @142 = ~*You hand Korgan's promissory note to the clerk* Do you recognize it? Some of us don't want to deal with it anymore. And we want the record of that debt... "disappear." You know what I mean, Uri? ~
-@143 = ~*Glances over the promissory note* Of course, <PRO_SIRMAAM>, I understand. But what you're asking me... (at this point Uri lowers his voice significantly) is professional misconduct. I have no idea what would make me do such a thing!~
+@143 = ~*Glances over the promissory note* Of course, <PRO_SIRMAAM>, I understand. But what you're asking me... *at this point Uri lowers his voice significantly* is professional misconduct. I have no idea what would make me do such a thing!~
 @144 = ~Well, for example, a thousand gold coins. A fifth of the debt. ~
 @145 = ~How about nine hundred coins, huh? ~
 @146 = ~Nine hundred is enough. ~
 @147 = ~I'm afraid nine hundred won't be enough. Let's round up to a thousand, and we can start solving this problem. ~
 @148 = ~Well... go ahead, let's have a thousand. ~
-@149 = ~Hmm ... Sir, I will consider it my duty to assist you in this difficult matter. Especially since I made the entry in the ledger myself. I myself handed the gold to the dwarf lord. (Uri nods at Korgan) ~
+@149 = ~Hmm ... Sir, I will consider it my duty to assist you in this difficult matter. Especially since I made the entry in the ledger myself. I myself handed the gold to the dwarf lord. *Uri nods at Korgan*~
 @150 = ~*Frowns and nods* Right. That's the mongrel. ~
 @151 = ~Pardon my friend, he's in a bad mood today. So what do we do next? ~
 @152 = ~The gold can't be transferred here. Meet me tonight, near the South Colonnade on the Waukeen Promenade. We will make the exchange there, <PRO_SIRMAAM>. ~
@@ -172,7 +172,7 @@
 @159 = ~Yes, <PRO_SIRMAAM>. As you wish. I'll leave it in its place and forget this conversation. ~
 @160 = ~*Burning page* Definitely. Good evening, Uri. ~
 @161 = ~Good evening, <PRO_SIRMAAM>. ~
-@162 = ~You're right, surfacer, a thousand coins is a lot of money. So it's time for me to finally get the hell out of this filthy city! So long! (Korgan leaves hurriedly)~
+@162 = ~You're right, surfacer, a thousand coins is a lot of money. So it's time for me to finally get the hell out of this filthy city! So long! *Korgan leaves hurriedly*~
 @163 = ~What's the news, Uri? ~
 @164 = ~We are strictly forbidden to talk about this, but I will tell you, <PRO_SIRMAAM>. ~
 @165 = ~Rumor has it that recently someone tried to sneak into the bank underground! They even say that the missing senior clerk was in league with these robbers! Praise the gods, we have reliable guards who prevented the robbery. I heard that there was a fight, and the guards lost some of their own. But they also managed to put the robbers down on the spot! ~
@@ -197,7 +197,7 @@
 @207 = ~Exactly! You will become a symbol of our bank, and for good pay! Well, good for such a position, I mean ... ~
 @208 = ~<CHARNAME>, did you hear that? Finally, my beauty and abilities are appreciated! I can become famous and even earn some money! ~
 @209 = ~So, do you agree? All you have to do is sign the contract. ~
-@210 = ~Of course! Let's get your agreement signed, and let's get started! (Signs) ~
+@210 = ~Of course! Let's get your agreement signed, and let's get started! *Signs*~
 @211 = ~Imoen, wait! At least read the contract before signing! ~
 @212 = ~Come on! There were five sheets of small print, it's very boring to read! ~
 @213 = ~Great! Finally found a simple... Eh, a worthy candidate, I wanted to say! ~
@@ -230,14 +230,14 @@
 @240 = ~I already have work and no time for distractions. Although ... what needs to be done? ~
 @241 = ~You're standing outside all day anyway, talking to people, right? Surely it wouldn't be hard for you to take these flyers and hand them out to everyone? And we'll pay you for it... let's say 100 coins. ~
 @242 = ~Hmm ... 100 coins? I make that much a week. Why not. If there's nothing illegal or objectionable on the flyers, give them to me. ~
-@243 = ~Here (hands over a stack of leaflets to the town crier). Thank you! ~
+@243 = ~Here *hands over a stack of leaflets to the town crier*. Thank you! ~
 @244 = ~*Whispering* <CHARNAME>, let's pay him a little for this, and then we'll get the payment from the bank - and we'll win. We'll make more money than we lose. ~
 @245 = ~You've got some business acumen, girl! Maybe I should take you on as a trading partner. ~
 @246 = ~Thanks Jan, but I must refuse - I hate the smell of turnips. ~
 @247 = ~So where's your hundred coins? Don't have that amount with you? Why then are you wasting my time? Come back when you have it. ~
 @248 = ~Back? Is everything with you? Then give money and what should be given out there. ~
 @249 = ~Neera, wait! At least read the contract before signing! ~
-@250 = ~Oh, Neera... (puts hand to your face and shakes your head) ~
+@250 = ~Oh, Neera... *puts hand to your face and shakes your head*~
 @251 = ~Never sign something without reading it properly, Neera. ~
 @252 = ~*The manager passes a stack of bank flyers to Neera. She picks it up, dumbfounded.*~
 @253 = ~Neera, you don't have to do this. The contract means nothing, forget about it. ~
@@ -327,3 +327,29 @@
 @574 = ~Is that you again? I really need help.~
 @575 = ~Good. Now, I'll fix my hair... now you can go.~
 @576 = ~Good afternoon! How can I help?~
+
+// NEW (v.4.6)
+// Coran in the bank + Safana
+@577 = ~Can you help me send gold to Baldur's Gate?~
+@578 = ~To Baldur's Gate, sir? Yes, it is possible, although we do not have a branch there. Our agent can send the necessary amount, I will write to him. I would calculate the commission at a hundred coins. Of course, the agent will send a receipt here.~
+@579 = ~Okay. Then I want to send a thousand.~
+@580 = ~Please write down the name and address of the recipient. If the agent is unable to find the person, the money will be returned to you, minus the commission.~
+@581 = ~The recipient is Namara, her mother, Brielbara, will receive the money on her behalf.~
+@582 = ~Is that why you have been so frugal on arrows for the past month? And we were surprised how deftly you felled two with one arrow. And you started drinking simpler wine.~
+@583 = ~Was it worth being in a distant southern country to remember your loved ones?~
+@584 = ~*Smiles contentedly* It was a good shot, huh? But please don't remind me of that sour stuff that was only mistakenly called wine. And you're right about the money. I had to cut back so that I could send Brielbara and Namara something.~
+@585 = ~Brielbara's and my fates are too different for the marriage to be happy. I am not destined to share eternity with her. But I can send the money.~
+@586 = ~Okay, finish your business and let's go.~
+@587 = ~But isn't Brielbara the one who isn't destined to live forever?~
+@588 = ~Good thing you remembered your duties.~
+@589 = ~I think little Namara could use another five hundred brand new gold coins. Let it be a gift from all of us.~
+@590 = ~*Quickly writes down the address and hands Uri the gold*~
+@591 = ~<CHARNAME>, these are unnecessary details, you can't be so boring.~
+@592 = ~*The elf looks worried* You want to take money from the squad's cashbox? I'm grateful, of course? But... I...~
+@593 = ~Too many words. Just take the money and let's go.~
+@594 = ~Thank you, <CHARNAME>. I won't forget this.~
+@595 = ~It was a joke. Namara is your daughter, so you pay. And then let's move on.~
+@596 = ~I would have laughed at such a senseless waste of money before. But now... I don't know Namara, but she is your family, and that means something.~
+@597 = ~Thank you for your support, Safana.~
+@598 = ~Thank me later, when everyone goes to bed!~
+@599 = ~*Ahem* I am always at your service, milady!~

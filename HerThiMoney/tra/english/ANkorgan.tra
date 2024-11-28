@@ -5,7 +5,7 @@
 @1 = ~The repayment deadline's all gone and now they'll send someone for me. And they'll take that debt outta me piece by piece. I'm broke now, but even if I had the money, I wouldn't pay these Calishite bankers. *Korgan grimaces and spits*~
 @2 = ~*The dwarf pauses for a moment, and you catch yourself thinking that for the first time ever, you hear uncertainty in Korgan's voice* Well... what's your decision, <CHARNAME>? ~
 @3 = ~Five thousand? What did you do with so much money? ~
-@4 = ~I wasted everything in a week - on wine, whores and other things I don't remember. When I woke up behind the Copper Coronet, I didn't even have one lousy copper in my pockets. But at least my axe remained! That's the thing that really matters! ~
+@4 = ~Bah! I wasted everything in a week - on wine, whores and other things I don't remember. When I woke up behind the Copper Coronet, I didn't even have one lousy copper in my pockets. But at least my axe remained! That's the thing that really matters! ~
 @5 = ~Korgan, you know that you can't fight forever, right? No matter how many times you maim or kill them, the bank will always send new collectors. And sooner or later, they will be able to catch you. I'm afraid I can't handle a war with a powerful bank. ~
 @6 = ~No, Korgan! You're in our group now, and you've got to do things out way. Don't touch the collectors. We don't need problems with the bank; we will find the money and pay off your debt. ~
 @7 = ~Korgan, you know that I don't have that kind of money. You're on your own, I don't want any trouble. ~
@@ -13,14 +13,14 @@
 @9 = ~Hmm... you're right, Korgan. These Calishites just don't know who they're messing with yet! Let them send their debt collectors, we've beaten them before. ~
 @10 = ~I've been in worse trouble! Running from enemies isn't my thing, but you're right, it would be better to leave Athkatla. I never liked that damn anthill anyway. We'll do our job and leave, alright?~
 @11 = ~So that's it. Goodbye Korgan. ~
-@12 = ~*Growls* This is your order!? You have soooo much extra money, huh, surfacer!? Instead of gutting these Calishite bastards, we'll pay them. Great fucking solution! ~
+@12 = ~*Growls* This is yer order!? Ye have soooo much extra money, huh, surfacer!? Instead of gutting these Calishite bastards, we'll pay them. Great dummit solution! ~
 @13 = ~Get back in line and shut up! You're the one who earned the debt, old man, and now it's up to us to clean it up!~
 @14 = ~Is that everything, Korgan? If so, the conversation is over. We need to find money to live. We've got to find the money and get on with our lives. You, unlike us, haven't fought a powerful organization and have no idea what it's like to confront an enemy with unlimited resources. ~
-@15 = ~*Korgan speaks in a low, menacing voice that changes to a bellowing growl) Speak to me like that again and I'll bash your skull off! Remember that! Ahrrrr! Pray to your gods that we don't meet again! *Korgan leaves, angry.*~
+@15 = ~*Korgan speaks in a low, menacing voice that changes to a bellowing growl) Speak to me like that again and I'll bash yer skull off! Remember that! Ahrrrr! Pray to yer gods that we don't meet again! *Korgan leaves, angry.*~
 @16 = ~*growls discontentedly, gradually subsiding* Hrr-ah! I fought such enemies that you never dreamed of, you youngsters! I alone stood against ten drow in the Underdark! There are still those alive who saw me crush those black-skinned creatures! Damn it... I don't understand why you want to pay, but have it your way... let's give the gold to these greedy bastards to waste! ~
 @17 = ~*Korgan looks at you ironically) Are you upset that you couldn't pay for my drinks and whores? Well, <CHARNAME>, we did the job, and now it's time for everyone to go their own way. *Korgan leaves without looking back.* ~
 @18 = ~Ha! That's for me! Let's grind these bankerss into dust! *Korgan raises his weapon in a belligerent manner.* ~ [KORGAN29]
-@19 = ~Alright, I respect your straightforwardness. Be well!~  [KORGAN33]
+@19 = ~Aye, I respect yer straightforwardness. Be well!~  [KORGAN33]
 
 // Owney
 @20 = ~Hey you! Stop! *You see a group of determined, armed fighters led by someone who looks like a priest in dull steel armor with a silver helmet*~
@@ -42,7 +42,7 @@
 @36 = ~<CHARNAME>. ~
 @37 = ~<CHARNAME>, we have to deal with the five thousand in debt somehow. Nobody wants any trouble here, you understand that, right? ~
 @38 = ~*Pulls a promissary note from his pocket* Do you recognize this, Korgan? You owe me one, old boy! ~
-@39 = ~*Korgan, losing patience, comes close to the collector* Are you threatening me, bastard!? I'll drive a axe into you so deep... ~ [KORGAN23]
+@39 = ~*Korgan, losing patience, comes close to the collector* Are ye threatening me, bastard!? I'll drive a axe into ye so deep... ~ [KORGAN23]
 @40 = ~Korgan, stand back! ~
 @41 = ~*Grudgingly steps back from Owney.*~
 @42 = ~*With a grin* That's better. Well, how will you pay? ~
@@ -118,18 +118,18 @@
 // Korgan - final conversation
 @111 = ~*You look around and breathe a sigh of relief. That's all. No more debt.*~
 @112 = ~That's a mountain lifted off my shoulders! We should celebrate with a keg of good ale, and not just one! ~
-@113 = ~*Korgan is silent for a while, then, struggling to find his words, begins to speak* I... thank you, surfacer. You helped me, and I will not forget it. We dwarves have better memories than anyone else, be sure!~
+@113 = ~*Korgan is silent for a while, then, struggling to find his words, begins to speak* I... thank ye, surfacer. Ye helped me, and I will not forget it. We dwarves have better memories than anyone else, be sure!~
 @114 = ~Indeed, why don't we celebrate? This is one of these days, when we get things sorted out.~
 @115 = ~Be careful of what you borrow from someone from now on, Korgan. Otherwise, you might end up much worse off. ~
 @116 = ~Yes, Korgan, I would like to take this opportunity to advise you to contact my cousin - he is an experienced businessman and can give you a couple of financial literacy lessons. You name it, about cannons and oil and all that. Usually he teaches kids, but since you are small, you will not stand out. So I don't think he's going to object. And then, you see, you can also open your own business, start selling turnips, get married ... ~
-@117 = ~Shut up, gnome! Trade your turnips yourself, I won't listen to the chatter of pigs! Money is needed only for one thing - to spend it on beer and women! ~
+@117 = ~Shut up, stump-backed gnome! Trade yer turnips yourself, I won't listen to the chatter of pigs! Money is needed only for one thing - to spend it on beer and women! ~
 @118 = ~You only need money for one thing - to spend it on beer and women! ~
 @119 = ~I give up. You'll never learn anything. ~
-@120 = ~If you keep yammering, I'll teach you when to keep your mouth shut! ~
+@120 = ~If ye keep yammering, I'll teach ye when to keep your mouth shut! ~
 @121 = ~Silence, dwarf. You've given us enough trouble already, it's time we moved on to more important matters. ~
 @122 = ~This is not the time to talk. Duty calls, and evil cannot defeat itself. ~
 @123 = ~Okay, let's go. ~
-@124 = ~I forgot I asked you, noble brat! You've had money from the cradle and grew up with everything you need! While ordinary guys like me survived as best we could! ~
+@124 = ~Bah! I forgot I asked ye, noble brat! Ye've had money from the cradle and grew up with everything ye need! While ordinary guys like me survived as best we could! ~
 
 // Additions
 @125 = ~And one more thing. If you screw us, you'll pay for it. ~
@@ -147,13 +147,13 @@
 // Additions
 @134 = ~Understand, Korgan, the world doesn't revolve around you. Don't complicate our matters with your squabbles with collectors. ~
 @135 = ~Cool down, big guy! Boo thinks you went overboard with these debts. ~
-@136 = ~No one asked you, tree-hugger!~
+@136 = ~No one asked ye, tree-hugger! Shut up!~
 @137 = ~What do I care what your rat thinks? He's not even good enough for a snack, why should I care about his opinion? ~
 
 // NEW(v.4)
 @138 = ~Done! ~
 @139 = ~No, Korgan. We did it, okay, there is no need to celebrate this, other things await us.~
-@140 = ~How boring you are! Okay, I'll have a drink without you then!~
+@140 = ~How boring ye are! Okay, I'll have a drink without ye then!~
 @141 = ~Okay, I'm interested. Say what you want.~
 @142 = ~Do you want us to kill your colleagues? Don't you collectors get along with each other?~
 @143 = ~Good, but first, tell me more about your plan.~

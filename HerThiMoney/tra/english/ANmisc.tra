@@ -59,7 +59,7 @@
 @61 = ~Think before you accept his offer. Stories about the promise of incredible rewards rarely end well for their heroes.~
 @62 = ~This creature reeks of evil, <CHARNAME>! It must be remain in this crypt forever, far from the world of living.~
 @63 = ~I d-don't like this skull at all, but maybe it's telling the truth? No one deserves to be imprisoned like that...~
-@64 = ~Rrrrrr! (Wilson's fur stands up - he is definately unhappy to meet the crypt inhabitant.)~
+@64 = ~Rrrrrr! *Wilson's fur stands up - he is definately unhappy to meet the crypt inhabitant.*~
 @65 = ~You talk like a friend, but Boo sees through your lies! <CHARNAME>, do not trust him!~
 @66 = ~(A fearsome lich was defeated. But was his death final? Last time, that creature was stopped only after dismemberment. Will he rise once more?)~
 @67 = ~Disgusting. See what greed for magical power can do to a living creature? Remember what he has become and how his existance came to an end.~
@@ -129,7 +129,7 @@
 @141 = ~I changed my mind. Give it back.~
 @142 = ~(irritated) Yes, yes, all right! I shall discard any thought that you possess even a rudimentary intelligence. (This baboon will never learn to appreciate my superior magical arts!)~ [EDWIN32]
 @143 = ~Yes, of course. (Even an unintelligent being can sometimes make a wise decision...)~
-@144 = ~Bah! Did you go to all this trouble to give the book to those priests? Even Shagbag had more brains - when he wasn't lying dead drunk under the table!~
+@144 = ~Bah! Did ye go to all this trouble to give the book to those priests? Even Shagbag had more brains - when he wasn't lying dead drunk under the table!~
 @145 = ~It was a wise decision, <CHARNAME>. If it had fallen into the wrong hands, it could have caused a lot of trouble.~
 
 // Rain Banters

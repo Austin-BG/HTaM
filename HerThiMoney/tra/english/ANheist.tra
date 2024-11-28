@@ -21,7 +21,7 @@
 
 // Jalut
 @15 = ~Owney wanted to talk to you, <PRO_BROTHERSISTER>. Find him, he's in the bank somewhere. ~
-@16 = ~*The orc leisurely attaches the wrist strap to his morningstar. He smiles good-naturedly when he sees you* I know you've spoken to Owney. I'm glad you're with us now. The commander rarely speaks about anyone as well as he has you. I think he likes you. ~ ~ (The orc leisurely attaches the wrist strap to his morningstar. He smiles good-naturedly when he sees you) I know you've spoken to Owney. I'm glad you're with us now. The commander rarely speaks about anyone as well as he has you. I think he likes you. ~
+@16 = ~*The orc leisurely attaches the wrist strap to his morningstar. He smiles good-naturedly when he sees you* I know you've spoken to Owney. I'm glad you're with us now. The commander rarely speaks about anyone as well as he has you. I think he likes you. ~ 
 @17 = ~How's it going? ~
 @18 = ~Boring. But it will be more fun in the evening. ~
 @19 = ~I have to go. Take care of yourself. ~
@@ -81,7 +81,7 @@
 @65 = ~Being an adventurer... sometimes means enduring poverty, filth, hunger. My people are tired of this. Jalut threw out his back hauling logs for all four of us when we were hired to help build the siege camp a year ago. There was continuous fighting with the Orcs far to the North, and there was always work for us. ~
 @66 = ~During the assault, Jock took an arrow. It hit him right in the neck, in one side and out the other. It's a miracle that he survived. We thought we would have to leave him on the ice. The wound he received will never fully heal. Two of our brothers will never return from that war. But at least we could bury them... what's left of them. ~
 @67 = ~Esra wants to retire too. She is a halfling, it's in their blood to sit in a cozy hole and stuff their bellies. She has a family in Baldur's Gate. She sends them what she can, but we earn almost nothing. Here in Athkatla, we lived for three weeks on what she 'procured' for us. ~
-@68 = ~And for Jock, he thinks he's found his match here... (the priest sighs) a half-orc woman. They will need money for their marriage. Yes, it's time for all of us to settle down and get on with our lives. ~
+@68 = ~And for Jock, he thinks he's found his match here... *the priest sighs* a half-orc woman. They will need money for their marriage. Yes, it's time for all of us to settle down and get on with our lives. ~
 @69 = ~Let's wrap this up, <CHARNAME>. We trust you after the battle with the Collector. Now, you are fully aware of our affairs. I have told you everything, honestly and openly, without hiding. It's time for you to make a decision. ~
 @70 = ~So, you want to kill the druids and take a cozy place in the guard for yourself and your brothers. Well, that makes sense to me, and I think I can help you. But everything has a price. ~
 @71 = ~What if I say no? ~
@@ -143,7 +143,7 @@
 
 // Next morning
 @125 = ~*The priest greets amicably* Everything went perfectly! The chief of security was recalled back to Calimport, no doubt to guard the latrines there! Gazir disappeared... everything is as planned. There's still a hole in the basement to be repaired, but it's small, and we'll have it fixed quickly. ~
-@126 = ~We've all got a huge bonus, so here's the rest of your payment. (Gives you the owed amount) In short, everything worked out, and it's all thanks to you. ~
+@126 = ~We've all got a huge bonus, so here's the rest of your payment. *Gives you the owed amount* In short, everything worked out, and it's all thanks to you. ~
 @127 = ~From now on, you can always count on us, <PRO_BROTHERSISTER>! If you ever need help, we'll be there. Now if you'll excuse me, business awaits. It's been a mess all morning! ~
 @128 = ~Good luck, Owney. ~
 @1281 = ~Oh, one more thing - they cleaned up the downstairs after the fight, and put some stuff in the chest in the center of the room. If the clerks haven't emptied it out yet, help yourself to whatever's left. ~

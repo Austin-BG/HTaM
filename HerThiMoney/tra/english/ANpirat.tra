@@ -9,7 +9,7 @@
 @5 = ~Dead, you say? How did this happen?~
 @6 = ~Yes... dead. Three days ago, they buried him at sea... Hmm. You're not from around here, are you. Throw me some coin and I'll tell you everything.~
 @7 = ~Here's ten gold. Talk.~
-@8 = ~About what? Ah... Fayaz. He made a big score somewhere and didn't leave the tavern for a week. Umberlee, I swear he bought up all the rum in there. The owner was constantly running downstairs for new bottles. And he treated us all! (The drunken sailor licks his lips with pleasure at the memory)~
+@8 = ~About what? Ah... Fayaz. He made a big score somewhere and didn't leave the tavern for a week. Umberlee, I swear he bought up all the rum in there. The owner was constantly running downstairs for new bottles. And he treated us all! *The drunken sailor licks his lips with pleasure at the memory*~
 @9 = ~And then... Fayaz had a stroke... right there in the tavern. He fell face down. We rushed to him, but he already wasn't breathing. He was a good sailor... at least that can be said.~
 @10 = ~And his things? That is to say, his property?~
 @11 = ~*The sailor thinks for a long time, staggering on unsteady legs.* I don't know. Talk to his "wife" about it. Her name is Lorna. I saw her recently, at the pier. She might be able to tell you something.~
@@ -22,7 +22,7 @@
 @16 = ~I am here about your husband's debt.~
 @17 = ~What debt?! I have no idea what you mean. Fayaz is dead... and I'm not his wife! Get out!~
 @18 = ~What happened to his property?~
-@19 = ~Property, you say!? Ha! The day he died, all of his friends - those he treated to countless drinks - his so-called "friends" came to our house and took everything they could. Those bastards... (sobs) Gods, let this whole place fall into the Abyss!~
+@19 = ~Property, you say!? Ha! The day he died, all of his friends - those he treated to countless drinks - his so-called "friends" came to our house and took everything they could. Those bastards... *sobs* Gods, let this whole place fall into the Abyss!~
 @20 = ~So with Fayaz dead, you lost your protection?~
 @21 = ~*All you hear in Lorna's reply is bitterness and anger* With his death, I lost everything!! And the last five years of living on this blasted i-island! He promised to stop drinking, he swore to me... And now I spent the last money on his funeral. ~
 @22 = ~What do I do when all the money is out, wh-where do I go? I'd rather die than stay here! Every one of them has called me a devil spawn, these past three days!~
@@ -32,14 +32,14 @@
 @26 = ~To the Abyss with you! Hope Umberlee has soft featherbeds at the bottom for all of you!~
 @27 = ~Think hard, Lorna. There must be something left.~
 @28 = ~*Still sobbing, Lorna glances carefully at you* Oh-h, who did he owe? And h-how much?~
-@29 = ~He owes the bank exactly three thousand, including interest. Here is his receipt. (you hand her the document)~
+@29 = ~He owes the bank exactly three thousand, including interest. Here is his receipt. *you hand her the document*~
 @30 = ~No need, I can't read. But I feel that you're telling the truth. I have a proposal for you. I need to go to Amn, to Athkatla. Help me get off this island and I will give you a scroll that belonged to Fayaz. I think it might lead you to a cache... maybe. There's nothing else left.~
 @31 = ~Let's see the scroll.~
 @32 = ~*She holds it up to you, but does not let go*~
 @33 = ~*You see an old, half-torn parchment, with poetry scrawled carelessly on it. This undoubtedly looks like an encrypted message, but it may also be a fake. You look more closely at Lorna. Beneath a layer of feigned rudeness, domestic turmoil, disappointment, and crushed hopes, you see a still young and innocent nature in her face. She doesn't seem to be lying about the scroll.*~
 @34 = ~Do you have any place to go in Athkatla?~
 @35 = ~Fayaz said it was a big city where no one cares who you are or where you're from, as long as you have money. I think I can find my place there. I only need a hundred gold from you. That's enough for me to get off the island and rent a house in Athkatla.~
-@36 = ~Okay, here. (Give her money and Fayaz's promissory note.)~
+@36 = ~Okay, here. *Give her money and Fayaz's promissory note.*~
 @37 = ~I don't have that much right now.~
 @38 = ~No, I think this scroll is worthless. I'm not giving a single coin for it.~
 @39 = ~Thank you! I can't believe I'm finally getting out of here! Here, I hope you find what you are looking for *Gives you the scroll*~
@@ -146,7 +146,7 @@
 @128 = ~Yes, it took a while.~
 @129 = ~Devils, sailing from Brynnlaw wasn't easy, pirates don't take women on board when they go out. I was lucky to negotiate with the captain, an acquaintance of my husband. I spent the entire passage in the hold, not coming out much. When the ship approached Athkatla, we immediately went ashore - I and a fat merchant. He bought his own way, and I went with him as ballast for his rowboat. That Amnian had his eye on me while on the ship.~
 @130 = ~Did everything go smoothly?~
-@131 = ~Well... not really. At some point, he stopped rowing to the shore and stared at my chest. And then he put his fat hands there (at this point Lorna grins widely). A good slap in the face quickly calmed him down, and I added a bucket of water to keep him cool. That's how we got to the city.~
+@131 = ~Well... not really. At some point, he stopped rowing to the shore and stared at my chest. And then he put his fat hands there *at this point Lorna grins widely*. A good slap in the face quickly calmed him down, and I added a bucket of water to keep him cool. That's how we got to the city.~
 @132 = ~How long have you been in Athkatla?~
 @133 = ~Just a week. The whole first day I was kept in the port with questions and other nonsense, and the entire second day I spent on the Waukeen Promenade. I just wandered there with my mouth open~
 @134 = ~Pretty impressive, isn't it?~

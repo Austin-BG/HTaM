@@ -147,7 +147,7 @@
 @126 = ~Your doing, <CHARNAME>? The Disenchanting Scroll is gone... Don't try to play an innocent lamb! Well, you can rejoice - I won't show up at the lake any more, and I will leave foolish Lorio alone. It's time to put this story behind us. ~
 
 //Lorio, Cragmoon (conflict)
-@127 = ~Listen, Lorio. Don't be nervous, but I managed to find out something about your case. (Tell him everything about Mrs. Cragmoon) ~
+@127 = ~Listen, Lorio. Don't be nervous, but I managed to find out something about your case. *Tell him everything about Mrs. Cragmoon*~
 @128 = ~*Turning pale with anger* Oh, that's it! And I considered this witch my friend! I even asked her for help. Well, never mind that, I'll rip that scroll out of her hands. She will pay for everything she did to my Eirin! ~
 @129 = ~I know everything, damn witch! What have you done? ~
 @130 = ~I just wanted to help you! And hoped that someday you and I... ~
