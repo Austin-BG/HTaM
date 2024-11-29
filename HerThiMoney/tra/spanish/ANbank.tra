@@ -329,7 +329,8 @@
 @576 = ~Buenas tardes. ¿En qué puedo ayudarles?~
 
 // NUEVO (v.4.6)
-// Coran en el banco + Safana
+
+// Coran en el banco
 @577 = ~¿Puedes ayudarme a enviar oro a Puerta de Baldur?~
 @578 = ~¿A Puerta de Baldur, señor? Sí, es posible, aunque no tenemos sucursal allí. Nuestro agente puede enviar la cantidad necesaria, le escribiré. Yo calcularía la comisión en cien monedas. Por supuesto, el agente enviará un recibo aquí.~
 @579 = ~De acuerdo. Entonces quiero enviar mil.~
