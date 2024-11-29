@@ -1,248 +1,247 @@
-// "El silencio de la sirena"
+// "Siren's silence"
 
 // Lorio
-@0 = ~*La historia del troll, que fue llevado de vuelta al circo, te persigue. Algo no cuadra, y no puedes quitarte de la cabeza la idea de que esta criatura en realidad no es malvada en absoluto*~
-@1 = ~*Sí, tal vez sea hora de comprobarlo de una vez por todas... decides volver a la jaula y echarle otro vistazo al troll*~
-@2 = ~*Sea lo que sea, tienes muchas otras cosas que hacer, será mejor que saques este asunto del troll de tu mente) ~
-@3 = ~*Tan pronto como llegas a la jaula, sientes algo inusual que viene del troll, un extraño anhelo va envolviendo tu mente gradualmente. Definitivamente, esto necesita ser abordado*~
-@4 = ~Vas a volver de nuevo... ¿Puedes sentirlo también? ¿Por qué la criatura repugnante parece hechizarte y hacerte volver una y otra vez? ~
-@5 = ~¿Qué pasó, Lorio? Dime. ~
-@6 = ~¿Eres la persona que mencionó Aerie? ¿Quién vendió el troll al circo...? Mi nombre es <CHARNAME>. ¿Dime qué pasó? ~
-@7 = ~Esta historia yace como una piedra en mi corazón, y no quería contársela a nadie. Pero ya que todo esto está sucediendo... Ya te dije que tengo una cabaña junto al lago cerca de Athkatla. Amo este lago, y he ido bastante lejos en bote. ~
-@8 = ~Sí... Mi nombre es Lorio. Esta historia yace como una piedra en mi corazón, y no quería contársela a nadie. Pero ya que todo esto está sucediendo... Tengo una cabaña junto al lago cerca de Athkatla. Amo este lago, y he ido bastante lejos en bote. ~
-@9 = ~Un día, una sirena apareció fuera del agua. Ella no intentó encantarme, pero ya estaba conquistado. Ella... Eirin... confesó que me había estado observando durante mucho tiempo porque le gustaba. ~
+@0 = ~*La historia del troll, que fue traído de vuelta al circo, te atormenta. Algo no cuadra, y no puedes quitarte de la cabeza la idea de que esta criatura en realidad no es malvada en absoluto*~
+@1 = ~*Sí, tal vez sea hora de comprobarlo de una vez... decides volver a la jaula y echar otro vistazo al troll*~
+@2 = ~*Sea lo que sea, tienes muchas otras cosas que hacer, será mejor que te quites de la cabeza este asunto del troll) ~
+@3 = ~*Tan pronto como llegas a la jaula, sientes algo inusual proveniente del troll, un extraño anhelo va envolviendo poco a poco tu mente. Definitivamente, esto necesita ser tratado*~
+@4 = ~Estás volviendo otra vez... ¿Tú también lo sientes? ¿Por qué la repugnante criatura parece hechizarte y hacerte volver una y otra vez?~
+@5 = ~¿Qué pasó, Lorio? Dímelo.~
+@6 = ~¿Eres la persona que Aerie mencionó? ¿Quién vendió el troll al circo...? Mi nombre es <CHARNAME>. Cuénteme qué pasó~
+@7 = ~Esta historia yace como una piedra en mi corazón, y no quería contársela a nadie. Pero ya que todo esto está pasando... Ya te conté que tengo una cabaña junto al lago, cerca de Athkatla. Me encanta este lago, y he ido bastante lejos en barco. ~
+@8 = ~Sí... Mi nombre es Lorio. Esta historia yace como una piedra en mi corazón, y no quería contársela a nadie. Pero ya que todo esto está sucediendo... Tengo una cabaña junto al lago cerca de Athkatla. Me encanta este lago, y he ido bastante lejos en barco. ~
+@9 = ~Un día apareció una sirena fuera del agua. Ella no trató de encantarme, pero yo ya estaba tomado. Ella... Eirin... confesó que me había estado observando durante mucho tiempo porque le gustaba. ~
 @10 = ~Pero las sirenas son criaturas peligrosas... ~
-@11 = ~Oh, <CHARNAME>, puedes decir eso de mucha gente... Pero Eirin no hizo nada malo. Ella vino a mí en la orilla, nos amamos, y esto continuó durante mucho tiempo... ~
-@12 = ~Hasta la noche en que me quedé dormido en la playa con ella en mis brazos, y me desperté con el rugido de un troll. No tenía miedo en absoluto por mí, ¡pero mis ojos se oscurecieron al pensar en él comiéndose a Eirin! Ya sabes el resto. El troll no luchó, así que lo até. Eso fue todo lo que pude hacer, ya que no tenía fuego ni ácido a mano. Nunca encontré ninguna señal de que el troll hubiera matado a Eirin. Pero puede que se haya asustado y haya huido... para siempre... después de todo, es una sirena... ~
-@13 = ~¿Qué sigue? ~
-@14 = ~Volví al lago muchas veces, la llamé, la busqué. Todo en vano. Pero ahora me siento constantemente atraído por Athkatla. Justo aquí. Mirando a este monstruo, como si quisiera ver algo en él... y él también lo quiere. Probablemente me esté volviendo loco. ~
-@15 = ~Incluso le pedí a la Sra. Cragmoon una poción curativa, pero no funcionó. ~
-@16 = ~¿Sra. Cragmoon? ~
-@17 = ~¿Sra. Cragmoon? Ah, una vendedora de pociones en el área del Puente. ~
-@18 = ~Vende pociones en el área del Puente. Buena mujer. Un poco maga de setos. La conocemos, a veces viene al lago a recolectar hierbas... ~
-@19 = ~Es ella. Buena mujer. Una especie de maga de setos. La conocemos, a veces viene al lago a recoger hierbas... ~
-@20 = ~Pero, ¿qué importa todo esto? Tengo que irme, <CHARNAME>. Cromwell casi ha terminado con el pedido en el que gasté todos mis ahorros. Necesito una buena arma para el viaje. He decidido irme de aquí... a algún lado. Estoy harto de la ciudad y ya no soporto la vista del lago. Así que adiós. ~
+@11 = ~Oh, <CHARNAME>, puedes decir eso de mucha gente... Pero Eirin no hizo nada malo. Se acercó a mí en la orilla, nos amamos, y esto duró mucho tiempo... ~
+@12 = ~Hasta la noche en que me quedé dormido en la playa con ella en brazos, y me desperté con el rugido de un trol. No me asusté en absoluto por mí, ¡pero mis ojos se oscurecieron al pensar que se comería a Eirin! El resto ya lo sabéis. El troll no luchó, así que lo até. Era lo único que podía hacer, ya que no tenía fuego ni ácido a mano. Nunca encontré ninguna señal de que el troll hubiera matado a Eirin. Pero puede que se asustara y huyera... para siempre... después de todo, es una sirena... ~
+@13 = ~¿Y después qué? ~
+@14 = ~Volví al lago muchas veces, la llamé, la busqué. Todo en vano. Pero ahora me siento constantemente atraído hacia Athkatla. Aquí mismo. Mirando a este monstruo, como si quisiera ver algo en él... y él también lo quisiera. Probablemente me estoy volviendo loco. ~
+@15 = ~Incluso le pedí a la Señora Lunrisco una poción curativa, pero no funcionó. ~
+@16 = ~Señora Lunrisco? ~
+@17 = ~Señora Lunrisco? Ah, un vendedor de pociones en la zona del puente. ~
+@18 = ~Vende pociones en la zona del Puente. Buena mujer. Un poco bruja. La conocemos, a veces viene al lago a recoger hierbas... ~
+@19 = ~Es ella. Es una buena mujer. Un poco bruja. La conocemos, a veces viene al lago a recoger hierbas... ~
+@20 = ~Pero, ¿qué importancia tiene todo esto? Tengo que irme, <CHARNAME>. Cromwell casi termina el pedido en el que gasté todos mis ahorros. Necesito una buena arma para el viaje. He decidido irme de aquí, a alguna parte. Estoy harto de la ciudad, y ya no soporto la vista del lago. Así que adiós. ~
 
 // Troll
-@21 = ~*Parece que la situación se está aclarando. Una noche, una encantadora sirena desaparece de repente en la orilla del lago y aparece un troll feo pero pacífico. Ahora ya sabes qué hacer...*~
-@22 = ~*Lanzar Conocer alineamiento*~
-@23 = ~*Lanzar Visión verdadera*~
-@24 = ~*Esto requiere el hechizo Conocer alineamiento o el hechizo Visión verdadera. Lamentablemente, no tienes ninguno de los dos.*~
-@25 = ~*El troll te mira con tristeza. Debes probar Alineamiento o Visión verdadera.) ~
-@26 = ~*¡Alineamiento se define como bueno!*~
-@27 = ~*¿Un buen troll? Tanto Aerie como Sartorius parecen pensar que se trataba de una rara excepción, pero tú no lo crees así.*~
-@28 = ~*Con la ayuda de un hechizo, puedes ver una sirena torturada en la jaula en lugar de un troll, y esto ya no te sorprende. Ahora sabes todo excepto la parte más importante: quién ha maldecido a la pobre criatura y cómo devolverla a su verdadera forma. Hasta que lo averigües, es mejor no darle falsas esperanzas a Lorio.) ~
+@21 = ~*El panorama parece aclararse. Una noche, una encantadora sirena desaparece de repente en la orilla del lago y aparece un troll feo pero pacífico. Ahora ya sabes qué hacer...*~
+@22 = ~*Lanzar Conocer Alineamiento*~
+@23 = ~*Lanzar Vision Verdadera*~
+@24 = ~*Esto requiere el hechizo Conocer Alineación o el hechizo Visión Verdadera. Desafortunadamente, no tienes ninguno de los dos.*~
+@25 = ~*El troll te mira con tristeza. Saber Alineación o Visión Verdadera debe ser probado.) ~
+@26 = ~*¡El alineamiento se define como bueno!*~
+@27 = ~*¿Un buen troll? Tanto Aerie como Sartorius parecen pensar que estaban ante una rara excepción, pero tú no lo crees así*~
+@28 = ~*Con la ayuda de un hechizo, puedes ver una sirena torturada en la jaula en lugar de un troll, y esto ya no te sorprende. Ahora lo sabes todo menos lo más importante: quién ha maldecido a la pobre y cómo devolverle su verdadera forma. Hasta que lo descubras, es mejor no dar falsas esperanzas a Lorio) ~
 @29 = ~*El troll te mira con tristeza...*~
 
-// Cragmoon (parte 1)
-@30 = ~Gracias, pero no ahora. Dime, ¿conoces a Lorio, el pescador? ~
-@31 = ~Por supuesto. Espero que no le pase nada malo. ~
-@32 = ~¿Cómo puedo decirlo? ¿Podrías decirme cuánto tiempo hace que se conocen? ~
-@33 = ~¿Cuál es el significado de todas estas preguntas? ~
+// Cragmoon (part 1)
+@30 = ~Gracias, pero ahora no. Dime, ¿conoces a Lorio, el pescador? ~
+@31 = ~Por supuesto. Espero que no le pase nada ~
+@32 = ~Cómo decirlo... ¿Podría decirme desde cuándo se conocen?~
+@33 = ~¿Qué sentido tienen todas estas preguntas? ~
 @34 = ~Veo que Lorio no es él mismo. Y parece que te ha pedido ayuda... ¿Son amigos? ~
-@35 = ~Este pescador está involucrado en una intriga curiosa que estoy tratando de resolver. ~
-@36 = ~Sólo hablar. ~
-@37 = ~¿Amigos? Podríamos decirlo. Lorio tiene una casa junto al lago en cuyas orillas crecen hierbas raras que necesito para hacer pociones. A veces voy allí... ahí es donde nos conocimos. Ahora le compro pescado a Lorio. Y aquí en Athkatla, a veces me ayuda cuando necesito la mano de un hombre... no es fácil ser viuda, ya sabes. ~
-@38 = ~Veo, se llevan bien. Entonces, ¿tal vez escuchaste algo sobre el troll y la sirena? ~
-@39 = ~¿Sobre el troll y...? No, nada de eso. Y no creo que pueda decirte nada interesante en absoluto. Lo siento. ~
-@40 = ~Bueno, no me corresponde a mí satisfacer tu curiosidad, ¿verdad? ¿Por qué no hablas con alguien más? Adiós. ~
-@41 = ~No, no tengo por qué responderte. Vete. ~
+@35 = ~Este pescador está envuelto en una curiosa intriga de la que intento llegar al fondo. ~
+@36 = ~Sólo hablad. ~
+@37 = ~¿Amigos? Se podría decir que sí. Lorio tiene una casa junto al lago donde crecen hierbas raras que necesito para hacer pociones. A veces voy allí... allí nos conocimos. Ahora le compro pescado a Lorio. Y aquí en Athkatla, a veces me ayuda cuando necesito la mano de un hombre... no es fácil ser viuda, ¿sabes?. ~
+@38 = ~Ya veo, están en buenos términos. Entonces, ¿tal vez has oído algo sobre el troll y la sirena? ~
+@39 = ~¿Sobre el troll y...? No, nada de eso. Y no creo que pueda decirte nada interesante. Lo siento. ~
+@40 = ~Bueno, no me corresponde a mí satisfacer tu curiosidad, ¿verdad? ¿Por qué no hablas con otra persona? Adiós. ~
+@41 = ~No, no tengo que responderte. Marchaos. ~
 
 // Mod
-@42 = ~¡Lo escuché todo! Escucho muchas cosas diferentes, pero nadie me nota. Cuando crezca, me convertiré en una ladrona de sombras. ¡Ja! ~
-@43 = ~¿Qué escuchaste exactamente, niña? ~
-@44 = ~Bueno, ya que eres tan tramposo, cuéntame algo interesante. Y si me gusta la historia, te daré dinero. ~
-@45 = ~¿Qué? ¿Escuchando a escondidas nuestra conversación? ¡Fuera de aquí! ~
-@46 = ~*Pavoneándose* Mi nombre es Mod, mi<PRO_LADYLORD>. ¡Y este nombre seguirá resonando en la Costa, de verdad, de verdad! ¿Quieres que te diga algo? ¡Te costará una moneda! ~
-@47 = ~Está bien, pequeño extorsionador. Cuéntanoslo y veremos. ~
-@48 = ~Fuera, mendigo. ~
-@49 = ~*entrecerrando los ojos* ¡Oh, eso es! ¡Lo vas a lamentar, malvado! ~
-@50 = ~*alegremente* Oh, mi<PRO_LADYLORD>, eres alguien que sabe cómo hacer negocios, como dicen los adultos. Por cierto, mi nombre es Mod. ~
-@51 = ~Entonces... hablaste con la Sra. Cragmoon sobre un troll, y recordé... Bueno, dicen que es una bruja. No sé nada de eso, pero una bruja de verdad vino a verla. ¡Yo mismo lo vi! ~
-@52 = ~La Sra. Cragmoon estaba vendiendo pociones en la calle como de costumbre cuando una mujer, vestida de maga, con un hermoso bastón apareció y tenía esa mirada... peligrosa. La Sra. Cragmoon la llamó "Señora Agnes", y cambió un gran lote de pociones por pergaminos mágicos. ¡Había algo en ellos sobre convertirse en un troll! Increíble, ¿verdad? Así que no enfades a la Sra. Cragmoon, ¡o te convertirá en un troll! ~
-@53 = ~Genial... Gracias, Mod, aquí tienes tu dinero. *Dale 10 monedas*~
-@54 = ~¡Guau! ¡Qué generoso, mi<PRO_LADYLORD>! Ahora somos amigos, y Mod no olvida a los amigos. ~
+@42 = ~¡Escucho de todo! Escucho muchas cosas diferentes, pero nadie se fija en mí. Cuando sea mayor, me convertiré en un Ladrón de las Sombras. ¡Ja! ~
+@43 = ~¿Qué has oído exactamente, chica? ~
+@44 = ~Bueno, ya que eres tan chivata, cuéntame algo interesante. Y si me gusta la historia, te daré algo de oro. ~
+@45 = ~¿Qué? ¿Espiando nuestra conversación? ¡Fuera de aquí! ~
+@46 = ~*Pavoneandose* Me llamo Mod, mi Señor. Y este nombre seguirá retumbando en la Costa, ¡de verdad, de verdad! ¿Quieres que te diga algo? ¡Te costará una moneda! ~ ~*Pavoneandose* Me llamo Mod, mi Señora. Y este nombre seguirá retumbando en la Costa, ¡de verdad, de verdad! ¿Quieres que te diga algo? ¡Te costará una moneda! ~
+@47 = ~Vale, pequeño extorsionador. Cuéntanos y veremos. ~
+@48 = ~Lárgate, mendigo. ~
+@49 = ~*ojos entrecerrados* ¡Oh, eso es! ¡Te vas a arrepentir, mezquino! ~
+@50 = ~*alegremente* Oh, mi Señor, eres alguien que sabe hacer negocios, como dicen los mayores. Por cierto, me llamo Mod. ~ ~*alegremente* Oh, mi Señora, eres alguien que sabe hacer negocios, como dicen los mayores. Por cierto, me llamo Mod. ~
+@51 = ~Así que... hablaste con la Señora Lunrisco sobre algún troll, y recordé... Bueno, dicen que es una bruja. No sé nada de eso, pero una bruja de verdad vino a verla. ¡Yo mismo la vi! ~
+@52 = ~La señora Lunrisco vendía pociones en la calle, como de costumbre, cuando apareció una mujer vestida de maga, con un hermoso bastón y esa mirada... peligrosa. La señora Lunrisco la llamó "Señora Agnes", y cambió un gran lote de pociones por unos pergaminos mágicos. ¡Había algo en ellos sobre convertirse en un troll! Increíble, ¿verdad? Así que no enfades a la señora Lunrisco, ¡o te convertirá en un troll! ~
+@53 = ~Genial... Gracias, Mod, aquí está tu dinero. *Dale 10 monedas*~
+@54 = ~¡Guau! ¡Qué generoso, mi Señor! Ahora somos amigos, y Mod no olvida a los amigos. ~ ~¡Guau! ¡Qué generoso, mi Señora! Ahora somos amigos, y Mod no olvida a los amigos. ~
 @55 = ~¿Eso es todo? Esperaba más. Toma... *Dale 5 monedas*~
-@56 = ~¿Qué es esto, caridad? ¿Me tomas por un mendigo? Bien, pero ten cuidado con tu billetera, mi<PRO_LADYLORD>. ~
+@56 = ~¿Qué es esto, caridad? ¿Me tomas por un mendigo? Bien, pero vigila tu cartera, mi Señor. ~ ~¿Qué es esto, caridad? ¿Me tomas por un mendigo? Bien, pero vigila tu cartera, mi Señora. ~
 @57 = ~¡Qué tontería! Pensar que perdí el tiempo contigo... Vete. ~
 
-// Cragmoon (parte 2 de una conversación positiva con Mod)
-@58 = ~¿Tú otra vez? Me pareció que ya hablamos. ~
-@59 = ~Pensé que, como no conoces la historia del troll y la sirena, podría contártela. Mejor aún, sobre la impresión que le causó a Lorio. ¿No sabes que algo le ha estado pesando mucho? ~
+// Cragmoon (part 2 in a positive conversation with Mod)
+@58 = ~¿Tú otra vez? Me pareció que ya habíamos hablado. ~
+@59 = ~He pensado que, ya que no conoces la historia del troll y la sirena, podría contártela yo. Mejor aún, sobre la impresión que le causó a Lorio. ¿No sabes que algo ha estado pesando sobre él?~
 @60 = ~En realidad, sí, me pidió una poción. Pero espero que todo esto pase pronto. ~
-@61 = ~Lo dudo mucho. Lorio está a punto de irse de aquí porque cree que su amada sirena está muerta o lo ha abandonado para siempre. ~
-@62 = ~*La señora Cragmoon parece sorprendida y molesta*~
-@63 = ~¡No puede ser! ¿Irse? ¿Pero por qué? ... No me esperaba esto. Esas viles sirenas... ~
-@64 = ~¿No te gustan las sirenas? Español¿Tanto es así que compraste un pergamino a una bruja para convertir a uno de ellos en un troll? ~
-@65 = ~*Sus ojos brillan fuera de control* ¿No te gustan? ¡Más que eso! ¿Cómo crees que se siente una mujer cuando una de estas criaturas de voz dulce la hechiza y se lleva a su marido con ella? Probablemente a una muerte segura... ¡Sí, los odio y no tengo motivos para ocultarlo! ~
-@66 = ~Dime qué pasó en el lago? ¿Convertiste a la sirena Eirin en un troll? ~
-@67 = ~¡Sí! Una criatura fea y repulsiva... Lorio es una buena persona. No merece estar atado por hechizos repugnantes a una criatura monstruosa. Quería ayudarlo... liberarlo. ~
-@68 = ~Dime. ~
-@69 = ~Fui al lago temprano en la mañana para recoger las hierbas en el rocío... y los vi juntos. ¡Durmieron tan dulcemente en la hierba, abrazados! Había escuchado la canción de la seductora desde el otro lado del lago. ¡Era mejor para ella que se callara para siempre! ~
-@70 = ~No soy una maga muy fuerte, los lugareños me adulan llamándome bruja, pero llevo pergaminos conmigo. Incluidos los que me dio la bruja tezhyriana Agnes. A veces viene a Athkatla. Agnes es una maestra de las transformaciones y crea sus propios hechizos que son diferentes a los habituales. ~
-@71 = ~¿Y tú tenías pensado uno de ellos para Eirin? ~
-@72 = ~Exactamente. El encantamiento de Agnes es muy fuerte, y solo su propio hechizo puede eliminarlo. Incluso en la muerte, la vil sirena parecerá un troll. ~
-@73 = ~Te encargaste de todo. ¿No tenías miedo de que en el cuerpo de un troll la sirena te matara a ti o a Lorio? ~
-@74 = ~No lo pensé, para ser honesto, pero supongo que no. Desaparecí rápidamente, y por supuesto ella no tocó a Lorio. Ah, si tan solo pudiera aceptar su pérdida... ~
+@61 = ~Lo dudo mucho. Lorio está a punto de abandonar estos lares porque cree que su amada sirena ha muerto o le ha abandonado para siempre. ~
+@62 = ~*La Señora Lunrisco parece sorprendida y disgustada*~
+@63 = ~¡No puede ser! ¿Irme? Pero, ¿por qué? ... No esperaba esto. Esas viles sirenas... ~
+@64 = ~¿No te gustan las sirenas? ¿Tanto que le compraste un pergamino a una bruja para convertir a una de ellas en troll? ~
+@65 = ~*Sus ojos brillan sin control* ¿No te gustan? ¡Más que eso! ¿Cómo crees que se siente una mujer cuando una de estas criaturas de voz dulce encanta y se lleva a su marido con ella? Probablemente a una muerte segura... ¡Sí, las odio, y no tengo por qué ocultarlo! ~
+@66 = ~¿Dime qué pasó en el lago? ¿Convertiste a la sirena Eirin en un troll? ~
+@67 = ~¡Sí! Una criatura fea, repulsiva... Lorio es una buena persona. No merece estar atado por hechizos repugnantes de una criatura monstruosa. Yo quería ayudarlo... liberarlo. ~
+@68 = ~Cuéntame. ~
+@69 = ~Fui al lago por la mañana temprano a recoger las hierbas del rocío... y los vi juntos. Dormían tan dulcemente en la hierba, ¡abrazados! Había oído la canción de la seductora desde el otro lado del lago. Era mejor que se callara para siempre~
+@70 = ~No soy una maga muy fuerte, los lugareños me halagan llamándome bruja, pero llevo pergaminos conmigo. Incluyendo los que me dio la bruja Agnes de Tezhyr. A veces ella viene a Athkatla. Agnes es una maestra de las transformaciones y crea sus propios hechizos, diferentes de los habituales. ~
+@71 = ~¿Y destinaste uno de ellos a Eirin? ~
+@72 = ~Exactamente. El encantamiento de Agnes es muy fuerte, y sólo su propio hechizo puede quitarlo. Incluso en la muerte, la vil sirena se verá como un troll. ~
+@73 = ~Te encargaste de todo. ¿No temías que en el cuerpo de un troll la sirena te matara a ti o a Lorio?~
+@74 = ~No pensé en ello, para ser honesta, pero supongo que no. Desaparecí rápidamente, y por supuesto ella no tocó a Lorio. Ah, si tan sólo pudiera aceptar perderla... ~
 @75 = ~¿Tienes un pergamino con un hechizo que pueda desencantar a Eirin? ~
 @76 = ~Ni siquiera quiero pensar en eso. ~
 
-// Reacciones del grupo (Cragmoon)
-@77 = ~Siempre he dicho que la magia es un problema, aquí hay otra prueba. ~
-@78 = ~<CHARNAME>, ¡debemos ayudar a Kid! Quiero decir, E-Eirin... no puedo dejar de llamarla Kid.~
-@79 = ~¡Tiax el Sabio te ordena que desencantes a la sirena, bruja! ¡Para que pueda cantarle serenatas de amor a Tiax en la cena! Este pescador está siendo ejecutado para que no distraiga a la sirena de asuntos más importantes. ~ [PPTIAX12]
-@80 = ~¡Pero ella no te lastimó! ¡Actuaste mal! ~
-@81 = ~¿Alguna vez has amado, muchacha? ¿Y te han dejado? Si no, entonces no sabes de lo que estás hablando. ~
-@82 = ~¡Estas sirenas son criaturas malvadas, <CHARNAME>! La bruja tiene razón, deja que siga siendo un troll y haga reír a la gente en el circo. De esa manera no lastimará a nadie. ~
-@83 = ~El amor a veces toma formas extrañas y puede ser violento. ~
-@84 = ~Entiendo a esta pobre mujer, <CHARNAME>. La sensación de ser abandonada es horrible. Pero aun así no puedo aprobar sus acciones. ~
-@85 = ~No era el amor lo que la movía, sino el deseo de venganza y el egoísmo. Si realmente amaba a Lorio, lo dejaría ir y se alegraría de que él fuera feliz. ~
+// Group reactions (Cragmoon)
+@77 = ~Siempre he dicho que la magia es un problema, aquí hay otra prueba de ello. ~
+@78 = ~<CHARNAME>, ¡debemos ayudar a Kid! Quiero decir, E-Eirin ... No puedo dejar de llamarla Kid.~
+@79 = ~¡Tiax el Sabio te ordena que desencantes a la sirena, bruja! ¡Para que pueda cantarle serenatas de amor a Tiax durante la cena! Este pescador está siendo ejecutado para que no distraiga a la sirena de asuntos más importantes. ~ [PPTIAX12]
+@80 = ~¡Pero ella no te hizo daño! ¡Actuaste con maldad! ~
+@81 = ~¿Alguna vez has amado, chica? ¿Y te han dejado? Si no, entonces no sabes de lo que estás hablando. ~
+@82 = ~¡Estas sirenas son criaturas malvadas, <CHARNAME>! La bruja tiene razón, que siga siendo un troll y haga reír a la gente en el circo. Así no hará daño a nadie. ~
+@83 = ~El amor a veces adopta formas extrañas y puede ser violento. ~
+@84 = ~Entiendo a esta pobre mujer, <CHARNAME>. La sensación de ser abandonada es horrible. Pero aún así no puedo aprobar sus acciones. ~
+@85 = ~No era el amor lo que la movía, sino el deseo de venganza y el egoísmo. Si de verdad amara a Lorio, le dejaría marchar y se alegraría de que fuera feliz. ~
 
-// Decisión
-@86 = ~*Bueno, todo está claro, ya no quedan más acertijos. Ahora tenemos que decidir qué hacer a continuación. Podrías contarle todo a Lorio, pero si no se lo toma bien, puede que solo empeore las cosas*~
-@87 = ~*Algo te dice que si Lorio descubre la verdad sobre la señora Cragmoon, no acabará bien. Es mejor que te ocupes de esto por tu cuenta.*~
-@88 = ~*¿Deberías seguir haciendo los negocios de otra persona? Ya has averiguado todo lo que has podido y Lorio puede encargarse de su "novia" él solo*~
+// Decision
+@86 = ~*Bueno, todo está claro, no quedan más enigmas. Ahora tenemos que decidir qué hacer a continuación. Podrías contárselo todo a Lorio, pero si no se lo toma bien, sólo podría empeorar las cosas*~
+@87 = ~*Algo te dice que si Lorio descubre la verdad sobre la Señora Lunrisco, no acabará bien. Mejor manejar esto por tu cuenta.*~
+@88 = ~*¿Deberías seguir ocupándote de los asuntos de otros? Averiguaste todo lo que pudiste, y Lorio puede tratar con su "novia" por sí mismo*~
 
-// Cragmoon (parte 2, con una conversación negativa con Mod)
-@89 = ~*La señora Cragmoon te mira con incredulidad*~
-@90 = ~Lo pensé y decidí que nuestra conversación no había terminado. Una chica está rondando por ahí, diciendo que tiene una historia que contar. ¿Qué estás escondiendo? ¿Tal vez algún tipo de crimen?~
+// Cragmoon (part 2, with a negative conversation with Mod)
+@89 = ~*La Señora Lunrisco te mira incrédula*~
+@90 = ~Me lo pensé y decidí que nuestra conversación no había terminado. Una chica anda por ahí diciendo que tiene una historia que contar. ¿Qué esconde? ¿Quizás algún tipo de crimen?~
 @91 = ~Déjame en paz, <CHARNAME>, esto no es asunto tuyo. ~
-@92 = ~¿Entonces hay algo en lo que no necesito meterme? ¿Debería hablar con los guardias? ~
-@93 = ~¿Entonces hay algo en lo que no necesito meterme? ¿Tal vez debería pedirle a los Ladrones de las Sombras que se ocupen de ti?~
+@92 = ~Entonces, ¿hay algo en lo que no deba meterme? ¿Debo hablar con los guardias? ~
+@93 = ~Entonces, ¿hay algo en lo que no deba meterme? ¿Quizás debería pedir a los Ladrones de las Sombras que se ocupen de ti?~
 @94 = ~¡Déjame! No he hecho nada malo. ¿Desde cuándo se amenaza a la gente por ayudar a alguien a deshacerse de un monstruo?~
-@95 = ~Estoy cansado de sonsacarte la verdad. ¿Así que "ayudaste" a Lorio? Tanto que se va a ir de aquí, porque cree que su amada sirena murió o lo abandonó para siempre. ~
+@95 = ~Estoy cansado de sacarte la verdad. ¿Así que "ayudaste" a Lorio? Tanto que se va a ir de estos lares, porque cree que su amada sirena murió o lo abandonó para siempre. ~
 @96 = ~¿Tienes algo en contra de las sirenas? ~
-@97 = ~*Sus ojos brillan fuera de control* ¿No te gustan? ¡Más que eso! ¿Cómo crees que se siente una mujer cuando una de estas criaturas de dulce voz la hechiza y se lleva a su marido con ella? Probablemente a una muerte segura... ¡Sí, las odio y no tengo motivos para ocultarlo! ~
+@97 = ~*Sus ojos brillan sin control* ¿No te gustan? ¡Más que eso! ¿Cómo crees que se siente una mujer cuando una de estas criaturas de voz dulce encanta y se lleva a su marido con ella? Probablemente a una muerte segura... ¡Sí, las odio, y no tengo por qué ocultarlo! ~
 @98 = ~¿Y qué le hiciste a uno de ellos, Eirin? Será mejor que confieses. ~
-@99 = ~¿Por qué...? ¡Bien! Compré algunos pergaminos, incluida una transformación de troll, de la bruja tezhyriana Agnes, que a veces visita Athkatla. Sí, convertí a esa Eirin suya en una criatura fea y repulsiva... Lorio es una buena persona. No merece que una criatura monstruosa quede atrapada por hechizos repugnantes. Quería ayudarlo... liberarlo. ~
+@99 = ~Por qué tú... ¡Bien! Compré algunos pergaminos, incluyendo una transformación de troll, a la bruja tezhyriana, Agnes que a veces visita Athkatla. Sí, convertí a esa Eirin suya en una criatura fea y repulsiva... Lorio es una buena persona. No merece ser atrapado por hechizos repugnantes a una criatura monstruosa. Quise ayudarlo... liberarlo. ~
 
-// Decisión (adiciones)
-@100 = ~*La Sra. Cragmoon está decidida, pero tú también. Decides a cualquier precio conseguir un pergamino para desencantar a la sirena*~
-@101 = ~*Intenta convencer a la Sra. Cragmoon*~
-@102 = ~*Robarle el pergamino*~
-@103 = ~*Encuentra a Mod y dale instrucciones para que robe el pergamino. La chica parece saber mucho sobre ladrones*~
+// Decision (additions)
+@100 = ~*La Señora Lunrisco está decidida, pero tú también. Decides a toda costa obtener un pergamino para desencantar a la sirena*~
+@101 = ~*Intenta convencer a la Señora Lunrisco*~
+@102 = ~*Róbale el pergamino*~
+@103 = ~*Encuentra a Mod y ordénale que robe el pergamino. La chica parece saber mucho sobre ladrones*~
 
-// Minería de pergaminos
-@104 = ~*La señora Cragmoon claramente no está dispuesta a desencantar a Eirin*~
-@105 = ~Mira, ¿no crees que estás siendo cruel con Lorio? Lo llamas amigo, pero después de todo, la amistad no se trata de entrometerse en la vida de otra persona como creemos que es correcto. Crees que lo salvaste del monstruo, pero ¿mira lo que le pasó? Ahora dejará su tierra natal, solo, con el corazón roto, y quién sabe qué más le pasará. Tú mismo estarás pensando constantemente en ello y atormentado por el remordimiento. ¿Y si no puede soportar los peligros de un largo viaje o... ~
-@106 = ~Mira, creo que has ido demasiado lejos. Ya sea por celos, o realmente solo por preocuparte por un amigo, pero estás irrumpiendo en la vida de alguien, interfiriendo con el amor, y es hora de parar. Dame el pergamino. ~
-@107 = ~Terminemos con esto. Entrégame el pergamino. O si no... ~
-@108 = ~Dije que no. No me molestes más. ~
+// Scroll mining
+@104 = ~*La Señora Lunrisco está claramente poco dispuesta a desencantar a Eirin*~
+@105 = ~Mira, ¿no crees que estás siendo cruel con Lorio? Le llamas amigo, pero al fin y al cabo, la amistad no consiste en meterse en la vida de otro como nos parece correcto. Crees que lo salvaste del monstruo, ¿pero mira lo que le pasó? Ahora abandonará su tierra natal, solo, con el corazón roto, y ¿quién sabe qué más le ocurrirá? Ahora tú misma estarás constantemente pensando en él y atormentado por los remordimientos. ¿Y si no puede soportar los peligros de un largo viaje o... ~
+@106 = ~Mira, creo que has ido demasiado lejos. Ya sea por celos, o realmente por cuidar a un amigo, pero estás irrumpiendo en la vida de alguien, interfiriendo en el amor, y es hora de parar. Dame el pergamino. ~
+@107 = ~Acabemos con esto. Entrega el pergamino. O si no. ~
+@108 = ~He dicho que no. No me molestes más. ~
 @109 = ~¡Quita tus manos de mis pergaminos! ~
-@110 = ~*Estás intentando robarle el pergamino desencantado a la Sra. Cragmoon*~
-@111 = ~*Tienes el pergamino. Ahora finalmente puedes regresar al Paseo Waukeen y desencantar a la desafortunada sirena*~
-@112 = ~*Tus intentos de resolverlo por tu cuenta no llevaron a nada. Probablemente valga la pena contarle todo a Lorio después de todo*~
-@113 = ~Está bien, es suficiente. Entiendo tu punto. En serio, ¿por qué debería interferir en la vida de Lorio si él mismo quiere actuar como el mayor tonto?~
-@114 = ~Creo que vale la pena arreglar todo antes de que sea demasiado tarde. ~
-@115 = ~*suspira* Está bien, <CHARNAME>. Toma este pergamino, con él puedes desencantar al troll. Lorio puede relajarse, yo no iré más al lago, encontraré otro lugar para recolectar hierbas. En realidad, gracias... tal vez mi conciencia realmente me hubiera dolido. ~
-@116 = ~¡Oh, es mi gran y generoso amigo <CHARNAME>! ~ ~ ¡Oh, es mi gran y generoso amigo <CHARNAME>! ~
-@117 = ~Escucha, Mod, tengo la impresión de que tus pequeñas manos son lo suficientemente ágiles como para convencer a alguien de desprenderse de algo que tal vez no quiera renunciar... ~
-@118 = ~*Guiños* ¡Y cómo! Piensas correctamente, mi<PRO_LADYLORD>. ¿Y quién es este hombre? ¿Es la Sra. Cragmoon? ~
-@119 = ~Esa es. Necesitamos conseguirle el pergamino desencantador... ~
-@120 = ~¡Tomaré todos los pergaminos que pueda encontrar! Luego devolveré el sobrante... si quieres. Espérame aquí, no tardaré. ~
-@122 = ~Aquí tienes. ¿Cuál necesitas? ~
-@123 = ~¡Ese es! Gracias, Mod. Brindo por las molestias. ~
-@124 = ~¡Fue un placer hacer negocios contigo, mi<PRO_LADYLORD>! Si necesitas algo más, solo pídelo. ~
-@125 = ~*La Sra. Cragmoon te mira con tristeza*~
-@126 = ~¿Lo hiciste tú, <CHARNAME>? El pergamino desencantador ha desaparecido... ¡No intentes hacerte el inocente! Bueno, puedes alegrarte: no volveré a aparecer por el lago y dejaré en paz al tonto de Lorio. Es hora de dejar esta historia atrás. ~
+@110 = ~*Estás tratando de robar el pergamino sin encantamiento de la Señora Lunrisco*~
+@111 = ~*Tienes el pergamino. Ahora por fin puedes volver al Paseo de Waukin y desencantar a la desafortunada sirena*~
+@112 = ~*Tus intentos de averiguarlo por tu cuenta no condujeron a nada. Probablemente valga la pena contarle todo a Lorio después de todo*~
+@113 = ~Bien, es suficiente. Ya veo tu punto. Realmente, ¿por qué debería interferir en la vida de Lorio si él mismo quiere actuar como el máximo idiota?~
+@114 = ~Creo que merece la pena arreglarlo todo antes de que sea demasiado tarde. ~
+@115 = ~*Suspira* Ok, <CHARNAME>. Toma este pergamino , con el puedes desencantar al troll. Lorio puede estar tranquilo, no iré más al lago, encontraré otro lugar para recoger hierbas. En realidad, gracias... tal vez mi conciencia realmente me hubiera lastimado. ~
+@116 = ~¡Oh, es mi gran y generoso amigo <CHARNAME>! ~ ~ ¡Oh, es mi gran y generosa amiga <CHARNAME>!  ~
+@117 = ~Escucha, Mod, tengo la impresión de que tus manitas son lo bastante ágiles como para convencer a alguien de que se desprenda de algo de lo que quizá no quiera desprenderse... ~
+@118 = ~*Guiños* ¡Y cómo! Piensas correctamente, mi Señor. ¿Y quién es este hombre? ¿Es la Señora Lunrisco? ~ ~*Guiños* ¡Y cómo! Piensas correctamente, mi Señora. ¿Y quién es este hombre? ¿Es la Señora Lunrisco? ~
+@119 = ~Esa es. Tenemos que conseguir el pergamino de desencantamiento de ella... ~
+@120 = ~¡Me llevaré todos los pergaminos que encuentre! Luego te devolveré el sobrante... si quieres. Espérame aquí, no tardaré. ~
+@122 = ~Aquí lo tienes. ¿Cuál necesitas? ~
+@123 = ~¡Ese es! Gracias, Mod. A tu disposición por las molestias. ~
+@124 = ~¡Encantado de hacer negocios contigo, mi Señor! Cualquier otra cosa que necesite, sólo pregunta. ~ ~¡Encantado de hacer negocios contigo, mi Señora! Cualquier otra cosa que necesite, sólo pregunta. ~
+@125 = ~*La Señora Lunrisco te mira sombríamente*~
+@126 = ~¿Qué haces, <CHARNAME>? El pergamino de desencanto ha desaparecido... ¡No intentes hacerte el inocente! Bien, puedes regocijarte , no apareceré más por el lago, y dejaré en paz al tonto de Lorio. Es hora de dejar esta historia atrás. ~
 
-//Lorio, Cragmoon (conflicto)
-@127 = ~Escucha, Lorio. No te pongas nervioso, pero he conseguido averiguar algo sobre tu caso. (Cuéntale todo sobre la señora Cragmoon) ~
-@128 = ~*Pálido de ira* ¡Ah, eso es todo! ¡Y yo consideraba a esta bruja mi amiga! Incluso le pedí ayuda. Bueno, no importa, le arrancaré ese pergamino de las manos. ¡Pagará por todo lo que le hizo a mi Eirin! ~
+//Lorio, Cragmoon (conflict)
+@127 = ~Escucha, Lorio. No te pongas nervioso, pero he conseguido averiguar algo sobre tu caso. (Cuéntale todo sobre la Señora Lunrisco) ~
+@128 = ~*Palideciendo de ira* ¡Oh, eso es! ¡Y yo que consideraba a esta bruja mi amiga! Incluso le pedí ayuda. Bueno, eso no importa, le arrancaré ese pergamino de las manos. ¡Pagará por todo lo que le hizo a mi Eirin! ~
 @129 = ~¡Lo sé todo, maldita bruja! ¿Qué has hecho? ~
 @130 = ~¡Sólo quería ayudarte! Y esperaba que algún día tú y yo... ~
-@131 = ~¡Ah, esperabas... vil traidor! ~
-@132 = ~¿Él... me levantó la mano? ¡¿Contra mí?! ¡Y yo pensé... bastardo! ¿Qué, <CHARNAME>, es esto lo que querías? Toma, toma este estúpido pergamino, haz lo que quieras con él. Ya no me importa. Me olvidaré de todo esto. Y buscaré otro lugar para recolectar hierbas... ~
-@133 = ~*Tienes un Pergamino Disipador, el hechizo que contiene es realmente único. El pergamino se puede vender por un alto precio, pero no dejarás a una desafortunada sirena en problemas. Lo que sabes sobre criaturas como esta sugiere que morirá, si se la deja sin agua durante mucho tiempo*~
-@134 = ~*Salva a Eirin*~
-@135 = ~*Quédate con el pergamino para ti*~
-@136 = ~*La sirena necesita ser desencantada lo antes posible. Ella ya ha sufrido*~
-@137 = ~*Ya estás harto de este asunto. Decides dejar a la sirena a su triste destino*~
-@138 = ~¿Sí? ¿Qué pasa? ~
+@131 = ~¡Oh, que esperabas... vil traidor! ~
+@132 = ~¿Él... me levantó la mano? ¡¿Contra mí?! Y yo pensé... ¡Bastardo! ¿Qué, <CHARNAME>, es esto lo que querías? Toma, coge este estúpido pergamino, haz lo que quieras con él. Ya no me importa. Me olvidaré de todo esto. Y buscaré otro lugar para recolectar hierbas... ~
+@133 = ~*Tienes un pergamino de disipación, el hechizo que contiene es realmente único. El pergamino puede ser vendido por un alto precio, pero no dejarás a una desafortunada sirena en problemas. Lo que sabes de criaturas como ella sugiere que morirá, si se la deja sin agua por mucho tiempo*~
+@134 = ~*Salvar a Eirin*~
+@135 = ~*Quédate el pergamino para ti*~
+@136 = ~*Hay que desencantar a la sirena lo antes posible. Ya ha sufrido lo suficiente*~
+@137 = ~*Ya estás harto de este asunto. Decides dejar a la sirena a su triste suerte*~
+@138 = ~¿Sí? ¿Qué hay de nuevo? ~
 
-// Cragmoon (adición)
-@139 = ~Quizás valga la pena hablar con esta señora Cragmoon... ~
+// Cragmoon (addition)
+@139 = ~Podría valer la pena hablar con esta Señora Lunrisco... ~
 
 // Eirin
-@140 = ~¡Ah! ¡Soy yo mismo de nuevo! No más trolls vil... ¡Qué fácil es vivir, respirar! ¡Gracias! Pero te lo ruego, ten piedad, déjame salir de esta jaula, necesito llegar al agua... ~
+@140 = ~¡Ah! ¡Vuelvo a ser yo misma! Se acabó el vil troll... ¡qué fácil es vivir, respirar! ¡Gracias! Pero te lo ruego, ten piedad, déjame salir de esta jaula, necesito llegar al agua... ~
 @141 = ~Eso es. ¡Y la pequeña Aerie tenía razón! No tenemos un simple troll. ¿Quién le hizo esto a esta belleza? ~
-@142 = ~¡Te lo dije, tío Quayle! ¿No? ¡Date prisa, sácala de la jaula pronto! ~
-@143 = ~Está bien, ya voy... Hasta aquí el dinero que pagamos por el troll. ~
+@142 = ~¡Te lo dije, tío Quayle! ¿No es así? ¡Deprisa, sácala pronto de la jaula! ~
+@143 = ~Muy bien, ya voy... Demasiado para el dinero que pagamos por el troll. ~
 @144 = ~¡Libre! ¡Realmente libre! ¿Dónde está Lorio? ~
-@145 = ~Ahora me temo que tendré que decepcionarte. Lorio está en prisión. *Le cuentas a Eirin lo que pasó*~
-@146 = ~*profundamente entristecido* ¿Todos los hombres humanos son así? Tontos impacientes... Pero él trató de salvarme... Dile que voy a regresar a nuestro lago, y que lo esperaré allí tanto como pueda. Aun así, me alegro de ser libre de nuevo, y mi tormento ha terminado. ¡Gracias! Por favor acepta este regalo mío. ~
-@147 = ~Uf. Qué historia tan extraña, pero todo está bien si termina bien. ~
-@148 = ~¡Ahí está! ~
-@149 = ~Otra vez nos encontramos aquí, <CHARNAME>. Obtuve mi espada de Cromwell, me voy, y quería echar un último vistazo a... Espera... ¿está vacía la jaula otra vez? ~
-@150 = ~¡Lorio! ~
+@145 = ~Ahora me temo que tendré que decepcionarte. Lorio está en prisión. *Dile a Eirin lo que pasó*~
+@146 = ~*profundamente entristecido* ¿Todos los hombres humanos son así? Tontos impacientes... Pero él trató de salvarme... Dile que vuelvo a nuestro lago, y que le esperaré allí todo el tiempo que pueda. Aún así, me alegro de ser libre de nuevo, y mi tormento ha terminado. ¡Gracias! Por favor, acepta este regalo de mi parte. ~
+@147 = ~Uf. Qué historia más extraña, pero bien que esto se termino. ~
+@148 = ~¡Allí está! ~
+@149 = ~De nuevo nos encontramos aquí, <CHARNAME>. Recibí mi espada de Cromwell, me voy, y quería darle un último vistazo a... Espera... ¿la jaula está vacía otra vez? ~
+@150 = ~Lorio! ~
 @151 = ~Qué... no puede ser. ¡Eirin! Eirin, cariño, estás viva ~
-@152 = ~Sí, mi Lorio. Convertido en un troll repugnante, languidecí sin ti y sin agua, que es mi vida... Te llamé mentalmente, y viniste - mi único consuelo... y dolor - porque no me reconociste. ~
-@153 = ~Pero el héroe benévolo me quitó el hechizo aterrador. Vuelvo a ser yo mismo, y estamos juntos de nuevo. ¡Volvamos pronto a nuestro lago, amor! Allí seremos felices de nuevo. ~
-@154 = ~¿Tú... el troll? ¿Hechizo? ¡Oh, Eirin! Y yo mismo, con mis propias manos, te capturé, te metí en esta jaula... ~
-@155 = ~¿Cómo lo supiste, Lorio... alguien nos jugó una broma cruel? ~
-@156 = ~Dime quién - ¡lo destruiré! ~
-@157 = ~No lo sé, amor. Pero me gustaría volver al lago lo antes posible. Es duro para mí sin agua... ~
-@158 = ~Lorio, escúchala. Quienquiera que lo haya hecho, ahora ya no estás en peligro. No pienses en venganza, piensa en proteger tu propia felicidad. ~
-@159 = ~Está bien, <CHARNAME>. No sé cómo agradecerte... ¿Quizás aceptarías esta espada como regalo? Soy un pescador, no un guerrero, y ya que me quedo, deja que esta arma te sirva. Estoy seguro de que serás mejor usándola que yo. ¡Gracias de nuevo! ~
-@160 = ~¡Dulce Aerie! Fuiste un sorbo de agua para mí en esta terrible experiencia. Gracias por tu amabilidad. ~
-@161 = ~Sí, n-no del todo... ¡Estoy tan feliz de que estés bien ahora, Eirin! ~
-@162 = ~Ven a visitarnos a nuestro lago. Es tan bonito... ~
+@152 = ~Sí, mi Lorio. Convertido en un asqueroso troll, languidecí sin ti y sin agua, que es mi vida... Te llamé mentalmente, y viniste , mi único consuelo... y dolor , porque no me reconociste. ~
+@153 = ~Pero el héroe benévolo me quitó el hechizo aterrador. Soy yo misma otra vez, y estamos juntos de nuevo. ¡Volvamos pronto a nuestro lago, amor! Allí volveremos a ser felices. ~
+@154 = ~¿Tú... el troll? ¿Hechizo? ¡Oh, Eirin! Y yo mismo, con mis propias manos, te capturé, te puse en esta jaula ... ~
+@155 = ~Cómo lo sabías, Lorio... alguien nos jugó una broma cruel. ~
+@156 = ~Dime quién, ¡lo destruiré! ~
+@157 = ~No lo sé, amor. Pero me gustaría volver al lago lo antes posible. Es difícil para mí estar sin agua... ~
+@158 = ~Lorio, escúchala. Quienquiera que lo haya hecho, ahora ya no estás en peligro. No pienses en la venganza, piensa en proteger tu propia felicidad. ~
+@159 = ~Ok, <CHARNAME>. No sé cómo agradecértelo... ¿Quizás aceptes esta espada como regalo? Soy pescador, no guerrero, y ya que me quedo, que esta arma te sirva. Estoy seguro de que sabrás usarla mejor que yo. ¡Gracias de nuevo! ~
+@160 = ~¡Dulce Aerie! Fuiste un sorbito de agua para mí en este terrible calvario. Gracias por tu bondad. ~
+@161 = ~Sí, en absoluto... ¡Estoy tan contenta de que estés bien ahora Eirin! ~
+@162 = ~Ven a visitarnos a nuestro lago. Es tan bonito ... ~
 @163 = ~Por supuesto, nos encantaría verte. Gracias de nuevo por todo. ~
 
-// Lorio (en prisión)
+// Lorio (in prison)
 @164 = ~Oh, ¿eres tú, <CHARNAME>? Actué como un tonto, ¿verdad? ~
-@165 = ~*Le estoy contando lo de Eirin*~
-@166 = ~Sí, claro que lo hiciste. ~
-@167 = ~Me lo merezco. No tengo nada y no pude ayudar a Eirin... ~
-@168 = ~Solo vine a saludar, tengo que irme. Pero aguanta. ~
-@169 = ~Gracias por eso también. ~
-@170 = ~*Aliviado* Así que mi belleza está viva y bien... ¿Cómo puedo agradecerte, <CHARNAME>? Te debo una eternidad. Pero se fue... bueno, las sirenas no pueden estar mucho tiempo sin agua... ¡Ojalá me dejaran salir de aquí! ~
-@171 = ~Escucha, Lorio. Eirin es encantadora, pero es una sirena. Y tú eres un hombre. ¿Estás seguro de que sois el uno para el otro? Ella te esperará un rato, pero luego se consolará con otra. ¿Por qué no le prestas atención a la señora Cragmoon? Sí, hizo muchas cosas, pero solo porque considera a las sirenas monstruos sin alma, y ??solo quería protegerte. Creo que te reconciliarás. ~
-@172 = ~No soporto ver que una historia de amor tan hermosa termine a un paso de un final feliz. ¿Sabes qué? Déjame pagarle a quien lo necesite y te dejarán salir de aquí. Y tú te apresurarás a ir a tu Eirin... antes de que algún elfo marino te la aleje. ~
-@173 = ~*Triste* Tal vez haya algo en tus palabras... Pensaré en ellas. No tengo nada más que hacer aquí, solo pensar. De todos modos, gracias por todo. Cuídate. ~
+@165 = ~*Hablarle de Eirin*~
+@166 = ~Sí, claro que sí. ~
+@167 = ~Me lo merezco. No conseguí nada y no pude ayudar a Eirin... ~
+@168 = ~Sólo vine a saludar, me tengo que ir. Pero tú aguanta. ~
+@169 = ~Gracias también por eso. ~
+@170 = ~*Aliviado* Así que mi belleza está viva y bien ... ¿Cómo puedo agradecértelo, <CHARNAME>? Te debo para siempre. Pero ella se fue... bueno, las sirenas no pueden estar sin agua por mucho tiempo... ¡Ojalá me dejaran salir de aquí! ~
+@171 = ~Escucha, Lorio. Eirin es encantadora, pero es una sirena. Y tú eres un hombre. ¿Estás seguro de que estáis hechos el uno para el otro? Ella te esperará un tiempo, pero luego se consolará con otro. ¿Por qué no le prestas atención a la Señora Lunrisco? Sí, hizo muchas cosas, pero sólo porque considera a las sirenas monstruos sin alma, y sólo quería protegerte. ~
+@172 = ~No soporto ver que una historia de amor tan bonita acabe a un paso del final feliz. ¿Sabes una cosa? Déjame pagar a quien lo necesite y te dejarán salir de aquí. Y tú te apresurarás con tu Eirin... antes de que algún elfo del mar te la arrebate. ~
+@173 = ~*Triste* Tal vez haya algo en tus palabras... Pensaré en ellas. No tengo nada más que hacer aquí, sólo pensar. De todos modos, gracias por todo. Cuidate. ~
 @174 = ~Tú también. Adiós Lorio. ~
-@175 = ~¿Qué? ¿De verdad harás esto, <CHARNAME>? ¡No tienes idea de cuánto deseo verla, abrazarla, ver de primera mano que todo está bien con ella! ~
-@176 = ~Eso es genial. Entonces espera, vuelvo enseguida. ~
-@177 = ~¡Gracias de nuevo! Estoy en deuda contigo. De todos modos, ¡voy a verla! Pero primero iré a ver a Cromwell y le diré que te dé esa espada que le pedí. Eso es lo menos que puedo hacer para agradecerte. Ven a nuestro lago, <CHARNAME>. Eirin y yo estaremos muy contentos de verte. ~
-@178 = ~Todo está bien si termina bien. ~
-@179 = ~Bueno, Lorio, solo puedo desearles paciencia a ambos. Espero que Eirin te espere. ~
+@175 = ~¿Qué? ¿De verdad vas a hacer esto, <CHARNAME>? ¡No tienes ni idea de las ganas que tengo de verla, de abrazarla, de comprobar de primera mano que todo va bien con ella! ~
+@176 = ~Estupendo. Entonces espera, ahora vuelvo. ~
+@177 = ~Gracias de nuevo. Estoy en deuda contigo. De todos modos, ¡voy a verla! Pero primero iré a ver a Cromwell y le diré que te dé la espada que le encargué. Es lo menos que puedo hacer para agradecértelo. Ven a nuestro lago, <CHARNAME>. Eirin y yo estaremos muy contentos de verte. ~
+@178 = ~Todo lo que acaba bien está bien. ~
+@179 = ~Bueno Lorio, sólo puedo desearos paciencia a los dos. Espero que Eirin te espere. ~
 @180 = ~*Amargamente* Yo también lo espero. ~
 
-// Supervisor
-@181 = ~Mira, un amigo mío terminó aquí por error. Se llama Lorio, arrestado por agredir a una mujer. De hecho, fue ella quien lo atacó, y él solo se defendió. ~
-@182 = ~Escucha, un amigo mío está detenido. Se llama Lorio. ¿Cuánto te costará dar la espalda por un tiempo mientras lo libero? ~
+// Overseer
+@181 = ~Mira, un amigo mío terminó aquí por error. Se llama Lorio, detenido por agredir a una mujer. De hecho, fue ella quien le atacó, y él sólo se defendió. ~
+@182 = ~Escucha, un amigo mío está detenido. Se llama Lorio. ¿Cuánto te costará darle la espalda por un tiempo mientras lo libero?~
 @183 = ~El oficial piensa diferente y este tipo será juzgado. A menos, por supuesto, que pagues su... uh, fianza. Sí, llamémoslo así. Dada la gravedad del acto que cometió, se necesitarían... Hmm, 100 de oro. ~
-@184 = ~¡Cómo te atreves, bastardo! ¡No aceptamos sobornos! Pero si pones... hmm, fianza para él. Sí, llamémoslo así... Me encargaré de ello. Dada la gravedad de su acción, necesitaría... Hmm, 100 monedas de oro. ~
-@185 = ~Está bien, aquí está la... fianza. ~
+@184 = ~¡Cómo te atreves, bastardo! ¡No aceptamos sobornos! Pero si pones... hmm, fianza por él. Sí, llamémoslo así... Me encargaré de ello. Dada la severidad de su acto, tomaría... Hmm, 100 de oro. ~
+@185 = ~Bien, aquí está la... fianza. ~
 @186 = ~No tengo tanto. ¿No podrías darme un respiro? ~
-@187 = ~No, 100 monedas de oro por este granuja es demasiado. Déjalo pudrirse en la cárcel. ~
-@188 = ~¡Esto no es una tienda, no hay descuentos! Si no tienes dinero, ¡lárgate de aquí! ~
-@189 = ~¿Qué, ahora tienes el dinero? 100 monedas sobre la mesa y tu amigo es libre. ~
-@190 = ~Parece que tu amigo no es tan querido para ti, ¿verdad? ¡Ajá! ~
+@187 = ~No, 100 de oro por este pilluelo es demasiado. Que se pudra en la cárcel. ~
+@188 = ~Esto no es una tienda, ¡no hay descuentos! ¡Si no tienes oro, vete de aquí! ~
+@189 = ~¿Qué, ahora tienes el oro? 100 monedas sobre la mesa y tu amigo es libre. ~
+@190 = ~Parece que tu amigo no te es tan querido, ¿verdad? ¡Ah! ~
 @191 = ~Genial, menos trabajo para mí. Es libre de irse. ~
 
-// Lorio (adiciones)
-@192 = ~¡Si me pueden ayudar, les estaré eternamente agradecido! ~
+// Lorio (additions)
+@192 = ~Si puedes ayudarme, te estaré eternamente agradecido~
 
-// Más reacciones del grupo
-@193 = ~¡A mi tío abuelo también le pasó! De alguna manera se emborrachó con amigos bebiendo aguardiente de nabo, apenas llegó a casa y se quedó dormido, y cuando se despertó, había un troll enojado cerca. Bueno, eso pensó por la borrachera. Pronto se dio cuenta de que no era un troll, sino su esposa. Y entonces se asustó mucho: después de todo, ¡enfadada estaba más enojada y más fría que cien trolls de hielo! Y en ese momento ella estaba muy enojada, porque él gastó en bebida todo el dinero que ella le dio. Se suponía que debía comprar tablones con él para reparar el techo. Sí, el techo había tenido goteras durante varias semanas y con la lluvia la habitación se inundó de agua, por lo que solo se podía entrar al dormitorio nadando... Y los Jansen nunca fueron buenos nadadores, especialmente mi tía abuela. Y entonces, significa que ella estaba parada sobre mi tío abuelo y ya estaba levantando su mano con un rodillo sobre su cabeza, cuando de repente... ~
-@194 = ~Jan, ¿puedes decírmelo más tarde? Lorio parecía querer decir algo también. ~
-@195 = ~Siempre eres así. ¡Interrumpe una historia así en la parte más interesante! ~
-@196 = ~¿Alguna bruja estúpida puede hacer hechizos inusuales de alto nivel? ¡Imposible, a menos que haya estudiado en alguna escuela destacada de artes mágicas! Y si lo hiciera, habría oído hablar de ella. ~
-@197 = ~Entonces probablemente se trata de algún charlatán que logró lanzar un hechizo por casualidad. (¡Ni siquiera yo podría hacer una ilusión que funcionara después de la muerte! ¿Cómo lo hizo?) ~
-@198 = ~Para nada, la conozco desde hace mucho tiempo y le compré pergaminos muchas veces. Es una bruja muy reservada pero poderosa. ~
-@199 = ~¿Bruja? ¿Tiene un defensor? ¿Como cuando Minsc y Boo defendieron a nuestra bruja? Eh, ahora Boo está triste, recordando a su amada Dynaheir... Y yo también... ~
-@200 = ~<CHARNAME>, ¿no tienes nada mejor que hacer, que ayudar a todo tipo de monstruos? Será mejor que vendas el pergamino, podemos usar el dinero. ~
-@201 = ~Esta historia necesita ser traducida a verso. Sería una buena balada.~
-@202 = ~Oh, qué historia tan romántica resultó ser... Ya puedo escuchar la balada que se canta por todo Faerun sobre cómo el valiente Sir Garrick y sus fieles asistentes no temieron al espeluznante troll y le devolvieron su verdadera apariencia y amor... ~
+// More group reactions
+@193 = ~A mi tío abuelo también le pasó. De alguna manera se emborrachó con unos amigos a base de moonshine de nabo, apenas llegó a casa y se quedó dormido, y cuando despertó, había un troll enfadado cerca. Bueno, eso pensó él por la borrachera. Pronto se dio cuenta de que no se trataba de un troll, sino de su mujer. Y entonces se asustó de verdad: ¡después de todo, cuando se enfadaba era más furiosa y fría que cien trolls de escarcha! Y en aquel momento ella estaba muy enfadada, porque él se había gastado en bebida todo el dinero que ella le había dado. Con él debía comprar tablones para reparar el tejado. Sí, el tejado tenía goteras desde hacía varias semanas y cuando llovía la habitación se inundaba de agua, de modo que sólo se podía entrar en el dormitorio nadando... Y los Jansen nunca fueron buenos nadadores, especialmente mi tía abuela. Y así, quiere decir que ella estaba de pie sobre mi tío abuelo y ya estaba levantando la mano con un rodillo por encima de su cabeza, cuando de repente... ~
+@194 = ~Jan, ¿puedes decírmelo más tarde? Lorio también parecía querer decir algo. ~
+@195 = ~Siempre eres así. ¡Interrumpir una historia en la parte más interesante! ~
+@196 = ~¿Una bruja estúpida puede hacer hechizos inusuales de alto nivel? Imposible, a no ser que haya estudiado en alguna escuela destacada de artes mágicas. Y si lo hizo, habría oído hablar de ella. ~
+@197 = ~Así que probablemente se trate de algún charlatán que consiguió hacer un hechizo por casualidad. (¡Ni siquiera yo podría hacer una ilusión que funcionara después de la muerte! ¿Cómo lo hizo???) ~
+@198 = ~En absoluto, la conozco desde hace mucho tiempo y le he comprado pergaminos muchas veces. Es una bruja muy reservada pero poderosa. ~
+@199 = ~¿Bruja? ¿Tiene un defensor? ¿Como Minsc y Bubu defendieron a nuestra bruja? Eh, ahora Bubu  está triste, recordando a su amada Dynaheir... Y yo también... ~
+@200 = ~<CHARNAME>, ¿no tienes nada mejor que hacer que ayudar a todo tipo de monstruos? Mejor vender el pergamino, podemos utilizar el oro. ~
+@201 = ~Esta historia debe traducirse al verso. Sería una buena balada.~
+@202 = ~Oh, qué historia tan romántica resultó ser esta... Ya puedo oír la balada que se canta en todo Faerun sobre cómo el valiente Sir Garrick y sus fieles ayudantes no temieron al troll espeluznante y le devolvieron su verdadero aspecto y amor... ~
 @203 = ~Esta historia es realmente romántica. Pero más que eso, demuestra que bajo el sol del amor todos los pájaros vuelan en igualdad de condiciones, ya que es capaz de unir incluso a un hombre con una sirena. ~
-@204 = ~Tiax quería que una sirena viviera en su palacio y le cantara canciones. Pero estos dos están tan felices que decidió no interponerse entre ellos. Después de todo, todavía hay muchas sirenas en el mar, y cualquiera consideraría un honor servirle si así lo desea. ~ [PPTIAX12]
-@205 = ~Por supuesto, si ella supiera qué futuro le esperaba y qué tesoros podría arrojar a sus pies Tiax, Señor de los Mundos, ¡habría dejado a este pescador mendigo de inmediato! ~
-@206 = ~Estoy de acuerdo con el enano. Deja de hacer recados para los campesinos y de ayudar a todos a diestra y siniestra. ~
+@204 = ~Tiax quería una sirena que viviera en su palacio y le cantara canciones. Pero estas dos son tan felices que decidió no interponerse entre ellas. Después de todo, aún quedan muchas sirenas en el mar, y cualquiera consideraría un honor servirle si así lo desea. ~ [PPTIAX12]
+@205 = ~Desde luego, si hubiera sabido el futuro que le esperaba y los tesoros que Tiax, Señor de los Mundos, podía arrojar a sus pies, ¡habría abandonado de inmediato a este pescador mendigo!~
+@206 = ~Estoy de acuerdo con el enano. Deja de hacer recados a los campesinos y de ayudar a todo el mundo a diestro y siniestro. ~
 @207 = ~<CHARNAME>, ¡debemos ayudar a la pobre sirena o morirá! ¡Por favor! ~
-@208 = ~Creo, <CHARNAME>, que debemos hacer una buena acción y devolverle a la sirena su forma. Depende de ti, por supuesto, pero escucha a tu corazón. ~
+@208 = ~Creo, <CHARNAME>, que tenemos que hacer una buena obra y devolver la sirena a su forma. Depende de ti, por supuesto, pero escucha a tu corazón. ~
 
 // Cromwell
-@209 = ~El pescador Lorio dijo que podía tomar la espada que preparaste para él. ~
-@210 = ~Oh, ese pescador... Le dije de inmediato que no era un guerrero, pero insistió. De todos modos, traté de hacer su espada más fuerte para que no lo mataran tan rápido. ¡Aquí tienes! ~
-
+@209 = ~El pescador Lorio dijo que podía coger la espada que le preparaste. ~
+@210 = ~Oh, ese pescador... Le dije enseguida que no era un guerrero, pero insistió. De todos modos, traté de hacer su espada más fuerte para que no lo mataran tan rápido. ¡Aquí tienes!~

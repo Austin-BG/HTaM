@@ -330,26 +330,26 @@
 
 // NUEVO (v.4.6)
 // Coran en el banco + Safana
-@577 = ~¿Puede ayudarme a enviar oro a Baldur's Gate?~
-@578 = ~¿A Baldur's Gate, señor? Sí, es posible, aunque no tenemos una sucursal allí. Nuestro agente puede enviar la cantidad necesaria, le escribiré. Calcularía la comisión en cien monedas. Por supuesto, el agente enviará un recibo aquí.~
-@579 = ~Está bien. Entonces quiero enviar mil.~
-@580 = ~Por favor, escriba el nombre y la dirección del destinatario. Si el agente no puede encontrar a la persona, se le devolverá el dinero, menos la comisión.~
-@581 = ~El destinatario es Namara, su madre, Brielbara, recibirá el dinero en su nombre.~
-@582 = ~¿Es por eso que ha sido tan frugal con las flechas durante el último mes? Y nos sorprendió la habilidad con la que derribaste a dos de una sola flecha. Y comenzaste a beber vino más simple.~
-@583 = ~¿Valió la pena estar en un lejano país del sur para recordar a tus seres queridos?~
-@584 = ~*Sonríe satisfecho* Fue un buen disparo, ¿eh? Pero por favor no me recuerdes esa bebida agria que solo se llamaba vino por error. Y tienes razón sobre el dinero. Tuve que recortar para poder enviarles algo a Brielbara y Namara.~
-@585 = ~Los destinos de Brielbara y el mío son demasiado diferentes para que el matrimonio sea feliz. No estoy destinado a compartir la eternidad con ella. Pero puedo enviar el dinero.~
-@586 = ~Está bien, termina tu asunto y vámonos.~
-@587 = ~¿Pero no es Brielbara la que no está destinada a vivir para siempre?~
-@588 = ~Qué bueno que recordaste tus deberes.~
-@589 = ~Creo que a la pequeña Namara le vendrían bien otras quinientas monedas de oro nuevas. Que sea un regalo de todos nosotros.~
+@577 = ~¿Puedes ayudarme a enviar oro a Puerta de Baldur?~
+@578 = ~¿A Puerta de Baldur, señor? Sí, es posible, aunque no tenemos sucursal allí. Nuestro agente puede enviar la cantidad necesaria, le escribiré. Yo calcularía la comisión en cien monedas. Por supuesto, el agente enviará un recibo aquí.~
+@579 = ~De acuerdo. Entonces quiero enviar mil.~
+@580 = ~Por favor, anote el nombre y la dirección del destinatario. Si el agente no puede encontrar a la persona, se le devolverá el dinero, menos la comisión.~
+@581 = ~La beneficiaria es Namara, su madre, Brielbara, recibirá el dinero en su nombre.~
+@582 = ~¿Por eso has sido tan frugal con las flechas el mes pasado? Y nos sorprendió lo hábilmente que derribaste a dos con una flecha. Y empezaste a beber vino más simple.~
+@583 = ~¿Merecía la pena estar en un lejano país del sur para recordar a tus seres queridos?~
+@584 = ~*Sonríe satisfecho* Fue un buen tiro, ¿eh? Pero, por favor, no me recuerdes esa cosa agria que sólo por error se llamaba vino. Y tienes razón en lo del dinero. Tuve que recortar para poder enviar algo a Brielbara y Namara.~
+@585 = ~Los destinos de Brielbara y mío son demasiado diferentes para que el matrimonio sea feliz. No estoy destinado a compartir la eternidad con ella. Pero puedo enviar el dinero.~
+@586 = ~Bien, termina tus asuntos y vámonos.~
+@587 = ~¿Pero no es Brielbara la que no está destinada a vivir eternamente?~
+@588 = ~Menos mal que recordaste tus deberes.~
+@589 = ~Creo que a la pequeña Namara le vendrían bien otras nuevas quinientas monedas de oro. Que sea un regalo de todos nosotros.~
 @590 = ~*Escribe rápidamente la dirección y le entrega el oro a Uri*~
 @591 = ~<CHARNAME>, estos son detalles innecesarios, no puedes ser tan aburrido.~
-@592 = ~*El elfo parece preocupado* ¿Quieres tomar dinero de la caja del escuadrón? Te lo agradezco, ¿por supuesto? Pero... yo...~
-@593 = ~Demasiadas palabras. Solo toma el dinero y vámonos.~
-@594 = ~Gracias, <CHARNAME>. No lo olvidaré.~
-@595 = ~Fue una broma. Namara es tu hija, así que tú pagas. Y luego sigamos adelante.~
-@596 = ~Antes me habría reído de semejante desperdicio de dinero sin sentido. Pero ahora... No conozco a Namara, pero ella es tu familia, y eso significa algo.~
+@592 = ~*El elfo parece preocupado* ¿Quieres coger dinero de la caja del equipo? Estoy agradecido, por supuesto... Pero...Yo...~
+@593 = ~Demasiadas palabras. Sólo toma el dinero y vámonos.~
+@594 = ~Gracias, <CHARNAME>. No olvidaré esto.~
+@595 = ~Era una broma. Namara es tu hija, así que paga. Y luego sigamos adelante.~
+@596 = ~Antes me habría reído de semejante despilfarro de dinero sin sentido. Pero ahora... No conozco a Namara, pero es tu familia, y eso significa algo.~
 @597 = ~Gracias por tu apoyo, Safana.~
-@598 = ~¡Agradécemelo después, cuando todos se vayan a dormir!~
-@599 = ~*Ejem* ¡Siempre estoy a tu servicio, milady!~
+@598 = ~Agradécemelo más tarde, cuando todos se vayan a la cama.~
+@599 = ~*Ejem* ¡Estoy siempre a su servicio, mi señora!~
