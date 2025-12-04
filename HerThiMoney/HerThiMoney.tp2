@@ -27,7 +27,7 @@ END
 
      // convert strings to UTF-8 for BGEE/BG2EE
 	
-ACTION_DEFINE_ARRAY 9xnoconvert BEGIN END
+ACTION_DEFINE_ARRAY 9xnoconvert BEGIN install END
 ACTION_DEFINE_ARRAY 9xreload BEGIN setup END
 
   LAF HANDLE_CHARSETS
@@ -62,7 +62,10 @@ LANGUAGE ~English~
          ~HerThiMoney/tra/English/setup.TRA~
 LANGUAGE ~Spanish (by alaisFcZ)~
          ~Spanish~
-         ~HerThiMoney/tra/Spanish/setup.TRA~		 
+         ~HerThiMoney/tra/Spanish/setup.TRA~
+LANGUAGE ~Simplified Chinese~
+         ~SChinese~
+         ~HerThiMoney/tra/schinese/install.TRA~		 
 		 
 		 
 //
