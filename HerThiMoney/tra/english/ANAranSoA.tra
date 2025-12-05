@@ -40,31 +40,31 @@
 @460 = ~It would seem to me that you've envisioned a very different future for yourself, and your path, let me say frankly, is unique. So why?~
 @461 = ~Your Guild opens the door to marvelous opportunities. Gold, power, adventure -- why would I refuse that?~
 @462 = ~I find myself in a situation where I need support. And support from the Shadow Thieves is nothing to scoff at.~
-@463 = ~I don’t know, Aran. I think it might be fate.~
+@463 = ~I donâ€™t know, Aran. I think it might be fate.~
 @464 = ~*Laughing* Ah, fun and profit, fun and profit! This is indeed our way. You would make an excellent Shadow Thief even if you don't have to actually steal anything. But would you like to take a look at it from another angle? A little more... lofty, shall we say?~
-@465 = ~Oh, do not doubt, you shall have it. Not unconditionally, of course, we aren’t a charity. But I would hope that our mutually advantageous collaboration would lead to... something larger. ~
-@466 = ~Strange, isn’t it. Now that you’ve said it, I think you may be right. Not that I believe in fate... but I would want there to be more between us than just the Guild business.~
+@465 = ~Oh, do not doubt, you shall have it. Not unconditionally, of course, we arenâ€™t a charity. But I would hope that our mutually advantageous collaboration would lead to... something larger. ~
+@466 = ~Strange, isnâ€™t it. Now that youâ€™ve said it, I think you may be right. Not that I believe in fate... but I would want there to be more between us than just the Guild business.~
 @467 = ~I am not quite getting your meaning, Aran... care to clarify?~
-@468 = ~Your words aren’t too clear, but I think I like what you are saying.~
+@468 = ~Your words arenâ€™t too clear, but I think I like what you are saying.~
 @469 = ~It seems to me that business collaboration is going to be enough.~
-@470 = ~I don’t know myself yet. Friendship, perhaps? We’ll wait and see, I guess. But one thing I am certain about - you fascinate me.~
+@470 = ~I donâ€™t know myself yet. Friendship, perhaps? Weâ€™ll wait and see, I guess. But one thing I am certain about - you fascinate me.~
 @471 = ~Is that so? I am happy to hear that. Perhaps this is a beginning of our... friendship, shall we say? I have to confess that you fascinate me quite a lot.~
-@472 = ~Are you sure about that? We’ll wait and see, maybe you’ll change your mind some day. As for me, I would like to pursue a... friendship, shall we say? You fascinate me quite a lot.~
+@472 = ~Are you sure about that? Weâ€™ll wait and see, maybe youâ€™ll change your mind some day. As for me, I would like to pursue a... friendship, shall we say? You fascinate me quite a lot.~
 @473 = ~But I was under impression, for some reason, that the Shadow Master cannot afford to be burdened by friendship... or anything of the sort.~
-@474 = ~An interesting notion. I will admit, it’s a risk, but if I were afraid of risk, I wouldn’t be what I am today. Do try the fruit, by the way. <CHARNAME>, we all revolve among others, people and creatures both like us and unlike us, and we have to enter different sorts of relationships, can’t avoid that. I say we are lucky to be on the same side. As much as I loathe thanking Bodhi for anything, but in this case I am forced to. ~
-@475 = ~So let’s use fate’s gift wisely - after all, everything might have turned out very differently. And for now, let’s get to work - there are many things that need to be done urgently.~
-@476 = ~*The conversation between you and Aran shifts back to generic topics, but you realize that from now on, there’s a tight bond between you and this man and the forces behind him. And it’s not yet clear where this is going to lead*~
+@474 = ~An interesting notion. I will admit, itâ€™s a risk, but if I were afraid of risk, I wouldnâ€™t be what I am today. Do try the fruit, by the way. <CHARNAME>, we all revolve among others, people and creatures both like us and unlike us, and we have to enter different sorts of relationships, canâ€™t avoid that. I say we are lucky to be on the same side. As much as I loathe thanking Bodhi for anything, but in this case I am forced to. ~
+@475 = ~So letâ€™s use fateâ€™s gift wisely - after all, everything might have turned out very differently. And for now, letâ€™s get to work - there are many things that need to be done urgently.~
+@476 = ~*The conversation between you and Aran shifts back to generic topics, but you realize that from now on, thereâ€™s a tight bond between you and this man and the forces behind him. And itâ€™s not yet clear where this is going to lead*~
 
 // Group reactions to the prologue 
 @4 = ~<CHARNAME>, is this really a letter from Aran Linvail, the head of the thieves guild? He's already given us a task, what else does he need?~
 @5 = ~And why does he ask for you to come alone? That's strange.~
 @6 = ~If you do go by yourself, be vigilant; this might be a trap!~
-@7 = ~Why are you supposed to come alone? That’s kind of suspicious. I don't like this.~
+@7 = ~Why are you supposed to come alone? Thatâ€™s kind of suspicious. I don't like this.~
 
 // Episode 2. Encrypted message
-@0 = ~My lady <CHARNAME>! My lady <CHARNAME>! Hello, I am Tony, remember me? You have a letter! You’ll know from whom.~
+@0 = ~My lady <CHARNAME>! My lady <CHARNAME>! Hello, I am Tony, remember me? You have a letter! Youâ€™ll know from whom.~
 @1 = ~*The halfling scurries away, leaving you with the letter in your hands. You carefully open the envelope, take out a sheet of paper and start to read...*~
-@2 = ~«Greetings, <CHARNAME>!  We need to meet for a chat. I am waiting for your visit at any time convenient for you, but please don’t take too long. Try to come alone. Aran Linvail.»~
+@2 = ~Â«Greetings, <CHARNAME>!  We need to meet for a chat. I am waiting for your visit at any time convenient for you, but please donâ€™t take too long. Try to come alone. Aran Linvail.Â»~
 @3 = ~Wonder what this means?~
 @8 = ~*You are intrigued...*~
 @9 = ~ Welcome, <CHARNAME>. I am glad you responded to my request, and I hope that our conversation will be... productive. Would you care for a glass of wine?~
@@ -99,44 +99,44 @@
 @38 = ~Yes, exactly this.~
 @39 = ~I try to keep away from politics.~
 @40 = ~Understandable. But I'm afraid it's not always feasible.~
-@41 = ~We took this letter from a Riatavin courier. Unfortunately, he died before we could interrogate him. But one thing is clear: there is a foreign agent within the Order, perhaps more than one. Many of those holier-than-thou prudes are neck-deep in corruption. Well, I know what to do now. *Laughs) Who would have thought that I’d be working for the Most Noble Order, secretly cleansing it from taint!~
+@41 = ~We took this letter from a Riatavin courier. Unfortunately, he died before we could interrogate him. But one thing is clear: there is a foreign agent within the Order, perhaps more than one. Many of those holier-than-thou prudes are neck-deep in corruption. Well, I know what to do now. *Laughs) Who would have thought that Iâ€™d be working for the Most Noble Order, secretly cleansing it from taint!~
 @42 = ~What kind of murders are the agents of Riatavin planning?~
-@43 = ~From what I know, they plan to attack prominent merchants in charge of supplying the army. We aren’t going to let them. You know,  <CHARNAME>, no matter what they think, Athkatla is my city and I will not let anyone threaten it.~
+@43 = ~From what I know, they plan to attack prominent merchants in charge of supplying the army. We arenâ€™t going to let them. You know,  <CHARNAME>, no matter what they think, Athkatla is my city and I will not let anyone threaten it.~
 @44 = ~(You expect the Shadow Master to say goodbye, but he is silent for a while. Then, he softly and gingerly strokes your cheek with the back of his palm...)~ [aransong]
 @45 = ~You did excellently, <CHARNAME>. You are wonderful. You must be tired... how about we rest a bit?~
-@46 = ~*Aran’s eyes are gleaming brightly. He look straight at you, and his gaze speaks louder than words. He smiles.*~
-@47 = ~There are different ways to rest, aren’t there? The one I am suggesting will bring me much honor, and will bring you, I dare hope, much pleasure. You wouldn’t refuse me, would you, Bhaal’s daughter?~
-@48 = ~*You take an abrupt step back* Bhaal’s daughter? You are interested in me because I am a demigod?~
-@49 = ~But isn’t «demigod» an aspect of your being? This is you, as you are. And I am interested in everything that is included in «you».~
-@50 = ~I won’t deny that I am also intrigued by the person behind the mysterious title of «Shadow Master».~
+@46 = ~*Aranâ€™s eyes are gleaming brightly. He look straight at you, and his gaze speaks louder than words. He smiles.*~
+@47 = ~There are different ways to rest, arenâ€™t there? The one I am suggesting will bring me much honor, and will bring you, I dare hope, much pleasure. You wouldnâ€™t refuse me, would you, Bhaalâ€™s daughter?~
+@48 = ~*You take an abrupt step back* Bhaalâ€™s daughter? You are interested in me because I am a demigod?~
+@49 = ~But isnâ€™t Â«demigodÂ» an aspect of your being? This is you, as you are. And I am interested in everything that is included in Â«youÂ».~
+@50 = ~I wonâ€™t deny that I am also intrigued by the person behind the mysterious title of Â«Shadow MasterÂ».~
 @51 = ~I am afraid I cannot reciprocate, Aran.~
 @52 = ~Then perhaps we should try and get to know each other better? Starting right now.~
-@53 = ~It saddens me to hear it. I don’t have a right to delay you then. I will call you when I need you again.~
+@53 = ~It saddens me to hear it. I donâ€™t have a right to delay you then. I will call you when I need you again.~
 @54 = ~Aran, I could steal your dagger from you. Why do you trust me?~
-@55 = ~Remember, my darling, Shadow Master never trusts a person without a good reason. And what is happening between us is not a matter of trust but rather of... compatibility, shall we say? And I highly doubt that you’d be able to do that trick with the dagger. So what do you say we test... not your dexterity, but our compatibility?~
+@55 = ~Remember, my darling, Shadow Master never trusts a person without a good reason. And what is happening between us is not a matter of trust but rather of... compatibility, shall we say? And I highly doubt that youâ€™d be able to do that trick with the dagger. So what do you say we test... not your dexterity, but our compatibility?~
 @56 = ~Oh yes, I am sure this test might prove... impressive.~
 @57 = ~I am sorry, but no.~
-@58 = ~To be with you... Why wouldn’t I, Aran? This is indeed a nice way to relax.~
+@58 = ~To be with you... Why wouldnâ€™t I, Aran? This is indeed a nice way to relax.~
 @59 = ~Ahhh, my sweet darling...~
 @60 = ~I appreciate the offer, Shadow Master. But still I would rest elsewhere.~
 @61 = ~(Aran embraces you tenderly and kisses you, warmly, tentatively. You respond with joyful willingness, and soon the kisses become very different...)~
 @62 = ~Was I perhaps too insistent? Forgive me. I am left with nothing but my regrets.~
 @63 = ~*It looks like you are falling fast... Aran Linvail is an embodiment of a true Shadow Thief: he is swift and nimble, invisible and flamboyant at once. It seems time has no power over him, age makes no difference. You feel his powerful, insatiable will to live... and will to have, to have treasure, or the whole city, or a woman who caught his eye. Aran radiates an intoxicating feeling of danger, and that excites your divine blood. You are a dangerous being yourself, and it looks like you have met your match... Or not quite?*~
-@64 = ~*When it’s all over, you don’t say anything. Aran walks you to the door in silence, and by the threshold lightly touches his lips to yours*~
+@64 = ~*When itâ€™s all over, you donâ€™t say anything. Aran walks you to the door in silence, and by the threshold lightly touches his lips to yours*~
 @65 = ~Walk carefully, <CHARNAME>, and let shadows shelter you.~
 
 // Group reactions (part 1)
 @66 = ~You were away for a while, <CHARNAME>. Is everything alright?~
 @67 = ~What did he want, <CHARNAME>? I've been waiting for so long!~ [JAHEIR23]
 @68 = ~He asked me to decode an encrypted letter. It was an advanced code, so it took some time.~
-@69 = ~It’s nothing, let’s go.~
-@70 = ~That’s my private business, I don’t want to talk about it.~
-@71 = ~<CHARNAME>, I have a lot of respect for you, but we are a team, so it would be better if the others knew what’s going on.~
+@69 = ~Itâ€™s nothing, letâ€™s go.~
+@70 = ~Thatâ€™s my private business, I donâ€™t want to talk about it.~
+@71 = ~<CHARNAME>, I have a lot of respect for you, but we are a team, so it would be better if the others knew whatâ€™s going on.~
 @72 = ~Alright, we should be on our way. We've lost a lot of time as it is.~
 
 // Episode 3. Messenger from Riatavin 
 @73 = ~Hello, lady <CHARNAME>. You have another letter from you know who!~
-@74 = ~«I would have liked this to be an invitation for another date, but alas, things stand a little different. I am waiting for you. Come without delay, if you can.»~
+@74 = ~Â«I would have liked this to be an invitation for another date, but alas, things stand a little different. I am waiting for you. Come without delay, if you can.Â»~
 @75 = ~Here you are, my swift shadow. I am immensely happy to see you, <CHARNAME>.~
 @76 = ~I am happy to see you too, Aran.~
 @77 = ~Are you happy that I came when you called? Am I to become an obedient dagger in your guiding hand?~
@@ -504,7 +504,7 @@ Love everyone, everyone, because that will save us!'~
 @417 = ~Hmm... meaning? ~
 @418 = ~Just thinking of a bird seeking under the wing of a predatory hawk. ~
 @419 = ~*Laughter* That little bird, my dear bard, also has sharp claws. ~
-@420 = ~Ah, you are a high-flying bird, no one doubts. A true ballad heroine, and someday all the bards of Faerûn will be at your feet. Well, in Sigil, of course, if I get to Sigil again, they will learn songs about you. I promise. ~
+@420 = ~Ah, you are a high-flying bird, no one doubts. A true ballad heroine, and someday all the bards of FaerÑ‹n will be at your feet. Well, in Sigil, of course, if I get to Sigil again, they will learn songs about you. I promise. ~
 @421 = ~But the hawk has such delicate feathers, my friend... ~
 @422 = ~Ah, even a stone would soften for you, my dear! For some reason, I'm not surprised. I'd rather not think about it, though - I'm beginning to envy the Shadow Master. ~
 @423 = ~'Everything goes to hell, worlds roll into the abyss.
@@ -572,12 +572,12 @@ You are different flight, dear birds!'~
 @531 = ~Hello!~
 @532 = ~Hi Lathan. Is everything okay in the guild? ~
 @533 = ~How is my former guild doing, is everything okay? ~
-@534 = ~You know... it's not okay. And I didn’t want to bother you too much, I thought we’ll figure it out ourselves. But since you're asking... ~
+@534 = ~You know... it's not okay. And I didnâ€™t want to bother you too much, I thought weâ€™ll figure it out ourselves. But since you're asking... ~
 @535 = ~It's not okay, you know. ~
 @536 = ~Jovi Gerk is missing. He was supposed to report to work yesterday morning, but he never showed up. He hasn't been seen at the Gift of the Sea, where he usually hangs out. He didn't go to jail, that's for sure, and no one found his body. ~
 @537 = ~Yesterday morning, you say? Weird coincidence. What else do you know about him?~
 @538 = ~Not much. They say he's got an acquaintance with a certain noblewoman. He's kind of a handsome guy. Listen, maybe she locked him in her bedroom and is not letting go out of jealousy, do you think? ~
-@539 = ~*Even after learning something that you think is useful, you cannot draw any conclusions yet. Maybe you should have done what Bloodscalp advised you, but now it’s too late to talk about it. You decide, with Tony's help, to gather as much information as you can about the guests who were at Abu Hazab's party when he demonstrated the wonders of the magic lamp*~
+@539 = ~*Even after learning something that you think is useful, you cannot draw any conclusions yet. Maybe you should have done what Bloodscalp advised you, but now itâ€™s too late to talk about it. You decide, with Tony's help, to gather as much information as you can about the guests who were at Abu Hazab's party when he demonstrated the wonders of the magic lamp*~
 @540 = ~Oh <PRO_SIRMAAM>! I just found out something: it turns out that Lady Rilin's daughter ran away with some suspicious type, and it could well be one of ours. In the girl's room, they found a note, which said something about a meeting in the "Copper Coronet". Is it important, do you think? ~
 @541 = ~*Now you seem to know what to do. And although a lot of time has been wasted, now you are sure that the solution is waiting for you in Copper Coronet.) ~
 @542 = ~*Consider all information gathered*~
@@ -607,7 +607,7 @@ You are different flight, dear birds!'~
 @566 = ~*Letting Bernard understand that you already know a lot and there is no point in denying it* So, Bernard, yesterday some very determined people sent by Lady Rilin came to see you and demanded to know if her daughter Azora had appeared at the Copper Coronet. And they were unlikely to be willing to pay for their story. You blurted out something to them to discourage them, but what was it? Let's get this story straight. ~
 @567 = ~I knew you were looking for that couple too. The guy is from the Shadow Thieves, right? Okay listen... ~
 @568 = ~I'm tired of this gimmick. Here's 100 gold for you - and lay out what is happening here. ~
-@569 = ~That’s right. Okay listen. ~
+@569 = ~Thatâ€™s right. Okay listen. ~
 @570 = ~A couple showed up here last night... right, it's not uncommon, but one was a noble girl - it was immediately obvious. She was kind of upset, even scared, and the guy was comforting her. I brought them hot wine and then led them to the entrance to the sewer... just think - such a girl and into the sewer! She paid me well, said that if they look for her here, I should lie as if I overheard them agreeing to flee to Trademeet. ~
 @571 = ~In the morning, armed men did show up and bombarded me with questions. They were not very kind, and most importantly, I did not receive a dime from them. But they believed me, praise Timor. ~
 @572 = ~I wouldn't say anything to you either, because I was paid to remain silent. But, firstly, you are good at persuasion, and secondly... you know, I would like you to find this girl and bring her back to her mother. Look in the sewers to see if you can find them. I got a feeling I'm gonna be in trouble if the deception gets out. Anyway, if you can, do something. She didn't look happy. ~
@@ -660,7 +660,7 @@ You are different flight, dear birds!'~
 @623 = ~Jovi? Perhaps we should try to restore him. I'm curious what he has to say. ~
 @624 = ~No, please! I... I don't love him anymore. But I do not want such a fate for him! Please. ~
 @625 = ~His fate would have been unenviable anyway. Come on, Azora. We have nothing else to do here. ~
-@626 = ~*Sobs* Okay. Take my cloak in gratitude for my salvation. I don’t want anything to remind of this story. I... I will try not to be such a fool again, I promise. Let's go. ~
+@626 = ~*Sobs* Okay. Take my cloak in gratitude for my salvation. I donâ€™t want anything to remind of this story. I... I will try not to be such a fool again, I promise. Let's go. ~
 @627 = ~Okay, I'll wait. I won't budge without you. ~
 @628 = ~Ah... what... ugh, <CHARNAME>! You've tracked down yet! *Looks around) Azora! My love, a lovely girl, accustomed to expensive toys... who ruined my life for one of them! ~
 @629 = ~What are you talking about? I agreed to run away with you! ~
@@ -693,7 +693,7 @@ You are different flight, dear birds!'~
 @654 = ~Your nature is extremely difficult to understand... but I believe that you, the you that now trembles at my touch, will never be destroyed by anything, no matter what your father's blood does to you. Now... I'm ready to give you rest, oblivion, consolation, call it what you want. We can relax with a cup of Shou Lung tea or make love... Whatever you want. You and I still have time... ~
 @655 = ~Well now! That's a good thought... *You wrap your arms around Aran's neck* Can you tell that I've recently visited the sewers? Of course, I cleaned myself up and rested a little before meeting you, Aran... I've been looking forward to this. ~
 @656 = ~*Aran willingly shares your enthusiasm...*~
-@657 = ~Bright... passionate... how lucky I am to have you, <CHARNAME>! Yes... but this clasp is not easy to open. It’s no more difficult, however, than breaking a cunning lock on a rich chest... but its precious contents are nothing compared to the treasures this lacing hides... ~
+@657 = ~Bright... passionate... how lucky I am to have you, <CHARNAME>! Yes... but this clasp is not easy to open. Itâ€™s no more difficult, however, than breaking a cunning lock on a rich chest... but its precious contents are nothing compared to the treasures this lacing hides... ~
 @658 = ~What about your defense mechanisms, Aran? ~
 @659 = ~*Laughs* Oh, I have no formidable traps or complex locks for you! And yet... ~
 @660 = ~*He picks you up, throws you on the bed, and immediately rushes after you*~
@@ -702,7 +702,7 @@ You are different flight, dear birds!'~
 // Group reactions (Jovi and Azora)
 @662 = ~<CHARNAME>, let's restore these two! I feel so sorry for them... Petrified, in the middle of a terrible sewer... ~ [AERIE33]
 @663 = ~<CHARNAME>, these people need to be restored. It doesn't matter why they ended up here or who they are, you can't leave them like that. ~
-@664 = ~Grab the lamp and let's go to Aran. He’s going to pay a lot of money for this thing! Those assholes are to blame for all of this anyway. ~
+@664 = ~Grab the lamp and let's go to Aran. Heâ€™s going to pay a lot of money for this thing! Those assholes are to blame for all of this anyway. ~
 @665 = ~<CHARNAME>, let me study this lamp... There may be great power hidden in it. We'd better take it for ourselves instead of giving it to Aran! ~
 @666 = ~No, Edwin. Look what happened when the previous owner tried to use it. Let's not risk it. ~
 @667 = ~Pff. These fools had no idea how these things work. Unlike me. Well, suit yourself. (What a fool, missing this chance!) ~
@@ -715,7 +715,7 @@ You are different flight, dear birds!'~
 @674 = ~<CHARNAME>, let's restore him! Poor thing... petrified, in the middle of a terrible sewer... ~
 @675 = ~<CHARNAME>, you need to restore this man. Even if he was dishonorable, you shouldn't leave him like that. ~
 @676 = ~Let's go, <CHARNAME>. This idiot doesn't deserve to be rescued. Let him stand there until he crumbles to dust. ~
-@677 = ~Grab the lamp and let's go to Aran. He’s going to pay a lot of money for this thing! This idiot is to blame anyway. ~
+@677 = ~Grab the lamp and let's go to Aran. Heâ€™s going to pay a lot of money for this thing! This idiot is to blame anyway. ~
 @678 = ~*grim* Here is the victim of nefarious magic. Do as you like, <CHARNAME>, but if I were you, I would try to save him from this fate. ~
 @679 = ~<CHARNAME>, in the name of Tempus, we must restore these people! I went through the same thing, and I know that there is nothing worse than standing like this without hope of salvation. Even the worst thief does not deserve such a fate. ~
 @680 = ~These fools cannot serve the great Tiax while they stand like idols! I command you to break this spell so that they can greet the future ruler of the world! And bring some salted nuts, I'm hungry.~
@@ -772,8 +772,8 @@ You are different flight, dear birds!'~
 // Additions to dialogues with Aran
 @722 = ~That is true, Aran. I do not want to think about her anymore. But I am afraid for you. Danger is lurking all around you.~
 @723 = ~Thank you, <CHARNAME>.~
-@724 = ~*You are still looking at the same intense, energetic leader of the Shadow Thieves you’ve come to know, but something barely perceptible in his eyes, his smile, his gesture of welcome says that he looks at you differently from all his other subordinates*~
-@725 = ~*You feel a yearning within yourself, a yearning to be closer to him, you feel fascinated by this man, and even more... you almost regret refusing him earlier. Maybe you weren’t honest with yourself then... Could it not be too late to make things right?* Aran... believe it or not, but I am also happy to see you. Very happy.~
+@724 = ~*You are still looking at the same intense, energetic leader of the Shadow Thieves youâ€™ve come to know, but something barely perceptible in his eyes, his smile, his gesture of welcome says that he looks at you differently from all his other subordinates*~
+@725 = ~*You feel a yearning within yourself, a yearning to be closer to him, you feel fascinated by this man, and even more... you almost regret refusing him earlier. Maybe you werenâ€™t honest with yourself then... Could it not be too late to make things right?* Aran... believe it or not, but I am also happy to see you. Very happy.~
 @726 = ~*You feel that you don't really need Aran to single you out. It would be better if you stuck to a strictly business relationship. So you don't say anything and just give a half-bow in response. Aran nods.* Did you summon me here for a task or...?~
 @727 = ~ My friend, I like the tone of your voice when you say that...~
 @728 = ~*You handle the code with ease, creating a false report to be passed to Riatavin. Aran is very pleased and expresses his pleasure by tenderly squeezing your shoulder. His hand is warm and strong, despite being slender. You cover it with your own hand affectionately, as if entering some mysterious contract with the Shadow Master.*~
@@ -949,7 +949,7 @@ Aran"~
 @874 = ~Oh, <CHARNAME>, of course I knew you were very brave, but now you surprise me... again. You and Aran Linvail... You play a virtuoso game with this dark fire, huh? It's not my business to advise something in personal matters, just please, be careful not to burn yourself. ~
 @875 = ~Ah, Garrick. Love inspires, don't you know? ~
 @876 = ~Yes... I know that. Although it happens in a different way... hmm. Your love story does not leave the bard's heart indifferent. But do not worry, I will not expand on this in my work, I understand everything. ~
-@877 = ~Garrick, your interest in this topic scares me a little. I don’t want everyone around to know about my relationship with Aran because of your writing. ~
+@877 = ~Garrick, your interest in this topic scares me a little. I donâ€™t want everyone around to know about my relationship with Aran because of your writing. ~
 @878 = ~It was rude, but I understand your concerns. Don't worry, singing the deeds of the daughter of Bhaal, I will leave your love under a veil of shadow. ~
 @879 = ~You're messing with your own business again, bard.~
 @880 = ~Wow... but I thought that Aran is a sophisticated person and appreciates good manners in a woman. I was wrong, huh? ~

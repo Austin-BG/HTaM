@@ -7,7 +7,7 @@
 @2 = ~Tony! Hello! Is everything okay with Aran? ~
 @3 = ~Oh, don't worry! Our Master is alive and well, and he sent me to make sure that the same can be said about you. He also told me to give you this ... ~
 @4 = ~*You accept a packet from Tony that contains a letter and a scroll. With quite understandable excitement, you unfold the letter ...*~
-@5 = ~“My <CHARNAME>!
+@5 = ~â€œMy <CHARNAME>!
 I was greatly disturbed by the news of this mess involving your late parent's heirs. And primarily, of course, because of the fact that you are once again in no small amount of danger. I never considered myself very sensitive, but now I am not ashamed to admit that your absence feels like a void that cannot be filled. Nevertheless, Athkatla is in full swing, as always, there is no place for boredom and idleness, and a lot of things require my attention and personal intervention. I would be happy to share with you both concerns and power, even if it is incommensurable with the right to which your divine origin gives you. But, my love, besides gold and power, I want to give you something that you will not find, even if you become a goddess. I don't think I need to say much - if, like me, you remember everything that happened between us, then you know it yourself.
 Please take care of yourself. Triumph over your enemies, as you always have. I believe in you. And I love you. Your Aran"~ [aransong]
 @6 = ~*You lean into the halfling and kiss him on the cheek, not afraid to sound sentimental*~
@@ -105,7 +105,7 @@ Please take care of yourself. Triumph over your enemies, as you always have. I b
 @85 = ~*You can't resist the urge anymore. Why not?...* ~
 @86 = ~Call upon me Aran Linvail, Master of the Amnian Shadow Thieves. ~
 @87 = ~*Aran appears in front of you. Surely he is alarmed, but his composure does not fail him, he is ready to meet possible danger face to face, gripping the hilt of a sharp dagger. Your eyes meet...* ~
-@88 = ~*You don’t notice how and where Aran’s weapons are hiding... after a moment he’s squeezing you so painfully in his arms and kissing you hard* ~
+@88 = ~*You donâ€™t notice how and where Aranâ€™s weapons are hiding... after a moment heâ€™s squeezing you so painfully in his arms and kissing you hard* ~
 @89 = ~<CHARNAME> ... my favorite <CHARNAME>.~ [aransong]
 @90 = ~You're crazy! What if it were a trap?~
 @91 = ~I know for a fact that you are not an illusion, and everything else can be dealt with. ~

@@ -19,8 +19,8 @@ In the second picture, a peasant is throwing snow from the roof of the same hous
 
 The third picture shows the same peasant next to the mill. In the rain, he loads sacks of oats and barley onto a cart. The cart is packed to the brim.~
 
-@14 = ~Mae'Var’s Gems~
-@15 = ~A small pouch containing Mae'Var’s Gems. They can be sold, but only after the assignment is settled with Renal and he ends the spying on you.~
+@14 = ~Mae'Varâ€™s Gems~
+@15 = ~A small pouch containing Mae'Varâ€™s Gems. They can be sold, but only after the assignment is settled with Renal and he ends the spying on you.~
 @16 = ~Gem Inventory~
 @17 = ~The scroll lists four black opals, four water opals, four emeralds, two diamonds, and a garnet. The number fifteen is circled at the bottom. ~
 
@@ -63,7 +63,7 @@ Price: 1 gold pipe, 3 gold for a cigar, 10 gold for a pouch ~
 
 @32 = ~Calimport Travel Guide~
 @33 = ~Calimport is the miles-long capital of the country of Calimshan, located in southwestern Faerun and comprising the Kalim Desert and Spider Marsh. It is located on the northern coast of the Shining Sea.
-Calimport is one of the largest metropolises in Faeríàn. It was founded in 7800 by the ruler Kalim. The population of Calimport is 192,795 people. It is composed of humans (95%), halflings (2%), half-orcs (2%), and half-elves (1%).
+Calimport is one of the largest metropolises in FaerÐ½Ð°n. It was founded in 7800 by the ruler Kalim. The population of Calimport is 192,795 people. It is composed of humans (95%), halflings (2%), half-orcs (2%), and half-elves (1%).
 Calimport's main trading partners are Memnon and Manshaka. The trade route to Memnon runs through the desert, while trade with Manshaka is by sea. Periodically, local merchants make long journeys up to Luskan.
 The city has many inns, harems and taverns, as well as establishments that provide all services at once. The most famous of these are the Mystic Tavern, which houses the drug den in the back, and the Glittering Harem, with its magnificent bathhouse. The city also has two arenas and a large slave market. ~
 @34 = ~Advertising Manager~
@@ -146,12 +146,12 @@ Weight: 3 ~
 @82 = ~Leena~
 @83 = ~Mysterious Woman~
 @84 = ~Tony, you're just in time! Tie her hands, buddy. ~
-@85 = ~I'll meet him alone, so there’s no suspicion. Wait here. ~
+@85 = ~I'll meet him alone, so thereâ€™s no suspicion. Wait here. ~
 
 @86 = ~Refusing to accept her horrific legacy, <CHARNAME> returned to Athkatla. There she was warmly received by many of her Shadow Guild comrades. Aran Linvail did not hide joy and triumph - after all, Bhaal's daughter kept her promise. Since then, <CHARNAME> has not left the Master of Shadows, becoming his right hand. For a long time they lived in love and harmony, together strengthening the reputation of the Shadow Guild, which became an increasingly powerful force, attracting the most skilled and dangerous thieves along the entire Coast to their ranks and spreading their threads of influence beyond Amn. It was rumored that <CHARNAME> would soon take the place of the head of the guild, but she was quite content with the position of the second person, entering all the affairs of Aran and using his unlimited trust. Her life has never been boring.~
 
 @87 = ~Letter from Aran~
-@88 = ~«My <CHARNAME>!
+@88 = ~Â«My <CHARNAME>!
 
 I was greatly disturbed by the news of this mess involving your late parent's heirs. Most of all, of course, because you are again in serious danger. I never thought I was too sensitive, but now I am not ashamed to admit that your absence feels like a void that cannot be filled. Nevertheless, Athkatla is in full swing, as always, there is no place for boredom and idleness, and a lot of things require my attention and personal intervention. I would be happy to share with you both concerns and power, even if it is incommensurable with the right to which your divine origin gives you. But, my love, besides gold and power, I want to give you something that you will not get, even if you become a goddess. I don't think I need to say much - if, like me, you remember everything that happened between us, then you yourself understand it.
 
@@ -159,7 +159,7 @@ Please take care of yourself. Triumph over your enemies, as you always did.
 
 I believe in you. And I love you. 
 
-Your Aran»~
+Your AranÂ»~
 @89 = ~*Half an hour later* ~
 @90 = ~Porin ~
 @91 = ~Jovi Gerk ~
@@ -268,35 +268,35 @@ Whose footsteps, like a black trail, scatter the gem.~
 
 @158 = ~Miranda~
 
-@999 = ~Mae’Var’s Stash
+@999 = ~Maeâ€™Varâ€™s Stash
 
-Renal has commissioned us to search for Mae’Var’s Stash. First you need to talk to his assistant named Batch. He should be somewhere near the entrance to the guild... ~
+Renal has commissioned us to search for Maeâ€™Varâ€™s Stash. First you need to talk to his assistant named Batch. He should be somewhere near the entrance to the guild... ~
 
-@1000 = ~Mae’Var’s Stash
+@1000 = ~Maeâ€™Varâ€™s Stash
 
-Renal has commissioned us to search for Mae’Var’s Stash. All I have is an encrypted scroll. I should have asked Edwin better - he knew his former boss well... ~
+Renal has commissioned us to search for Maeâ€™Varâ€™s Stash. All I have is an encrypted scroll. I should have asked Edwin better - he knew his former boss well... ~
 
-@1001 = ~Mae’Var’s Stash
+@1001 = ~Maeâ€™Varâ€™s Stash
 
 Edwin said that the scroll was encrypted using the Imperial cipher method, and the symbols were somehow connected with the newly opened branch of the First Caliport Bank in Athkatla. So far, this does not give us much, but Edwin knows the former treasurer of the guild and he can explain something. It remains to find him. As far as we know, he is hiding somewhere in the Slums area. ~
 
-@1002 = ~Mae’Var’s Stash
+@1002 = ~Maeâ€™Varâ€™s Stash
 
 We found a former treasurer of Mae'Var named Hurp. He was reluctant to share information, but after our 'urgent requests', he revealed that his former boss had set up a cell at a branch of First Calimport Bank, which had recently opened in the Promenade area. What exactly he put in the cell is not known for sure, but there is clearly something valuable there. Hurp gave us the contract that Mae'Var signed when opening the cell, and the accounting documents. It remains to decipher the scroll, study the agreement and go to the bank to try to somehow open the cell. ~
 
-@1003 = ~Mae’Var’s Stash
+@1003 = ~Maeâ€™Varâ€™s Stash
 
 Success. We've managed to get hold of the Mae'Var Gems. Now it remains to decide how to dispose of them. Selling them is definitely not allowed - Renal's people are watching us. ~
 
-@1004 = ~Mae’Var’s Stash
+@1004 = ~Maeâ€™Varâ€™s Stash
 
 Failure. It looks like Mae'Var's cell will remain in the bank forever. ~
 
-@1005 = ~Mae’Var’s Stash
+@1005 = ~Maeâ€™Varâ€™s Stash
 
 We got off easy. Now further collaboration with Renal is unlikely. Not much of a loss, though, since we're now dealing directly with his boss. ~
 
-@1006 = ~Mae’Var’s Stash
+@1006 = ~Maeâ€™Varâ€™s Stash
 
 We lied to Renal's people that we had found a cache in the cemetery. In fact, they took everything from the bank and kept Mae'Var's treasures for themselves. ~
 
@@ -306,7 +306,7 @@ We found the secret place of the former guild leader and ended this long story. 
 
 @1008 = ~Mae'Var's Stash
 
-We found the secret place of the former guild leader and ended this long story. It’s a pity that we didn’t manage to get the money out of it. ~
+We found the secret place of the former guild leader and ended this long story. Itâ€™s a pity that we didnâ€™t manage to get the money out of it. ~
 
 @1009 = ~Imoen found a job
 
@@ -390,7 +390,7 @@ Owney fell victim to his ambitions. His friends also gave their lives for his pl
 
 @1029 = ~Trap for Druids
 
-With the death of Owney and his men, the mission itself lost its meaning. There is no time to grieve over them, I need to hurry to leave before the guard arrives. It’s a pity that it ended that way for them. I'll have to talk to Esra, she stayed behind to guard the entrance and that's why she survived the massacre. ~
+With the death of Owney and his men, the mission itself lost its meaning. There is no time to grieve over them, I need to hurry to leave before the guard arrives. Itâ€™s a pity that it ended that way for them. I'll have to talk to Esra, she stayed behind to guard the entrance and that's why she survived the massacre. ~
 
 @1030 = ~Trap for Druids
 
@@ -506,7 +506,7 @@ The gnome Porin - an inexperienced thief who was captured by Renal's guys - said
 
 @1058 = ~Abu Hazab's Magic Lamp
 
-Lathan, one of my assistants in Mae'Var’s former guild, reported that one of our thieves, Jovi Gerk, is missing, and that he recently contacted some noble girl. ~
+Lathan, one of my assistants in Mae'Varâ€™s former guild, reported that one of our thieves, Jovi Gerk, is missing, and that he recently contacted some noble girl. ~
 
 @1059 = ~Abu Hazab's Magic Lamp
 
@@ -600,63 +600,63 @@ We told Quayle what we had learned. He was upset, but at least now he knows that
 
 We gave the severed troll head to the authorities and received the money. Rest in peace, Kid. ~
 
-@1082 = ~Siren’s Silence
+@1082 = ~Sirenâ€™s Silence
 
 I still want to figure out why the trained troll Kid in the Promenade circus is so strange. I should go to the cage and examine it again. ~
 
-@1083 = ~Siren’s Silence
+@1083 = ~Sirenâ€™s Silence
 
 At Kid's cage, I met the fisherman Lorio, who told me that he had found the troll near the river on the day his beloved siren Eirin disappeared. He may have eaten it, but he looks too peaceful ... We need to test this troll with the Know Alignment or True Sight spells and see what he is.~
 
-@1084 = ~Siren’s Silence
+@1084 = ~Sirenâ€™s Silence
 
 The spell showed the true essence of the troll: he is not at all dangerous. Apparently, his appearance is a very powerful illusion. Lorio mentioned that he was in contact with Mrs. Cragmoon, a potions and scroll merchant in the Bridge area. Maybe she can tell me something useful...~
 
-@1085 = ~Siren’s Silence
+@1085 = ~Sirenâ€™s Silence
 
 The conversation with Mrs. Cragmoon gave nothing, except for one thing - she does not tell the truth, it is clear. After the conversation, a girl named Mod came up to me, wanted to tell something about her, and extorted money for it. We drove her away, but now we can try to talk to Mrs. Cragmoon again and scare her with the fact that we supposedly learned some secret from the girl. Well, or somehow "split" it ...~
 
-@1086 = ~Siren’s Silence
+@1086 = ~Sirenâ€™s Silence
 
 The conversation with Mrs. Cragmoon yielded nothing, but it was clear she did not tell us the truth. After the conversation, a girl named Mod came up to me, wanted to tell us something about Cragmoon, and extorted money for it. We drove her away, but now we can try to talk to Mrs. Cragmoon again and scare her with the fact that we supposedly learned some secret from the girl. Well, or somehow "split" it...~
 
-@1087 = ~Siren’s Silence
+@1087 = ~Sirenâ€™s Silence
 
 Mrs. Cragmoon confessed that she bewitched the siren Eirin and gave her the appearance of a troll with a powerful spell created by a witch named Agnes. Thanks to this spell, the siren will look like a troll even after death. We decided not to get involved even further in this story - we will tell everything to Lorio and let him act on his own. He must be at Cromwell's, waiting for an order. ~
 
-@1088 = ~Siren’s Silence
+@1088 = ~Sirenâ€™s Silence
 
 Mrs. Cragmoon confessed that she bewitched the siren Eirin and gave her the appearance of a troll with a powerful spell created by a witch named Agnes. Thanks to this spell, the siren will look like a troll even after death. We decided to disenchant Eirin. All that remains is to get a scroll that removes witchcraft. I will ask Maud to steal it, since Cragmoon herself does not give it up. Judging by what Mod said, you need to look for her somewhere at the Thieves guild, since they are her idols.~
 
-@1089 = ~Siren’s Silence
+@1089 = ~Sirenâ€™s Silence
 
 Mrs. Cragmoon confessed that she bewitched the siren Eirin and gave her the appearance of a troll with a powerful spell created by a witch named Agnes. Thanks to this spell, the siren will look like a troll even after death. We decided to disenchant Eirin and got a scroll that removes witchcraft from Mrs. Cragmoon, we just have to use it. ~
 
-@1090 = ~Siren’s Silence
+@1090 = ~Sirenâ€™s Silence
 
 Mrs. Cragmoon confessed that she bewitched the siren Eirin and gave her the appearance of a troll with a powerful spell created by a witch named Agnes. Thanks to this spell, the siren will look like a troll even after death. We decided to disenchant Eirin, but we could not get the scroll from Mrs. Cragmoon. We'll have to tell Lorio everything and let him act on his own. He must be at Cromwell's, waiting for an order. ~
 
-@1091 = ~Siren’s Silence
+@1091 = ~Sirenâ€™s Silence
 
 Lorio attacked Mrs. Cragmoon after learning what she had done. As a result, the guards arrested him and took him to prison. After that, Cragmoon gave me the shape change scroll. It remains to read it and disenchant the siren. ~
 
-@1092 = ~Siren’s Silence
+@1092 = ~Sirenâ€™s Silence
 
 We managed to disenchant Eirin's siren and restore her to her true form, but Lorio remains in prison, he ought to visit him and tell him that his beloved is saved. ~
 
-@1093 = ~Siren’s Silence
+@1093 = ~Sirenâ€™s Silence
 
 We managed to disenchant Eirin's siren and restore her to her true form. She met with Lorio and they left together, rewarding me for my efforts and offering thanks many times. A happy ending to a story about the power of love and revenge...~
 
-@1094 = ~Siren’s Silence
+@1094 = ~Sirenâ€™s Silence
 
 We visited Lorio in prison and told him everything that happened. When he is free, they will be together again. Well... a happy ending to a story about the power of love and revenge. ~
 
-@1095 = ~Siren’s Silence
+@1095 = ~Sirenâ€™s Silence
 
 With the help of the thief girl Mod, we got a scroll from Mrs. Cragmoon that can disenchant a troll, we just have to use it. ~
 
-@1096 = ~Siren’s Silence
+@1096 = ~Sirenâ€™s Silence
 
 Lorio attacked Mrs. Cragmoon after learning what she had done. As a result, the guards arrested him and took him to prison. After that, Cragmoon gave me the shape change scroll. But I got tired of this story, so it was decided to keep the scroll and sell it. Enough charity! This story is over. ~
 
@@ -690,7 +690,7 @@ The debts are returned and the Jackal will transfer them to the bank. I managed 
 
 @1104 = ~Combat the Collector
 
-Together with the half-orcs, I managed to deal with the group of the Collector, who was the rival of the Jackal. I don’t know why we got involved in this at all, but my instinct told me that it could be useful in the future. ~
+Together with the half-orcs, I managed to deal with the group of the Collector, who was the rival of the Jackal. I donâ€™t know why we got involved in this at all, but my instinct told me that it could be useful in the future. ~
 
 @1105 = ~Pirate Legacy
 

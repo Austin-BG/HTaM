@@ -28,7 +28,7 @@
 @24 = ~This is it... someone might have gotten angry by accident. ~
 @25 = ~Renal... it seems to me that this is some kind of curse. You made someone very angry.~
 @26 = ~It actually crossed my mind, too. ~
-@27 = ~I don’t understand anything like that. I'll go, huh? ~
+@27 = ~I donâ€™t understand anything like that. I'll go, huh? ~
 @28 = ~Come on, go. I'll just tell you what... ~
 @29 = ~Don't think we're not doing anything, but I would like to enlist your support too. You and so many where dangle, maybe, wandering around the city, you will see something, hear something, ask someone. You still seem to be lucky? Come on, help us. And stay alert. ~
 @30 = ~*You leave the guild feeling heavy, wondering what this would mean. After walking a few steps, you lose your balance - unexpectedly under your foot is the slippery rind of a fruit from the Chult jungle. An annoying little thing, but it makes a depressing impression on you. Is Renal right? We should, perhaps, still try to understand this matter* ~
@@ -63,7 +63,7 @@
 @55 = ~Beshaba? The Virgin of Failures and Lady of Rock? A very... unpleasant and vengeful goddess. ~
 @56 = ~That's for sure. ~
 @57 = ~Tell me more. ~
-@58 = ~There’s nothing to tell for a long time. Beshaba, as everyone knows, is the evil goddess of failure, everyone hates and fears her. ~
+@58 = ~Thereâ€™s nothing to tell for a long time. Beshaba, as everyone knows, is the evil goddess of failure, everyone hates and fears her. ~
 @59 = ~Who the hell is Beshaba? ~
 @60 = ~You really don't know? She is the evil goddess of failure that everyone hates and fears. ~
 @61 = ~Members of a cult dedicated to her have recently arrived in Athkatla. In fact, they usually do not ask for trouble, do not like to stand out and do dirty tricks on the sly. ~
@@ -94,7 +94,7 @@
 @84 = ~Come on, we're counting on you. Otherwise, our guys are completely depressed. ~
 @85 = ~* Loud crackling, banging, then screaming is heard from somewhere nearby. Holding a bloody hand to his body, one of the Shadow Thieves rushes into Renal's hideout. * ~
 @86 = ~Devils and Tanarri! How? What the whole ... I was updating the protection on the door, and I was slammed by my own mechanism. Me! What is going on here, who will tell me at last? ~
-@87 = ~*Gloomy* Well, what are you doing now? You see, this infection sticks even to such masters as you. Better wait ... Ah, <CHARNAME>! Maybe you’ll just tell us what’s going on here?~
+@87 = ~*Gloomy* Well, what are you doing now? You see, this infection sticks even to such masters as you. Better wait ... Ah, <CHARNAME>! Maybe youâ€™ll just tell us whatâ€™s going on here?~
 @88 = ~Maybe I will. ~
 @89 = ~Glad to hear, but don't wait... ~
 @90 = ~If my information is helpful, what do I get out of it?~
@@ -127,7 +127,7 @@
 @115 = ~Hello Aran. It looks like we have found the cause of the troubles that befell the guild. ~
 @116 = ~Of course I know. And I seem to have something to please you. ~
 @117 = ~*You tell Aran about everything that happened and give him the cursed amulet of the priest of Beshaba. Aran takes it carefully and examines it carefully* ~
-@118 = ~So here's the thing ... Beshabists in town ... I should have guessed, but so far we haven't had any friction with them. And I didn’t have time to think properly, the commotion that happened took me more time and energy than I expected. ~
+@118 = ~So here's the thing ... Beshabists in town ... I should have guessed, but so far we haven't had any friction with them. And I didnâ€™t have time to think properly, the commotion that happened took me more time and energy than I expected. ~
 @119 = ~So, <CHARNAME>, your help has been invaluable. Thank you. ~
 @120 = ~Not at all, Aran, I was happy to help. ~
 @121 = ~Of course, I'm no longer a stranger in your guild. ~
@@ -149,7 +149,7 @@
 @137 = ~Of course, Aran. I'm also interested in bringing this thing to an end. ~
 @138 = ~Since you're so generous, I'll try to figure it out. ~
 @139 = ~Ok, <CHARNAME>. Then I'll wait for you with the news. ~
-@140 = ~I guess it won't be difficult for me ... and I’ll be glad to work with you a little more, Aran Linvail.~
+@140 = ~I guess it won't be difficult for me ... and Iâ€™ll be glad to work with you a little more, Aran Linvail.~
 @141 = ~You know, it's great to hear from a girl like you. ~
 @142 = ~*The Shadow Master looks at you deeply. He does not take his eyes off your face for a long time, and you involuntarily ask yourself - what is behind this? Undoubtedly, Aran Linvail wants to have the daughter of Bhaal as his allies, and he probably appreciates you in this capacity. You calmly hold his gaze, and a light, unexpectedly warm smile suddenly appears on Aran's lips. She confuses you, and you feel how a reciprocal interest in this person arises in you. Business, of course?* ~
 @143 = ~<CHARNAME>... ~
@@ -183,7 +183,7 @@
 @167 = ~I'm actually mad at him. Very. But I think she already took revenge on him, with the help of Beshaba... hehe. ~
 @168 = ~So it's you after all. Then stop talking nonsense and tell me how you managed to bring the curse of bad luck to the Shadow Guild?~
 @169 = ~How long have you been hanging out in this tavern? It seems that you have no idea what is happening in your home guild - through your fault, by the way. They will all really need the help of Tymora, whom you worship. ~
-@170 = ~Silly girl. I don’t know how you feel about Guy, but while you’re drinking here, he covers you up, because the amulet he wore was made in the business guild ... Did you slip that into him? ~
+@170 = ~Silly girl. I donâ€™t know how you feel about Guy, but while youâ€™re drinking here, he covers you up, because the amulet he wore was made in the business guild ... Did you slip that into him? ~
 @171 = ~What? May Tymora keep us all! It's true - I stole the amulet from the priest of Beshaba. But I did it for my goddess! After all, you know: Tymora and Beshaba - Luck and Bad Luck, eternal rivals, two aspects of the once one goddess. If you betray yourself to one, you will anger the other. But I am not afraid of Beshaba, for Tymora favors the fearless! I have proven that I fully rely on Lady Luck! ~
 @172 = ~You somehow averted failure from yourself, but you brought it on to others. Your Gie has fallen into his own trap... if only he. ~
 @173 = ~Who did you prove what? From the amulet you stole, the curse of failure spread to the entire guild. ~
@@ -199,8 +199,8 @@
 @183 = ~*You unwittingly loosen your grip, and the girl, miraculously - or with the help of Lady Luck - manages to slip out. Before disappearing into the shadows, she shouts to you: "Tymora keeps me!"*~
 
 // Renal
-@184 = ~Nice work, <CHARNAME>. Ah, Lania, you fool. She got off easy. And it’s your happiness that I didn’t stab you in the back. I don't even know if I should give the order to the guys to find her. Still... eh... memories... ~
-@185 = ~Nice work, <CHARNAME>. Sorry for Lania... but she actually deserves it. It’s your luck that she didn’t stab you in the back, but she could - Tymora really favored this rascal.~
+@184 = ~Nice work, <CHARNAME>. Ah, Lania, you fool. She got off easy. And itâ€™s your happiness that I didnâ€™t stab you in the back. I don't even know if I should give the order to the guys to find her. Still... eh... memories... ~
+@185 = ~Nice work, <CHARNAME>. Sorry for Lania... but she actually deserves it. Itâ€™s your luck that she didnâ€™t stab you in the back, but she could - Tymora really favored this rascal.~
 
 // Aran
 @186 = ~It's okay, <CHARNAME>. I have given all the necessary orders to dispose of the cursed amulet. Gie was the least guilty of all, but severely punished, having lost his beloved. However, I am sure that this will not affect his work in any way. ~
