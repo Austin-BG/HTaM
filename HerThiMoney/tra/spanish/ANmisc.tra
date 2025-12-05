@@ -1,170 +1,170 @@
 // Renfeld
-@0 = ~En serio, ¿realmente vamos a arrastrar a este borracho de vuelta a Athkatla? ¿Realmente no tenemos nada más importante que hacer? Sólo dilo, y tengo un hechizo que me encantaría probar en él. (Es el único beneficio que puedo imaginar de esta situación.)~
-@1 = ~¡Noooo! ¡Ten piedad!~
-@2 = ~Me acordé de una historia que le ocurrió a mi tío Scratchy cuando yo era joven - ¿no te la conté? Quería impresionar a una chica, creo que se llamaba Augustina. Su sopa de nabo estaba tan buena que hasta un duque la pidió, ¡y era un duende! Resulta que, todos son iguales ante la sopa de nabo. Por supuesto, Agustína estaba rodeado de pretendientes. El tío Scratchy quería eclipsarlos a todos. Pero no terminó como él imaginaba.~
-@3 = ~Pidió a sus dos amigos que hicieran de bandidos y la atacaran. El tío Scratchy esperaría el momento oportuno y la "rescataría" de los "villanos". No es una idea muy original, pero si no funcionara, ¿Seria una accion practica?~
-@4 = ~El plan era bueno, pero mientras lo pensaban y lo practicaban, Agustina ya se había comprometido con un juglar y se había marchado de la aldea. Pero el tío no estaba muy triste por ella, sino por el guiso que cocinaba. Aunque más tarde resultó que se había dejado el libro de recetas en casa, y el tío Rasca decidió intentar cocinar él mismo semejante guiso. Pero esa es otra historia, también muy instructiva....~
-@5 = ~Así que la moraleja de la historia de Agustína es que a veces es mejor planificar menos y darse prisa. Como ahora, por ejemplo...~
-@6 = ~Hey, ¿este tipo se desmayó? ¡Se perdió el final!~
+@0 = ~En serio, Â¿realmente vamos a arrastrar a este borracho de vuelta a Athkatla? Â¿Realmente no tenemos nada mÃ¡s importante que hacer? SÃ³lo dilo, y tengo un hechizo que me encantarÃ­a probar en Ã©l. (Es el Ãºnico beneficio que puedo imaginar de esta situaciÃ³n.)~
+@1 = ~Â¡Noooo! Â¡Ten piedad!~
+@2 = ~Me acordÃ© de una historia que le ocurriÃ³ a mi tÃ­o Scratchy cuando yo era joven - Â¿no te la contÃ©? QuerÃ­a impresionar a una chica, creo que se llamaba Augustina. Su sopa de nabo estaba tan buena que hasta un duque la pidiÃ³, Â¡y era un duende! Resulta que, todos son iguales ante la sopa de nabo. Por supuesto, AgustÃ­na estaba rodeado de pretendientes. El tÃ­o Scratchy querÃ­a eclipsarlos a todos. Pero no terminÃ³ como Ã©l imaginaba.~
+@3 = ~PidiÃ³ a sus dos amigos que hicieran de bandidos y la atacaran. El tÃ­o Scratchy esperarÃ­a el momento oportuno y la "rescatarÃ­a" de los "villanos". No es una idea muy original, pero si no funcionara, Â¿Seria una accion practica?~
+@4 = ~El plan era bueno, pero mientras lo pensaban y lo practicaban, Agustina ya se habÃ­a comprometido con un juglar y se habÃ­a marchado de la aldea. Pero el tÃ­o no estaba muy triste por ella, sino por el guiso que cocinaba. Aunque mÃ¡s tarde resultÃ³ que se habÃ­a dejado el libro de recetas en casa, y el tÃ­o Rasca decidiÃ³ intentar cocinar Ã©l mismo semejante guiso. Pero esa es otra historia, tambiÃ©n muy instructiva....~
+@5 = ~AsÃ­ que la moraleja de la historia de AgustÃ­na es que a veces es mejor planificar menos y darse prisa. Como ahora, por ejemplo...~
+@6 = ~Hey, Â¿este tipo se desmayÃ³? Â¡Se perdiÃ³ el final!~
 @7 = ~*Gime*~
 
 // Dialogue with Edwin
-@8 = ~Entonces, ¿había sido encarcelado en una mazmorra secreta justo debajo de la ciudad? ¿Y su dueño, Irenicus, hacía experimentos allí con varias criaturas vivientes?~
+@8 = ~Entonces, Â¿habÃ­a sido encarcelado en una mazmorra secreta justo debajo de la ciudad? Â¿Y su dueÃ±o, Irenicus, hacÃ­a experimentos allÃ­ con varias criaturas vivientes?~
 @9 = ~Interesante...~
-@10 = ~No hay nada de interés para mí en este lugar, Edwin. Para mí, Imoen, y los demás sólo había dolor y tortura.~
-@11 = ~¿Por qué lo preguntas?~
+@10 = ~No hay nada de interÃ©s para mÃ­ en este lugar, Edwin. Para mÃ­, Imoen, y los demÃ¡s sÃ³lo habÃ­a dolor y tortura.~
+@11 = ~Â¿Por quÃ© lo preguntas?~
 @12 = ~No quiero revivir estos recuerdos. Sigamos adelante.~
-@13 = ~Como queráis. Pff. (¡Estos primates son totalmente inútiles!)~
-@14 = ~Y las experiencias. Algunos conocimientos exigen sacrificios. Así funciona la vida. (¿Por qué tengo que explicar cosas tan sencillas? ¿Estoy hablando con niños?)~
-@15 = ~Ese bastardo nos torturó. Nos usó como sujetos de prueba. Y pagará por todo esto.~
-@16 = ~Tú no eres un imbécil, <CHARNAME>. Debes entender que el fin justifica los medios. Este mago puede ser un bastardo, pero es inteligente. Quería obtener nuevos conocimientos y poder, y casi lo logra. Capturó al mismísimo héroe de la Puerta de Baldur, realizó elaborados experimentos y construyó un laboratorio delante de las narices de los guardias. Podemos aprender de él.~
-@17 = ~Me pregunto cómo pudo instalar semejante laboratorio justo debajo de la ciudad, y sin que los guardias sospecharan nada. ¿Cómo trasladó sigilosamente el equipo hasta allí?~
-@18 = ~¿Y qué tipo de experimentos realizaba? ¿Recuerdas algún detalle? Podrían ser muy interesantes.~
-@19 = ~Intentaba entrar de alguna manera en los recuerdos y las mentes de los demás. Sacaba recuerdos y deseos ocultos de nosotros y de otros sujetos de prueba, como si pusiera todo el cerebro del revés. estudiaba nuestras habilidades mágicas. Puso algunos sujetos en vasijas de cristal, como si los estuviera conservando, y también les hizo... algo más. No recuerdo mucho, y gracias a los dioses por ello. Ojalá pudiera olvidarlo todo.~
-@20 = ~Hm... ¿Estás seguro de que el laboratorio fue completamente destruido? Podría ser útil para nosotros...~
-@2000 = ~(Mataría por un laboratorio así... ¡Podría haber hecho todo tipo de experimentos y ser aún más poderoso! Los vagabundos habrían sido grandes sujetos de prueba, ¡nadie se ocupa de ellos! Y el ayuntamiento debería darme las gracias por limpiar las calles, ¡todo por la ciencia!)~
-@21 = ~Sí, la entrada se derrumbó tras la batalla en el Paseo de Waukin. Es lo mismo para el resto de la mazmorra, creo. Ahora es sólo ruinas.~
-@22 = ~Aunque tuviéramos esa oportunidad, preferiría dejarlo. Ese lugar sólo me trae recuerdos dolorosos.~
-@23 = ~Bueno, es una lástima... (¿Por qué tengo tan mala suerte? Podría haber tenido en mis manos poderosos instrumentos mágicos y valiosos conocimientos, ¡y unos tontos lo han destruido todo!)~
+@13 = ~Como querÃ¡is. Pff. (Â¡Estos primates son totalmente inÃºtiles!)~
+@14 = ~Y las experiencias. Algunos conocimientos exigen sacrificios. AsÃ­ funciona la vida. (Â¿Por quÃ© tengo que explicar cosas tan sencillas? Â¿Estoy hablando con niÃ±os?)~
+@15 = ~Ese bastardo nos torturÃ³. Nos usÃ³ como sujetos de prueba. Y pagarÃ¡ por todo esto.~
+@16 = ~TÃº no eres un imbÃ©cil, <CHARNAME>. Debes entender que el fin justifica los medios. Este mago puede ser un bastardo, pero es inteligente. QuerÃ­a obtener nuevos conocimientos y poder, y casi lo logra. CapturÃ³ al mismÃ­simo hÃ©roe de la Puerta de Baldur, realizÃ³ elaborados experimentos y construyÃ³ un laboratorio delante de las narices de los guardias. Podemos aprender de Ã©l.~
+@17 = ~Me pregunto cÃ³mo pudo instalar semejante laboratorio justo debajo de la ciudad, y sin que los guardias sospecharan nada. Â¿CÃ³mo trasladÃ³ sigilosamente el equipo hasta allÃ­?~
+@18 = ~Â¿Y quÃ© tipo de experimentos realizaba? Â¿Recuerdas algÃºn detalle? PodrÃ­an ser muy interesantes.~
+@19 = ~Intentaba entrar de alguna manera en los recuerdos y las mentes de los demÃ¡s. Sacaba recuerdos y deseos ocultos de nosotros y de otros sujetos de prueba, como si pusiera todo el cerebro del revÃ©s. estudiaba nuestras habilidades mÃ¡gicas. Puso algunos sujetos en vasijas de cristal, como si los estuviera conservando, y tambiÃ©n les hizo... algo mÃ¡s. No recuerdo mucho, y gracias a los dioses por ello. OjalÃ¡ pudiera olvidarlo todo.~
+@20 = ~Hm... Â¿EstÃ¡s seguro de que el laboratorio fue completamente destruido? PodrÃ­a ser Ãºtil para nosotros...~
+@2000 = ~(MatarÃ­a por un laboratorio asÃ­... Â¡PodrÃ­a haber hecho todo tipo de experimentos y ser aÃºn mÃ¡s poderoso! Los vagabundos habrÃ­an sido grandes sujetos de prueba, Â¡nadie se ocupa de ellos! Y el ayuntamiento deberÃ­a darme las gracias por limpiar las calles, Â¡todo por la ciencia!)~
+@21 = ~SÃ­, la entrada se derrumbÃ³ tras la batalla en el Paseo de Waukin. Es lo mismo para el resto de la mazmorra, creo. Ahora es sÃ³lo ruinas.~
+@22 = ~Aunque tuviÃ©ramos esa oportunidad, preferirÃ­a dejarlo. Ese lugar sÃ³lo me trae recuerdos dolorosos.~
+@23 = ~Bueno, es una lÃ¡stima... (Â¿Por quÃ© tengo tan mala suerte? PodrÃ­a haber tenido en mis manos poderosos instrumentos mÃ¡gicos y valiosos conocimientos, Â¡y unos tontos lo han destruido todo!)~
 
 // First meeting with Valygar
-@24 = ~No escuches, <CHARNAME>. Sólo miente para salvar su pellejo. Si no lo está , no importa. No vale la pena perder la recompensa y enojar a unos Magos Cobardes. (¡También nos libraría de la sospecha de matar a uno de sus hombres!)~
-@25 = ~¡Su cabeza vale dinero! Córtasela ya, y podremos vendérsela a los acobardados magos.~
-@26 = ~La gente dirá cualquier cosa para salvar su pellejo cuando se ven acorralados.~
-@27 = ~<CHARNAME>¿Estás seguro de tu decisión? ¿Llevar a un hombre buscado en tu grupo? No estoy seguro de que sea lo correcto.~
+@24 = ~No escuches, <CHARNAME>. SÃ³lo miente para salvar su pellejo. Si no lo estÃ¡ , no importa. No vale la pena perder la recompensa y enojar a unos Magos Cobardes. (Â¡TambiÃ©n nos librarÃ­a de la sospecha de matar a uno de sus hombres!)~
+@25 = ~Â¡Su cabeza vale dinero! CÃ³rtasela ya, y podremos vendÃ©rsela a los acobardados magos.~
+@26 = ~La gente dirÃ¡ cualquier cosa para salvar su pellejo cuando se ven acorralados.~
+@27 = ~<CHARNAME>Â¿EstÃ¡s seguro de tu decisiÃ³n? Â¿Llevar a un hombre buscado en tu grupo? No estoy seguro de que sea lo correcto.~
 
 // Keldorn interjections in Cernd quest
-@36 = ~¡Esta mujer sólo buscó una salvación fugaz, pero su corazón permaneció fiel a Cernd! ¡Su hijo no te pertenece!~
-@37 = ~¡No sabes nada de Galia, paladín! ¡Es tu amigo del bosque el responsable de su muerte!~
-@38 = ~Los niños pueden ser el único consuelo de uno cuando el mundo entero está en tu contra. Procura que se críe como un hombre decente, Cernd.~
-@39 = ~La arboleda druídica te mostrará el camino correcto.~
+@36 = ~Â¡Esta mujer sÃ³lo buscÃ³ una salvaciÃ³n fugaz, pero su corazÃ³n permaneciÃ³ fiel a Cernd! Â¡Su hijo no te pertenece!~
+@37 = ~Â¡No sabes nada de Galia, paladÃ­n! Â¡Es tu amigo del bosque el responsable de su muerte!~
+@38 = ~Los niÃ±os pueden ser el Ãºnico consuelo de uno cuando el mundo entero estÃ¡ en tu contra. Procura que se crÃ­e como un hombre decente, Cernd.~
+@39 = ~La arboleda druÃ­dica te mostrarÃ¡ el camino correcto.~
 @40 = ~Parece que muchas mujeres olvidan el significado de la fidelidad.~
-@41 = ~No es fácil ser fiel a alguien que no existe, paladín. El Cernd que Galia amaba hace tiempo que murió.~
+@41 = ~No es fÃ¡cil ser fiel a alguien que no existe, paladÃ­n. El Cernd que Galia amaba hace tiempo que muriÃ³.~
 @42 = ~Siento lo que ha pasado, Cernd. Espero que tu hijo no repita tus errores...~
-@43 = ~Volveré a él ,en la arboleda druídica, cuando termine nuestro viaje. Hasta entonces, los druidas cuidarán de él, para que crezca como un retoño en un bosque.~
-@44 = ~Me alegra oírlo. Ahora debo escribir una carta a María. Debo saber cómo le va.~
+@43 = ~VolverÃ© a Ã©l ,en la arboleda druÃ­dica, cuando termine nuestro viaje. Hasta entonces, los druidas cuidarÃ¡n de Ã©l, para que crezca como un retoÃ±o en un bosque.~
+@44 = ~Me alegra oÃ­rlo. Ahora debo escribir una carta a MarÃ­a. Debo saber cÃ³mo le va.~
 
 // Cernd interjections in Keldorn quest
-@35 = ~No repitas mis errores, viejo guerrero. Comprendo demasiado tarde lo importante que es una manada para su líder...~
-@45 = ~El árbol del amor ha caído bajo los violentos vientos de la justicia. Rezo, amigo mío, para que tu alma encuentre la paz.~
-@46 = ~Estoy en paz cuando sé que ningún delito quedará impune. Esta no es una excepción. Basta de hablar.~
-@47 = ~Verdaderamente una sabia decisión. Disfruta de cada momento con tus seres queridos, porque son parte de ti, viejo guerrero.~
+@35 = ~No repitas mis errores, viejo guerrero. Comprendo demasiado tarde lo importante que es una manada para su lÃ­der...~
+@45 = ~El Ã¡rbol del amor ha caÃ­do bajo los violentos vientos de la justicia. Rezo, amigo mÃ­o, para que tu alma encuentre la paz.~
+@46 = ~Estoy en paz cuando sÃ© que ningÃºn delito quedarÃ¡ impune. Esta no es una excepciÃ³n. Basta de hablar.~
+@47 = ~Verdaderamente una sabia decisiÃ³n. Disfruta de cada momento con tus seres queridos, porque son parte de ti, viejo guerrero.~
 @48 = ~Muchas gracias de nuevo.~
-@49 = ~Todo árbol necesita tiempo para volver a echar raíces después de una fuerte tormenta. Deja que el árbol del amor del viejo guerrero recupere su fuerza, amigo mío.~
-@50 = ~Rezaré a la naturaleza para que no repitas mi destino, viejo guerrero.~
-@51 = ~No... María es una mujer fuerte, saldrá adelante... Mi fe en ella es tan grande como mi fe en Torm. Recuerda, querida, siempre te amaré.~
-@52 = ~Espero que mi corazón no olvide tus palabras. Ten cuidado, mi amor.~
+@49 = ~Todo Ã¡rbol necesita tiempo para volver a echar raÃ­ces despuÃ©s de una fuerte tormenta. Deja que el Ã¡rbol del amor del viejo guerrero recupere su fuerza, amigo mÃ­o.~
+@50 = ~RezarÃ© a la naturaleza para que no repitas mi destino, viejo guerrero.~
+@51 = ~No... MarÃ­a es una mujer fuerte, saldrÃ¡ adelante... Mi fe en ella es tan grande como mi fe en Torm. Recuerda, querida, siempre te amarÃ©.~
+@52 = ~Espero que mi corazÃ³n no olvide tus palabras. Ten cuidado, mi amor.~
 
 // Kangaxx
-@61 = ~Piénsatelo antes de aceptar su oferta. Las historias sobre la promesa de recompensas increíbles rara vez acaban bien para los héroes.~
-@62 = ~¡Esta criatura apesta a maldad, <CHARNAME>! Debe permanecer en esta cripta para siempre, lejos del mundo de los vivos.~
-@63 = ~No me gusta nada esta calavera, pero ¿quizás dice la verdad? Nadie merece ser encarcelado así...~
-@64 = ~Rrrrrr! (A Wilson se le eriza el vello: no está nada contento de conocer al habitante de la cripta.)~
-@65 = ~¡Hablas como un amigo, pero Bubú ve a través de tus mentiras! <CHARNAME>, ¡no confíes en él!~
-@66 = ~(Un temible lich ha sido derrotado. Pero, ¿fue su muerte definitiva? La última vez, esa criatura fue detenida solo tras ser desmembrada. ¿Se levantará una vez más?)~
-@67 = ~Repugnante. ¿Ves lo que la codicia por un poder mágico puede hacer a una criatura viva? Recuerda lo que se ha convertido y cómo su existencia llegó a su fin.~
-@68 = ~¡Har! ¡El cráneo fue capaz de dar una gran pelea! ¡Podría hacer una buena taza con él!~
-@69 = ~Incluso después de adquirir una forma tan temible, ¡este tonto seguía sin tener ninguna oportunidad contra el ataque arcano de Edwin Odesseiron! ¡Con el poder que tengo ahora puedo obligar a los zulkires a arrodillarse ante mí!~
-@70 = ~Incluso después de adquirir una forma tan temible, ¡este tonto seguía sin tener ninguna oportunidad contra el ataque arcano de Edwin Odesseiron! ¡Con el poder que tengo ahora puedo obligar a los zulkires a arrodillarse ante mí! (Este montón de huesos dorados puede que sepa algo sobre cómo arreglar mi estado actual. Debería buscar de cerca cualquier nota que pudiera haber dejado...)~
-@71 = ~El semiliche intentó con todas sus fuerzas revivirse, pero en lugar de eso provocó su muerte. De todos modos, esta situación no hace más que confirmar una superstición de Sigil: No confíes en una calavera.~
-@72 = ~¡No me lo puedo creer! ¡Mi magia salvaje acaba de destruir a un antiguo y experto lich!~
-@73 = ~¡Bubú sabía que era un villano desde el principio! ¡Deberías haberme escuchado!~
-@74 = ~Es bueno que hayamos limpiado este mal. Pero algunos dicen que los liches son inmortales. Rezaré para que hayamos retrasado su regreso al menos un siglo...~
+@61 = ~PiÃ©nsatelo antes de aceptar su oferta. Las historias sobre la promesa de recompensas increÃ­bles rara vez acaban bien para los hÃ©roes.~
+@62 = ~Â¡Esta criatura apesta a maldad, <CHARNAME>! Debe permanecer en esta cripta para siempre, lejos del mundo de los vivos.~
+@63 = ~No me gusta nada esta calavera, pero Â¿quizÃ¡s dice la verdad? Nadie merece ser encarcelado asÃ­...~
+@64 = ~Rrrrrr! (A Wilson se le eriza el vello: no estÃ¡ nada contento de conocer al habitante de la cripta.)~
+@65 = ~Â¡Hablas como un amigo, pero BubÃº ve a travÃ©s de tus mentiras! <CHARNAME>, Â¡no confÃ­es en Ã©l!~
+@66 = ~(Un temible lich ha sido derrotado. Pero, Â¿fue su muerte definitiva? La Ãºltima vez, esa criatura fue detenida solo tras ser desmembrada. Â¿Se levantarÃ¡ una vez mÃ¡s?)~
+@67 = ~Repugnante. Â¿Ves lo que la codicia por un poder mÃ¡gico puede hacer a una criatura viva? Recuerda lo que se ha convertido y cÃ³mo su existencia llegÃ³ a su fin.~
+@68 = ~Â¡Har! Â¡El crÃ¡neo fue capaz de dar una gran pelea! Â¡PodrÃ­a hacer una buena taza con Ã©l!~
+@69 = ~Incluso despuÃ©s de adquirir una forma tan temible, Â¡este tonto seguÃ­a sin tener ninguna oportunidad contra el ataque arcano de Edwin Odesseiron! Â¡Con el poder que tengo ahora puedo obligar a los zulkires a arrodillarse ante mÃ­!~
+@70 = ~Incluso despuÃ©s de adquirir una forma tan temible, Â¡este tonto seguÃ­a sin tener ninguna oportunidad contra el ataque arcano de Edwin Odesseiron! Â¡Con el poder que tengo ahora puedo obligar a los zulkires a arrodillarse ante mÃ­! (Este montÃ³n de huesos dorados puede que sepa algo sobre cÃ³mo arreglar mi estado actual. DeberÃ­a buscar de cerca cualquier nota que pudiera haber dejado...)~
+@71 = ~El semiliche intentÃ³ con todas sus fuerzas revivirse, pero en lugar de eso provocÃ³ su muerte. De todos modos, esta situaciÃ³n no hace mÃ¡s que confirmar una supersticiÃ³n de Sigil: No confÃ­es en una calavera.~
+@72 = ~Â¡No me lo puedo creer! Â¡Mi magia salvaje acaba de destruir a un antiguo y experto lich!~
+@73 = ~Â¡BubÃº sabÃ­a que era un villano desde el principio! Â¡DeberÃ­as haberme escuchado!~
+@74 = ~Es bueno que hayamos limpiado este mal. Pero algunos dicen que los liches son inmortales. RezarÃ© para que hayamos retrasado su regreso al menos un siglo...~
 
 // Town Crier
-@95 = ~¿Conoces alguna otra noticia? No tan fuerte, si.~
-@96 = ~He oído hablar de muchas cosas. Por ejemplo, el "Héroe de Puerta de Baldur" ha llegado a la ciudad de incógnito. ¿Has oído hablar de eso?~ ~He oído hablar de muchas cosas. Por ejemplo, la "Héroina de Puerta de Baldur" ha llegado a la ciudad de incógnita. ¿Has oído hablar de eso?~
+@95 = ~Â¿Conoces alguna otra noticia? No tan fuerte, si.~
+@96 = ~He oÃ­do hablar de muchas cosas. Por ejemplo, el "HÃ©roe de Puerta de Baldur" ha llegado a la ciudad de incÃ³gnito. Â¿Has oÃ­do hablar de eso?~ ~He oÃ­do hablar de muchas cosas. Por ejemplo, la "HÃ©roina de Puerta de Baldur" ha llegado a la ciudad de incÃ³gnita. Â¿Has oÃ­do hablar de eso?~
 @97 = ~Hmm, interesante.~
-@9700 = ~Sí, sí, con una misión secreta como emmisario de los Grandes Duques. Pero eso es información clasificada, ¡así que mantén la boca cerrada!~
-@9701 = ~Por supuesto. No se lo diré a nadie.~
-@98 = ~Otros dicen que el es un asesino que huye del Puño Llameante. No conocía a su hermano que era alguien muy importante y lo mató en su camino a Amn. La gente aquí no está realmente interesada en el personalmente, aparte quizás de algunos borrachos en tabernas sucias.~ ~Otros dicen que ella es una asesina que huye del Puño Llameante. No conocía a su hermano que era alguien muy importante y lo mató en su camino a Amn. La gente aquí no está realmente interesada en ella personalmente, aparte quizás de algunos borrachos en tabernas sucias.~
-@99 = ~¿Alguna noticia sobre ese asesino de parientes?~
-@100 = ~No he oído nada de el. Tal vez estara en la ciudad, caminando entre nosotros. Ciudadano, por favor, ¡deja de distraerme de mi trabajo!~ ~No he oído nada de ella. Tal vez estara en la ciudad, caminando entre nosotros. Ciudadano, por favor, ¡deja de distraerme de mi trabajo!~
+@9700 = ~SÃ­, sÃ­, con una misiÃ³n secreta como emmisario de los Grandes Duques. Pero eso es informaciÃ³n clasificada, Â¡asÃ­ que mantÃ©n la boca cerrada!~
+@9701 = ~Por supuesto. No se lo dirÃ© a nadie.~
+@98 = ~Otros dicen que el es un asesino que huye del PuÃ±o Llameante. No conocÃ­a a su hermano que era alguien muy importante y lo matÃ³ en su camino a Amn. La gente aquÃ­ no estÃ¡ realmente interesada en el personalmente, aparte quizÃ¡s de algunos borrachos en tabernas sucias.~ ~Otros dicen que ella es una asesina que huye del PuÃ±o Llameante. No conocÃ­a a su hermano que era alguien muy importante y lo matÃ³ en su camino a Amn. La gente aquÃ­ no estÃ¡ realmente interesada en ella personalmente, aparte quizÃ¡s de algunos borrachos en tabernas sucias.~
+@99 = ~Â¿Alguna noticia sobre ese asesino de parientes?~
+@100 = ~No he oÃ­do nada de el. Tal vez estara en la ciudad, caminando entre nosotros. Ciudadano, por favor, Â¡deja de distraerme de mi trabajo!~ ~No he oÃ­do nada de ella. Tal vez estara en la ciudad, caminando entre nosotros. Ciudadano, por favor, Â¡deja de distraerme de mi trabajo!~
 
 // Adventure Mart
-@101 = ~¿Se lo dices a todo el mundo o es que no te gustan nuestras caras?~
-@102 = ~(quietly) Es sólo un farol. Hice algunos... trabajos de recuperación aquí antes. Ese tipo ni siquiera vio como algunos pergaminos desaparecían de la estantería junto a él.~
-@103 = ~(quietly) ¿Ves a esa comerciante? No paga alquiler, así que será presa fácil. Pero Ribald o Deidra... no, ni hablar.~
-@104 = ~(quietly) Ribald tampoco es problema. ¿Ves ese anillo?~
+@101 = ~Â¿Se lo dices a todo el mundo o es que no te gustan nuestras caras?~
+@102 = ~(quietly) Es sÃ³lo un farol. Hice algunos... trabajos de recuperaciÃ³n aquÃ­ antes. Ese tipo ni siquiera vio como algunos pergaminos desaparecÃ­an de la estanterÃ­a junto a Ã©l.~
+@103 = ~(quietly) Â¿Ves a esa comerciante? No paga alquiler, asÃ­ que serÃ¡ presa fÃ¡cil. Pero Ribald o Deidra... no, ni hablar.~
+@104 = ~(quietly) Ribald tampoco es problema. Â¿Ves ese anillo?~
 @105 = ~(quietly) Oh, tienes buen ojo, Yoshimo.~
-@106 = ~¡Eh, no he venido aquí a robar! Y no deberías meterte con Ribald y los guardias.~
+@106 = ~Â¡Eh, no he venido aquÃ­ a robar! Y no deberÃ­as meterte con Ribald y los guardias.~
 
 // Kellor dialog after Nalia kidnap (interjections)
-@107 = ~¡Bah, deberíamos darle las gracias a ese Isaea por habernos quitado a la niña! ¡Ahora tiene que escuchar sus interminables lloriqueos! Dejémosla con él.~
-@108 = ~Me gusta ese estilo de Isaea: consigue lo que quiere de la vida, sabe lo que vale y no juega con sus enemigos. Bien por él.~
-@109 = ~¿Cómo puedes decir tal cosa? ¡Nalia es una buena mujer y nuestra amiga!~
-@110 = ~¡Quizás era tu amiga, pero no la mía! Ella era tan molesta.~
-@111 = ~¡Ahora, llora un poco más!~
-@112 = ~Preferiría una chica mala a una buena. (Hmm, me pregunto, ¿quizás este tal Isaea también nos quitaría a esta llorona?)~
-@113 = ~¡Minsc está indignado! ¡Aplastaremos los muros y doblaremos todos los barrotes de la prisión solo para rescatar a nuestra querida Nalia de esas manos malvadas!~
+@107 = ~Â¡Bah, deberÃ­amos darle las gracias a ese Isaea por habernos quitado a la niÃ±a! Â¡Ahora tiene que escuchar sus interminables lloriqueos! DejÃ©mosla con Ã©l.~
+@108 = ~Me gusta ese estilo de Isaea: consigue lo que quiere de la vida, sabe lo que vale y no juega con sus enemigos. Bien por Ã©l.~
+@109 = ~Â¿CÃ³mo puedes decir tal cosa? Â¡Nalia es una buena mujer y nuestra amiga!~
+@110 = ~Â¡QuizÃ¡s era tu amiga, pero no la mÃ­a! Ella era tan molesta.~
+@111 = ~Â¡Ahora, llora un poco mÃ¡s!~
+@112 = ~PreferirÃ­a una chica mala a una buena. (Hmm, me pregunto, Â¿quizÃ¡s este tal Isaea tambiÃ©n nos quitarÃ­a a esta llorona?)~
+@113 = ~Â¡Minsc estÃ¡ indignado! Â¡Aplastaremos los muros y doblaremos todos los barrotes de la prisiÃ³n solo para rescatar a nuestra querida Nalia de esas manos malvadas!~
 
 // Kaza Book Fate
-@114 = ~Yo no vendería este libro, <CHARNAME>. Contiene el mal y no debe ser liberado en el mundo. Sugiero llevar el manuscrito a la Orden, donde será destruido.~
-@115 = ~¡Tu rectitud te ha vuelto completamente loco, paladín! Este libro puede contener muchos hechizos útiles. Su poder podría ayudarnos a todos. (¡Malditos idiotas! ¡No permitiré que destruyan un libro tan precioso!)~
-@116 = ~Debemos quemarlo. ¡¿Has olvidado quién lo escribió?!~
-@117 = ~Dinos, ¿qué es exactamente lo que deseas quemar, tonto justiciero? ¿El conocimiento contenido en los libros, o la mente que pone en duda tu fe ciega?~
-@118 = ~(threateningly) ¿Te atreves a burlarte de mi fe, demonio thayino? ¡No tienes derecho a juzgar! (Keldorn alza la voz para que todos le oigan) Les digo a todos que este libro es malvado, ¡y nada bueno puede salir de él! ¡Sólo traerá desastres!~
-@119 = ~¡Bah! ¡Sólo véndelo! En Athkatla estaréis muertos sin oro. ¿Qué tenemos para llenar nuestras barrigas y comprar municiones, eh? ¿Pagará tu Orden por el libro, caballero?~
-@120 = ~Podemos encontrar oro sin vender el libro. ¡No diré más!~
-@121 = ~Estoy de acuerdo con Edwin. Nos quedaremos con el libro. ¿Estás seguro de que puedes descifrarlo?~
-@122 = ~Keldorn tiene razón. Será mejor que destruyamos el libro .~
-@123 = ~Me alegro de que hayas tomado una decisión sensata. La humedad de la tumba no le hizo ningún bien; muchas páginas no se pueden recuperar. Pero creo que podré decir algo definitivo en un par de días.~ [EDWIN03]
-@124 = ~(El rostro de Keldorn se ensombrece al ver a un triunfante Edwin. Suspira pesadamente y se vuelve hacia ti) Cometes el error de dejar que el mal levante la cabeza. Los errores siempre tienen consecuencias. Comprenderás con el tiempo.~
+@114 = ~Yo no venderÃ­a este libro, <CHARNAME>. Contiene el mal y no debe ser liberado en el mundo. Sugiero llevar el manuscrito a la Orden, donde serÃ¡ destruido.~
+@115 = ~Â¡Tu rectitud te ha vuelto completamente loco, paladÃ­n! Este libro puede contener muchos hechizos Ãºtiles. Su poder podrÃ­a ayudarnos a todos. (Â¡Malditos idiotas! Â¡No permitirÃ© que destruyan un libro tan precioso!)~
+@116 = ~Debemos quemarlo. Â¡Â¿Has olvidado quiÃ©n lo escribiÃ³?!~
+@117 = ~Dinos, Â¿quÃ© es exactamente lo que deseas quemar, tonto justiciero? Â¿El conocimiento contenido en los libros, o la mente que pone en duda tu fe ciega?~
+@118 = ~(threateningly) Â¿Te atreves a burlarte de mi fe, demonio thayino? Â¡No tienes derecho a juzgar! (Keldorn alza la voz para que todos le oigan) Les digo a todos que este libro es malvado, Â¡y nada bueno puede salir de Ã©l! Â¡SÃ³lo traerÃ¡ desastres!~
+@119 = ~Â¡Bah! Â¡SÃ³lo vÃ©ndelo! En Athkatla estarÃ©is muertos sin oro. Â¿QuÃ© tenemos para llenar nuestras barrigas y comprar municiones, eh? Â¿PagarÃ¡ tu Orden por el libro, caballero?~
+@120 = ~Podemos encontrar oro sin vender el libro. Â¡No dirÃ© mÃ¡s!~
+@121 = ~Estoy de acuerdo con Edwin. Nos quedaremos con el libro. Â¿EstÃ¡s seguro de que puedes descifrarlo?~
+@122 = ~Keldorn tiene razÃ³n. SerÃ¡ mejor que destruyamos el libro .~
+@123 = ~Me alegro de que hayas tomado una decisiÃ³n sensata. La humedad de la tumba no le hizo ningÃºn bien; muchas pÃ¡ginas no se pueden recuperar. Pero creo que podrÃ© decir algo definitivo en un par de dÃ­as.~ [EDWIN03]
+@124 = ~(El rostro de Keldorn se ensombrece al ver a un triunfante Edwin. Suspira pesadamente y se vuelve hacia ti) Cometes el error de dejar que el mal levante la cabeza. Los errores siempre tienen consecuencias. ComprenderÃ¡s con el tiempo.~
 @125 = ~Entonces iremos a la Orden. Cuanto antes nos limpiemos las manos de esta inmundicia, mejor.~
-@126 = ~(Probablemente Edwin se ha esforzado mucho por mantener el rostro impasible. Pero su voz tiembla de rabia cuando se vuelve hacia Keldorn) La gente como tú siempre quiere juzgar a los demás, decidir qué conocimientos están permitidos y cuáles están prohibidos, ¿tengo razón? Recuerda mis palabras: no puedes quemar el conocimiento. Tú y tu Orden , tu sucia ignorancia es sólo un retroceso temporal en el camino del progreso. ¡Una temporal, Keldorn! ¡No hay futuro para ti!~
-@127 = ~(sonríe) Lo que tú digas, Edwin. Pero tampoco hay futuro para este libro.~
-@128 = ~(Se vuelve hacia ti) Veo que has tomado otra decisión estúpida, como de costumbre.~
-@129 = ~Muy bien, deja de mover las encías, ¡ya hemos decidido qué hacer!~
+@126 = ~(Probablemente Edwin se ha esforzado mucho por mantener el rostro impasible. Pero su voz tiembla de rabia cuando se vuelve hacia Keldorn) La gente como tÃº siempre quiere juzgar a los demÃ¡s, decidir quÃ© conocimientos estÃ¡n permitidos y cuÃ¡les estÃ¡n prohibidos, Â¿tengo razÃ³n? Recuerda mis palabras: no puedes quemar el conocimiento. TÃº y tu Orden , tu sucia ignorancia es sÃ³lo un retroceso temporal en el camino del progreso. Â¡Una temporal, Keldorn! Â¡No hay futuro para ti!~
+@127 = ~(sonrÃ­e) Lo que tÃº digas, Edwin. Pero tampoco hay futuro para este libro.~
+@128 = ~(Se vuelve hacia ti) Veo que has tomado otra decisiÃ³n estÃºpida, como de costumbre.~
+@129 = ~Muy bien, deja de mover las encÃ­as, Â¡ya hemos decidido quÃ© hacer!~
 @130 = ~Lo venderemos. Ahora mismo, necesitamos dinero.~
 @131 = ~De acuerdo, esperaremos.~
-@132 = ~El libro podría sernos útil, de más formas de las que crees. Dame una semana y seré capaz de descifrarlo.~
-@133 = ~¡Por fin he descifrado el libro! Contiene una magia tan peculiar... y toda ella está destinada a proteger a su dueño cuando lo tiene a mano. Haré un gran uso de él.~
-@134 = ~¡No olvides que acordamos que este libro sería mío!~
-@135 = ~Prelado, le traemos este artefacto del mal - el libro del liche Kaza. ¿Puedes destruirlo?~
-@136 = ~Claro que podemos, y lo haremos. No hay por qué preocuparse. Tomaremos todas las precauciones.~
-@137 = ~Saludos, Keldorn. Los escuderos estarán felices de saber de tu visita. Todavía quieren ser como tú.~
-@138 = ~¡Bah! Sólo vende el libro y olvídate de él.~
-@139 = ~¡Estupendo! Quédatelo. En tus manos, nos hará bien a todos..~
-@140 = ~¡Bueno, ahora podemos vender el libro a un precio más alto! Devuélvemelo.~
-@141 = ~He cambiado de opinión. Devuélvelo.~
-@142 = ~(irritado) ¡Sí, sí, de acuerdo! Desecharé cualquier idea de que poseas siquiera una inteligencia rudimentaria. (¡Este primate nunca aprenderá a apreciar mis superiores artes mágicas!)~ [EDWIN32]
-@143 = ~Sí, por supuesto. (Incluso un ser poco inteligente puede a veces tomar una decisión sabia...)~
-@144 = ~¡Bah! ¿Te tomaste tantas molestias para darles el libro a esos sacerdotes? Incluso una bolsa de mierda alcoholico tiene más cerebro, ¡cuando no esta borracho y muerto bajo la mesa!~
-@145 = ~Fue una sabia decisión, <CHARNAME>. Si hubiera caído en las manos equivocadas, podría haber causado muchos problema.~
+@132 = ~El libro podrÃ­a sernos Ãºtil, de mÃ¡s formas de las que crees. Dame una semana y serÃ© capaz de descifrarlo.~
+@133 = ~Â¡Por fin he descifrado el libro! Contiene una magia tan peculiar... y toda ella estÃ¡ destinada a proteger a su dueÃ±o cuando lo tiene a mano. HarÃ© un gran uso de Ã©l.~
+@134 = ~Â¡No olvides que acordamos que este libro serÃ­a mÃ­o!~
+@135 = ~Prelado, le traemos este artefacto del mal - el libro del liche Kaza. Â¿Puedes destruirlo?~
+@136 = ~Claro que podemos, y lo haremos. No hay por quÃ© preocuparse. Tomaremos todas las precauciones.~
+@137 = ~Saludos, Keldorn. Los escuderos estarÃ¡n felices de saber de tu visita. TodavÃ­a quieren ser como tÃº.~
+@138 = ~Â¡Bah! SÃ³lo vende el libro y olvÃ­date de Ã©l.~
+@139 = ~Â¡Estupendo! QuÃ©datelo. En tus manos, nos harÃ¡ bien a todos..~
+@140 = ~Â¡Bueno, ahora podemos vender el libro a un precio mÃ¡s alto! DevuÃ©lvemelo.~
+@141 = ~He cambiado de opiniÃ³n. DevuÃ©lvelo.~
+@142 = ~(irritado) Â¡SÃ­, sÃ­, de acuerdo! DesecharÃ© cualquier idea de que poseas siquiera una inteligencia rudimentaria. (Â¡Este primate nunca aprenderÃ¡ a apreciar mis superiores artes mÃ¡gicas!)~ [EDWIN32]
+@143 = ~SÃ­, por supuesto. (Incluso un ser poco inteligente puede a veces tomar una decisiÃ³n sabia...)~
+@144 = ~Â¡Bah! Â¿Te tomaste tantas molestias para darles el libro a esos sacerdotes? Incluso una bolsa de mierda alcoholico tiene mÃ¡s cerebro, Â¡cuando no esta borracho y muerto bajo la mesa!~
+@145 = ~Fue una sabia decisiÃ³n, <CHARNAME>. Si hubiera caÃ­do en las manos equivocadas, podrÃ­a haber causado muchos problema.~
 
 // Rain Banters
-@146 = ~¡Está lloviendo otra vez!~
-@147 = ~¡Har! ¿Un grandullón asustado por la lluvia? No te derretirás, ¿sabes?~
-@148 = ~¡Minsc no teme a nada! Bubú odia mojarse cuando llueve, eso es todo. No hay tal clima en la tierra natal de los hámsters espaciales gigantes en miniatura.~
-@149 = ~No estoy familiarizado con los hábitos de este hámster, pero estoy de acuerdo con Minsc.~
-@150 = ~Como druida, no puedo quejarme de recibir regalos de la naturaleza. Pero sugiero que busquemos algún refugio, ya que no quiero secar mi ropa durante el resto del día. La posada más cercana estará bien.~
+@146 = ~Â¡EstÃ¡ lloviendo otra vez!~
+@147 = ~Â¡Har! Â¿Un grandullÃ³n asustado por la lluvia? No te derretirÃ¡s, Â¿sabes?~
+@148 = ~Â¡Minsc no teme a nada! BubÃº odia mojarse cuando llueve, eso es todo. No hay tal clima en la tierra natal de los hÃ¡msters espaciales gigantes en miniatura.~
+@149 = ~No estoy familiarizado con los hÃ¡bitos de este hÃ¡mster, pero estoy de acuerdo con Minsc.~
+@150 = ~Como druida, no puedo quejarme de recibir regalos de la naturaleza. Pero sugiero que busquemos algÃºn refugio, ya que no quiero secar mi ropa durante el resto del dÃ­a. La posada mÃ¡s cercana estarÃ¡ bien.~
 
 // Elf PC and Aerie
-@151 = ~Es tranquilo... Tan tranquilo comparado con el ruido de la ciudad. Pero la gente y las ciudades ahora forman parte de mi vida. Qué extraño...~
-@152 = ~Aerie... Tengo una pregunta para ti. Perdiste tus alas, pero sigues siendo una elfa. ¿Cómo fue que le diste la espalda a Aerdrie Faenya y ahora adoras a un dios gnomo?~
-@153 = ~Nunca dejé de adorar a Aerdrie, <CHARNAME>. Aún ocupa un lugar en mi corazón y le rezo. Pero ella es la diosa de las criaturas con alas, y Baervan es el patrón de los caminantes. Ahora soy una caminante. Un caminante de la tierra. Acabo de empezar a mirar el mundo desde otra perspectiva. T-Tuve que.~
-@154 = ~¿Crees que Aerdrie Faenya te ha rechazado?~
-@155 = ~¡No! Pero sé que Baervan también acoge mi alma. Está lleno de bondad y picardía, ama la vida y, ya sabes, <CHARNAME>, Eso me gusta. (Ella sonríe, y de esta sonrisa, entiendes que esta chica nació para ser feliz y alegre)~
-@156 = ~Estás tan llena de ligereza y luz, Aerie. No necesitas alas para ser hija de Aerdrie Faenya.~
-@157 = ~Me complace oírlo de ti.~
-@158 = ~¿No te da miedo que tu alma no vaya al Arvandor?~
+@151 = ~Es tranquilo... Tan tranquilo comparado con el ruido de la ciudad. Pero la gente y las ciudades ahora forman parte de mi vida. QuÃ© extraÃ±o...~
+@152 = ~Aerie... Tengo una pregunta para ti. Perdiste tus alas, pero sigues siendo una elfa. Â¿CÃ³mo fue que le diste la espalda a Aerdrie Faenya y ahora adoras a un dios gnomo?~
+@153 = ~Nunca dejÃ© de adorar a Aerdrie, <CHARNAME>. AÃºn ocupa un lugar en mi corazÃ³n y le rezo. Pero ella es la diosa de las criaturas con alas, y Baervan es el patrÃ³n de los caminantes. Ahora soy una caminante. Un caminante de la tierra. Acabo de empezar a mirar el mundo desde otra perspectiva. T-Tuve que.~
+@154 = ~Â¿Crees que Aerdrie Faenya te ha rechazado?~
+@155 = ~Â¡No! Pero sÃ© que Baervan tambiÃ©n acoge mi alma. EstÃ¡ lleno de bondad y picardÃ­a, ama la vida y, ya sabes, <CHARNAME>, Eso me gusta. (Ella sonrÃ­e, y de esta sonrisa, entiendes que esta chica naciÃ³ para ser feliz y alegre)~
+@156 = ~EstÃ¡s tan llena de ligereza y luz, Aerie. No necesitas alas para ser hija de Aerdrie Faenya.~
+@157 = ~Me complace oÃ­rlo de ti.~
+@158 = ~Â¿No te da miedo que tu alma no vaya al Arvandor?~
 @159 = ~Creo en Baervan Wildwanderer y La Madre Alada. Es todo lo que necesito.~
-@160 = ~Aerie, ¿puedes guardarte tus pensamientos? Estamos ocupados ahora.~
-@161 = ~Lo siento, <CHARNAME>. No quería molestarte.~
+@160 = ~Aerie, Â¿puedes guardarte tus pensamientos? Estamos ocupados ahora.~
+@161 = ~Lo siento, <CHARNAME>. No querÃ­a molestarte.~
 
 // Edwin (rep talks)
-@162 = ~¡Mira cómo esta chusma se inclina ante nosotros!~
-@163 = ~Incluso estos monos desaliñados aprecian mis excepcionales capacidades e intelecto. Los demás deberían aprender de ellos~
-@164 = ~La mente de la gente puede cambiar fácilmente, Edwin. Un pequeño error y todos estos cumplidos se convertirán en maldiciones.~
-@165 = ~Sí, me gusta sentirme un héroe y un salvador. Nos lo merecemos.~
-@166 = ~Prefiero menos atención. Es más seguro y tranquilo.~
-@167 = ~En eso no puedo discutir contigo. Pero debemos beneficiarnos de nuestra situación mientras dure.~
-@168 = ~(Especialmente yo.) Bien, ya vámonos.~ [EDWIN21]
+@162 = ~Â¡Mira cÃ³mo esta chusma se inclina ante nosotros!~
+@163 = ~Incluso estos monos desaliÃ±ados aprecian mis excepcionales capacidades e intelecto. Los demÃ¡s deberÃ­an aprender de ellos~
+@164 = ~La mente de la gente puede cambiar fÃ¡cilmente, Edwin. Un pequeÃ±o error y todos estos cumplidos se convertirÃ¡n en maldiciones.~
+@165 = ~SÃ­, me gusta sentirme un hÃ©roe y un salvador. Nos lo merecemos.~
+@166 = ~Prefiero menos atenciÃ³n. Es mÃ¡s seguro y tranquilo.~
+@167 = ~En eso no puedo discutir contigo. Pero debemos beneficiarnos de nuestra situaciÃ³n mientras dure.~
+@168 = ~(Especialmente yo.) Bien, ya vÃ¡monos.~ [EDWIN21]
 
 // NEW (v.4)
 @169 = ~Tienes un alma bondadosa y brillante, Aerie. ~
-@170 = ~Es bueno que después de todas las dificultades que has enfrentado, no hayas perdido tu fe en los dioses.~
+@170 = ~Es bueno que despuÃ©s de todas las dificultades que has enfrentado, no hayas perdido tu fe en los dioses.~
 
 //NEW (v.4.2.4)
-@171 = ~No todo el que huye de la ley es un criminal. Aunque no espero que confíes en mí cuando nos veamos por primera vez.~
+@171 = ~No todo el que huye de la ley es un criminal. Aunque no espero que confÃ­es en mÃ­ cuando nos veamos por primera vez.~
 

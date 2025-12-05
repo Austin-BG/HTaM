@@ -1,19 +1,19 @@
 // Firkraag Death
-@0 = ~(El poderoso Firkraag sobrestimó su propia fuerza y no logró derrotar al hijo del dios muerto. Ahora el mal que atormenta este lugar perecerá, y los últimos seguidores del dragón se dispersarán y finalmente serán perseguidos.)~
-@1 = ~La «poderosa» Noble Orden del Muy Radiante Corazón no hace nada y permite que semejantes criaturas amenacen al mundo. Nosotros, sin embargo, lo logramos sin su ayuda.~
-@2 = ~¡Ja! ¡Patético lagarto no tuvo ninguna oportunidad contra el poder de mis poderes mágicos! (Pero ahora debo reemplazar mi túnica quemada. Todo porque estos simios simplemente no pueden hacer nada bien.)~
-@3 = ~Y ahora el Gran Yoshimo también será conocido como el  Matadragones. Espero que esta fama no ahuyente a la gente más humilde.~
-@4 = ~Qué muerte tan ignominiosa. Le queda bien.~
-@5 = ~Sí, nunca es fácil con los dragones. Recuerdo aquella vez que mi primo encontró un pequeño draco en algún lugar y decidió probar una nueva receta: nabos asados con fuego de dragón. Un mago charlatán le vendió un libro de recetas sin sentido, y él se lo tomó demasiado en serio. Pero el bebé dragón no entendió sus intenciones - el pobre primo se quemó con su casa incluida. Una auténtica tragedia. La moraleja de la historia es que los dragones son criaturas peligrosas y difíciles de manejar.~
+@0 = ~(El poderoso Firkraag sobrestimÃ³ su propia fuerza y no logrÃ³ derrotar al hijo del dios muerto. Ahora el mal que atormenta este lugar perecerÃ¡, y los Ãºltimos seguidores del dragÃ³n se dispersarÃ¡n y finalmente serÃ¡n perseguidos.)~
+@1 = ~La Â«poderosaÂ» Noble Orden del Muy Radiante CorazÃ³n no hace nada y permite que semejantes criaturas amenacen al mundo. Nosotros, sin embargo, lo logramos sin su ayuda.~
+@2 = ~Â¡Ja! Â¡PatÃ©tico lagarto no tuvo ninguna oportunidad contra el poder de mis poderes mÃ¡gicos! (Pero ahora debo reemplazar mi tÃºnica quemada. Todo porque estos simios simplemente no pueden hacer nada bien.)~
+@3 = ~Y ahora el Gran Yoshimo tambiÃ©n serÃ¡ conocido como el  Matadragones. Espero que esta fama no ahuyente a la gente mÃ¡s humilde.~
+@4 = ~QuÃ© muerte tan ignominiosa. Le queda bien.~
+@5 = ~SÃ­, nunca es fÃ¡cil con los dragones. Recuerdo aquella vez que mi primo encontrÃ³ un pequeÃ±o draco en algÃºn lugar y decidiÃ³ probar una nueva receta: nabos asados con fuego de dragÃ³n. Un mago charlatÃ¡n le vendiÃ³ un libro de recetas sin sentido, y Ã©l se lo tomÃ³ demasiado en serio. Pero el bebÃ© dragÃ³n no entendiÃ³ sus intenciones - el pobre primo se quemÃ³ con su casa incluida. Una autÃ©ntica tragedia. La moraleja de la historia es que los dragones son criaturas peligrosas y difÃ­ciles de manejar.~
 
 // Dryads
-@6 = ~<CHARNAME>, no vais a dar esas "semillas" gratis, ¿verdad? Mírale la cara, los labios... ¡Cambia un poco, tonto!~
-@7 = ~No eres tú quien toma las decisiones, enano. Tu líder ya ha tomado una decisión, y el siguió a  corazón, no a la codicia.~ ~No eres tú quien toma las decisiones, enano. Tu líder ya ha tomado una decisión, y ella siguió a corazón, no a la codicia.~
-@8 = ~Ehm... <CHARNAME>. Realmente no vas a besarla, ¿verdad?~
-@9 = ~<CHARNAME>, ¡no te atrevas a besarla! Te lo advierto como druida - es muy peligroso para los mortales besar dríadas y súcubos.~
-@10 = ~¿Vas a por el beso, <CHARNAME>? Recuerda, todo tiene consecuencias.~
-@11 = ~¡Eh tú, moza del bosque, arrastramos esta bellota casi desde el infierno! ¿Crees que un beso será suficiente?~
-@12 = ~¡No, <CHARNAME>! ¡Espera!~
-@13 = ~Acércate a mí...~
-@14 = ~Entonces, ¿qué vas a elegir?~
+@6 = ~<CHARNAME>, no vais a dar esas "semillas" gratis, Â¿verdad? MÃ­rale la cara, los labios... Â¡Cambia un poco, tonto!~
+@7 = ~No eres tÃº quien toma las decisiones, enano. Tu lÃ­der ya ha tomado una decisiÃ³n, y el siguiÃ³ a  corazÃ³n, no a la codicia.~ ~No eres tÃº quien toma las decisiones, enano. Tu lÃ­der ya ha tomado una decisiÃ³n, y ella siguiÃ³ a corazÃ³n, no a la codicia.~
+@8 = ~Ehm... <CHARNAME>. Realmente no vas a besarla, Â¿verdad?~
+@9 = ~<CHARNAME>, Â¡no te atrevas a besarla! Te lo advierto como druida - es muy peligroso para los mortales besar drÃ­adas y sÃºcubos.~
+@10 = ~Â¿Vas a por el beso, <CHARNAME>? Recuerda, todo tiene consecuencias.~
+@11 = ~Â¡Eh tÃº, moza del bosque, arrastramos esta bellota casi desde el infierno! Â¿Crees que un beso serÃ¡ suficiente?~
+@12 = ~Â¡No, <CHARNAME>! Â¡Espera!~
+@13 = ~AcÃ©rcate a mÃ­...~
+@14 = ~Entonces, Â¿quÃ© vas a elegir?~
 

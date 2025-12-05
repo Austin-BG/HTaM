@@ -1,41 +1,41 @@
 // Dialogue with Aran
-@0 = ~Te lo advierto, Maestro de las Sombras. Si no nos ayudas, pronto sentirás mi ira... Y no querrás experimentar lo que un Mago Rojo enojado puede hacer. (Aún me duele la espalda de vez en cuando...)~
-@1 = ~Los drow tienen fama de causar dolor y sufrimiento, y se la tienen bien ganada.  Si no puedes proporcionarnos lo que se nos prometió y rápido, rivvil, te darás cuenta de por qué.~
-@2 = ~La única razón por la que tú y tus miserables ladrones aún respiráis es porque <CHARNAME> cree tontamente que necesitamos vuestra ayuda.  Crúzanos, y eso cambiará rápidamente.~
-@3 = ~Teníamos un acuerdo. ¿No crees que es hora de cumplirlo? ¿O piensas desmentir el viejo refrán sobre el honor entre ladrones?~
-@4 = ~Hemos cumplido nuestra parte del trato.  ¿No harán ustedes lo mismo?~
+@0 = ~Te lo advierto, Maestro de las Sombras. Si no nos ayudas, pronto sentirÃ¡s mi ira... Y no querrÃ¡s experimentar lo que un Mago Rojo enojado puede hacer. (AÃºn me duele la espalda de vez en cuando...)~
+@1 = ~Los drow tienen fama de causar dolor y sufrimiento, y se la tienen bien ganada.  Si no puedes proporcionarnos lo que se nos prometiÃ³ y rÃ¡pido, rivvil, te darÃ¡s cuenta de por quÃ©.~
+@2 = ~La Ãºnica razÃ³n por la que tÃº y tus miserables ladrones aÃºn respirÃ¡is es porque <CHARNAME> cree tontamente que necesitamos vuestra ayuda.  CrÃºzanos, y eso cambiarÃ¡ rÃ¡pidamente.~
+@3 = ~TenÃ­amos un acuerdo. Â¿No crees que es hora de cumplirlo? Â¿O piensas desmentir el viejo refrÃ¡n sobre el honor entre ladrones?~
+@4 = ~Hemos cumplido nuestra parte del trato.  Â¿No harÃ¡n ustedes lo mismo?~
 @5 = ~Eso espero. El amigo de <CHARNAME> Imoen n-necesita nuestra ayuda, pero no podemos hacer nada sin la tuya.~
-@6 = ~¿De qué sirven estas baratijas mágicas cuando una chica está en peligro y ni siquiera sabemos dónde está?~
-@7 = ~Tenemos poco tiempo que perder. Nos dirás dónde podemos encontrar la amiga de <CHARNAME> o no?~
-@8 = ~Bueno, gracias por los regalos y todo eso, pero creo que a <CHARNAME> le gustaría saber dónde está Imoen ahora.~
-@9 = ~ Bubú te agradece los objetos, pero desea que Minsc te recuerde que debemos rescatar a Imoen.  ¡Y patear muchos traseros en el camino!~
-@10 = ~Mira, estoy seguro de que los artículos serán de gran ayuda para nosotros, pero un malvado mago tiene como rehén a la compañera de <CHARNAME>, y no parece que estemos cerca de encontrarla.~
+@6 = ~Â¿De quÃ© sirven estas baratijas mÃ¡gicas cuando una chica estÃ¡ en peligro y ni siquiera sabemos dÃ³nde estÃ¡?~
+@7 = ~Tenemos poco tiempo que perder. Nos dirÃ¡s dÃ³nde podemos encontrar la amiga de <CHARNAME> o no?~
+@8 = ~Bueno, gracias por los regalos y todo eso, pero creo que a <CHARNAME> le gustarÃ­a saber dÃ³nde estÃ¡ Imoen ahora.~
+@9 = ~ BubÃº te agradece los objetos, pero desea que Minsc te recuerde que debemos rescatar a Imoen.  Â¡Y patear muchos traseros en el camino!~
+@10 = ~Mira, estoy seguro de que los artÃ­culos serÃ¡n de gran ayuda para nosotros, pero un malvado mago tiene como rehÃ©n a la compaÃ±era de <CHARNAME>, y no parece que estemos cerca de encontrarla.~
 
 // Dialogue with Mitsu
-@11 = ~¡Minsc y Bubú no son ladrones, pequeña niña! ¡Minsc es una fuerza para derrotar al mal!~
-@12 = ~Me temo que se equivoca, mi señora.  Aunque sea un ladrón, prefiero ser más... independiente.~
-@13 = ~Una artimaña despreciable, abusando de la caridad de los demás.  Vil en todos los sentidos.~
-@14 = ~Bueno, yo tampoco creo mucho en ti, caballero, con toda tu superioridad moral y todo eso.  Haz que un paladín pase una semana en la cuneta, y al final del primer día estará robando carteras, apuesto.~
-@15 = ~Puedo asegurarte que un verdadero paladín nunca....~
-@16 = ~Lo siento, no tengo tiempo para discutir contigo.  Pero no intentes pelearte con ninguno de mis compañeros. La mayoría de ellos se inclinan más por las armas que por las palabras.~
-@17 = ~¡No seas tan tonta, niña! ¿Cómo puede ser ladrona alguien tan joven como tú?~
-@18 = ~«Ah caramba, lo siento señor, sólo estaba fingiendo y esas cosas.  ¡No te enfades conmigo!»~
-@19 = ~¡Minsc y Bubú no están enfadados! ¡Nunca nos enfadaríamos con un pequeño~
-@20 = ~«Bien, señor, ¿podría .....? Ah, me rindo, esto es demasiado fácil.~
+@11 = ~Â¡Minsc y BubÃº no son ladrones, pequeÃ±a niÃ±a! Â¡Minsc es una fuerza para derrotar al mal!~
+@12 = ~Me temo que se equivoca, mi seÃ±ora.  Aunque sea un ladrÃ³n, prefiero ser mÃ¡s... independiente.~
+@13 = ~Una artimaÃ±a despreciable, abusando de la caridad de los demÃ¡s.  Vil en todos los sentidos.~
+@14 = ~Bueno, yo tampoco creo mucho en ti, caballero, con toda tu superioridad moral y todo eso.  Haz que un paladÃ­n pase una semana en la cuneta, y al final del primer dÃ­a estarÃ¡ robando carteras, apuesto.~
+@15 = ~Puedo asegurarte que un verdadero paladÃ­n nunca....~
+@16 = ~Lo siento, no tengo tiempo para discutir contigo.  Pero no intentes pelearte con ninguno de mis compaÃ±eros. La mayorÃ­a de ellos se inclinan mÃ¡s por las armas que por las palabras.~
+@17 = ~Â¡No seas tan tonta, niÃ±a! Â¿CÃ³mo puede ser ladrona alguien tan joven como tÃº?~
+@18 = ~Â«Ah caramba, lo siento seÃ±or, sÃ³lo estaba fingiendo y esas cosas.  Â¡No te enfades conmigo!Â»~
+@19 = ~Â¡Minsc y BubÃº no estÃ¡n enfadados! Â¡Nunca nos enfadarÃ­amos con un pequeÃ±o~
+@20 = ~Â«Bien, seÃ±or, Â¿podrÃ­a .....? Ah, me rindo, esto es demasiado fÃ¡cil.~
 
 // Aerie's reaction to torture
-@21 = ~<CHARNAME>, ¡Esto es horrible! ¡Salgamos de aquí pronto!~
+@21 = ~<CHARNAME>, Â¡Esto es horrible! Â¡Salgamos de aquÃ­ pronto!~
 
 //Dialogue with Edwin
-@22 = ~<CHARNAME>, ¿Realmente vamos a trabajar como asesinos a sueldo para este malvado mago? ~
-@23 = ~¿Quién está ladrando ahí? ¡Apártate, niña, cuando hablan los mayores! ~
+@22 = ~<CHARNAME>, Â¿Realmente vamos a trabajar como asesinos a sueldo para este malvado mago? ~
+@23 = ~Â¿QuiÃ©n estÃ¡ ladrando ahÃ­? Â¡ApÃ¡rtate, niÃ±a, cuando hablan los mayores! ~
 
 // Dialogue with Renal
-@24 = ~<CHARNAME>, ¿Por qué no matar a este villano? Recuerdas cómo torturó a un hombre delante de ti, ¿verdad? Es un monstruo, y el mundo sería un lugar mejor sin él. Y obtendremos una recompensa, también - vamos a matar dos pájaros de un tiro. ~
+@24 = ~<CHARNAME>, Â¿Por quÃ© no matar a este villano? Recuerdas cÃ³mo torturÃ³ a un hombre delante de ti, Â¿verdad? Es un monstruo, y el mundo serÃ­a un lugar mejor sin Ã©l. Y obtendremos una recompensa, tambiÃ©n - vamos a matar dos pÃ¡jaros de un tiro. ~
 
 // Dialogue with Aran
-@25 = ~¿Se supone que debemos enfrentarnos a todo un ejército de vampiros nosotros solos? ¿Tu gremio ni siquiera nos ayudará? ~
-@26 = ~¿Así que nosotros tenemos que hacer todo el trabajo sucio y peligroso y arriesgar nuestras vidas, y tú sólo esperas aquí? ~
+@25 = ~Â¿Se supone que debemos enfrentarnos a todo un ejÃ©rcito de vampiros nosotros solos? Â¿Tu gremio ni siquiera nos ayudarÃ¡? ~
+@26 = ~Â¿AsÃ­ que nosotros tenemos que hacer todo el trabajo sucio y peligroso y arriesgar nuestras vidas, y tÃº sÃ³lo esperas aquÃ­? ~
 @27 = ~Bueno, al menos esta es una tarea noble. Todo este robo ha enfermado mi alma. ~
 
 

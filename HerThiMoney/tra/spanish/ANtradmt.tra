@@ -1,25 +1,25 @@
 // Trademeet Statues
-@0 = ~¡Por fin, algo de aprecio! Ahora la gloria de tu valiente y humilde bardo vivirá para siempre~
-@1 = ~¡Seré inmortalizado en piedra! ¡Yo, Imoen la Magnífica, y su leal compañero <CHARNAME>! ¡Ah, ojalá Pedorretas pudiera verlo!~
-@2 = ~(en silencio) ¡Bah! ¡Prefiero un barril de cerveza! ¿De qué sirve un trozo de roca?~
-@3 = ~Preferiría que no nos construyeran un monumento, sino que utilizaran ese oro para ayudar a los pobres.~
-@4 = ~Bueno, todo mi esplendor sólo puede ser replicado por las manos de un verdadero maestro como Sir Sarles. Por lo menos.~
-@5 = ~Espero que ningún drow lo vea jamás. Para mi familia, estar al lado de seres de la superficie es vergonzoso, no una razón llenarse de orgullo.~
-@6 = ~Ayer me odiaban y me culpaban de todo lo malo que ocurría, ¿y ahora me van a hacer una estatua? ¿Quién lo habría pensado?.~
-@7 = ~¿Has oído eso, <CHARNAME>? Tendremos estatuas, ¡como los héroes de verdad! Estatuas de piedra de Minsc y Bubú siempre vigilarán Caravasar, ¡y el mal nunca saldrá de su asquerosa madriguera por miedo a que nuestras estatuas cobren vida y le pateen el culo!~
-@8 = ~...Neera, ¿puedes usar tu magia salvaje para hacer que las estatuas mías y de Boo estén vivas para que también puedan luchar contra el mal?~
-@9 = ~No creo que sea una buena idea, Minsc. ¿Y si sale mal? ¿Quizá la estatua se vuelva malvada y empiece a destruir la ciudad?~
-@10 = ~O peor: ¡el efecto contrario! Podrías convertirte en piedra. Para siempre. ¡Será terrible! ¡Y la maldición sólo será levantada por otro mago salvaje después de cien años!~
-@11 = ~¡No te preocupes, Neera! Incluso después de un siglo de prisión, Minsc y Bubú seguirán protegiendo a los inocentes, ¡y mi espada golpeará los oscuros corazones de nuestros enemigos! Pero tienes razón - ¡Minsc y Bubú no pueden ser estatuas mientras Irenicus siga libre, esparciendo su maldad por todas partes!~
+@0 = ~Â¡Por fin, algo de aprecio! Ahora la gloria de tu valiente y humilde bardo vivirÃ¡ para siempre~
+@1 = ~Â¡SerÃ© inmortalizado en piedra! Â¡Yo, Imoen la MagnÃ­fica, y su leal compaÃ±ero <CHARNAME>! Â¡Ah, ojalÃ¡ Pedorretas pudiera verlo!~
+@2 = ~(en silencio) Â¡Bah! Â¡Prefiero un barril de cerveza! Â¿De quÃ© sirve un trozo de roca?~
+@3 = ~PreferirÃ­a que no nos construyeran un monumento, sino que utilizaran ese oro para ayudar a los pobres.~
+@4 = ~Bueno, todo mi esplendor sÃ³lo puede ser replicado por las manos de un verdadero maestro como Sir Sarles. Por lo menos.~
+@5 = ~Espero que ningÃºn drow lo vea jamÃ¡s. Para mi familia, estar al lado de seres de la superficie es vergonzoso, no una razÃ³n llenarse de orgullo.~
+@6 = ~Ayer me odiaban y me culpaban de todo lo malo que ocurrÃ­a, Â¿y ahora me van a hacer una estatua? Â¿QuiÃ©n lo habrÃ­a pensado?.~
+@7 = ~Â¿Has oÃ­do eso, <CHARNAME>? Tendremos estatuas, Â¡como los hÃ©roes de verdad! Estatuas de piedra de Minsc y BubÃº siempre vigilarÃ¡n Caravasar, Â¡y el mal nunca saldrÃ¡ de su asquerosa madriguera por miedo a que nuestras estatuas cobren vida y le pateen el culo!~
+@8 = ~...Neera, Â¿puedes usar tu magia salvaje para hacer que las estatuas mÃ­as y de Boo estÃ©n vivas para que tambiÃ©n puedan luchar contra el mal?~
+@9 = ~No creo que sea una buena idea, Minsc. Â¿Y si sale mal? Â¿QuizÃ¡ la estatua se vuelva malvada y empiece a destruir la ciudad?~
+@10 = ~O peor: Â¡el efecto contrario! PodrÃ­as convertirte en piedra. Para siempre. Â¡SerÃ¡ terrible! Â¡Y la maldiciÃ³n sÃ³lo serÃ¡ levantada por otro mago salvaje despuÃ©s de cien aÃ±os!~
+@11 = ~Â¡No te preocupes, Neera! Incluso despuÃ©s de un siglo de prisiÃ³n, Minsc y BubÃº seguirÃ¡n protegiendo a los inocentes, Â¡y mi espada golpearÃ¡ los oscuros corazones de nuestros enemigos! Pero tienes razÃ³n - Â¡Minsc y BubÃº no pueden ser estatuas mientras Irenicus siga libre, esparciendo su maldad por todas partes!~
 
-@12 = ~(¿Quién iba a pensar que el hijo de un dios maligno tendría una estatua en medio de la ciudad comercial? ¡Bhaal montaría en cólera si viera todo esto!)~
-@13 = ~No te abrumes con la gloria, <CHARNAME>. Realizar una hazaña extraordinaria es la parte fácil. El orgullo ha sido la perdición de muchos héroes.~
-@14 = ~Me recuerda al jardín de Mutamin. Sólo que el parecido sería aún mayor si hubiéramos decidido posar para él.~
+@12 = ~(Â¿QuiÃ©n iba a pensar que el hijo de un dios maligno tendrÃ­a una estatua en medio de la ciudad comercial? Â¡Bhaal montarÃ­a en cÃ³lera si viera todo esto!)~
+@13 = ~No te abrumes con la gloria, <CHARNAME>. Realizar una hazaÃ±a extraordinaria es la parte fÃ¡cil. El orgullo ha sido la perdiciÃ³n de muchos hÃ©roes.~
+@14 = ~Me recuerda al jardÃ­n de Mutamin. SÃ³lo que el parecido serÃ­a aÃºn mayor si hubiÃ©ramos decidido posar para Ã©l.~
 @15 = ~Espero que sane las relaciones entre los habitantes del pueblo y los druidas... Sus miradas eran bastante agresivas antes debido a las acciones de Faldorn.~
-@16 = ~Tan insípido. (Debe ser dorado, dos veces... - no, treinta veces más grande, y en la plaza principal de Bezantur. Bueno, éste tendrá que valer... por ahora.)~
-@17 = ~¡Oh ho ho! ¡Esta estatua se parece a mí! ¡Si mi madre pudiera verla se sentiría tan orgullosa! ¡Todos los vecinos se morirían de envidia!~
-@18 = ~<CHARNAME>, ¿Lo entiendes? ¡Nuestras estatuas inspirarán a los niños a ser como nosotros!~
-@19 = ~¿Así es como se ve realmente mi nariz? Maldita sea, ¿por qué nadie me lo dijo?~
+@16 = ~Tan insÃ­pido. (Debe ser dorado, dos veces... - no, treinta veces mÃ¡s grande, y en la plaza principal de Bezantur. Bueno, Ã©ste tendrÃ¡ que valer... por ahora.)~
+@17 = ~Â¡Oh ho ho! Â¡Esta estatua se parece a mÃ­! Â¡Si mi madre pudiera verla se sentirÃ­a tan orgullosa! Â¡Todos los vecinos se morirÃ­an de envidia!~
+@18 = ~<CHARNAME>, Â¿Lo entiendes? Â¡Nuestras estatuas inspirarÃ¡n a los niÃ±os a ser como nosotros!~
+@19 = ~Â¿AsÃ­ es como se ve realmente mi nariz? Maldita sea, Â¿por quÃ© nadie me lo dijo?~
 
-@20 = ~¡Oh, ya me han erigido un monumento! Cierto, sólo como seguidor de <CHARNAME>. Pero hay que empezar por algún sitio. Espero que algún día una de las ciudades más grandes tenga un monumento a Garrick, ¡el gran Bardo de Faerun!~
+@20 = ~Â¡Oh, ya me han erigido un monumento! Cierto, sÃ³lo como seguidor de <CHARNAME>. Pero hay que empezar por algÃºn sitio. Espero que algÃºn dÃ­a una de las ciudades mÃ¡s grandes tenga un monumento a Garrick, Â¡el gran Bardo de Faerun!~
 
