@@ -68,9 +68,9 @@ CHAIN
 IF ~Global("AranLovePrologue","GLOBAL",4)~ THEN PLAYER1 ANtonyPrologueTalk1
 @428 DO ~SetGlobal("AranLovePrologue","GLOBAL",5)~
 == JAHEIRAJ IF ~InParty("Jaheira") InMyArea("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN @4
-== NALIAJ IF ~InParty("Nalia") InMyArea("Nalia") !StateCheck("Nalia",CD_STATE_NOTVALID) StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN @4
-== KELDORJ IF ~InParty("Keldorn") InMyArea("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID) StateCheck("Jaheira",CD_STATE_NOTVALID) StateCheck("Nalia",CD_STATE_NOTVALID)~ THEN @4
-== MAZZYJ IF ~InParty("Mazzy") InMyArea("Mazzy") !StateCheck("Mazzy",CD_STATE_NOTVALID) OR(3) !StateCheck("Jaheira",CD_STATE_NOTVALID) !StateCheck("Nalia",CD_STATE_NOTVALID) !StateCheck("Keldorn",CD_STATE_NOTVALID)~ THEN @5
+== NALIAJ IF ~InParty("Nalia") InMyArea("Nalia") !StateCheck("Nalia",CD_STATE_NOTVALID) OR(3) !InParty("Jaheira") !InMyArea("Jaheira") StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN @4
+== KELDORJ IF ~InParty("Keldorn") InMyArea("Keldorn") !StateCheck("Keldorn",CD_STATE_NOTVALID) OR(3) !InParty("Jaheira") !InMyArea("Jaheira") StateCheck("Jaheira",CD_STATE_NOTVALID) OR(3) !InParty("Nalia") !InMyArea("Nalia") StateCheck("Nalia",CD_STATE_NOTVALID)~ THEN @4
+== MAZZYJ IF ~InParty("Mazzy") InMyArea("Mazzy") !StateCheck("Mazzy",CD_STATE_NOTVALID) OR(3) !StateCheck("Jaheira",CD_STATE_NOTVALID) !StateCheck("Nalia",CD_STATE_NOTVALID) !StateCheck("Keldorn",CD_STATE_NOTVALID) OR(3) InParty("Jaheira") InParty("Nalia") InParty("Keldorn")~ THEN @5
 == ANOMENJ IF ~InParty("Anomen") InMyArea("Anomen") !StateCheck("Anomen",CD_STATE_NOTVALID)~ THEN @7
 == MAZZYJ IF ~InParty("Mazzy") InMyArea("Mazzy") !StateCheck("Mazzy",CD_STATE_NOTVALID) StateCheck("Anomen",CD_STATE_NOTVALID) StateCheck("Jaheira",CD_STATE_NOTVALID) StateCheck("Nalia",CD_STATE_NOTVALID) StateCheck("Keldorn",CD_STATE_NOTVALID)~ THEN @7
 == CERNDJ IF ~InParty("Cernd") InMyArea("Cernd") !StateCheck("Cernd",CD_STATE_NOTVALID) StateCheck("Anomen",CD_STATE_NOTVALID) StateCheck("Mazzy",CD_STATE_NOTVALID)~ THEN @7
@@ -2507,16 +2507,16 @@ IF WEIGHT #-20 ~Global("AranLampFinish","AR0307",1) Global("ANAzoraStoneEscape",
   SAY @592
 =@593 
 =@595 
-IF ~!Global("TonySpawnAlternate","GLOBAL",0)~ THEN DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) GiveGoldForce(3000) AddexperienceParty(8000) SetGlobal("ANAranLamp","GLOBAL",10)~ EXIT
-IF ~Global("TonySpawnAlternate","GLOBAL",0)~ THEN DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) SetGlobal("ANAranLamp","GLOBAL",10) GiveGoldForce(3000) AddexperienceParty(8000)~ GOTO ANaranLampFinishTalk
+IF ~!Global("TonySpawnAlternate","GLOBAL",0)~ THEN DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) EraseJournalEntry(@1056) GiveGoldForce(3000) AddexperienceParty(8000) SetGlobal("ANAranLamp","GLOBAL",10)~ EXIT
+IF ~Global("TonySpawnAlternate","GLOBAL",0)~ THEN DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) EraseJournalEntry(@1056) SetGlobal("ANAranLamp","GLOBAL",10) GiveGoldForce(3000) AddexperienceParty(8000)~ GOTO ANaranLampFinishTalk
 END
 
 
 IF WEIGHT #-20 ~Global("AranLampFinish","AR0307",1) Global("ANAzoraStoneEscape","GLOBAL",1) Global("ANjoviNoStone","GLOBAL",1) PartyHasItem("ANLamp") !Global("ANAranLamp","GLOBAL",10)~ BEGIN ANAranLampEndJoviNoStone
   SAY @592
 =@595 
-IF ~!Global("TonySpawnAlternate","GLOBAL",0)~ THEN DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) SetGlobal("ANAranLamp","GLOBAL",10) GiveGoldForce(3000) AddexperienceParty(8000)~ EXIT
-IF ~Global("TonySpawnAlternate","GLOBAL",0)~ THEN DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) SetGlobal("ANAranLamp","GLOBAL",10) GiveGoldForce(3000) AddexperienceParty(8000)~ GOTO ANaranLampFinishTalk
+IF ~!Global("TonySpawnAlternate","GLOBAL",0)~ THEN DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) EraseJournalEntry(@1056) SetGlobal("ANAranLamp","GLOBAL",10) GiveGoldForce(3000) AddexperienceParty(8000)~ EXIT
+IF ~Global("TonySpawnAlternate","GLOBAL",0)~ THEN DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) EraseJournalEntry(@1056) SetGlobal("ANAranLamp","GLOBAL",10) GiveGoldForce(3000) AddexperienceParty(8000)~ GOTO ANaranLampFinishTalk
 END
 
 
@@ -2524,16 +2524,16 @@ IF WEIGHT #-21 ~Global("AranLampFinish","AR0307",1) Global("ANAzoraStoneEscape",
   SAY @594
 =@593 
 =@595 
-IF ~!Global("TonySpawnAlternate","GLOBAL",0)~ THEN DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) SetGlobal("ANAranLamp","GLOBAL",10) GiveGoldForce(3000) AddexperienceParty(8000)~ EXIT
-IF ~Global("TonySpawnAlternate","GLOBAL",0)~ THEN DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) SetGlobal("ANAranLamp","GLOBAL",10) GiveGoldForce(3000) AddexperienceParty(8000)~ GOTO ANaranLampFinishTalk
+IF ~!Global("TonySpawnAlternate","GLOBAL",0)~ THEN DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) EraseJournalEntry(@1056) SetGlobal("ANAranLamp","GLOBAL",10) GiveGoldForce(3000) AddexperienceParty(8000)~ EXIT
+IF ~Global("TonySpawnAlternate","GLOBAL",0)~ THEN DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) EraseJournalEntry(@1056) SetGlobal("ANAranLamp","GLOBAL",10) GiveGoldForce(3000) AddexperienceParty(8000)~ GOTO ANaranLampFinishTalk
 END
 
 IF WEIGHT #-22 ~Global("AranLampFinish","AR0307",1) Dead("ANAzora") PartyHasItem("ANLamp") !Global("ANAranLamp","GLOBAL",10)~ BEGIN ANAranLampEndjoviRevive
   SAY @637
 =@638
 =@595 
-IF ~!Global("TonySpawnAlternate","GLOBAL",0)~ THEN DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) SetGlobal("ANAranLamp","GLOBAL",10) GiveGoldForce(3000) AddexperienceParty(8000)~ EXIT
-IF ~Global("TonySpawnAlternate","GLOBAL",0)~ THEN DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) SetGlobal("ANAranLamp","GLOBAL",10) GiveGoldForce(3000) AddexperienceParty(8000)~ GOTO ANaranLampFinishTalk
+IF ~!Global("TonySpawnAlternate","GLOBAL",0)~ THEN DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) EraseJournalEntry(@1056) SetGlobal("ANAranLamp","GLOBAL",10) GiveGoldForce(3000) AddexperienceParty(8000)~ EXIT
+IF ~Global("TonySpawnAlternate","GLOBAL",0)~ THEN DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) EraseJournalEntry(@1056) SetGlobal("ANAranLamp","GLOBAL",10) GiveGoldForce(3000) AddexperienceParty(8000)~ GOTO ANaranLampFinishTalk
 END
 
 IF ~~ BEGIN ANaranLampFinishTalk
@@ -2548,7 +2548,7 @@ END
 
 CHAIN
 IF WEIGHT #-22 ~Global("AranLampFinish","AR0307",1) Global("ANAranLamp","GLOBAL",8) !Dead("ANAzora") PartyHasItem("ANLamp") !Global("ANAranLamp","GLOBAL",10)~ THEN ARAN ANAranLampJoviStoneAzLive
-@637 DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) SetGlobal("ANAranLamp","GLOBAL",10) GiveGoldForce(3000) AddexperienceParty(8000)~
+@637 DO ~TakePartyItem("ANLamp") AddJournalEntry(@1064,QUEST_DONE) EraseJournalEntry(@1056) SetGlobal("ANAranLamp","GLOBAL",10) GiveGoldForce(3000) AddexperienceParty(8000)~
 =@639
 == ARAN IF ~Global("ANjoviNoStone","GLOBAL",0)~ THEN @640
 =@595

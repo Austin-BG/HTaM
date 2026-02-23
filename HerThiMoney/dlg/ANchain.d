@@ -426,8 +426,7 @@ END
 ++ @109 EXTERN ANorc1 ANShakalAfterTalk1_2
 
 CHAIN ANorc1 ANShakalAfterTalk1_2
-@110 DO ~SetGlobal("ANshakal","GLOBAL",2) EscapeArea()~
-== ANorc2 @110 DO ~EscapeArea()~
+@110 DO ~ActionOverride("ANorc2",EscapeArea()) SetGlobal("ANshakal","GLOBAL",2) EscapeArea()~
 END
 ++ @111 EXIT
 
@@ -452,11 +451,17 @@ IF ~Global("ANshakal","GLOBAL",5)~ THEN ANcaytig ANcaytigCollector
 == JAHEIRAJ IF ~InParty("Jaheira") InMyArea("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN @122
 END
 ++ @123 EXTERN ANcoll1 ANcaytigCollector_1
-++ @204 EXTERN ANcoll1 ANcaytigCollector_1
+++ @204 EXTERN ANcoll1 ANcaytigCollector_2
 
 CHAIN ANcoll1 ANcaytigCollector_1
 @124
 =@125 DO ~ChangeEnemyAlly("ANcoll1",ENEMY) ChangeEnemyAlly("ANcoll2",ENEMY) ChangeEnemyAlly("ANcoll3",ENEMY) ChangeEnemyAlly("ANcoll4",ENEMY) ActionOverride("ANcoll1",Enemy())  ActionOverride("ANcoll2",Enemy())  ActionOverride("ANcoll3",Enemy()) ActionOverride("ANcoll4",Enemy())~
+== IF_FILE_EXISTS 7XGarJ IF ~InParty("7XGAR") InMyArea("7XGAR") !StateCheck("7XGAR",CD_STATE_NOTVALID)~ THEN @146
+== ANcoll1 @126 DO ~ActionOverride("ANcoll2",ApplySpell(Myself,WIZARD_STONE_SKIN)) ActionOverride("ANcoll2",ForceSpell(Player1,CLERIC_FLAME_STRIKE))~
+EXIT
+
+CHAIN ANcoll1 ANcaytigCollector_2
+@124 DO ~ChangeEnemyAlly("ANcoll1",ENEMY) ChangeEnemyAlly("ANcoll2",ENEMY) ChangeEnemyAlly("ANcoll3",ENEMY) ChangeEnemyAlly("ANcoll4",ENEMY) ActionOverride("ANcoll1",Enemy())  ActionOverride("ANcoll2",Enemy())  ActionOverride("ANcoll3",Enemy()) ActionOverride("ANcoll4",Enemy())~
 == IF_FILE_EXISTS 7XGarJ IF ~InParty("7XGAR") InMyArea("7XGAR") !StateCheck("7XGAR",CD_STATE_NOTVALID)~ THEN @146
 == ANcoll1 @126 DO ~ActionOverride("ANcoll2",ApplySpell(Myself,WIZARD_STONE_SKIN)) ActionOverride("ANcoll2",ForceSpell(Player1,CLERIC_FLAME_STRIKE))~
 EXIT
