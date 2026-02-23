@@ -5,12 +5,12 @@
 @3 = ~How do you know me? ~
 @4 = ~Your name is not well-known in Athkatla... yet. But I know that you came here from the north, from Baldur's Gate. I also know that you need money fast. I have something to offer you. ~
 @5 = ~So you've been following me! I don't like this at all. You'll have to explain yourself, orc. ~
-@6 = ~*Jackal raises his hand in warning* Wait, listen first! There are many eyes watching you here: thieves, a bank, and many others. I was assigned to follow you and I followed my orders. But as you can see, I came out of the shadows voluntarily. These are troubled times for everyone, and in them I see opportunity. Opportunity to rise up and get rich. ~
+@6 = ~*Jackal raises his hand in warning* Wait, listen first! These are troubled times for everyone, and in them I see opportunity. Opportunity to rise up and get rich. ~
 @7 = ~The conversation is over. I will give you and your scum only one opportunity to clear this street. ~
 @8 = ~Well, half-orc, you've got an uncommon knack for words. Tell us more. ~
 @9 = ~*You see frustration and anger on the Jackal's face, followed by feigned humility* Yes, <PRO_SIRMAAM>, as you wish. We're leaving.~
 @10 = ~Help me collect debts quickly, and we'll both profit from it. You can keep everything that you collect.~
-@11 = ~Collecting debt? Why would I get my hands dirty with this? Do you think I have nothing better to do than chase debtors around Athkatla!?~
+@11 = ~Collecting debt? Why would I get my hands dirty with this? Do you think I have nothing better to do than chase debtors around Athkatla?!~
 @12 = ~Of course, we'd normally do it ourselves, <PRO_SIRMAAM>, but now we need speed more than ever. These debts must be collected as soon as possible! After that, we will have a chance to turn this around, and I will be able, I swear, to offer you a much more serious matter! ~
 @13 = ~So why is there such a rush? As far as I know, these are long-term cases. Debtors sometimes pay only interest for years. And what is this more serious matter?~
 @14 = ~I'll explain, if you please. The one who gives us orders, Mr. Shahbaz, is the head of security of the bank that I work for. We deal here with debtors and much more.  Anyway, we are doing well, but there's someone in the way... someone called The Collector. Like us, he's a debt collector, but we've got no idea where he came from. He started bringing it... a lot... and quickly rose up the ranks. Praise to Gruumsh, his assignment to guard the vault failed, or he would have been out of our reach! ~
@@ -104,21 +104,21 @@
 // Jackal
 @93 = ~How was it? ~
 @94 = ~Well, they both paid. Here's the money. ~
-@95 = ~Great! I knew you could be relied on. We havne't been sitting idle either, we've managed to collect our debts. The bank's job is done.. ~
+@95 = ~Great! I knew you could be relied on. We haven't been sitting idle either, we've managed to collect our debts. The bank's job is done.~
 @96 = ~And we've tracked down the Collector. Now is the most opportune moment to attack! His men are wavering, and he has become vulnerable! I will give you two of my best fighters, both well trained and armed. Caityga will be in command. ~
 @97 = ~Aren't you afraid to send your sister? This fight will definitely not be easy. ~
 @98 = ~No, <PRO_SIRMAAM>. I've decided that she needed a lesson for a long time. If she dies, she dies. Caityga thinks I don't know how she turns my fighters against me using her feminine charms! ~
 @99 = ~*You can hardly contain your laughter when you remember how "beautiful" Caityga is* Well, as you say, Jackal. How is she as a fighter? ~
 @100 = ~She is good with bows, <PRO_SIRMAAM>.~ 
 @101 = ~*In an undertone* If she doesn't return from the battle, I will add two hundred more coins to the thousand we agreed on. ~
-@102 = ~*Laughs* You value your sister's head at 200 coins!? Hmmm... not much. We'll see. I won't promise anything, I'll decide when we're there. ~
+@102 = ~*Laughs* You value your sister's head at 200 coins?! Hmmm... not much. We'll see. I won't promise anything, I'll decide when we're there. ~
 @103 = ~Solve your own family problems, orc! I do not intend to get into other people's family squabbles! ~
 @104 = ~As you wish, <PRO_SIRMAAM>. I look forward to hearing from you. ~ 
 @105 = ~Sorry <PRO_SIRMAAM>. Consider this proposal as having never happened. ~
 @106 = ~Caityga, Galtarro, Three-Fingered! Now this is your commander. *Jackal points at you* Obey <PRO_HIMHER> in everything! Once the enemy is finished, you will all return to the squad. ~
-@107 = ~*You line up the squad of half-orcs handed to you* Listen carefully, you half-wits. My name is <CHARNAME>. For the duration of the next battle, I am your commander. You will listen to me and do as I say! I'll kill anyone who disobeys or tries anything funny!!! Is that clear!? ~
+@107 = ~*You line up the squad of half-orcs handed to you* Listen carefully, you half-wits. My name is <CHARNAME>. For the duration of the next battle, I am your commander. You will listen to me and do as I say! I'll kill anyone who disobeys or tries anything funny!!! Is that clear?! ~
 @108 = ~*You see a vicious grin on Caityga's ugly face, but it disappears as if by magic when her eyes meet yours. The half-orcs look at each other cautiously, then nod together.*~
-@109 = ~*You raise your voice to a scream* I can't hear! Everyone's clear, Orc scum!? ~
+@109 = ~*You raise your voice to a scream* I can't hear! Everyone's clear, Orc scum?! ~
 @110 = ~*The half-orcs respond to your question with a discordant roar. Apparently, no one has any questions.*~
 @111 = ~Well then let's go! ~
 @112 = ~The Collector is dead, Jackal.Hand over the money. ~
@@ -127,19 +127,19 @@
 @115 = ~*Passes you a bag of coins* Glad to hear, <PRO_SIRMAAM>. Here, as agreed - one thousand two hundred coins.~
 
 // Collector
-@116 = ~This is it! The Collector! ~
-@117 = ~*The Collector, a short, elderly man, slowly approaches you from the opposite end of the street with a mage and several fighters at the ready next to him. A little further away, you notice a young, beautiful half-elf girl.*~
-@118 = ~I see this Jackal lived up to his nickname and hesitated to come himself. He sent his sister and some guards instead! *The Collector's wolf gaze falls on you* And you, I suppose, are their mercenary? You shouldn't have gotten involved... ~
+@116 = ~This is it! Collector! ~
+@117 = ~*Collector, a short, elderly man, slowly approaches you from the opposite end of the street with a mage and several fighters at the ready next to him. A little further away, you notice a young, beautiful half-elf girl.*~
+@118 = ~I see this Jackal lived up to his nickname and hesitated to come himself. He sent his sister and some guards instead! *Collector's wolf gaze falls on you* And you, I suppose, are their mercenary? You shouldn't have gotten involved... ~
 @119 = ~*You order the half-orcs to pick targets and prepare for battle. Caityga slowly raises the bow, her rough fingers preparing to pull the string.*~
 @120 = ~<CHARNAME>, he is from another plane, I can tell it right away. And he's very dangerous. ~
-@121 = ~Grrrr! *Wilson growls menacingly at the Collector* ~
+@121 = ~Grrrr! *Wilson growls menacingly at Collector* ~
 @122 = ~*Whispering* <CHARNAME>, do you really think messing with these types is a good idea? ~
 @123 = ~Hey Collector, what if we try to negotiate? ~
-@124 = ~*A metallic note slips into the Collector's harsh laughter at your suggestion* You're on fire today! That's a good joke. ~ [GGMAL04]
+@124 = ~*A metallic note slips into Collector's harsh laughter at your suggestion* You're on fire today! That's a good joke. ~ [GGMAL04]
 @125 = ~Now be nice and get off this street. Soon these half-orc freaks will be kicked out of the bank, I'll make sure of it! "Try to negotiate"! Ha!~
-@126 = ~*A battle begins, you and the half-orcs against the Collector and his men*~
-@127 = ~Victory! We're leaving. Let's return to the Jackal. ~
-@128 = ~*Victory! Caityga is dead - and it looks like the Jackal won't mourn her*~
+@126 = ~*A battle begins, you and the half-orcs against Collector and his men*~
+@127 = ~Victory! We're leaving. Let's return to Jackal. ~
+@128 = ~*Victory! Caityga is dead - and it looks like Jackal won't mourn her*~
 @129 = ~*The half-orc is clearly nervous, although he doesn't show it*~
 
 // Group reactions
@@ -155,14 +155,14 @@
 @139 = ~You say he's a "mighty warrior"?? He is a man - so, for sure, another weakling. And you, half-orc, are just a coward who's exaggerating everything! ~
 @140 = ~Yes, we can do it easily! (Let Shar-Teel fight him, I'd rather stand aside and study my scrolls) ~
 @141 = ~Yes, we can do it easily! (Though I'd rather stand on the sidelines and study my scrolls while these primates fight and sort things out) ~
-@142 = ~Boo is a mighty warrior as well as the Collector, but he is often overlooked in legends and ballads! ~
-@143 = ~Boo? Who is Boo? Is this some kind of hero who will help you deal with the Collector? ~
+@142 = ~Boo is a mighty warrior as well as Collector, but he is often overlooked in legends and ballads! ~
+@143 = ~Boo? Who is Boo? Is this some kind of hero who will help you deal with Collector? ~
 @144 = ~Yes, he's a hero! And do not hesitate, he will help and deal the decisive blow! ~
 @145 = ~Great! I knew I was right to come to you! ~
 @146 = ~This will be a battle worthy of Sir Garrick's poetry! If you do not understand yet, Mr. Collector, we are talking about me. It is a pity that you will not hear the ballad about your death. I promise it will be beautiful and bring us a lot of extra coins. ~
 
 // Additions (Jackal)
-@147 = ~It won't be that hard. The Collector has grown too bold, forgetting caution. Recently, he came by to laugh at us! He told me that he would lock me in a cage with naught but bones to eat! That he would kill all my brothers in front of me! Rr-agh! *The Jackal interrupts his narration with a growl, completely baring his yellow fangs. His eyes burn with fierce, animal malice towards the Collector* ~
+@147 = ~It won't be that hard. Collector has grown too bold, forgetting caution. Recently, he came by to laugh at us! He told me that he would lock me in a cage with naught but bones to eat! That he would kill all my brothers in front of me! Rr-agh! *The Jackal interrupts his narration with a growl, completely baring his yellow fangs. His eyes burn with fierce, animal malice towards the Collector* ~
 
 // Courier
 @148 = ~Oh <PRO_LADYLORD> <CHARNAME>, it's you! It took a long time to find you... Phew! I work as a courier at the First Calimport Bank, and I was sent to invite you to a meeting with the head of security, Mr. Shahbaz. He wanted to see you personally. Why? He will tell you, I'm sure, I don't know anything about the details. That's it, I've got to run! ~
@@ -172,7 +172,7 @@
 @150 = ~Well, I see you know my name and deeds. Consider our acquaintance made. So what do you want from me, Shahbaz? ~
 @151 = ~Straight to the point! That's a good sign. You know what they say: whoever wants to rise up will come up with a ladder. I did not expect the Jackal to be so clever or that he would be able to bring down the Collector with just your help. I have something to offer you, a deal that will be far more profitable for you than any of the orc's deals. ~
 @152 = ~I'm listening. ~
-@153 = ~One of our clients turned out to be a dishonest crook. He deceived us by introducing himself as another person and took a huge loan. We are working on it no, of course, and we will get all of that money back. But it's not an easy matter to resolve. The borrower was actually a pirate named One-Eyed Fayaz. He left Athkatla for a small island called Brynnlaw - the pirates use it as a base. ~
+@153 = ~One of our clients turned out to be a dishonest crook. He deceived us by introducing himself as another person and took a huge loan. We are working on it now, of course, and we will get all of that money back. But it's not an easy matter to resolve. The borrower was actually a pirate named One-Eyed Fayaz. He left Athkatla for a small island called Brynnlaw - the pirates use it as a base. ~
 @154 = ~Do you want me to take care of this Fayaz? ~
 @155 = ~Fayaz owes the bank three thousand. I will give you his promissary note. You will keep half of what he owes for yourself. I will add that you do not need to sail there, but it is worth bearing in mind the possibility if you happen to go on a sea voyage. ~
 @156 = ~I see. You yourself have very little chance of reclaiming the debt, and you'll have a much better chance of being paid if you hire a wandering mercenary. Enough to take a smaller loss by paying them. ~
@@ -218,7 +218,7 @@
 @190 = ~Apparently he's a smart guy, this Collector.~
 @191 = ~More serious matter? If the reward is worth it, I'm in! Tell me more! ~
 @192 = ~You're in a suspicious rush. I feel like you're not saying something, half-orc.~
-@193 = ~You just get paid your salary, or what? Do you want to do with someone else's work?~
+@193 = ~You just get paid your salary, or what? Do you want someone to do your work for you?~
 @194 = ~I don't want to beat up and intimidate people, so do your own work. ~
 @195 = ~Everyone is watching me again, then?! Looks like I'm becoming a local star! I'm so sick of this!~
 @196 = ~Let's get down to business, boy! Enough idle chatter!~

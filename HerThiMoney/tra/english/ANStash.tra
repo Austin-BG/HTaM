@@ -52,13 +52,13 @@
 @46 = ~Because he probably knows something about the bank. For Gods' sake, start using your head already! ~
 @47 = ~He's probably hiding like a cockroach somewhere in the Slums area. You should start your search there. ~
 //@48 = 
-@49 = ~We'll have to look around a row of houses here in the Slums. (Again this endless row of shacks and the stench of their inhabitants... why did I ever get into this!?) ~
+@49 = ~We'll have to look around a row of houses here in the Slums. (Again this endless row of shacks and the stench of their inhabitants... why did I ever get into this?!) ~
 @50 = ~He rents part of a house near the tavern. I can't say where, precisely - I don't know. It's like his rainy day refuge. Mae'Var knew about it, and so did I. ~
 
 // Hurp - Edwin - PC
 @51 = ~*You notice a nondescript person who looks a little suspicious...*~
-@52 = ~Yeah, here comes Hurp! Did you think you could sit in your burrow forever, ferret!? ~
-@53 = ~Edwin!? How did you manage to survive!? Everyone there was killed! ~
+@52 = ~Yeah, here comes Hurp! Did you think you could sit in your burrow forever, ferret?! ~
+@53 = ~Edwin?! How did you manage to survive?! Everyone there was killed! ~
 @54 = ~I survived thanks to my new employer *Edwin nods at you*. And now you will answer all our questions. Or... well, you know the alternative. ~
 @55 = ~Of course, I swear by Timora, of course! I'll tell you everything I know. Please don't kill me! I can be a better friend to you alive! ~
 @56 = ~That will depend on your answers. So the first question is: where is Mae'Var's stash? ~
@@ -66,7 +66,7 @@
 @58 = ~Are you aware of its existence? ~
 @59 = ~I'm only the treasurer... or rather, I was. Mae'Var took a fixed amount from the general money once a month. Usually five hundred. I don't know where he spent it later. This was off the books. ~
 @60 = ~*Raising his voice slightly* Too much "I don't know," worm! *Lowering his voice and addressing you* Looks like he's not lying. ~
-@61 = ~For the gods' sake, forgive me! I would tell you if I knew! Think for yourself, what good would it do me to deny it!? ~
+@61 = ~For the gods' sake, forgive me! I would tell you if I knew! Think for yourself, what good would it do me to deny it?! ~
 @62 = ~How much did he end up with? In total? ~
 @63 = ~About five thousand, <PRO_SIRMAAM>. ~
 @64 = ~What about the ledgers? Do you have them? ~
@@ -167,7 +167,7 @@
 @149 = ~Edwin, we were being followed all this time and of course they saw that we entered the bank. But they don't know anything about the safe deposit box. And the bank won't tell them. This bank is more influential and more powerful than the Shadow Thieves. They can't be pressured. This means that the clerks will keep the bank's secrets. What do you think? ~
 @150 = ~Hmm, so far this sounds pretty good. (And when did this primate learn to think so coherently?) ~ ~ Hmm, this sounds good so far. (And when did this monkey learn to think so coherently?) ~
 @151 = ~Great. Then grab a shovel and dig! ~
-@152 = ~What? (He's not serious!?)~ [EDWIN22] ~What? (She's not serious!?)~ [EDWIN22]
+@152 = ~What? (He's not serious?!)~ [EDWIN22] ~What? (She's not serious?!)~ [EDWIN22]
 @153 = ~You heard me, mage. ~
 @154 = ~Yes, come on, wizard! Dig. You can do at least something. ~
 @155 = ~Why me? Let the brute that talks to the chipmunk dig! ~

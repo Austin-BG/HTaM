@@ -3,7 +3,7 @@
 // Yantina
 @0 = ~Hello <CHARNAME>. Could you find Owney? He has something important to talk to you about. ~
 @1 = ~I see you haven't changed much, Yantina. ~
-@2 = ~Jaheira!? I'm surprised to see a familiar face!~
+@2 = ~Jaheira?! I'm surprised to see a familiar face!~
 @3 = ~We certainly banished you for a reason. Now you're collecting debts with your partner. ~
 @4 = ~I thank the gods every day that I'm no longer with the Harpers. Listening to your endless instructions day after day... never again! As for my partner, he's doing quite well. We have a great job now, and we are together. Can you say the same about yourself, Jaheira? Probably still kicking yourself while doing endless errands from your superiors. ~
 @5 = ~*Jaheira is silent for a moment, pondering what she has heard. Then, she begins to speak, suppressing her anger with difficulty* You don't have any principles, and you've never had any, you two-faced wretch! You seduced a good man, you stole from us, and now you stand here and mock me! ~
@@ -46,7 +46,7 @@
 @30 = ~Let's get to the point. ~
 @31 = ~Well, to be honest, people have a reason to fear them. ~
 @32 = ~Yes, you're right, let's get down to business. ~ ~ Yes, you're right, let's get down to business. ~
-@33 = ~Is that so? When Jalut and Jock were rescuing settlers in the North, why was nobody frightened of them, huh!? Vicious, hypocritical creatures! "Untidy look"! *Unable to restrain himself, Owney hits his open palm with his fist*~
+@33 = ~Is that so? When Jalut and Jock were rescuing settlers in the North, why was nobody frightened of them, huh?! Vicious, hypocritical creatures! "Untidy look"! *Unable to restrain himself, Owney hits his open palm with his fist*~
 @34 = ~So here's the thing. Tonight, Shadow Druids will try to rob us. They'll sneak in through the basement, and they'll have the key to the vault with them. We'll ambush and kill them all, with your help, if you agree. Any questions? ~
 @35 = ~Shadow Druids? Why would they want to rob a bank?~
 @36 = ~I must ask - where did you get this information? Either you have the gift of foresight, or...~

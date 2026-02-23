@@ -13,7 +13,7 @@
 @9 = ~Hmm... you're right, Korgan. These Calishites just don't know who they're messing with yet! Let them send their debt collectors, we've beaten them before. ~
 @10 = ~I've been in worse trouble! Running from enemies isn't my thing, but you're right, it would be better to leave Athkatla. I never liked that damn anthill anyway. We'll do our job and leave, alright?~
 @11 = ~So that's it. Goodbye Korgan. ~
-@12 = ~*Growls* This is yer order!? Ye have soooo much extra money, huh, surfacer!? Instead of gutting these Calishite bastards, we'll pay them. Great dummit solution! ~
+@12 = ~*Growls* This is yer order?! Ye have soooo much extra money, huh, surfacer?! Instead of gutting these Calishite bastards, we'll pay them. Great dummit solution! ~
 @13 = ~Get back in line and shut up! You're the one who earned the debt, old man, and now it's up to us to clean it up!~
 @14 = ~Is that everything, Korgan? If so, the conversation is over. We need to find money to live. We've got to find the money and get on with our lives. You, unlike us, haven't fought a powerful organization and have no idea what it's like to confront an enemy with unlimited resources. ~
 @15 = ~*Korgan speaks in a low, menacing voice that changes to a bellowing growl) Speak to me like that again and I'll bash yer skull off! Remember that! Ahrrrr! Pray to yer gods that we don't meet again! *Korgan leaves, angry.*~
@@ -26,7 +26,7 @@
 @20 = ~Hey you! Stop! *You see a group of determined, armed fighters led by someone who looks like a priest in dull steel armor with a silver helmet*~
 @21 = ~These guys are definitely after me.~
 @22 = ~I see... ~
-@23 = ~Are you talking to me!? Who are you? ~
+@23 = ~Are you talking to me?! Who are you? ~
 @24 = ~*The priest's face is decorated with many scars, and his eyes look cool and hard; you can tell by his eyes and his way of holding his weapon that he is an experienced fighter. He answers after a short pause.*~
 @25 = ~Wait a second. That won't do. Korgan's with me, so if you want to talk to him, talk to me. ~
 @26 = ~*A hard grin crosses the priest's face. You can see his muscles flexing like a beast preparing to leap* Will you answer for him? Think it over, it's a serious matter. ~
@@ -42,7 +42,7 @@
 @36 = ~<CHARNAME>. ~
 @37 = ~<CHARNAME>, we have to deal with the five thousand in debt somehow. Nobody wants any trouble here, you understand that, right? ~
 @38 = ~*Pulls a promissary note from his pocket* Do you recognize this, Korgan? You owe me one, old boy! ~
-@39 = ~*Korgan, losing patience, comes close to the collector* Are ye threatening me, bastard!? I'll drive a axe into ye so deep... ~ [KORGAN23]
+@39 = ~*Korgan, losing patience, comes close to the collector* Are ye threatening me, bastard?! I'll drive a axe into ye so deep... ~ [KORGAN23]
 @40 = ~Korgan, stand back! ~
 @41 = ~*Grudgingly steps back from Owney.*~
 @42 = ~*With a grin* That's better. Well, how will you pay? ~
@@ -64,8 +64,8 @@
 @58 = ~You're not from Amn yourself? ~
 @59 = ~No, we're not from here. Usually the bank has to hire local collectors, but not here, not in Athkatla. The Council of Six offered their own people, from the city guard, I think, but they turned out to be of little use for such a 'job'. Then they sent for us. ~
 @60 = ~*In an undertone to you* He has an alright Tethyrian accent. ~
-@61 = ~So, to the point. There are six of them in total, and their leader is the Collector who escaped from Sigil. ~
-@62 = ~*Noticing your surprised look, Owney smiles weakly.* Don't ask me where Sigil is, or how the Collector arrived to Amn from there - I don't know. At home, he collected corpses, apparently.~
+@61 = ~So, to the point. There are six of them in total, and their leader is Collector who escaped from Sigil. ~
+@62 = ~*Noticing your surprised look, Owney smiles weakly.* Don't ask me where Sigil is, or how Collector arrived to Amn from there - I don't know. At home, he collected corpses, apparently.~
 @63 = ~Do you know anything about Collectors, bard? You're from those lands.~
 @64 = ~Not much, really. The Gatherers deal with death. Their job is to deliver the bodies to their last harbor - the Mortuary. They pay well there for the dead. They are quite dangerous, my raven> Sometimes there are those among them who not only find corpses... but also escort the living on the Path of Death. ~
 @65 = ~Tramps, beggars, careless travelers, killed and stripped naked, then ending up on the morgue's cutting table ... *Tiefling shudders as if chilled*~
@@ -92,18 +92,18 @@
 @86 = ~Speak if you have anything to offer us! ~
 @87 = ~I'm not going to get involved in this. Die! ~
 @88 = ~Greetings Collector! ~
-@89 = ~*The Collector, a short elderly man, slowly approaches you from across the street with a mage and several fighters with weapons at the ready beside him. A little away from them, you notice a young, beautiful half-elf girl. She looks very anxious.*~
+@89 = ~*Collector, a short elderly man, slowly approaches you from across the street with a mage and several fighters with weapons at the ready beside him. A little away from them, you notice a young, beautiful half-elf girl. She looks very anxious.*~
 @90 = ~I see, Owney, you've done well for once! *Gatherer's wolfish gaze falls on the dwarf* And you, I presume, are the one who caused this mess? Korgan, is it? Well, Owney, the bank gave this case to me, so bring me that dwarf's reciept quickly.. ~
 @91 = ~*You see Owney's group suddenly disperse, preparing for battle. The priest himself remains in place without moving a single muscle. Korgan also remains motionless, only gripping his weapon at the ready.*~
 @92 = ~Look at all these collectors after my debt! I guess I'll have crooks looking for me in the bathroom as well! ~
 @93 = ~<CHARNAME>, he is from another plane, I can tell it right away. And he's very dangerous. ~
-@94 = ~Grrrr! *Wilson growls menacingly at the Collector*~
+@94 = ~Grrrr! *Wilson growls menacingly at Collector*~
 @95 = ~*in an undertone* <CHARNAME>, do you really think messing with these types is a good idea? ~
 @96 = ~*Owney's voice is low and soft* Look, Collector, are you willing to negotiate? ~
 @97 = ~*A metallic note slips into the Collector's harsh laughter at Owney's suggestion* You're on fire today! That's a good joke. ~ [GGMAL04]
 @98 = ~Now be nice, give me your receipt, and get off this street. Soon you and your Tethyrian rats will be kicked out of the bank, I'll make sure of it! "Willing to negotiate"! Ha! ~
-@99 = ~*The Collector's laughter is suddenly cut off as an arrow hits his helmet from the back. You can see the half-elf girl pulling the string of her bow from behind him, preparing to fire another. The silence is suddenly broken by Owney's loud command 'Hit them!'*~
-@100 = ~*A battle begins, you and the Tethyrians against the Collector and his people*~
+@99 = ~*Collector's laughter is suddenly cut off as an arrow hits his helmet from the back. You can see the half-elf girl pulling the string of her bow from behind him, preparing to fire another. The silence is suddenly broken by Owney's loud command 'Hit them!'*~
+@100 = ~*A battle begins, you and the Tethyrians against Collector and his people*~
 @101 = ~Glory to Siamorphe, we've got them! You fought well, friend. As I promised, the dwarf's debt is closed. We go back to the bank.~ 
 @102 = ~And one more thing - what's your name anyway? ~
 @103 = ~I'll meet you at the bank. ~
@@ -142,7 +142,7 @@
 @130 = ~What a great fight! Let's search the corpses - these fools wanted to pick our pockets, and we ended up robbing them ourselves, har har! ~ [KORGAN29]
 @131 = ~Look at what I found in their leader's pockets, <CHARNAME>! This is my debt reciept! Let's take it to the bank, give it to the clerk and he will erase the debt record from their damn books! ~
 @132 = ~Let's do it, Korgan. ~
-@133 = ~*You find Korgan's promissory note on the Collector's corpse and put it in your pocket. Take it to the bank and try to negotiate with the senior clerk*~
+@133 = ~*You find Korgan's promissory note on Collector's corpse and put it in your pocket. Take it to the bank and try to negotiate with the senior clerk*~
 
 // Additions
 @134 = ~Understand, Korgan, the world doesn't revolve around you. Don't complicate our matters with your squabbles with collectors. ~

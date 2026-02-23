@@ -162,7 +162,7 @@
 @97 = ~Athkatla and Falcon.~
 @98 = ~Raven on the Sword Coast.~
 @99 = ~Quite the weather we are having today...~
-@100 = ~Crown and Riatavin! I've been waiting here for a long time. Here you go, milady. *gives you a sealed package)~
+@100 = ~Crown and Riatavin! I've been waiting here for a long time. Here you go, milady. *gives you a sealed package*~
 @101 = ~*Say nothing and give him the missive*~
 @102 = ~Anything new about the Shadow Thieves?~
 @103 = ~Thank you, milady, and good luck.~
@@ -203,8 +203,8 @@
 @136 = ~So that's how it is. Linvail's little puppet noticed something strange, didn't she? All right then. You are in my way. Is that explanation enough? It's a pity; I wanted this to go quietly. I will have to resort to magic now.~
 @137 = ~*While pretending to sip from the offered goblet, you glance at the strange woman's face and see that she is tense, as if anxiously waiting for something. You drop the goblet and in the same movement place your sharp dagger against the woman's neck*~
 @138 = ~And now you will tell me whom you are working for.~
-@139 = ~Ah! Damn you! The boys from Riatavin Hired me so I could get to Linvail through my brother. But you are always hovering about him!~
-@140 = ~So what were you going to do? *You press the blade against her neck a bit harder)~
+@139 = ~Ah! Damn you! The boys from Riatavin hired me so I could get to Linvail through my brother. But you are always hovering around him!~
+@140 = ~So what were you going to do? *You press the blade against her neck a bit harder*~
 @141 = ~In broad terms, first replace you in Aran's arms, and then bump him off. There was a time when he looked at me quite favorably...~
 @142 = ~That is disgusting! So Riatavin is trying to infiltrate our Guild?~
 @143 = ~It appears to be so. But please, put your weapon down. I swear on my son's life I will leave Amn immediately. And I will never come close to your Aran, or indeed any one of you. I swear.~
@@ -441,8 +441,8 @@
 @359 = ~Oh <CHARNAME>, few can compare to your dexterity. So, a follower of the paladin god is in our ranks? I was not mistaken in my suspicions. Now, I have to think about how to turn this situation to our favor. ~
 @360 = ~*You chat at the table with the half elf Wispin for a long time, but you notice nothing strange about him. When he leaves, you are discouraged. You admit to Aran that you have nothing to tell him.*~
 @361 = ~Pity. Well, it doesn't always work out the way we want it to. We'll keep an eye on him. ~
-@362 = ~*Just look at Aran) ~
-@580 = ~*Kiss Aran) ~
+@362 = ~*Just look at Aran*~
+@580 = ~*Kiss Aran*~
 @363 = ~*You are overwhelmed by feelings too powerful for words. You can't and don't want to say anything now - your gaze will say more than words.*~
 @364 = ~*Aran seems to understand your feelings perfectly well. The two of you are silent for a long time before he takes your hand, intertwining your fingers with his...*~
 @365 = ~*You will never forget the taste of these lips. But now you don't just remember it, you feel it again with pleasure - and this is the brightest joy in your life full of darkness and trials*~
@@ -556,7 +556,7 @@ You are different flight, dear birds!'~
 @515 = ~*You recall that Lady Rilin and her daughter Azora were mentioned in the guest list Aran gave you... Interesting...*~
 @516 = ~This will be your last time, don't doubt it. Stop whining and keep talking. What's with the Rilins? ~
 @517 = ~Their daughter is gone! I accidentally heard that she... how was it... "was caught making inappropriate acquaintances"! She wasn't kidnapped, no. She ran away with some guy herself. And they found a note in the unwise maiden's chamber, something like "we'll meet in the Copper Coronet" or something like that. That's how it is. ~
-@518 = ~(You interrogate Porin for a long time, but you learn anything new from him) ~
+@518 = ~*You interrogate Porin for a long time, but you learn nothing new from him*~
 @519 = ~Have you talked? Well, <CHARNAME>, what do you think we should do about this misunderstanding? ~
 @520 = ~Don't bother with him, Renal, just slit his throat. ~
 @521 = ~Didn't you want your boys to deal with him? Well, let them. I'm not interested in him anymore. ~
@@ -666,7 +666,7 @@ You are different flight, dear birds!'~
 @629 = ~What are you talking about? I agreed to run away with you! ~
 @630 = ~But we didn't get far. Shadow Thieves... they would have gotten to us anywhere sooner or later. If only I hadn't been so intoxicated by your beautiful eyes... But you know what? I don't want anyone else to kiss you when you forget me. So... Goodbye, my princess! ~
 @631 = ~What a bastard you are. ~
-@632 = ~You've had your fun, haven't you? Now come with me ~
+@632 = ~You've had your fun, haven't you? Now come with me.~
 @633 = ~While she deserves it, restoring you was a mistake... which I'll fix now. ~
 @634 = ~You will be next. ~ 
 @635 = ~Yeah right! You'll be the one who goes next! ~
@@ -875,7 +875,7 @@ Aran"~
 @809 = ~I was coming to you, too late, alas. I saw you being carried through the forest and hurried in the shadows behind your captors. And then I looked out the window at... all this... and I could not help you! It was so terrible... ~
 @810 = ~You've helped a lot, Tony, thank you my friend. And I think I should write to Aran now. ~
 @811 = ~Take care of yourself, Lady <CHARNAME>! ~
-@812 = ~*You find your comrades in a daze, which you take remove with the antidote Tony gave you*~
+@812 = ~*You find your comrades in a daze, which you remove using the antidote Tony gave you*~
 @813 = ~I had a strange dream today... ~
 @814 = ~Yes, something happened... what was that, <CHARNAME>? ~
 @815 = ~I don't remember anything. ~

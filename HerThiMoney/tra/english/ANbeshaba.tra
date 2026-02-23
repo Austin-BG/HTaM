@@ -2,17 +2,17 @@
 @0 = ~*You are calmly walking down the street when a guy suddenly bumps into you - running up to you, he stumbled out of the blue and could not keep his balance* ~
 @1 = ~Be careful! ~
 @2 = ~What a fool! Why are you rushing headlong? Where is the caution? ~
-@3 = ~Oh, <PRO_SIRMAAM>! If you only knew HOW we are ALL trying to be cautious now! And no use. Anyway... this... Bloody scalp will explain everything. He's waiting for you. ~
+@3 = ~Oh, <PRO_SIRMAAM>! If you only knew HOW we are ALL trying to be cautious now! And no use. Anyway... this... Bloodscalp will explain everything. He's waiting for you. ~
 
 // Renal
 @4 = ~*You enter the Shadow Thieves Guild building and immediately feel that something is wrong. The air seems to be saturated with tension, it is unpleasant and uncomfortable for you to be here * ~
-@5 = ~*Renal Bloodscalp greets you with a very scowl * ~
-@6 = ~Hello <CHARNAME>. It's good that you are here, although on the other hand, it might be better to be away from here now. If you ask what happened ... It happened. But nobody knows what. ~
+@5 = ~*Renal Bloodscalp greets you with a scowl* ~
+@6 = ~Hello <CHARNAME>. It's good that you are here, although on the other hand, it might be better to be away from here now. If you ask what happened ... "It" happened. But nobody knows what. ~
 @7 = ~Renal, can you explain anything? ~
 @8 = ~Yes, you might as well find out what's going on here. ~
 @9 = ~Have you decided to work together on a new look for the Shadow Thief, giving it a touch of romantic mystery?~
 @10 = ~Ridiculous, ha ha. But we are all not at all laughing. ~
-@11 = ~Stop pulling! Tell me why you called me. ~
+@11 = ~Stop stalling! Tell me why you called me. ~
 @12 = ~A little polite, please. No one here will look at what you... However, now is not the time to quarrel. ~
 @13 = ~Moreover, you are now one of us, and it can touch you too.~ 
 @14 = ~Especially since you are with us now, albeit for a while, and it can affect you too. ~
@@ -44,7 +44,7 @@
 @38 = ~This awful person... Not only is it scary to look outside at night, and in general, everything around him seemed to be brutal, so did he. She walks, yells something, curses... Ah, my nerves just can't stand it. Ask the paladins, they will tell you more. ~
 
 // Order
-@39 = ~You... you all ... ~
+@39 = ~You... you all... ~
 @40 = ~A city... full of... vile thieves! *Dies* ~
 @41 = ~*You look closely at the deceased. The long and thin body is clothed in a crimson robe, the face is hidden by disheveled black hair* ~
 @42 = ~*Search deceased* ~
@@ -56,7 +56,7 @@
 @48 = ~Ugh, this one seemed to be the most dangerous... ~
 @49 = ~What happened here?~
 @50 = ~Quite an unpleasant story. This man was a priest of Beshaba, one of those who are ready to bear the curse of evil doom to everyone. ~
-@51 = ~Was that a wicked wicked one? ~
+@51 = ~Was that a wicked one? ~
 @52 = ~He was an evil man, that's for sure. Priest of Beshaba, if that means anything to you. ~
 @53 = ~You were probably the first to attack this person? ~
 @54 = ~No, but we urged them to get out of town. They are admirers of Beshaba. Some of these cultists did so, but the most stubborn remained. ~
@@ -74,7 +74,7 @@
 @66 = ~*Slowly grins* This is true.~
 @67 = ~And you paladins have decided to clean up the mess? ~
 @68 = ~This is our duty.~
-@69 = ~Some of the villagers must have joined this cult in despair, but the rest were very scared. Failure, bad luck is not a joke. That is why people turned to the Order of the Radiant Heart, asking them to deal with the Beshabists. ~
+@69 = ~Some of the villagers must have joined this cult in despair, but the rest were very scared. Failure, bad luck is not a joke. That is why people turned to the Order of the Radiant Heart, asking us to deal with the Beshabists. ~
 @70 = ~We have warned these cultists. They, although they threatened to send evil doom on us, were afraid of our swords. But the most fanatical never got out of town. ~
 @71 = ~And paladins are not afraid of evil doom. ~
 @72 = ~It doesn't matter what we fear. We have a duty, and we must follow it, regardless of any fears and trusting in the protection of our gods. And this man, I must say, was really very dangerous. ~
@@ -106,17 +106,17 @@
 @96 = ~Looks like you know something. Explain yourself. ~
 @97 = ~Look at him, Renal! ~
 @98 = ~*Silently watch, letting events take their course* ~
-@99 = ~Gie, what have you got there? Come on talk!~
+@99 = ~Gail, what have you got there? Come on talk!~
 @100 = ~I... errr... ~
 @101 = ~*The Trap Master removes the amulet that was hidden under his jacket from his neck and hands it to Renal. This thing is really a red triangle with black deer antlers depicted on it * ~
 @102 = ~Well, well... As far as I understand, this is the thing that caused this whole mess. ~
 @103 = ~Look, I had no idea this amulet was cursed. I don't understand anything about the gods or their symbols, except that I offer prayers to the Mask when I fiddle with another trap. ~
-@104 = ~Of course, no one checks whether those who join our guild have a theological education. But I am interested in something else - since when did you, Gie, get involved in pickpocketing? It seemed to me that you spend all your free time inventing new traps. ~
+@104 = ~Of course, no one checks whether those who join our guild have a theological education. But I am interested in something else - since when did you, Gail, get involved in pickpocketing? It seemed to me that you spend all your free time inventing new traps. ~
 @105 = ~Sometimes you want variety, you know. ~
 @106 = ~You're darkening something. Okay... we'll figure that out a bit later. ~
-@107 = ~Listen, <CHARNAME>... You are a special person, a hero and all. Please take this muck from me and take it to The Shadow Master. Eh, he had to personally otmazat someone bigger - and such failed, like crooked newcomers, can you imagine? Is it all because of such a small thing? ~
-@108 = ~I think this amulet gave the priest of Beshaba a power that was different when the artifact was in the wrong hands. Good. I'll take it to Aran. ~
-@109 = ~Some powerful artifacts behave in a very strange and capricious manner, nothing with them can be predicted in advance. I hate to take it in my hands, but if you ask, why not be kind to you ... ~
+@107 = ~Listen, <CHARNAME>... You are a special person, a hero and all. Please take this muck from me and take it to The Shadow Master. He had to personally justify some more experienced people—even they failed, like clumsy rookies, can you imagine? Could all this really be because of such a small thing? ~
+@108 = ~I think this amulet gave the priest of Beshaba a power that was different from the ones when the artifact is in the wrong hands. Good. I'll take it to Aran. ~
+@109 = ~Some powerful artifacts behave in a very strange and capricious manner, nothing about them can be predicted in advance. I hate to take it in my hands, but if you ask, why not be kind to you... ~
 @110 = ~Thank you, <CHARNAME>. You know where to find The Shadow Master. ~
 @111 = ~Of course this thing is to blame. And I don't even want to touch her! Take it to your Master yourself, and I'll go. ~
 @112 = ~Yes, Beshaba cursed everyone here. Well, Renal, I'll get out of here as soon as possible. ~
@@ -144,31 +144,31 @@
 @132 = ~I wonder if there are any of her cults left in town, or have the valiant paladins dispersed them all? However, I know one Master of Doom ... or rather, one, the high priestess of Beshaba. I'll take care of it myself. ~
 @133 = ~Good luck, Aran. ~
 @134 = ~Okay, The Shadow Master. Can I go? ~
-@135 = ~I would like to ask you something else. Gie is a wonderful trap master, and one of our security guards. Knowing him well, I would never believe that in his spare time he amuses himself with banal theft. He's covering someone. Try to find out who. Extra charge, of course. ~
-@136 = ~*The expression on the Shadow Master face does not betray his true feelings, but something in his voice or in his gaze leads you to a strange thought - is he giving you a new assignment just to communicate more with you? The thought is really unexpected... but for some reason you do not want to discard this possibility. Although, probably, Linvile is just testing your business qualities. And yet...* ~
+@135 = ~I would like to ask you something else. Gail is a wonderful trap master, and one of our security guards. Knowing him well, I would never believe that in his spare time he amuses himself with banal theft. He's covering someone. Try to find out who. Extra charge, of course. ~
+@136 = ~*The expression on the Shadow Master face does not betray his true feelings, but something in his voice or in his gaze leads you to a strange thought - is he giving you a new assignment just to communicate more with you? The thought is really unexpected... but for some reason you do not want to discard this possibility. Although, probably, Linvail is just testing your business qualities. And yet...* ~
 @137 = ~Of course, Aran. I'm also interested in bringing this thing to an end. ~
 @138 = ~Since you're so generous, I'll try to figure it out. ~
 @139 = ~Ok, <CHARNAME>. Then I'll wait for you with the news. ~
-@140 = ~I guess it won't be difficult for me ... and I’ll be glad to work with you a little more, Aran Linvail.~
+@140 = ~I guess it won't be difficult for me... and I’ll be glad to work with you a little more, Aran Linvail.~
 @141 = ~You know, it's great to hear from a girl like you. ~
-@142 = ~*The Shadow Master looks at you deeply. He does not take his eyes off your face for a long time, and you involuntarily ask yourself - what is behind this? Undoubtedly, Aran Linvail wants to have the daughter of Bhaal as his allies, and he probably appreciates you in this capacity. You calmly hold his gaze, and a light, unexpectedly warm smile suddenly appears on Aran's lips. She confuses you, and you feel how a reciprocal interest in this person arises in you. Business, of course?* ~
+@142 = ~*The Shadow Master looks at you deeply. He does not take his eyes off your face for a long time, and you involuntarily ask yourself - what is behind this? Undoubtedly, Aran Linvail wants to have the daughter of Bhaal as his ally, and he probably appreciates you in this capacity. You calmly hold his gaze, and a light, unexpectedly warm smile suddenly appears on Aran's lips. It confuses you, and you feel how a reciprocal interest in this person arises in you. But this is all about business, of course?* ~
 @143 = ~<CHARNAME>... ~
 @144 = ~No, nothing. I'm just asking you to be extra careful right now. This is no joke. Take care of yourself ~
-@145 = ~Maybe you are here yourself sometime? ~
+@145 = ~Maybe you can handle this on your own?~
 @146 = ~You're a very busy person, aren't you? Well... Thank you, <CHARNAME>. Here's your reward. ~
 @147 = ~*So the guild seems to be saved from the curse of bad luck, but you need to sort this out completely. Perhaps Bloodscalp can offer advice* ~
 
 // Renal
 @148 = ~So <CHARNAME>, how about talking to the Master? ~
-@149 = ~He's very curious about who Gie is covering in this case. ~
+@149 = ~He's very curious about who Gail is covering in this case. ~
 @150 = ~It seems to me that there was a girl involved. Although so far this is only guesswork. ~
-@151 = ~In general, Gie has been seen a lot in Lania's company lately. This is a very clever pickpocket, an ardent follower of Tymora, Lady of Fortune. She sometimes does not get out of the tavern for several days, washing the successfully worked business. Look in one of them. But Lania usually doesn't go far. ~
+@151 = ~In general, Gail has been seen a lot in Lania's company lately. This is a very clever pickpocket, an ardent follower of Tymora, Lady of Fortune. She sometimes does not get out of the tavern for several days, washing the successfully worked business. Look in one of them. But Lania usually doesn't go far. ~
 
 // Tavern "Seafood"
 @152 = ~Hello. Would you like to have a drink with me? ~
 @153 = ~Why not have a drink with such a nice girl. Are you Lania?~
 @154 = ~Not now. I'll come to you on business - if you are Lania. ~
-@155 = ~She is. Although usually everyone calls me Little Lan, and only Renal calls Lania, and now... hee hee... Gie. Are you from any of them? ~
+@155 = ~She is. Although usually everyone calls me Little Lan, and only Renal calls Lania, and now... hee hee... Gail. Are you from any of them? ~
 @156 = ~No, Little Lan, I'm on my own. ~ ~ No, Little Lan, I'm on my own. ~
 @157 = ~I see you don't look like a simple messenger. What then? Need help lightening someone's pockets? ~
 @158 = ~Better tell me, do you think it came into your clever mind to rob Beshaba's servant? ~
@@ -177,18 +177,18 @@
 @161 = ~What do you mean - too? Bloodscalp and I are good pals... Well... a little more. What is it to you? ~
 @162 = ~Renal actually referred me to you. ~
 @163 = ~Wow. I thought you didn't look like a simple messenger. What does this bore need? Doesn't give the girl a rest from the soul. And I had such a glorious business... with a priest. ~
-@164 = ~You could say I'm from Gie... to some extent. ~
+@164 = ~You could say I'm from Gail... to some extent. ~
 @165 = ~Ah! This rascal must have already known my little revenge! Serves him right, he won't stare at the tavern girls. ~
-@166 = ~Are you and Gie at odds? ~
-@167 = ~I'm actually mad at him. Very. But I think she already took revenge on him, with the help of Beshaba... hehe. ~
+@166 = ~Are you and Gail at odds? ~
+@167 = ~I'm actually mad at him. Very mad. But I think I already took revenge on him, with the help of Beshaba... hehe. ~
 @168 = ~So it's you after all. Then stop talking nonsense and tell me how you managed to bring the curse of bad luck to the Shadow Guild?~
-@169 = ~How long have you been hanging out in this tavern? It seems that you have no idea what is happening in your home guild - through your fault, by the way. They will all really need the help of Tymora, whom you worship. ~
-@170 = ~Silly girl. I don’t know how you feel about Guy, but while you’re drinking here, he covers you up, because the amulet he wore was made in the business guild ... Did you slip that into him? ~
-@171 = ~What? May Tymora keep us all! It's true - I stole the amulet from the priest of Beshaba. But I did it for my goddess! After all, you know: Tymora and Beshaba - Luck and Bad Luck, eternal rivals, two aspects of the once one goddess. If you betray yourself to one, you will anger the other. But I am not afraid of Beshaba, for Tymora favors the fearless! I have proven that I fully rely on Lady Luck! ~
-@172 = ~You somehow averted failure from yourself, but you brought it on to others. Your Gie has fallen into his own trap... if only he. ~
-@173 = ~Who did you prove what? From the amulet you stole, the curse of failure spread to the entire guild. ~
-@174 = ~No no no! I had no idea that there was such power in this amulet! I just wanted to get revenge on Guy for accepting the courtship of this nasty Rosie. I gave him ... I thought that something funny and awkward would happen to him. Well, there, he will think to cheat on me, and with him... well, you get the idea. Then I would forgive him, make a real gift, and throw this stuff out somewhere. Now... ~
-@175 = ~Oh, screw it up. I've been planning to escape from the guild for a long time, I'm tired of it. I will enter the circus, here! Rope walking without belay is Lady Tymora's best service. Poor Gie... he really seemed to love me. Well, nothing, the goddess of Fortune will send him someone else. And I went. ~
+@169 = ~How long have you been hanging out in this tavern? It seems that you have no idea what is happening in your home guild - which is your fault, by the way. They will all really need the help of Tymora, whom you worship. ~
+@170 = ~Silly girl. I don’t know how you feel about Gail, but while you’re drinking here, he's covering for you, because the amulet he wore brought a lot of problems to the guild.... Did you plant this thing on him?~
+@171 = ~What? May Tymora keep us all! It's true - I stole the amulet from the priest of Beshaba. But I did it for my goddess! After all, you know: Tymora and Beshaba - Luck and Bad Luck, eternal rivals, two aspects of the once one goddess. If you entrust yourself to one, you will anger the other. But I am not afraid of Beshaba, for Tymora favors the fearless! I have proven that I fully faithful to Lady Luck! ~
+@172 = ~You somehow averted failure from yourself, but you brought it on to others. Your Gail has fallen into his own trap... but if only he. ~
+@173 = ~What did you prove to anyone? From the amulet you stole, the curse of failure spread to the entire guild. ~
+@174 = ~No no no! I had no idea that there was such power in this amulet! I just wanted to get revenge on Gail for accepting the courtship of this nasty Rosie. I gave him... I thought that something funny and awkward would happen to him. Well, there, he will think to cheat on me, and with him... well, you get the idea. Then I would forgive him, make a real gift, and throw this stuff out somewhere. Now... ~
+@175 = ~Oh, screw it up. I've been planning to escape from the guild for a long time, I'm tired of it. I will enter the circus, here! Rope walking without belay is Lady Tymora's best service. Poor Gail... he really seemed to love me. Well, nothing, the goddess of Fortune will send him someone else. And I went. ~
 @176 = ~*I should probably let her go. It is unlikely that she was up to something truly evil, and the guild will have less trouble if this not too smart, eccentric girl leaves it* ~
 @177 = ~*Before hiding in the shadows, Lania shouts to you: "May Tymora keep us all safe!" * ~
 @178 = ~No honey, you won't just leave. You have to answer for your actions! *Grab her hand and hold her tight* ~
@@ -203,7 +203,7 @@
 @185 = ~Nice work, <CHARNAME>. Sorry for Lania... but she actually deserves it. It’s your luck that she didn’t stab you in the back, but she could - Tymora really favored this rascal.~
 
 // Aran
-@186 = ~It's okay, <CHARNAME>. I have given all the necessary orders to dispose of the cursed amulet. Gie was the least guilty of all, but severely punished, having lost his beloved. However, I am sure that this will not affect his work in any way. ~
+@186 = ~It's okay, <CHARNAME>. I have given all the necessary orders to dispose of the cursed amulet. Gail was the least guilty of all, but severely punished, having lost his beloved. However, I am sure that this will not affect his work in any way. ~
 @187 = ~But okay, I don't want to think about this case anymore. Please accept my gratitude and this is the reward. See you, <CHARNAME>. ~
 @188 = ~I think it will take place soon. You and I still have things to do, although I would be glad... a little less formal setting. But I think we will come to an agreement. Good luck and may no Beshaba touch you with her black hand, my dear lady. ~
 
