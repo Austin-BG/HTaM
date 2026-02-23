@@ -1,3 +1,5 @@
+//
+
 // Death of the Shadow Dragon - NPC reactions
 @0 = ~(Looking at the cooling body of the mighty Thaxl'ssillia, you can hardly believe that this huge monster fell at your hands.)~
 @1 = ~Yes! This is how Minsc punishes evil! But we couldn't have done it without Boo's help - he was distracting this dragon himself!~
